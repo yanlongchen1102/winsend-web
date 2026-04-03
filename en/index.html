@@ -556,6 +556,14 @@
             }
         }
 
+        function trackDownload() {
+            fetch("https://api.winsend.app/track?type=download", {
+                method: "GET",
+                keepalive: true,
+                cache: "no-cache"
+            }).catch(function() {});
+        }
+
         fetch("/update.json")
             .then(function(response) {
                 if (!response.ok) {
@@ -572,6 +580,7 @@
                 var downloadUrl = buildDownloadUrl(data);
                 document.querySelectorAll(".download-link").forEach(function(node) {
                     node.href = downloadUrl;
+                    node.addEventListener("click", trackDownload);
                 });
             })
             .catch(function() {});
