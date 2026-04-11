@@ -55,14 +55,15 @@
 <body class="bg-white text-gray-900 antialiased">
 
     <!-- Navigation -->
-    <nav class="fixed top-0 left-0 right-0 bg-white/70 backdrop-blur-xl z-50 border-b border-gray-100">
+    <nav aria-label="主导航" class="fixed top-0 left-0 right-0 bg-white/70 backdrop-blur-xl z-50 border-b border-gray-100">
         <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
-            <div class="flex items-center gap-3">
-                <img src="../logo.png" alt="WinSend Logo" class="w-9 h-9 rounded-xl">
+            <a href="/zh/" class="flex items-center gap-3">
+                <img src="/logo.png" alt="WinSend Logo" class="w-9 h-9 rounded-xl">
                 <span class="text-xl font-bold tracking-tight">WinSend</span>
-            </div>
+            </a>
             <div class="flex items-center gap-6">
                 <a href="#features" class="text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors hidden sm:block">功能特性</a>
+                <a href="/zh/guides/" class="text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors hidden sm:block">教程</a>
                 <a href="#download" class="btn-primary inline-flex items-center gap-2 px-5 py-2.5 bg-blue-600 text-white text-sm font-semibold rounded-lg hover:bg-blue-700">
                     下载
                 </a>
@@ -141,7 +142,7 @@
 
                 <div class="relative order-first lg:order-last">
                     <div class="aspect-[16/12] bg-gradient-to-br from-gray-100 to-gray-50 rounded-3xl shadow-2xl flex items-center justify-center overflow-hidden border border-gray-200">
-                        <img src="../idea.png" alt="WinSend 界面" class="w-full h-full object-cover">
+                        <img src="/idea.png" alt="WinSend 界面" class="w-full h-full object-cover">
                     </div>
                     <!-- Decorative elements -->
                     <div class="absolute -z-10 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-gradient-to-br from-blue-200/20 to-purple-200/20 rounded-full blur-3xl"></div>
@@ -457,6 +458,68 @@
         </div>
     </section>
 
+    <!-- Tutorials Section -->
+    <section class="py-24 px-6">
+        <div class="max-w-6xl mx-auto">
+            <div class="flex flex-col gap-6 md:flex-row md:items-end md:justify-between mb-14">
+                <div class="max-w-3xl">
+                    <p class="text-sm font-semibold tracking-[0.2em] text-blue-600 uppercase mb-3">教程中心</p>
+                    <h2 class="text-4xl sm:text-5xl font-bold tracking-tight mb-5">按照 3+1 结构快速学会用好 WinSend</h2>
+                    <p class="text-xl text-gray-600">
+                        从核心传输教程、安装设置、工作原理到工具对比，逐步建立 WinSend 的完整使用路径。
+                    </p>
+                </div>
+                <a href="/zh/guides/" class="inline-flex items-center justify-center rounded-xl border border-gray-200 px-6 py-3 text-sm font-semibold text-gray-900 transition hover:border-blue-200 hover:text-blue-700">
+                    浏览全部教程
+                </a>
+            </div>
+
+            <div class="grid gap-6 lg:grid-cols-2">
+                <article class="card-hover rounded-3xl border border-blue-100 bg-gradient-to-br from-blue-50 via-white to-sky-50 p-8 shadow-sm">
+                    <div class="flex flex-wrap items-center gap-3 mb-4 text-sm">
+                        <span class="rounded-full bg-blue-600 px-3 py-1 font-semibold text-white">内容矩阵</span>
+                        <span class="rounded-full bg-white px-3 py-1 font-medium text-gray-600 border border-gray-200">核心教程</span>
+                        <span class="rounded-full bg-white px-3 py-1 font-medium text-gray-600 border border-gray-200">安装 / 原理 / 对比</span>
+                    </div>
+                    <h3 class="text-2xl font-bold tracking-tight mb-4">
+                        <a href="/zh/guides/iphone-to-windows-transfer/" class="hover:text-blue-700 transition-colors">
+                            从 iPhone 到 Windows：WinSend 中文 3+1 教程结构
+                        </a>
+                    </h3>
+                    <p class="text-base leading-8 text-gray-600 mb-6">
+                        先看核心传输教程，再进入安装设置、工作原理和工具对比页面。新结构更适合 SEO，也更方便你后续持续补内容。
+                    </p>
+                    <div class="flex flex-wrap items-center gap-4 text-sm text-gray-500 mb-6">
+                        <span>当前结构：3 个教程 + 1 个对比页</span>
+                        <span>适合：iPhone + Windows 用户</span>
+                        <span>主题：内容矩阵</span>
+                    </div>
+                    <div class="flex flex-col gap-3 sm:flex-row">
+                        <a href="/zh/guides/" class="btn-primary inline-flex items-center justify-center rounded-xl bg-blue-600 px-6 py-3 font-semibold text-white hover:bg-blue-700">
+                            进入教程中心
+                        </a>
+                        <a href="/zh/guides/iphone-to-windows-transfer/" class="inline-flex items-center justify-center rounded-xl border border-gray-200 bg-white px-6 py-3 font-semibold text-gray-900 transition hover:border-blue-200 hover:text-blue-700">
+                            打开核心教程
+                        </a>
+                    </div>
+                </article>
+
+                <section class="rounded-3xl border border-gray-200 bg-white p-8 shadow-sm">
+                    <h3 class="text-2xl font-bold tracking-tight mb-5">第一阶段内容</h3>
+                    <div class="space-y-4 text-gray-600 leading-8">
+                        <p>新的中文结构已经按第一阶段的 3+1 方式搭好，后续你可以继续逐页补充：</p>
+                        <ul class="space-y-3 text-sm sm:text-base">
+                            <li>核心教程：iPhone 到 Windows 文件传输</li>
+                            <li>安装教程：下载、权限、配对与检查清单</li>
+                            <li>原理页：为什么 WinSend 更接近无感传输</li>
+                            <li>对比页：AirDrop、LocalSend、AirDroid 等工具结构占位</li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </section>
+
     <!-- Download Section -->
     <section id="download" class="py-32 px-6">
         <div class="max-w-4xl mx-auto text-center">
@@ -526,7 +589,7 @@
             <div class="grid md:grid-cols-4 gap-12 mb-12">
                 <div class="md:col-span-2">
                     <div class="flex items-center gap-3 mb-4">
-                        <img src="../logo.png" alt="WinSend Logo" class="w-9 h-9 rounded-xl">
+                        <img src="/logo.png" alt="WinSend Logo" class="w-9 h-9 rounded-xl">
                         <span class="text-xl font-bold text-white">WinSend</span>
                     </div>
                     <p class="text-sm leading-relaxed max-w-md">
@@ -538,9 +601,9 @@
                 <div>
                     <h4 class="text-white font-semibold mb-4">产品</h4>
                     <ul class="space-y-3 text-sm">
-                        <li><a href="#features" class="hover:text-white transition-colors">功能特性</a></li>
-                        <li><a href="#download" class="hover:text-white transition-colors">下载</a></li>
-                        <li><a href="#" class="hover:text-white transition-colors">文档</a></li>
+                        <li><a href="/zh/#features" class="hover:text-white transition-colors">功能特性</a></li>
+                        <li><a href="/zh/guides/" class="hover:text-white transition-colors">教程中心</a></li>
+                        <li><a href="/zh/#download" class="hover:text-white transition-colors">下载</a></li>
                     </ul>
                 </div>
 

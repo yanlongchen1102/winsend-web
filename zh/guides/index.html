@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WinSend 教程中心 | iPhone 与 Windows 传输教程</title>
+    <meta name="description" content="WinSend 中文教程中心：查看 iPhone 与 Windows 文件传输、WinSend 安装设置、工作原理和效率使用教程。">
+    <meta name="robots" content="index,follow,max-image-preview:large">
+    <link rel="canonical" href="https://winsend.app/zh/guides/">
+    <meta property="og:locale" content="zh_CN">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="WinSend">
+    <meta property="og:title" content="WinSend 教程中心 | iPhone 与 Windows 传输教程">
+    <meta property="og:description" content="查看 WinSend 中文教程，学习 iPhone 与 Windows 文件传输、安装设置与工作原理。">
+    <meta property="og:url" content="https://winsend.app/zh/guides/">
+    <meta property="og:image" content="https://winsend.app/idea.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="WinSend 教程中心 | iPhone 与 Windows 传输教程">
+    <meta name="twitter:description" content="查看 WinSend 中文教程，学习 iPhone 与 Windows 文件传输、安装设置与工作原理。">
+    <meta name="twitter:image" content="https://winsend.app/idea.png">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+    <style>
+        * { font-family: 'Noto Sans SC', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; }
+        .gradient-text {
+            background: linear-gradient(135deg, #2563eb 0%, #3b82f6 50%, #60a5fa 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .hero-bg {
+            background:
+                radial-gradient(ellipse 80% 50% at 50% -20%, rgba(37, 99, 235, 0.15), transparent),
+                linear-gradient(180deg, #ffffff 0%, #f8fbff 100%);
+        }
+        .card-hover {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .card-hover:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 25px 50px -12px rgba(15, 23, 42, 0.12);
+        }
+        .btn-primary {
+            transition: all 0.2s ease;
+        }
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px -5px rgba(37, 99, 235, 0.35);
+        }
+    </style>
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "CollectionPage",
+            "name": "WinSend 教程中心",
+            "description": "WinSend 中文教程列表，涵盖 iPhone 与 Windows 文件传输、安装设置与工作原理。",
+            "url": "https://winsend.app/zh/guides/",
+            "inLanguage": "zh-CN",
+            "mainEntity": {
+                "@type": "ItemList",
+                "itemListElement": [
+                    {
+                        "@type": "ListItem",
+                        "position": 1,
+                        "url": "https://winsend.app/zh/guides/iphone-to-windows-transfer/",
+                        "name": "iPhone 到 Windows 文件传输教程"
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 2,
+                        "url": "https://winsend.app/zh/guides/setup/",
+                        "name": "WinSend 安装与配对设置"
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 3,
+                        "url": "https://winsend.app/zh/guides/how-it-works/",
+                        "name": "WinSend 如何工作"
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 4,
+                        "url": "https://winsend.app/zh/guides/iphone-shortcuts-clipboard-sync/",
+                        "name": "搭配 iPhone 快捷方式，实现系统级的剪贴板同步"
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 5,
+                        "url": "https://winsend.app/zh/comparison/winsend-vs-alternatives/",
+                        "name": "WinSend 与其他传输工具对比"
+                    }
+                ]
+            }
+        }
+    </script>
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+                {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "首页",
+                    "item": "https://winsend.app/zh/"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "教程中心",
+                    "item": "https://winsend.app/zh/guides/"
+                }
+            ]
+        }
+    </script>
+</head>
+<body class="bg-white text-gray-900 antialiased">
+    <nav aria-label="主导航" class="fixed top-0 left-0 right-0 bg-white/70 backdrop-blur-xl z-50 border-b border-gray-100">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+            <a href="/zh/" class="flex items-center gap-3">
+                <img src="/logo.png" alt="WinSend Logo" class="w-9 h-9 rounded-xl">
+                <span class="text-xl font-bold tracking-tight">WinSend</span>
+            </a>
+            <div class="flex items-center gap-6">
+                <a href="/zh/#features" class="text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors hidden sm:block">功能特性</a>
+                <a href="/zh/guides/" aria-current="page" class="text-sm font-semibold text-gray-900 transition-colors hidden sm:block">教程</a>
+                <a href="/zh/#download" class="btn-primary inline-flex items-center gap-2 px-5 py-2.5 bg-blue-600 text-white text-sm font-semibold rounded-lg hover:bg-blue-700">下载</a>
+                <a href="/en/" class="text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors">English</a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="hero-bg pt-32 pb-16 px-6">
+            <div class="max-w-6xl mx-auto">
+                <nav aria-label="面包屑" class="mb-8">
+                    <ol class="flex flex-wrap items-center gap-2 text-sm text-gray-500">
+                        <li><a href="/zh/" class="hover:text-gray-900 transition-colors">首页</a></li>
+                        <li aria-hidden="true">/</li>
+                        <li class="font-medium text-gray-900">教程中心</li>
+                    </ol>
+                </nav>
+                <section>
+                    <p class="text-sm font-semibold tracking-[0.24em] text-blue-600 uppercase mb-4">WinSend Guides</p>
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight mb-6">
+                        WinSend <span class="gradient-text">教程中心</span>
+                    </h1>
+                    <a href="/zh/guides/setup/" class="btn-primary inline-flex items-center gap-2 px-8 py-4 bg-blue-600 text-white text-lg font-semibold rounded-xl hover:bg-blue-700 transition-all shadow-lg shadow-blue-500/30">
+                        立即开始
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"/>
+                        </svg>
+                    </a>
+                </section>
+            </div>
+        </section>
+
+        <section class="py-20 px-6">
+            <div class="max-w-6xl mx-auto grid gap-8 md:grid-cols-2">
+                <article class="card-hover rounded-3xl border border-gray-200 bg-white p-8 shadow-sm">
+                    <p class="text-sm font-semibold text-blue-700 mb-3">核心流量页</p>
+                    <h2 class="text-2xl font-bold tracking-tight mb-4">iPhone 到 Windows 文件传输教程</h2>
+                    <p class="text-gray-600 leading-8 mb-6">聚焦最核心的用户问题，用最短路径告诉用户如何把 iPhone 上的内容传到 Windows，并串联安装、原理和对比内容。</p>
+                    <a href="/zh/guides/iphone-to-windows-transfer/" class="inline-flex items-center font-semibold text-blue-700 hover:text-blue-800 transition-colors">阅读教程</a>
+                </article>
+
+                <article class="card-hover rounded-3xl border border-gray-200 bg-white p-8 shadow-sm">
+                    <p class="text-sm font-semibold text-blue-700 mb-3">原理说明</p>
+                    <h2 class="text-2xl font-bold tracking-tight mb-4">WinSend 如何工作</h2>
+                    <p class="text-gray-600 leading-8 mb-6">解释 WinSend 的工作方式、为什么它更接近无感传输，以及为什么这种体验适合 iPhone 与 Windows 的混合设备场景。</p>
+                    <a href="/zh/guides/how-it-works/" class="inline-flex items-center font-semibold text-blue-700 hover:text-blue-800 transition-colors">阅读原理页</a>
+                </article>
+
+                <article class="card-hover rounded-3xl border border-gray-200 bg-white p-8 shadow-sm">
+                    <p class="text-sm font-semibold text-blue-700 mb-3">快捷方式玩法</p>
+                    <h2 class="text-2xl font-bold tracking-tight mb-4">系统级剪贴板同步教程</h2>
+                    <p class="text-gray-600 leading-8 mb-6">通过 iPhone 快捷方式和轻点背面，把剪贴板同步动作做得更接近系统级体验。页面已包含完整步骤图与横向滚动图片带。</p>
+                    <a href="/zh/guides/iphone-shortcuts-clipboard-sync/" class="inline-flex items-center font-semibold text-blue-700 hover:text-blue-800 transition-colors">查看这篇教程</a>
+                </article>
+
+                <article class="card-hover rounded-3xl border border-gray-200 bg-white p-8 shadow-sm">
+                    <p class="text-sm font-semibold text-blue-700 mb-3">转化型页面</p>
+                    <h2 class="text-2xl font-bold tracking-tight mb-4">WinSend 与其他传输工具对比</h2>
+                    <p class="text-gray-600 leading-8 mb-6">对比页结构已经搭好，当前先预留 AirDrop、LocalSend、AirDroid 等模块，方便你后续逐步补齐真实内容。</p>
+                    <a href="/zh/comparison/winsend-vs-alternatives/" class="inline-flex items-center font-semibold text-blue-700 hover:text-blue-800 transition-colors">查看对比页</a>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="py-16 px-6 bg-gray-900 text-gray-400">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid md:grid-cols-4 gap-12 mb-12">
+                <div class="md:col-span-2">
+                    <div class="flex items-center gap-3 mb-4">
+                        <img src="/logo.png" alt="WinSend Logo" class="w-9 h-9 rounded-xl">
+                        <span class="text-xl font-bold text-white">WinSend</span>
+                    </div>
+                    <p class="text-sm leading-relaxed max-w-md">Windows 版 AirDrop。<br>通过本地 Wi-Fi 或互联网在 iPhone 和 Windows 之间无缝传输文件。</p>
+                </div>
+                <div>
+                    <h4 class="text-white font-semibold mb-4">产品</h4>
+                    <ul class="space-y-3 text-sm">
+                        <li><a href="/zh/#features" class="hover:text-white transition-colors">功能特性</a></li>
+                        <li><a href="/zh/guides/" class="hover:text-white transition-colors">教程中心</a></li>
+                        <li><a href="/zh/#download" class="hover:text-white transition-colors">下载</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-semibold mb-4">联系我们</h4>
+                    <ul class="space-y-3 text-sm">
+                        <li><a href="#" class="hover:text-white transition-colors">GitHub</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Twitter</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">联系方式</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center gap-4 text-sm">
+                <p>&copy; 2025 WinSend. All rights reserved.</p>
+                <p class="flex items-center gap-2">为 iPhone 和 Windows 用户打造</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
