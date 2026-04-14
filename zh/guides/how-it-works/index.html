@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WinSend 如何工作 | WinSend 指南</title>
-    <meta name="description" content="了解 WinSend 的工作方式：为什么它更接近无感传输，以及它在 iPhone 与 Windows 传输场景中为什么更顺手。">
+    <title>WinSend 如何工作 | WinSend 教程</title>
+    <meta name="description" content="WinSend 使用局域网传输技术和 mDNS 自动发现，实现高速安全的跨系统同步。通过 iPhone 快捷指令实现无感传输。">
     <meta name="robots" content="index,follow,max-image-preview:large">
     <link rel="canonical" href="https://winsend.app/zh/guides/how-it-works/">
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
@@ -21,22 +21,36 @@
     <nav aria-label="主导航" class="fixed top-0 left-0 right-0 bg-white/70 backdrop-blur-xl z-50 border-b border-gray-100">
         <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
             <a href="/zh/" class="flex items-center gap-3"><img src="/logo.png" alt="WinSend Logo" class="w-9 h-9 rounded-xl"><span class="text-xl font-bold tracking-tight">WinSend</span></a>
-            <div class="flex items-center gap-6"><a href="/zh/#features" class="text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors hidden sm:block">功能特性</a><a href="/zh/guides/" class="text-sm font-semibold text-gray-900 transition-colors hidden sm:block">指南</a><a href="/zh/#download" class="inline-flex items-center gap-2 px-5 py-2.5 bg-blue-600 text-white text-sm font-semibold rounded-lg hover:bg-blue-700">下载</a><a href="/en/" class="text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors">English</a></div>
+            <div class="flex items-center gap-6"><a href="/zh/#features" class="text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors hidden sm:block">功能特性</a><a href="/zh/guides/" class="text-sm font-semibold text-gray-900 transition-colors hidden sm:block">教程</a><a href="/zh/#download" class="inline-flex items-center gap-2 px-5 py-2.5 bg-blue-600 text-white text-sm font-semibold rounded-lg hover:bg-blue-700">下载</a><a href="/en/" class="text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors">English</a></div>
         </div>
     </nav>
     <main>
         <section class="hero-bg pt-32 pb-14 px-6">
             <div class="max-w-6xl mx-auto">
-                <nav aria-label="面包屑" class="mb-8"><ol class="flex flex-wrap items-center gap-2 text-sm text-gray-500"><li><a href="/zh/" class="hover:text-gray-900 transition-colors">首页</a></li><li>/</li><li><a href="/zh/guides/" class="hover:text-gray-900 transition-colors">指南中心</a></li><li>/</li><li class="text-gray-900 font-medium">WinSend 如何工作</li></ol></nav>
+                <nav aria-label="面包屑" class="mb-8"><ol class="flex flex-wrap items-center gap-2 text-sm text-gray-500"><li><a href="/zh/" class="hover:text-gray-900 transition-colors">首页</a></li><li>/</li><li><a href="/zh/guides/" class="hover:text-gray-900 transition-colors">教程中心</a></li><li>/</li><li class="text-gray-900 font-medium">WinSend 如何工作</li></ol></nav>
                 <section class="grid gap-8 lg:grid-cols-[1.1fr_0.9fr] items-start">
                     <header>
                         <p class="text-sm font-semibold tracking-[0.24em] text-blue-600 uppercase mb-4">How It Works</p>
                         <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight mb-6">WinSend 如何工作</h1>
-                        <p class="text-xl text-gray-600 leading-9 max-w-3xl">这一页专门解释体验背后的逻辑，帮助用户理解为什么 WinSend 更接近“复制后就能继续工作”的无感传输方式。</p>
+                        <p class="text-xl text-gray-600 leading-9 max-w-3xl">WinSend 完全使用局域网传输技术，通过 mDNS 自动发现设备。实现了统一网络环境下自动配对，高速传输，数据绝对安全的 iPhone 和 Windows 跨系统同步。</p>
                     </header>
                     <section class="rounded-3xl border border-blue-100 bg-white p-8 shadow-lg shadow-blue-100/50">
-                        <h2 class="text-2xl font-bold tracking-tight mb-4">页面定位</h2>
-                        <p class="text-gray-600 leading-8">这里不是教你安装，而是帮助你理解这套体验为什么成立，以及它相比传统传输方式为什么更适合 iPhone + Windows 的混合设备场景。</p>
+                        <h2 class="text-2xl font-bold tracking-tight mb-4">核心特性</h2>
+                        <p class="text-gray-600 leading-8 mb-4">同时 WinSend App 搭配了 iPhone 的快捷指令，实现了无需打开 App 即可实现剪贴板复制传输，在 iOS 对 App 后台运行的限制下，几乎实现了系统级的完美无感传输。</p>
+                        <ul class="space-y-2 text-gray-600">
+                            <li class="flex items-start gap-2">
+                                <span class="text-blue-600 mt-1">✓</span>
+                                <span>局域网传输，数据不经过第三方服务器</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-blue-600 mt-1">✓</span>
+                                <span>mDNS 自动发现，无需手动配置 IP 地址</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-blue-600 mt-1">✓</span>
+                                <span>配合快捷指令实现真正的无感传输</span>
+                            </li>
+                        </ul>
                     </section>
                 </section>
             </div>
@@ -44,16 +58,46 @@
         <section class="px-6 pb-20">
             <div class="max-w-6xl mx-auto grid gap-8 lg:grid-cols-[1.2fr_0.8fr]">
                 <article class="rounded-[2rem] border border-gray-200 bg-white p-8 sm:p-10 shadow-sm">
-                    <section class="mb-10"><h2 class="text-3xl font-bold tracking-tight mb-4">为什么它更接近无感传输</h2><p class="text-gray-600 leading-8 mb-4">真正影响体验的，不只是“传得出去”，而是“触发成本够不够低”。当设备安装完毕并完成配对后，后续使用不需要反复打开多个页面或工具，动作更短，打断更少。</p><ul class="list-disc pl-5 space-y-3 text-gray-600 leading-8"><li>更少的中转步骤</li><li>更适合高频小内容传输</li><li>更容易接入快捷指令、轻点背面等触发入口</li></ul></section>
-                    <section class="mb-10"><h2 class="text-3xl font-bold tracking-tight mb-4">WinSend 的工作链路</h2><p class="text-gray-600 leading-8 mb-4">你可以把它理解成一个面向 iPhone 与 Windows 之间内容流转的轻量工作链路：设备建立可用连接后，用户在手机上的复制、发送或触发动作会被快速转交到电脑侧继续处理。</p><p class="text-gray-600 leading-8">这就是为什么它很适合短文本、链接、图片、验证码和临时素材，而不只是一次性的“大文件传输”。</p></section>
-                    <section><h2 class="text-3xl font-bold tracking-tight mb-4">为什么这页很重要</h2><p class="text-gray-600 leading-8 mb-4">当用户还在判断 WinSend 和其他方案有什么差异时，这页能补足“体验为什么不同”的解释。它也会成为你后续写对比页时的论据来源。</p><p class="text-gray-600 leading-8">如果你还没有完成安装，先看 <a href="/zh/guides/setup/" class="text-blue-700 hover:underline">安装与配对设置</a>；如果你更关心如何直接开始使用，回到 <a href="/zh/guides/iphone-to-windows-transfer/" class="text-blue-700 hover:underline">核心指南</a>。</p></section>
+                    <section class="mb-10">
+                        <h2 class="text-3xl font-bold tracking-tight mb-4">技术原理</h2>
+                        <p class="text-gray-600 leading-8 mb-4">WinSend 完全使用局域网传输技术，通过 mDNS（Multicast DNS）自动发现设备。这意味着在同一网络下，iPhone 和 Windows 能够自动发现彼此并进行配对，无需复杂的配置过程。</p>
+                        <p class="text-gray-600 leading-8">这种方案的优势在于：</p>
+                        <ul class="list-disc pl-5 space-y-3 text-gray-600 leading-8 mt-4">
+                            <li><strong>数据安全</strong>：所有数据都在局域网内传输，不经过任何第三方服务器</li>
+                            <li><strong>传输速度</strong>：局域网传输速度远快于云端中转</li>
+                            <li><strong>零配置</strong>：自动发现设备，无需输入 IP 地址或验证码</li>
+                        </ul>
+                    </section>
+
+                    <section class="mb-10">
+                        <h2 class="text-3xl font-bold tracking-tight mb-4">无感传输的实现</h2>
+                        <p class="text-gray-600 leading-8 mb-4">传统传输工具需要每次打开 App、选择设备、确认发送，整个过程繁琐且容易打断工作流。WinSend 通过巧妙利用 iOS 的快捷指令（Shortcuts）功能，实现了真正的无感传输。</p>
+                        <p class="text-gray-600 leading-8 mb-4">具体实现方式：</p>
+                        <ol class="list-decimal pl-5 space-y-3 text-gray-600 leading-8 mt-4">
+                            <li>在快捷指令 App 中配置 WinSend 的传输脚本</li>
+                            <li>将快捷指令绑定到 iPhone 的"轻点背面"手势</li>
+                            <li>在任意 App 中复制内容后，轻点手机背面即可触发传输</li>
+                        </ol>
+                        <p class="text-gray-600 leading-8 mt-4">这个设计让 WinSend 在 iOS 对 App 后台运行的严格限制下，依然能够实现接近系统级的无感传输体验。</p>
+                    </section>
+
+                    <section>
+                        <h2 class="text-3xl font-bold tracking-tight mb-4">适用场景</h2>
+                        <p class="text-gray-600 leading-8 mb-4">WinSend 特别适合以下使用场景：</p>
+                        <ul class="list-disc pl-5 space-y-3 text-gray-600 leading-8 mt-4">
+                            <li><strong>高频小内容传输</strong>：文字、链接、验证码等日常内容快速同步</li>
+                            <li><strong>跨设备工作流</strong>：在 iPhone 和 Windows 之间无缝切换工作</li>
+                            <li><strong>临时文件传输</strong>：照片、文档等临时需要共享的文件</li>
+                            <li><strong>隐私敏感内容</strong>：需要确保数据不经过第三方服务器的场景</li>
+                        </ul>
+                    </section>
                 </article>
                 <aside class="space-y-6">
-                    <section class="rounded-3xl border border-gray-200 bg-white p-8 shadow-sm"><h2 class="text-2xl font-bold tracking-tight mb-4">相关页面</h2><div class="flex flex-col gap-3"><a href="/zh/guides/iphone-to-windows-transfer/" class="inline-flex items-center justify-center rounded-xl border border-gray-200 px-6 py-3 font-semibold text-gray-900 transition hover:border-blue-200 hover:text-blue-700">核心指南</a><a href="/zh/comparison/winsend-vs-alternatives/" class="inline-flex items-center justify-center rounded-xl border border-gray-200 px-6 py-3 font-semibold text-gray-900 transition hover:border-blue-200 hover:text-blue-700">工具对比</a></div></section>
+                    <section class="rounded-3xl border border-gray-200 bg-white p-8 shadow-sm"><h2 class="text-2xl font-bold tracking-tight mb-4">相关页面</h2><div class="flex flex-col gap-3"><a href="/zh/guides/setup/" class="inline-flex items-center justify-center rounded-xl border border-gray-200 px-6 py-3 font-semibold text-gray-900 transition hover:border-blue-200 hover:text-blue-700">安装与配对设置</a><a href="/zh/comparison/winsend-vs-alternatives/" class="inline-flex items-center justify-center rounded-xl border border-gray-200 px-6 py-3 font-semibold text-gray-900 transition hover:border-blue-200 hover:text-blue-700">工具对比</a></div></section>
                 </aside>
             </div>
         </section>
     </main>
-    <footer class="py-16 px-6 bg-gray-900 text-gray-400"><div class="max-w-6xl mx-auto"><div class="grid md:grid-cols-4 gap-12 mb-12"><div class="md:col-span-2"><div class="flex items-center gap-3 mb-4"><img src="/logo.png" alt="WinSend Logo" class="w-9 h-9 rounded-xl"><span class="text-xl font-bold text-white">WinSend</span></div><p class="text-sm leading-relaxed max-w-md">Windows 版 AirDrop。<br>通过本地 Wi-Fi 或互联网在 iPhone 和 Windows 之间无缝传输文件。</p></div><div><h4 class="text-white font-semibold mb-4">产品</h4><ul class="space-y-3 text-sm"><li><a href="/zh/#features" class="hover:text-white transition-colors">功能特性</a></li><li><a href="/zh/guides/" class="hover:text-white transition-colors">指南中心</a></li><li><a href="/zh/#download" class="hover:text-white transition-colors">下载</a></li></ul></div><div><h4 class="text-white font-semibold mb-4">联系我们</h4><ul class="space-y-3 text-sm"><li><a href="#" class="hover:text-white transition-colors">GitHub</a></li><li><a href="#" class="hover:text-white transition-colors">Twitter</a></li><li><a href="#" class="hover:text-white transition-colors">联系方式</a></li></ul></div></div><div class="pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center gap-4 text-sm"><p>&copy; 2025 WinSend. All rights reserved.</p><p>为 iPhone 和 Windows 用户打造</p></div></div></footer>
+    <footer class="py-16 px-6 bg-gray-900 text-gray-400"><div class="max-w-6xl mx-auto"><div class="grid md:grid-cols-4 gap-12 mb-12"><div class="md:col-span-2"><div class="flex items-center gap-3 mb-4"><img src="/logo.png" alt="WinSend Logo" class="w-9 h-9 rounded-xl"><span class="text-xl font-bold text-white">WinSend</span></div><p class="text-sm leading-relaxed max-w-md">Windows 版 AirDrop。<br>通过本地 Wi-Fi 或互联网在 iPhone 和 Windows 之间无缝传输文件。</p></div><div><h4 class="text-white font-semibold mb-4">产品</h4><ul class="space-y-3 text-sm"><li><a href="/zh/#features" class="hover:text-white transition-colors">功能特性</a></li><li><a href="/zh/guides/" class="hover:text-white transition-colors">教程中心</a></li><li><a href="/zh/#download" class="hover:text-white transition-colors">下载</a></li></ul></div><div><h4 class="text-white font-semibold mb-4">联系我们</h4><ul class="space-y-3 text-sm"><li><a href="#" class="hover:text-white transition-colors">GitHub</a></li><li><a href="#" class="hover:text-white transition-colors">Twitter</a></li><li><a href="#" class="hover:text-white transition-colors">联系方式</a></li></ul></div></div><div class="pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center gap-4 text-sm"><p>&copy; 2025 WinSend. All rights reserved.</p><p>为 iPhone 和 Windows 用户打造</p></div></div></footer>
 </body>
 </html>
