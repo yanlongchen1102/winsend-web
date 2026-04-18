@@ -1,57 +1,109 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-    <url>
-        <loc>https://winsend.app/</loc>
-        <lastmod>2026-04-11</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.8</priority>
-    </url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+    <!-- Homepage -->
     <url>
         <loc>https://winsend.app/en/</loc>
-        <lastmod>2026-04-11</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.7</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://winsend.app/en/" />
+        <xhtml:link rel="alternate" hreflang="zh" href="https://winsend.app/zh/" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://winsend.app/en/" />
+        <lastmod>2026-04-10</lastmod>
     </url>
     <url>
         <loc>https://winsend.app/zh/</loc>
-        <lastmod>2026-04-11</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>1.0</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://winsend.app/en/" />
+        <xhtml:link rel="alternate" hreflang="zh" href="https://winsend.app/zh/" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://winsend.app/en/" />
+        <lastmod>2026-04-10</lastmod>
     </url>
+
+    <!-- English Guide Center -->
+    <url>
+        <loc>https://winsend.app/en/guides/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://winsend.app/en/guides/" />
+        <xhtml:link rel="alternate" hreflang="zh" href="https://winsend.app/zh/guides/" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://winsend.app/en/guides/" />
+        <lastmod>2026-04-14</lastmod>
+    </url>
+
+    <!-- Chinese Guide Center -->
     <url>
         <loc>https://winsend.app/zh/guides/</loc>
-        <lastmod>2026-04-11</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.9</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://winsend.app/en/guides/" />
+        <xhtml:link rel="alternate" hreflang="zh" href="https://winsend.app/zh/guides/" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://winsend.app/en/guides/" />
+        <lastmod>2026-04-10</lastmod>
     </url>
+
+    <!-- Setup Guide (English) -->
     <url>
-        <loc>https://winsend.app/zh/guides/iphone-to-windows-transfer/</loc>
-        <lastmod>2026-04-11</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
+        <loc>https://winsend.app/en/guides/setup/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://winsend.app/en/guides/setup/" />
+        <xhtml:link rel="alternate" hreflang="zh" href="https://winsend.app/zh/guides/setup/" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://winsend.app/en/guides/setup/" />
+        <lastmod>2026-04-14</lastmod>
     </url>
+
+    <!-- Setup Guide (Chinese) -->
     <url>
         <loc>https://winsend.app/zh/guides/setup/</loc>
-        <lastmod>2026-04-11</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://winsend.app/en/guides/setup/" />
+        <xhtml:link rel="alternate" hreflang="zh" href="https://winsend.app/zh/guides/setup/" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://winsend.app/en/guides/setup/" />
+        <lastmod>2026-04-14</lastmod>
     </url>
+
+    <!-- How It Works (English) -->
+    <url>
+        <loc>https://winsend.app/en/guides/how-it-works/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://winsend.app/en/guides/how-it-works/" />
+        <xhtml:link rel="alternate" hreflang="zh" href="https://winsend.app/zh/guides/how-it-works/" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://winsend.app/en/guides/how-it-works/" />
+        <lastmod>2026-04-14</lastmod>
+    </url>
+
+    <!-- How It Works (Chinese) -->
     <url>
         <loc>https://winsend.app/zh/guides/how-it-works/</loc>
-        <lastmod>2026-04-11</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://winsend.app/en/guides/how-it-works/" />
+        <xhtml:link rel="alternate" hreflang="zh" href="https://winsend.app/zh/guides/how-it-works/" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://winsend.app/en/guides/how-it-works/" />
+        <lastmod>2026-04-14</lastmod>
     </url>
+
+    <!-- iPhone Shortcuts Clipboard Sync (English) -->
+    <url>
+        <loc>https://winsend.app/en/guides/iphone-shortcuts-clipboard-sync/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://winsend.app/en/guides/iphone-shortcuts-clipboard-sync/" />
+        <xhtml:link rel="alternate" hreflang="zh" href="https://winsend.app/zh/guides/iphone-shortcuts-clipboard-sync/" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://winsend.app/en/guides/iphone-shortcuts-clipboard-sync/" />
+        <lastmod>2026-04-14</lastmod>
+    </url>
+
+    <!-- iPhone Shortcuts Clipboard Sync (Chinese) -->
     <url>
         <loc>https://winsend.app/zh/guides/iphone-shortcuts-clipboard-sync/</loc>
-        <lastmod>2026-04-11</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://winsend.app/en/guides/iphone-shortcuts-clipboard-sync/" />
+        <xhtml:link rel="alternate" hreflang="zh" href="https://winsend.app/zh/guides/iphone-shortcuts-clipboard-sync/" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://winsend.app/en/guides/iphone-shortcuts-clipboard-sync/" />
+        <lastmod>2026-04-14</lastmod>
     </url>
+
+    <!-- WinSend vs Alternatives (English) -->
+    <url>
+        <loc>https://winsend.app/en/comparison/winsend-vs-alternatives/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://winsend.app/en/comparison/winsend-vs-alternatives/" />
+        <xhtml:link rel="alternate" hreflang="zh" href="https://winsend.app/zh/comparison/winsend-vs-alternatives/" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://winsend.app/en/comparison/winsend-vs-alternatives/" />
+        <lastmod>2026-04-14</lastmod>
+    </url>
+
+    <!-- WinSend vs Alternatives (Chinese) -->
     <url>
         <loc>https://winsend.app/zh/comparison/winsend-vs-alternatives/</loc>
-        <lastmod>2026-04-11</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://winsend.app/en/comparison/winsend-vs-alternatives/" />
+        <xhtml:link rel="alternate" hreflang="zh" href="https://winsend.app/zh/comparison/winsend-vs-alternatives/" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://winsend.app/en/comparison/winsend-vs-alternatives/" />
+        <lastmod>2026-04-14</lastmod>
     </url>
 </urlset>
