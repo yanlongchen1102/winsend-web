@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Copy on iPhone, Paste on Windows (Automatic Clipboard Sync) | WinSend Guide</title>
-    <meta name="description" content="Copy on iPhone, paste on Windows. Just install WinSend once to get automatic clipboard sync — no manual steps, just works.">
+    <title>How to Share Clipboard Between iPhone and Windows (Closest to AirDrop) | WinSend Guide</title>
+    <meta name="description" content="No need to repeatedly open apps. Just copy on iPhone and tap the back of your phone to send to Windows.">
     <meta name="robots" content="index,follow,max-image-preview:large">
     <link rel="canonical" href="https://winsend.app/en/guides/iphone-shortcuts-clipboard-sync/">
     <link rel="alternate" hreflang="en" href="https://winsend.app/en/guides/iphone-shortcuts-clipboard-sync/" />
@@ -82,6 +82,65 @@
             margin: 1.75rem 0;
             font-weight: 600;
         }
+        .hero-container {
+            width: min(100%, 78vw);
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+        .article-section-shell {
+            width: 100%;
+            margin: 0 auto;
+            position: relative;
+        }
+        .article-container {
+            width: min(100%, 70vw);
+            max-width: 980px;
+            margin: 0 auto;
+            min-width: 0;
+        }
+        .toc-sidebar,
+        .related-sidebar {
+            display: none;
+            width: 220px;
+            min-width: 0;
+        }
+        .sidebar-panel {
+            position: sticky;
+            top: 7rem;
+            max-height: calc(100vh - 9rem);
+            overflow-y: auto;
+        }
+        .toc-link {
+            display: block;
+            padding: 0.5rem 0;
+            color: #6b7280;
+            text-decoration: none;
+            font-size: 0.875rem;
+            line-height: 1.4;
+            transition: color 0.2s ease;
+            border-left: 2px solid transparent;
+            padding-left: 1rem;
+        }
+        .toc-link:hover {
+            color: #2563eb;
+        }
+        .toc-link.active {
+            color: #2563eb;
+            border-left-color: #2563eb;
+            font-weight: 600;
+        }
+        .toc-link.level-3 {
+            padding-left: 2rem;
+            font-size: 0.8125rem;
+        }
+        .toc-title {
+            font-size: 0.875rem;
+            font-weight: 700;
+            color: #111827;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
         .image-strip {
             display: flex;
             gap: 1rem;
@@ -111,6 +170,20 @@
             border: 1px solid #e5e7eb;
             box-shadow: 0 12px 30px -20px rgba(15, 23, 42, 0.45);
             background: white;
+        }
+        @media (min-width: 1400px) {
+            .toc-sidebar,
+            .related-sidebar {
+                display: block;
+                position: absolute;
+                top: 0;
+            }
+            .toc-sidebar {
+                left: calc(50% - 490px - 32px - 220px);
+            }
+            .related-sidebar {
+                left: calc(50% + 490px + 32px);
+            }
         }
         @media (min-width: 768px) {
             .image-card {
@@ -189,7 +262,7 @@
 
     <main>
         <section class="hero-bg pt-32 pb-14 px-6">
-            <div class="max-w-6xl mx-auto">
+            <div class="hero-container">
                 <nav aria-label="Breadcrumb" class="mb-8">
                     <ol class="flex flex-wrap items-center gap-2 text-sm text-gray-500">
                         <li><a href="/en/" class="hover:text-gray-900 transition-colors">Home</a></li>
@@ -200,99 +273,85 @@
                     </ol>
                 </nav>
 
-                <section class="grid gap-8 lg:grid-cols-[1.1fr_0.9fr] items-start">
-                    <header>
-                        <div class="flex flex-wrap items-center gap-3 mb-5 text-sm">
-                            <span class="rounded-full bg-blue-600 px-3 py-1 font-semibold text-white">New Guide</span>
-                            <span class="rounded-full border border-blue-100 bg-blue-50 px-3 py-1 font-medium text-blue-700">iPhone Shortcuts</span>
-                            <span class="rounded-full border border-blue-100 bg-blue-50 px-3 py-1 font-medium text-blue-700">Clipboard Sync</span>
-                        </div>
-                        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight mb-6">
-                            Copy on iPhone, <span class="gradient-text">Paste</span> on Windows (Automatic Clipboard Sync)
-                        </h1>
-                        <p class="text-xl text-gray-600 leading-9 max-w-3xl mb-7">
-                            Through iPhone Shortcuts and Back Tap trigger method, WinSend achieves near AirDrop experience iOS and Windows cross-system clipboard sync.
-                        </p>
-                        <div class="flex flex-wrap gap-5 text-sm text-gray-500">
-                            <span>Updated: 2026-04-11</span>
-                            <span>Reading Time: ~4 minutes</span>
-                            <span>For: iPhone + Windows Users</span>
-                        </div>
-                    </header>
-
-                    <section class="rounded-3xl border border-blue-100 bg-white p-8 shadow-lg shadow-blue-100/50">
-                        <h2 class="text-2xl font-bold tracking-tight mb-4">Summary</h2>
-                        <ul class="space-y-3 text-gray-600 leading-8">
-                            <li>No need to manually open transfer app every time</li>
-                            <li>Quick trigger sync through "Back Tap"</li>
-                            <li>Send copied content to Windows from any app</li>
-                            <li>Suitable for high-frequency sync scenarios of text, links and lightweight content</li>
-                        </ul>
-                        <div class="mt-6 flex flex-col gap-3">
-                            <a href="/en/#download" class="btn-primary inline-flex items-center justify-center rounded-xl bg-blue-600 px-6 py-3 font-semibold text-white hover:bg-blue-700">Download WinSend</a>
-                            <a href="/en/guides/setup/" class="inline-flex items-center justify-center rounded-xl border border-gray-200 px-6 py-3 font-semibold text-gray-900 transition hover:border-blue-200 hover:text-blue-700">Read Installation Guide First</a>
-                        </div>
-                    </section>
-                </section>
+                <header>
+                    <div class="flex flex-wrap items-center gap-3 mb-5 text-sm">
+                        <span class="rounded-full bg-blue-600 px-3 py-1 font-semibold text-white">New Guide</span>
+                        <span class="rounded-full border border-blue-100 bg-blue-50 px-3 py-1 font-medium text-blue-700">iPhone Shortcuts</span>
+                        <span class="rounded-full border border-blue-100 bg-blue-50 px-3 py-1 font-medium text-blue-700">Clipboard Sync</span>
+                    </div>
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight mb-6">
+                        How to <span class="gradient-text">Share Clipboard</span> Between iPhone and Windows (Closest to AirDrop)
+                    </h1>
+                    <p class="text-xl text-gray-600 leading-9 mb-7">
+                        No need to repeatedly open apps. Just copy on iPhone and tap the back of your phone to send to Windows.
+                    </p>
+                    <div class="flex flex-wrap gap-5 text-sm text-gray-500">
+                        <span>Updated: 2026-04-11</span>
+                        <span>Reading Time: ~4 minutes</span>
+                        <span>For: iPhone + Windows Users</span>
+                    </div>
+                </header>
             </div>
         </section>
 
         <section class="px-6 pb-20">
-            <div class="max-w-6xl mx-auto grid gap-10 lg:grid-cols-[1.2fr_0.8fr]">
-                <article class="article-prose rounded-[2rem] border border-gray-200 bg-white p-8 sm:p-10 shadow-sm">
-                    <section>
-                        <p>Through iPhone's Shortcuts + Back Tap trigger method, WinSend achieves the closest to system-level experience iOS and Windows cross-system data sync.</p>
+            <div class="article-section-shell">
+                <!-- Left TOC Sidebar -->
+                <aside class="toc-sidebar">
+                    <div class="sidebar-panel">
+                        <nav class="toc-title">Table of Contents</nav>
+                        <div id="toc-content">
+                            <a href="#section-intro" class="toc-link">Introduction</a>
+                            <a href="#section-demo" class="toc-link">Actual Usage Effect</a>
+                            <a href="#section-tutorial" class="toc-link">Detailed Setup Tutorial</a>
+                            <a href="#step-install" class="toc-link level-3">Step 1: Install WinSend</a>
+                            <a href="#step-open-app" class="toc-link level-3">Step 2: Enter Shortcut Setup</a>
+                            <a href="#step-add-shortcut" class="toc-link level-3">Step 3: Add Shortcut</a>
+                            <a href="#step-back-tap" class="toc-link level-3">Step 4: Set Up Back Tap</a>
+                            <a href="#section-faq" class="toc-link">FAQ</a>
+                        </div>
+                    </div>
+                </aside>
+
+                <article class="article-container article-prose rounded-[2rem] border border-gray-200 bg-white p-6 sm:p-8 xl:p-10 shadow-sm">
+                    <section id="section-intro">
+                        <p>Traditional cross-device transfer software all require opening apps to complete transfer tasks, unable to achieve AirDrop-like seamless copy sync.</p>
                         <p>WinSend enables clipboard copy and transfer with Windows without opening the app. This is one of WinSend's most intelligent features that distinguishes it from traditional transfer software like LocalSend.</p>
-                        <p>Traditional transfer software all require opening the app to complete transfer tasks, unable to achieve AirDrop-like seamless copy sync.</p>
                         <blockquote>We've achieved the ability to copy and sync in any app with just two taps on the back of the phone. This is currently the closest transfer functionality to AirDrop.</blockquote>
                     </section>
 
-                    <section>
+                    <hr style="border: none; border-top: 2px solid #e5e7eb; margin: 2rem 0;">
+
+                    <section id="section-demo" style="margin-bottom: 2.5rem;">
                         <h2>Actual Usage Effect</h2>
                         <p>Below is a practical demonstration</p>
 
-                        <section class="mb-8">
-                            <h3>Copy Content in Any App</h3>
-                            <div class="image-strip" aria-label="Copy content demo images">
-                                <figure class="image-card"><img src="./images/show1.PNG" alt="Copy content in iPhone app demo 1"></figure>
-                                <figure class="image-card"><img src="./images/show2.PNG" alt="Copy content in iPhone app demo 2"></figure>
-                            </div>
-                        </section>
-
-                        <section class="mb-8">
-                            <h3>Double Tap Back of Phone</h3>
-                            <div class="image-strip" aria-label="Double tap back demo images">
-                                <figure class="image-card"><img src="./images/show3.PNG" alt="Double tap back trigger shortcut demo"></figure>
-                            </div>
-                        </section>
-
-                        <section class="mb-8">
-                            <h3>Select Sync to Windows</h3>
-                            <div class="image-strip" aria-label="Select sync direction demo images">
-                                <figure class="image-card"><img src="./images/show4.PNG" alt="Select sync to Windows demo"></figure>
-                            </div>
-                        </section>
-
-                        <section>
-                            <h3>Sync Successful</h3>
-                            <div class="image-strip" aria-label="Sync success demo images">
-                                <figure class="image-card"><img src="./images/show5.PNG" alt="Sync success demo"></figure>
-                            </div>
-                            <p class="mt-4">This way, on Windows device you can directly use <code>Ctrl + V</code> to paste the content just copied on iPhone.</p>
-                        </section>
+                        <video
+                          autoplay
+                          muted
+                          loop
+                          playsinline
+                          preload="metadata"
+                          class="demo-video"
+                          style="width: 100%; max-width: 420px; border-radius: 1rem; border: 1px solid #e5e7eb; box-shadow: 0 12px 30px -20px rgba(15, 23, 42, 0.45); display: block;"
+                        >
+                          <source src="./videos/clipboard-sync-show.mov" type="video/mp4">
+                        </video>
                     </section>
 
-                    <section>
+                    <hr style="border: none; border-top: 2px solid #e5e7eb; margin: 2rem 0;">
+
+                    <section id="section-tutorial">
                         <h2>Detailed Setup Tutorial</h2>
                         <p>Install once, use anytime</p>
 
-                        <section class="rounded-3xl bg-gray-50 p-6 sm:p-7 mb-6">
+                        <section id="step-install" class="rounded-3xl bg-gray-50 p-6 sm:p-7 mb-6">
                             <h3>Step 1: Install WinSend iOS and Windows Client</h3>
                             <p>First ensure both iPhone and Windows are installed and running normally in the same network environment.</p>
                             <p>Installation process can be found at: <a href="/en/guides/setup/" class="text-blue-700 hover:underline">WinSend Installation and Pairing Setup</a></p>
                         </section>
 
-                        <section class="rounded-3xl bg-gray-50 p-6 sm:p-7 mb-6">
+                        <section id="step-open-app" class="rounded-3xl bg-gray-50 p-6 sm:p-7 mb-6">
                             <h3>Step 2: Open WinSend App, Enter Shortcuts Setup Page</h3>
                             <div class="image-strip" aria-label="Shortcuts setup page images">
                                 <figure class="image-card"><img src="./images/step2_1.PNG" alt="WinSend iPhone shortcuts setup page 1"></figure>
@@ -300,7 +359,7 @@
                             </div>
                         </section>
 
-                        <section class="rounded-3xl bg-gray-50 p-6 sm:p-7 mb-6">
+                        <section id="step-add-shortcut" class="rounded-3xl bg-gray-50 p-6 sm:p-7 mb-6">
                             <h3>Step 3: Add Shortcut</h3>
                             <p>Complete shortcut addition through the entry provided in the app. You can view it in the Shortcuts app.</p>
                             <div class="image-strip" aria-label="Add shortcut images">
@@ -309,9 +368,35 @@
                             </div>
                         </section>
 
-                        <section class="rounded-3xl bg-gray-50 p-6 sm:p-7">
+                        <section id="step-back-tap" class="rounded-3xl bg-gray-50 p-6 sm:p-7">
                             <h3>Step 4: Set Up Back Double Tap / Triple Tap Trigger</h3>
                             <p>Bind the newly added shortcut to iPhone's "Back Tap" feature. We recommend trying double tap first. If concerned about accidental triggers, you can also use triple tap.</p>
+
+                            <div class="mt-6 mb-8 p-5 rounded-2xl bg-white border-2 border-blue-100">
+                                <ol class="space-y-3 text-left">
+                                    <li class="flex gap-3 items-start">
+                                        <span class="flex-shrink-0 w-6 h-6 rounded-full bg-blue-600 text-white text-sm font-bold flex items-center justify-center">1</span>
+                                        <span class="text-gray-700 leading-relaxed pt-0.5">Open iPhone <strong class="text-gray-900">"Settings"</strong></span>
+                                    </li>
+                                    <li class="flex gap-3 items-start">
+                                        <span class="flex-shrink-0 w-6 h-6 rounded-full bg-blue-600 text-white text-sm font-bold flex items-center justify-center">2</span>
+                                        <span class="text-gray-700 leading-relaxed pt-0.5">Go to <strong class="text-gray-900">"Accessibility" → "Touch" → "Back Tap"</strong></span>
+                                    </li>
+                                    <li class="flex gap-3 items-start">
+                                        <span class="flex-shrink-0 w-6 h-6 rounded-full bg-blue-600 text-white text-sm font-bold flex items-center justify-center">3</span>
+                                        <span class="text-gray-700 leading-relaxed pt-0.5">Select <strong class="text-gray-900">"Double Tap"</strong> or <strong class="text-gray-900">"Triple Tap"</strong></span>
+                                    </li>
+                                    <li class="flex gap-3 items-start">
+                                        <span class="flex-shrink-0 w-6 h-6 rounded-full bg-blue-600 text-white text-sm font-bold flex items-center justify-center">4</span>
+                                        <span class="text-gray-700 leading-relaxed pt-0.5">Find and select <strong class="text-gray-900">"WinSend Copy Sync"</strong></span>
+                                    </li>
+                                    <li class="flex gap-3 items-start">
+                                        <span class="flex-shrink-0 w-6 h-6 rounded-full bg-green-600 text-white text-sm font-bold flex items-center justify-center">✓</span>
+                                        <span class="text-gray-700 leading-relaxed pt-0.5">After completion, <strong class="text-gray-900">double tap the back of your phone</strong> to trigger sync</span>
+                                    </li>
+                                </ol>
+                            </div>
+
                             <div class="image-strip" aria-label="Setup back tap trigger images">
                                 <figure class="image-card"><img src="./images/step4_1.PNG" alt="Setup back tap step 1"></figure>
                                 <figure class="image-card"><img src="./images/step4_2.PNG" alt="Setup back tap step 2"></figure>
@@ -321,21 +406,155 @@
                         </section>
                     </section>
 
-                    <section>
-                        <h2>Why This Approach Is Closer to System-Level Experience</h2>
-                        <p>Because it changes the "open app then send" action to "copy then directly trigger" action. For people who frequently transfer short content, this difference is very obvious.</p>
-                        <p>If you're interested in iOS Shortcuts, you can continue to read <a href="/en/guides/how-it-works/" class="text-blue-700 hover:underline">How WinSend Works</a>.</p>
+                    <hr style="border: none; border-top: 2px solid #e5e7eb; margin: 2rem 0;">
+
+                    <section id="section-faq">
+                        <h2>FAQ</h2>
+
+                        <div class="space-y-4">
+                            <details class="group rounded-3xl bg-gray-50 [&_summary::-webkit-details-marker]:hidden">
+                                <summary class="flex cursor-pointer items-center justify-between gap-1.5 p-6 text-lg font-bold text-gray-900 transition-colors hover:text-blue-700">
+                                    <span>1. Can iPhone and Windows share clipboard?</span>
+                                    <span class="shrink-0 rounded-full bg-white p-1.5 text-gray-500 shadow-sm group-open:bg-blue-600 group-open:text-white transition-colors">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 transition-transform group-open:rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                          <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+                                        </svg>
+                                    </span>
+                                </summary>
+                                <div class="px-6 pb-6 text-gray-600 leading-7 space-y-3">
+                                    <p>By default, no.</p>
+                                    <p>Apple's Universal Clipboard only supports syncing between iPhone, iPad, and Mac. Windows computers cannot use it directly.</p>
+                                    <p>If you're using a Windows PC, you can use WinSend with the AirDrop shortcut to directly paste on your computer after copying content on iPhone.</p>
+                                </div>
+                            </details>
+
+                            <details class="group rounded-3xl bg-gray-50 [&_summary::-webkit-details-marker]:hidden">
+                                <summary class="flex cursor-pointer items-center justify-between gap-1.5 p-6 text-lg font-bold text-gray-900 transition-colors hover:text-blue-700">
+                                    <span>2. Can AirDrop transfer to Windows computers?</span>
+                                    <span class="shrink-0 rounded-full bg-white p-1.5 text-gray-500 shadow-sm group-open:bg-blue-600 group-open:text-white transition-colors">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 transition-transform group-open:rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                          <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+                                        </svg>
+                                    </span>
+                                </summary>
+                                <div class="px-6 pb-6 text-gray-600 leading-7 space-y-3">
+                                    <p>No.</p>
+                                    <p>AirDrop only supports transfers between Apple devices, such as iPhone, iPad, and Mac.</p>
+                                    <p>If you're using Windows, you can use WinSend as an alternative to quickly transfer text, links, and other content.</p>
+                                </div>
+                            </details>
+
+                            <details class="group rounded-3xl bg-gray-50 [&_summary::-webkit-details-marker]:hidden">
+                                <summary class="flex cursor-pointer items-center justify-between gap-1.5 p-6 text-lg font-bold text-gray-900 transition-colors hover:text-blue-700">
+                                    <span>3. How to quickly send copied text from iPhone to computer?</span>
+                                    <span class="shrink-0 rounded-full bg-white p-1.5 text-gray-500 shadow-sm group-open:bg-blue-600 group-open:text-white transition-colors">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 transition-transform group-open:rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                          <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+                                        </svg>
+                                    </span>
+                                </summary>
+                                <div class="px-6 pb-6 text-gray-600 leading-7 space-y-3">
+                                    <p>You can:</p>
+                                    <ul class="list-disc list-inside space-y-2 ml-4">
+                                        <li>Copy text/link on iPhone</li>
+                                        <li>Trigger WinSend shortcut</li>
+                                        <li>Directly Ctrl + V to paste on Windows</li>
+                                    </ul>
+                                    <p>No need for WeChat, QQ, email, or manually sending to yourself.</p>
+                                </div>
+                            </details>
+
+                            <details class="group rounded-3xl bg-gray-50 [&_summary::-webkit-details-marker]:hidden">
+                                <summary class="flex cursor-pointer items-center justify-between gap-1.5 p-6 text-lg font-bold text-gray-900 transition-colors hover:text-blue-700">
+                                    <span>4. Must I use WeChat to transfer text between iPhone and Windows?</span>
+                                    <span class="shrink-0 rounded-full bg-white p-1.5 text-gray-500 shadow-sm group-open:bg-blue-600 group-open:text-white transition-colors">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 transition-transform group-open:rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                          <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+                                        </svg>
+                                    </span>
+                                </summary>
+                                <div class="px-6 pb-6 text-gray-600 leading-7 space-y-3">
+                                    <p>Not necessarily.</p>
+                                    <p>Many people are used to:</p>
+                                    <ul class="list-disc list-inside space-y-2 ml-4">
+                                        <li>Sending WeChat messages to themselves</li>
+                                        <li>Using QQ File Assistant</li>
+                                        <li>Saving to Notes</li>
+                                        <li>Sending emails</li>
+                                    </ul>
+                                    <p>These methods require more steps and are slower.</p>
+                                    <p>If you just want to quickly sync text or links, directly sharing clipboard is more convenient.</p>
+                                </div>
+                            </details>
+
+                            <details class="group rounded-3xl bg-gray-50 [&_summary::-webkit-details-marker]:hidden">
+                                <summary class="flex cursor-pointer items-center justify-between gap-1.5 p-6 text-lg font-bold text-gray-900 transition-colors hover:text-blue-700">
+                                    <span>5. Do I need iCloud to sync clipboard between iPhone and Windows?</span>
+                                    <span class="shrink-0 rounded-full bg-white p-1.5 text-gray-500 shadow-sm group-open:bg-blue-600 group-open:text-white transition-colors">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 transition-transform group-open:rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                          <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+                                        </svg>
+                                    </span>
+                                </summary>
+                                <div class="px-6 pb-6 text-gray-600 leading-7">
+                                    <p>No. WinSend does not rely on iCloud and does not require Apple ID.</p>
+                                </div>
+                            </details>
+
+                            <details class="group rounded-3xl bg-gray-50 [&_summary::-webkit-details-marker]:hidden">
+                                <summary class="flex cursor-pointer items-center justify-between gap-1.5 p-6 text-lg font-bold text-gray-900 transition-colors hover:text-blue-700">
+                                    <span>6. What's the difference between WinSend and AirDrop?</span>
+                                    <span class="shrink-0 rounded-full bg-white p-1.5 text-gray-500 shadow-sm group-open:bg-blue-600 group-open:text-white transition-colors">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 transition-transform group-open:rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                          <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+                                        </svg>
+                                    </span>
+                                </summary>
+                                <div class="px-6 pb-6 text-gray-600 leading-7 space-y-3">
+                                    <p>AirDrop is more suitable for devices within the Apple ecosystem.</p>
+                                    <p>If you're using:</p>
+                                    <ul class="list-disc list-inside space-y-2 ml-4">
+                                        <li>iPhone + Windows</li>
+                                        <li>iPhone + PC</li>
+                                    </ul>
+                                    <p>WinSend is more suitable for cross-platform scenarios.</p>
+                                </div>
+                            </details>
+
+                            <details class="group rounded-3xl bg-gray-50 [&_summary::-webkit-details-marker]:hidden">
+                                <summary class="flex cursor-pointer items-center justify-between gap-1.5 p-6 text-lg font-bold text-gray-900 transition-colors hover:text-blue-700">
+                                    <span>7. What's the difference between WinSend and Microsoft Phone Link?</span>
+                                    <span class="shrink-0 rounded-full bg-white p-1.5 text-gray-500 shadow-sm group-open:bg-blue-600 group-open:text-white transition-colors">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 transition-transform group-open:rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                          <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+                                        </svg>
+                                    </span>
+                                </summary>
+                                <div class="px-6 pb-6 text-gray-600 leading-7 space-y-3">
+                                    <p>Phone Link has more features but the configuration process is relatively complex. It requires registering and logging into a Microsoft account.</p>
+                                    <p>WinSend is more focused on:</p>
+                                    <ul class="list-disc list-inside space-y-2 ml-4">
+                                        <li>No registration, no login.</li>
+                                        <li>Fast sending.</li>
+                                    </ul>
+                                    <p>The operation is more lightweight.</p>
+                                </div>
+                            </details>
+                        </div>
                     </section>
                 </article>
 
-                <aside class="space-y-6">
-                    <section class="rounded-3xl border border-gray-200 bg-white p-8 shadow-sm">
-                        <h2 class="text-2xl font-bold tracking-tight mb-4">Related Pages</h2>
-                        <div class="flex flex-col gap-3">
-                            <a href="/en/guides/setup/" class="inline-flex items-center justify-center rounded-xl border border-gray-200 px-6 py-3 font-semibold text-gray-900 transition hover:border-blue-200 hover:text-blue-700">Installation and Pairing Setup</a>
-                            <a href="/en/guides/how-it-works/" class="inline-flex items-center justify-center rounded-xl border border-gray-200 px-6 py-3 font-semibold text-gray-900 transition hover:border-blue-200 hover:text-blue-700">How WinSend Works</a>
-                        </div>
-                    </section>
+                <!-- Right Related Sidebar -->
+                <aside class="related-sidebar space-y-6">
+                    <div class="sidebar-panel space-y-6">
+                        <section class="rounded-3xl border border-gray-200 bg-white p-8 shadow-sm">
+                            <h2 class="text-2xl font-bold tracking-tight mb-4">Related Pages</h2>
+                            <div class="flex flex-col gap-3">
+                                <a href="/en/guides/setup/" class="inline-flex items-center justify-center rounded-xl border border-gray-200 px-6 py-3 font-semibold text-gray-900 transition hover:border-blue-200 hover:text-blue-700">Installation and Pairing Setup</a>
+                                <a href="/en/guides/how-it-works/" class="inline-flex items-center justify-center rounded-xl border border-gray-200 px-6 py-3 font-semibold text-gray-900 transition hover:border-blue-200 hover:text-blue-700">How WinSend Works</a>
+                            </div>
+                        </section>
+                    </div>
                 </aside>
             </div>
         </section>
@@ -374,5 +593,49 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        // Smooth scroll to anchor
+        document.querySelectorAll('.toc-link').forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    const offsetTop = targetElement.offsetTop - 100;
+                    window.scrollTo({
+                        top: offsetTop,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Highlight current section on scroll
+        const sections = document.querySelectorAll('section[id]');
+        const tocLinks = document.querySelectorAll('.toc-link');
+
+        function highlightToc() {
+            const scrollPosition = window.scrollY + 150;
+
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.offsetHeight;
+                const sectionId = section.getAttribute('id');
+
+                if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+                    tocLinks.forEach(link => {
+                        link.classList.remove('active');
+                        if (link.getAttribute('href') === '#' + sectionId) {
+                            link.classList.add('active');
+                        }
+                    });
+                }
+            });
+        }
+
+        window.addEventListener('scroll', highlightToc);
+        window.addEventListener('load', highlightToc);
+    </script>
 </body>
 </html>
