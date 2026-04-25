@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>iPhone 和 Windows 剪贴板秒同步（我试过最接近 AirDrop 的方案） | WinSend 教程</title>
+    <title>如何在 iPhone 和 Windows 之间共享剪贴板（最快方法） | WinSend 教程</title>
     <meta name="description" content="只需安装 WinSend，iPhone 复制即可在 Windows 粘贴。通过快捷方式实现剪贴板自动同步，体验接近 AirDrop。">
     <meta name="robots" content="index,follow,max-image-preview:large">
     <link rel="canonical" href="https://winsend.app/zh/guides/iphone-shortcuts-clipboard-sync/">
@@ -13,12 +13,12 @@
     <meta property="og:locale" content="zh_CN">
     <meta property="og:type" content="article">
     <meta property="og:site_name" content="WinSend">
-    <meta property="og:title" content="iPhone 和 Windows 剪贴板秒同步（我试过最接近 AirDrop 的方案）">
+    <meta property="og:title" content="如何在 iPhone 和 Windows 之间共享剪贴板（最快方法）">
     <meta property="og:description" content="只需安装 WinSend，iPhone 复制即可在 Windows 粘贴。通过快捷方式实现剪贴板自动同步，体验接近 AirDrop。">
     <meta property="og:url" content="https://winsend.app/zh/guides/iphone-shortcuts-clipboard-sync/">
     <meta property="og:image" content="https://winsend.app/zh/guides/iphone-shortcuts-clipboard-sync/images/show1.PNG">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="iPhone 和 Windows 剪贴板秒同步（我试过最接近 AirDrop 的方案）">
+    <meta name="twitter:title" content="如何在 iPhone 和 Windows 之间共享剪贴板（最快方法）">
     <meta name="twitter:description" content="只需安装 WinSend，iPhone 复制即可在 Windows 粘贴。通过快捷方式实现剪贴板自动同步，体验接近 AirDrop。">
     <meta name="twitter:image" content="https://winsend.app/zh/guides/iphone-shortcuts-clipboard-sync/images/show1.PNG">
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
@@ -82,6 +82,65 @@
             margin: 1.75rem 0;
             font-weight: 600;
         }
+        .hero-container {
+            width: min(100%, 78vw);
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+        .article-section-shell {
+            width: 100%;
+            margin: 0 auto;
+            position: relative;
+        }
+        .article-container {
+            width: min(100%, 70vw);
+            max-width: 980px;
+            margin: 0 auto;
+            min-width: 0;
+        }
+        .toc-sidebar,
+        .related-sidebar {
+            display: none;
+            width: 220px;
+            min-width: 0;
+        }
+        .sidebar-panel {
+            position: sticky;
+            top: 7rem;
+            max-height: calc(100vh - 9rem);
+            overflow-y: auto;
+        }
+        .toc-link {
+            display: block;
+            padding: 0.5rem 0;
+            color: #6b7280;
+            text-decoration: none;
+            font-size: 0.875rem;
+            line-height: 1.4;
+            transition: color 0.2s ease;
+            border-left: 2px solid transparent;
+            padding-left: 1rem;
+        }
+        .toc-link:hover {
+            color: #2563eb;
+        }
+        .toc-link.active {
+            color: #2563eb;
+            border-left-color: #2563eb;
+            font-weight: 600;
+        }
+        .toc-link.level-3 {
+            padding-left: 2rem;
+            font-size: 0.8125rem;
+        }
+        .toc-title {
+            font-size: 0.875rem;
+            font-weight: 700;
+            color: #111827;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
         .image-strip {
             display: flex;
             gap: 1rem;
@@ -112,6 +171,20 @@
             box-shadow: 0 12px 30px -20px rgba(15, 23, 42, 0.45);
             background: white;
         }
+        @media (min-width: 1400px) {
+            .toc-sidebar,
+            .related-sidebar {
+                display: block;
+                position: absolute;
+                top: 0;
+            }
+            .toc-sidebar {
+                left: calc(50% - 490px - 32px - 220px);
+            }
+            .related-sidebar {
+                left: calc(50% + 490px + 32px);
+            }
+        }
         @media (min-width: 768px) {
             .image-card {
                 min-width: 280px;
@@ -123,7 +196,7 @@
         {
             "@context": "https://schema.org",
             "@type": "TechArticle",
-            "headline": "iPhone 和 Windows 剪贴板秒同步（我试过最接近 AirDrop 的方案）",
+            "headline": "如何在 iPhone 和 Windows 之间共享剪贴板（最快方法）",
             "description": "只需安装 WinSend，iPhone 复制即可在 Windows 粘贴。通过快捷方式实现剪贴板自动同步，体验接近 AirDrop。",
             "url": "https://winsend.app/zh/guides/iphone-shortcuts-clipboard-sync/",
             "datePublished": "2026-04-11",
@@ -164,7 +237,7 @@
                 {
                     "@type": "ListItem",
                     "position": 3,
-                    "name": "iPhone 和 Windows 剪贴板秒同步",
+                    "name": "共享剪贴板",
                     "item": "https://winsend.app/zh/guides/iphone-shortcuts-clipboard-sync/"
                 }
             ]
@@ -189,110 +262,96 @@
 
     <main>
         <section class="hero-bg pt-32 pb-14 px-6">
-            <div class="max-w-6xl mx-auto">
+            <div class="hero-container">
                 <nav aria-label="面包屑" class="mb-8">
                     <ol class="flex flex-wrap items-center gap-2 text-sm text-gray-500">
                         <li><a href="/zh/" class="hover:text-gray-900 transition-colors">首页</a></li>
                         <li>/</li>
                         <li><a href="/zh/guides/" class="hover:text-gray-900 transition-colors">教程中心</a></li>
                         <li>/</li>
-                        <li class="text-gray-900 font-medium">iPhone 和 Windows 剪贴板秒同步</li>
+                        <li class="text-gray-900 font-medium">共享剪贴板</li>
                     </ol>
                 </nav>
 
-                <section class="grid gap-8 lg:grid-cols-[1.1fr_0.9fr] items-start">
-                    <header>
-                        <div class="flex flex-wrap items-center gap-3 mb-5 text-sm">
-                            <span class="rounded-full bg-blue-600 px-3 py-1 font-semibold text-white">新教程</span>
-                            <span class="rounded-full border border-blue-100 bg-blue-50 px-3 py-1 font-medium text-blue-700">iPhone 快捷方式</span>
-                            <span class="rounded-full border border-blue-100 bg-blue-50 px-3 py-1 font-medium text-blue-700">剪贴板同步</span>
-                        </div>
-                        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight mb-6">
-                            iPhone 和 Windows 剪贴板<span class="gradient-text">秒同步</span>（我试过最接近 AirDrop 的方案）
-                        </h1>
-                        <p class="text-xl text-gray-600 leading-9 max-w-3xl mb-7">
-                            通过 iPhone 快捷方式与轻点背面的触发方式，让 WinSend 实现接近 AirDrop 体验的 iOS 与 Windows 跨系统剪贴板同步。
-                        </p>
-                        <div class="flex flex-wrap gap-5 text-sm text-gray-500">
-                            <span>更新时间：2026-04-11</span>
-                            <span>阅读时间：约 4 分钟</span>
-                            <span>适合：iPhone + Windows 用户</span>
-                        </div>
-                    </header>
-
-                    <section class="rounded-3xl border border-blue-100 bg-white p-8 shadow-lg shadow-blue-100/50">
-                        <h2 class="text-2xl font-bold tracking-tight mb-4">总结</h2>
-                        <ul class="space-y-3 text-gray-600 leading-8">
-                            <li>无需每次手动打开传输 App</li>
-                            <li>通过“轻点背面”快速触发同步</li>
-                            <li>在任意 App 中复制内容后发送到 Windows</li>
-                            <li>适合文字、链接和轻量内容的高频同步场景</li>
-                        </ul>
-                        <div class="mt-6 flex flex-col gap-3">
-                            <a href="/zh/#download" class="btn-primary inline-flex items-center justify-center rounded-xl bg-blue-600 px-6 py-3 font-semibold text-white hover:bg-blue-700">下载 WinSend</a>
-                            <a href="/zh/guides/setup/" class="inline-flex items-center justify-center rounded-xl border border-gray-200 px-6 py-3 font-semibold text-gray-900 transition hover:border-blue-200 hover:text-blue-700">先看安装教程</a>
-                        </div>
-                    </section>
-                </section>
+                <header>
+                    <div class="flex flex-wrap items-center gap-3 mb-5 text-sm">
+                        <span class="rounded-full bg-blue-600 px-3 py-1 font-semibold text-white">新教程</span>
+                        <span class="rounded-full border border-blue-100 bg-blue-50 px-3 py-1 font-medium text-blue-700">iPhone 快捷方式</span>
+                        <span class="rounded-full border border-blue-100 bg-blue-50 px-3 py-1 font-medium text-blue-700">剪贴板同步</span>
+                    </div>
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight mb-6">
+                        如何在 iPhone 和 Windows 之间<span class="gradient-text">共享剪贴板</span>（最接近AirDrop）
+                    </h1>
+                    <p class="text-xl text-gray-600 leading-9 mb-7">
+                        无需反复打开 App，复制后轻点 iPhone 背面即可发送到 Windows。
+                    </p>
+                    <div class="flex flex-wrap gap-5 text-sm text-gray-500">
+                        <span>更新时间：2026-04-11</span>
+                        <span>阅读时间：约 4 分钟</span>
+                        <span>适合：iPhone + Windows 用户</span>
+                    </div>
+                </header>
             </div>
         </section>
 
         <section class="px-6 pb-20">
-            <div class="max-w-6xl mx-auto grid gap-10 lg:grid-cols-[1.2fr_0.8fr]">
-                <article class="article-prose rounded-[2rem] border border-gray-200 bg-white p-8 sm:p-10 shadow-sm">
-                    <section>
-                        <p>通过iPhone的快捷方式+轻点背面的触发方式，WinSend实现了最接近系统级体验的iOS与Windows的跨系统数据同步。</p>
+            <div class="article-section-shell">
+                <!-- 左侧目录 -->
+                <aside class="toc-sidebar">
+                    <div class="sidebar-panel">
+                        <nav class="toc-title">目录</nav>
+                        <div id="toc-content">
+                            <a href="#section-intro" class="toc-link">简介</a>
+                            <a href="#section-demo" class="toc-link">实际使用效果</a>
+                            <a href="#section-tutorial" class="toc-link">详细设置教程</a>
+                            <a href="#step-install" class="toc-link level-3">第一步：安装 WinSend</a>
+                            <a href="#step-open-app" class="toc-link level-3">第二步：进入快捷方式设置</a>
+                            <a href="#step-add-shortcut" class="toc-link level-3">第三步：添加快捷方式</a>
+                            <a href="#step-back-tap" class="toc-link level-3">第四步：设置背面触发</a>
+                            <a href="#section-faq" class="toc-link">常见问题</a>
+                        </div>
+                    </div>
+                </aside>
+
+                <article class="article-container article-prose rounded-[2rem] border border-gray-200 bg-white p-6 sm:p-8 xl:p-10 shadow-sm">
+                    <section id="section-intro">
+                        <p>传统的跨设备传输软件，都需要打开App才能完成传输任务，无法做到像AirDrop一样无感的丝滑复制同步。</p>
                         <p>WinSend实现了无需打开App，就可以和Windows进行剪贴板的复制传输。这是WinSend区别于传统的LocalSend等老牌传输软件最智能化的特色功能之一。</p>
-                        <p>传统的传输软件，都需要打开App才能实现传输任务，无法做到像AirDrop一样无感的丝滑复制同步。</p>
-                        <blockquote>我们做到了只要轻点两下手机背面，就可以在任何App中，实现复制同步。这是目前最接近于AirDrop的传输功能。</blockquote>
+                        <blockquote>我们做到了只要轻点两下手机背面，就可以在任何App中，实现复制同步。这是目前最接近于AirDrop的跨设备同步 软件。</blockquote>
                     </section>
 
-                    <section>
+                    <hr style="border: none; border-top: 2px solid #e5e7eb; margin: 2rem 0;">
+
+                    <section id="section-demo" style="margin-bottom: 2.5rem;">
                         <h2>实际使用效果</h2>
                         <p>下面用一个实际的例子作为展示</p>
 
-                        <section class="mb-8">
-                            <h3>在任意 App 中复制一段内容</h3>
-                            <div class="image-strip" aria-label="复制内容演示图片">
-                                <figure class="image-card"><img src="./images/show1.PNG" alt="在 iPhone App 中复制内容示意图 1"></figure>
-                                <figure class="image-card"><img src="./images/show2.PNG" alt="在 iPhone App 中复制内容示意图 2"></figure>
-                            </div>
-                        </section>
-
-                        <section class="mb-8">
-                            <h3>双击手机背面</h3>
-                            <div class="image-strip" aria-label="双击背面演示图片">
-                                <figure class="image-card"><img src="./images/show3.PNG" alt="双击背面触发快捷方式示意图"></figure>
-                            </div>
-                        </section>
-
-                        <section class="mb-8">
-                            <h3>选择同步到 Windows</h3>
-                            <div class="image-strip" aria-label="选择同步方向演示图片">
-                                <figure class="image-card"><img src="./images/show4.PNG" alt="选择同步到 Windows 示意图"></figure>
-                            </div>
-                        </section>
-
-                        <section>
-                            <h3>同步成功</h3>
-                            <div class="image-strip" aria-label="同步成功演示图片">
-                                <figure class="image-card"><img src="./images/show5.PNG" alt="同步成功示意图"></figure>
-                            </div>
-                            <p class="mt-4">这样，在 Windows 设备上直接使用 <code>Ctrl + V</code>，就可以粘贴刚才在 iPhone 上复制的内容了。</p>
-                        </section>
+                        <video
+                          autoplay
+                          muted
+                          loop
+                          playsinline
+                          preload="metadata"
+                          class="demo-video"
+                          style="width: 100%; max-width: 420px; border-radius: 1rem; border: 1px solid #e5e7eb; box-shadow: 0 12px 30px -20px rgba(15, 23, 42, 0.45); display: block;"
+                        >
+                          <source src="./videos/clipboard-sync-show.webm" type="video/webm">
+                        </video>
                     </section>
 
-                    <section>
+                    <hr style="border: none; border-top: 2px solid #e5e7eb; margin: 2rem 0;">
+
+                    <section id="section-tutorial">
                         <h2>详细设置教程</h2>
                         <p>一次安装，随时使用</p>
 
-                        <section class="rounded-3xl bg-gray-50 p-6 sm:p-7 mb-6">
+                        <section id="step-install" class="rounded-3xl bg-gray-50 p-6 sm:p-7 mb-6">
                             <h3>第一步：安装 WinSend iOS 端和 Windows 客户端</h3>
                             <p>先确保 iPhone 与 Windows 端都已经完成安装，并能在同一网络环境中正常运行。</p>
                             <p>安装流程可以参考：<a href="/zh/guides/setup/" class="text-blue-700 hover:underline">WinSend 安装与配对设置</a></p>
                         </section>
 
-                        <section class="rounded-3xl bg-gray-50 p-6 sm:p-7 mb-6">
+                        <section id="step-open-app" class="rounded-3xl bg-gray-50 p-6 sm:p-7 mb-6">
                             <h3>第二步：打开 WinSend App，进入设置快捷方式页面</h3>
                             <div class="image-strip" aria-label="进入快捷方式设置页面图片">
                                 <figure class="image-card"><img src="./images/step2_1.PNG" alt="WinSend iPhone 端快捷方式设置页面图 1"></figure>
@@ -300,18 +359,44 @@
                             </div>
                         </section>
 
-                        <section class="rounded-3xl bg-gray-50 p-6 sm:p-7 mb-6">
+                        <section id="step-add-shortcut" class="rounded-3xl bg-gray-50 p-6 sm:p-7 mb-6">
                             <h3>第三步：添加快捷方式</h3>
-                            <p>按照 App 内提供的入口完成快捷方式的添加，您可以在快捷方式App中查看。</p>
+                            <p>按照 App 内提供的入口完成快捷方式的添加，您可以在快捷方式App中查看成功添加的 WinSend复制同步 快捷方式。</p>
                             <div class="image-strip" aria-label="添加快捷方式图片">
                                 <figure class="image-card"><img src="./images/step3_1.PNG" alt="添加快捷方式步骤图 1"></figure>
                                 <figure class="image-card"><img src="./images/step3_2.PNG" alt="添加快捷方式步骤图 2"></figure>
                             </div>
                         </section>
 
-                        <section class="rounded-3xl bg-gray-50 p-6 sm:p-7">
+                        <section id="step-back-tap" class="rounded-3xl bg-gray-50 p-6 sm:p-7">
                             <h3>第四步：设置背面双击 / 三击触发</h3>
-                            <p>把刚添加好的快捷方式绑定到 iPhone 的“轻点背面”功能。建议优先尝试双击，如果担心误触，也可以改用三击。</p>
+                            <p>把刚添加好的快捷方式绑定到 iPhone 的"轻点背面"功能。建议优先尝试双击，如果担心误触，也可以改用三击。</p>
+
+                            <div class="mt-6 mb-8 p-5 rounded-2xl bg-white border-2 border-blue-100">
+                                <ol class="space-y-3 text-left">
+                                    <li class="flex gap-3 items-start">
+                                        <span class="flex-shrink-0 w-6 h-6 rounded-full bg-blue-600 text-white text-sm font-bold flex items-center justify-center">1</span>
+                                        <span class="text-gray-700 leading-relaxed pt-0.5">打开 iPhone <strong class="text-gray-900">"设置"</strong></span>
+                                    </li>
+                                    <li class="flex gap-3 items-start">
+                                        <span class="flex-shrink-0 w-6 h-6 rounded-full bg-blue-600 text-white text-sm font-bold flex items-center justify-center">2</span>
+                                        <span class="text-gray-700 leading-relaxed pt-0.5">进入 <strong class="text-gray-900">"辅助功能" → "触控" → "轻点背面"</strong></span>
+                                    </li>
+                                    <li class="flex gap-3 items-start">
+                                        <span class="flex-shrink-0 w-6 h-6 rounded-full bg-blue-600 text-white text-sm font-bold flex items-center justify-center">3</span>
+                                        <span class="text-gray-700 leading-relaxed pt-0.5">选择 <strong class="text-gray-900">"轻点两下"</strong> 或 <strong class="text-gray-900">"轻点三下"</strong></span>
+                                    </li>
+                                    <li class="flex gap-3 items-start">
+                                        <span class="flex-shrink-0 w-6 h-6 rounded-full bg-blue-600 text-white text-sm font-bold flex items-center justify-center">4</span>
+                                        <span class="text-gray-700 leading-relaxed pt-0.5">找到并选择 <strong class="text-gray-900">"WinSend复制同步"</strong></span>
+                                    </li>
+                                    <li class="flex gap-3 items-start">
+                                        <span class="flex-shrink-0 w-6 h-6 rounded-full bg-green-600 text-white text-sm font-bold flex items-center justify-center">✓</span>
+                                        <span class="text-gray-700 leading-relaxed pt-0.5">完成后，<strong class="text-gray-900">双击手机背面</strong>即可触发同步</span>
+                                    </li>
+                                </ol>
+                            </div>
+
                             <div class="image-strip" aria-label="设置轻点背面触发图片">
                                 <figure class="image-card"><img src="./images/step4_1.PNG" alt="设置轻点背面步骤图 1"></figure>
                                 <figure class="image-card"><img src="./images/step4_2.PNG" alt="设置轻点背面步骤图 2"></figure>
@@ -321,21 +406,154 @@
                         </section>
                     </section>
 
-                    <section>
-                        <h2>为什么这套方式更接近系统级体验</h2>
-                        <p>因为它把“打开 App 再发送”的动作，改造成了“复制后直接触发”的动作。对于高频传输短内容的人来说，这种差异会非常明显。</p>
-                        <p>如果您对iOS快捷方式的感兴趣，可以继续看 <a href="/zh/guides/how-it-works/" class="text-blue-700 hover:underline">WinSend 如何工作</a>。</p>
+                    <hr style="border: none; border-top: 2px solid #e5e7eb; margin: 2rem 0;">
+
+                    <section id="section-faq">
+                        <h2>常见问题（FAQ）</h2>
+
+                        <div class="space-y-4">
+                            <details class="group rounded-3xl bg-gray-50 [&_summary::-webkit-details-marker]:hidden">
+                                <summary class="flex cursor-pointer items-center justify-between gap-1.5 p-6 text-lg font-bold text-gray-900 transition-colors hover:text-blue-700">
+                                    <span>1. iPhone 可以和 Windows 共享剪贴板吗？</span>
+                                    <span class="shrink-0 rounded-full bg-white p-1.5 text-gray-500 shadow-sm group-open:bg-blue-600 group-open:text-white transition-colors">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 transition-transform group-open:rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                          <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+                                        </svg>
+                                    </span>
+                                </summary>
+                                <div class="px-6 pb-6 text-gray-600 leading-7 space-y-3">
+                                    <p>默认情况下，不可以。</p>
+                                    <p>苹果的 Universal Clipboard 仅支持 iPhone、iPad 和 Mac 之间同步，Windows 电脑无法直接使用。</p>
+                                    <p>如果您使用的是 Windows PC，可以通过 WinSend 实现 iPhone 复制内容后，配合隔空投送快捷方式，直接在电脑上粘贴。</p>
+                                </div>
+                            </details>
+
+                            <details class="group rounded-3xl bg-gray-50 [&_summary::-webkit-details-marker]:hidden">
+                                <summary class="flex cursor-pointer items-center justify-between gap-1.5 p-6 text-lg font-bold text-gray-900 transition-colors hover:text-blue-700">
+                                    <span>2. AirDrop 可以传到 Windows 电脑吗？</span>
+                                    <span class="shrink-0 rounded-full bg-white p-1.5 text-gray-500 shadow-sm group-open:bg-blue-600 group-open:text-white transition-colors">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 transition-transform group-open:rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                          <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+                                        </svg>
+                                    </span>
+                                </summary>
+                                <div class="px-6 pb-6 text-gray-600 leading-7 space-y-3">
+                                    <p>不可以。</p>
+                                    <p>AirDrop 仅支持苹果设备之间传输，例如 iPhone、iPad 和 Mac。</p>
+                                    <p>如果您使用 Windows，可以使用 WinSend 作为替代方案，快速传输文字、链接等内容。</p>
+                                </div>
+                            </details>
+
+                            <details class="group rounded-3xl bg-gray-50 [&_summary::-webkit-details-marker]:hidden">
+                                <summary class="flex cursor-pointer items-center justify-between gap-1.5 p-6 text-lg font-bold text-gray-900 transition-colors hover:text-blue-700">
+                                    <span>3. 如何把 iPhone 上复制的文字快速发送到电脑？</span>
+                                    <span class="shrink-0 rounded-full bg-white p-1.5 text-gray-500 shadow-sm group-open:bg-blue-600 group-open:text-white transition-colors">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 transition-transform group-open:rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                          <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+                                        </svg>
+                                    </span>
+                                </summary>
+                                <div class="px-6 pb-6 text-gray-600 leading-7 space-y-3">
+                                    <p>你可以：</p>
+                                    <ul class="list-disc list-inside space-y-2 ml-4">
+                                        <li>在 iPhone 上复制文字/链接</li>
+                                        <li>触发 WinSend 快捷方式</li>
+                                        <li>在 Windows 上直接 Ctrl + V 粘贴</li>
+                                    </ul>
+                                    <p>不需要微信、QQ、邮件或手动发送给自己。</p>
+                                </div>
+                            </details>
+
+                            <details class="group rounded-3xl bg-gray-50 [&_summary::-webkit-details-marker]:hidden">
+                                <summary class="flex cursor-pointer items-center justify-between gap-1.5 p-6 text-lg font-bold text-gray-900 transition-colors hover:text-blue-700">
+                                    <span>4. iPhone 和 Windows 传文字一定要用微信吗？</span>
+                                    <span class="shrink-0 rounded-full bg-white p-1.5 text-gray-500 shadow-sm group-open:bg-blue-600 group-open:text-white transition-colors">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 transition-transform group-open:rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                          <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+                                        </svg>
+                                    </span>
+                                </summary>
+                                <div class="px-6 pb-6 text-gray-600 leading-7 space-y-3">
+                                    <p>不一定。</p>
+                                    <p>很多人习惯：</p>
+                                    <ul class="list-disc list-inside space-y-2 ml-4">
+                                        <li>发微信给自己</li>
+                                        <li>用 QQ 文件助手</li>
+                                        <li>存到备忘录</li>
+                                        <li>发邮件</li>
+                                    </ul>
+                                    <p>这些方法步骤更多，也更慢。</p>
+                                    <p>如果只是快速同步文字或链接，直接共享剪贴板会更方便。</p>
+                                </div>
+                            </details>
+
+                            <details class="group rounded-3xl bg-gray-50 [&_summary::-webkit-details-marker]:hidden">
+                                <summary class="flex cursor-pointer items-center justify-between gap-1.5 p-6 text-lg font-bold text-gray-900 transition-colors hover:text-blue-700">
+                                    <span>5. 使用 iPhone 和 Windows 同步剪贴板需要 iCloud 吗？</span>
+                                    <span class="shrink-0 rounded-full bg-white p-1.5 text-gray-500 shadow-sm group-open:bg-blue-600 group-open:text-white transition-colors">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 transition-transform group-open:rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                          <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+                                        </svg>
+                                    </span>
+                                </summary>
+                                <div class="px-6 pb-6 text-gray-600 leading-7">
+                                    <p>不需要。WinSend 不依赖 iCloud，也不需要 Apple ID。</p>
+                                </div>
+                            </details>
+
+                            <details class="group rounded-3xl bg-gray-50 [&_summary::-webkit-details-marker]:hidden">
+                                <summary class="flex cursor-pointer items-center justify-between gap-1.5 p-6 text-lg font-bold text-gray-900 transition-colors hover:text-blue-700">
+                                    <span>6. WinSend 和 AirDrop 有什么区别？</span>
+                                    <span class="shrink-0 rounded-full bg-white p-1.5 text-gray-500 shadow-sm group-open:bg-blue-600 group-open:text-white transition-colors">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 transition-transform group-open:rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                          <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+                                        </svg>
+                                    </span>
+                                </summary>
+                                <div class="px-6 pb-6 text-gray-600 leading-7 space-y-3">
+                                    <p>AirDrop 更适合苹果生态内部设备。</p>
+                                    <p>如果你使用的是：</p>
+                                    <ul class="list-disc list-inside space-y-2 ml-4">
+                                        <li>iPhone + Windows</li>
+                                        <li>iPhone + PC</li>
+                                    </ul>
+                                    <p>WinSend 更适合跨平台场景。</p>
+                                </div>
+                            </details>
+
+                            <details class="group rounded-3xl bg-gray-50 [&_summary::-webkit-details-marker]:hidden">
+                                <summary class="flex cursor-pointer items-center justify-between gap-1.5 p-6 text-lg font-bold text-gray-900 transition-colors hover:text-blue-700">
+                                    <span>7. WinSend 和微软 Phone Link 有什么区别？</span>
+                                    <span class="shrink-0 rounded-full bg-white p-1.5 text-gray-500 shadow-sm group-open:bg-blue-600 group-open:text-white transition-colors">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 transition-transform group-open:rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                          <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+                                        </svg>
+                                    </span>
+                                </summary>
+                                <div class="px-6 pb-6 text-gray-600 leading-7 space-y-3">
+                                    <p>Phone Link 功能较多，但配置流程相对复杂。需要注册登陆Microsoft账号。</p>
+                                    <p>WinSend 更专注于：</p>
+                                    <ul class="list-disc list-inside space-y-2 ml-4">
+                                        <li>无注册，无登陆。</li>
+                                        <li>快速发送。</li>
+                                    </ul>
+                                    <p>操作更轻量。</p>
+                                </div>
+                            </details>
+                        </div>
                     </section>
                 </article>
 
-                <aside class="space-y-6">
-                    <section class="rounded-3xl border border-gray-200 bg-white p-8 shadow-sm">
-                        <h2 class="text-2xl font-bold tracking-tight mb-4">相关页面</h2>
-                        <div class="flex flex-col gap-3">
-                            <a href="/zh/guides/setup/" class="inline-flex items-center justify-center rounded-xl border border-gray-200 px-6 py-3 font-semibold text-gray-900 transition hover:border-blue-200 hover:text-blue-700">安装与配对设置</a>
-                            <a href="/zh/guides/how-it-works/" class="inline-flex items-center justify-center rounded-xl border border-gray-200 px-6 py-3 font-semibold text-gray-900 transition hover:border-blue-200 hover:text-blue-700">WinSend 如何工作</a>
-                        </div>
-                    </section>
+                <aside class="related-sidebar space-y-6">
+                    <div class="sidebar-panel space-y-6">
+                        <section class="rounded-3xl border border-gray-200 bg-white p-8 shadow-sm">
+                            <h2 class="text-2xl font-bold tracking-tight mb-4">相关页面</h2>
+                            <div class="flex flex-col gap-3">
+                                <a href="/zh/guides/setup/" class="inline-flex items-center justify-center rounded-xl border border-gray-200 px-6 py-3 font-semibold text-gray-900 transition hover:border-blue-200 hover:text-blue-700">安装与配对设置</a>
+                                <a href="/zh/guides/how-it-works/" class="inline-flex items-center justify-center rounded-xl border border-gray-200 px-6 py-3 font-semibold text-gray-900 transition hover:border-blue-200 hover:text-blue-700">WinSend 如何工作</a>
+                            </div>
+                        </section>
+                    </div>
                 </aside>
             </div>
         </section>
@@ -374,5 +592,49 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        // 平滑滚动到锚点
+        document.querySelectorAll('.toc-link').forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    const offsetTop = targetElement.offsetTop - 100;
+                    window.scrollTo({
+                        top: offsetTop,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // 滚动时高亮当前章节
+        const sections = document.querySelectorAll('section[id]');
+        const tocLinks = document.querySelectorAll('.toc-link');
+
+        function highlightToc() {
+            const scrollPosition = window.scrollY + 150;
+
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.offsetHeight;
+                const sectionId = section.getAttribute('id');
+
+                if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+                    tocLinks.forEach(link => {
+                        link.classList.remove('active');
+                        if (link.getAttribute('href') === '#' + sectionId) {
+                            link.classList.add('active');
+                        }
+                    });
+                }
+            });
+        }
+
+        window.addEventListener('scroll', highlightToc);
+        window.addEventListener('load', highlightToc);
+    </script>
 </body>
 </html>
