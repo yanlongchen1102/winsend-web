@@ -63,7 +63,7 @@
     <nav aria-label="主导航" class="fixed top-0 left-0 right-0 bg-white/70 backdrop-blur-xl z-50 border-b border-gray-100">
         <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
             <a href="/zh/" class="flex items-center gap-3">
-                <img src="/logo.png" alt="WinSend Logo" class="w-9 h-9 rounded-xl">
+                <img src="/logo.webp" alt="WinSend Logo" class="w-9 h-9 rounded-xl">
                 <span class="text-xl font-bold tracking-tight">WinSend</span>
             </a>
             <div class="flex items-center gap-6">
@@ -147,7 +147,7 @@
 
                 <div class="relative order-first lg:order-last">
                     <div class="aspect-[16/12] bg-gradient-to-br from-gray-100 to-gray-50 rounded-3xl shadow-2xl flex items-center justify-center overflow-hidden border border-gray-200">
-                        <img src="/idea.png" alt="WinSend 界面" class="w-full h-full object-cover">
+                        <img src="/idea.webp" alt="WinSend 界面" class="w-full h-full object-cover">
                     </div>
                     <!-- Decorative elements -->
                     <div class="absolute -z-10 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-gradient-to-br from-blue-200/20 to-purple-200/20 rounded-full blur-3xl"></div>
@@ -470,7 +470,7 @@
             <div class="grid md:grid-cols-4 gap-12 mb-12">
                 <div class="md:col-span-2">
                     <div class="flex items-center gap-3 mb-4">
-                        <img src="/logo.png" alt="WinSend Logo" class="w-9 h-9 rounded-xl">
+                        <img src="/logo.webp" alt="WinSend Logo" class="w-9 h-9 rounded-xl">
                         <span class="text-xl font-bold text-white">WinSend</span>
                     </div>
                     <p class="text-sm leading-relaxed max-w-md">
@@ -541,30 +541,40 @@
             }).catch(function() {});
         }
 
-        fetch("/update.json")
-            .then(function(response) {
-                if (!response.ok) {
-                    throw new Error("Failed to load update.json");
-                }
-                return response.json();
-            })
-            .then(function(data) {
-                if (data.version) {
-                    document.querySelectorAll(".current-version-text").forEach(function(node) {
-                        node.textContent = data.version;
-                    });
-                    var currentVersion = document.getElementById("current-version");
-                    if (currentVersion) {
-                        currentVersion.textContent = data.version;
+        // 延迟加载 update.json，避免阻塞首屏渲染
+        function loadUpdateInfo() {
+            fetch("/update.json")
+                .then(function(response) {
+                    if (!response.ok) {
+                        throw new Error("Failed to load update.json");
                     }
-                }
-                var downloadUrl = buildDownloadUrl(data);
-                document.querySelectorAll(".download-link").forEach(function(node) {
-                    node.href = downloadUrl;
-                    node.addEventListener("click", trackDownload);
-                });
-            })
-            .catch(function() {});
+                    return response.json();
+                })
+                .then(function(data) {
+                    if (data.version) {
+                        document.querySelectorAll(".current-version-text").forEach(function(node) {
+                            node.textContent = data.version;
+                        });
+                        var currentVersion = document.getElementById("current-version");
+                        if (currentVersion) {
+                            currentVersion.textContent = data.version;
+                        }
+                    }
+                    var downloadUrl = buildDownloadUrl(data);
+                    document.querySelectorAll(".download-link").forEach(function(node) {
+                        node.href = downloadUrl;
+                        node.addEventListener("click", trackDownload);
+                    });
+                })
+                .catch(function() {});
+        }
+
+        // 使用 requestIdleCallback，不支持的浏览器回退到 setTimeout
+        if ('requestIdleCallback' in window) {
+            requestIdleCallback(loadUpdateInfo);
+        } else {
+            setTimeout(loadUpdateInfo, 2000);
+        }
     </script>
 </body>
 </html>
