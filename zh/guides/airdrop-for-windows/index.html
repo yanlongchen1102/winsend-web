@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Windows 版 AirDrop：iPhone 与 Windows 互传文件 | WinSend 教程</title>
+    <meta name="description" content="Windows 能用 AirDrop 吗？WinSend 让 iPhone 像 AirDrop 一样从相册分享页直接传照片、视频到 Windows 电脑，无需打开 App、无需数据线、无需云盘。">
+    <meta name="robots" content="index,follow,max-image-preview:large">
+    <link rel="canonical" href="https://winsend.app/zh/guides/airdrop-for-windows/">
+    <link rel="alternate" hreflang="en" href="https://winsend.app/en/guides/airdrop-for-windows/" />
+    <link rel="alternate" hreflang="zh" href="https://winsend.app/zh/guides/airdrop-for-windows/" />
+    <link rel="alternate" hreflang="x-default" href="https://winsend.app/en/guides/airdrop-for-windows/" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+    <style>
+        * { font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; }
+        .hero-bg { background: radial-gradient(ellipse 80% 50% at 50% -20%, rgba(37, 99, 235, 0.15), transparent), linear-gradient(180deg, #ffffff 0%, #f8fbff 100%); }
+        .btn-primary { transition: all 0.2s ease; }
+        .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 10px 25px -5px rgba(37, 99, 235, 0.35); }
+        .prose h2 { font-size: 1.75rem; font-weight: 700; margin-top: 2.5rem; margin-bottom: 1rem; letter-spacing: -0.025em; }
+        .prose h3 { font-size: 1.25rem; font-weight: 600; margin-top: 2rem; margin-bottom: 0.75rem; }
+        .prose p { color: #4b5563; line-height: 1.8; margin-bottom: 1rem; }
+        .prose ul { list-style-type: disc; padding-left: 1.5rem; color: #4b5563; line-height: 1.8; margin-bottom: 1rem; }
+        .prose ol { list-style-type: decimal; padding-left: 1.5rem; color: #4b5563; line-height: 1.8; margin-bottom: 1rem; }
+        .prose li { margin-bottom: 0.5rem; }
+        .prose a { color: #2563eb; text-decoration: underline; }
+        .prose a:hover { color: #1d4ed8; }
+        .prose strong { color: #111827; font-weight: 600; }
+        .step-card { border: 1px solid #e5e7eb; border-radius: 1.5rem; background: #fff; padding: 1.5rem; margin-bottom: 2rem; box-shadow: 0 1px 3px rgba(0,0,0,0.05); }
+        .step-card img { width: 100%; max-width: 360px; border-radius: 1rem; margin: 1rem auto 0; display: block; border: 1px solid #f3f4f6; }
+        .step-badge { display: inline-block; background: #2563eb; color: #fff; font-size: 0.75rem; font-weight: 700; padding: 0.25rem 0.75rem; border-radius: 9999px; margin-bottom: 0.75rem; }
+        .screenshot-caption { text-align: center; font-size: 0.875rem; color: #6b7280; margin-top: 0.75rem; }
+    </style>
+</head>
+<body class="bg-white text-gray-900 antialiased">
+    <nav aria-label="主导航" class="fixed top-0 left-0 right-0 bg-white/70 backdrop-blur-xl z-50 border-b border-gray-100">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+            <a href="/zh/" class="flex items-center gap-3"><img src="/logo.png" alt="WinSend Logo" class="w-9 h-9 rounded-xl"><span class="text-xl font-bold tracking-tight">WinSend</span></a>
+            <div class="flex items-center gap-6"><a href="/zh/#features" class="text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors hidden sm:block">功能特性</a><a href="/zh/guides/" class="text-sm font-semibold text-gray-900 transition-colors hidden sm:block">教程</a><a href="/zh/#download" class="btn-primary inline-flex items-center gap-2 px-5 py-2.5 bg-blue-600 text-white text-sm font-semibold rounded-lg hover:bg-blue-700">下载</a><a href="/en/" class="text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors">English</a></div>
+        </div>
+    </nav>
+    <main>
+        <section class="hero-bg pt-32 pb-14 px-6">
+            <div class="max-w-4xl mx-auto">
+                <nav aria-label="面包屑" class="mb-8"><ol class="flex flex-wrap items-center gap-2 text-sm text-gray-500"><li><a href="/zh/" class="hover:text-gray-900 transition-colors">首页</a></li><li aria-hidden="true">/</li><li><a href="/zh/guides/" class="hover:text-gray-900 transition-colors">教程中心</a></li><li aria-hidden="true">/</li><li class="text-gray-900 font-medium">Windows 版 AirDrop</li></ol></nav>
+                <header>
+                    <p class="text-sm font-semibold tracking-[0.24em] text-blue-600 uppercase mb-4">解决方案</p>
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight mb-6">Windows 版 AirDrop：在相册里直接传文件到电脑</h1>
+                    <p class="text-xl text-gray-600 leading-9 max-w-3xl">WinSend 把 AirDrop 的使用逻辑带到了 Windows。在 iPhone 相册里选中照片，点“分享”，选择 WinSend，直接发送到你的 Windows 电脑——不用打开 App，不用数据线，不用云盘。</p>
+                </header>
+            </div>
+        </section>
+        <section class="px-6 pb-20">
+            <div class="max-w-4xl mx-auto">
+                <article class="prose">
+                    <p>苹果 AirDrop 之所以好用，是因为它不需要你离开当前应用。你在相册里点一下分享，选中设备，文件就过去了。Windows 用户一直缺少这种体验——现在 WinSend 把它补上了。</p>
+                    <p><strong>WinSend 的工作方式和 AirDrop 几乎一样。</strong>安装并配对一次之后，它就会出现在 iOS 的分享列表里。你在相册选中照片或视频，点 WinSend 图标，选择电脑，文件就直接传过去了。整个过程中你不需要先打开 WinSend App。</p>
+
+                    <h2>四步像 AirDrop 一样传文件</h2>
+
+                    <div class="step-card">
+                        <span class="step-badge">第 1 步</span>
+                        <h3>在相册里选照片并打开分享</h3>
+                        <p>打开 iPhone 的“照片”App，选中要传输的照片或视频，然后点击左下角的“分享”按钮。你会看到熟悉的分享列表：隔空投送、信息、邮件，以及安装 WinSend 后出现的 WinSend 图标。</p>
+                        <img src="/zh/guides/airdrop-for-windows/images/step1-share-sheet-winsend.PNG" alt="iPhone 相册分享页显示 WinSend 与隔空投送并列">
+                        <p class="screenshot-caption">WinSend 和隔空投送一起出现在分享列表中。</p>
+                    </div>
+
+                    <div class="step-card">
+                        <span class="step-badge">第 2 步</span>
+                        <h3>点击 WinSend 并选择你的电脑</h3>
+                        <p>点击 WinSend 图标，会弹出设备选择界面。在“我的设备”下找到你已经配对好的 Windows 电脑，点击它即可开始发送。</p>
+                        <img src="/zh/guides/airdrop-for-windows/images/step2-select-windows-pc.PNG" alt="WinSend 设备选择界面显示 Windows-PC">
+                        <p class="screenshot-caption">从设备列表中选择你的 Windows 电脑。</p>
+                    </div>
+
+                    <div class="step-card">
+                        <span class="step-badge">第 3 步</span>
+                        <h3>等待传输完成</h3>
+                        <p>电脑图标周围会出现进度环。当 iPhone 和电脑处于同一个 Wi-Fi 时，传输走本地网络，即使是大视频也能很快传完。</p>
+                        <img src="/zh/guides/airdrop-for-windows/images/step3-transfer-progress.PNG" alt="WinSend 电脑图标显示传输进度环">
+                        <p class="screenshot-caption">进度环表示文件正在发送中。</p>
+                    </div>
+
+                    <div class="step-card">
+                        <span class="step-badge">第 4 步</span>
+                        <h3>发送成功，文件已在电脑上</h3>
+                        <p>传输完成后，iPhone 上会显示“发送成功”提示。此时文件已经保存在 Windows 电脑的 WinSend 接收文件夹里，直接打开使用即可。</p>
+                        <img src="/zh/guides/airdrop-for-windows/images/step4-send-success.PNG" alt="WinSend 发送成功提示">
+                        <p class="screenshot-caption">不需要发邮件、不需要等云盘同步、不需要插数据线。</p>
+                    </div>
+
+                    <h2>这和其它传输工具有什么不同？</h2>
+                    <p>大多数文件传输工具都要求你先打开它们的 App，找到文件，再发送。WinSend 省略了这一步。因为它集成在 iOS 分享列表里，整个流程和 AirDrop 几乎一致：</p>
+                    <ul>
+                        <li><strong>不用切换 App</strong> — 从相册、文件、Safari、备忘录等任何支持分享的地方直接发送</li>
+                        <li><strong>不上传云盘</strong> — 设备之间直接传输，走本地网络</li>
+                        <li><strong>不压缩画质</strong> — 原图、原视频直接发送</li>
+                        <li><strong>不用注册账号</strong> — 安装、配对一次，之后随时使用</li>
+                    </ul>
+
+                    <h2>可以传什么内容？</h2>
+                    <ul>
+                        <li>相册里的照片和视频</li>
+                        <li>截图和连拍照片</li>
+                        <li>“文件”App 里的文档</li>
+                        <li>Safari、备忘录里的 PDF、链接和文字</li>
+                    </ul>
+
+                    <h2>开始使用</h2>
+                    <p>如果你想在 iPhone 和 Windows 之间获得 AirDrop 般的传输体验，先下载 WinSend，再按照<a href="/zh/guides/setup/">安装与配对教程</a>完成配对。配对不到一分钟，之后分享页就是你的传输入口。</p>
+                    <div class="mt-8 mb-12">
+                        <a href="/zh/#download" class="btn-primary inline-flex items-center gap-2 px-8 py-4 bg-blue-700 text-white text-lg font-semibold rounded-xl hover:bg-blue-800 transition-all shadow-lg shadow-blue-700/30">下载 WinSend for Windows</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="py-16 px-6 bg-gray-900 text-gray-400">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid md:grid-cols-4 gap-12 mb-12">
+                <div class="md:col-span-2">
+                    <div class="flex items-center gap-3 mb-4">
+                        <img src="/logo.png" alt="WinSend Logo" class="w-9 h-9 rounded-xl">
+                        <span class="text-xl font-bold text-white">WinSend</span>
+                    </div>
+                    <p class="text-sm leading-relaxed max-w-md">Windows 版 AirDrop。<br>通过本地 Wi-Fi 或互联网，在 iPhone 与 Windows 之间无缝传输文件。</p>
+                </div>
+                <div>
+                    <h4 class="text-white font-semibold mb-4">产品</h4>
+                    <ul class="space-y-3 text-sm">
+                        <li><a href="/zh/#features" class="hover:text-white transition-colors">功能特性</a></li>
+                        <li><a href="/zh/guides/" class="hover:text-white transition-colors">教程中心</a></li>
+                        <li><a href="/zh/#download" class="hover:text-white transition-colors">下载</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-semibold mb-4">联系我们</h4>
+                    <ul class="space-y-3 text-sm">
+                        <li><a href="#" class="hover:text-white transition-colors">GitHub</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Twitter</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">联系方式</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center gap-4 text-sm">
+                <p>&copy; 2025 WinSend. All rights reserved.</p>
+                <p class="flex items-center gap-2">为 iPhone 与 Windows 用户打造</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

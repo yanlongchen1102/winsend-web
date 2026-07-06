@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AirDrop for Windows: Transfer Files from iPhone to PC | WinSend Guide</title>
+    <meta name="description" content="Looking for AirDrop for Windows? WinSend lets you transfer photos, videos and files from iPhone to Windows PC straight from the Photos share sheet — no cable, no cloud, no signup.">
+    <meta name="robots" content="index,follow,max-image-preview:large">
+    <link rel="canonical" href="https://winsend.app/en/guides/airdrop-for-windows/">
+    <link rel="alternate" hreflang="en" href="https://winsend.app/en/guides/airdrop-for-windows/" />
+    <link rel="alternate" hreflang="zh" href="https://winsend.app/zh/guides/airdrop-for-windows/" />
+    <link rel="alternate" hreflang="x-default" href="https://winsend.app/en/guides/airdrop-for-windows/" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+    <style>
+        * { font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; }
+        .hero-bg { background: radial-gradient(ellipse 80% 50% at 50% -20%, rgba(37, 99, 235, 0.15), transparent), linear-gradient(180deg, #ffffff 0%, #f8fbff 100%); }
+        .btn-primary { transition: all 0.2s ease; }
+        .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 10px 25px -5px rgba(37, 99, 235, 0.35); }
+        .prose h2 { font-size: 1.75rem; font-weight: 700; margin-top: 2.5rem; margin-bottom: 1rem; letter-spacing: -0.025em; }
+        .prose h3 { font-size: 1.25rem; font-weight: 600; margin-top: 2rem; margin-bottom: 0.75rem; }
+        .prose p { color: #4b5563; line-height: 1.8; margin-bottom: 1rem; }
+        .prose ul { list-style-type: disc; padding-left: 1.5rem; color: #4b5563; line-height: 1.8; margin-bottom: 1rem; }
+        .prose ol { list-style-type: decimal; padding-left: 1.5rem; color: #4b5563; line-height: 1.8; margin-bottom: 1rem; }
+        .prose li { margin-bottom: 0.5rem; }
+        .prose a { color: #2563eb; text-decoration: underline; }
+        .prose a:hover { color: #1d4ed8; }
+        .prose strong { color: #111827; font-weight: 600; }
+        .step-card { border: 1px solid #e5e7eb; border-radius: 1.5rem; background: #fff; padding: 1.5rem; margin-bottom: 2rem; box-shadow: 0 1px 3px rgba(0,0,0,0.05); }
+        .step-card img { width: 100%; max-width: 360px; border-radius: 1rem; margin: 1rem auto 0; display: block; border: 1px solid #f3f4f6; }
+        .step-badge { display: inline-block; background: #2563eb; color: #fff; font-size: 0.75rem; font-weight: 700; padding: 0.25rem 0.75rem; border-radius: 9999px; margin-bottom: 0.75rem; }
+        .screenshot-caption { text-align: center; font-size: 0.875rem; color: #6b7280; margin-top: 0.75rem; }
+    </style>
+</head>
+<body class="bg-white text-gray-900 antialiased">
+    <nav aria-label="Main navigation" class="fixed top-0 left-0 right-0 bg-white/70 backdrop-blur-xl z-50 border-b border-gray-100">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+            <a href="/en/" class="flex items-center gap-3"><img src="/logo.png" alt="WinSend Logo" class="w-9 h-9 rounded-xl"><span class="text-xl font-bold tracking-tight">WinSend</span></a>
+            <div class="flex items-center gap-6"><a href="/en/#features" class="text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors hidden sm:block">Features</a><a href="/en/guides/" class="text-sm font-semibold text-gray-900 transition-colors hidden sm:block">Guides</a><a href="/en/#download" class="btn-primary inline-flex items-center gap-2 px-5 py-2.5 bg-blue-600 text-white text-sm font-semibold rounded-lg hover:bg-blue-700">Download</a><a href="/zh/" class="text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors">中文</a></div>
+        </div>
+    </nav>
+    <main>
+        <section class="hero-bg pt-32 pb-14 px-6">
+            <div class="max-w-4xl mx-auto">
+                <nav aria-label="Breadcrumb" class="mb-8"><ol class="flex flex-wrap items-center gap-2 text-sm text-gray-500"><li><a href="/en/" class="hover:text-gray-900 transition-colors">Home</a></li><li>/</li><li><a href="/en/guides/" class="hover:text-gray-900 transition-colors">Guide Center</a></li><li>/</li><li class="text-gray-900 font-medium">AirDrop for Windows</li></ol></nav>
+                <header>
+                    <p class="text-sm font-semibold tracking-[0.24em] text-blue-600 uppercase mb-4">Solution Guide</p>
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight mb-6">AirDrop for Windows: Send Files from iPhone to PC Without Opening an App</h1>
+                    <p class="text-xl text-gray-600 leading-9 max-w-3xl">WinSend adds an AirDrop-style share button to your iPhone. Select photos in the Photos app, tap Share, choose WinSend, and send them straight to your Windows PC — no cable, no cloud, no account.</p>
+                </header>
+            </div>
+        </section>
+        <section class="px-6 pb-20">
+            <div class="max-w-4xl mx-auto">
+                <article class="prose">
+                    <p>Apple's AirDrop feels effortless because you never leave the app you are in. You tap Share, pick a contact or device, and the file is gone. That same convenience has been missing on Windows — until now.</p>
+                    <p><strong>WinSend works the same way.</strong> Once installed and paired, it appears right in the iOS share sheet. You select a photo or video in the Photos app, tap the WinSend icon, choose your Windows PC, and the file transfers instantly. You do not need to open WinSend first.</p>
+
+                    <h2>How to Send Photos from iPhone to Windows Like AirDrop</h2>
+
+                    <div class="step-card">
+                        <span class="step-badge">STEP 1</span>
+                        <h3>Select Photos and Open the Share Sheet</h3>
+                        <p>Open the Photos app on your iPhone, select the photo or video you want to transfer, then tap the Share button. You will see the standard iOS share sheet with Messages, Mail, AirDrop and — after installing WinSend — the WinSend icon.</p>
+                        <img src="/en/guides/airdrop-for-windows/images/step1-share-sheet-winsend.PNG" alt="iPhone share sheet showing WinSend next to AirDrop, Messages and Mail">
+                        <p class="screenshot-caption">WinSend appears alongside AirDrop in the iOS share sheet.</p>
+                    </div>
+
+                    <div class="step-card">
+                        <span class="step-badge">STEP 2</span>
+                        <h3>Tap WinSend and Pick Your PC</h3>
+                        <p>Tap the WinSend icon. A device picker opens and shows your paired Windows PC under "My Devices". Tap it once to start the transfer.</p>
+                        <img src="/en/guides/airdrop-for-windows/images/step2-select-windows-pc.PNG" alt="WinSend device picker showing Windows-PC under My Devices">
+                        <p class="screenshot-caption">Choose your Windows PC from the WinSend device list.</p>
+                    </div>
+
+                    <div class="step-card">
+                        <span class="step-badge">STEP 3</span>
+                        <h3>Wait for the Transfer to Complete</h3>
+                        <p>A progress indicator appears around your PC icon. The transfer happens over your local Wi-Fi when both devices are on the same network, so it is usually fast even for videos.</p>
+                        <img src="/en/guides/airdrop-for-windows/images/step3-transfer-progress.PNG" alt="WinSend transfer progress indicator on Windows-PC icon">
+                        <p class="screenshot-caption">The progress ring shows the file is being sent.</p>
+                    </div>
+
+                    <div class="step-card">
+                        <span class="step-badge">STEP 4</span>
+                        <h3>Done — File Received on Windows</h3>
+                        <p>Once the transfer finishes, you will see a "Send Successful" confirmation on your iPhone. The file is already saved in the WinSend receive folder on your Windows PC.</p>
+                        <img src="/en/guides/airdrop-for-windows/images/step4-send-success.PNG" alt="WinSend send successful confirmation dialog">
+                        <p class="screenshot-caption">Your file has been sent. No email, no cloud sync, no cable.</p>
+                    </div>
+
+                    <h2>What Makes This Different From Other Tools?</h2>
+                    <p>Most file-transfer apps make you open their app, browse for files, and then send. WinSend skips that. Because it lives in the iOS share sheet, the workflow is almost identical to AirDrop:</p>
+                    <ul>
+                        <li><strong>No app switching</strong> — send directly from Photos, Files, Safari, Notes or any app with a Share button</li>
+                        <li><strong>No upload to cloud</strong> — transfers go device to device over your network</li>
+                        <li><strong>No compression</strong> — original photo and video quality is preserved</li>
+                        <li><strong>No signup</strong> — just install, pair once, and send</li>
+                    </ul>
+
+                    <h2>What You Can Send</h2>
+                    <ul>
+                        <li>Photos and videos from the Camera Roll</li>
+                        <li>Screenshots and bursts</li>
+                        <li>Documents from the Files app</li>
+                        <li>PDFs, links and text from Safari or Notes</li>
+                    </ul>
+
+                    <h2>Get Started</h2>
+                    <p>If you want AirDrop-style transfers between iPhone and Windows, download WinSend and follow the <a href="/en/guides/setup/">installation and pairing guide</a>. Pairing takes under a minute, and after that the share sheet does the rest.</p>
+                    <div class="mt-8 mb-12">
+                        <a href="/en/#download" class="btn-primary inline-flex items-center gap-2 px-8 py-4 bg-blue-700 text-white text-lg font-semibold rounded-xl hover:bg-blue-800 transition-all shadow-lg shadow-blue-700/30">Download WinSend for Windows</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="py-16 px-6 bg-gray-900 text-gray-400">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid md:grid-cols-4 gap-12 mb-12">
+                <div class="md:col-span-2">
+                    <div class="flex items-center gap-3 mb-4">
+                        <img src="/logo.png" alt="WinSend Logo" class="w-9 h-9 rounded-xl">
+                        <span class="text-xl font-bold text-white">WinSend</span>
+                    </div>
+                    <p class="text-sm leading-relaxed max-w-md">AirDrop for Windows.<br>Seamlessly transfer files between iPhone and Windows via local Wi-Fi or internet.</p>
+                </div>
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Product</h4>
+                    <ul class="space-y-3 text-sm">
+                        <li><a href="/en/#features" class="hover:text-white transition-colors">Features</a></li>
+                        <li><a href="/en/guides/" class="hover:text-white transition-colors">Guide Center</a></li>
+                        <li><a href="/en/#download" class="hover:text-white transition-colors">Download</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Contact Us</h4>
+                    <ul class="space-y-3 text-sm">
+                        <li><a href="#" class="hover:text-white transition-colors">GitHub</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Twitter</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center gap-4 text-sm">
+                <p>&copy; 2025 WinSend. All rights reserved.</p>
+                <p class="flex items-center gap-2">Built for iPhone and Windows users</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
