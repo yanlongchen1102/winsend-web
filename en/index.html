@@ -706,11 +706,12 @@
                     return;
                 }
                 markTracked(eventName);
-                fetch(TRACK_BASE_URL + "?type=" + encodeURIComponent(eventName), {
-                    method: "GET",
-                    keepalive: true,
-                    cache: "no-cache"
-                }).catch(function() {});
+                var url = TRACK_BASE_URL + "?type=" + encodeURIComponent(eventName);
+                // Use Image Beacon to avoid fetch CORS issues and page navigation blocking.
+                try {
+                    var img = new Image(1, 1);
+                    img.src = url;
+                } catch (e) {}
             }
 
             function trackDownload() {

@@ -579,11 +579,12 @@
                     return;
                 }
                 markTracked(eventName);
-                fetch(TRACK_BASE_URL + "?type=" + encodeURIComponent(eventName), {
-                    method: "GET",
-                    keepalive: true,
-                    cache: "no-cache"
-                }).catch(function() {});
+                var url = TRACK_BASE_URL + "?type=" + encodeURIComponent(eventName);
+                // 使用 Image Beacon 避免 fetch 跨域(CORS)问题，同时不阻塞页面跳转
+                try {
+                    var img = new Image(1, 1);
+                    img.src = url;
+                } catch (e) {}
             }
 
             function trackDownload() {
