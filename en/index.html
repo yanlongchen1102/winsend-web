@@ -112,7 +112,7 @@
                                 <span class="text-xs font-medium text-blue-50">(v<span class="current-version-text">1.0.0</span>)</span>
                             </div>
                         </a>
-                        <a href="https://apps.apple.com/us/app/winsend-send-files-to-windows/id6760611719" target="_blank" rel="noopener" class="btn-primary inline-flex items-center justify-center px-6 py-4 min-h-[64px] bg-black text-white font-semibold rounded-xl hover:bg-gray-900 text-lg transition-all">
+                        <a href="https://apps.apple.com/app/id6760611719" target="_blank" rel="noopener" class="app-store-link btn-primary inline-flex items-center justify-center px-6 py-4 min-h-[64px] bg-black text-white font-semibold rounded-xl hover:bg-gray-900 text-lg transition-all">
                             <div class="flex flex-col items-center gap-1.5">
                                 <span class="inline-flex items-center gap-2.5">
                                     <svg class="w-5 h-5 flex-shrink-0" viewBox="0 0 384 512" fill="currentColor">
@@ -555,7 +555,7 @@
                         <span class="text-sm font-medium text-blue-50">(v<span class="current-version-text">1.0.0</span>)</span>
                     </div>
                 </a>
-                <a href="https://apps.apple.com/us/app/winsend-send-files-to-windows/id6760611719" target="_blank" rel="noopener" class="btn-primary inline-flex items-center justify-center px-8 py-5 min-h-[72px] bg-black text-white font-bold text-xl rounded-2xl hover:bg-gray-900 shadow-xl shadow-gray-500/30 transition-all">
+                <a href="https://apps.apple.com/app/id6760611719" target="_blank" rel="noopener" class="app-store-link btn-primary inline-flex items-center justify-center px-8 py-5 min-h-[72px] bg-black text-white font-bold text-xl rounded-2xl hover:bg-gray-900 shadow-xl shadow-gray-500/30 transition-all">
                     <div class="flex flex-col items-center gap-2">
                         <span class="inline-flex items-center gap-3">
                             <svg class="w-6 h-6 flex-shrink-0" viewBox="0 0 384 512" fill="currentColor">
@@ -640,65 +640,134 @@
     </footer>
 
     <script>
-        function buildDownloadUrl(data) {
-            var version = data && data.version ? data.version : "1.0.0";
-            var fileName = "WinSend_v" + version + ".exe";
-            var rawUrl = data && data.url ? data.url : "/";
+        (function() {
+            var TRACK_BASE_URL = "https://api.winsend.app/track";
+            var APP_STORE_WEB_URL = "https://apps.apple.com/app/id6760611719";
+            var APP_STORE_APP_URL = "itms-apps://itunes.apple.com/app/id6760611719";
+            var TRACK_DEDUP_PREFIX = "winsend_track_";
 
-            try {
-                var resolved = new URL(rawUrl, window.location.origin);
-                var path = resolved.pathname || "/";
+            function buildDownloadUrl(data) {
+                var version = data && data.version ? data.version : "1.0.0";
+                var fileName = "WinSend_v" + version + ".exe";
+                var rawUrl = data && data.url ? data.url : "/";
 
-                if (path.endsWith(".exe")) {
-                    resolved.pathname = path.replace(/[^/]+$/, fileName);
-                } else {
-                    resolved.pathname = path.replace(/\/?$/, "/") + fileName;
+                try {
+                    var resolved = new URL(rawUrl, window.location.origin);
+                    var path = resolved.pathname || "/";
+
+                    if (path.endsWith(".exe")) {
+                        resolved.pathname = path.replace(/[^/]+$/, fileName);
+                    } else {
+                        resolved.pathname = path.replace(/\/?$/, "/") + fileName;
+                    }
+
+                    return resolved.toString();
+                } catch (error) {
+                    return "/"+ fileName;
                 }
-
-                return resolved.toString();
-            } catch (error) {
-                return "/"+ fileName;
             }
-        }
 
-        function trackDownload() {
-            fetch("https://api.winsend.app/track?type=download", {
-                method: "GET",
-                keepalive: true,
-                cache: "no-cache"
-            }).catch(function() {});
-        }
+            function getStorage() {
+                try {
+                    return window.localStorage;
+                } catch (e) {
+                    return null;
+                }
+            }
 
-        // Defer update.json fetch to avoid blocking first paint
-        function loadUpdateInfo() {
-            fetch("/update.json")
-                .then(function(response) {
-                    if (!response.ok) {
-                        throw new Error("Failed to load update.json");
-                    }
-                    return response.json();
-                })
-                .then(function(data) {
-                    if (data.version) {
-                        document.querySelectorAll(".current-version-text").forEach(function(node) {
-                            node.textContent = data.version;
+            function getTimestamp() {
+                return Date.now ? Date.now() : new Date().getTime();
+            }
+
+            function shouldDedup(eventName, windowMs) {
+                if (!windowMs || windowMs <= 0) {
+                    return false;
+                }
+                var storage = getStorage();
+                if (!storage) {
+                    return false;
+                }
+                var last = parseInt(storage.getItem(TRACK_DEDUP_PREFIX + eventName + "_at"), 10);
+                return !isNaN(last) && (getTimestamp() - last) < windowMs;
+            }
+
+            function markTracked(eventName) {
+                var storage = getStorage();
+                if (storage) {
+                    storage.setItem(TRACK_DEDUP_PREFIX + eventName + "_at", String(getTimestamp()));
+                }
+            }
+
+            // Generic tracker with time-window deduplication.
+            // dedupWindowMs examples: 5 min = 5*60*1000, 30 min = 30*60*1000,
+            // 1 hour = 60*60*1000, 1 day = 24*60*60*1000.
+            function trackEvent(eventName, dedupWindowMs) {
+                if (shouldDedup(eventName, dedupWindowMs)) {
+                    return;
+                }
+                markTracked(eventName);
+                fetch(TRACK_BASE_URL + "?type=" + encodeURIComponent(eventName), {
+                    method: "GET",
+                    keepalive: true,
+                    cache: "no-cache"
+                }).catch(function() {});
+            }
+
+            function trackDownload() {
+                trackEvent("download", 24 * 60 * 60 * 1000);
+            }
+
+            function trackAppStoreClick() {
+                trackEvent("app_store_click", 24 * 60 * 60 * 1000);
+            }
+
+            function isIOS() {
+                return /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+            }
+
+            function handleAppStoreClick(event) {
+                trackAppStoreClick();
+                if (isIOS()) {
+                    event.preventDefault();
+                    window.location.href = APP_STORE_APP_URL;
+                }
+            }
+
+            // Defer update.json fetch to avoid blocking first paint
+            function loadUpdateInfo() {
+                fetch("/update.json")
+                    .then(function(response) {
+                        if (!response.ok) {
+                            throw new Error("Failed to load update.json");
+                        }
+                        return response.json();
+                    })
+                    .then(function(data) {
+                        if (data.version) {
+                            document.querySelectorAll(".current-version-text").forEach(function(node) {
+                                node.textContent = data.version;
+                            });
+                        }
+                        var downloadUrl = buildDownloadUrl(data);
+                        document.querySelectorAll(".download-link").forEach(function(node) {
+                            node.href = downloadUrl;
+                            node.addEventListener("click", trackDownload);
                         });
-                    }
-                    var downloadUrl = buildDownloadUrl(data);
-                    document.querySelectorAll(".download-link").forEach(function(node) {
-                        node.href = downloadUrl;
-                        node.addEventListener("click", trackDownload);
-                    });
-                })
-                .catch(function() {});
-        }
+                        document.querySelectorAll(".app-store-link").forEach(function(node) {
+                            node.href = APP_STORE_WEB_URL;
+                            node.addEventListener("click", handleAppStoreClick);
+                        });
+                    })
+                    .catch(function() {});
+            }
 
-        // Use requestIdleCallback with setTimeout fallback
-        if ('requestIdleCallback' in window) {
-            requestIdleCallback(loadUpdateInfo);
-        } else {
-            setTimeout(loadUpdateInfo, 2000);
-        }
+            // Use requestIdleCallback with setTimeout fallback
+            if ('requestIdleCallback' in window) {
+                requestIdleCallback(loadUpdateInfo);
+            } else {
+                setTimeout(loadUpdateInfo, 2000);
+            }
+        })();
     </script>
 </body>
 </html>
