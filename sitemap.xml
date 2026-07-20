@@ -124,4 +124,22 @@
         <xhtml:link rel="alternate" hreflang="x-default" href="https://winsend.app/en/guides/airdrop-for-windows/" />
         <lastmod>2026-07-06</lastmod>
     </url>
+
+    <!-- Cross-Platform Transfer Tools (English) -->
+    <url>
+        <loc>https://winsend.app/en/guides/cross-platform-transfer-tools/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://winsend.app/en/guides/cross-platform-transfer-tools/" />
+        <xhtml:link rel="alternate" hreflang="zh" href="https://winsend.app/zh/guides/cross-platform-transfer-tools/" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://winsend.app/en/guides/cross-platform-transfer-tools/" />
+        <lastmod>2026-07-20</lastmod>
+    </url>
+
+    <!-- Cross-Platform Transfer Tools (Chinese) -->
+    <url>
+        <loc>https://winsend.app/zh/guides/cross-platform-transfer-tools/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://winsend.app/en/guides/cross-platform-transfer-tools/" />
+        <xhtml:link rel="alternate" hreflang="zh" href="https://winsend.app/zh/guides/cross-platform-transfer-tools/" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://winsend.app/en/guides/cross-platform-transfer-tools/" />
+        <lastmod>2026-07-20</lastmod>
+    </url>
 </urlset>
