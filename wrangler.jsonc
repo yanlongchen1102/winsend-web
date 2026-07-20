@@ -1,0 +1,23 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "bitter-sound-afaf",
+  "compatibility_date": "2026-07-20",
+  "observability": {
+    "enabled": true
+  },
+  "assets": {
+    "directory": ".",
+    "not_found_handling": "none",
+    "html_handling": "auto-trailing-slash",
+    "exclude": [
+      ".git/**",
+      ".claude/**",
+      ".wrangler/**",
+      "node_modules/**",
+      "*.log"
+    ]
+  },
+  "compatibility_flags": [
+    "nodejs_compat"
+  ]
+}
