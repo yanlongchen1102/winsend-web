@@ -8,14 +8,7 @@
   "assets": {
     "directory": ".",
     "not_found_handling": "none",
-    "html_handling": "auto-trailing-slash",
-    "exclude": [
-      ".git/**",
-      ".claude/**",
-      ".wrangler/**",
-      "node_modules/**",
-      "*.log"
-    ]
+    "html_handling": "auto-trailing-slash"
   },
   "compatibility_flags": [
     "nodejs_compat"
