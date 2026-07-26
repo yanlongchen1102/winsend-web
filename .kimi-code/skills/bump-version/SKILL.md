@@ -21,4 +21,7 @@ arguments:
 4. 不需要改的位置（动态读取，勿动）：
    - `zh/index.html` 和 `en/index.html` 首页：版本号和下载链接由前端 JS 在运行时 fetch `update.json` 动态生成（见 `buildDownloadUrl` 和 `.current-version-text` 逻辑）
 5. 完成后再次用 Grep 验证：全仓库搜索旧版本号应无残留（`.exe` 历史安装包除外，它们保留不删）。
-6. 不要执行 `git commit`/`git push`，除非用户明确要求。
+6. 自动执行 git 提交并推送（本流程已获用户授权，无需再确认）：
+   - `git add` 所有改动文件（版本号修改 + 新的 `WinSend_v$version.exe` 安装包）
+   - commit message 格式：`release: bump version to v$version`
+   - `git push` 到远端 main 分支
