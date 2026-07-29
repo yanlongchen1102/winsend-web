@@ -13,6 +13,8 @@
 - [ ] 提交 Bing 站长平台（bing.com/webmasters，可用 GSC 一键导入）——中文 SEO 主阵地
 - [ ] 提交软件目录收录（SEO 外链 + GEO 语料双重价值）：
   - [x] AlternativeTo（alternativeto.net）——最重要，AI 高频引用源——2026-07-29 已提交（alternativeto.net/software/winsend/）
+    - [ ] 后续验证（提交后约 1 周）：确认条目通过人工审核、信息未被编辑改动
+    - [ ] 后续验证：检查 LocalSend / AirDrop 等页面，确认 WinSend 出现在其替代品列表中（流量入口生效的标志）
   - [ ] SaaSHub
   - [ ] Softpedia
   - [ ] Slant
@@ -46,6 +48,8 @@
 ## 第 2 阶段：站外声量（第 1-3 个月，GEO 播种）
 
 为 GEO 积累"第三方提及"——AI 引用的是第三方来源，自己网站的内容对 GEO 作用有限。
+
+> 各平台详细执行计划（内容、形式、节奏）见 `SOCIAL_MEDIA_PLAN.md`。
 
 ### Reddit（英文 GEO 最重要来源）
 
