@@ -12,7 +12,7 @@
 - [ ] 确认 Google Search Console 已验证、sitemap.xml 已提交、无抓取错误
 - [ ] 提交 Bing 站长平台（bing.com/webmasters，可用 GSC 一键导入）——中文 SEO 主阵地
 - [ ] 提交软件目录收录（SEO 外链 + GEO 语料双重价值）：
-  - [ ] AlternativeTo（alternativeto.net）——最重要，AI 高频引用源
+  - [x] AlternativeTo（alternativeto.net）——最重要，AI 高频引用源——2026-07-29 已提交（alternativeto.net/software/winsend/）
   - [ ] SaaSHub
   - [ ] Softpedia
   - [ ] Slant
