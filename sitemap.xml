@@ -124,4 +124,58 @@
         <xhtml:link rel="alternate" hreflang="x-default" href="https://winsend.app/en/guides/cross-platform-transfer-tools/" />
         <lastmod>2026-07-20</lastmod>
     </url>
+
+    <!-- WinSend vs LocalSend (English) -->
+    <url>
+        <loc>https://winsend.app/en/comparison/winsend-vs-localsend/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://winsend.app/en/comparison/winsend-vs-localsend/" />
+        <xhtml:link rel="alternate" hreflang="zh" href="https://winsend.app/zh/comparison/winsend-vs-localsend/" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://winsend.app/en/comparison/winsend-vs-localsend/" />
+        <lastmod>2026-07-29</lastmod>
+    </url>
+
+    <!-- WinSend vs LocalSend (Chinese) -->
+    <url>
+        <loc>https://winsend.app/zh/comparison/winsend-vs-localsend/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://winsend.app/en/comparison/winsend-vs-localsend/" />
+        <xhtml:link rel="alternate" hreflang="zh" href="https://winsend.app/zh/comparison/winsend-vs-localsend/" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://winsend.app/en/comparison/winsend-vs-localsend/" />
+        <lastmod>2026-07-29</lastmod>
+    </url>
+
+    <!-- WinSend vs Snapdrop (English) -->
+    <url>
+        <loc>https://winsend.app/en/comparison/winsend-vs-snapdrop/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://winsend.app/en/comparison/winsend-vs-snapdrop/" />
+        <xhtml:link rel="alternate" hreflang="zh" href="https://winsend.app/zh/comparison/winsend-vs-snapdrop/" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://winsend.app/en/comparison/winsend-vs-snapdrop/" />
+        <lastmod>2026-07-29</lastmod>
+    </url>
+
+    <!-- WinSend vs Snapdrop (Chinese) -->
+    <url>
+        <loc>https://winsend.app/zh/comparison/winsend-vs-snapdrop/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://winsend.app/en/comparison/winsend-vs-snapdrop/" />
+        <xhtml:link rel="alternate" hreflang="zh" href="https://winsend.app/zh/comparison/winsend-vs-snapdrop/" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://winsend.app/en/comparison/winsend-vs-snapdrop/" />
+        <lastmod>2026-07-29</lastmod>
+    </url>
+
+    <!-- WinSend vs Send Anywhere (English) -->
+    <url>
+        <loc>https://winsend.app/en/comparison/winsend-vs-sendanywhere/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://winsend.app/en/comparison/winsend-vs-sendanywhere/" />
+        <xhtml:link rel="alternate" hreflang="zh" href="https://winsend.app/zh/comparison/winsend-vs-sendanywhere/" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://winsend.app/en/comparison/winsend-vs-sendanywhere/" />
+        <lastmod>2026-07-29</lastmod>
+    </url>
+
+    <!-- WinSend vs Send Anywhere (Chinese) -->
+    <url>
+        <loc>https://winsend.app/zh/comparison/winsend-vs-sendanywhere/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://winsend.app/en/comparison/winsend-vs-sendanywhere/" />
+        <xhtml:link rel="alternate" hreflang="zh" href="https://winsend.app/zh/comparison/winsend-vs-sendanywhere/" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://winsend.app/en/comparison/winsend-vs-sendanywhere/" />
+        <lastmod>2026-07-29</lastmod>
+    </url>
 </urlset>
