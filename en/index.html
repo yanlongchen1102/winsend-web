@@ -642,9 +642,29 @@
     <script>
         (function() {
             var TRACK_BASE_URL = "https://api.winsend.app/track";
-            var APP_STORE_WEB_URL = "https://apps.apple.com/app/id6760611719";
+            var APP_STORE_WEB_URL_GENERIC = "https://apps.apple.com/app/id6760611719";
+            var APP_STORE_WEB_URL_CN = "https://apps.apple.com/cn/app/id6760611719";
             var APP_STORE_APP_URL = "itms-apps://itunes.apple.com/app/id6760611719";
             var TRACK_DEDUP_PREFIX = "winsend_track_";
+
+            // Apple's geo-redirect drops the link path for mainland China IPs
+            // and lands on the Today page, so use the /cn/ URL for those users.
+            function isMainlandChina() {
+                try {
+                    var timeZone = Intl.DateTimeFormat().resolvedOptions().timeZone || "";
+                    if (/^Asia\/(Shanghai|Urumqi|Chongqing|Harbin|Kashgar)$/.test(timeZone)) {
+                        return true;
+                    }
+                } catch (error) {}
+                return (navigator.language || "") === "zh-CN";
+            }
+
+            var APP_STORE_WEB_URL = isMainlandChina() ? APP_STORE_WEB_URL_CN : APP_STORE_WEB_URL_GENERIC;
+
+            // Apply the regional link immediately, independent of update.json
+            document.querySelectorAll(".app-store-link").forEach(function(node) {
+                node.href = APP_STORE_WEB_URL;
+            });
 
             function buildDownloadUrl(data) {
                 var version = data && data.version ? data.version : "1.0.0";

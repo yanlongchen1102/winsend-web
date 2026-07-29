@@ -3,667 +3,480 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Windows iPhone File Transfer: 5 Best Cross-Platform Tools Compared (2025)</title>
-    <meta name="description" content="The complete guide to transferring files between Windows and iPhone. Compare WinSend, LocalSend, Snapdrop, Feem v4, and Send Anywhere with screenshots, pros & cons, and step-by-step instructions for fast local network sharing.">
-    <meta name="keywords" content="Windows iPhone file transfer, cross platform file transfer, AirDrop for Windows, transfer files from iPhone to PC, LocalSend vs WinSend, Snapdrop tutorial, LAN file sharing, iPhone to Windows wireless transfer">
+    <title>5 Best AirDrop Alternatives: Transfer Files Between iPhone and Windows PC (2025) | WinSend Guide</title>
+    <meta name="description" content="Looking for the best AirDrop alternative for Windows? Compare WinSend, LocalSend, Snapdrop, Feem v4 and Send Anywhere — the 5 best apps to transfer photos, videos and files from iPhone to Windows PC wirelessly, no cable, no cloud.">
+    <meta name="keywords" content="AirDrop alternative for Windows, transfer files from iPhone to Windows PC, iPhone to PC file transfer, cross platform file transfer, LocalSend vs Snapdrop vs Send Anywhere, wireless file transfer iPhone Windows, LAN file sharing, AirDrop for Windows PC">
     <meta name="robots" content="index,follow,max-image-preview:large">
     <link rel="canonical" href="https://winsend.app/en/guides/cross-platform-transfer-tools/">
     <link rel="alternate" hreflang="en" href="https://winsend.app/en/guides/cross-platform-transfer-tools/" />
     <link rel="alternate" hreflang="zh" href="https://winsend.app/zh/guides/cross-platform-transfer-tools/" />
     <link rel="alternate" hreflang="x-default" href="https://winsend.app/en/guides/cross-platform-transfer-tools/" />
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
-    <meta property="og:title" content="Windows iPhone File Transfer: 5 Best Cross-Platform Tools Compared">
-    <meta property="og:description" content="Compare WinSend, LocalSend, Snapdrop, Feem v4, and Send Anywhere. Find the best way to transfer files between iPhone and Windows without cables or cloud uploads.">
+    <meta property="og:title" content="5 Best AirDrop Alternatives: Transfer Files Between iPhone and Windows PC">
+    <meta property="og:description" content="Compare WinSend, LocalSend, Snapdrop, Feem v4 and Send Anywhere. Find the best way to transfer files between iPhone and Windows without cables or cloud uploads.">
     <meta property="og:image" content="https://winsend.app/en/guides/cross-platform-transfer-tools/images/winsend-screenshot-1.png">
     <meta property="og:url" content="https://winsend.app/en/guides/cross-platform-transfer-tools/">
     <meta property="og:type" content="article">
     <meta name="twitter:card" content="summary_large_image">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
     <style>
-        :root {
-            --bg: #f5f7fa;
-            --card-bg: #ffffff;
-            --text: #1a1a1a;
-            --text-secondary: #5a5a5a;
-            --primary: #2563eb;
-            --primary-light: #eff6ff;
-            --border: #e2e8f0;
-            --radius: 16px;
-            --shadow: 0 4px 20px rgba(0,0,0,0.06);
-        }
-        * { box-sizing: border-box; }
-        body {
-            margin: 0;
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Inter", "Helvetica Neue", Arial, sans-serif;
-            background: var(--bg);
-            color: var(--text);
-            line-height: 1.75;
-        }
-        .container {
-            max-width: 920px;
-            margin: 0 auto;
-            padding: 40px 20px;
-        }
-        .lang-switch {
-            text-align: right;
-            margin-bottom: 20px;
-            font-size: 14px;
-        }
-        .lang-switch a {
-            color: var(--primary);
-            font-weight: 500;
-            margin-left: 12px;
-        }
-        header {
-            text-align: center;
-            margin-bottom: 48px;
-        }
-        header h1 {
-            font-size: 34px;
-            font-weight: 800;
-            margin: 0 0 16px;
-            line-height: 1.2;
-        }
-        header p {
-            font-size: 18px;
-            color: var(--text-secondary);
-            max-width: 720px;
-            margin: 0 auto;
-        }
-        .badge {
-            display: inline-block;
-            background: var(--primary-light);
-            color: var(--primary);
-            padding: 6px 14px;
-            border-radius: 999px;
-            font-size: 14px;
-            font-weight: 600;
-            margin-bottom: 16px;
-        }
-        h2 {
-            font-size: 26px;
-            font-weight: 700;
-            margin: 48px 0 20px;
-            padding-bottom: 10px;
-            border-bottom: 2px solid var(--border);
-        }
-        h3 {
-            font-size: 22px;
-            font-weight: 600;
-            margin: 32px 0 14px;
-        }
-        h4 {
-            font-size: 18px;
-            font-weight: 600;
-            margin: 24px 0 10px;
-        }
-        p { margin: 0 0 14px; }
-        ul, ol { margin: 0 0 18px; padding-left: 22px; }
-        li { margin-bottom: 8px; }
-        a { color: var(--primary); text-decoration: none; }
-        a:hover { text-decoration: underline; }
-        .card {
-            background: var(--card-bg);
-            border-radius: var(--radius);
-            box-shadow: var(--shadow);
-            padding: 28px;
-            margin-bottom: 28px;
-        }
-        .product-header {
-            display: flex;
-            align-items: center;
-            gap: 16px;
-            margin-bottom: 20px;
-        }
-        .product-header img.logo {
-            width: 64px;
-            height: 64px;
-            border-radius: 14px;
-            object-fit: cover;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-        }
-        .product-header .title {
-            font-size: 24px;
-            font-weight: 700;
-            margin: 0;
-        }
-        .product-header .subtitle {
-            color: var(--text-secondary);
-            font-size: 15px;
-            margin: 4px 0 0;
-        }
-        .screenshot {
-            width: 100%;
-            border-radius: 12px;
-            border: 1px solid var(--border);
-            margin: 16px 0;
-            max-height: 420px;
-            object-fit: cover;
-            object-position: top;
-        }
-        .info-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 12px;
-            margin: 16px 0;
-        }
-        .info-item {
-            background: var(--bg);
-            padding: 12px 16px;
-            border-radius: 10px;
-        }
-        .info-item strong {
-            display: block;
-            font-size: 13px;
-            color: var(--text-secondary);
-            margin-bottom: 4px;
-            font-weight: 500;
-        }
-        .pros-cons {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 20px;
-            margin-top: 16px;
-        }
-        @media (max-width: 640px) {
-            .pros-cons { grid-template-columns: 1fr; }
-            header h1 { font-size: 28px; }
-        }
-        .pros, .cons {
-            padding: 16px;
-            border-radius: 12px;
-        }
+        * { font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; }
+        .hero-bg { background: radial-gradient(ellipse 80% 50% at 50% -20%, rgba(37, 99, 235, 0.15), transparent), linear-gradient(180deg, #ffffff 0%, #f8fbff 100%); }
+        .btn-primary { transition: all 0.2s ease; }
+        .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 10px 25px -5px rgba(37, 99, 235, 0.35); }
+        .prose h2 { font-size: 1.75rem; font-weight: 700; margin-top: 2.5rem; margin-bottom: 1rem; letter-spacing: -0.025em; }
+        .prose h3 { font-size: 1.25rem; font-weight: 600; margin-top: 2rem; margin-bottom: 0.75rem; }
+        .prose h4 { font-size: 1.05rem; font-weight: 600; margin-top: 1.5rem; margin-bottom: 0.5rem; }
+        .prose p { color: #4b5563; line-height: 1.8; margin-bottom: 1rem; }
+        .prose ul { list-style-type: disc; padding-left: 1.5rem; color: #4b5563; line-height: 1.8; margin-bottom: 1rem; }
+        .prose ol { list-style-type: decimal; padding-left: 1.5rem; color: #4b5563; line-height: 1.8; margin-bottom: 1rem; }
+        .prose li { margin-bottom: 0.5rem; }
+        .prose a { color: #2563eb; text-decoration: underline; }
+        .prose a:hover { color: #1d4ed8; }
+        .prose strong { color: #111827; font-weight: 600; }
+        .prose a.btn-primary { color: #ffffff; text-decoration: none; }
+        .tool-card { border: 1px solid #e5e7eb; border-radius: 1.5rem; background: #fff; padding: 1.75rem; margin: 2rem 0; box-shadow: 0 1px 3px rgba(0,0,0,0.05); }
+        .tool-card h3 { margin-top: 0; }
+        .tool-header { display: flex; align-items: center; gap: 1rem; margin-bottom: 1.25rem; }
+        .tool-header img.logo { width: 56px; height: 56px; border-radius: 0.875rem; object-fit: cover; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+        .tool-header .name { font-size: 1.4rem; font-weight: 700; margin: 0; }
+        .tool-header .subtitle { color: #6b7280; font-size: 0.9rem; margin: 0.15rem 0 0; }
+        .screenshot { width: 100%; border-radius: 1rem; border: 1px solid #f3f4f6; margin: 1rem 0; max-height: 420px; object-fit: cover; object-position: top; }
+        .info-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 0.75rem; margin: 1rem 0; }
+        .info-item { background: #f9fafb; padding: 0.75rem 1rem; border-radius: 0.75rem; font-size: 0.9rem; color: #374151; }
+        .info-item strong { display: block; font-size: 0.78rem; color: #6b7280; margin-bottom: 0.2rem; font-weight: 500; }
+        .pros-cons { display: grid; grid-template-columns: 1fr 1fr; gap: 1.25rem; margin-top: 1rem; }
+        @media (max-width: 640px) { .pros-cons { grid-template-columns: 1fr; } }
+        .pros, .cons { padding: 1rem 1.25rem; border-radius: 0.875rem; }
         .pros { background: #f0fdf4; }
         .cons { background: #fef2f2; }
         .pros h4 { color: #166534; margin-top: 0; }
         .cons h4 { color: #991b1b; margin-top: 0; }
         .pros ul, .cons ul { margin-bottom: 0; }
-        .highlight {
-            background: linear-gradient(120deg, #dbeafe 0%, #dbeafe 100%);
-            background-repeat: no-repeat;
-            background-size: 100% 40%;
-            background-position: 0 88%;
-            padding: 0 4px;
-        }
-        .tutorial-step {
-            display: flex;
-            gap: 18px;
-            margin-bottom: 24px;
-        }
-        .tutorial-step .number {
-            flex-shrink: 0;
-            width: 40px;
-            height: 40px;
-            background: var(--primary);
-            color: #fff;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-weight: 700;
-            font-size: 18px;
-        }
-        .tutorial-step .content { flex: 1; }
-        .tutorial-step h4 { margin-top: 0; margin-bottom: 8px; }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            background: var(--card-bg);
-            border-radius: var(--radius);
-            overflow: hidden;
-            box-shadow: var(--shadow);
-            margin: 24px 0;
-        }
-        th, td {
-            padding: 14px 16px;
-            text-align: left;
-            border-bottom: 1px solid var(--border);
-            font-size: 15px;
-        }
-        th {
-            background: var(--primary-light);
-            font-weight: 600;
-            color: var(--primary);
-        }
-        tr:last-child td { border-bottom: none; }
-        .tag {
-            display: inline-block;
-            font-size: 12px;
-            padding: 3px 10px;
-            border-radius: 999px;
-            font-weight: 600;
-            margin-right: 6px;
-        }
+        .step-card { border: 1px solid #e5e7eb; border-radius: 1.5rem; background: #fff; padding: 1.5rem; margin-bottom: 2rem; box-shadow: 0 1px 3px rgba(0,0,0,0.05); }
+        .step-card img { width: 100%; max-width: 360px; border-radius: 1rem; margin: 1rem auto 0; display: block; border: 1px solid #f3f4f6; }
+        .step-badge { display: inline-block; background: #2563eb; color: #fff; font-size: 0.75rem; font-weight: 700; padding: 0.25rem 0.75rem; border-radius: 9999px; margin-bottom: 0.75rem; }
+        .screenshot-caption { text-align: center; font-size: 0.875rem; color: #6b7280; margin-top: 0.75rem; }
+        .compare-table { width: 100%; border-collapse: collapse; font-size: 0.92rem; margin: 1.5rem 0; }
+        .compare-table th, .compare-table td { padding: 0.85rem 1rem; text-align: left; border-bottom: 1px solid #e5e7eb; }
+        .compare-table th { background: #eff6ff; font-weight: 600; color: #1d4ed8; }
+        .compare-table tr:last-child td { border-bottom: none; }
+        .table-wrap { overflow-x: auto; border: 1px solid #e5e7eb; border-radius: 1rem; box-shadow: 0 1px 3px rgba(0,0,0,0.05); }
+        .tag { display: inline-block; font-size: 0.72rem; padding: 0.15rem 0.6rem; border-radius: 9999px; font-weight: 600; margin-right: 0.3rem; white-space: nowrap; }
         .tag-free { background: #dcfce7; color: #166534; }
         .tag-paid { background: #ffedd5; color: #9a3412; }
         .tag-open { background: #e0e7ff; color: #3730a3; }
         .tag-web { background: #f3e8ff; color: #6b21a8; }
-        footer {
-            text-align: center;
-            color: var(--text-secondary);
-            font-size: 14px;
-            margin-top: 60px;
-            padding-top: 24px;
-            border-top: 1px solid var(--border);
-        }
-        .cta {
-            background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
-            color: #fff;
-            padding: 24px;
-            border-radius: var(--radius);
-            text-align: center;
-            margin: 32px 0;
-        }
-        .cta h3 { margin-top: 0; color: #fff; }
-        .cta p { color: rgba(255,255,255,0.9); }
-        .cta a {
-            display: inline-block;
-            background: #fff;
-            color: var(--primary);
-            padding: 12px 28px;
-            border-radius: 999px;
-            font-weight: 700;
-            margin-top: 8px;
-        }
-        .breadcrumb {
-            font-size: 14px;
-            color: var(--text-secondary);
-            margin-bottom: 24px;
-        }
-        .breadcrumb a { color: var(--text-secondary); }
-        .breadcrumb a:hover { color: var(--primary); }
     </style>
 </head>
-<body>
-    <div class="container">
-        <div class="lang-switch">
-            <span>🌐</span>
-            <a href="/zh/guides/cross-platform-transfer-tools/">中文</a>
-            <a href="/en/guides/cross-platform-transfer-tools/">English</a>
+<body class="bg-white text-gray-900 antialiased">
+    <nav aria-label="Main navigation" class="fixed top-0 left-0 right-0 bg-white/70 backdrop-blur-xl z-50 border-b border-gray-100">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+            <a href="/en/" class="flex items-center gap-3"><img src="/logo.png" alt="WinSend Logo" class="w-9 h-9 rounded-xl"><span class="text-xl font-bold tracking-tight">WinSend</span></a>
+            <div class="flex items-center gap-6"><a href="/en/#features" class="text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors hidden sm:block">Features</a><a href="/en/guides/" class="text-sm font-semibold text-gray-900 transition-colors hidden sm:block">Guides</a><a href="/en/#download" class="btn-primary inline-flex items-center gap-2 px-5 py-2.5 bg-blue-600 text-white text-sm font-semibold rounded-lg hover:bg-blue-700">Download</a><a href="/zh/guides/cross-platform-transfer-tools/" class="text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors">中文</a></div>
         </div>
+    </nav>
+    <main>
+        <section class="hero-bg pt-32 pb-14 px-6">
+            <div class="max-w-4xl mx-auto">
+                <nav aria-label="Breadcrumb" class="mb-8"><ol class="flex flex-wrap items-center gap-2 text-sm text-gray-500"><li><a href="/en/" class="hover:text-gray-900 transition-colors">Home</a></li><li>/</li><li><a href="/en/guides/" class="hover:text-gray-900 transition-colors">Guide Center</a></li><li>/</li><li class="text-gray-900 font-medium">AirDrop Alternatives</li></ol></nav>
+                <header>
+                    <p class="text-sm font-semibold tracking-[0.24em] text-blue-600 uppercase mb-4">Tool Roundup</p>
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight mb-6">5 Best AirDrop Alternatives to Transfer Files Between iPhone and Windows</h1>
+                    <p class="text-xl text-gray-600 leading-9 max-w-3xl">A complete guide to transferring photos, videos, files and clipboard text from iPhone to Windows PC — no cable, no cloud. Compare WinSend, LocalSend, Snapdrop, Feem v4 and Send Anywhere with real screenshots and practical advice.</p>
+                </header>
+            </div>
+        </section>
+        <section class="px-6 pb-20">
+            <div class="max-w-4xl mx-auto">
+                <article class="prose">
+                    <h2>Why Do You Need an AirDrop Alternative for Windows?</h2>
+                    <p>If you use a <strong>Windows PC and an iPhone</strong> together, you've probably faced these situations:</p>
+                    <ul>
+                        <li>You took photos or videos on your iPhone and want to quickly move them to your PC for editing or backup;</li>
+                        <li>You copied a link, password, or paragraph on your PC and need it on your phone;</li>
+                        <li>You want to avoid messaging apps or email because they compress images, limit file sizes, or raise privacy concerns;</li>
+                        <li>You don't want to plug in a cable or upload files to the cloud.</li>
+                    </ul>
+                    <p>Apple's AirDrop only works within the Apple ecosystem — there is no AirDrop for Windows. The tools below fill that gap and let you transfer files from iPhone to PC wirelessly.</p>
 
-        <div class="breadcrumb">
-            <a href="/en/">Home</a> &gt; <a href="/en/guides/">Guides</a> &gt; Windows iPhone Transfer Tools
+                    <h2>Quick Comparison of the 5 Best iPhone-to-Windows Transfer Tools</h2>
+                    <div class="table-wrap">
+                        <table class="compare-table">
+                            <thead>
+                                <tr>
+                                    <th>Tool</th>
+                                    <th>Type</th>
+                                    <th>Platforms</th>
+                                    <th>Internet Required?</th>
+                                    <th>Best For</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>WinSend</strong></td>
+                                    <td><span class="tag tag-free">Free</span> App</td>
+                                    <td>Windows + iOS</td>
+                                    <td>Local network only</td>
+                                    <td>Dedicated Win ↔ iPhone users</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>LocalSend</strong></td>
+                                    <td><span class="tag tag-free">Free</span><span class="tag tag-open">Open Source</span></td>
+                                    <td>All major platforms</td>
+                                    <td>Local network only</td>
+                                    <td>Privacy-focused users</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Snapdrop</strong></td>
+                                    <td><span class="tag tag-free">Free</span><span class="tag tag-web">Web</span></td>
+                                    <td>Any browser</td>
+                                    <td>Needs snapdrop.net access</td>
+                                    <td>Quick, one-off transfers</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Feem v4</strong></td>
+                                    <td><span class="tag tag-free">Free with ads</span></td>
+                                    <td>All major platforms</td>
+                                    <td>Local network only</td>
+                                    <td>Chat-style file sharing</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Send Anywhere</strong></td>
+                                    <td><span class="tag tag-free">Free</span><span class="tag tag-paid">Premium</span></td>
+                                    <td>All major platforms</td>
+                                    <td>Offline or cross-network</td>
+                                    <td>Large files across networks</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <h2>The 5 Tools in Detail</h2>
+
+                    <div class="tool-card">
+                        <div class="tool-header">
+                            <img src="images/winsend-logo.png" alt="WinSend Logo" class="logo">
+                            <div>
+                                <p class="name">WinSend</p>
+                                <p class="subtitle">The dedicated Windows ↔ iPhone transfer app</p>
+                            </div>
+                        </div>
+                        <p>WinSend is built specifically for <strong>wireless file and clipboard sharing between Windows and iPhone</strong>. It communicates directly over your local network, so files, photos, and clipboard text move quickly without cloud uploads or account registration.</p>
+                        <div class="info-grid">
+                            <div class="info-item"><strong>Platforms</strong>Windows, iOS</div>
+                            <div class="info-item"><strong>Transfer Method</strong>LAN HTTP + WebSocket</div>
+                            <div class="info-item"><strong>Pricing</strong>Free basics; Pro for advanced features</div>
+                            <div class="info-item"><strong>Highlights</strong>Clipboard sync, photo/file transfer, auto-discovery</div>
+                        </div>
+                        <img src="images/winsend-screenshot-1.png" alt="WinSend iOS app interface" class="screenshot">
+                        <h4>How to Use It</h4>
+                        <ol>
+                            <li>Download and run the WinSend client on your Windows PC;</li>
+                            <li>Install the WinSend iOS app and make sure both devices are on the same Wi-Fi;</li>
+                            <li>Open the app — your Windows PC should appear automatically;</li>
+                            <li>Tap “Get from PC” to sync clipboard, or “Send Photos/Files” to transfer from iPhone to PC;</li>
+                            <li>If auto-discovery fails, use “Manual Connect” and enter your PC's local IP address.</li>
+                        </ol>
+                        <div class="pros-cons">
+                            <div class="pros">
+                                <h4>Pros</h4>
+                                <ul>
+                                    <li>Optimized for Windows + iPhone workflows;</li>
+                                    <li>True two-way clipboard sync;</li>
+                                    <li>Fast local network transfers, no internet needed;</li>
+                                    <li>No account or sign-up required.</li>
+                                </ul>
+                            </div>
+                            <div class="cons">
+                                <h4>Cons</h4>
+                                <ul>
+                                    <li>Only supports Windows ↔ iOS;</li>
+                                    <li>Advanced features require Pro subscription;</li>
+                                    <li>Windows client needs to stay running in the background.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tool-card">
+                        <div class="tool-header">
+                            <img src="images/localsend-logo.png" alt="LocalSend Logo" class="logo">
+                            <div>
+                                <p class="name">LocalSend</p>
+                                <p class="subtitle">Free, open-source AirDrop alternative</p>
+                            </div>
+                        </div>
+                        <p>LocalSend is one of the most popular open-source file transfer tools. It supports Windows, macOS, Linux, Android, and iOS, uses UDP multicast to discover nearby devices, and transfers files over HTTPS with locally generated certificates. Your data never touches an external server.</p>
+                        <div class="info-grid">
+                            <div class="info-item"><strong>Platforms</strong>Windows, macOS, Linux, Android, iOS</div>
+                            <div class="info-item"><strong>Transfer Method</strong>LAN HTTPS REST API</div>
+                            <div class="info-item"><strong>Pricing</strong>Completely free and open source</div>
+                            <div class="info-item"><strong>Highlights</strong>End-to-end encryption, auto-discovery, no ads</div>
+                        </div>
+                        <img src="images/localsend-screenshot.jpg" alt="LocalSend app interface" class="screenshot">
+                        <h4>How to Use It</h4>
+                        <ol>
+                            <li>Install LocalSend on all devices;</li>
+                            <li>Make sure devices are on the same Wi-Fi or LAN;</li>
+                            <li>Open the app, go to the Send tab, and select files or text;</li>
+                            <li>Choose the target device from the Nearby Devices list;</li>
+                            <li>The receiver taps Accept, and the transfer completes.</li>
+                        </ol>
+                        <div class="pros-cons">
+                            <div class="pros">
+                                <h4>Pros</h4>
+                                <ul>
+                                    <li>Fully free and open source, no ads;</li>
+                                    <li>Supports nearly every major OS;</li>
+                                    <li>HTTPS-encrypted transfers for strong privacy;</li>
+                                    <li>Clean interface and easy device discovery.</li>
+                                </ul>
+                            </div>
+                            <div class="cons">
+                                <h4>Cons</h4>
+                                <ul>
+                                    <li>Requires installing a client on every device;</li>
+                                    <li>Multicast discovery may be blocked on corporate or guest networks;</li>
+                                    <li>iOS background discovery can be inconsistent.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tool-card">
+                        <div class="tool-header">
+                            <img src="images/snapdrop-logo.png" alt="Snapdrop Logo" class="logo">
+                            <div>
+                                <p class="name">Snapdrop</p>
+                                <p class="subtitle">Browser-based AirDrop-style sharing</p>
+                            </div>
+                        </div>
+                        <p>Snapdrop is a WebRTC-powered web app that looks and feels like AirDrop. As long as both devices are on the same network and open snapdrop.net, they can discover each other and exchange files. Its biggest advantage is that <strong>no installation is required</strong>, making it perfect for occasional or one-time transfers.</p>
+                        <div class="info-grid">
+                            <div class="info-item"><strong>Platforms</strong>Any modern browser</div>
+                            <div class="info-item"><strong>Transfer Method</strong>WebRTC P2P / WebSocket</div>
+                            <div class="info-item"><strong>Pricing</strong>Free</div>
+                            <div class="info-item"><strong>Highlights</strong>Zero install, instant use, PWA support</div>
+                        </div>
+                        <img src="images/snapdrop-screenshot.webp" alt="Snapdrop web interface" class="screenshot">
+                        <h4>How to Use It</h4>
+                        <ol>
+                            <li>Open a browser on both your Windows PC and iPhone;</li>
+                            <li>Visit <a href="https://snapdrop.net" target="_blank">snapdrop.net</a> on both devices;</li>
+                            <li>Wait for each device to appear on the other's screen;</li>
+                            <li>Tap the target device icon and choose the file or text to send;</li>
+                            <li>Confirm on the receiving side to start the transfer.</li>
+                        </ol>
+                        <div class="pros-cons">
+                            <div class="pros">
+                                <h4>Pros</h4>
+                                <ul>
+                                    <li>No app installation needed;</li>
+                                    <li>Extremely simple, AirDrop-like interface;</li>
+                                    <li>PWA support lets you add it to your home screen;</li>
+                                    <li>Works on anything with a browser.</li>
+                                </ul>
+                            </div>
+                            <div class="cons">
+                                <h4>Cons</h4>
+                                <ul>
+                                    <li>Relies on a public server for initial discovery;</li>
+                                    <li>Large file transfers are less stable than native apps;</li>
+                                    <li>VPNs and complex networks can break discovery;</li>
+                                    <li>Downloaded files may be renamed automatically.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tool-card">
+                        <div class="tool-header">
+                            <img src="images/feem-logo.png" alt="Feem Logo" class="logo">
+                            <div>
+                                <p class="name">Feem v4</p>
+                                <p class="subtitle">Chat-style file sharing across devices</p>
+                            </div>
+                        </div>
+                        <p>Feem v4 is a long-standing cross-platform transfer tool built around a chat-like experience. It has clients for Windows, iOS, Android, macOS, and Linux. Devices on the same Wi-Fi automatically discover each other, and you can send text, images, videos, and even folders through conversation-style sessions.</p>
+                        <div class="info-grid">
+                            <div class="info-item"><strong>Platforms</strong>Windows, iOS, Android, macOS, Linux</div>
+                            <div class="info-item"><strong>Transfer Method</strong>LAN Wi-Fi Direct / HTTP</div>
+                            <div class="info-item"><strong>Pricing</strong>Free with ads; paid to remove ads</div>
+                            <div class="info-item"><strong>Highlights</strong>Chat sessions, transfer history, Wi-Fi Direct</div>
+                        </div>
+                        <img src="images/feem-screenshot.webp" alt="Feem app interface" class="screenshot">
+                        <h4>How to Use It</h4>
+                        <ol>
+                            <li>Install Feem v4 on both Windows and iPhone;</li>
+                            <li>Open the app and wait for devices to appear;</li>
+                            <li>Select the target device to open a chat session;</li>
+                            <li>Tap the attachment button to send files or paste text directly;</li>
+                            <li>The receiver views and downloads content from the session.</li>
+                        </ol>
+                        <div class="pros-cons">
+                            <div class="pros">
+                                <h4>Pros</h4>
+                                <ul>
+                                    <li>Chat-style history makes transfers easy to track;</li>
+                                    <li>Supports folder transfers in some versions;</li>
+                                    <li>Established tool with a broad user base;</li>
+                                    <li>No internet required; pure local network transfer.</li>
+                                </ul>
+                            </div>
+                            <div class="cons">
+                                <h4>Cons</h4>
+                                <ul>
+                                    <li>Free version includes ads and feels dated;</li>
+                                    <li>iOS integration with the system share sheet is weak;</li>
+                                    <li>Some users report connection instability after updates;</li>
+                                    <li>Feem v5 is now available, so v4 support is uncertain.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tool-card">
+                        <div class="tool-header">
+                            <img src="images/sendanywhere-logo.png" alt="Send Anywhere Logo" class="logo">
+                            <div>
+                                <p class="name">Send Anywhere</p>
+                                <p class="subtitle">Cross-network transfers with a 6-digit key</p>
+                            </div>
+                        </div>
+                        <p>Send Anywhere differs from the others because it doesn't require devices to be on the same network. Using a <strong>6-digit key</strong>, you can transfer files across different networks or even different locations. The sender uploads or generates a key, and the receiver enters it to download — useful for sending large files to friends remotely.</p>
+                        <div class="info-grid">
+                            <div class="info-item"><strong>Platforms</strong>Windows, iOS, Android, macOS, Web</div>
+                            <div class="info-item"><strong>Transfer Method</strong>P2P + relay server</div>
+                            <div class="info-item"><strong>Pricing</strong>Free with limits; premium plans available</div>
+                            <div class="info-item"><strong>Highlights</strong>6-digit key, cross-network, large file support</div>
+                        </div>
+                        <img src="images/sendanywhere-screenshot.webp" alt="Send Anywhere app interface" class="screenshot">
+                        <h4>How to Use It</h4>
+                        <ol>
+                            <li>Open Send Anywhere on the sending device and select your files;</li>
+                            <li>Tap Send to generate a 6-digit key or QR code;</li>
+                            <li>On the receiving device, open Send Anywhere and choose Receive;</li>
+                            <li>Enter the 6-digit key and wait for the download;</li>
+                            <li>On the same LAN, you can also use Nearby device discovery for instant sending.</li>
+                        </ol>
+                        <div class="pros-cons">
+                            <div class="pros">
+                                <h4>Pros</h4>
+                                <ul>
+                                    <li>Works across different Wi-Fi networks;</li>
+                                    <li>Simple 6-digit key, easy for non-technical users;</li>
+                                    <li>Supports large files and all major platforms;</li>
+                                    <li>Flexible offline and online modes.</li>
+                                </ul>
+                            </div>
+                            <div class="cons">
+                                <h4>Cons</h4>
+                                <ul>
+                                    <li>Free version has file size and daily transfer limits;</li>
+                                    <li>Cross-network transfers may go through relay servers;</li>
+                                    <li>Privacy-conscious users should review data handling;</li>
+                                    <li>Interface includes ads and upsells.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h2>Step-by-Step: Transfer Files from iPhone to Windows with WinSend</h2>
+                    <p>If your main setup is a Windows PC and an iPhone, WinSend offers the smoothest experience. Here's the complete setup and usage flow:</p>
+
+                    <div class="step-card">
+                        <span class="step-badge">STEP 1</span>
+                        <h3>Install the Windows Client</h3>
+                        <p>Visit <a href="https://winsend.app" target="_blank">winsend.app</a> and download the Windows installer. Run it and allow local network access when prompted. Once running, the WinSend icon appears in your system tray.</p>
+                    </div>
+                    <div class="step-card">
+                        <span class="step-badge">STEP 2</span>
+                        <h3>Install the iOS App</h3>
+                        <p>Search for “WinSend” in the App Store and install it. Open the app and grant local network permission, which is required for discovering your Windows PC.</p>
+                    </div>
+                    <div class="step-card">
+                        <span class="step-badge">STEP 3</span>
+                        <h3>Connect to the Same Network</h3>
+                        <p>Make sure both your iPhone and Windows PC are connected to the same Wi-Fi router or hotspot. Corporate, campus, or guest networks may block device discovery — in that case, use Manual Connect.</p>
+                    </div>
+                    <div class="step-card">
+                        <span class="step-badge">STEP 4</span>
+                        <h3>Discover Your PC</h3>
+                        <p>Open the WinSend iOS app and wait a few seconds. Your Windows PC should appear under “My Device.” If it doesn't, tap the refresh button to rescan the local network.</p>
+                        <img src="images/winsend-screenshot-2.png" alt="WinSend device discovery screen">
+                        <p class="screenshot-caption">WinSend automatically discovers your Windows PC on the same Wi-Fi.</p>
+                    </div>
+                    <div class="step-card">
+                        <span class="step-badge">STEP 5</span>
+                        <h3>Start Transferring</h3>
+                        <p>Once connected:</p>
+                        <ul>
+                            <li><strong>iPhone → Windows:</strong> Tap “Send Photos to PC” or “Send Files to PC,” select your content, and it transfers directly to your Windows download folder.</li>
+                            <li><strong>Windows → iPhone:</strong> Copy text or an image on your PC, then tap “Get Clipboard from PC” in the iOS app to sync it to your phone.</li>
+                            <li><strong>Clipboard Sync:</strong> Enable auto clipboard sync and anything you copy on Windows automatically appears on iPhone, and vice versa.</li>
+                        </ul>
+                    </div>
+                    <div class="step-card">
+                        <span class="step-badge">STEP 6</span>
+                        <h3>Manual Connect (Fallback)</h3>
+                        <p>If auto-discovery fails, tap “Manual Connect” in the top-right corner and enter your Windows PC's local IP address, which you can find in the WinSend Windows client settings.</p>
+                    </div>
+
+                    <h2>Which AirDrop Alternative Should You Choose?</h2>
+                    <ul>
+                        <li><strong>Mostly Windows + iPhone, want seamless clipboard and file sync</strong> → Choose <strong>WinSend</strong>. It's purpose-built for this exact workflow.</li>
+                        <li><strong>Need full ecosystem coverage and care about open source/privacy</strong> → Choose <strong>LocalSend</strong>. Free, open source, and encrypted.</li>
+                        <li><strong>Occasional one-off transfers, don't want to install anything</strong> → Choose <strong>Snapdrop</strong>. Just open a browser.</li>
+                        <li><strong>Prefer chat-style sessions and transfer history</strong> → Choose <strong>Feem v4</strong>.</li>
+                        <li><strong>Devices are on different networks or you send large files remotely</strong> → Choose <strong>Send Anywhere</strong>.</li>
+                    </ul>
+
+                    <h2>Get Started</h2>
+                    <p>Ready to transfer files between your iPhone and Windows PC like AirDrop? Download WinSend and follow the <a href="/en/guides/setup/">installation and pairing guide</a>. Pairing takes under a minute.</p>
+                    <div class="mt-8 mb-12">
+                        <a href="/en/#download" class="btn-primary inline-flex items-center gap-2 px-8 py-4 bg-blue-700 text-white text-lg font-semibold rounded-xl hover:bg-blue-800 transition-all shadow-lg shadow-blue-700/30">Download WinSend for Windows</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="py-16 px-6 bg-gray-900 text-gray-400">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid md:grid-cols-4 gap-12 mb-12">
+                <div class="md:col-span-2">
+                    <div class="flex items-center gap-3 mb-4">
+                        <img src="/logo.png" alt="WinSend Logo" class="w-9 h-9 rounded-xl">
+                        <span class="text-xl font-bold text-white">WinSend</span>
+                    </div>
+                    <p class="text-sm leading-relaxed max-w-md">AirDrop for Windows.<br>Seamlessly transfer files between iPhone and Windows via local Wi-Fi or internet.</p>
+                </div>
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Product</h4>
+                    <ul class="space-y-3 text-sm">
+                        <li><a href="/en/#features" class="hover:text-white transition-colors">Features</a></li>
+                        <li><a href="/en/guides/" class="hover:text-white transition-colors">Guide Center</a></li>
+                        <li><a href="/en/#download" class="hover:text-white transition-colors">Download</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Contact Us</h4>
+                    <ul class="space-y-3 text-sm">
+                        <li><a href="#" class="hover:text-white transition-colors">GitHub</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Twitter</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center gap-4 text-sm">
+                <p>&copy; 2025 WinSend. All rights reserved.</p>
+                <p class="flex items-center gap-2">This guide is for educational purposes. Product interfaces and logos belong to their respective owners.</p>
+            </div>
         </div>
-
-        <header>
-            <span class="badge">Cross-Platform Transfer Guide</span>
-            <h1>Windows iPhone File Transfer: 5 Tools Compared</h1>
-            <p>A complete guide to transferring photos, videos, files, and clipboard text between Windows and iPhone. Compare WinSend, LocalSend, Snapdrop, Feem v4, and Send Anywhere with real screenshots and practical advice.</p>
-        </header>
-
-        <section>
-            <h2>Why Do You Need a Cross-Platform Transfer Tool?</h2>
-            <p>If you use a <span class="highlight">Windows PC and an iPhone</span> together, you've probably faced these situations:</p>
-            <ul>
-                <li>You took photos or videos on your iPhone and want to quickly move them to your PC for editing or backup;</li>
-                <li>You copied a link, password, or paragraph on your PC and need it on your phone;</li>
-                <li>You want to avoid WeChat, QQ, or email because they compress images, limit file sizes, or raise privacy concerns;</li>
-                <li>You don't want to plug in a cable or upload files to the cloud.</li>
-            </ul>
-            <p>Apple's AirDrop only works within the Apple ecosystem. Windows and iPhone users need a reliable alternative. The tools below fill that gap.</p>
-        </section>
-
-        <section>
-            <h2>Quick Comparison of 5 Transfer Tools</h2>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Tool</th>
-                        <th>Type</th>
-                        <th>Platforms</th>
-                        <th>Internet Required?</th>
-                        <th>Best For</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><strong>WinSend</strong></td>
-                        <td><span class="tag tag-free">Free</span> App</td>
-                        <td>Windows + iOS</td>
-                        <td>Local network only</td>
-                        <td>Dedicated Win ↔ iPhone users</td>
-                    </tr>
-                    <tr>
-                        <td><strong>LocalSend</strong></td>
-                        <td><span class="tag tag-free">Free</span><span class="tag tag-open">Open Source</span></td>
-                        <td>All major platforms</td>
-                        <td>Local network only</td>
-                        <td>Privacy-focused users</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Snapdrop</strong></td>
-                        <td><span class="tag tag-free">Free</span><span class="tag tag-web">Web</span></td>
-                        <td>Any browser</td>
-                        <td>Needs snapdrop.net access</td>
-                        <td>Quick, one-off transfers</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Feem v4</strong></td>
-                        <td><span class="tag tag-free">Free with ads</span></td>
-                        <td>All major platforms</td>
-                        <td>Local network only</td>
-                        <td>Chat-style file sharing</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Send Anywhere</strong></td>
-                        <td><span class="tag tag-free">Free</span><span class="tag tag-paid">Premium</span></td>
-                        <td>All major platforms</td>
-                        <td>Offline or cross-network</td>
-                        <td>Large files across networks</td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
-
-        <!-- WinSend -->
-        <section class="card">
-            <div class="product-header">
-                <img src="images/winsend-logo.png" alt="WinSend Logo" class="logo">
-                <div>
-                    <div class="title">WinSend</div>
-                    <p class="subtitle">The dedicated Windows ↔ iPhone transfer app</p>
-                </div>
-            </div>
-            <p>WinSend is built specifically for <span class="highlight">wireless file and clipboard sharing between Windows and iPhone</span>. It communicates directly over your local network, so files, photos, and clipboard text move quickly without cloud uploads or account registration.</p>
-            <div class="info-grid">
-                <div class="info-item"><strong>Platforms</strong>Windows, iOS</div>
-                <div class="info-item"><strong>Transfer Method</strong>LAN HTTP + WebSocket</div>
-                <div class="info-item"><strong>Pricing</strong>Free basics; Pro for advanced features</div>
-                <div class="info-item"><strong>Highlights</strong>Clipboard sync, photo/file transfer, auto-discovery</div>
-            </div>
-            <img src="images/winsend-screenshot-1.png" alt="WinSend iOS app interface" class="screenshot">
-            <h4>How to Use It</h4>
-            <ol>
-                <li>Download and run the WinSend client on your Windows PC;</li>
-                <li>Install the WinSend iOS app and make sure both devices are on the same Wi-Fi;</li>
-                <li>Open the app — your Windows PC should appear automatically;</li>
-                <li>Tap “Get from PC” to sync clipboard, or “Send Photos/Files” to transfer from iPhone to PC;</li>
-                <li>If auto-discovery fails, use “Manual Connect” and enter your PC's local IP address.</li>
-            </ol>
-            <div class="pros-cons">
-                <div class="pros">
-                    <h4>Pros</h4>
-                    <ul>
-                        <li>Optimized for Windows + iPhone workflows;</li>
-                        <li>True two-way clipboard sync;</li>
-                        <li>Fast local network transfers, no internet needed;</li>
-                        <li>No account or sign-up required.</li>
-                    </ul>
-                </div>
-                <div class="cons">
-                    <h4>Cons</h4>
-                    <ul>
-                        <li>Only supports Windows ↔ iOS;</li>
-                        <li>Advanced features require Pro subscription;</li>
-                        <li>Windows client needs to stay running in the background.</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <!-- LocalSend -->
-        <section class="card">
-            <div class="product-header">
-                <img src="images/localsend-logo.png" alt="LocalSend Logo" class="logo">
-                <div>
-                    <div class="title">LocalSend</div>
-                    <p class="subtitle">Free, open-source AirDrop alternative</p>
-                </div>
-            </div>
-            <p>LocalSend is one of the most popular open-source file transfer tools. It supports Windows, macOS, Linux, Android, and iOS, uses UDP multicast to discover nearby devices, and transfers files over HTTPS with locally generated certificates. Your data never touches an external server.</p>
-            <div class="info-grid">
-                <div class="info-item"><strong>Platforms</strong>Windows, macOS, Linux, Android, iOS</div>
-                <div class="info-item"><strong>Transfer Method</strong>LAN HTTPS REST API</div>
-                <div class="info-item"><strong>Pricing</strong>Completely free and open source</div>
-                <div class="info-item"><strong>Highlights</strong>End-to-end encryption, auto-discovery, no ads</div>
-            </div>
-            <img src="images/localsend-screenshot.jpg" alt="LocalSend app interface" class="screenshot">
-            <h4>How to Use It</h4>
-            <ol>
-                <li>Install LocalSend on all devices;</li>
-                <li>Make sure devices are on the same Wi-Fi or LAN;</li>
-                <li>Open the app, go to the Send tab, and select files or text;</li>
-                <li>Choose the target device from the Nearby Devices list;</li>
-                <li>The receiver taps Accept, and the transfer completes.</li>
-            </ol>
-            <div class="pros-cons">
-                <div class="pros">
-                    <h4>Pros</h4>
-                    <ul>
-                        <li>Fully free and open source, no ads;</li>
-                        <li>Supports nearly every major OS;</li>
-                        <li>HTTPS-encrypted transfers for strong privacy;</li>
-                        <li>Clean interface and easy device discovery.</li>
-                    </ul>
-                </div>
-                <div class="cons">
-                    <h4>Cons</h4>
-                    <ul>
-                        <li>Requires installing a client on every device;</li>
-                        <li>Multicast discovery may be blocked on corporate or guest networks;</li>
-                        <li>iOS background discovery can be inconsistent.</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <!-- Snapdrop -->
-        <section class="card">
-            <div class="product-header">
-                <img src="images/snapdrop-logo.png" alt="Snapdrop Logo" class="logo">
-                <div>
-                    <div class="title">Snapdrop</div>
-                    <p class="subtitle">Browser-based AirDrop-style sharing</p>
-                </div>
-            </div>
-            <p>Snapdrop is a WebRTC-powered web app that looks and feels like AirDrop. As long as both devices are on the same network and open snapdrop.net, they can discover each other and exchange files. Its biggest advantage is that <span class="highlight">no installation is required</span>, making it perfect for occasional or one-time transfers.</p>
-            <div class="info-grid">
-                <div class="info-item"><strong>Platforms</strong>Any modern browser</div>
-                <div class="info-item"><strong>Transfer Method</strong>WebRTC P2P / WebSocket</div>
-                <div class="info-item"><strong>Pricing</strong>Free</div>
-                <div class="info-item"><strong>Highlights</strong>Zero install, instant use, PWA support</div>
-            </div>
-            <img src="images/snapdrop-screenshot.webp" alt="Snapdrop web interface" class="screenshot">
-            <h4>How to Use It</h4>
-            <ol>
-                <li>Open a browser on both your Windows PC and iPhone;</li>
-                <li>Visit <a href="https://snapdrop.net" target="_blank">snapdrop.net</a> on both devices;</li>
-                <li>Wait for each device to appear on the other's screen;</li>
-                <li>Tap the target device icon and choose the file or text to send;</li>
-                <li>Confirm on the receiving side to start the transfer.</li>
-            </ol>
-            <div class="pros-cons">
-                <div class="pros">
-                    <h4>Pros</h4>
-                    <ul>
-                        <li>No app installation needed;</li>
-                        <li>Extremely simple, AirDrop-like interface;</li>
-                        <li>PWA support lets you add it to your home screen;</li>
-                        <li>Works on anything with a browser.</li>
-                    </ul>
-                </div>
-                <div class="cons">
-                    <h4>Cons</h4>
-                    <ul>
-                        <li>Relies on a public server for initial discovery;</li>
-                        <li>Large file transfers are less stable than native apps;</li>
-                        <li>VPNs and complex networks can break discovery;</li>
-                        <li>Downloaded files may be renamed automatically.</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <!-- Feem v4 -->
-        <section class="card">
-            <div class="product-header">
-                <img src="images/feem-logo.png" alt="Feem Logo" class="logo">
-                <div>
-                    <div class="title">Feem v4</div>
-                    <p class="subtitle">Chat-style file sharing across devices</p>
-                </div>
-            </div>
-            <p>Feem v4 is a long-standing cross-platform transfer tool built around a chat-like experience. It has clients for Windows, iOS, Android, macOS, and Linux. Devices on the same Wi-Fi automatically discover each other, and you can send text, images, videos, and even folders through conversation-style sessions.</p>
-            <div class="info-grid">
-                <div class="info-item"><strong>Platforms</strong>Windows, iOS, Android, macOS, Linux</div>
-                <div class="info-item"><strong>Transfer Method</strong>LAN Wi-Fi Direct / HTTP</div>
-                <div class="info-item"><strong>Pricing</strong>Free with ads; paid to remove ads</div>
-                <div class="info-item"><strong>Highlights</strong>Chat sessions, transfer history, Wi-Fi Direct</div>
-            </div>
-            <img src="images/feem-screenshot.webp" alt="Feem app interface" class="screenshot">
-            <h4>How to Use It</h4>
-            <ol>
-                <li>Install Feem v4 on both Windows and iPhone;</li>
-                <li>Open the app and wait for devices to appear;</li>
-                <li>Select the target device to open a chat session;</li>
-                <li>Tap the attachment button to send files or paste text directly;</li>
-                <li>The receiver views and downloads content from the session.</li>
-            </ol>
-            <div class="pros-cons">
-                <div class="pros">
-                    <h4>Pros</h4>
-                    <ul>
-                        <li>Chat-style history makes transfers easy to track;</li>
-                        <li>Supports folder transfers in some versions;</li>
-                        <li>Established tool with a broad user base;</li>
-                        <li>No internet required; pure local network transfer.</li>
-                    </ul>
-                </div>
-                <div class="cons">
-                    <h4>Cons</h4>
-                    <ul>
-                        <li>Free version includes ads and feels dated;</li>
-                        <li>iOS integration with the system share sheet is weak;</li>
-                        <li>Some users report connection instability after updates;</li>
-                        <li>Feem v5 is now available, so v4 support is uncertain.</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <!-- Send Anywhere -->
-        <section class="card">
-            <div class="product-header">
-                <img src="images/sendanywhere-logo.png" alt="Send Anywhere Logo" class="logo">
-                <div>
-                    <div class="title">Send Anywhere</div>
-                    <p class="subtitle">Cross-network transfers with a 6-digit key</p>
-                </div>
-            </div>
-            <p>Send Anywhere differs from the others because it doesn't require devices to be on the same network. Using a <span class="highlight">6-digit key</span>, you can transfer files across different networks or even different locations. The sender uploads or generates a key, and the receiver enters it to download — useful for sending large files to friends remotely.</p>
-            <div class="info-grid">
-                <div class="info-item"><strong>Platforms</strong>Windows, iOS, Android, macOS, Web</div>
-                <div class="info-item"><strong>Transfer Method</strong>P2P + relay server</div>
-                <div class="info-item"><strong>Pricing</strong>Free with limits; premium plans available</div>
-                <div class="info-item"><strong>Highlights</strong>6-digit key, cross-network, large file support</div>
-            </div>
-            <img src="images/sendanywhere-screenshot.webp" alt="Send Anywhere app interface" class="screenshot">
-            <h4>How to Use It</h4>
-            <ol>
-                <li>Open Send Anywhere on the sending device and select your files;</li>
-                <li>Tap Send to generate a 6-digit key or QR code;</li>
-                <li>On the receiving device, open Send Anywhere and choose Receive;</li>
-                <li>Enter the 6-digit key and wait for the download;</li>
-                <li>On the same LAN, you can also use Nearby device discovery for instant sending.</li>
-            </ol>
-            <div class="pros-cons">
-                <div class="pros">
-                    <h4>Pros</h4>
-                    <ul>
-                        <li>Works across different Wi-Fi networks;</li>
-                        <li>Simple 6-digit key, easy for non-technical users;</li>
-                        <li>Supports large files and all major platforms;</li>
-                        <li>Flexible offline and online modes.</li>
-                    </ul>
-                </div>
-                <div class="cons">
-                    <h4>Cons</h4>
-                    <ul>
-                        <li>Free version has file size and daily transfer limits;</li>
-                        <li>Cross-network transfers may go through relay servers;</li>
-                        <li>Privacy-conscious users should review data handling;</li>
-                        <li>Interface includes ads and upsells.</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <section>
-            <h2>Step-by-Step: Transfer Files Between Windows and iPhone with WinSend</h2>
-            <p>If your main setup is a Windows PC and an iPhone, WinSend offers the smoothest experience. Here's the complete setup and usage flow:</p>
-            
-            <div class="tutorial-step">
-                <div class="number">1</div>
-                <div class="content">
-                    <h4>Install the Windows Client</h4>
-                    <p>Visit <a href="https://winsend.app" target="_blank">winsend.app</a> and download the Windows installer. Run it and allow local network access when prompted. Once running, the WinSend icon appears in your system tray.</p>
-                </div>
-            </div>
-            <div class="tutorial-step">
-                <div class="number">2</div>
-                <div class="content">
-                    <h4>Install the iOS App</h4>
-                    <p>Search for “WinSend” in the App Store and install it. Open the app and grant local network permission, which is required for discovering your Windows PC.</p>
-                </div>
-            </div>
-            <div class="tutorial-step">
-                <div class="number">3</div>
-                <div class="content">
-                    <h4>Connect to the Same Network</h4>
-                    <p>Make sure both your iPhone and Windows PC are connected to the same Wi-Fi router or hotspot. Corporate, campus, or guest networks may block device discovery — in that case, use Manual Connect.</p>
-                </div>
-            </div>
-            <div class="tutorial-step">
-                <div class="number">4</div>
-                <div class="content">
-                    <h4>Discover Your PC</h4>
-                    <p>Open the WinSend iOS app and wait a few seconds. Your Windows PC should appear under “My Device.” If it doesn't, tap the refresh button to rescan the local network.</p>
-                    <img src="images/winsend-screenshot-2.png" alt="WinSend device discovery screen" class="screenshot" style="max-height: 360px;">
-                </div>
-            </div>
-            <div class="tutorial-step">
-                <div class="number">5</div>
-                <div class="content">
-                    <h4>Start Transferring</h4>
-                    <p>Once connected:</p>
-                    <ul>
-                        <li><strong>iPhone → Windows:</strong> Tap “Send Photos to PC” or “Send Files to PC,” select your content, and it transfers directly to your Windows download folder.</li>
-                        <li><strong>Windows → iPhone:</strong> Copy text or an image on your PC, then tap “Get Clipboard from PC” in the iOS app to sync it to your phone.</li>
-                        <li><strong>Clipboard Sync:</strong> Enable auto clipboard sync and anything you copy on Windows automatically appears on iPhone, and vice versa.</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="tutorial-step">
-                <div class="number">6</div>
-                <div class="content">
-                    <h4>Manual Connect (Fallback)</h4>
-                    <p>If auto-discovery fails, tap “Manual Connect” in the top-right corner and enter your Windows PC's local IP address, which you can find in the WinSend Windows client settings.</p>
-                </div>
-            </div>
-        </section>
-
-        <section>
-            <h2>Which Tool Should You Choose?</h2>
-            <div class="card">
-                <ul>
-                    <li><strong>Mostly Windows + iPhone, want seamless clipboard and file sync</strong> → Choose <span class="highlight">WinSend</span>. It's purpose-built for this exact workflow.</li>
-                    <li><strong>Need full ecosystem coverage and care about open source/privacy</strong> → Choose <span class="highlight">LocalSend</span>. Free, open source, and encrypted.</li>
-                    <li><strong>Occasional one-off transfers, don't want to install anything</strong> → Choose <span class="highlight">Snapdrop</span>. Just open a browser.</li>
-                    <li><strong>Prefer chat-style sessions and transfer history</strong> → Choose <span class="highlight">Feem v4</span>.</li>
-                    <li><strong>Devices are on different networks or you send large files remotely</strong> → Choose <span class="highlight">Send Anywhere</span>.</li>
-                </ul>
-            </div>
-        </section>
-
-        <div class="cta">
-            <h3>Get Started with WinSend</h3>
-            <p>Install WinSend on Windows and iPhone today for seamless clipboard and file sharing.</p>
-            <a href="https://winsend.app" target="_blank">Visit winsend.app</a>
-        </div>
-
-        <footer>
-            <p>This guide is for educational purposes. Product interfaces and logos belong to their respective owners.</p>
-        </footer>
-    </div>
+    </footer>
 </body>
 </html>
