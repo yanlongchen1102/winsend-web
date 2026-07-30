@@ -82,6 +82,12 @@
 - [ ] 内容持续：每月 2-4 篇新长尾内容，保持站点活跃
 - [ ] GEO 验收：每月问一次 ChatGPT / Perplexity / 豆包 / Kimi
       "iPhone 怎么传文件到 Windows"，看 WinSend 是否开始出现
+
+## GEO 观察记录
+
+- 2026-07-30：Perplexity 已能推荐 WinSend 且排名靠前（用户实测）。
+  检索层 GEO 初步起效，来源可能为 Product Hunt 发布 + 对比页内容。
+  待 Cloudflare Web Analytics 上线后，用 perplexity.ai referrer 交叉验证流量。
 - [ ] 评估 ICP 备案：若必应数据证明中文流量有价值，
       再决定是否备案吃百度流量（需国内主体/服务器，成本较高）
 
