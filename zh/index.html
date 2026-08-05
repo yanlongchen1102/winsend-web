@@ -56,6 +56,7 @@
             transform: scale(1.02);
         }
     </style>
+    <script src="/assets/js/posthog.js" defer></script>
 </head>
 <body class="bg-white text-gray-900 antialiased">
 
@@ -515,11 +516,9 @@
 
     <script>
         (function() {
-            var TRACK_BASE_URL = "https://api.winsend.app/track";
             var APP_STORE_WEB_URL_GENERIC = "https://apps.apple.com/app/id6760611719";
             var APP_STORE_WEB_URL_CN = "https://apps.apple.com/cn/app/id6760611719";
             var APP_STORE_APP_URL = "itms-apps://itunes.apple.com/app/id6760611719";
-            var TRACK_DEDUP_PREFIX = "winsend_track_";
 
             // 苹果对中国大陆 IP 的地理重定向会丢失链接路径并跳到 Today 页，
             // 大陆用户改用带 /cn/ 前缀的链接可直达 App 页面
@@ -561,66 +560,11 @@
                 }
             }
 
-            function getStorage() {
-                try {
-                    return window.localStorage;
-                } catch (e) {
-                    return null;
-                }
-            }
-
-            function getTimestamp() {
-                return Date.now ? Date.now() : new Date().getTime();
-            }
-
-            function shouldDedup(eventName, windowMs) {
-                if (!windowMs || windowMs <= 0) {
-                    return false;
-                }
-                var storage = getStorage();
-                if (!storage) {
-                    return false;
-                }
-                var last = parseInt(storage.getItem(TRACK_DEDUP_PREFIX + eventName + "_at"), 10);
-                return !isNaN(last) && (getTimestamp() - last) < windowMs;
-            }
-
-            function markTracked(eventName) {
-                var storage = getStorage();
-                if (storage) {
-                    storage.setItem(TRACK_DEDUP_PREFIX + eventName + "_at", String(getTimestamp()));
-                }
-            }
-
-            // 通用上报，支持按时间窗口去重
-            // dedupWindowMs 示例：5分钟 5*60*1000，30分钟 30*60*1000，1小时 60*60*1000，1天 24*60*60*1000
-            function trackEvent(eventName, dedupWindowMs) {
-                if (shouldDedup(eventName, dedupWindowMs)) {
-                    return;
-                }
-                markTracked(eventName);
-                var url = TRACK_BASE_URL + "?type=" + encodeURIComponent(eventName);
-                // 使用 Image Beacon 避免 fetch 跨域(CORS)问题，同时不阻塞页面跳转
-                try {
-                    var img = new Image(1, 1);
-                    img.src = url;
-                } catch (e) {}
-            }
-
-            function trackDownload() {
-                trackEvent("download", 24 * 60 * 60 * 1000);
-            }
-
-            function trackAppStoreClick() {
-                trackEvent("app_store_click", 24 * 60 * 60 * 1000);
-            }
-
             function isIOS() {
                 return /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
             }
 
             function handleAppStoreClick(event) {
-                trackAppStoreClick();
                 if (isIOS()) {
                     event.preventDefault();
                     window.location.href = APP_STORE_APP_URL;
@@ -649,7 +593,6 @@
                         var downloadUrl = buildDownloadUrl(data);
                         document.querySelectorAll(".download-link").forEach(function(node) {
                             node.href = downloadUrl;
-                            node.addEventListener("click", trackDownload);
                         });
                         document.querySelectorAll(".app-store-link").forEach(function(node) {
                             node.href = APP_STORE_WEB_URL;
