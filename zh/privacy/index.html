@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>隐私政策 | WinSend</title>
+    <meta name="description" content="WinSend 隐私政策：局域网直传，内容不经过我们的服务器。仅收集匿名使用统计，绝不收集剪贴板内容、文件名或文件内容。">
+    <meta name="robots" content="index,follow">
+    <link rel="canonical" href="https://winsend.app/zh/privacy/">
+    <link rel="alternate" hreflang="en" href="https://winsend.app/en/privacy/" />
+    <link rel="alternate" hreflang="zh" href="https://winsend.app/zh/privacy/" />
+    <link rel="alternate" hreflang="x-default" href="https://winsend.app/en/privacy/" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+    <style>
+        * { font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; }
+        .hero-bg { background: radial-gradient(ellipse 80% 50% at 50% -20%, rgba(37, 99, 235, 0.15), transparent), linear-gradient(180deg, #ffffff 0%, #f8fbff 100%); }
+    </style>
+    <script src="/assets/js/posthog.js" defer></script>
+</head>
+<body class="bg-white text-gray-900 antialiased">
+    <nav aria-label="Main navigation" class="fixed top-0 left-0 right-0 bg-white/70 backdrop-blur-xl z-50 border-b border-gray-100">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+            <a href="/zh/" class="flex items-center gap-3"><img src="/logo.png" alt="WinSend Logo" class="w-9 h-9 rounded-xl"><span class="text-xl font-bold tracking-tight">WinSend</span></a>
+            <div class="flex items-center gap-6"><a href="/zh/#features" class="text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors hidden sm:block">功能特性</a><a href="/zh/guides/" class="text-sm font-semibold text-gray-900 transition-colors hidden sm:block">教程</a><a href="/zh/#download" class="inline-flex items-center gap-2 px-5 py-2.5 bg-blue-600 text-white text-sm font-semibold rounded-lg hover:bg-blue-700">下载</a><a href="/en/privacy/" class="text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors">English</a></div>
+        </div>
+    </nav>
+    <main>
+        <section class="hero-bg pt-32 pb-14 px-6">
+            <div class="max-w-6xl mx-auto">
+                <p class="text-sm font-semibold tracking-[0.24em] text-blue-600 uppercase mb-4">法律信息</p>
+                <h1 class="text-4xl sm:text-5xl font-extrabold tracking-tight leading-tight mb-6">隐私政策</h1>
+                <p class="text-xl text-gray-600 leading-9 max-w-3xl">生效日期：2026 年 8 月 6 日。本政策适用于 WinSend 应用（iOS 与 Windows）以及 winsend.app 网站。</p>
+            </div>
+        </section>
+        <section class="px-6 pb-20">
+            <div class="max-w-4xl mx-auto">
+                <article class="rounded-[2rem] border border-gray-200 bg-white p-8 sm:p-10 shadow-sm">
+
+                    <section class="mb-10">
+                        <h2 class="text-3xl font-bold tracking-tight mb-4">一句话版本</h2>
+                        <p class="text-gray-600 leading-8 mb-4">WinSend 的剪贴板和文件<strong>直接在你的局域网内传输</strong>，内容不经过我们的服务器——即使我们想也看不到。</p>
+                        <ul class="list-disc pl-5 space-y-3 text-gray-600 leading-8 mt-4">
+                            <li><strong>不收集剪贴板内容</strong>，永远不会传输给我们</li>
+                            <li><strong>不收集文件名和文件内容</strong>，永远不会传输给我们</li>
+                            <li><strong>没有账号系统、无需注册</strong>——我们不要求姓名、邮箱或手机号</li>
+                            <li>我们只收集<strong>匿名使用统计</strong>（详见下文），用于改进产品和诊断连接问题</li>
+                        </ul>
+                    </section>
+
+                    <section class="mb-10">
+                        <h2 class="text-3xl font-bold tracking-tight mb-4">我们收集什么</h2>
+
+                        <h3 class="text-xl font-bold tracking-tight mb-3 mt-6">应用分析数据（iOS 与 Windows 应用）</h3>
+                        <p class="text-gray-600 leading-8 mb-4">为了解应用使用情况、诊断连接失败，应用会向我们的分析服务商发送匿名使用事件：</p>
+                        <ul class="list-disc pl-5 space-y-3 text-gray-600 leading-8 mt-4">
+                            <li><strong>随机生成的设备标识符</strong>（存储在你设备本地的 UUID）。它与你的真实身份无关，仅用于区分不同安装实例的事件</li>
+                            <li><strong>设备名、操作系统和应用版本号</strong></li>
+                            <li><strong>使用事件</strong>：应用启动、设备发现与连接尝试/结果、功能使用计数（如刷新、检查更新）以及错误事件</li>
+                            <li><strong>传输元数据</strong>：仅文件大小和传输耗时——绝不包含文件名或内容</li>
+                            <li><strong>网络诊断信息</strong>：你的 /24 网段（如 192.168.8.0/24，绝不是完整 IP 地址）、网络配置文件类型（公用/专用）、应用防火墙规则是否存在——仅用于诊断"连不上"类问题</li>
+                        </ul>
+
+                        <h3 class="text-xl font-bold tracking-tight mb-3 mt-6">网站分析数据（winsend.app）</h3>
+                        <p class="text-gray-600 leading-8">页面浏览、下载按钮点击和网页性能指标（Web Vitals），使用随机生成的匿名访客 ID 收集。</p>
+
+                        <h3 class="text-xl font-bold tracking-tight mb-3 mt-6">问卷调查</h3>
+                        <p class="text-gray-600 leading-8">如果你自愿提交应用内问卷，我们会收到你提供的答案。</p>
+                    </section>
+
+                    <section class="mb-10">
+                        <h2 class="text-3xl font-bold tracking-tight mb-4">我们如何使用这些数据</h2>
+                        <ul class="list-disc pl-5 space-y-3 text-gray-600 leading-8 mt-4">
+                            <li>衡量功能使用情况，改进产品</li>
+                            <li>诊断连接与安装失败（如防火墙或路由器问题）</li>
+                            <li>产出聚合统计（如成功连接的设备数量）</li>
+                        </ul>
+                        <p class="text-gray-600 leading-8 mt-4">我们不出售你的数据，也不将其用于广告。</p>
+                    </section>
+
+                    <section class="mb-10">
+                        <h2 class="text-3xl font-bold tracking-tight mb-4">第三方处理方</h2>
+                        <p class="text-gray-600 leading-8 mb-4">分析事件由 <strong>PostHog, Inc.</strong> 处理（云分析服务，服务器位于美国）。PostHog 作为我们的数据处理方，接收上述事件以及任何 HTTPS 请求天然携带的 IP 地址。详见 <a href="https://posthog.com/privacy" class="text-blue-600 hover:text-blue-700 underline" target="_blank" rel="noopener">PostHog 隐私政策</a>。</p>
+                        <p class="text-gray-600 leading-8">你的实际传输内容（剪贴板文本、照片、文件）直接在你的设备之间经局域网传输，绝不发送给 PostHog 或我们。</p>
+                    </section>
+
+                    <section class="mb-10">
+                        <h2 class="text-3xl font-bold tracking-tight mb-4">数据保留与删除</h2>
+                        <p class="text-gray-600 leading-8">分析数据由 PostHog 按其默认保留策略保存。由于分析数据仅与随机 UUID 关联、不与你的身份绑定，删除请求通常通过重置或移除该标识符完成。如需删除，请通过下方方式联系我们。</p>
+                    </section>
+
+                    <section class="mb-10">
+                        <h2 class="text-3xl font-bold tracking-tight mb-4">儿童</h2>
+                        <p class="text-gray-600 leading-8">WinSend 不面向 13 岁以下儿童，我们不会有意收集儿童的个人信息。</p>
+                    </section>
+
+                    <section class="mb-10">
+                        <h2 class="text-3xl font-bold tracking-tight mb-4">政策变更</h2>
+                        <p class="text-gray-600 leading-8">我们可能不时更新本政策，变更将发布在本页面并更新生效日期。</p>
+                    </section>
+
+                    <section>
+                        <h2 class="text-3xl font-bold tracking-tight mb-4">联系我们</h2>
+                        <p class="text-gray-600 leading-8">如有隐私相关问题或删除请求，请联系 <a href="mailto:support@winsend.app" class="text-blue-600 hover:text-blue-700 underline">support@winsend.app</a>。</p>
+                    </section>
+
+                </article>
+            </div>
+        </section>
+    </main>
+    <footer class="py-16 px-6 bg-gray-900 text-gray-400"><div class="max-w-6xl mx-auto"><div class="grid md:grid-cols-4 gap-12 mb-12"><div class="md:col-span-2"><div class="flex items-center gap-3 mb-4"><img src="/logo.png" alt="WinSend Logo" class="w-9 h-9 rounded-xl"><span class="text-xl font-bold text-white">WinSend</span></div><p class="text-sm leading-relaxed max-w-md">AirDrop for Windows.<br>Seamlessly transfer files between iPhone and Windows via local Wi-Fi or internet.</p></div><div><div class="text-white font-semibold mb-4">Product</div><ul class="space-y-3 text-sm"><li><a href="/zh/#features" class="hover:text-white transition-colors">功能特性</a></li><li><a href="/zh/guides/" class="hover:text-white transition-colors">教程中心</a></li><li><a href="/zh/#download" class="hover:text-white transition-colors">下载</a></li></ul></div><div><div class="text-white font-semibold mb-4">Contact Us</div><ul class="space-y-3 text-sm"><li><a href="#" class="hover:text-white transition-colors">GitHub</a></li><li><a href="#" class="hover:text-white transition-colors">Twitter</a></li><li><a href="#" class="hover:text-white transition-colors">Contact</a></li></ul></div></div><div class="pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center gap-4 text-sm"><p>&copy; 2025 WinSend. All rights reserved.</p><p>Built for iPhone and Windows users</p></div></div></footer>
+</body>
+</html>
