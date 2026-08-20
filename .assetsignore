@@ -1,7 +1,12 @@
 .git
 .claude
+.kimi-code
+.github
 .DS_Store
 .wrangler
 node_modules
 *.log
+package.json
+package-lock.json
+wrangler.jsonc
 *.md
