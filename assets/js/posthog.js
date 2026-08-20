@@ -33,14 +33,20 @@
         };
     }
 
-    // 事件委托：.download-link / .app-store-link 的 href 会被内联脚本异步改写，委托不受影响
+    // 事件委托：下载链接的 href 可能被内联脚本异步改写，委托不受影响。
     document.addEventListener("click", function (event) {
         var node = event.target && event.target.closest ? event.target.closest("a") : null;
         if (!node) {
             return;
         }
         if (node.classList.contains("download-link")) {
-            posthog.capture("web_download_click", baseProps(node.getAttribute("href")));
+            var directProps = baseProps(node.getAttribute("href"));
+            directProps.channel = "direct_exe";
+            posthog.capture("web_download_click", directProps);
+        } else if (node.classList.contains("store-installer-link")) {
+            var storeProps = baseProps(node.getAttribute("href"));
+            storeProps.channel = "store_web_installer";
+            posthog.capture("web_download_click", storeProps);
         } else if (node.classList.contains("app-store-link")) {
             posthog.capture("web_appstore_click", baseProps(node.getAttribute("href")));
         }
