@@ -9,4 +9,6 @@ node_modules
 package.json
 package-lock.json
 wrangler.jsonc
+tailwind.config.js
+assets/css/tailwind.input.css
 *.md

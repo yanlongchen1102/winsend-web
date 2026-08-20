@@ -4,7 +4,7 @@
 
 ```bash
 npm ci
-npx wrangler deploy
+npm run deploy
 ```
 
 首次在本机部署时，先登录 Cloudflare：

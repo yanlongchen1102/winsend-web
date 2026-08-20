@@ -2,10 +2,14 @@
   "name": "winsend-web",
   "private": true,
   "scripts": {
+    "build:css": "tailwindcss -i ./assets/css/tailwind.input.css -o ./assets/css/tailwind.css --minify",
+    "predeploy": "npm run build:css",
     "deploy": "wrangler deploy",
+    "predeploy:dry-run": "npm run build:css",
     "deploy:dry-run": "wrangler deploy --dry-run"
   },
   "devDependencies": {
+    "tailwindcss": "^3.4.17",
     "wrangler": "4.124.0"
   }
 }
