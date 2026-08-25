@@ -19,10 +19,12 @@ arguments:
    - 同时搜索 `WinSend_v`（排除 `.exe` 文件），找出所有拼文件名的位置。
 3. 仅在安装包存在且目标版本不同时，更新所有发现的硬编码位置。当前已知位置：
    - `update.json`：`version` 改为 `$version`，`url` 改为 `https://winsend.app/WinSend_v$version.exe`，`notes` 改为 `v$version`。
-   - `zh/guides/setup/index.html`（约 326 行附近）：`<a href="/WinSend_vX.Y.Z.exe" download>` 下载链接和 `下载 WinSend vX.Y.Z (Windows 客户端)` 文案。
+   - `zh/guides/setup/index.html`：`<a href="/WinSend_vX.Y.Z.exe" download data-installer-version="X.Y.Z" ...>` 的 `href`、`data-installer-version` 属性和 `下载 WinSend vX.Y.Z (Windows 客户端)` 文案。
+   - `llms.txt`：Facts 小节中的 `Latest versions: iOS X.Y.Z; Windows X.Y.Z` 中的 Windows 版本号（iOS 版本号需向用户确认或从 App Store Connect 获取，不要猜测）。
+   - `en/index.html` 与 `zh/index.html`：两处 `<script type="application/ld+json">` 中 `SoftwareApplication` 的 `"softwareVersion": "X.Y.Z"` 字段（每个文件各 1 处；FAQPage 的 JSON-LD 不含版本号，勿动）。
 4. 不需要改的位置（动态读取，勿动）：
    - `zh/index.html` 和 `en/index.html` 首页：版本号和下载链接由前端 JS 在运行时 fetch `update.json` 动态生成（见 `buildDownloadUrl` 和 `.current-version-text` 逻辑）。
-5. 若进行了版本修改，再次用 Grep 验证：全仓库搜索旧版本号应无残留（`.exe` 历史安装包除外，它们保留不删）。
+5. 若进行了版本修改，再次用 Grep 验证：全仓库搜索旧版本号应无残留（`.exe` 历史安装包除外，它们保留不删；`en/safety/`、`zh/safety/` 页面中的「Last updated」日期可顺带改为当天，非必须）。
 6. 仅在进行了版本修改时，自动执行 Git 提交并推送（本流程已获用户授权，无需再确认）：
    - `git add` 所有本次发布改动文件（版本号修改和新的 `WinSend_v$version.exe` 安装包）。
    - commit message：`release: bump version to v$version`。
