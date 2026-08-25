@@ -1,7 +1,7 @@
 /*!
  * PostHog 分析接入（全站共享）
  * - 上报页面浏览（$pageview，SDK 默认）
- * - 上报下载按钮点击：web_download_click
+ * - 上报站内 Windows 安装包点击：web_download_click（含版本与入口）
  * - 上报 App Store 按钮点击：web_appstore_click
  * 本地开发（localhost/127.0.0.1）不初始化，避免污染数据。
  */
@@ -33,16 +33,40 @@
         };
     }
 
-    // 事件委托：.download-link / .app-store-link 的 href 会被内联脚本异步改写，委托不受影响
+    function installerVersion(node, href) {
+        if (node.dataset.installerVersion) {
+            return node.dataset.installerVersion;
+        }
+        var match = (href || "").match(/WinSend_v([0-9]+(?:\.[0-9]+)*)\.exe(?:$|[?#])/i);
+        return match ? match[1] : "unknown";
+    }
+
+    // 不只依赖 CSS class：所有站内 .exe 链接均视为下载入口，避免教程页等新增入口漏报。
+    function isWindowsInstallerLink(node, href) {
+        if (node.classList.contains("download-link")) {
+            return true;
+        }
+        try {
+            var url = new URL(href, window.location.origin);
+            return url.origin === window.location.origin && /\.exe$/i.test(url.pathname);
+        } catch (error) {
+            return false;
+        }
+    }
+
     document.addEventListener("click", function (event) {
         var node = event.target && event.target.closest ? event.target.closest("a") : null;
         if (!node) {
             return;
         }
-        if (node.classList.contains("download-link")) {
-            posthog.capture("web_download_click", baseProps(node.getAttribute("href")));
+        var href = node.getAttribute("href") || "";
+        if (isWindowsInstallerLink(node, href)) {
+            var props = baseProps(href);
+            props.installer_version = installerVersion(node, href);
+            props.download_surface = node.dataset.downloadSurface || "unknown";
+            posthog.capture("web_download_click", props);
         } else if (node.classList.contains("app-store-link")) {
-            posthog.capture("web_appstore_click", baseProps(node.getAttribute("href")));
+            posthog.capture("web_appstore_click", baseProps(href));
         }
     }, true);
 })();
