@@ -240,6 +240,12 @@
             ]
         }
     </script>
+    <script type="application/ld+json">
+    {"@context": "https://schema.org", "@type": "HowTo", "name": "如何配对使用 WinSend（iPhone 与 Windows）", "description": "在 Windows 和 iPhone 上安装 WinSend，并在同一局域网内自动完成配对。", "step": [{"@type": "HowToStep", "position": 1, "name": "安装 Windows 客户端", "text": "从 winsend.app 下载并运行 WinSend 安装包。如 SmartScreen 提示“已保护你的电脑”，点击“更多信息”→“仍要运行”，并在防火墙提示时允许 WinSend。"}, {"@type": "HowToStep", "position": 2, "name": "安装 iPhone 应用", "text": "在 iPhone 的 App Store 中安装 WinSend。"}, {"@type": "HowToStep", "position": 3, "name": "完成自动配对", "text": "确保两台设备在同一 Wi-Fi 下。iPhone 会通过 mDNS 自动发现电脑，点击发现的设备即可连接，无需手动配置 IP。"}, {"@type": "HowToStep", "position": 4, "name": "按清单验证", "text": "确认两端显示已连接，然后用分享面板发送一张测试照片。"}]}
+    </script>
+    <script type="application/ld+json">
+    {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "WinSend 需要两台设备在同一网络吗？", "acceptedAnswer": {"@type": "Answer", "text": "是的。局域网传输要求设备处于同一 Wi-Fi；可选的云同步功能可在跨网络时端到端加密地中转剪贴板。"}}, {"@type": "Question", "name": "WinSend 收费吗？", "acceptedAnswer": {"@type": "Answer", "text": "核心传输功能免费，Pro 订阅解锁自动剪贴板同步与云同步。"}}]}
+    </script>
     <script src="/assets/js/posthog.js" defer></script>
 </head>
 <body class="bg-white text-gray-900 antialiased">

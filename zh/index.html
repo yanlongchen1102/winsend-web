@@ -56,6 +56,53 @@
             transform: scale(1.02);
         }
     </style>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "WinSend",
+        "applicationCategory": "UtilitiesApplication",
+        "operatingSystem": "Windows 10/11, iOS 15+",
+        "description": "Windows 版 AirDrop。在 iPhone 和 Windows 之间通过本地 Wi-Fi 直接传输照片、视频、文件和剪贴板，无需数据线、无需云上传、无需注册账号。",
+        "url": "https://winsend.app/zh/",
+        "downloadUrl": "https://winsend.app/WinSend.exe",
+        "softwareVersion": "2.2.1",
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+        },
+        "featureList": [
+            "iPhone 与 Windows 本地 Wi-Fi 直传",
+            "iOS 分享面板与快捷指令集成",
+            "双向自动剪贴板同步",
+            "可选的端到端加密云端剪贴板中转"
+        ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "WinSend 安全吗？",
+                "acceptedAnswer": { "@type": "Answer", "text": "安全。WinSend 以隐私为核心设计：数据不离开你的设备，没有云上传、没有账号、无跟踪，所有传输都在你的局域网内直接完成。" }
+            },
+            {
+                "@type": "Question",
+                "name": "安装 WinSend 时 Windows 提示“已保护你的电脑”是怎么回事？",
+                "acceptedAnswer": { "@type": "Answer", "text": "这是 Microsoft Defender SmartScreen 对新发布或未签名应用的常规提醒，并不代表应用不安全。点击“更多信息”然后选择“仍要运行”即可继续安装。" }
+            },
+            {
+                "@type": "Question",
+                "name": "WinSend 需要联网吗？",
+                "acceptedAnswer": { "@type": "Answer", "text": "不需要。局域网传输完全在你的 Wi-Fi 内完成，数据不经过任何外部服务器。可选的云同步功能可在跨网络场景下端到端加密地中转剪贴板文本。" }
+            }
+        ]
+    }
+    </script>
     <script src="/assets/js/posthog.js" defer></script>
 </head>
 <body class="bg-white text-gray-900 antialiased">
@@ -170,6 +217,22 @@
             <p class="text-xl text-gray-500 mt-6 max-w-2xl mx-auto">
                 让 iPhone 和 Windows 之间的文件传输像 AirDrop 一样简单快速
             </p>
+        </div>
+    </section>
+
+    <!-- 事实速览：给用户和 AI 引擎的结构化事实 -->
+    <section class="pb-4 pt-16 px-6">
+        <div class="max-w-4xl mx-auto rounded-3xl border border-gray-200 p-8 sm:p-10">
+            <h2 class="text-2xl font-bold tracking-tight mb-6">WinSend 速览</h2>
+            <dl class="grid sm:grid-cols-2 gap-x-10 gap-y-4 text-gray-600 leading-7">
+                <div><dt class="font-semibold text-gray-900">它是什么</dt><dd>类似 AirDrop 的 iPhone ↔ Windows 文件传输工具。</dd></div>
+                <div><dt class="font-semibold text-gray-900">如何传输</dt><dd>在同一 Wi-Fi 下设备点对点直连，数据不经服务器。</dd></div>
+                <div><dt class="font-semibold text-gray-900">能传什么</dt><dd>照片、视频、任意文件和剪贴板文本。</dd></div>
+                <div><dt class="font-semibold text-gray-900">账号与云</dt><dd>局域网传输无需注册；云同步为可选功能且端到端加密。</dd></div>
+                <div><dt class="font-semibold text-gray-900">价格</dt><dd>核心功能免费；Pro 解锁自动剪贴板与云端同步。</dd></div>
+                <div><dt class="font-semibold text-gray-900">支持平台</dt><dd>iOS 15+（App Store）与 Windows 10/11。</dd></div>
+            </dl>
+            <p class="mt-6 text-sm text-gray-500">想了解安全性或 SmartScreen 提示？阅读 <a href="/zh/safety/" class="text-blue-700 font-medium hover:underline">WinSend 安全吗？</a></p>
         </div>
     </section>
 

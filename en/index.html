@@ -56,6 +56,53 @@
             transform: scale(1.02);
         }
     </style>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "WinSend",
+        "applicationCategory": "UtilitiesApplication",
+        "operatingSystem": "Windows 10/11, iOS 15+",
+        "description": "AirDrop for Windows. Send photos, videos, files and clipboard between iPhone and Windows over local Wi-Fi. No USB cable, no cloud upload, no account.",
+        "url": "https://winsend.app/en/",
+        "downloadUrl": "https://winsend.app/WinSend.exe",
+        "softwareVersion": "2.2.1",
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+        },
+        "featureList": [
+            "Local Wi-Fi transfer between iPhone and Windows",
+            "iOS share sheet and Shortcuts integration",
+            "Automatic two-way clipboard sync",
+            "Optional end-to-end encrypted cloud clipboard relay"
+        ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "Is WinSend safe?",
+                "acceptedAnswer": { "@type": "Answer", "text": "Yes. WinSend is built with privacy in mind. Your data never leaves your devices — no cloud, no accounts, no tracking. Everything is transferred directly over your local network." }
+            },
+            {
+                "@type": "Question",
+                "name": "Why does Windows show \"Protected your PC\" when installing WinSend?",
+                "acceptedAnswer": { "@type": "Answer", "text": "This is a standard Microsoft Defender SmartScreen warning shown for new or unsigned apps that have not built reputation yet — not because the app is unsafe. Click More info, then Run anyway to continue." }
+            },
+            {
+                "@type": "Question",
+                "name": "Does WinSend require internet?",
+                "acceptedAnswer": { "@type": "Answer", "text": "No. WinSend works entirely on your local network (Wi-Fi). Your data stays private and never passes through external servers. An optional Cloud Sync feature can relay clipboard text across networks with end-to-end encryption." }
+            }
+        ]
+    }
+    </script>
     <script src="/assets/js/posthog.js" defer></script>
 </head>
 <body class="bg-white text-gray-900 antialiased">
@@ -171,6 +218,22 @@
             <p class="text-xl text-gray-500 mt-6 max-w-2xl mx-auto">
                 Make file transfers between iPhone and Windows as simple and fast as AirDrop
             </p>
+        </div>
+    </section>
+
+    <!-- Facts Section: structured facts for users and AI answer engines -->
+    <section class="pb-4 pt-16 px-6">
+        <div class="max-w-4xl mx-auto rounded-3xl border border-gray-200 p-8 sm:p-10">
+            <h2 class="text-2xl font-bold tracking-tight mb-6">WinSend at a glance</h2>
+            <dl class="grid sm:grid-cols-2 gap-x-10 gap-y-4 text-gray-600 leading-7">
+                <div><dt class="font-semibold text-gray-900">What it is</dt><dd>AirDrop-style transfer between iPhone and Windows PC.</dd></div>
+                <div><dt class="font-semibold text-gray-900">How it transfers</dt><dd>Directly over your local Wi-Fi via peer-to-peer connection.</dd></div>
+                <div><dt class="font-semibold text-gray-900">What it sends</dt><dd>Photos, videos, any files, and clipboard text.</dd></div>
+                <div><dt class="font-semibold text-gray-900">Accounts &amp; cloud</dt><dd>None required for LAN transfer; optional encrypted cloud clipboard sync.</dd></div>
+                <div><dt class="font-semibold text-gray-900">Price</dt><dd>Free core features; Pro subscription unlocks auto clipboard sync and cloud sync.</dd></div>
+                <div><dt class="font-semibold text-gray-900">Platforms</dt><dd>iOS 15+ (App Store) and Windows 10/11.</dd></div>
+            </dl>
+            <p class="mt-6 text-sm text-gray-500">Concerned about safety or the SmartScreen warning? Read <a href="/en/safety/" class="text-blue-700 font-medium hover:underline">Is WinSend safe?</a></p>
         </div>
     </section>
 

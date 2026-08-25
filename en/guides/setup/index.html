@@ -21,6 +21,12 @@
         .btn-primary { transition: all 0.2s ease; }
         .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 10px 25px -5px rgba(37, 99, 235, 0.35); }
     </style>
+    <script type="application/ld+json">
+    {"@context": "https://schema.org", "@type": "HowTo", "name": "How to set up WinSend between iPhone and Windows", "description": "Install WinSend on Windows and iPhone, then pair the two devices automatically over local Wi-Fi.", "step": [{"@type": "HowToStep", "position": 1, "name": "Install the Windows client", "text": "Download WinSend_vX.exe from winsend.app and run it. If Microsoft Defender SmartScreen shows 'Windows protected your PC', click More info and Run anyway. Allow WinSend through the Windows Firewall when prompted."}, {"@type": "HowToStep", "position": 2, "name": "Install the iPhone app", "text": "Install WinSend from the App Store on your iPhone."}, {"@type": "HowToStep", "position": 3, "name": "Complete auto-pairing", "text": "Keep both devices on the same Wi-Fi. The iPhone app discovers the PC automatically via mDNS; tap the discovered device to connect. No manual IP configuration is needed."}, {"@type": "HowToStep", "position": 4, "name": "Verify with the checklist", "text": "Confirm both devices show as connected, then send a test photo via the iOS share sheet."}]}
+    </script>
+    <script type="application/ld+json">
+    {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Does WinSend need both devices on the same network?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. LAN transfer requires both devices on the same local Wi-Fi. An optional Cloud Sync can relay clipboard text across networks with end-to-end encryption."}}, {"@type": "Question", "name": "Is WinSend free?", "acceptedAnswer": {"@type": "Answer", "text": "The core transfer features are free. A Pro subscription unlocks automatic clipboard sync and cloud sync."}}]}
+    </script>
     <script src="/assets/js/posthog.js" defer></script>
 </head>
 <body class="bg-white text-gray-900 antialiased">

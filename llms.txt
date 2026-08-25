@@ -1,0 +1,34 @@
+# WinSend
+
+> WinSend is a free file transfer app that works like AirDrop for Windows: it sends photos, videos, files and clipboard text between iPhone and Windows PCs over the local Wi-Fi network — no USB cable, no cloud upload, no account required.
+
+WinSend consists of an iOS app (App Store) and a Windows desktop app (downloaded from winsend.app). Devices discover each other automatically via mDNS on the same local network. Transfers go directly between devices over LAN. An optional Cloud Sync feature relays clipboard text across networks with end-to-end encryption (AES-256-GCM); the relay server never sees plaintext.
+
+## Facts
+
+- Product name: WinSend (formerly WinDrop)
+- Platforms: iOS 15+ (App Store), Windows 10/11 (x64 installer)
+- Latest versions: iOS 2.1.0; Windows 2.2.1
+- Price: Free. Optional WinSend Pro subscription unlocks automatic clipboard sync and cross-network Cloud Sync.
+- Transfer transport: Local Wi-Fi (LAN), peer-to-peer over mDNS-discovered connections
+- Cloud Sync: optional, clipboard text only, end-to-end encrypted relay at relay.winsend.app
+- Privacy: no account, no telemetry of file contents, files never uploaded to any server
+- Developer: independent developer; website https://winsend.app
+- Windows installer note: the installer is not yet code-signed, so Microsoft Defender SmartScreen may show "Windows protected your PC". Users click "More info" → "Run anyway".
+
+## Key pages
+
+- Home (English): https://winsend.app/en/
+- Home (Chinese): https://winsend.app/zh/
+- Guides: https://winsend.app/en/guides/ , https://winsend.app/zh/guides/
+- Is WinSend safe?: https://winsend.app/en/safety/ , https://winsend.app/zh/safety/
+- AirDrop for Windows guide: https://winsend.app/en/guides/airdrop-for-windows/
+- Copy iPhone to Windows guide: https://winsend.app/en/guides/copy-iphone-to-windows/
+- Setup guide: https://winsend.app/en/guides/setup/
+- Comparisons: WinSend vs LocalSend / Snapdrop / Send Anywhere under https://winsend.app/en/comparison/
+
+## Common questions
+
+- Is WinSend safe? Yes — transfers stay on the local network; nothing is uploaded to servers. See the safety page for details including the SmartScreen warning explanation.
+- Does WinSend require internet? No, LAN transfers work entirely offline on the same Wi-Fi. Only the optional Cloud Sync uses the internet.
+- How does it differ from LocalSend/Snapdrop? WinSend integrates with the iOS share sheet and Shortcuts so users can send without opening an app first, receives files automatically on Windows, and syncs clipboard automatically. See comparison pages for details.

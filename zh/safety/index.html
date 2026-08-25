@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WinSend 安全吗？安全与隐私说明 | WinSend</title>
+    <meta name="description" content="WinSend 的数据只在你自己的设备之间流转：本地 Wi-Fi 直传、无云上传、无账号、无跟踪。本文解释 SmartScreen 提示的含义，以及可选云同步如何做到端到端加密。">
+    <meta name="robots" content="index,follow,max-image-preview:large">
+    <link rel="canonical" href="https://winsend.app/zh/safety/">
+    <link rel="alternate" hreflang="en" href="https://winsend.app/en/safety/" />
+    <link rel="alternate" hreflang="zh" href="https://winsend.app/zh/safety/" />
+    <link rel="alternate" hreflang="x-default" href="https://winsend.app/en/safety/" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="stylesheet" href="/assets/css/tailwind.css">
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "WinSend 安全吗？",
+                "acceptedAnswer": { "@type": "Answer", "text": "安全。局域网传输在你的 iPhone 和电脑之间通过你自己的 Wi-Fi 点对点直连完成。文件不会上传到任何服务器，无需注册账号，应用也不收集文件内容。" }
+            },
+            {
+                "@type": "Question",
+                "name": "安装 WinSend 时 Windows 提示“已保护你的电脑”是怎么回事？",
+                "acceptedAnswer": { "@type": "Answer", "text": "这是 Microsoft Defender SmartScreen 的提示，出现在新发布或尚未代码签名、还没有建立下载信誉的应用上，并不是病毒或恶意软件判定。点击“更多信息”然后选择“仍要运行”即可安装。" }
+            },
+            {
+                "@type": "Question",
+                "name": "WinSend 会把文件上传到云端吗？",
+                "acceptedAnswer": { "@type": "Answer", "text": "不会。常规传输完全不离开你的局域网。可选的云同步功能只中转剪贴板文本，并且采用端到端加密（AES-256-GCM），中转服务器无法读取内容。" }
+            },
+            {
+                "@type": "Question",
+                "name": "谁能看到我的传输内容？",
+                "acceptedAnswer": { "@type": "Answer", "text": "只有你在 WinSend 中配对过的设备。设备发现基于局域网 mDNS，连接需要配对；云同步分组只有持有你的 6 位同步码的设备才能加入。" }
+            }
+        ]
+    }
+    </script>
+    <script src="/assets/js/posthog.js" defer></script>
+</head>
+<body class="bg-white text-gray-900 antialiased">
+    <nav aria-label="Main navigation" class="fixed top-0 left-0 right-0 bg-white/70 backdrop-blur-xl z-50 border-b border-gray-100">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+            <a href="/zh/" class="flex items-center gap-3"><img src="/logo.png" alt="WinSend Logo" class="w-9 h-9 rounded-xl"><span class="text-xl font-bold tracking-tight">WinSend</span></a>
+            <div class="flex items-center gap-6"><a href="/zh/#features" class="text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors hidden sm:block">功能</a><a href="/zh/guides/" class="text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors hidden sm:block">教程</a><a href="/zh/#download" class="inline-flex items-center gap-2 px-5 py-2.5 bg-blue-600 text-white text-sm font-semibold rounded-lg hover:bg-blue-700">下载</a><a href="/en/safety/" class="text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors">English</a></div>
+        </div>
+    </nav>
+    <main>
+        <section class="hero-bg pt-32 pb-14 px-6">
+            <div class="max-w-3xl mx-auto">
+                <nav aria-label="Breadcrumb" class="mb-8"><ol class="flex flex-wrap items-center gap-2 text-sm text-gray-500"><li><a href="/zh/" class="hover:text-gray-900 transition-colors">首页</a></li><li>/</li><li class="text-gray-900 font-medium">WinSend 安全吗？</li></ol></nav>
+                <h1 class="text-4xl sm:text-5xl font-extrabold tracking-tight leading-tight mb-6">WinSend 安全吗？</h1>
+                <p class="text-xl text-gray-600 leading-9">安全。WinSend 从设计上就保证数据只在你自己的设备之间流转。这篇文章讲清它的安全与隐私机制——包括对 Windows SmartScreen 提示的诚实解释。</p>
+                <p class="mt-4 text-sm text-gray-400">最后更新：2026 年 8 月 25 日</p>
+            </div>
+        </section>
+
+        <section class="py-12 px-6">
+            <div class="max-w-3xl mx-auto space-y-10">
+                <div>
+                    <h2 class="text-2xl font-bold mb-3">你的文件不经过任何服务器</h2>
+                    <p class="text-gray-600 leading-8">常规传输通过 mDNS 发现设备后，在 iPhone 与电脑之间经本地 Wi-Fi 点对点直连完成。没有云上传环节，没有中间存储，也没有可能泄露数据的账号系统。</p>
+                </div>
+                <div>
+                    <h2 class="text-2xl font-bold mb-3">关于 SmartScreen 提示</h2>
+                    <p class="text-gray-600 leading-8">首次运行 Windows 安装包时，Microsoft Defender SmartScreen 可能显示<em>"已保护你的电脑"</em>。这会出现在新发布或<strong>尚未代码签名</strong>、还没积累下载信誉的应用上——它不是病毒或恶意软件判定。</p>
+                    <p class="text-gray-600 leading-8 mt-3">继续安装：点击<strong>更多信息</strong> → <strong>仍要运行</strong>。代码签名证书每年需要数百美元成本；随着应用成长，我们会用签名安装包彻底消除这个提示。</p>
+                </div>
+                <div>
+                    <h2 class="text-2xl font-bold mb-3">可选的云同步是端到端加密的</h2>
+                    <p class="text-gray-600 leading-8">云同步只中转<strong>剪贴板文本</strong>，用于跨网络场景。消息在离开设备前就用你的 6 位同步码派生的密钥做 AES-256-GCM 加密。中转服务器只转发密文——无法读取内容，也不存储任何数据。你也可以自建中转服务。</p>
+                </div>
+                <div>
+                    <h2 class="text-2xl font-bold mb-3">应用收集哪些数据</h2>
+                    <ul class="list-disc pl-6 text-gray-600 leading-8 space-y-1">
+                        <li>从不收集文件名、文件内容或剪贴板内容。</li>
+                        <li>不需要账号或任何个人信息。</li>
+                        <li>匿名使用统计（例如"一次传输完成"）仅用于改进可靠性，不含任何用户内容。</li>
+                    </ul>
+                </div>
+                <div class="rounded-3xl border border-blue-100 bg-blue-50/60 p-8">
+                    <h2 class="text-2xl font-bold mb-3">准备好试试了吗？</h2>
+                    <p class="text-gray-600 leading-8 mb-4">几秒钟即可在 iPhone 与 Windows 之间传输照片、视频、文件和剪贴板。</p>
+                    <a href="/zh/#download" class="btn-primary inline-flex items-center gap-2 px-8 py-4 bg-blue-600 text-white text-lg font-semibold rounded-xl hover:bg-blue-700 transition-all">下载 WinSend</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="py-16 px-6 bg-gray-900 text-gray-400">
+        <div class="max-w-6xl mx-auto grid md:grid-cols-4 gap-12 mb-12">
+            <div class="md:col-span-2">
+                <div class="flex items-center gap-3 mb-4"><img src="/logo.png" alt="WinSend Logo" class="w-9 h-9 rounded-xl"><span class="text-xl font-bold text-white">WinSend</span></div>
+                <p class="text-sm leading-relaxed max-w-md">Windows 版 AirDrop。<br>通过局域网 Wi-Fi 或互联网在 iPhone 和 Windows 之间无缝传输文件。</p>
+            </div>
+            <div>
+                <div class="text-white font-semibold mb-4">产品</div>
+                <ul class="space-y-3 text-sm">
+                    <li><a href="/zh/#features" class="hover:text-white transition-colors">功能</a></li>
+                    <li><a href="/zh/guides/" class="hover:text-white transition-colors">教程中心</a></li>
+                    <li><a href="/zh/#download" class="hover:text-white transition-colors">下载</a></li>
+                </ul>
+            </div>
+            <div>
+                <div class="text-white font-semibold mb-4">联系我们</div>
+                <ul class="space-y-3 text-sm">
+                    <li><a href="#" class="hover:text-white transition-colors">GitHub</a></li>
+                    <li><a href="#" class="hover:text-white transition-colors">Twitter</a></li>
+                    <li><a href="#" class="hover:text-white transition-colors">联系方式</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="max-w-6xl mx-auto pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center gap-4 text-sm">
+            <p>&copy; 2025 WinSend. All rights reserved.</p>
+            <p class="flex items-center gap-2">为 iPhone 和 Windows 用户打造</p>
+        </div>
+    </footer>
+</body>
+</html>
