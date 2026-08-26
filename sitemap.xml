@@ -77,7 +77,7 @@
         <xhtml:link rel="alternate" hreflang="en" href="https://winsend.app/en/guides/copy-iphone-to-windows/" />
         <xhtml:link rel="alternate" hreflang="zh" href="https://winsend.app/zh/guides/copy-iphone-to-windows/" />
         <xhtml:link rel="alternate" hreflang="x-default" href="https://winsend.app/en/guides/copy-iphone-to-windows/" />
-        <lastmod>2026-08-25</lastmod>
+        <lastmod>2026-08-26</lastmod>
     </url>
 
     <!-- iPhone Shortcuts Clipboard Sync (Chinese) -->
@@ -86,7 +86,7 @@
         <xhtml:link rel="alternate" hreflang="en" href="https://winsend.app/en/guides/copy-iphone-to-windows/" />
         <xhtml:link rel="alternate" hreflang="zh" href="https://winsend.app/zh/guides/copy-iphone-to-windows/" />
         <xhtml:link rel="alternate" hreflang="x-default" href="https://winsend.app/en/guides/copy-iphone-to-windows/" />
-        <lastmod>2026-08-25</lastmod>
+        <lastmod>2026-08-26</lastmod>
     </url>
 
     <!-- AirDrop for Windows (English) -->
@@ -113,7 +113,7 @@
         <xhtml:link rel="alternate" hreflang="en" href="https://winsend.app/en/guides/cross-platform-transfer-tools/" />
         <xhtml:link rel="alternate" hreflang="zh" href="https://winsend.app/zh/guides/cross-platform-transfer-tools/" />
         <xhtml:link rel="alternate" hreflang="x-default" href="https://winsend.app/en/guides/cross-platform-transfer-tools/" />
-        <lastmod>2026-08-25</lastmod>
+        <lastmod>2026-08-26</lastmod>
     </url>
 
     <!-- Cross-Platform Transfer Tools (Chinese) -->
@@ -122,7 +122,7 @@
         <xhtml:link rel="alternate" hreflang="en" href="https://winsend.app/en/guides/cross-platform-transfer-tools/" />
         <xhtml:link rel="alternate" hreflang="zh" href="https://winsend.app/zh/guides/cross-platform-transfer-tools/" />
         <xhtml:link rel="alternate" hreflang="x-default" href="https://winsend.app/en/guides/cross-platform-transfer-tools/" />
-        <lastmod>2026-08-25</lastmod>
+        <lastmod>2026-08-26</lastmod>
     </url>
 
     <!-- WinSend vs LocalSend (English) -->
@@ -190,6 +190,20 @@
         <xhtml:link rel="alternate" hreflang="en" href="https://winsend.app/en/safety/" />
         <xhtml:link rel="alternate" hreflang="zh" href="https://winsend.app/zh/safety/" />
         <xhtml:link rel="alternate" hreflang="x-default" href="https://winsend.app/en/safety/" />
+        <lastmod>2026-08-25</lastmod>
+    </url>
+    <url>
+        <loc>https://winsend.app/en/privacy/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://winsend.app/en/privacy/" />
+        <xhtml:link rel="alternate" hreflang="zh" href="https://winsend.app/zh/privacy/" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://winsend.app/en/privacy/" />
+        <lastmod>2026-08-25</lastmod>
+    </url>
+    <url>
+        <loc>https://winsend.app/zh/privacy/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://winsend.app/en/privacy/" />
+        <xhtml:link rel="alternate" hreflang="zh" href="https://winsend.app/zh/privacy/" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://winsend.app/en/privacy/" />
         <lastmod>2026-08-25</lastmod>
     </url>
 </urlset>
