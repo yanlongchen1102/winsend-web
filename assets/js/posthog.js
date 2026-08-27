@@ -16,8 +16,9 @@
     posthog.init("phc_tVf9dpejTEwX2W8MZ5JkBzKBKDCFqt9MJjuNyigDJhbG", {
         api_host: "https://us.i.posthog.com",
         defaults: "2026-05-30",
-        // 只保留页面浏览，关闭自动点击捕获，保持事件流干净
-        autocapture: false
+        // 页面浏览在注册来源参数后手动发送；关闭自动点击捕获，保持事件流干净。
+        autocapture: false,
+        capture_pageview: false
     });
 
     function pageLang() {
@@ -26,12 +27,26 @@
     }
 
     function baseProps(href) {
+        var query = new URLSearchParams(window.location.search);
         return {
             page: window.location.pathname,
             lang: pageLang(),
-            href: href || ""
+            href: href || "",
+            acquisition_source: query.get("source") || "direct",
+            distribution_channel: query.get("distribution_channel") || "unknown",
+            acquisition_surface: query.get("surface") || "unknown",
+            source_app_version: query.get("app_version") || "unknown"
         };
     }
+
+    var landingProps = baseProps(window.location.href);
+    posthog.register_for_session({
+        acquisition_source: landingProps.acquisition_source,
+        distribution_channel: landingProps.distribution_channel,
+        acquisition_surface: landingProps.acquisition_surface,
+        source_app_version: landingProps.source_app_version
+    });
+    posthog.capture("$pageview", landingProps);
 
     function installerVersion(node, href) {
         if (node.dataset.installerVersion) {
