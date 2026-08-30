@@ -8,7 +8,7 @@ WinSend consists of an iOS app (App Store) and a Windows desktop app (downloaded
 
 - Product name: WinSend (formerly WinDrop)
 - Platforms: iOS 15+ (App Store), Windows 10/11 (x64 installer)
-- Latest versions: iOS 2.1.0; Windows 2.2.2
+- Latest versions: iOS 2.2.3; Windows 2.2.3
 - Price: Free. Optional WinSend Pro subscription unlocks automatic clipboard sync and cross-network Cloud Sync.
 - Transfer transport: Local Wi-Fi (LAN), peer-to-peer over mDNS-discovered connections
 - Cloud Sync: optional, clipboard text only, end-to-end encrypted relay at relay.winsend.app

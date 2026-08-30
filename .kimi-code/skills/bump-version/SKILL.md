@@ -11,6 +11,10 @@ arguments:
 
 请按以下步骤执行（`$version` 形如 `2.0.8`，用户也可能传入 `v2.0.8`，注意去掉前缀 `v`）：
 
+0. **在执行任何版本修改、Git 操作或部署前，必须询问用户当前最新的 iOS 版本号并等待明确答复。**
+   - 不得从 `llms.txt`、Windows 版本号或历史对话中猜测或默认沿用 iOS 版本。
+   - 用户答复可带 `v` 前缀，写入文件时去掉 `v`。
+   - 若用户未提供明确的 iOS 版本，必须暂停流程，不得继续部署。
 1. 从 `update.json` 读取当前 `version`，并将其与目标版本比较。
    - 若版本相同，跳过所有版本文件和 Git 提交操作，但仍必须执行第 7 步的 Wrangler 实际部署。
    - 若版本不同，检查仓库根目录是否存在 `WinSend_v$version.exe`（`ls WinSend_v$version.exe`）。若不存在，提醒用户先放入安装包，跳过版本修改和 Git 提交；但仍必须执行第 7 步，部署当前网站内容。
@@ -20,7 +24,7 @@ arguments:
 3. 仅在安装包存在且目标版本不同时，更新所有发现的硬编码位置。当前已知位置：
    - `update.json`：`version` 改为 `$version`，`url` 改为 `https://winsend.app/WinSend_v$version.exe`，`notes` 改为 `v$version`。
    - `zh/guides/setup/index.html`：`<a href="/WinSend_vX.Y.Z.exe" download data-installer-version="X.Y.Z" ...>` 的 `href`、`data-installer-version` 属性和 `下载 WinSend vX.Y.Z (Windows 客户端)` 文案。
-   - `llms.txt`：Facts 小节中的 `Latest versions: iOS X.Y.Z; Windows X.Y.Z` 中的 Windows 版本号（iOS 版本号需向用户确认或从 App Store Connect 获取，不要猜测）。
+   - `llms.txt`：Facts 小节中的 `Latest versions: iOS X.Y.Z; Windows X.Y.Z`；iOS 版本必须使用第 0 步中用户明确确认的值，Windows 版本使用本次目标版本。
    - `en/index.html` 与 `zh/index.html`：两处 `<script type="application/ld+json">` 中 `SoftwareApplication` 的 `"softwareVersion": "X.Y.Z"` 字段（每个文件各 1 处；FAQPage 的 JSON-LD 不含版本号，勿动）。
 4. 不需要改的位置（动态读取，勿动）：
    - `zh/index.html` 和 `en/index.html` 首页：版本号和下载链接由前端 JS 在运行时 fetch `update.json` 动态生成（见 `buildDownloadUrl` 和 `.current-version-text` 逻辑）。
