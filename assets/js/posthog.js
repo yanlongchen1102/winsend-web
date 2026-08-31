@@ -79,7 +79,12 @@
             var props = baseProps(href);
             props.installer_version = installerVersion(node, href);
             props.download_surface = node.dataset.downloadSurface || "unknown";
+            props.channel = "direct_exe";
             posthog.capture("web_download_click", props);
+        } else if (node.classList.contains("store-installer-link")) {
+            var storeProps = baseProps(href);
+            storeProps.channel = "store_web_installer";
+            posthog.capture("web_download_click", storeProps);
         } else if (node.classList.contains("app-store-link")) {
             posthog.capture("web_appstore_click", baseProps(href));
         }
