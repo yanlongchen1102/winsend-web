@@ -104,6 +104,7 @@
     }
     </script>
     <script src="/assets/js/posthog.js" defer></script>
+    <script src="/assets/js/download-help.js" defer></script>
 </head>
 <body class="bg-white text-gray-900 antialiased">
 
@@ -118,7 +119,7 @@
                 <a href="#features" class="text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors hidden sm:block">Features</a>
                 <a href="#faq" class="text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors hidden sm:block">FAQ</a>
                 <a href="/en/guides/" class="text-sm font-semibold text-gray-900 transition-colors hidden sm:block">Guides</a>
-                <a href="#download" class="btn-primary inline-flex items-center gap-2 px-5 py-2.5 bg-blue-600 text-white text-sm font-semibold rounded-lg hover:bg-blue-700">
+                <a href="/en/download/" class="btn-primary inline-flex items-center gap-2 px-5 py-2.5 bg-blue-600 text-white text-sm font-semibold rounded-lg hover:bg-blue-700">
                     Download
                 </a>
                 <a href="../zh/" class="text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors">中文</a>
@@ -147,6 +148,28 @@
                     <p class="text-xl sm:text-2xl text-gray-600 leading-relaxed max-w-xl">
                         Send files and copy clipboard between iPhone and Windows instantly
                     </p>
+
+                    <div class="flex flex-wrap items-center gap-3">
+                        <a href="https://get.microsoft.com/installer/download/9n5x7vqqj79g?referrer=appbadge" data-download-surface="home_hero" class="store-installer-link btn-primary inline-flex min-h-[52px] items-center justify-center gap-3 rounded-xl bg-blue-600 px-5 py-3 font-semibold text-white hover:bg-blue-700">
+                            <svg class="h-5 w-5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3 3.5 10.5 2.4v8.8H3V3.5Zm8.5-1.2L21 1v10.2h-9.5V2.3ZM3 12.2h7.5V21L3 19.9v-7.7Zm8.5 0H21V23l-9.5-1.3v-9.5Z"/></svg>
+                            <span>Download for Windows</span>
+                        </a>
+                        <a href="https://apps.apple.com/app/id6760611719" target="_blank" rel="noopener" data-download-surface="home_hero" aria-label="Download WinSend on the App Store" title="Download on the App Store" class="app-store-link inline-flex h-[52px] w-[52px] items-center justify-center rounded-xl border border-gray-200 bg-white text-gray-900 shadow-sm transition-all hover:-translate-y-0.5 hover:border-gray-300 hover:shadow-md">
+                            <svg class="h-5 w-5" viewBox="0 0 384 512" fill="currentColor" aria-hidden="true"><path d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 69 126.7 112.5 126.7 18.5 0 51.4-20.7 76.4-20.7 24.4 0 53.8 20.7 76.4 20.7 31.3 0 81.2-81.9 92.3-105.5-38.7-18.8-61.3-49.4-60.9-86.3zm-90.1-157.3c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 52.3-11.4 69.5-34.3z"/></svg>
+                        </a>
+                    </div>
+                    <div class="-mt-5 text-sm text-gray-500">
+                        <details class="download-help relative inline-block">
+                            <summary aria-label="Windows download help" class="flex cursor-pointer list-none items-center gap-1.5 transition-colors hover:text-blue-700 [&::-webkit-details-marker]:hidden">
+                                <span>Windows 10/11 · Microsoft Store</span>
+                                <svg class="h-4 w-4" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="10" cy="10" r="7.5"/><path stroke-linecap="round" d="M10 9v4M10 6.5h.01"/></svg>
+                            </summary>
+                            <div class="absolute left-0 top-7 z-20 w-64 rounded-2xl border border-gray-200 bg-white p-4 text-left text-sm leading-6 text-gray-600 shadow-xl">
+                                <p>Microsoft Store is recommended for trusted installation and automatic updates.</p>
+                                <a href="/en/download/" class="mt-2 inline-flex font-semibold text-blue-700 hover:text-blue-800">Store unavailable? View all download options →</a>
+                            </div>
+                        </details>
+                    </div>
 
                     <div class="flex flex-wrap items-center gap-6 text-sm text-gray-500">
                         <span class="flex items-center gap-2">
@@ -179,17 +202,6 @@
                 </div>
             </div>
 
-            <div class="mt-12 border-t border-gray-200 pt-8">
-                <div class="flex flex-wrap items-center justify-center gap-4">
-                    <a href="https://get.microsoft.com/installer/download/9n5x7vqqj79g?referrer=appbadge" class="store-installer-link btn-primary inline-flex min-h-[76px] w-60 flex-col items-center justify-center rounded-xl bg-blue-600 px-5 py-3 text-base font-semibold text-white hover:bg-blue-700 transition-all"><span class="whitespace-nowrap">Microsoft Store</span><span class="mt-1 whitespace-nowrap text-xs font-medium text-blue-100">Recommended · Updates</span></a>
-                    <a href="/WinSend.exe" class="download-link inline-flex min-h-[76px] w-60 flex-col items-center justify-center rounded-xl border-2 border-blue-600 px-5 py-3 text-base font-semibold text-blue-700 hover:bg-blue-50 transition-all"><span class="whitespace-nowrap">Direct Download</span><span class="mt-1 whitespace-nowrap text-xs font-medium text-blue-600">Windows · .exe</span></a>
-                    <a href="https://apps.apple.com/app/id6760611719" target="_blank" rel="noopener" class="app-store-link inline-flex min-h-[76px] w-60 flex-col items-center justify-center rounded-xl bg-black px-5 py-3 text-base font-semibold text-white hover:bg-gray-900 transition-all"><span class="whitespace-nowrap">App Store</span><span class="mt-1 whitespace-nowrap text-xs font-medium text-gray-300">iPhone app</span></a>
-                </div>
-                <div class="mt-5 space-y-2 text-sm leading-relaxed text-gray-600">
-                    <p class="flex gap-2"><span class="font-bold text-blue-500">•</span><span>If Microsoft Store won't open or shows an unknown error, try the direct Windows download.</span></p>
-                    <p class="flex gap-2"><span class="font-bold text-blue-500">•</span><span>Windows may show a security prompt when you first run the direct installer. This is normal for newly released apps that have not yet established SmartScreen reputation; after confirming the file came from winsend.app, select “More info” → “Run anyway” to continue.</span></p>
-                </div>
-            </div>
         </div>
     </section>
 
@@ -588,70 +600,6 @@
         </div>
     </section>
 
-    <!-- Download Section -->
-    <section id="download" class="py-32 px-6">
-        <div class="max-w-4xl mx-auto text-center">
-            <h2 class="text-5xl sm:text-6xl lg:text-7xl font-bold mb-8 tracking-tight">
-                Ready to <span class="gradient-text">transfer</span>?
-            </h2>
-            <p class="text-xl text-gray-600 mb-12 max-w-2xl mx-auto">
-                Download WinSend and experience seamless file transfers between iPhone and Windows
-            </p>
-
-            <div class="flex flex-col sm:flex-row sm:flex-wrap gap-4 justify-center">
-                <a href="https://get.microsoft.com/installer/download/9n5x7vqqj79g?referrer=appbadge" class="store-installer-link btn-primary inline-flex items-center justify-center px-8 py-5 min-h-[72px] bg-blue-600 text-white font-bold text-xl rounded-2xl hover:bg-blue-700 shadow-xl shadow-blue-500/30 transition-all">
-                    <div class="flex flex-col items-center gap-2">
-                        <span class="inline-flex items-center gap-3">
-                            <svg class="w-6 h-6 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/>
-                            </svg>
-                            <span class="text-center whitespace-nowrap">Install via Microsoft Store</span>
-                        </span>
-                        <span class="text-sm font-medium text-blue-50">Recommended · Automatic updates</span>
-                    </div>
-                </a>
-                <a href="/WinSend.exe" class="download-link inline-flex items-center justify-center px-8 py-5 min-h-[72px] border-2 border-blue-600 text-blue-700 font-bold text-xl rounded-2xl hover:bg-blue-50 transition-all">
-                    <div class="flex flex-col items-center gap-2">
-                        <span class="text-center whitespace-nowrap">Download Windows directly</span>
-                        <span class="text-sm font-medium text-blue-600">.exe installer</span>
-                    </div>
-                </a>
-                <a href="https://apps.apple.com/app/id6760611719" target="_blank" rel="noopener" class="app-store-link btn-primary inline-flex items-center justify-center px-8 py-5 min-h-[72px] bg-black text-white font-bold text-xl rounded-2xl hover:bg-gray-900 shadow-xl shadow-gray-500/30 transition-all">
-                    <div class="flex flex-col items-center gap-2">
-                        <span class="inline-flex items-center gap-3">
-                            <svg class="w-6 h-6 flex-shrink-0" viewBox="0 0 384 512" fill="currentColor">
-                                <path d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 69 126.7 112.5 126.7 18.5 0 51.4-20.7 76.4-20.7 24.4 0 53.8 20.7 76.4 20.7 31.3 0 81.2-81.9 92.3-105.5-38.7-18.8-61.3-49.4-60.9-86.3zm-90.1-157.3c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 52.3-11.4 69.5-34.3z"/>
-                            </svg>
-                            <span class="text-center whitespace-nowrap">Download on App Store</span>
-                        </span>
-                        <span class="text-sm font-medium text-gray-300">for iPhone</span>
-                    </div>
-                </a>
-            </div>
-            <div class="mt-5 space-y-1 text-sm text-gray-500"><p>If Microsoft Store won't open or shows an unknown error, try the direct Windows download.</p><p>Windows may show a security prompt when you first run the direct installer. This is normal for newly released apps that have not yet established SmartScreen reputation; after confirming the file came from winsend.app, select “More info” → “Run anyway” to continue.</p></div>
-
-            <div class="mt-10 flex flex-wrap items-center justify-center gap-6 text-sm text-gray-500">
-                <span class="flex items-center gap-2">
-                    <svg class="w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 20 20">
-                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
-                    </svg>
-                    Windows 10/11
-                </span>
-                <span class="flex items-center gap-2">
-                    <svg class="w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 20 20">
-                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
-                    </svg>
-                    64-bit
-                </span>
-                <span class="flex items-center gap-2">
-                    <svg class="w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 20 20">
-                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
-                    </svg>
-                    Free forever
-                </span>
-            </div>
-        </div>
-    </section>
     </main>
 
     <!-- Footer -->
@@ -673,7 +621,7 @@
                     <div class="text-white font-semibold mb-4">Product</div>
                     <ul class="space-y-3 text-sm">
                         <li><a href="#features" class="hover:text-white transition-colors">Features</a></li>
-                        <li><a href="#download" class="hover:text-white transition-colors">Download</a></li>
+                        <li><a href="/en/download/" class="hover:text-white transition-colors">Download</a></li>
                         <li><a href="#" class="hover:text-white transition-colors">Documentation</a></li>
                     </ul>
                 </div>

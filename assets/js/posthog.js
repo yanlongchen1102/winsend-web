@@ -84,9 +84,12 @@
         } else if (node.classList.contains("store-installer-link")) {
             var storeProps = baseProps(href);
             storeProps.channel = "store_web_installer";
+            storeProps.download_surface = node.dataset.downloadSurface || "unknown";
             posthog.capture("web_download_click", storeProps);
         } else if (node.classList.contains("app-store-link")) {
-            posthog.capture("web_appstore_click", baseProps(href));
+            var appStoreProps = baseProps(href);
+            appStoreProps.download_surface = node.dataset.downloadSurface || "unknown";
+            posthog.capture("web_appstore_click", appStoreProps);
         }
     }, true);
 })();

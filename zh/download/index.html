@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>下载 WinSend Windows 与 iPhone 版</title>
+    <meta name="description" content="通过 Microsoft Store 安装 WinSend Windows 版，或使用直接下载的安装程序；同时获取 iPhone 配套 App。">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="canonical" href="https://winsend.app/zh/download/">
+    <link rel="alternate" hreflang="zh" href="https://winsend.app/zh/download/">
+    <link rel="alternate" hreflang="en" href="https://winsend.app/en/download/">
+    <link rel="alternate" hreflang="x-default" href="https://winsend.app/en/download/">
+    <link rel="stylesheet" href="/assets/css/tailwind.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+    <style>
+        * { font-family: 'Noto Sans SC', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; }
+        .page-bg { background: radial-gradient(ellipse 70% 35% at 50% 0%, rgba(37, 99, 235, .12), transparent); }
+        .download-card { transition: border-color .2s ease, box-shadow .2s ease, transform .2s ease; }
+        .download-card:hover { transform: translateY(-2px); box-shadow: 0 20px 45px -25px rgba(15, 23, 42, .28); }
+    </style>
+    <script src="/assets/js/posthog.js" defer></script>
+    <script src="/assets/js/download-page.js" defer></script>
+</head>
+<body class="page-bg min-h-screen bg-white text-gray-900 antialiased">
+    <nav class="border-b border-gray-100 bg-white/80 backdrop-blur-xl">
+        <div class="mx-auto flex max-w-5xl items-center justify-between px-6 py-4">
+            <a href="/zh/" class="flex items-center gap-3">
+                <img src="/logo.webp" alt="WinSend" class="h-9 w-9 rounded-xl">
+                <span class="text-xl font-bold">WinSend</span>
+            </a>
+            <div class="flex items-center gap-5 text-sm font-medium">
+                <a href="/zh/" class="text-gray-600 hover:text-gray-900">首页</a>
+                <a href="/zh/guides/" class="hidden text-gray-600 hover:text-gray-900 sm:block">教程</a>
+                <a href="/en/download/" class="text-gray-600 hover:text-gray-900">English</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="mx-auto max-w-4xl px-6 pb-24 pt-20 sm:pt-24">
+        <header class="mb-12 text-center">
+            <p class="mb-4 text-sm font-semibold uppercase tracking-[.2em] text-blue-600">Download</p>
+            <h1 class="text-4xl font-extrabold tracking-tight sm:text-6xl">下载 WinSend</h1>
+            <p class="mx-auto mt-5 max-w-2xl text-lg leading-8 text-gray-600">先在 Windows 电脑上安装 WinSend，再为 iPhone 获取配套 App。</p>
+        </header>
+
+        <section aria-labelledby="windows-heading">
+            <div class="mb-5 flex items-end justify-between gap-4">
+                <div>
+                    <h2 id="windows-heading" class="text-2xl font-bold">Windows</h2>
+                    <p class="mt-1 text-sm text-gray-500">Windows 10/11 · 64 位</p>
+                </div>
+                <span class="text-sm text-gray-500">v<span class="current-version-text">2.2.3</span></span>
+            </div>
+
+            <div class="space-y-4">
+                <article class="download-card rounded-3xl border-2 border-blue-200 bg-white p-6 sm:p-8">
+                    <div class="flex flex-col gap-6 sm:flex-row sm:items-center sm:justify-between">
+                        <div class="flex min-w-0 gap-4">
+                            <span class="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-blue-50 text-blue-600">
+                                <svg class="h-6 w-6" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3 3.5 10.5 2.4v8.8H3V3.5Zm8.5-1.2L21 1v10.2h-9.5V2.3ZM3 12.2h7.5V21L3 19.9v-7.7Zm8.5 0H21V23l-9.5-1.3v-9.5Z"/></svg>
+                            </span>
+                            <div>
+                                <div class="flex flex-wrap items-center gap-2">
+                                    <h3 class="text-xl font-bold">Microsoft Store</h3>
+                                    <span class="rounded-full bg-blue-50 px-2.5 py-1 text-xs font-semibold text-blue-700">推荐</span>
+                                </div>
+                                <p class="mt-2 max-w-lg leading-7 text-gray-600">安装更简单、更可信，并且可以自动获得后续更新。</p>
+                            </div>
+                        </div>
+                        <a href="https://get.microsoft.com/installer/download/9n5x7vqqj79g?referrer=appbadge" data-download-surface="download_page" class="store-installer-link inline-flex shrink-0 items-center justify-center rounded-xl bg-blue-600 px-5 py-3 font-semibold text-white transition-colors hover:bg-blue-700">安装</a>
+                    </div>
+                </article>
+
+                <article class="download-card rounded-3xl border border-gray-200 bg-white p-6 sm:p-8">
+                    <div class="flex flex-col gap-6 sm:flex-row sm:items-center sm:justify-between">
+                        <div class="flex min-w-0 gap-4">
+                            <span class="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-gray-100 text-gray-700">
+                                <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3v-1m-4-4-4 4m0 0-4-4m4 4V4"/></svg>
+                            </span>
+                            <div>
+                                <h3 class="text-xl font-bold">直接下载安装程序</h3>
+                                <p class="mt-2 max-w-lg leading-7 text-gray-600">如果 Microsoft Store 无法打开或被电脑管理员禁用，请使用 .exe 安装程序。</p>
+                                <details class="group mt-3 text-sm text-gray-500">
+                                    <summary class="cursor-pointer font-medium text-gray-600 hover:text-blue-700">遇到 Windows 安全提示？</summary>
+                                    <p class="mt-2 max-w-lg leading-6">确认文件来自 winsend.app，然后选择“更多信息”和“仍要运行”。</p>
+                                </details>
+                            </div>
+                        </div>
+                        <a href="/WinSend_v2.2.3.exe" data-download-surface="download_page" class="download-link inline-flex shrink-0 items-center justify-center rounded-xl border border-gray-300 bg-white px-5 py-3 font-semibold text-gray-800 transition-colors hover:border-blue-300 hover:bg-blue-50 hover:text-blue-700">下载 .exe</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section aria-labelledby="iphone-heading" class="mt-12">
+            <h2 id="iphone-heading" class="mb-5 text-2xl font-bold">iPhone</h2>
+            <article class="download-card rounded-3xl border border-gray-200 bg-white p-6 sm:p-8">
+                <div class="flex flex-col gap-6 sm:flex-row sm:items-center sm:justify-between">
+                    <div class="flex min-w-0 gap-4">
+                        <span class="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-gray-900 text-white">
+                            <svg class="h-6 w-6" viewBox="0 0 384 512" fill="currentColor" aria-hidden="true"><path d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 69 126.7 112.5 126.7 18.5 0 51.4-20.7 76.4-20.7 24.4 0 53.8 20.7 76.4 20.7 31.3 0 81.2-81.9 92.3-105.5-38.7-18.8-61.3-49.4-60.9-86.3zm-90.1-157.3c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 52.3-11.4 69.5-34.3z"/></svg>
+                        </span>
+                        <div>
+                            <h3 class="text-xl font-bold">App Store</h3>
+                            <p class="mt-2 leading-7 text-gray-600">在 iPhone 或 iPad 上安装配套 App。</p>
+                        </div>
+                    </div>
+                    <a href="https://apps.apple.com/cn/app/id6760611719" target="_blank" rel="noopener" data-download-surface="download_page" class="app-store-link inline-flex shrink-0 items-center justify-center rounded-xl bg-gray-900 px-5 py-3 font-semibold text-white transition-colors hover:bg-black">前往 App Store</a>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <footer class="border-t border-gray-100 bg-white px-6 py-8 text-center text-sm text-gray-500">
+        <p>© 2025 WinSend · <a href="/zh/privacy/" class="hover:text-gray-900">隐私政策</a> · <a href="/zh/safety/" class="hover:text-gray-900">安全说明</a></p>
+    </footer>
+</body>
+</html>
