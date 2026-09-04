@@ -23,11 +23,8 @@
     <meta name="twitter:image" content="https://winsend.app/zh/guides/copy-iphone-to-windows/images/show1.PNG">
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
     <link rel="stylesheet" href="/assets/css/tailwind.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;600;700;900&display=swap" rel="stylesheet">
     <style>
-        * { font-family: 'Noto Sans SC', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; }
+        * { font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif; }
         .gradient-text {
             background: linear-gradient(135deg, #2563eb 0%, #3b82f6 50%, #60a5fa 100%);
             -webkit-background-clip: text;
@@ -252,7 +249,7 @@
     <nav aria-label="主导航" class="fixed top-0 left-0 right-0 bg-white/70 backdrop-blur-xl z-50 border-b border-gray-100">
         <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
             <a href="/zh/" class="flex items-center gap-3">
-                <img src="/logo.png" alt="WinSend Logo" class="w-9 h-9 rounded-xl">
+                <img src="/logo.png" alt="WinSend Logo" class="w-9 h-9 rounded-xl" decoding="async">
                 <span class="text-xl font-bold tracking-tight">WinSend</span>
             </a>
             <div class="flex items-center gap-6">
@@ -331,11 +328,12 @@
                         <p>下面用一个实际的例子作为展示</p>
 
                         <video
-                          autoplay
                           muted
                           loop
                           playsinline
-                          preload="metadata"
+                          controls
+                          preload="none"
+                          poster="./videos/clipboard-sync-poster.webp"
                           class="demo-video"
                           style="width: 100%; max-width: 420px; border-radius: 1rem; border: 1px solid #e5e7eb; box-shadow: 0 12px 30px -20px rgba(15, 23, 42, 0.45); display: block;"
                         >
@@ -358,8 +356,8 @@
                         <section id="step-open-app" class="rounded-3xl bg-gray-50 p-6 sm:p-7 mb-6">
                             <h3>第二步：打开 WinSend App，进入设置快捷方式页面</h3>
                             <div class="image-strip" aria-label="进入快捷方式设置页面图片">
-                                <figure class="image-card"><img src="./images/step2_1.PNG" alt="WinSend iPhone 端快捷方式设置页面图 1"></figure>
-                                <figure class="image-card"><img src="./images/step2_2.PNG" alt="WinSend iPhone 端快捷方式设置页面图 2"></figure>
+                                <figure class="image-card"><img src="./images/step2_1.PNG" alt="WinSend iPhone 端快捷方式设置页面图 1" decoding="async" loading="lazy"></figure>
+                                <figure class="image-card"><img src="./images/step2_2.PNG" alt="WinSend iPhone 端快捷方式设置页面图 2" decoding="async" loading="lazy"></figure>
                             </div>
                         </section>
 
@@ -367,8 +365,8 @@
                             <h3>第三步：添加快捷方式</h3>
                             <p>按照 App 内提供的入口完成快捷方式的添加，您可以在快捷方式App中查看成功添加的 WinSend复制同步 快捷方式。</p>
                             <div class="image-strip" aria-label="添加快捷方式图片">
-                                <figure class="image-card"><img src="./images/step3_1.PNG" alt="添加快捷方式步骤图 1"></figure>
-                                <figure class="image-card"><img src="./images/step3_2.PNG" alt="添加快捷方式步骤图 2"></figure>
+                                <figure class="image-card"><img src="./images/step3_1.PNG" alt="添加快捷方式步骤图 1" decoding="async" loading="lazy"></figure>
+                                <figure class="image-card"><img src="./images/step3_2.PNG" alt="添加快捷方式步骤图 2" decoding="async" loading="lazy"></figure>
                             </div>
                         </section>
 
@@ -402,10 +400,10 @@
                             </div>
 
                             <div class="image-strip" aria-label="设置轻点背面触发图片">
-                                <figure class="image-card"><img src="./images/step4_1.PNG" alt="设置轻点背面步骤图 1"></figure>
-                                <figure class="image-card"><img src="./images/step4_2.PNG" alt="设置轻点背面步骤图 2"></figure>
-                                <figure class="image-card"><img src="./images/step4_3.PNG" alt="设置轻点背面步骤图 3"></figure>
-                                <figure class="image-card"><img src="./images/step4_4.PNG" alt="设置轻点背面步骤图 4"></figure>
+                                <figure class="image-card"><img src="./images/step4_1.PNG" alt="设置轻点背面步骤图 1" decoding="async" loading="lazy"></figure>
+                                <figure class="image-card"><img src="./images/step4_2.PNG" alt="设置轻点背面步骤图 2" decoding="async" loading="lazy"></figure>
+                                <figure class="image-card"><img src="./images/step4_3.PNG" alt="设置轻点背面步骤图 3" decoding="async" loading="lazy"></figure>
+                                <figure class="image-card"><img src="./images/step4_4.PNG" alt="设置轻点背面步骤图 4" decoding="async" loading="lazy"></figure>
                             </div>
                         </section>
                     </section>
@@ -568,7 +566,7 @@
             <div class="grid md:grid-cols-4 gap-12 mb-12">
                 <div class="md:col-span-2">
                     <div class="flex items-center gap-3 mb-4">
-                        <img src="/logo.png" alt="WinSend Logo" class="w-9 h-9 rounded-xl">
+                        <img src="/logo.png" alt="WinSend Logo" class="w-9 h-9 rounded-xl" decoding="async" loading="lazy">
                         <span class="text-xl font-bold text-white">WinSend</span>
                     </div>
                     <p class="text-sm leading-relaxed max-w-md">Windows 版 AirDrop。<br>通过本地 Wi-Fi 或互联网在 iPhone 和 Windows 之间无缝传输文件。</p>
