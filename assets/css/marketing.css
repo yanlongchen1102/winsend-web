@@ -67,6 +67,7 @@ html { scroll-behavior: smooth; }
 }
 
 .video-stage video { background: #eef4f8; }
+.home-hero .video-stage video { pointer-events: none; }
 
 .direction-badge {
     position: absolute;
