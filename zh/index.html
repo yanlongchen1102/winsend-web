@@ -3,614 +3,221 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WinSend - Windows 版 AirDrop</title>
-    <meta name="description" content="Windows 版 AirDrop。通过本地 Wi-Fi 在 iPhone 和 Windows 之间无缝传输文件。">
+    <title>Windows 版 AirDrop：iPhone 文件与剪贴板传输 | WinSend</title>
+    <meta name="description" content="在 iPhone 与 Windows 之间快速传文件、照片，通过云剪贴板跨网络分享文字。无需数据线，无需注册。">
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
-    <link rel="canonical" href="https://winsend.app/zh/" />
-
-    <link rel="alternate" hreflang="zh" href="https://winsend.app/zh/" />
-    <link rel="alternate" hreflang="en" href="https://winsend.app/en/" />
-    <link rel="alternate" hreflang="x-default" href="https://winsend.app/en/" />
+    <link rel="canonical" href="https://winsend.app/zh/">
+    <link rel="alternate" hreflang="en" href="https://winsend.app/en/">
+    <link rel="alternate" hreflang="zh" href="https://winsend.app/zh/">
+    <link rel="alternate" hreflang="x-default" href="https://winsend.app/en/">
     <link rel="stylesheet" href="/assets/css/tailwind.css">
-    <style>
-        * {
-            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif;
-        }
-        .gradient-text {
-            background: linear-gradient(135deg, #2563eb 0%, #3b82f6 50%, #60a5fa 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
-        .hero-bg {
-            background: radial-gradient(ellipse 80% 50% at 50% -20%, rgba(37, 99, 235, 0.15), transparent);
-        }
-        .card-hover {
-            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-        }
-        .card-hover:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.1);
-        }
-        .btn-primary {
-            transition: all 0.2s ease;
-        }
-        .btn-primary:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 10px 25px -5px rgba(37, 99, 235, 0.4);
-        }
-        .fade-in {
-            animation: fadeIn 0.6s ease-out;
-        }
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-        .comparison-card {
-            transition: all 0.3s ease;
-        }
-        .comparison-card:hover {
-            transform: scale(1.02);
-        }
-    </style>
+    <link rel="stylesheet" href="/assets/css/marketing.css">
     <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "SoftwareApplication",
-        "name": "WinSend",
-        "applicationCategory": "UtilitiesApplication",
-        "operatingSystem": "Windows 10/11, iOS 15+",
-        "description": "Windows 版 AirDrop。在 iPhone 和 Windows 之间通过本地 Wi-Fi 直接传输照片、视频、文件和剪贴板，无需数据线、无需云上传、无需注册账号。",
-        "url": "https://winsend.app/zh/",
-        "downloadUrl": "https://winsend.app/WinSend.exe",
-        "softwareVersion": "2.2.4",
-        "offers": {
-            "@type": "Offer",
-            "price": "0",
-            "priceCurrency": "USD"
+{
+    "@context": "https://schema.org",
+    "@graph": [
+        {
+            "@type": "SoftwareApplication",
+            "name": "WinSend",
+            "applicationCategory": "UtilitiesApplication",
+            "operatingSystem": "Windows 10/11, iOS 15+",
+            "description": "通过本地 Wi-Fi 在 iPhone 和 Windows 之间进行 AirDrop 风格的文件与剪贴板传输。",
+            "url": "https://winsend.app/zh/",
+            "downloadUrl": "https://winsend.app/zh/download/",
+            "softwareVersion": "2.2.4",
+            "offers": {
+                "@type": "Offer",
+                "price": "0",
+                "priceCurrency": "USD"
+            }
         },
-        "featureList": [
-            "iPhone 与 Windows 本地 Wi-Fi 直传",
-            "iOS 分享面板与快捷指令集成",
-            "双向自动剪贴板同步",
-            "可选的端到端加密云端剪贴板中转"
-        ]
-    }
+        {
+            "@type": "VideoObject",
+            "name": "通过快捷指令从 iPhone 复制到 Windows",
+            "description": "使用 iOS 快捷指令把 iPhone 上复制的文本发送到 Windows，再通过 Ctrl+V 粘贴。",
+            "thumbnailUrl": "https://winsend.app/assets/videos/winsend-copy-iphone-to-windows-with-shortcuts-poster.jpg",
+            "uploadDate": "2026-09-13",
+            "duration": "PT19S",
+            "contentUrl": "https://winsend.app/assets/videos/winsend-copy-iphone-to-windows-with-shortcuts.mp4"
+        }
+    ]
+}
     </script>
     <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "FAQPage",
-        "mainEntity": [
-            {
-                "@type": "Question",
-                "name": "WinSend 安全吗？",
-                "acceptedAnswer": { "@type": "Answer", "text": "安全。WinSend 以隐私为核心设计：数据不离开你的设备，没有云上传、没有账号、无跟踪，所有传输都在你的局域网内直接完成。" }
-            },
-            {
-                "@type": "Question",
-                "name": "安装 WinSend 时 Windows 提示“已保护你的电脑”是怎么回事？",
-                "acceptedAnswer": { "@type": "Answer", "text": "这是 Microsoft Defender SmartScreen 对新发布或未签名应用的常规提醒，并不代表应用不安全。点击“更多信息”然后选择“仍要运行”即可继续安装。" }
-            },
-            {
-                "@type": "Question",
-                "name": "WinSend 需要联网吗？",
-                "acceptedAnswer": { "@type": "Answer", "text": "不需要。局域网传输完全在你的 Wi-Fi 内完成，数据不经过任何外部服务器。可选的云同步功能可在跨网络场景下端到端加密地中转剪贴板文本。" }
+{
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+        {
+            "@type": "Question",
+            "name": "WinSend 安全吗？",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "安全。本地传输通过局域网在你的设备之间直接完成，无需上传云端或注册账号。"
             }
-        ]
-    }
+        },
+        {
+            "@type": "Question",
+            "name": "WinSend 需要联网吗？",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "本地文件和剪贴板传输只需两台设备连接同一个 Wi-Fi。"
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "WinSend 可以传输什么？",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "WinSend 可以在 iPhone 和 Windows 之间传输照片、视频、文件和剪贴板文本。"
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "不在同一个 Wi-Fi 下能用吗？",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "可以。启用云剪贴板后，两台设备都能联网即可跨网络分享剪贴板文本。文件和照片仍需要局域网连接。"
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "云剪贴板能传文件或照片吗？",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "云端目前支持剪贴板文本；文件和照片仍通过局域网传输。"
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "云剪贴板需要先设置吗？",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "需要。在 Windows 端打开云同步，再到 iPhone 的 WinSend 云同步页面输入配对码，按应用内提示完成设置。"
+            }
+        }
+    ]
+}
     </script>
     <script src="/assets/js/posthog.js" defer></script>
     <script src="/assets/js/download-help.js" defer></script>
+    <script src="/assets/js/marketing.js" defer></script>
 </head>
 <body class="bg-white text-gray-900 antialiased">
-
-    <!-- Navigation -->
-    <nav aria-label="主导航" class="fixed top-0 left-0 right-0 bg-white/70 backdrop-blur-xl z-50 border-b border-gray-100">
-        <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
-            <a href="/zh/" class="flex items-center gap-3">
-                <img src="/logo.webp" alt="WinSend Logo" class="w-9 h-9 rounded-xl" decoding="async">
-                <span class="text-xl font-bold tracking-tight">WinSend</span>
-            </a>
-            <div class="flex items-center gap-6">
-                <a href="#features" class="text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors hidden sm:block">功能特性</a>
-                <a href="/zh/guides/" class="text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors hidden sm:block">教程</a>
-                <a href="/zh/download/" class="btn-primary inline-flex items-center gap-2 px-5 py-2.5 bg-blue-600 text-white text-sm font-semibold rounded-lg hover:bg-blue-700">
-                    下载
-                </a>
-                <a href="../en/" class="text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors">English</a>
-            </div>
+    <nav aria-label="主导航" class="nav-surface fixed inset-x-0 top-0 z-50 border-b border-gray-100">
+        <div class="mx-auto flex max-w-6xl items-center justify-between px-5 py-4 sm:px-6">
+            <a href="/zh/" class="flex items-center gap-3" aria-label="WinSend 首页"><img src="/logo.webp" alt="" class="h-9 w-9 rounded-xl"><span class="text-xl font-bold tracking-tight">WinSend</span></a>
+            <div class="flex items-center gap-4 sm:gap-6">
+                <a href="/zh/features/" class="hidden text-sm font-medium text-gray-600 transition-colors hover:text-gray-950 md:block">功能</a>
+                <a href="/zh/guides/" class="hidden text-sm font-medium text-gray-600 transition-colors hover:text-gray-950 md:block">教程</a>
+                <a href="/zh/download/" class="btn-primary rounded-xl bg-blue-600 px-4 py-2.5 text-sm font-semibold text-white hover:bg-blue-700">下载</a>
+                <a href="/en/" class="text-sm font-medium text-gray-600 hover:text-gray-950">English</a>
+            <details class="mobile-menu"><summary aria-label="菜单"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg></summary><div class="mobile-menu-panel"><a href="/zh/features/">功能</a><a href="/zh/guides/">教程</a></div></details></div>
         </div>
     </nav>
 
     <main>
-    <!-- Hero Section -->
-    <section class="hero-bg pt-36 pb-20 px-6">
-        <div class="max-w-6xl mx-auto">
-            <div class="grid lg:grid-cols-2 gap-16 items-center">
-                <div class="space-y-8 fade-in">
-                    <div class="inline-flex items-center gap-2 px-4 py-2 bg-blue-50 text-blue-700 rounded-full text-sm font-medium border border-blue-100">
-                        <span class="relative flex h-2 w-2">
-                            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
-                            <span class="relative inline-flex rounded-full h-2 w-2 bg-blue-500"></span>
-                        </span>
-                        现已支持 Windows 10 & 11
-                    </div>
-
-                    <h1 class="text-5xl sm:text-6xl lg:text-7xl font-extrabold leading-[1.1] tracking-tight">
-                        <span class="gradient-text">AirDrop</span> 风格的<br>Windows 文件传输
-                    </h1>
-
-                    <p class="text-xl sm:text-2xl text-gray-600 leading-relaxed max-w-xl">
-                        让 iPhone 和 Windows 之间的文件传输像 Apple 生态一样简单快速
-                    </p>
-
-                    <div class="flex flex-wrap items-center gap-3">
-                        <a href="https://get.microsoft.com/installer/download/9n5x7vqqj79g?referrer=appbadge" data-download-surface="home_hero" class="store-installer-link btn-primary inline-flex min-h-[52px] items-center justify-center gap-3 rounded-xl bg-blue-600 px-5 py-3 font-semibold text-white hover:bg-blue-700">
-                            <svg class="h-5 w-5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3 3.5 10.5 2.4v8.8H3V3.5Zm8.5-1.2L21 1v10.2h-9.5V2.3ZM3 12.2h7.5V21L3 19.9v-7.7Zm8.5 0H21V23l-9.5-1.3v-9.5Z"/></svg>
-                            <span>下载 Windows 版</span>
+        <section class="hero-bg home-hero px-5 pb-24 pt-32 sm:px-6 sm:pb-32 sm:pt-40">
+            <div class="mx-auto max-w-7xl text-center">
+                <div class="fade-up mx-auto max-w-5xl">
+                    <p class="mb-6 inline-flex items-center gap-2 rounded-full border border-blue-100 bg-blue-50 px-4 py-2 text-sm font-semibold text-blue-700"><span class="h-2 w-2 rounded-full bg-blue-500"></span>Windows 版 AirDrop</p>
+                    <h1 class="hero-title font-extrabold">iPhone 与 Windows，<br><span class="gradient-text hero-title-line">轻松互传。</span></h1>
+                    <p class="hero-description mx-auto mt-7 max-w-2xl text-lg leading-8 text-gray-600 sm:text-2xl sm:leading-9">在两台设备之间，轻松传送<button type="button" class="rotating-word" data-words="文字,照片,文件" aria-label="文字、照片和文件；点击暂停或继续文字轮播" aria-pressed="false" title="文字、照片和文件；点击暂停或继续文字轮播"><span class="word-dot" aria-hidden="true"></span><span class="word-value" aria-hidden="true">文字</span><span class="word-measure" aria-hidden="true"></span></button>。</p>
+                    <div class="transfer-modes"><span>文件本地直传</span><span>剪贴板跨网同步</span></div>
+                    <div class="hero-downloads mt-9 flex flex-col items-center justify-center gap-3 sm:flex-row">
+                        <a href="https://get.microsoft.com/installer/download/9n5x7vqqj79g?referrer=appbadge" data-download-surface="home_hero" class="store-installer-link btn-primary inline-flex min-h-14 items-center justify-center gap-2 rounded-xl bg-blue-600 px-7 py-4 font-semibold text-white hover:bg-blue-700">
+                            <svg class="h-5 w-5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3 3.5 10.5 2.4v8.8H3V3.5Zm8.5-1.2L21 1v10.2h-9.5V2.3ZM3 12.2h7.5V21L3 19.9v-7.7Zm8.5 0H21V23l-9.5-1.3v-9.5Z"/></svg>下载 Windows 版
                         </a>
-                        <a href="https://apps.apple.com/cn/app/id6760611719" target="_blank" rel="noopener" data-download-surface="home_hero" aria-label="前往 App Store 下载 WinSend" title="App Store 下载" class="app-store-link inline-flex h-[52px] w-[52px] items-center justify-center rounded-xl border border-gray-200 bg-white text-gray-900 shadow-sm transition-all hover:-translate-y-0.5 hover:border-gray-300 hover:shadow-md">
-                            <svg class="h-5 w-5" viewBox="0 0 384 512" fill="currentColor" aria-hidden="true"><path d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 69 126.7 112.5 126.7 18.5 0 51.4-20.7 76.4-20.7 24.4 0 53.8 20.7 76.4 20.7 31.3 0 81.2-81.9 92.3-105.5-38.7-18.8-61.3-49.4-60.9-86.3zm-90.1-157.3c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 52.3-11.4 69.5-34.3z"/></svg>
+                        <a href="https://apps.apple.com/cn/app/id6760611719" target="_blank" rel="noopener" data-download-surface="home_hero" class="app-store-link inline-flex min-h-14 items-center justify-center gap-2 rounded-xl border border-gray-200 bg-white px-7 py-4 font-semibold text-gray-900 transition hover:border-gray-300 hover:bg-gray-50">
+                            <svg class="h-5 w-5" viewBox="0 0 384 512" fill="currentColor" aria-hidden="true"><path d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 69 126.7 112.5 126.7 18.5 0 51.4-20.7 76.4-20.7 24.4 0 53.8 20.7 76.4 20.7 31.3 0 81.2-81.9 92.3-105.5-38.7-18.8-61.3-49.4-60.9-86.3zm-90.1-157.3c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 52.3-11.4 69.5-34.3z"/></svg>下载 iPhone 版
                         </a>
                     </div>
-                    <div class="-mt-5 text-sm text-gray-500">
-                        <details class="download-help relative inline-block">
-                            <summary aria-label="Windows 下载帮助" class="flex cursor-pointer list-none items-center gap-1.5 transition-colors hover:text-blue-700 [&::-webkit-details-marker]:hidden">
-                                <span>Windows 10/11 · Microsoft Store</span>
-                                <svg class="h-4 w-4" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="10" cy="10" r="7.5"/><path stroke-linecap="round" d="M10 9v4M10 6.5h.01"/></svg>
-                            </summary>
-                            <div class="absolute left-0 top-7 z-20 w-64 rounded-2xl border border-gray-200 bg-white p-4 text-left text-sm leading-6 text-gray-600 shadow-xl">
-                                <p>推荐通过 Microsoft Store 安装，可获得可信安装和自动更新。</p>
-                                <a href="/zh/download/" class="mt-2 inline-flex font-semibold text-blue-700 hover:text-blue-800">Store 无法使用？查看全部下载方式 →</a>
-                            </div>
-                        </details>
-                    </div>
-
-                    <div class="flex flex-wrap items-center gap-6 text-sm text-gray-500">
-                        <span class="flex items-center gap-2">
-                            <svg class="w-4 h-4 text-green-500" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
-                            </svg>
-                            完全免费
-                        </span>
-                        <span class="flex items-center gap-2">
-                            <svg class="w-4 h-4 text-green-500" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
-                            </svg>
-                            无需注册
-                        </span>
-                        <span class="flex items-center gap-2">
-                            <svg class="w-4 h-4 text-green-500" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
-                            </svg>
-                            无压缩传输
-                        </span>
-                    </div>
+                    <div class="hero-benefits text-sm font-medium text-gray-500"><span>核心功能免费</span><span>无需注册</span><span>不压缩画质</span></div>
                 </div>
 
-                <div class="relative order-first lg:order-last">
-                    <div class="aspect-[16/12] bg-gradient-to-br from-gray-100 to-gray-50 rounded-3xl shadow-2xl flex items-center justify-center overflow-hidden border border-gray-200">
-                        <img src="/idea.webp" alt="WinSend 界面" class="w-full h-full object-cover" decoding="async" fetchpriority="high">
-                    </div>
-                    <!-- Decorative elements -->
-                    <div class="absolute -z-10 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-gradient-to-br from-blue-200/20 to-purple-200/20 rounded-full blur-3xl"></div>
+                <div class="video-stage fade-up mx-auto mt-14 max-w-6xl text-left" style="animation-delay:120ms">
+                    <span class="direction-badge"><span class="direction-dot"></span>快捷指令 · iPhone → Windows</span>
+                    <video data-smart-play data-autoplay="true" data-loaded="true" muted loop playsinline controls preload="metadata" poster="/assets/videos/winsend-copy-iphone-to-windows-with-shortcuts-poster.jpg" aria-label="通过快捷指令从 iPhone 向 Windows 传输剪贴板演示">
+                        <source src="/assets/videos/winsend-copy-iphone-to-windows-with-shortcuts.mp4" type="video/mp4">
+                    </video>
                 </div>
+                <p class="mx-auto mt-5 max-w-xl text-sm leading-6 text-gray-500">设置 WinSend 快捷指令后，在 iPhone 上复制文字并运行快捷指令，即可在 Windows 上按 Ctrl+V 粘贴。</p>
             </div>
+        </section>
 
-        </div>
-    </section>
-
-    <!-- Solution Section -->
-    <section class="py-32 px-6">
-        <div class="max-w-4xl mx-auto text-center">
-            <h2 class="text-5xl sm:text-6xl lg:text-7xl font-bold mb-8 tracking-tight">
-                认识 <span class="gradient-text">WinSend</span>
-            </h2>
-            <p class="text-2xl sm:text-3xl text-gray-600 font-medium">
-                Windows 版 AirDrop
-            </p>
-            <p class="text-xl text-gray-500 mt-6 max-w-2xl mx-auto">
-                让 iPhone 和 Windows 之间的文件传输像 AirDrop 一样简单快速
-            </p>
-        </div>
-    </section>
-
-    <!-- 事实速览：给用户和 AI 引擎的结构化事实 -->
-    <section class="pb-4 pt-16 px-6">
-        <div class="max-w-4xl mx-auto rounded-3xl border border-gray-200 p-8 sm:p-10">
-            <h2 class="text-2xl font-bold tracking-tight mb-6">WinSend 速览</h2>
-            <dl class="grid sm:grid-cols-2 gap-x-10 gap-y-4 text-gray-600 leading-7">
-                <div><dt class="font-semibold text-gray-900">它是什么</dt><dd>类似 AirDrop 的 iPhone ↔ Windows 文件传输工具。</dd></div>
-                <div><dt class="font-semibold text-gray-900">如何传输</dt><dd>在同一 Wi-Fi 下设备点对点直连，数据不经服务器。</dd></div>
-                <div><dt class="font-semibold text-gray-900">能传什么</dt><dd>照片、视频、任意文件和剪贴板文本。</dd></div>
-                <div><dt class="font-semibold text-gray-900">账号与云</dt><dd>局域网传输无需注册；云同步为可选功能且端到端加密。</dd></div>
-                <div><dt class="font-semibold text-gray-900">价格</dt><dd>核心功能免费；Pro 解锁自动剪贴板与云端同步。</dd></div>
-                <div><dt class="font-semibold text-gray-900">支持平台</dt><dd>iOS 15+（App Store）与 Windows 10/11。</dd></div>
-            </dl>
-            <p class="mt-6 text-sm text-gray-500">想了解安全性或 SmartScreen 提示？阅读 <a href="/zh/safety/" class="text-blue-700 font-medium hover:underline">WinSend 安全吗？</a></p>
-        </div>
-    </section>
-
-    <!-- Features Section -->
-    <section id="features" class="py-24 px-6 bg-gray-50">
-        <div class="max-w-6xl mx-auto">
-            <div class="text-center mb-20">
-                <h2 class="text-4xl sm:text-5xl font-bold mb-6 tracking-tight">
-                    你需要的一切功能<br>实现无缝文件传输
-                </h2>
-                <p class="text-xl text-gray-600">
-                    强大的功能，简单的体验
-                </p>
+        <section id="features" class="px-5 py-24 sm:px-6 sm:py-32">
+            <div class="mx-auto max-w-6xl">
+                <div class="mx-auto max-w-3xl text-center">
+                    <p class="text-sm font-bold uppercase tracking-[0.18em] text-blue-600">常用的操作，一看就会</p>
+                    <h2 class="mt-4 text-4xl font-bold tracking-tight sm:text-6xl">传文件，传文字，<br>都顺手。</h2>
+                    <p class="mt-6 text-lg leading-8 text-gray-600">看看如何传文件、分享复制的文字，以及用快捷指令一键发送。</p>
+                </div>
+                <div class="mt-14 grid gap-6 md:grid-cols-3">
+                    <a href="/zh/features/#file-transfer" class="feature-preview group overflow-hidden rounded-3xl border border-gray-200 bg-white">
+                        <div class="relative overflow-hidden bg-slate-100"><img src="/assets/videos/winsend-transfer-files-windows-to-iphone-poster.jpg" alt="Windows 文件准备发送到 iPhone" class="aspect-video w-full object-cover transition duration-500 group-hover:scale-[1.02]" loading="lazy"><span class="play-chip" aria-hidden="true">▶</span></div>
+                        <div class="p-6"><p class="text-sm font-semibold text-blue-600">文件传输</p><h3 class="mt-2 text-xl font-bold">发送文件到 iPhone</h3><p class="mt-2 leading-7 text-gray-600">拖入、发送、保存，几秒完成。</p><span class="mt-5 inline-flex font-semibold text-blue-700">观看演示 →</span></div>
+                    </a>
+                    <a href="/zh/features/#windows-to-iphone" class="feature-preview group overflow-hidden rounded-3xl border border-gray-200 bg-white">
+                        <div class="relative overflow-hidden bg-violet-50"><img src="/assets/videos/winsend-copy-windows-to-iphone-clipboard-poster.jpg" alt="Windows 上选中等待传输的文本" class="aspect-video w-full object-cover transition duration-500 group-hover:scale-[1.02]" loading="lazy"><span class="play-chip" aria-hidden="true">▶</span></div>
+                        <div class="p-6"><p class="text-sm font-semibold text-violet-600">剪贴板同步</p><h3 class="mt-2 text-xl font-bold">电脑复制，iPhone 粘贴</h3><p class="mt-2 leading-7 text-gray-600">在 WinSend 中一键获取后粘贴。</p><span class="mt-5 inline-flex font-semibold text-blue-700">观看演示 →</span></div>
+                    </a>
+                    <a href="/zh/features/#iphone-to-windows" class="feature-preview group overflow-hidden rounded-3xl border border-gray-200 bg-white">
+                        <div class="relative overflow-hidden bg-violet-50"><img src="/assets/videos/winsend-copy-iphone-to-windows-with-shortcuts-poster.jpg" alt="iPhone 上为 WinSend 快捷指令选中文本" class="aspect-video w-full object-cover transition duration-500 group-hover:scale-[1.02]" loading="lazy"><span class="play-chip" aria-hidden="true">▶</span></div>
+                        <div class="p-6"><p class="text-sm font-semibold text-violet-600">iOS 快捷指令</p><h3 class="mt-2 text-xl font-bold">iPhone 复制，电脑粘贴</h3><p class="mt-2 leading-7 text-gray-600">设置快捷指令后，无需打开 WinSend 即可发送。</p><span class="mt-5 inline-flex font-semibold text-blue-700">观看演示 →</span></div>
+                    </a>
+                </div>
+                <div class="mt-10 text-center"><a href="/zh/features/" class="inline-flex items-center rounded-full bg-gray-950 px-6 py-3 font-semibold text-white transition hover:bg-gray-800">查看全部功能 <span class="ml-2">→</span></a></div>
             </div>
+        </section>
 
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <!-- Feature 1 -->
-                <div class="card-hover bg-white p-8 rounded-3xl border border-gray-100">
-                    <div class="w-14 h-14 mb-6 bg-gradient-to-br from-blue-500 to-blue-600 rounded-2xl flex items-center justify-center shadow-lg shadow-blue-500/20">
-                        <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
-                        </svg>
-                    </div>
-                    <h3 class="text-xl font-bold mb-3">即时传输</h3>
-                    <p class="text-gray-600 leading-relaxed">
-                        AirDrop 风格的传输体验，像 Apple 生态一样简单直观
-                    </p>
-                </div>
+        <section class="cloud-section" aria-labelledby="cloud-heading"><div class="cloud-layout"><div><p class="cloud-eyebrow">云剪贴板</p><h2 id="cloud-heading">不在同一个 Wi-Fi，<br>文字也能接着用。</h2><p class="cloud-description">电脑连着办公室网络，iPhone 用着移动数据？启用云剪贴板后，复制的文字仍能在两台设备之间传递。</p><a class="cloud-cta" href="/zh/features/#cloud-clipboard">了解云剪贴板 →</a><p class="cloud-limit">云端目前支持剪贴板文本；文件和照片仍通过局域网传输。</p></div><div class="cloud-visual" aria-label="跨网络剪贴板示意图"><div class="cloud-device"><div class="cloud-device-top"><strong>Windows</strong><span>办公室网络</span></div><p>明天见，记得带上会议笔记。</p><span class="cloud-device-caption">复制的文字</span></div><div class="cloud-bridge"><svg width="40" height="32" viewBox="0 0 40 32" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M10 25h20a7 7 0 0 0 1-14 11 11 0 0 0-21-1 8 8 0 0 0 0 15Z"/></svg><span>加密云剪贴板</span></div><div class="cloud-device"><div class="cloud-device-top"><strong>iPhone</strong><span>移动数据</span></div><p>明天见，记得带上会议笔记。</p><span class="cloud-device-caption">获取后即可粘贴</span></div><p class="cloud-diagram-note">传输方式示意</p></div></div></section>
 
-                <!-- Feature 2 -->
-                <div class="card-hover bg-white p-8 rounded-3xl border border-gray-100">
-                    <div class="w-14 h-14 mb-6 bg-gradient-to-br from-green-500 to-green-600 rounded-2xl flex items-center justify-center shadow-lg shadow-green-500/20">
-                        <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.111 16.404a5.5 5.5 0 017.778 0M12 20h.01m-7.08-7.071c3.904-3.905 10.236-3.905 14.141 0M1.394 9.393c5.857-5.857 15.355-5.857 21.213 0"/>
-                        </svg>
-                    </div>
-                    <h3 class="text-xl font-bold mb-3">Wi-Fi 局域网传输</h3>
-                    <p class="text-gray-600 leading-relaxed">
-                        在同一 Wi-Fi 下实现高速文件传输，秒传小文件，快速传输大文件
-                    </p>
-                </div>
-
-                <!-- Feature 3: 无压缩 -->
-                <div class="card-hover bg-white p-8 rounded-3xl border border-gray-100">
-                    <div class="w-14 h-14 mb-6 bg-gradient-to-br from-blue-500 to-blue-600 rounded-2xl flex items-center justify-center shadow-lg shadow-blue-500/20">
-                        <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/>
-                        </svg>
-                    </div>
-                    <h3 class="text-xl font-bold mb-3">无压缩传输</h3>
-                    <p class="text-gray-600 leading-relaxed">
-                        图片、视频保持原始质量，不会被压缩，适合设计师和摄影师
-                    </p>
-                </div>
-
-                <!-- Feature 4 -->
-                <div class="card-hover bg-white p-8 rounded-3xl border border-gray-100">
-                    <div class="w-14 h-14 mb-6 bg-gradient-to-br from-violet-500 to-violet-600 rounded-2xl flex items-center justify-center shadow-lg shadow-violet-500/20">
-                        <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"/>
-                        </svg>
-                    </div>
-                    <h3 class="text-xl font-bold mb-3">快捷方式剪贴板</h3>
-                    <p class="text-gray-600 leading-relaxed">
-                        使用 iPhone 的快捷方式，实现无需打开 App，轻点背面触发剪贴板同步
-                    </p>
-                </div>
-
-                <!-- Feature 5 -->
-                <div class="card-hover bg-white p-8 rounded-3xl border border-gray-100">
-                    <div class="w-14 h-14 mb-6 bg-gradient-to-br from-pink-500 to-pink-600 rounded-2xl flex items-center justify-center shadow-lg shadow-pink-500/20">
-                        <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M9 19l3 3m0 0l3-3m-3 3V10"/>
-                        </svg>
-                    </div>
-                    <h3 class="text-xl font-bold mb-3">大文件支持</h3>
-                    <p class="text-gray-600 leading-relaxed">
-                        支持大文件传输，轻松发送视频和设计文件，无大小限制
-                    </p>
-                </div>
-
-                <!-- Feature 6 -->
-                <div class="card-hover bg-white p-8 rounded-3xl border border-gray-100">
-                    <div class="w-14 h-14 mb-6 bg-gradient-to-br from-cyan-500 to-cyan-600 rounded-2xl flex items-center justify-center shadow-lg shadow-cyan-500/20">
-                        <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/>
-                        </svg>
-                    </div>
-                    <h3 class="text-xl font-bold mb-3">剪贴板同步</h3>
-                    <p class="text-gray-600 leading-relaxed">
-                        自动同步剪贴板，文字复制可以在设备间自动同步
-                    </p>
-                </div>
+        <section class="bg-gray-50 px-5 py-24 sm:px-6">
+            <div class="mx-auto grid max-w-6xl gap-6 md:grid-cols-3">
+                <article class="rounded-3xl border border-gray-200 bg-white p-8"><div class="mb-6 grid h-12 w-12 place-items-center rounded-2xl bg-blue-100 text-xl">⚡</div><h2 class="text-2xl font-bold">直连，更快</h2><p class="mt-3 leading-7 text-gray-600">设备通过本地 Wi-Fi 自动发现并直接传输，无需先上传云端再下载。</p></article>
+                <article class="rounded-3xl border border-gray-200 bg-white p-8"><div class="mb-6 grid h-12 w-12 place-items-center rounded-2xl bg-green-100 text-xl">✓</div><h2 class="text-2xl font-bold">保留原始画质</h2><p class="mt-3 leading-7 text-gray-600">照片、视频和文件不压缩传输，也没有强制的文件大小限制。</p></article>
+                <article class="rounded-3xl border border-gray-200 bg-white p-8"><div class="mb-6 grid h-12 w-12 place-items-center rounded-2xl bg-violet-100 text-xl">⌘</div><h2 class="text-2xl font-bold">为 iPhone 而设计</h2><p class="mt-3 leading-7 text-gray-600">支持 iOS 分享面板和快捷指令，不用翻找文件夹，也不用把文件发给自己。</p></article>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Use Cases Section -->
-    <section class="py-24 px-6">
-        <div class="max-w-6xl mx-auto">
-            <div class="text-center mb-16">
-                <h2 class="text-4xl sm:text-5xl font-bold mb-6 tracking-tight">
-                    适用于每个人
-                </h2>
-                <p class="text-xl text-gray-600">
-                    适用于各种场景和专业需求
-                </p>
+        <section class="px-5 py-24 sm:px-6 sm:py-32">
+            <div class="mx-auto grid max-w-6xl gap-12 lg:grid-cols-[0.9fr_1.1fr] lg:items-center">
+                <div><p class="text-sm font-bold uppercase tracking-[0.18em] text-green-600">默认保护隐私</p><h2 class="mt-4 text-4xl font-bold tracking-tight sm:text-5xl">本地直传，<br>或加密跨网。</h2><p class="mt-6 text-lg leading-8 text-gray-600">文件通过同一局域网在设备间直接传输，无需账号。需要跨网络分享文字时，可另行启用加密云剪贴板。</p><a href="/zh/safety/" class="mt-7 inline-flex font-semibold text-blue-700 hover:underline">了解 WinSend 的安全性 →</a></div>
+                <dl class="grid gap-4 sm:grid-cols-2">
+                    <div class="rounded-3xl bg-gray-950 p-7 text-white"><dt class="font-bold">支持平台</dt><dd class="mt-2 text-gray-300">Windows 10/11<br>iOS 15+</dd></div>
+                    <div class="rounded-3xl bg-blue-600 p-7 text-white"><dt class="font-bold">连接方式</dt><dd class="mt-2 text-blue-100">本地 Wi-Fi 直连<br>可选加密云剪贴板</dd></div>
+                    <div class="rounded-3xl border border-gray-200 p-7"><dt class="font-bold">传输内容</dt><dd class="mt-2 text-gray-600">文件、照片、视频与剪贴板文本</dd></div>
+                    <div class="rounded-3xl border border-gray-200 p-7"><dt class="font-bold">开始使用</dt><dd class="mt-2 text-gray-600">无需账号<br>无需 USB 数据线</dd></div>
+                </dl>
             </div>
+        </section>
 
-            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
-                <div class="group bg-gray-50 hover:bg-white p-6 rounded-2xl border border-gray-100 hover:border-blue-200 hover:shadow-lg transition-all cursor-default">
-                    <div class="text-4xl mb-4">📸</div>
-                    <h3 class="font-bold text-lg mb-2">传输照片</h3>
-                    <p class="text-sm text-gray-600">将 iPhone 照片无损传输到电脑</p>
-                </div>
-
-                <div class="group bg-gray-50 hover:bg-white p-6 rounded-2xl border border-gray-100 hover:border-blue-200 hover:shadow-lg transition-all cursor-default">
-                    <div class="text-4xl mb-4">🎬</div>
-                    <h3 class="font-bold text-lg mb-2">发送大视频</h3>
-                    <p class="text-sm text-gray-600">即时发送大型视频文件</p>
-                </div>
-
-                <div class="group bg-gray-50 hover:bg-white p-6 rounded-2xl border border-gray-100 hover:border-blue-200 hover:shadow-lg transition-all cursor-default">
-                    <div class="text-4xl mb-4">🎨</div>
-                    <h3 class="font-bold text-lg mb-2">设计文件</h3>
-                    <p class="text-sm text-gray-600">在设备间共享设计文件</p>
-                </div>
-
-                <div class="group bg-gray-50 hover:bg-white p-6 rounded-2xl border border-gray-100 hover:border-blue-200 hover:shadow-lg transition-all cursor-default">
-                    <div class="text-4xl mb-4">📄</div>
-                    <h3 class="font-bold text-lg mb-2">办公文档</h3>
-                    <p class="text-sm text-gray-600">快速移动办公文档</p>
-                </div>
+        <section id="faq" class="bg-gray-50 px-5 py-24 sm:px-6">
+            <div class="mx-auto max-w-3xl">
+                <div class="text-center"><h2 class="text-4xl font-bold tracking-tight sm:text-5xl">常见问题</h2></div>
+                <div class="mt-12 space-y-4">
+                    <details class="group rounded-2xl border border-gray-200 bg-white p-6"><summary class="flex cursor-pointer list-none items-center justify-between text-lg font-bold">WinSend 安全吗？<span class="text-blue-600 group-open:rotate-45">＋</span></summary><p class="mt-4 leading-7 text-gray-600">安全。本地传输通过局域网在你的设备之间直接完成，无需上传云端或注册账号。</p></details>
+                    <details class="group rounded-2xl border border-gray-200 bg-white p-6"><summary class="flex cursor-pointer list-none items-center justify-between text-lg font-bold">WinSend 需要联网吗？<span class="text-blue-600 group-open:rotate-45">＋</span></summary><p class="mt-4 leading-7 text-gray-600">本地文件与剪贴板传输只需要两台设备连接同一个 Wi-Fi。可选的云同步支持跨网络加密同步剪贴板。</p></details>
+                    <details class="group rounded-2xl border border-gray-200 bg-white p-6"><summary class="flex cursor-pointer list-none items-center justify-between text-lg font-bold">可以传输什么？<span class="text-blue-600 group-open:rotate-45">＋</span></summary><p class="mt-4 leading-7 text-gray-600">照片、视频、文件和剪贴板文本。照片和视频保留原始画质，文件保持原样。</p></details>
+                <details class="group rounded-2xl border border-gray-200 bg-white p-6"><summary class="flex cursor-pointer list-none items-center justify-between text-lg font-bold">不在同一个 Wi-Fi 下能用吗？<span class="text-blue-600 group-open:rotate-45">＋</span></summary><p class="mt-4 leading-7 text-gray-600">可以。启用云剪贴板后，两台设备都能联网即可跨网络分享剪贴板文本。文件和照片仍需要局域网连接。</p></details><details class="group rounded-2xl border border-gray-200 bg-white p-6"><summary class="flex cursor-pointer list-none items-center justify-between text-lg font-bold">云剪贴板能传文件或照片吗？<span class="text-blue-600 group-open:rotate-45">＋</span></summary><p class="mt-4 leading-7 text-gray-600">云端目前支持剪贴板文本；文件和照片仍通过局域网传输。</p></details><details class="group rounded-2xl border border-gray-200 bg-white p-6"><summary class="flex cursor-pointer list-none items-center justify-between text-lg font-bold">云剪贴板需要先设置吗？<span class="text-blue-600 group-open:rotate-45">＋</span></summary><p class="mt-4 leading-7 text-gray-600">需要。在 Windows 端打开云同步，再到 iPhone 的 WinSend 云同步页面输入配对码，按应用内提示完成设置。</p></details></div>
             </div>
+        </section>
 
-            <div class="mt-12 flex flex-wrap justify-center gap-3">
-                <span class="px-4 py-2 bg-blue-50 text-blue-700 rounded-full text-sm font-medium">程序员</span>
-                <span class="px-4 py-2 bg-green-50 text-green-700 rounded-full text-sm font-medium">设计师</span>
-                <span class="px-4 py-2 bg-purple-50 text-purple-700 rounded-full text-sm font-medium">办公用户</span>
-                <span class="px-4 py-2 bg-orange-50 text-orange-700 rounded-full text-sm font-medium">运营人员</span>
-                <span class="px-4 py-2 bg-pink-50 text-pink-700 rounded-full text-sm font-medium">内容创作者</span>
+        <section class="px-5 py-24 sm:px-6 sm:py-32">
+            <div class="mx-auto max-w-5xl rounded-[2.5rem] bg-gray-950 px-6 py-16 text-center text-white sm:px-12 sm:py-20">
+                <h2 class="text-4xl font-bold tracking-tight sm:text-6xl">从第一次互传开始。</h2>
+                <p class="mx-auto mt-5 max-w-xl text-lg leading-8 text-gray-300">在两台设备上安装 WinSend，几分钟内完成第一次传输。</p>
+                <div class="mt-8 flex flex-col justify-center gap-3 sm:flex-row"><a href="/zh/download/" class="btn-primary rounded-xl bg-blue-600 px-7 py-4 font-semibold text-white hover:bg-blue-500">下载 WinSend</a><a href="/zh/guides/setup/" class="rounded-xl border border-gray-700 px-7 py-4 font-semibold text-white hover:bg-gray-800">查看安装教程</a></div>
             </div>
-        </div>
-    </section>
-
-    <!-- Comparison Section -->
-    <section class="py-24 px-6 bg-gray-50">
-        <div class="max-w-5xl mx-auto">
-            <div class="text-center mb-16">
-                <h2 class="text-4xl sm:text-5xl font-bold mb-6 tracking-tight">
-                    为什么选择 WinSend？
-                </h2>
-                <p class="text-xl text-gray-600">
-                    填补 iPhone 和 Windows 之间的空白
-                </p>
-            </div>
-
-            <div class="grid md:grid-cols-2 gap-8">
-                <!-- AirDrop Card -->
-                <div class="comparison-card bg-white p-10 rounded-3xl border-2 border-gray-200">
-                    <div class="flex items-center gap-4 mb-8">
-                        <div class="w-14 h-14 bg-gray-200 rounded-2xl flex items-center justify-center">
-                            <svg class="w-8 h-8 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"/>
-                            </svg>
-                        </div>
-                        <h3 class="text-3xl font-bold">AirDrop</h3>
-                    </div>
-
-                    <div class="space-y-5">
-                        <div class="flex items-center gap-3">
-                            <svg class="w-6 h-6 text-gray-400" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clip-rule="evenodd"/>
-                            </svg>
-                            <span class="text-gray-600 text-lg">iPhone ↔ Mac</span>
-                        </div>
-                        <div class="flex items-center gap-3">
-                            <svg class="w-6 h-6 text-red-500" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"/>
-                            </svg>
-                            <span class="text-gray-600 text-lg">不支持 Windows</span>
-                        </div>
-                        <div class="flex items-center gap-3">
-                            <svg class="w-6 h-6 text-red-500" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"/>
-                            </svg>
-                            <span class="text-gray-600 text-lg">仅限 Apple 生态</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- WinSend Card -->
-                <div class="comparison-card bg-gradient-to-br from-blue-600 to-blue-700 p-10 rounded-3xl shadow-2xl shadow-blue-500/30 text-white">
-                    <div class="flex items-center gap-4 mb-8">
-                        <div class="w-14 h-14 bg-white/20 backdrop-blur rounded-2xl flex items-center justify-center">
-                            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12"/>
-                            </svg>
-                        </div>
-                        <h3 class="text-3xl font-bold">WinSend</h3>
-                    </div>
-
-                    <div class="space-y-5">
-                        <div class="flex items-center gap-3">
-                            <svg class="w-6 h-6 text-green-400" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
-                            </svg>
-                            <span class="text-lg">iPhone ↔ Windows</span>
-                        </div>
-                        <div class="flex items-center gap-3">
-                            <svg class="w-6 h-6 text-green-400" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
-                            </svg>
-                            <span class="text-lg">无文件压缩</span>
-                        </div>
-                        <div class="flex items-center gap-3">
-                            <svg class="w-6 h-6 text-green-400" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
-                            </svg>
-                            <span class="text-lg">支持大文件传输</span>
-                        </div>
-                        <div class="flex items-center gap-3">
-                            <svg class="w-6 h-6 text-green-400" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
-                            </svg>
-                            <span class="text-lg">剪贴板自动同步</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="mt-10 flex flex-wrap justify-center gap-x-6 gap-y-3 text-sm font-semibold">
-                <a href="/zh/guides/cross-platform-transfer-tools/" class="text-blue-700 hover:text-blue-800 hover:underline">对比 Windows AirDrop 替代工具</a>
-                <a href="/zh/guides/copy-iphone-to-windows/" class="text-blue-700 hover:text-blue-800 hover:underline">设置 iPhone 与 Windows 剪贴板同步</a>
-            </div>
-        </div>
-    </section>
-
+        </section>
     </main>
 
-    <!-- Footer -->
-    <footer class="py-16 px-6 bg-gray-900 text-gray-400">
-        <div class="max-w-6xl mx-auto">
-            <div class="grid md:grid-cols-4 gap-12 mb-12">
-                <div class="md:col-span-2">
-                    <div class="flex items-center gap-3 mb-4">
-                        <img src="/logo.webp" alt="WinSend Logo" class="w-9 h-9 rounded-xl" decoding="async" loading="lazy">
-                        <span class="text-xl font-bold text-white">WinSend</span>
-                    </div>
-                    <p class="text-sm leading-relaxed max-w-md">
-                        Windows 版 AirDrop。<br>
-                        通过本地 Wi-Fi 或互联网在 iPhone 和 Windows 之间无缝传输文件。
-                    </p>
-                </div>
-
-                <div>
-                    <div class="text-white font-semibold mb-4">产品</div>
-                    <ul class="space-y-3 text-sm">
-                        <li><a href="/zh/#features" class="hover:text-white transition-colors">功能特性</a></li>
-                        <li><a href="/zh/guides/" class="hover:text-white transition-colors">教程中心</a></li>
-                        <li><a href="/zh/download/" class="hover:text-white transition-colors">下载</a></li>
-                    </ul>
-                </div>
-
-                <div>
-                    <div class="text-white font-semibold mb-4">联系我们</div>
-                    <ul class="space-y-3 text-sm">
-                        <li><a href="#" class="hover:text-white transition-colors">GitHub</a></li>
-                        <li><a href="#" class="hover:text-white transition-colors">Twitter</a></li>
-                        <li><a href="#" class="hover:text-white transition-colors">联系方式</a></li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center gap-4 text-sm">
-                <p>&copy; 2025 WinSend. All rights reserved.</p>
-                <p class="flex items-center gap-2">
-                    用
-                    <svg class="w-4 h-4 text-red-500" fill="currentColor" viewBox="0 0 20 20">
-                        <path fill-rule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clip-rule="evenodd"/>
-                    </svg>
-                    为 iPhone 和 Windows 用户打造
-                </p>
-            </div>
+    <footer class="bg-gray-950 px-5 py-14 text-gray-400 sm:px-6">
+        <div class="mx-auto flex max-w-6xl flex-col gap-10 sm:flex-row sm:items-end sm:justify-between">
+            <div><div class="flex items-center gap-3"><img src="/logo.webp" alt="" class="h-9 w-9 rounded-xl"><span class="text-xl font-bold text-white">WinSend</span></div><p class="mt-4 max-w-md text-sm leading-6">连接 iPhone 和 Windows 的 AirDrop 风格文件与剪贴板传输工具。</p></div>
+            <div class="flex flex-wrap gap-x-6 gap-y-3 text-sm"><a href="/zh/features/" class="hover:text-white">功能</a><a href="/zh/guides/" class="hover:text-white">教程</a><a href="/zh/download/" class="hover:text-white">下载</a><a href="/zh/safety/" class="hover:text-white">安全</a><a href="/zh/privacy/" class="hover:text-white">隐私</a></div>
         </div>
+        <div class="mx-auto mt-10 max-w-6xl border-t border-gray-800 pt-6 text-sm">© 2026 WinSend. 保留所有权利。</div>
     </footer>
-
-    <script>
-        (function() {
-            var APP_STORE_WEB_URL_GENERIC = "https://apps.apple.com/app/id6760611719";
-            var APP_STORE_WEB_URL_CN = "https://apps.apple.com/cn/app/winsend-%E8%B7%A8%E5%B9%B3%E5%8F%B0%E6%96%87%E4%BB%B6%E7%9B%B8%E5%86%8C%E8%A7%86%E9%A2%91%E5%9B%BE%E7%89%87%E5%89%AA%E8%B4%B4%E6%9D%BF%E4%BC%A0%E8%BE%93%E5%8A%A9%E6%89%8B/id6760611719";
-            var APP_STORE_APP_URL = "itms-apps://itunes.apple.com/app/id6760611719";
-
-            // 苹果对中国大陆 IP 的地理重定向会丢失链接路径并跳到 Today 页，
-            // 大陆用户改用带 /cn/ 前缀的链接可直达 App 页面
-            function isMainlandChina() {
-                try {
-                    var timeZone = Intl.DateTimeFormat().resolvedOptions().timeZone || "";
-                    if (/^Asia\/(Shanghai|Urumqi|Chongqing|Harbin|Kashgar)$/.test(timeZone)) {
-                        return true;
-                    }
-                } catch (error) {}
-                return (navigator.language || "") === "zh-CN";
-            }
-
-            var APP_STORE_WEB_URL = isMainlandChina() ? APP_STORE_WEB_URL_CN : APP_STORE_WEB_URL_GENERIC;
-
-            // 立即应用地区化链接，不依赖 update.json 加载结果
-            document.querySelectorAll(".app-store-link").forEach(function(node) {
-                node.href = APP_STORE_WEB_URL;
-            });
-
-            function buildDownloadUrl(data) {
-                var version = data && data.version ? data.version : "1.0.0";
-                var fileName = "WinSend_v" + version + ".exe";
-                var rawUrl = data && data.url ? data.url : "/";
-
-                try {
-                    var resolved = new URL(rawUrl, window.location.origin);
-                    var path = resolved.pathname || "/";
-
-                    if (path.endsWith(".exe")) {
-                        resolved.pathname = path.replace(/[^/]+$/, fileName);
-                    } else {
-                        resolved.pathname = path.replace(/\/?$/, "/") + fileName;
-                    }
-
-                    return resolved.toString();
-                } catch (error) {
-                    return "/" + fileName;
-                }
-            }
-
-            function isIOS() {
-                return /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
-            }
-
-            function handleAppStoreClick(event) {
-                if (isIOS()) {
-                    event.preventDefault();
-                    window.location.href = APP_STORE_APP_URL;
-                }
-            }
-
-            // 延迟加载 update.json，避免阻塞首屏渲染
-            function loadUpdateInfo() {
-                fetch("/update.json")
-                    .then(function(response) {
-                        if (!response.ok) {
-                            throw new Error("Failed to load update.json");
-                        }
-                        return response.json();
-                    })
-                    .then(function(data) {
-                        if (data.version) {
-                            document.querySelectorAll(".current-version-text").forEach(function(node) {
-                                node.textContent = data.version;
-                            });
-                            var currentVersion = document.getElementById("current-version");
-                            if (currentVersion) {
-                                currentVersion.textContent = data.version;
-                            }
-                        }
-                        var downloadUrl = buildDownloadUrl(data);
-                        document.querySelectorAll(".download-link").forEach(function(node) {
-                            node.href = downloadUrl;
-                            node.dataset.installerVersion = data.version || "unknown";
-                        });
-                        document.querySelectorAll(".app-store-link").forEach(function(node) {
-                            node.href = APP_STORE_WEB_URL;
-                            node.addEventListener("click", handleAppStoreClick);
-                        });
-                    })
-                    .catch(function() {});
-            }
-
-            // 使用 requestIdleCallback，不支持的浏览器回退到 setTimeout
-            if ('requestIdleCallback' in window) {
-                requestIdleCallback(loadUpdateInfo);
-            } else {
-                setTimeout(loadUpdateInfo, 2000);
-            }
-        })();
-    </script>
 </body>
 </html>

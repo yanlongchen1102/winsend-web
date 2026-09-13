@@ -20,6 +20,7 @@ WinSend consists of an iOS app (App Store) and a Windows desktop app (downloaded
 
 - Home (English): https://winsend.app/en/
 - Home (Chinese): https://winsend.app/zh/
+- Product demos and features: https://winsend.app/en/features/ , https://winsend.app/zh/features/
 - Guides: https://winsend.app/en/guides/ , https://winsend.app/zh/guides/
 - Is WinSend safe?: https://winsend.app/en/safety/ , https://winsend.app/zh/safety/
 - AirDrop for Windows guide: https://winsend.app/en/guides/airdrop-for-windows/

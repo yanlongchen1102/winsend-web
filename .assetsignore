@@ -1,5 +1,6 @@
 .git
 .claude
+assets/videos/*.mov
 .kimi-code
 .github
 .DS_Store

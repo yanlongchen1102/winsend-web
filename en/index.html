@@ -3,741 +3,226 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AirDrop for Windows: Send Files from iPhone to PC | WinSend</title>
-    <meta name="description" content="Send files from iPhone to Windows instantly. The easiest AirDrop alternative for Windows.">
+    <title>AirDrop for Windows: iPhone File &amp; Clipboard Transfer | WinSend</title>
+    <meta name="description" content="Transfer files and photos locally between iPhone and Windows, and share copied text across networks with cloud clipboard sync. No cables. No account.">
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
-    <link rel="canonical" href="https://winsend.app/en/" />
-
-    <link rel="alternate" hreflang="en" href="https://winsend.app/en/" />
-    <link rel="alternate" hreflang="zh" href="https://winsend.app/zh/" />
-    <link rel="alternate" hreflang="x-default" href="https://winsend.app/en/" />
+    <link rel="canonical" href="https://winsend.app/en/">
+    <link rel="alternate" hreflang="en" href="https://winsend.app/en/">
+    <link rel="alternate" hreflang="zh" href="https://winsend.app/zh/">
+    <link rel="alternate" hreflang="x-default" href="https://winsend.app/en/">
     <link rel="stylesheet" href="/assets/css/tailwind.css">
-    <style>
-        * {
-            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif;
-        }
-        .gradient-text {
-            background: linear-gradient(135deg, #2563eb 0%, #3b82f6 50%, #60a5fa 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
-        .hero-bg {
-            background: radial-gradient(ellipse 80% 50% at 50% -20%, rgba(37, 99, 235, 0.15), transparent);
-        }
-        .card-hover {
-            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-        }
-        .card-hover:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.1);
-        }
-        .btn-primary {
-            transition: all 0.2s ease;
-        }
-        .btn-primary:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 10px 25px -5px rgba(37, 99, 235, 0.4);
-        }
-        .fade-in {
-            animation: fadeIn 0.6s ease-out;
-        }
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-        .comparison-card {
-            transition: all 0.3s ease;
-        }
-        .comparison-card:hover {
-            transform: scale(1.02);
-        }
-    </style>
+    <link rel="stylesheet" href="/assets/css/marketing.css">
     <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "SoftwareApplication",
-        "name": "WinSend",
-        "applicationCategory": "UtilitiesApplication",
-        "operatingSystem": "Windows 10/11, iOS 15+",
-        "description": "AirDrop for Windows. Send photos, videos, files and clipboard between iPhone and Windows over local Wi-Fi. No USB cable, no cloud upload, no account.",
-        "url": "https://winsend.app/en/",
-        "downloadUrl": "https://winsend.app/WinSend.exe",
-        "softwareVersion": "2.2.4",
-        "offers": {
-            "@type": "Offer",
-            "price": "0",
-            "priceCurrency": "USD"
+{
+    "@context": "https://schema.org",
+    "@graph": [
+        {
+            "@type": "SoftwareApplication",
+            "name": "WinSend",
+            "applicationCategory": "UtilitiesApplication",
+            "operatingSystem": "Windows 10/11, iOS 15+",
+            "description": "AirDrop-style file and clipboard transfer between iPhone and Windows over local Wi-Fi.",
+            "url": "https://winsend.app/en/",
+            "downloadUrl": "https://winsend.app/en/download/",
+            "softwareVersion": "2.2.4",
+            "offers": {
+                "@type": "Offer",
+                "price": "0",
+                "priceCurrency": "USD"
+            }
         },
-        "featureList": [
-            "Local Wi-Fi transfer between iPhone and Windows",
-            "iOS share sheet and Shortcuts integration",
-            "Automatic two-way clipboard sync",
-            "Optional end-to-end encrypted cloud clipboard relay"
-        ]
-    }
+        {
+            "@type": "VideoObject",
+            "name": "Copy on iPhone and paste on Windows with Shortcuts",
+            "description": "Use an iOS Shortcut to send copied text from iPhone to Windows, then paste with Ctrl+V.",
+            "thumbnailUrl": "https://winsend.app/assets/videos/winsend-copy-iphone-to-windows-with-shortcuts-poster.jpg",
+            "uploadDate": "2026-09-13",
+            "duration": "PT19S",
+            "contentUrl": "https://winsend.app/assets/videos/winsend-copy-iphone-to-windows-with-shortcuts.mp4"
+        }
+    ]
+}
     </script>
     <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "FAQPage",
-        "mainEntity": [
-            {
-                "@type": "Question",
-                "name": "Is WinSend safe?",
-                "acceptedAnswer": { "@type": "Answer", "text": "Yes. WinSend is built with privacy in mind. Your data never leaves your devices — no cloud, no accounts, no tracking. Everything is transferred directly over your local network." }
-            },
-            {
-                "@type": "Question",
-                "name": "Why does Windows show \"Protected your PC\" when installing WinSend?",
-                "acceptedAnswer": { "@type": "Answer", "text": "This is a standard Microsoft Defender SmartScreen warning shown for new or unsigned apps that have not built reputation yet — not because the app is unsafe. Click More info, then Run anyway to continue." }
-            },
-            {
-                "@type": "Question",
-                "name": "Does WinSend require internet?",
-                "acceptedAnswer": { "@type": "Answer", "text": "No. WinSend works entirely on your local network (Wi-Fi). Your data stays private and never passes through external servers. An optional Cloud Sync feature can relay clipboard text across networks with end-to-end encryption." }
+{
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+        {
+            "@type": "Question",
+            "name": "Is WinSend safe?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. Local transfers go directly between your devices over your local network, without a cloud upload or account."
             }
-        ]
-    }
+        },
+        {
+            "@type": "Question",
+            "name": "Does WinSend require internet?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Local file and clipboard transfers only require both devices to be on the same Wi-Fi network."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "What can I transfer?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "WinSend transfers photos, videos, files and clipboard text between iPhone and Windows."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Can I use WinSend on different networks?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. Enable cloud clipboard sync to share copied text when both devices have internet access. Files and photos still require a local network connection."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Can cloud clipboard transfer files or photos?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Cloud transfer supports clipboard text. Files and photos still transfer over your local network."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Does cloud clipboard need setup?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. Open Cloud Sync on Windows, then enter the pairing code in WinSend’s Cloud Sync screen on iPhone and follow the in-app instructions."
+            }
+        }
+    ]
+}
     </script>
     <script src="/assets/js/posthog.js" defer></script>
     <script src="/assets/js/download-help.js" defer></script>
+    <script src="/assets/js/marketing.js" defer></script>
 </head>
 <body class="bg-white text-gray-900 antialiased">
-
-    <!-- Navigation -->
-    <nav class="fixed top-0 left-0 right-0 bg-white/70 backdrop-blur-xl z-50 border-b border-gray-100">
-        <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
-            <div class="flex items-center gap-3">
-                <img src="../logo.webp" alt="WinSend Logo" class="w-9 h-9 rounded-xl" decoding="async">
+    <nav aria-label="Main navigation" class="nav-surface fixed inset-x-0 top-0 z-50 border-b border-gray-100">
+        <div class="mx-auto flex max-w-6xl items-center justify-between px-5 py-4 sm:px-6">
+            <a href="/en/" class="flex items-center gap-3" aria-label="WinSend home">
+                <img src="/logo.webp" alt="" class="h-9 w-9 rounded-xl">
                 <span class="text-xl font-bold tracking-tight">WinSend</span>
-            </div>
-            <div class="flex items-center gap-6">
-                <a href="#features" class="text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors hidden sm:block">Features</a>
-                <a href="#faq" class="text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors hidden sm:block">FAQ</a>
-                <a href="/en/guides/" class="text-sm font-semibold text-gray-900 transition-colors hidden sm:block">Guides</a>
-                <a href="/en/download/" class="btn-primary inline-flex items-center gap-2 px-5 py-2.5 bg-blue-600 text-white text-sm font-semibold rounded-lg hover:bg-blue-700">
-                    Download
-                </a>
-                <a href="../zh/" class="text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors">中文</a>
-            </div>
+            </a>
+            <div class="flex items-center gap-4 sm:gap-6">
+                <a href="/en/features/" class="hidden text-sm font-medium text-gray-600 transition-colors hover:text-gray-950 md:block">Features</a>
+                <a href="/en/guides/" class="hidden text-sm font-medium text-gray-600 transition-colors hover:text-gray-950 md:block">Guides</a>
+                <a href="/en/download/" class="btn-primary rounded-xl bg-blue-600 px-4 py-2.5 text-sm font-semibold text-white hover:bg-blue-700">Download</a>
+                <a href="/zh/" class="text-sm font-medium text-gray-600 hover:text-gray-950">中文</a>
+            <details class="mobile-menu"><summary aria-label="Menu"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg></summary><div class="mobile-menu-panel"><a href="/en/features/">Features</a><a href="/en/guides/">Guides</a></div></details></div>
         </div>
     </nav>
 
     <main>
-    <!-- Hero Section -->
-    <section class="hero-bg pt-36 pb-20 px-6">
-        <div class="max-w-6xl mx-auto">
-            <div class="grid lg:grid-cols-2 gap-16 items-center">
-                <div class="space-y-8 fade-in">
-                    <div class="inline-flex items-center gap-2 px-4 py-2 bg-blue-50 text-blue-700 rounded-full text-sm font-medium border border-blue-100">
-                        <span class="relative flex h-2 w-2">
-                            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
-                            <span class="relative inline-flex rounded-full h-2 w-2 bg-blue-500"></span>
-                        </span>
-                        Now available for Windows 10 & 11
-                    </div>
-
-                    <h1 class="text-5xl sm:text-6xl lg:text-7xl font-extrabold leading-[1.1] tracking-tight">
-                        <span class="gradient-text">AirDrop</span> for<br>Windows
-                    </h1>
-
-                    <p class="text-xl sm:text-2xl text-gray-600 leading-relaxed max-w-xl">
-                        Send files and copy clipboard between iPhone and Windows instantly
+        <section class="hero-bg home-hero px-5 pb-24 pt-32 sm:px-6 sm:pb-32 sm:pt-40">
+            <div class="mx-auto max-w-7xl text-center">
+                <div class="fade-up mx-auto max-w-5xl">
+                    <p class="mb-6 inline-flex items-center gap-2 rounded-full border border-blue-100 bg-blue-50 px-4 py-2 text-sm font-semibold text-blue-700">
+                        <span class="h-2 w-2 rounded-full bg-blue-500"></span>AirDrop for Windows
                     </p>
-
-                    <div class="flex flex-wrap items-center gap-3">
-                        <a href="https://get.microsoft.com/installer/download/9n5x7vqqj79g?referrer=appbadge" data-download-surface="home_hero" class="store-installer-link btn-primary inline-flex min-h-[52px] items-center justify-center gap-3 rounded-xl bg-blue-600 px-5 py-3 font-semibold text-white hover:bg-blue-700">
-                            <svg class="h-5 w-5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3 3.5 10.5 2.4v8.8H3V3.5Zm8.5-1.2L21 1v10.2h-9.5V2.3ZM3 12.2h7.5V21L3 19.9v-7.7Zm8.5 0H21V23l-9.5-1.3v-9.5Z"/></svg>
-                            <span>Download for Windows</span>
+                    <h1 class="hero-title font-extrabold">iPhone and Windows.<br><span class="gradient-text hero-title-line">Working together.</span></h1>
+                    <p class="hero-description mx-auto mt-7 max-w-2xl text-lg leading-8 text-gray-600 sm:text-2xl sm:leading-9">Transfer <button type="button" class="rotating-word" data-words="Text,Photos,Files" aria-label="Text, Photos, and Files. Pause or resume word animation" aria-pressed="false" title="Text, Photos, and Files. Pause or resume word animation"><span class="word-dot" aria-hidden="true"></span><span class="word-value" aria-hidden="true">Text</span><span class="word-measure" aria-hidden="true"></span></button> effortlessly between your devices.</p>
+                    <div class="transfer-modes"><span>Local file transfer</span><span>Cross-network clipboard</span></div>
+                    <div class="hero-downloads mt-9 flex flex-col items-center justify-center gap-3 sm:flex-row">
+                        <a href="https://get.microsoft.com/installer/download/9n5x7vqqj79g?referrer=appbadge" data-download-surface="home_hero" class="store-installer-link btn-primary inline-flex min-h-14 items-center justify-center gap-2 rounded-xl bg-blue-600 px-7 py-4 font-semibold text-white hover:bg-blue-700">
+                            <svg class="h-5 w-5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3 3.5 10.5 2.4v8.8H3V3.5Zm8.5-1.2L21 1v10.2h-9.5V2.3ZM3 12.2h7.5V21L3 19.9v-7.7Zm8.5 0H21V23l-9.5-1.3v-9.5Z"/></svg>Download for Windows
                         </a>
-                        <a href="https://apps.apple.com/app/id6760611719" target="_blank" rel="noopener" data-download-surface="home_hero" aria-label="Download WinSend on the App Store" title="Download on the App Store" class="app-store-link inline-flex h-[52px] w-[52px] items-center justify-center rounded-xl border border-gray-200 bg-white text-gray-900 shadow-sm transition-all hover:-translate-y-0.5 hover:border-gray-300 hover:shadow-md">
-                            <svg class="h-5 w-5" viewBox="0 0 384 512" fill="currentColor" aria-hidden="true"><path d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 69 126.7 112.5 126.7 18.5 0 51.4-20.7 76.4-20.7 24.4 0 53.8 20.7 76.4 20.7 31.3 0 81.2-81.9 92.3-105.5-38.7-18.8-61.3-49.4-60.9-86.3zm-90.1-157.3c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 52.3-11.4 69.5-34.3z"/></svg>
+                        <a href="https://apps.apple.com/app/id6760611719" target="_blank" rel="noopener" data-download-surface="home_hero" class="app-store-link inline-flex min-h-14 items-center justify-center gap-2 rounded-xl border border-gray-200 bg-white px-7 py-4 font-semibold text-gray-900 transition hover:border-gray-300 hover:bg-gray-50">
+                            <svg class="h-5 w-5" viewBox="0 0 384 512" fill="currentColor" aria-hidden="true"><path d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 69 126.7 112.5 126.7 18.5 0 51.4-20.7 76.4-20.7 24.4 0 53.8 20.7 76.4 20.7 31.3 0 81.2-81.9 92.3-105.5-38.7-18.8-61.3-49.4-60.9-86.3zm-90.1-157.3c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 52.3-11.4 69.5-34.3z"/></svg>Download for iPhone
                         </a>
                     </div>
-                    <div class="-mt-5 text-sm text-gray-500">
-                        <details class="download-help relative inline-block">
-                            <summary aria-label="Windows download help" class="flex cursor-pointer list-none items-center gap-1.5 transition-colors hover:text-blue-700 [&::-webkit-details-marker]:hidden">
-                                <span>Windows 10/11 · Microsoft Store</span>
-                                <svg class="h-4 w-4" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="10" cy="10" r="7.5"/><path stroke-linecap="round" d="M10 9v4M10 6.5h.01"/></svg>
-                            </summary>
-                            <div class="absolute left-0 top-7 z-20 w-64 rounded-2xl border border-gray-200 bg-white p-4 text-left text-sm leading-6 text-gray-600 shadow-xl">
-                                <p>Microsoft Store is recommended for trusted installation and automatic updates.</p>
-                                <a href="/en/download/" class="mt-2 inline-flex font-semibold text-blue-700 hover:text-blue-800">Store unavailable? View all download options →</a>
-                            </div>
-                        </details>
-                    </div>
-
-                    <div class="flex flex-wrap items-center gap-6 text-sm text-gray-500">
-                        <span class="flex items-center gap-2">
-                            <svg class="w-4 h-4 text-green-500" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
-                            </svg>
-                            Free
-                        </span>
-                        <span class="flex items-center gap-2">
-                            <svg class="w-4 h-4 text-green-500" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
-                            </svg>
-                            No signup
-                        </span>
-                        <span class="flex items-center gap-2">
-                            <svg class="w-4 h-4 text-green-500" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
-                            </svg>
-                            No compression
-                        </span>
-                    </div>
+                    <div class="hero-benefits text-sm font-medium text-gray-500"><span>Free core features</span><span>No signup</span><span>No compression</span></div>
                 </div>
 
-                <div class="relative order-first lg:order-last">
-                    <div class="aspect-[16/12] bg-gradient-to-br from-gray-100 to-gray-50 rounded-3xl shadow-2xl flex items-center justify-center overflow-hidden border border-gray-200">
-                        <img src="../idea.webp" fetchpriority="high" alt="WinSend Interface" class="w-full h-full object-cover" decoding="async">
-                    </div>
-                    <!-- Decorative elements -->
-                    <div class="absolute -z-10 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-gradient-to-br from-blue-200/20 to-purple-200/20 rounded-full blur-3xl"></div>
+                <div class="video-stage fade-up mx-auto mt-14 max-w-6xl text-left" style="animation-delay:120ms">
+                    <span class="direction-badge"><span class="direction-dot"></span>Shortcuts · iPhone → Windows</span>
+                    <video data-smart-play data-autoplay="true" data-loaded="true" muted loop playsinline controls preload="metadata" poster="/assets/videos/winsend-copy-iphone-to-windows-with-shortcuts-poster.jpg" aria-label="Clipboard transfer from iPhone to Windows using Shortcuts">
+                        <source src="/assets/videos/winsend-copy-iphone-to-windows-with-shortcuts.mp4" type="video/mp4">
+                    </video>
                 </div>
+                <p class="mx-auto mt-5 max-w-xl text-sm leading-6 text-gray-500">After setting up your WinSend Shortcut, copy text on iPhone, run the Shortcut, then paste on Windows with Ctrl+V.</p>
             </div>
+        </section>
 
-        </div>
-    </section>
-
-    <!-- Solution Section -->
-    <section class="py-32 px-6">
-        <div class="max-w-4xl mx-auto text-center">
-            <h2 class="text-5xl sm:text-6xl lg:text-7xl font-bold mb-8 tracking-tight">
-                Meet <span class="gradient-text">WinSend</span>
-            </h2>
-            <p class="text-2xl sm:text-3xl text-gray-600 font-medium">
-                The missing AirDrop for Windows
-            </p>
-            <p class="text-xl text-gray-500 mt-6 max-w-2xl mx-auto">
-                Make file transfers between iPhone and Windows as simple and fast as AirDrop
-            </p>
-        </div>
-    </section>
-
-    <!-- Facts Section: structured facts for users and AI answer engines -->
-    <section class="pb-4 pt-16 px-6">
-        <div class="max-w-4xl mx-auto rounded-3xl border border-gray-200 p-8 sm:p-10">
-            <h2 class="text-2xl font-bold tracking-tight mb-6">WinSend at a glance</h2>
-            <dl class="grid sm:grid-cols-2 gap-x-10 gap-y-4 text-gray-600 leading-7">
-                <div><dt class="font-semibold text-gray-900">What it is</dt><dd>AirDrop-style transfer between iPhone and Windows PC.</dd></div>
-                <div><dt class="font-semibold text-gray-900">How it transfers</dt><dd>Directly over your local Wi-Fi via peer-to-peer connection.</dd></div>
-                <div><dt class="font-semibold text-gray-900">What it sends</dt><dd>Photos, videos, any files, and clipboard text.</dd></div>
-                <div><dt class="font-semibold text-gray-900">Accounts &amp; cloud</dt><dd>None required for LAN transfer; optional encrypted cloud clipboard sync.</dd></div>
-                <div><dt class="font-semibold text-gray-900">Price</dt><dd>Free core features; Pro subscription unlocks auto clipboard sync and cloud sync.</dd></div>
-                <div><dt class="font-semibold text-gray-900">Platforms</dt><dd>iOS 15+ (App Store) and Windows 10/11.</dd></div>
-            </dl>
-            <p class="mt-6 text-sm text-gray-500">Concerned about safety or the SmartScreen warning? Read <a href="/en/safety/" class="text-blue-700 font-medium hover:underline">Is WinSend safe?</a></p>
-        </div>
-    </section>
-
-    <!-- Features Section -->
-    <section id="features" class="py-24 px-6 bg-gray-50">
-        <div class="max-w-6xl mx-auto">
-            <div class="text-center mb-20">
-                <h2 class="text-4xl sm:text-5xl font-bold mb-6 tracking-tight leading-tight">
-                    Everything you need<br>for seamless file transfer
-                </h2>
-                <p class="text-xl text-gray-600">
-                    Powerful features, simple experience
-                </p>
+        <section id="features" class="px-5 py-24 sm:px-6 sm:py-32">
+            <div class="mx-auto max-w-6xl">
+                <div class="mx-auto max-w-3xl text-center">
+                    <p class="text-sm font-bold uppercase tracking-[0.18em] text-blue-600">Everyday sharing, made simple</p>
+                    <h2 class="mt-4 text-4xl font-bold tracking-tight sm:text-6xl">Share files. Copy text.<br>Keep going.</h2>
+                    <p class="mt-6 text-lg leading-8 text-gray-600">Watch complete demos for file transfer, two-way clipboard sharing and iOS Shortcuts.</p>
+                </div>
+                <div class="mt-14 grid gap-6 md:grid-cols-3">
+                    <a href="/en/features/#file-transfer" class="feature-preview group overflow-hidden rounded-3xl border border-gray-200 bg-white">
+                        <div class="relative overflow-hidden bg-slate-100"><img src="/assets/videos/winsend-transfer-files-windows-to-iphone-poster.jpg" alt="Windows file ready to send to iPhone" class="aspect-video w-full object-cover transition duration-500 group-hover:scale-[1.02]" loading="lazy"><span class="play-chip" aria-hidden="true">▶</span></div>
+                        <div class="p-6"><p class="text-sm font-semibold text-blue-600">File transfer</p><h3 class="mt-2 text-xl font-bold">Send files to iPhone</h3><p class="mt-2 leading-7 text-gray-600">Drag, send and save in seconds.</p><span class="mt-5 inline-flex font-semibold text-blue-700">Watch demo →</span></div>
+                    </a>
+                    <a href="/en/features/#windows-to-iphone" class="feature-preview group overflow-hidden rounded-3xl border border-gray-200 bg-white">
+                        <div class="relative overflow-hidden bg-violet-50"><img src="/assets/videos/winsend-copy-windows-to-iphone-clipboard-poster.jpg" alt="Text selected on Windows before clipboard transfer" class="aspect-video w-full object-cover transition duration-500 group-hover:scale-[1.02]" loading="lazy"><span class="play-chip" aria-hidden="true">▶</span></div>
+                        <div class="p-6"><p class="text-sm font-semibold text-violet-600">Clipboard sync</p><h3 class="mt-2 text-xl font-bold">Copy on PC, paste on iPhone</h3><p class="mt-2 leading-7 text-gray-600">Get the copied text in WinSend, then paste.</p><span class="mt-5 inline-flex font-semibold text-blue-700">Watch demo →</span></div>
+                    </a>
+                    <a href="/en/features/#iphone-to-windows" class="feature-preview group overflow-hidden rounded-3xl border border-gray-200 bg-white">
+                        <div class="relative overflow-hidden bg-violet-50"><img src="/assets/videos/winsend-copy-iphone-to-windows-with-shortcuts-poster.jpg" alt="Text selected on iPhone for a WinSend Shortcut" class="aspect-video w-full object-cover transition duration-500 group-hover:scale-[1.02]" loading="lazy"><span class="play-chip" aria-hidden="true">▶</span></div>
+                        <div class="p-6"><p class="text-sm font-semibold text-violet-600">iOS Shortcuts</p><h3 class="mt-2 text-xl font-bold">Copy on iPhone, paste on PC</h3><p class="mt-2 leading-7 text-gray-600">Once your Shortcut is set up, send text without opening WinSend.</p><span class="mt-5 inline-flex font-semibold text-blue-700">Watch demo →</span></div>
+                    </a>
+                </div>
+                <div class="mt-10 text-center"><a href="/en/features/" class="inline-flex items-center rounded-full bg-gray-950 px-6 py-3 font-semibold text-white transition hover:bg-gray-800">Explore all features <span class="ml-2">→</span></a></div>
             </div>
+        </section>
 
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <!-- Feature 1 -->
-                <div class="card-hover bg-white p-8 rounded-3xl border border-gray-100">
-                    <div class="w-14 h-14 mb-6 bg-gradient-to-br from-blue-500 to-blue-600 rounded-2xl flex items-center justify-center shadow-lg shadow-blue-500/20">
-                        <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
-                        </svg>
-                    </div>
-                    <h3 class="text-xl font-bold mb-3">Instant Transfer</h3>
-                    <p class="text-gray-600 leading-relaxed">
-                        AirDrop-style transfer experience, as simple and intuitive as the Apple ecosystem
-                    </p>
-                </div>
+        <section class="cloud-section" aria-labelledby="cloud-heading"><div class="cloud-layout"><div><p class="cloud-eyebrow">Cloud clipboard</p><h2 id="cloud-heading">Different networks.<br>Your text still gets through.</h2><p class="cloud-description">PC on office Wi-Fi, iPhone on mobile data? Enable cloud clipboard sync to share copied text between them.</p><a class="cloud-cta" href="/en/features/#cloud-clipboard">Explore cloud clipboard →</a><p class="cloud-limit">Cloud transfer supports clipboard text. Files and photos still transfer over your local network.</p></div><div class="cloud-visual" aria-label="Cross-network clipboard illustration"><div class="cloud-device"><div class="cloud-device-top"><strong>Windows</strong><span>Office Wi-Fi</span></div><p>See you tomorrow. Bring your meeting notes.</p><span class="cloud-device-caption">Copied text</span></div><div class="cloud-bridge"><svg width="40" height="32" viewBox="0 0 40 32" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M10 25h20a7 7 0 0 0 1-14 11 11 0 0 0-21-1 8 8 0 0 0 0 15Z"/></svg><span>Encrypted cloud clipboard</span></div><div class="cloud-device"><div class="cloud-device-top"><strong>iPhone</strong><span>Mobile data</span></div><p>See you tomorrow. Bring your meeting notes.</p><span class="cloud-device-caption">Get the text, then paste</span></div><p class="cloud-diagram-note">How text travels between networks</p></div></div></section>
 
-                <!-- Feature 2 -->
-                <div class="card-hover bg-white p-8 rounded-3xl border border-gray-100">
-                    <div class="w-14 h-14 mb-6 bg-gradient-to-br from-green-500 to-green-600 rounded-2xl flex items-center justify-center shadow-lg shadow-green-500/20">
-                        <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.111 16.404a5.5 5.5 0 017.778 0M12 20h.01m-7.08-7.071c3.904-3.905 10.236-3.905 14.141 0M1.394 9.393c5.857-5.857 15.355-5.857 21.213 0"/>
-                        </svg>
-                    </div>
-                    <h3 class="text-xl font-bold mb-3">Local Wi-Fi Transfer</h3>
-                    <p class="text-gray-600 leading-relaxed">
-                        High-speed file transfer on the same Wi-Fi, instant for small files, fast for large files
-                    </p>
-                </div>
-
-                <!-- Feature 3: No Compression -->
-                <div class="card-hover bg-white p-8 rounded-3xl border border-gray-100">
-                    <div class="w-14 h-14 mb-6 bg-gradient-to-br from-blue-500 to-blue-600 rounded-2xl flex items-center justify-center shadow-lg shadow-blue-500/20">
-                        <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/>
-                        </svg>
-                    </div>
-                    <h3 class="text-xl font-bold mb-3">No Compression</h3>
-                    <p class="text-gray-600 leading-relaxed">
-                        Photos and videos maintain original quality, no compression, perfect for designers and photographers
-                    </p>
-                </div>
-
-                <!-- Feature 4 -->
-                <div class="card-hover bg-white p-8 rounded-3xl border border-gray-100">
-                    <div class="w-14 h-14 mb-6 bg-gradient-to-br from-violet-500 to-violet-600 rounded-2xl flex items-center justify-center shadow-lg shadow-violet-500/20">
-                        <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"/>
-                        </svg>
-                    </div>
-                    <h3 class="text-xl font-bold mb-3">Shortcut Clipboard</h3>
-                    <p class="text-gray-600 leading-relaxed">
-                        Use iPhone Shortcuts to trigger clipboard sync with just a tap on the back, without opening the app
-                    </p>
-                </div>
-
-                <!-- Feature 5 -->
-                <div class="card-hover bg-white p-8 rounded-3xl border border-gray-100">
-                    <div class="w-14 h-14 mb-6 bg-gradient-to-br from-pink-500 to-pink-600 rounded-2xl flex items-center justify-center shadow-lg shadow-pink-500/20">
-                        <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M9 19l3 3m0 0l3-3m-3 3V10"/>
-                        </svg>
-                    </div>
-                    <h3 class="text-xl font-bold mb-3">Large File Support</h3>
-                    <p class="text-gray-600 leading-relaxed">
-                        Support large file transfers, easily send videos and design files, no size limit
-                    </p>
-                </div>
-
-                <!-- Feature 6 -->
-                <div class="card-hover bg-white p-8 rounded-3xl border border-gray-100">
-                    <div class="w-14 h-14 mb-6 bg-gradient-to-br from-cyan-500 to-cyan-600 rounded-2xl flex items-center justify-center shadow-lg shadow-cyan-500/20">
-                        <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/>
-                        </svg>
-                    </div>
-                    <h3 class="text-xl font-bold mb-3">Clipboard Sync</h3>
-                    <p class="text-gray-600 leading-relaxed">
-                        Automatically sync clipboard, text copying can be automatically synced between devices
-                    </p>
-                </div>
+        <section class="bg-gray-50 px-5 py-24 sm:px-6">
+            <div class="mx-auto grid max-w-6xl gap-6 md:grid-cols-3">
+                <article class="rounded-3xl border border-gray-200 bg-white p-8"><div class="mb-6 grid h-12 w-12 place-items-center rounded-2xl bg-blue-100 text-xl">⚡</div><h2 class="text-2xl font-bold">Direct and fast</h2><p class="mt-3 leading-7 text-gray-600">Devices discover each other on local Wi-Fi and transfer directly, with no separate cloud upload and download.</p></article>
+                <article class="rounded-3xl border border-gray-200 bg-white p-8"><div class="mb-6 grid h-12 w-12 place-items-center rounded-2xl bg-green-100 text-xl">✓</div><h2 class="text-2xl font-bold">Original quality</h2><p class="mt-3 leading-7 text-gray-600">Photos, videos and files arrive without compression or forced size limits.</p></article>
+                <article class="rounded-3xl border border-gray-200 bg-white p-8"><div class="mb-6 grid h-12 w-12 place-items-center rounded-2xl bg-violet-100 text-xl">⌘</div><h2 class="text-2xl font-bold">Made for iPhone</h2><p class="mt-3 leading-7 text-gray-600">Use the iOS share sheet and Shortcuts instead of digging through folders or sending files to yourself.</p></article>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Use Cases Section -->
-    <section class="py-24 px-6">
-        <div class="max-w-6xl mx-auto">
-            <div class="text-center mb-16">
-                <h2 class="text-4xl sm:text-5xl font-bold mb-6 tracking-tight">
-                    Built for everyone
-                </h2>
-                <p class="text-xl text-gray-600">
-                    Suitable for various scenarios and professional needs
-                </p>
+        <section class="px-5 py-24 sm:px-6 sm:py-32">
+            <div class="mx-auto grid max-w-6xl gap-12 lg:grid-cols-[0.9fr_1.1fr] lg:items-center">
+                <div><p class="text-sm font-bold uppercase tracking-[0.18em] text-green-600">Private by default</p><h2 class="mt-4 text-4xl font-bold tracking-tight sm:text-5xl">Local sharing.<br>Encrypted cloud clipboard.</h2><p class="mt-6 text-lg leading-8 text-gray-600">Files transfer directly over your local network, without an account. For text sharing across networks, you can separately enable encrypted cloud clipboard sync.</p><a href="/en/safety/" class="mt-7 inline-flex font-semibold text-blue-700 hover:underline">Read about WinSend safety →</a></div>
+                <dl class="grid gap-4 sm:grid-cols-2">
+                    <div class="rounded-3xl bg-gray-950 p-7 text-white"><dt class="font-bold">Platforms</dt><dd class="mt-2 text-gray-300">Windows 10/11<br>iOS 15+</dd></div>
+                    <div class="rounded-3xl bg-blue-600 p-7 text-white"><dt class="font-bold">Connection</dt><dd class="mt-2 text-blue-100">Direct local Wi-Fi<br>Optional encrypted cloud clipboard</dd></div>
+                    <div class="rounded-3xl border border-gray-200 p-7"><dt class="font-bold">Transfers</dt><dd class="mt-2 text-gray-600">Files, photos, videos and clipboard text</dd></div>
+                    <div class="rounded-3xl border border-gray-200 p-7"><dt class="font-bold">Setup</dt><dd class="mt-2 text-gray-600">No account<br>No USB cable</dd></div>
+                </dl>
             </div>
+        </section>
 
-            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
-                <div class="group bg-gray-50 hover:bg-white p-6 rounded-2xl border border-gray-100 hover:border-blue-200 hover:shadow-lg transition-all cursor-default">
-                    <div class="text-4xl mb-4">📸</div>
-                    <h3 class="font-bold text-lg mb-2">Transfer Photos</h3>
-                    <p class="text-sm text-gray-600">Transfer iPhone photos to PC losslessly</p>
-                </div>
-
-                <div class="group bg-gray-50 hover:bg-white p-6 rounded-2xl border border-gray-100 hover:border-blue-200 hover:shadow-lg transition-all cursor-default">
-                    <div class="text-4xl mb-4">🎬</div>
-                    <h3 class="font-bold text-lg mb-2">Send Large Videos</h3>
-                    <p class="text-sm text-gray-600">Send large video files instantly</p>
-                </div>
-
-                <div class="group bg-gray-50 hover:bg-white p-6 rounded-2xl border border-gray-100 hover:border-blue-200 hover:shadow-lg transition-all cursor-default">
-                    <div class="text-4xl mb-4">🎨</div>
-                    <h3 class="font-bold text-lg mb-2">Design Files</h3>
-                    <p class="text-sm text-gray-600">Share design files between devices</p>
-                </div>
-
-                <div class="group bg-gray-50 hover:bg-white p-6 rounded-2xl border border-gray-100 hover:border-blue-200 hover:shadow-lg transition-all cursor-default">
-                    <div class="text-4xl mb-4">📄</div>
-                    <h3 class="font-bold text-lg mb-2">Documents</h3>
-                    <p class="text-sm text-gray-600">Quickly move office documents</p>
-                </div>
+        <section id="faq" class="bg-gray-50 px-5 py-24 sm:px-6">
+            <div class="mx-auto max-w-3xl">
+                <div class="text-center"><h2 class="text-4xl font-bold tracking-tight sm:text-5xl">Questions, answered.</h2></div>
+                <div class="mt-12 space-y-4">
+                    <details class="group rounded-2xl border border-gray-200 bg-white p-6"><summary class="flex cursor-pointer list-none items-center justify-between text-lg font-bold">Is WinSend safe?<span class="text-blue-600 group-open:rotate-45">＋</span></summary><p class="mt-4 leading-7 text-gray-600">Yes. Local transfers go directly between your devices over your local network, without a cloud upload or account.</p></details>
+                    <details class="group rounded-2xl border border-gray-200 bg-white p-6"><summary class="flex cursor-pointer list-none items-center justify-between text-lg font-bold">Does WinSend require internet?<span class="text-blue-600 group-open:rotate-45">＋</span></summary><p class="mt-4 leading-7 text-gray-600">Local file and clipboard transfers only require both devices to be on the same Wi-Fi network. Optional Cloud Sync supports encrypted clipboard relay across networks.</p></details>
+                    <details class="group rounded-2xl border border-gray-200 bg-white p-6"><summary class="flex cursor-pointer list-none items-center justify-between text-lg font-bold">What can I transfer?<span class="text-blue-600 group-open:rotate-45">＋</span></summary><p class="mt-4 leading-7 text-gray-600">Photos, videos, files, and clipboard text. Photos and videos keep their original quality; files stay unchanged.</p></details>
+                <details class="group rounded-2xl border border-gray-200 bg-white p-6"><summary class="flex cursor-pointer list-none items-center justify-between text-lg font-bold">Can I use WinSend on different networks?<span class="text-blue-600 group-open:rotate-45">＋</span></summary><p class="mt-4 leading-7 text-gray-600">Yes. Enable cloud clipboard sync to share copied text when both devices have internet access. Files and photos still require a local network connection.</p></details><details class="group rounded-2xl border border-gray-200 bg-white p-6"><summary class="flex cursor-pointer list-none items-center justify-between text-lg font-bold">Can cloud clipboard transfer files or photos?<span class="text-blue-600 group-open:rotate-45">＋</span></summary><p class="mt-4 leading-7 text-gray-600">Cloud transfer supports clipboard text. Files and photos still transfer over your local network.</p></details><details class="group rounded-2xl border border-gray-200 bg-white p-6"><summary class="flex cursor-pointer list-none items-center justify-between text-lg font-bold">Does cloud clipboard need setup?<span class="text-blue-600 group-open:rotate-45">＋</span></summary><p class="mt-4 leading-7 text-gray-600">Yes. Open Cloud Sync on Windows, then enter the pairing code in WinSend’s Cloud Sync screen on iPhone and follow the in-app instructions.</p></details></div>
             </div>
+        </section>
 
-            <div class="mt-12 flex flex-wrap justify-center gap-3">
-                <span class="px-4 py-2 bg-blue-50 text-blue-700 rounded-full text-sm font-medium">Programmers</span>
-                <span class="px-4 py-2 bg-green-50 text-green-700 rounded-full text-sm font-medium">Designers</span>
-                <span class="px-4 py-2 bg-purple-50 text-purple-700 rounded-full text-sm font-medium">Office Users</span>
-                <span class="px-4 py-2 bg-orange-50 text-orange-700 rounded-full text-sm font-medium">Operations Staff</span>
-                <span class="px-4 py-2 bg-pink-50 text-pink-700 rounded-full text-sm font-medium">Content Creators</span>
+        <section class="px-5 py-24 sm:px-6 sm:py-32">
+            <div class="mx-auto max-w-5xl rounded-[2.5rem] bg-gray-950 px-6 py-16 text-center text-white sm:px-12 sm:py-20">
+                <h2 class="text-4xl font-bold tracking-tight sm:text-6xl">Make your first transfer.</h2>
+                <p class="mx-auto mt-5 max-w-xl text-lg leading-8 text-gray-300">Install WinSend on both devices and make your first transfer in minutes.</p>
+                <div class="mt-8 flex flex-col justify-center gap-3 sm:flex-row"><a href="/en/download/" class="btn-primary rounded-xl bg-blue-600 px-7 py-4 font-semibold text-white hover:bg-blue-500">Download WinSend</a><a href="/en/guides/setup/" class="rounded-xl border border-gray-700 px-7 py-4 font-semibold text-white hover:bg-gray-800">View setup guide</a></div>
             </div>
-        </div>
-    </section>
-
-    <!-- Comparison Section -->
-    <section class="py-24 px-6 bg-gray-50">
-        <div class="max-w-5xl mx-auto">
-            <div class="text-center mb-16">
-                <h2 class="text-4xl sm:text-5xl font-bold mb-6 tracking-tight">
-                    Why WinSend?
-                </h2>
-                <p class="text-xl text-gray-600">
-                    Bridging the gap between iPhone and Windows
-                </p>
-            </div>
-
-            <div class="grid md:grid-cols-2 gap-8">
-                <!-- AirDrop Card -->
-                <div class="comparison-card bg-white p-10 rounded-3xl border-2 border-gray-200">
-                    <div class="flex items-center gap-4 mb-8">
-                        <div class="w-14 h-14 bg-gray-200 rounded-2xl flex items-center justify-center">
-                            <svg class="w-8 h-8 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"/>
-                            </svg>
-                        </div>
-                        <h3 class="text-3xl font-bold">AirDrop</h3>
-                    </div>
-
-                    <div class="space-y-5">
-                        <div class="flex items-center gap-3">
-                            <svg class="w-6 h-6 text-gray-400" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clip-rule="evenodd"/>
-                            </svg>
-                            <span class="text-gray-600 text-lg">iPhone ↔ Mac</span>
-                        </div>
-                        <div class="flex items-center gap-3">
-                            <svg class="w-6 h-6 text-red-500" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"/>
-                            </svg>
-                            <span class="text-gray-600 text-lg">No Windows support</span>
-                        </div>
-                        <div class="flex items-center gap-3">
-                            <svg class="w-6 h-6 text-red-500" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"/>
-                            </svg>
-                            <span class="text-gray-600 text-lg">Apple ecosystem only</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- WinSend Card -->
-                <div class="comparison-card bg-gradient-to-br from-blue-600 to-blue-700 p-10 rounded-3xl shadow-2xl shadow-blue-500/30 text-white">
-                    <div class="flex items-center gap-4 mb-8">
-                        <div class="w-14 h-14 bg-white/20 backdrop-blur rounded-2xl flex items-center justify-center">
-                            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12"/>
-                            </svg>
-                        </div>
-                        <h3 class="text-3xl font-bold">WinSend</h3>
-                    </div>
-
-                    <div class="space-y-5">
-                        <div class="flex items-center gap-3">
-                            <svg class="w-6 h-6 text-green-400" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
-                            </svg>
-                            <span class="text-lg">iPhone ↔ Windows</span>
-                        </div>
-                        <div class="flex items-center gap-3">
-                            <svg class="w-6 h-6 text-green-400" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
-                            </svg>
-                            <span class="text-lg">No file compression</span>
-                        </div>
-                        <div class="flex items-center gap-3">
-                            <svg class="w-6 h-6 text-green-400" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
-                            </svg>
-                            <span class="text-lg">Large file support</span>
-                        </div>
-                        <div class="flex items-center gap-3">
-                            <svg class="w-6 h-6 text-green-400" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
-                            </svg>
-                            <span class="text-lg">Auto clipboard sync</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="mt-10 flex flex-wrap justify-center gap-x-6 gap-y-3 text-sm font-semibold">
-                <a href="/en/guides/cross-platform-transfer-tools/" class="text-blue-700 hover:text-blue-800 hover:underline">Compare AirDrop alternatives for Windows</a>
-                <a href="/en/guides/copy-iphone-to-windows/" class="text-blue-700 hover:text-blue-800 hover:underline">Set up iPhone-to-Windows clipboard sync</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- FAQ Section -->
-    <section id="faq" class="py-24 px-6 bg-gray-50">
-        <div class="max-w-3xl mx-auto">
-            <div class="text-center mb-16">
-                <h2 class="text-4xl sm:text-5xl font-bold mb-6 tracking-tight">
-                    Frequently Asked Questions
-                </h2>
-                <p class="text-xl text-gray-600">
-                    Everything you need to know about WinSend
-                </p>
-            </div>
-
-            <div class="space-y-4">
-                <!-- FAQ 1 -->
-                <details class="group rounded-3xl bg-white border border-gray-200 [&_summary::-webkit-details-marker]:hidden">
-                    <summary class="flex cursor-pointer items-center justify-between gap-1.5 p-6 text-lg font-bold text-gray-900 transition-colors hover:text-blue-700">
-                        <span>Is WinSend safe?</span>
-                        <span class="shrink-0 rounded-full bg-gray-100 p-1.5 text-gray-500 group-open:bg-blue-600 group-open:text-white transition-colors">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 transition-transform group-open:rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                              <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
-                            </svg>
-                        </span>
-                    </summary>
-                    <div class="px-6 pb-6 text-gray-600 leading-7">
-                        <p class="font-semibold text-green-700 mb-2">Yes. WinSend is built with privacy in mind.</p>
-                        <p>Your data never leaves your devices — no cloud, no accounts, no tracking.<br>
-                        Everything is transferred directly over your local network.</p>
-                    </div>
-                </details>
-
-                <!-- FAQ 2 -->
-                <details class="group rounded-3xl bg-white border border-gray-200 [&_summary::-webkit-details-marker]:hidden">
-                    <summary class="flex cursor-pointer items-center justify-between gap-1.5 p-6 text-lg font-bold text-gray-900 transition-colors hover:text-blue-700">
-                        <span>Why does Windows show "Protected your PC"?</span>
-                        <span class="shrink-0 rounded-full bg-gray-100 p-1.5 text-gray-500 group-open:bg-blue-600 group-open:text-white transition-colors">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 transition-transform group-open:rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                              <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
-                            </svg>
-                        </span>
-                    </summary>
-                    <div class="px-6 pb-6 text-gray-600 leading-7">
-                        <p>This is a standard warning from Microsoft Defender SmartScreen.</p>
-                        <p class="mt-2">It appears for new or unsigned apps that haven't built reputation yet — not because the app is unsafe.</p>
-                        <p class="mt-2 font-semibold">To continue, click "More info" → "Run anyway."</p>
-                    </div>
-                </details>
-
-                <!-- FAQ 3 -->
-                <details class="group rounded-3xl bg-white border border-gray-200 [&_summary::-webkit-details-marker]:hidden">
-                    <summary class="flex cursor-pointer items-center justify-between gap-1.5 p-6 text-lg font-bold text-gray-900 transition-colors hover:text-blue-700">
-                        <span>Does WinSend require internet?</span>
-                        <span class="shrink-0 rounded-full bg-gray-100 p-1.5 text-gray-500 group-open:bg-blue-600 group-open:text-white transition-colors">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 transition-transform group-open:rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                              <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
-                            </svg>
-                        </span>
-                    </summary>
-                    <div class="px-6 pb-6 text-gray-600 leading-7">
-                        <p class="font-semibold text-blue-700 mb-2">No.</p>
-                        <p>WinSend works entirely on your local network (WiFi).<br>
-                        Your data stays private and never passes through external servers.</p>
-                    </div>
-                </details>
-
-                <!-- FAQ 4 -->
-                <details class="group rounded-3xl bg-white border border-gray-200 [&_summary::-webkit-details-marker]:hidden">
-                    <summary class="flex cursor-pointer items-center justify-between gap-1.5 p-6 text-lg font-bold text-gray-900 transition-colors hover:text-blue-700">
-                        <span>Does it work with iPhone and Windows?</span>
-                        <span class="shrink-0 rounded-full bg-gray-100 p-1.5 text-gray-500 group-open:bg-blue-600 group-open:text-white transition-colors">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 transition-transform group-open:rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                              <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
-                            </svg>
-                        </span>
-                    </summary>
-                    <div class="px-6 pb-6 text-gray-600 leading-7">
-                        <p class="font-semibold text-blue-700 mb-2">Yes — that's exactly what WinSend is built for.</p>
-                        <p>Instantly share clipboard content between your iPhone and Windows PC.</p>
-                    </div>
-                </details>
-
-                <!-- FAQ 5 -->
-                <details class="group rounded-3xl bg-white border border-gray-200 [&_summary::-webkit-details-marker]:hidden">
-                    <summary class="flex cursor-pointer items-center justify-between gap-1.5 p-6 text-lg font-bold text-gray-900 transition-colors hover:text-blue-700">
-                        <span>Do both devices need to be on the same WiFi?</span>
-                        <span class="shrink-0 rounded-full bg-gray-100 p-1.5 text-gray-500 group-open:bg-blue-600 group-open:text-white transition-colors">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 transition-transform group-open:rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                              <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
-                            </svg>
-                        </span>
-                    </summary>
-                    <div class="px-6 pb-6 text-gray-600 leading-7">
-                        <p class="font-semibold text-blue-700">Yes.</p>
-                        <p class="mt-2">Both devices need to be connected to the same network to communicate directly.</p>
-                    </div>
-                </details>
-
-                <!-- FAQ 6 -->
-                <details class="group rounded-3xl bg-white border border-gray-200 [&_summary::-webkit-details-marker]:hidden">
-                    <summary class="flex cursor-pointer items-center justify-between gap-1.5 p-6 text-lg font-bold text-gray-900 transition-colors hover:text-blue-700">
-                        <span>Is WinSend free?</span>
-                        <span class="shrink-0 rounded-full bg-gray-100 p-1.5 text-gray-500 group-open:bg-blue-600 group-open:text-white transition-colors">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 transition-transform group-open:rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                              <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
-                            </svg>
-                        </span>
-                    </summary>
-                    <div class="px-6 pb-6 text-gray-600 leading-7">
-                        <p class="font-semibold text-green-700">Yes. WinSend is currently free to use.</p>
-                    </div>
-                </details>
-
-                <!-- FAQ 7 -->
-                <details class="group rounded-3xl bg-white border border-gray-200 [&_summary::-webkit-details-marker]:hidden">
-                    <summary class="flex cursor-pointer items-center justify-between gap-1.5 p-6 text-lg font-bold text-gray-900 transition-colors hover:text-blue-700">
-                        <span>What can I transfer?</span>
-                        <span class="shrink-0 rounded-full bg-gray-100 p-1.5 text-gray-500 group-open:bg-blue-600 group-open:text-white transition-colors">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 transition-transform group-open:rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                              <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
-                            </svg>
-                        </span>
-                    </summary>
-                    <div class="px-6 pb-6 text-gray-600 leading-7">
-                        <p class="font-semibold text-blue-700 mb-2">Text, links, and anything you copy to your clipboard.</p>
-                        <p>Copy on one device, paste on the other — instantly.</p>
-                    </div>
-                </details>
-            </div>
-        </div>
-    </section>
-
+        </section>
     </main>
 
-    <!-- Footer -->
-    <footer class="py-16 px-6 bg-gray-900 text-gray-400">
-        <div class="max-w-6xl mx-auto">
-            <div class="grid md:grid-cols-4 gap-12 mb-12">
-                <div class="md:col-span-2">
-                    <div class="flex items-center gap-3 mb-4">
-                        <img src="../logo.webp" alt="WinSend Logo" class="w-9 h-9 rounded-xl" decoding="async" loading="lazy">
-                        <span class="text-xl font-bold text-white">WinSend</span>
-                    </div>
-                    <p class="text-sm leading-relaxed max-w-md">
-                        The missing AirDrop for Windows.<br>
-                        Transfer files between iPhone and Windows seamlessly over local Wi-Fi or internet.
-                    </p>
-                </div>
-
-                <div>
-                    <div class="text-white font-semibold mb-4">Product</div>
-                    <ul class="space-y-3 text-sm">
-                        <li><a href="#features" class="hover:text-white transition-colors">Features</a></li>
-                        <li><a href="/en/download/" class="hover:text-white transition-colors">Download</a></li>
-                        <li><a href="#" class="hover:text-white transition-colors">Documentation</a></li>
-                    </ul>
-                </div>
-
-                <div>
-                    <div class="text-white font-semibold mb-4">Connect</div>
-                    <ul class="space-y-3 text-sm">
-                        <li><a href="#" class="hover:text-white transition-colors">GitHub</a></li>
-                        <li><a href="#" class="hover:text-white transition-colors">Twitter</a></li>
-                        <li><a href="#" class="hover:text-white transition-colors">Contact</a></li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center gap-4 text-sm">
-                <p>&copy; 2025 WinSend. All rights reserved.</p>
-                <p class="flex items-center gap-2">
-                    Made with
-                    <svg class="w-4 h-4 text-red-500" fill="currentColor" viewBox="0 0 20 20">
-                        <path fill-rule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clip-rule="evenodd"/>
-                    </svg>
-                    for iPhone & Windows users
-                </p>
-            </div>
+    <footer class="bg-gray-950 px-5 py-14 text-gray-400 sm:px-6">
+        <div class="mx-auto flex max-w-6xl flex-col gap-10 sm:flex-row sm:items-end sm:justify-between">
+            <div><div class="flex items-center gap-3"><img src="/logo.webp" alt="" class="h-9 w-9 rounded-xl"><span class="text-xl font-bold text-white">WinSend</span></div><p class="mt-4 max-w-md text-sm leading-6">AirDrop-style file and clipboard transfer for iPhone and Windows.</p></div>
+            <div class="flex flex-wrap gap-x-6 gap-y-3 text-sm"><a href="/en/features/" class="hover:text-white">Features</a><a href="/en/guides/" class="hover:text-white">Guides</a><a href="/en/download/" class="hover:text-white">Download</a><a href="/en/safety/" class="hover:text-white">Safety</a><a href="/en/privacy/" class="hover:text-white">Privacy</a></div>
         </div>
+        <div class="mx-auto mt-10 max-w-6xl border-t border-gray-800 pt-6 text-sm">© 2026 WinSend. All rights reserved.</div>
     </footer>
-
-    <script>
-        (function() {
-            var APP_STORE_WEB_URL_GENERIC = "https://apps.apple.com/app/id6760611719";
-            var APP_STORE_WEB_URL_CN = "https://apps.apple.com/cn/app/winsend-%E8%B7%A8%E5%B9%B3%E5%8F%B0%E6%96%87%E4%BB%B6%E7%9B%B8%E5%86%8C%E8%A7%86%E9%A2%91%E5%9B%BE%E7%89%87%E5%89%AA%E8%B4%B4%E6%9D%BF%E4%BC%A0%E8%BE%93%E5%8A%A9%E6%89%8B/id6760611719";
-            var APP_STORE_APP_URL = "itms-apps://itunes.apple.com/app/id6760611719";
-
-            // Apple's geo-redirect drops the link path for mainland China IPs
-            // and lands on the Today page, so use the /cn/ URL for those users.
-            function isMainlandChina() {
-                try {
-                    var timeZone = Intl.DateTimeFormat().resolvedOptions().timeZone || "";
-                    if (/^Asia\/(Shanghai|Urumqi|Chongqing|Harbin|Kashgar)$/.test(timeZone)) {
-                        return true;
-                    }
-                } catch (error) {}
-                return (navigator.language || "") === "zh-CN";
-            }
-
-            var APP_STORE_WEB_URL = isMainlandChina() ? APP_STORE_WEB_URL_CN : APP_STORE_WEB_URL_GENERIC;
-
-            // Apply the regional link immediately, independent of update.json
-            document.querySelectorAll(".app-store-link").forEach(function(node) {
-                node.href = APP_STORE_WEB_URL;
-            });
-
-            function buildDownloadUrl(data) {
-                var version = data && data.version ? data.version : "1.0.0";
-                var fileName = "WinSend_v" + version + ".exe";
-                var rawUrl = data && data.url ? data.url : "/";
-
-                try {
-                    var resolved = new URL(rawUrl, window.location.origin);
-                    var path = resolved.pathname || "/";
-
-                    if (path.endsWith(".exe")) {
-                        resolved.pathname = path.replace(/[^/]+$/, fileName);
-                    } else {
-                        resolved.pathname = path.replace(/\/?$/, "/") + fileName;
-                    }
-
-                    return resolved.toString();
-                } catch (error) {
-                    return "/"+ fileName;
-                }
-            }
-
-            function isIOS() {
-                return /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
-            }
-
-            function handleAppStoreClick(event) {
-                if (isIOS()) {
-                    event.preventDefault();
-                    window.location.href = APP_STORE_APP_URL;
-                }
-            }
-
-            // Defer update.json fetch to avoid blocking first paint
-            function loadUpdateInfo() {
-                fetch("/update.json")
-                    .then(function(response) {
-                        if (!response.ok) {
-                            throw new Error("Failed to load update.json");
-                        }
-                        return response.json();
-                    })
-                    .then(function(data) {
-                        if (data.version) {
-                            document.querySelectorAll(".current-version-text").forEach(function(node) {
-                                node.textContent = data.version;
-                            });
-                        }
-                        var downloadUrl = buildDownloadUrl(data);
-                        document.querySelectorAll(".download-link").forEach(function(node) {
-                            node.href = downloadUrl;
-                            node.dataset.installerVersion = data.version || "unknown";
-                        });
-                        document.querySelectorAll(".app-store-link").forEach(function(node) {
-                            node.href = APP_STORE_WEB_URL;
-                            node.addEventListener("click", handleAppStoreClick);
-                        });
-                    })
-                    .catch(function() {});
-            }
-
-            // Use requestIdleCallback with setTimeout fallback
-            if ('requestIdleCallback' in window) {
-                requestIdleCallback(loadUpdateInfo);
-            } else {
-                setTimeout(loadUpdateInfo, 2000);
-            }
-        })();
-    </script>
 </body>
 </html>
