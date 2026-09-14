@@ -105,46 +105,42 @@
         link.href = isChina ? chinaUrl : genericUrl;
     });
     var motionPreference = window.matchMedia("(prefers-reduced-motion: reduce)");
-    document.querySelectorAll(".rotating-word").forEach(function (button) {
-        var words = button.dataset.words.split(",");
-        var value = button.querySelector(".word-value");
-        var measure = button.querySelector(".word-measure");
+    document.querySelectorAll(".rotating-word").forEach(function (wordElement) {
+        var words = wordElement.dataset.words.split(",");
+        var value = wordElement.querySelector(".word-value");
+        var measure = wordElement.querySelector(".word-measure");
         var index = 0;
         var timer;
         var transitionTimer;
         function stop() {
             clearInterval(timer);
             clearTimeout(transitionTimer);
-            button.classList.remove("is-changing");
-            button.classList.remove("is-entering");
+            wordElement.classList.remove("is-changing");
+            wordElement.classList.remove("is-entering");
         }
         function setWidth(word) {
             measure.textContent = word;
-            button.style.width = Math.ceil(measure.getBoundingClientRect().width) + "px";
+            wordElement.style.width = Math.ceil(measure.getBoundingClientRect().width) + "px";
         }
         function start() {
             stop();
-            if (motionPreference.matches || document.hidden || button.getAttribute("aria-pressed") === "true") return;
+            if (motionPreference.matches || document.hidden) return;
             timer = setInterval(function () {
-                button.classList.add("is-changing");
+                wordElement.classList.add("is-changing");
                 transitionTimer = setTimeout(function () {
                     index = (index + 1) % words.length;
                     value.textContent = words[index];
-                    button.dataset.index = index;
+                    wordElement.dataset.index = index;
                     setWidth(words[index]);
-                    button.classList.replace("is-changing", "is-entering");
+                    wordElement.classList.replace("is-changing", "is-entering");
                     requestAnimationFrame(function () {
                         requestAnimationFrame(function () {
-                            button.classList.remove("is-entering");
+                            wordElement.classList.remove("is-entering");
                         });
                     });
                 }, 180);
             }, 2600);
         }
-        button.addEventListener("click", function () {
-            button.setAttribute("aria-pressed", button.getAttribute("aria-pressed") === "true" ? "false" : "true");
-            start();
-        });
         document.addEventListener("visibilitychange", start);
         motionPreference.addEventListener("change", start);
         setWidth(words[index]);

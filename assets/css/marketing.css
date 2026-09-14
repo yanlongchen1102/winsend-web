@@ -208,7 +208,7 @@ a:focus-visible, summary:focus-visible { outline: 3px solid #2563eb; outline-off
 
 .transfer-modes { display:flex; justify-content:center; flex-wrap:wrap; gap:0.5rem 1rem; margin-top:1rem; color:#475467; font-size:0.8125rem; }
 .transfer-modes span::before { content:'✓'; margin-right:0.375rem; color:#2563eb; }
-.rotating-word { display:inline-flex; position:relative; vertical-align:0.2em; align-items:center; justify-content:center; gap:0.4em; height:1.4em; padding:0 0.55em; margin:0 0.1em; border:0; border-radius:999px; background:#ede9fe; color:#5b21b6; font-weight:650; line-height:1; overflow:hidden; white-space:nowrap; transition:width 440ms cubic-bezier(.22,1,.36,1),background 400ms,color 400ms; cursor:pointer; }
+.rotating-word { display:inline-flex; position:relative; vertical-align:0.2em; align-items:center; justify-content:center; gap:0.4em; height:1.4em; padding:0 0.55em; margin:0 0.1em; border-radius:999px; background:#ede9fe; color:#5b21b6; font-weight:650; line-height:1; overflow:hidden; white-space:nowrap; transition:width 440ms cubic-bezier(.22,1,.36,1),background 400ms,color 400ms; }
 .rotating-word[data-index="1"] { background:#ffedd5; color:#9a3412; }
 .rotating-word[data-index="2"] { background:#dbeafe; color:#1e40af; }
 .word-dot { width:0.35em; height:0.35em; border-radius:50%; background:currentColor; flex-shrink:0; }
@@ -217,8 +217,6 @@ a:focus-visible, summary:focus-visible { outline: 3px solid #2563eb; outline-off
 .word-measure::before { width:0.35em; height:0.35em; flex-shrink:0; border-radius:50%; background:currentColor; content:""; }
 .rotating-word.is-changing .word-value { opacity:0; transform:translateY(-0.4em); }
 .rotating-word.is-entering .word-value { opacity:0; transform:translateY(0.4em); }
-.rotating-word:focus-visible { outline:3px solid #2563eb; outline-offset:4px; }
-.rotating-word[aria-pressed="true"] .word-dot { border-radius:1px; }
 html[lang="zh-CN"] .rotating-word { vertical-align:0.3em; }
 .cloud-section { padding:6rem 1.5rem; background:linear-gradient(140deg,#f5f3ff,#eff6ff 65%,#f8fafc); }
 .cloud-layout { max-width:1152px; margin:auto; display:grid; grid-template-columns:1fr 1fr; align-items:center; gap:4rem; }
