@@ -21,10 +21,53 @@
         capture_pageview: false
     });
 
+    var entryStorageKey = "winsend_posthog_entry_v1";
+
     function pageLang() {
         var m = window.location.pathname.match(/^\/(zh|en)(\/|$)/);
         return m ? m[1] : "root";
     }
+
+    function entryChannel() {
+        if (!document.referrer) return "direct";
+        try {
+            var referrer = new URL(document.referrer);
+            if (referrer.origin === window.location.origin) return "internal";
+            if (/(^|\.)(google|bing|yahoo|duckduckgo|baidu|yandex)\./i.test(referrer.hostname)) {
+                return "search";
+            }
+        } catch (error) {}
+        return "external";
+    }
+
+    // 在同一浏览标签页中只记录第一次落地页。因此从首页再打开教程时，
+    // 后续下载事件仍保留 entry_path=/en/，不会误计为教程的直接转化。
+    function sessionEntry() {
+        var stored;
+        try {
+            stored = JSON.parse(window.sessionStorage.getItem(entryStorageKey) || "null");
+        } catch (error) {}
+        if (stored && stored.path) return stored;
+
+        var query = new URLSearchParams(window.location.search);
+        var entry = {
+            path: window.location.pathname,
+            lang: pageLang(),
+            channel: entryChannel(),
+            acquisition_source: query.get("source") || "direct",
+            distribution_channel: query.get("distribution_channel") || "unknown",
+            acquisition_surface: query.get("surface") || "unknown",
+            source_app_version: query.get("app_version") || "unknown"
+        };
+        try {
+            window.sessionStorage.setItem(entryStorageKey, JSON.stringify(entry));
+        } catch (error) {}
+        return entry;
+    }
+
+    var entry = sessionEntry();
+    var clipboardGuidePath = "/en/guides/copy-iphone-to-windows/";
+    var isClipboardGuideDirectLanding = entry.path === clipboardGuidePath;
 
     function baseProps(href) {
         var query = new URLSearchParams(window.location.search);
@@ -35,16 +78,31 @@
             acquisition_source: query.get("source") || "direct",
             distribution_channel: query.get("distribution_channel") || "unknown",
             acquisition_surface: query.get("surface") || "unknown",
-            source_app_version: query.get("app_version") || "unknown"
+            source_app_version: query.get("app_version") || "unknown",
+            entry_path: entry.path,
+            entry_lang: entry.lang,
+            entry_channel: entry.channel,
+            entry_acquisition_source: entry.acquisition_source,
+            entry_distribution_channel: entry.distribution_channel,
+            entry_acquisition_surface: entry.acquisition_surface,
+            entry_source_app_version: entry.source_app_version,
+            is_clipboard_guide_direct_landing: isClipboardGuideDirectLanding,
+            is_clipboard_guide_external_landing: isClipboardGuideDirectLanding &&
+                (entry.channel === "search" || entry.channel === "external")
         };
     }
 
     var landingProps = baseProps(window.location.href);
     posthog.register_for_session({
-        acquisition_source: landingProps.acquisition_source,
-        distribution_channel: landingProps.distribution_channel,
-        acquisition_surface: landingProps.acquisition_surface,
-        source_app_version: landingProps.source_app_version
+        entry_path: landingProps.entry_path,
+        entry_lang: landingProps.entry_lang,
+        entry_channel: landingProps.entry_channel,
+        entry_acquisition_source: landingProps.entry_acquisition_source,
+        entry_distribution_channel: landingProps.entry_distribution_channel,
+        entry_acquisition_surface: landingProps.entry_acquisition_surface,
+        entry_source_app_version: landingProps.entry_source_app_version,
+        is_clipboard_guide_direct_landing: landingProps.is_clipboard_guide_direct_landing,
+        is_clipboard_guide_external_landing: landingProps.is_clipboard_guide_external_landing
     });
     posthog.capture("$pageview", landingProps);
 
