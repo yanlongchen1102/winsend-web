@@ -41,35 +41,35 @@
 
         <div class="feature-nav-bar sticky top-[73px] z-40 bg-white/90 px-4 py-3 backdrop-blur-xl">
             <nav aria-label="Feature demonstrations" class="feature-nav mx-auto flex max-w-4xl gap-2">
-                <a href="#file-transfer" class="feature-nav-link">File transfer</a>
-                <a href="#windows-to-iphone" class="feature-nav-link">PC → iPhone</a>
-                <a href="#iphone-to-windows" class="feature-nav-link">iPhone → PC</a>
-                <a href="#cloud-clipboard" class="feature-nav-link">Cloud clipboard</a>
+                <a href="#file-transfer" data-feature-id="file-transfer" data-feature-surface="features_nav" class="feature-nav-link">File transfer</a>
+                <a href="#windows-to-iphone" data-feature-id="windows-to-iphone" data-feature-surface="features_nav" class="feature-nav-link">PC → iPhone</a>
+                <a href="#iphone-to-windows" data-feature-id="iphone-to-windows" data-feature-surface="features_nav" class="feature-nav-link">iPhone → PC</a>
+                <a href="#cloud-clipboard" data-feature-id="cloud-clipboard" data-feature-surface="features_nav" class="feature-nav-link">Cloud clipboard</a>
             </nav>
         </div>
 
-        <section id="file-transfer" class="feature-section px-5 py-24 sm:px-6 sm:py-32">
+        <section id="file-transfer" data-feature-section data-feature-id="file-transfer" class="feature-section px-5 py-24 sm:px-6 sm:py-32">
             <div class="mx-auto max-w-6xl">
                 <div class="mx-auto max-w-3xl text-center"><p class="text-sm font-bold uppercase tracking-[0.18em] text-blue-600">File transfer · Windows → iPhone</p><h2 class="mt-4 text-4xl font-bold tracking-tight sm:text-6xl">Drag. Send. Done.</h2><p class="mt-6 text-lg leading-8 text-gray-600">Drop a photo, video or file into WinSend on Windows. Your iPhone receives it directly over local Wi-Fi, ready to save or open.</p><div class="mt-7 flex flex-wrap justify-center gap-3 text-sm font-semibold text-gray-600"><span class="rounded-full bg-gray-100 px-4 py-2">No cloud upload</span><span class="rounded-full bg-gray-100 px-4 py-2">Original quality</span><span class="rounded-full bg-gray-100 px-4 py-2">Large files supported</span></div></div>
                 <div class="video-stage mt-12"><span class="direction-badge"><span class="direction-dot"></span>Windows → iPhone</span><video data-smart-play data-autoplay="true" muted loop playsinline controls preload="none" poster="/assets/videos/winsend-transfer-files-windows-to-iphone-poster.jpg" aria-label="File transfer from Windows to iPhone"><source data-src="/assets/videos/winsend-transfer-files-windows-to-iphone.mp4" type="video/mp4"></video></div>
             </div>
         </section>
 
-        <section id="windows-to-iphone" class="feature-section bg-gray-50 px-5 py-24 sm:px-6 sm:py-32">
+        <section id="windows-to-iphone" data-feature-section data-feature-id="windows-to-iphone" class="feature-section bg-gray-50 px-5 py-24 sm:px-6 sm:py-32">
             <div class="mx-auto max-w-6xl">
                 <div class="mx-auto max-w-3xl text-center"><p class="text-sm font-bold uppercase tracking-[0.18em] text-violet-600">Clipboard · Windows → iPhone</p><h2 class="mt-4 text-4xl font-bold tracking-tight sm:text-6xl">Copy on your PC.<br>Paste on your iPhone.</h2><p class="mt-6 text-lg leading-8 text-gray-600">Copy a checklist, link or paragraph on Windows, fetch it in the WinSend app, then paste it anywhere on iPhone.</p><div class="mt-7 flex flex-wrap justify-center gap-3 text-sm font-semibold text-gray-600"><span class="rounded-full bg-white px-4 py-2">Text and links</span><span class="rounded-full bg-white px-4 py-2">No retyping</span><span class="rounded-full bg-white px-4 py-2">Works across apps</span></div></div>
                 <div class="video-stage mt-12"><span class="direction-badge"><span class="direction-dot"></span>Windows → iPhone</span><video data-smart-play data-autoplay="true" muted loop playsinline controls preload="none" poster="/assets/videos/winsend-copy-windows-to-iphone-clipboard-poster.jpg" aria-label="Clipboard transfer from Windows to iPhone"><source data-src="/assets/videos/winsend-copy-windows-to-iphone-clipboard.mp4" type="video/mp4"></video></div>
             </div>
         </section>
 
-        <section id="iphone-to-windows" class="feature-section px-5 py-24 sm:px-6 sm:py-32">
+        <section id="iphone-to-windows" data-feature-section data-feature-id="iphone-to-windows" class="feature-section px-5 py-24 sm:px-6 sm:py-32">
             <div class="mx-auto max-w-6xl">
                 <div class="mx-auto max-w-3xl text-center"><p class="text-sm font-bold uppercase tracking-[0.18em] text-violet-600">Shortcuts · iPhone → Windows</p><h2 class="mt-4 text-4xl font-bold tracking-tight sm:text-6xl">Send from iPhone.<br>Paste with Ctrl+V.</h2><p class="mt-6 text-lg leading-8 text-gray-600">Set up a WinSend Shortcut first. Then run it to send copied text to your Windows clipboard, without opening WinSend.</p><div class="mt-7 flex flex-wrap justify-center gap-3 text-sm font-semibold text-gray-600"><span class="rounded-full bg-gray-100 px-4 py-2">iOS Shortcuts</span><span class="rounded-full bg-gray-100 px-4 py-2">Back Tap ready</span><span class="rounded-full bg-gray-100 px-4 py-2">Paste anywhere</span></div><a href="/en/guides/copy-iphone-to-windows/" class="mt-7 inline-flex font-semibold text-blue-700 hover:underline">Set up clipboard shortcuts →</a></div>
                 <div class="video-stage mt-12"><span class="direction-badge"><span class="direction-dot"></span>iPhone → Windows</span><video data-smart-play data-autoplay="true" muted loop playsinline controls preload="none" poster="/assets/videos/winsend-copy-iphone-to-windows-with-shortcuts-poster.jpg" aria-label="Clipboard transfer from iPhone to Windows using Shortcuts"><source data-src="/assets/videos/winsend-copy-iphone-to-windows-with-shortcuts.mp4" type="video/mp4"></video></div>
             </div>
         </section>
 
-        <section id="cloud-clipboard" class="feature-section bg-gray-50 px-5 py-24 sm:px-6 sm:py-32">
+        <section id="cloud-clipboard" data-feature-section data-feature-id="cloud-clipboard" class="feature-section bg-gray-50 px-5 py-24 sm:px-6 sm:py-32">
             <div class="mx-auto max-w-6xl">
                 <div class="mx-auto max-w-3xl text-center"><p class="text-sm font-bold uppercase tracking-[0.18em] text-violet-600">Cloud Clipboard · Across Networks</p><h2 class="mt-4 text-4xl font-bold tracking-tight sm:text-6xl">Not on the same Wi-Fi?<br>Keep copying and pasting.</h2><p class="mt-6 text-lg leading-8 text-gray-600">When office, school, or public Wi-Fi blocks local connections, switch to Cloud and keep sharing clipboard text between iPhone and Windows.</p><div class="mt-7 flex flex-wrap justify-center gap-3 text-sm font-semibold text-gray-600"><span class="rounded-full bg-white px-4 py-2">Across Networks</span><span class="rounded-full bg-white px-4 py-2">End-to-End Encrypted</span><span class="rounded-full bg-white px-4 py-2">Clipboard Text</span></div></div>
                 <div class="video-stage mt-12"><span class="direction-badge"><span class="direction-dot"></span>Cloud clipboard · Cross-network</span><video data-smart-play data-autoplay="true" muted loop playsinline controls preload="none" poster="/assets/videos/winsend-cloud-clipboard-demo-poster.jpg" aria-label="Cloud clipboard transfer between Windows and iPhone"><source data-src="/assets/videos/winsend-cloud-clipboard-demo.mp4" type="video/mp4"></video></div>

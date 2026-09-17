@@ -41,35 +41,35 @@
 
         <div class="feature-nav-bar sticky top-[73px] z-40 bg-white/90 px-4 py-3 backdrop-blur-xl">
             <nav aria-label="功能演示" class="feature-nav mx-auto flex max-w-4xl gap-2">
-                <a href="#file-transfer" class="feature-nav-link">文件传输</a>
-                <a href="#windows-to-iphone" class="feature-nav-link">电脑 → 手机</a>
-                <a href="#iphone-to-windows" class="feature-nav-link">手机 → 电脑</a>
-                <a href="#cloud-clipboard" class="feature-nav-link">云剪贴板</a>
+                <a href="#file-transfer" data-feature-id="file-transfer" data-feature-surface="features_nav" class="feature-nav-link">文件传输</a>
+                <a href="#windows-to-iphone" data-feature-id="windows-to-iphone" data-feature-surface="features_nav" class="feature-nav-link">电脑 → 手机</a>
+                <a href="#iphone-to-windows" data-feature-id="iphone-to-windows" data-feature-surface="features_nav" class="feature-nav-link">手机 → 电脑</a>
+                <a href="#cloud-clipboard" data-feature-id="cloud-clipboard" data-feature-surface="features_nav" class="feature-nav-link">云剪贴板</a>
             </nav>
         </div>
 
-        <section id="file-transfer" class="feature-section px-5 py-24 sm:px-6 sm:py-32">
+        <section id="file-transfer" data-feature-section data-feature-id="file-transfer" class="feature-section px-5 py-24 sm:px-6 sm:py-32">
             <div class="mx-auto max-w-6xl">
                 <div class="mx-auto max-w-3xl text-center"><p class="text-sm font-bold uppercase tracking-[0.18em] text-blue-600">文件传输 · Windows → iPhone</p><h2 class="mt-4 text-4xl font-bold tracking-tight sm:text-6xl">拖入、发送、完成。</h2><p class="mt-6 text-lg leading-8 text-gray-600">把照片、视频或文件拖入 Windows 端 WinSend，通过本地 Wi-Fi 直接发送到 iPhone，随时保存或打开。</p><div class="mt-7 flex flex-wrap justify-center gap-3 text-sm font-semibold text-gray-600"><span class="rounded-full bg-gray-100 px-4 py-2">不上传云端</span><span class="rounded-full bg-gray-100 px-4 py-2">保留原始画质</span><span class="rounded-full bg-gray-100 px-4 py-2">支持大文件</span></div></div>
                 <div class="video-stage mt-12"><span class="direction-badge"><span class="direction-dot"></span>Windows → iPhone</span><video data-smart-play data-autoplay="true" muted loop playsinline controls preload="none" poster="/assets/videos/winsend-transfer-files-windows-to-iphone-poster.jpg" aria-label="从 Windows 向 iPhone 传输文件"><source data-src="/assets/videos/winsend-transfer-files-windows-to-iphone.mp4" type="video/mp4"></video></div>
             </div>
         </section>
 
-        <section id="windows-to-iphone" class="feature-section bg-gray-50 px-5 py-24 sm:px-6 sm:py-32">
+        <section id="windows-to-iphone" data-feature-section data-feature-id="windows-to-iphone" class="feature-section bg-gray-50 px-5 py-24 sm:px-6 sm:py-32">
             <div class="mx-auto max-w-6xl">
                 <div class="mx-auto max-w-3xl text-center"><p class="text-sm font-bold uppercase tracking-[0.18em] text-violet-600">剪贴板 · Windows → iPhone</p><h2 class="mt-4 text-4xl font-bold tracking-tight sm:text-6xl">电脑复制，<br>iPhone 粘贴。</h2><p class="mt-6 text-lg leading-8 text-gray-600">在 Windows 复制清单、链接或整段文字，在 WinSend 中获取，然后粘贴到 iPhone 的任意 App。</p><div class="mt-7 flex flex-wrap justify-center gap-3 text-sm font-semibold text-gray-600"><span class="rounded-full bg-white px-4 py-2">支持文本与链接</span><span class="rounded-full bg-white px-4 py-2">无需重新输入</span><span class="rounded-full bg-white px-4 py-2">跨 App 使用</span></div></div>
                 <div class="video-stage mt-12"><span class="direction-badge"><span class="direction-dot"></span>Windows → iPhone</span><video data-smart-play data-autoplay="true" muted loop playsinline controls preload="none" poster="/assets/videos/winsend-copy-windows-to-iphone-clipboard-poster.jpg" aria-label="从 Windows 向 iPhone 传输剪贴板"><source data-src="/assets/videos/winsend-copy-windows-to-iphone-clipboard.mp4" type="video/mp4"></video></div>
             </div>
         </section>
 
-        <section id="iphone-to-windows" class="feature-section px-5 py-24 sm:px-6 sm:py-32">
+        <section id="iphone-to-windows" data-feature-section data-feature-id="iphone-to-windows" class="feature-section px-5 py-24 sm:px-6 sm:py-32">
             <div class="mx-auto max-w-6xl">
                 <div class="mx-auto max-w-3xl text-center"><p class="text-sm font-bold uppercase tracking-[0.18em] text-violet-600">快捷指令 · iPhone → Windows</p><h2 class="mt-4 text-4xl font-bold tracking-tight sm:text-6xl">iPhone 发送，<br>电脑 Ctrl+V。</h2><p class="mt-6 text-lg leading-8 text-gray-600">先设置 WinSend 快捷指令，再运行它，将 iPhone 上复制的文字发送到 Windows 剪贴板，无需打开 WinSend。</p><div class="mt-7 flex flex-wrap justify-center gap-3 text-sm font-semibold text-gray-600"><span class="rounded-full bg-gray-100 px-4 py-2">iOS 快捷指令</span><span class="rounded-full bg-gray-100 px-4 py-2">支持轻点背面</span><span class="rounded-full bg-gray-100 px-4 py-2">任意位置粘贴</span></div><a href="/zh/guides/copy-iphone-to-windows/" class="mt-7 inline-flex font-semibold text-blue-700 hover:underline">设置剪贴板快捷指令 →</a></div>
                 <div class="video-stage mt-12"><span class="direction-badge"><span class="direction-dot"></span>iPhone → Windows</span><video data-smart-play data-autoplay="true" muted loop playsinline controls preload="none" poster="/assets/videos/winsend-copy-iphone-to-windows-with-shortcuts-poster.jpg" aria-label="通过快捷指令从 iPhone 向 Windows 传输剪贴板"><source data-src="/assets/videos/winsend-copy-iphone-to-windows-with-shortcuts.mp4" type="video/mp4"></video></div>
             </div>
         </section>
 
-        <section id="cloud-clipboard" class="feature-section bg-gray-50 px-5 py-24 sm:px-6 sm:py-32">
+        <section id="cloud-clipboard" data-feature-section data-feature-id="cloud-clipboard" class="feature-section bg-gray-50 px-5 py-24 sm:px-6 sm:py-32">
             <div class="mx-auto max-w-6xl">
                 <div class="mx-auto max-w-3xl text-center"><p class="text-sm font-bold uppercase tracking-[0.18em] text-violet-600">云剪贴板 · 跨网络</p><h2 class="mt-4 text-4xl font-bold tracking-tight sm:text-6xl">不在同一 Wi-Fi，<br>也能继续复制粘贴。</h2><p class="mt-6 text-lg leading-8 text-gray-600">当公司、校园或公共 Wi-Fi 阻止局域网连接时，切换到云端，继续在 iPhone 和 Windows 之间发送剪贴板文字。</p><div class="mt-7 flex flex-wrap justify-center gap-3 text-sm font-semibold text-gray-600"><span class="rounded-full bg-white px-4 py-2">跨网络</span><span class="rounded-full bg-white px-4 py-2">端到端加密</span><span class="rounded-full bg-white px-4 py-2">剪贴板文字</span></div></div>
                 <div class="video-stage mt-12"><span class="direction-badge"><span class="direction-dot"></span>云剪贴板 · 跨网络</span><video data-smart-play data-autoplay="true" muted loop playsinline controls preload="none" poster="/assets/videos/winsend-cloud-clipboard-demo-poster.jpg" aria-label="Windows 与 iPhone 的云剪贴板跨网络传输演示"><source data-src="/assets/videos/winsend-cloud-clipboard-demo.mp4" type="video/mp4"></video></div>

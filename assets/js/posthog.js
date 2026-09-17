@@ -3,6 +3,7 @@
  * - 上报页面浏览（$pageview，SDK 默认）
  * - 上报站内 Windows 安装包点击：web_download_click（含版本与入口）
  * - 上报 App Store 按钮点击：web_appstore_click
+ * - 上报功能入口点击与功能区有效曝光：web_feature_click / web_feature_viewed
  * 本地开发（localhost/127.0.0.1）不初始化，避免污染数据。
  */
 !function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.crossOrigin="anonymous",p.async=!0,p.src=s.api_host.replace(".i.posthog.com","-assets.i.posthog.com")+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="init capture register register_once register_for_session unregister unregister_for_session getFeatureFlag getFeatureFlagResult isFeatureEnabled reloadFeatureFlags updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures on onFeatureFlags onSessionId getSurveys getActiveMatchingSurveys renderSurvey canRenderSurvey getNextSurveyStep identify setPersonProperties group resetGroups setPersonPropertiesForFlags resetPersonPropertiesForFlags setGroupPropertiesForFlags resetGroupPropertiesForFlags reset get_distinct_id getGroups get_session_id get_session_replay_url alias set_config startSessionRecording stopSessionRecording sessionRecordingStarted captureException loadToolbar get_property getSessionProperty createPersonProfile opt_in_capturing opt_out_capturing has_opted_in_capturing has_opted_out_capturing clear_opt_in_out_capturing debug".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
@@ -149,5 +150,33 @@
             appStoreProps.download_surface = node.dataset.downloadSurface || "unknown";
             posthog.capture("web_appstore_click", appStoreProps);
         }
+
+        // 首页功能卡片及功能页锚点导航均显式标识功能，不能依赖关闭的 autocapture。
+        if (node.dataset.featureId) {
+            var featureProps = baseProps(href);
+            featureProps.feature_id = node.dataset.featureId;
+            featureProps.feature_surface = node.dataset.featureSurface || "unknown";
+            posthog.capture("web_feature_click", featureProps);
+        }
     }, true);
+
+    // 一项功能至少有 60% 进入视窗才算有效阅读；每个页面加载仅上报一次。
+    if ("IntersectionObserver" in window) {
+        var viewedFeatures = new Set();
+        var featureObserver = new IntersectionObserver(function (entries) {
+            entries.forEach(function (entry) {
+                if (!entry.isIntersecting || viewedFeatures.has(entry.target.dataset.featureId)) return;
+                var featureId = entry.target.dataset.featureId;
+                viewedFeatures.add(featureId);
+                var viewProps = baseProps(window.location.href);
+                viewProps.feature_id = featureId;
+                viewProps.feature_surface = "features_page_section";
+                posthog.capture("web_feature_viewed", viewProps);
+                featureObserver.unobserve(entry.target);
+            });
+        }, { threshold: 0.6 });
+        document.querySelectorAll("[data-feature-section][data-feature-id]").forEach(function (section) {
+            featureObserver.observe(section);
+        });
+    }
 })();
