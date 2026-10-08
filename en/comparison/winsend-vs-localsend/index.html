@@ -58,7 +58,7 @@
                 {
                     "@type": "Question",
                     "name": "Is WinSend a good LocalSend alternative?",
-                    "acceptedAnswer": { "@type": "Answer", "text": "Yes, if your setup is specifically an iPhone and a Windows PC. WinSend integrates into the iOS share sheet so you can send photos and files without opening an app first, and it offers automatic two-way clipboard sync — two things LocalSend does not do. If you need Android, macOS or Linux support, LocalSend is the better choice." }
+                    "acceptedAnswer": { "@type": "Answer", "text": "Yes, if your setup is specifically an iPhone and a Windows PC. WinSend integrates into the iOS share sheet so you can send photos and files without opening an app first, and it offers Pro automatic text sync while iOS permits the app to run, plus manually triggered Shortcuts — two things LocalSend does not do. If you need Android, macOS or Linux support, LocalSend is the better choice." }
                 },
                 {
                     "@type": "Question",
@@ -68,12 +68,12 @@
                 {
                     "@type": "Question",
                     "name": "Is WinSend free like LocalSend?",
-                    "acceptedAnswer": { "@type": "Answer", "text": "WinSend's core features — photo/file transfer and clipboard sync between iPhone and Windows — are free. Advanced features require a Pro subscription. LocalSend is completely free and open source with no paid tier." }
+                    "acceptedAnswer": { "@type": "Answer", "text": "Local manual clipboard and file transfers are free. Automatic clipboard sync requires Pro; Shortcuts and cloud transfers have trial/Pro access. See the app for current offers. LocalSend is completely free and open source with no paid tier." }
                 },
                 {
                     "@type": "Question",
                     "name": "Which is more private, WinSend or LocalSend?",
-                    "acceptedAnswer": { "@type": "Answer", "text": "Both transfer files directly over your local network without cloud servers or accounts. LocalSend is additionally open source, so its code can be audited by anyone. WinSend is closed source but also works entirely on your local network." }
+                    "acceptedAnswer": { "@type": "Answer", "text": "Both transfer files directly over your local network without cloud servers or accounts. LocalSend is additionally open source, so its code can be audited by anyone. WinSend is closed source. Its file transfers are local; optional Cloud Sync relays encrypted clipboard text only." }
                 }
             ]
         }
@@ -84,7 +84,7 @@
     <nav aria-label="Main navigation" class="fixed top-0 left-0 right-0 bg-white/70 backdrop-blur-xl z-50 border-b border-gray-100">
         <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
             <a href="/en/" class="flex items-center gap-3"><img src="/logo.png" alt="WinSend Logo" class="w-9 h-9 rounded-xl" decoding="async"><span class="text-xl font-bold tracking-tight">WinSend</span></a>
-            <div class="flex items-center gap-6"><a href="/en/#features" class="text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors hidden sm:block">Features</a><a href="/en/guides/" class="text-sm font-semibold text-gray-900 transition-colors hidden sm:block">Guides</a><a href="/en/#download" class="btn-primary inline-flex items-center gap-2 px-5 py-2.5 bg-blue-600 text-white text-sm font-semibold rounded-lg hover:bg-blue-700">Download</a><a href="/zh/comparison/winsend-vs-localsend/" class="text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors">中文</a></div>
+            <div class="flex items-center gap-6"><a href="/en/#features" class="text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors hidden sm:block">Features</a><a href="/en/guides/" class="text-sm font-semibold text-gray-900 transition-colors hidden sm:block">Guides</a><a href="/en/download/" class="btn-primary inline-flex items-center gap-2 px-5 py-2.5 bg-blue-600 text-white text-sm font-semibold rounded-lg hover:bg-blue-700">Download</a><a href="/zh/comparison/winsend-vs-localsend/" class="text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors">中文</a></div>
         </div>
     </nav>
     <main>
@@ -103,7 +103,7 @@
                 <article class="prose">
                     <h2>Quick Verdict</h2>
                     <ul>
-                        <li><strong>Choose WinSend</strong> if you use an iPhone with a Windows PC and want the closest thing to real AirDrop: send from the share sheet without opening any app, plus automatic two-way clipboard sync.</li>
+                        <li><strong>Choose WinSend</strong> if you use an iPhone with a Windows PC and want the closest thing to real AirDrop: send from the iOS share sheet after setup, while WinSend runs on Windows, Pro automatic text sync while iOS permits the app to run, and manually triggered Shortcuts.</li>
                         <li><strong>Choose LocalSend</strong> if you need Android, macOS or Linux in the mix, or you specifically want a free, open-source tool you can audit.</li>
                     </ul>
 
@@ -130,7 +130,7 @@
                                 </tr>
                                 <tr>
                                     <td><strong>Clipboard sync</strong></td>
-                                    <td class="win">Automatic, two-way</td>
+                                    <td class="win">Text sync / Shortcuts; iOS and Pro limits apply</td>
                                     <td>Manual text sending only</td>
                                 </tr>
                                 <tr>
@@ -140,7 +140,7 @@
                                 </tr>
                                 <tr>
                                     <td><strong>Price</strong></td>
-                                    <td>Free core features; Pro subscription for advanced features</td>
+                                    <td>Free core features; Pro access for advanced features</td>
                                     <td class="win">Completely free</td>
                                 </tr>
                                 <tr>
@@ -155,8 +155,8 @@
                                 </tr>
                                 <tr>
                                     <td><strong>Internet required</strong></td>
-                                    <td class="win">No — local network only</td>
-                                    <td class="win">No — local network only</td>
+                                    <td class="win">Not for local files; required for cloud text</td>
+                                    <td class="win">Not for local files; required for cloud text</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -175,8 +175,8 @@
                         <p class="screenshot-caption">Select, share, done — the file is already on your Windows PC.</p>
                     </div>
 
-                    <h3>2. Automatic two-way clipboard sync</h3>
-                    <p>Copy text, a link, or an image on your Windows PC and it appears on your iPhone — and vice versa. LocalSend can send text snippets, but each snippet is a manual send-and-accept operation. If you copy and paste between devices more than a few times a day, this alone is the reason to pick WinSend. See <a href="/en/guides/copy-iphone-to-windows/">how clipboard sync works with Shortcuts and Back Tap</a>.</p>
+                    <h3>2. Clipboard text sync and triggered Shortcuts</h3>
+                    <p>Transfer clipboard text in either direction. Pro automatic text sync depends on iOS allowing the app to run; configured Shortcuts must be triggered. Clipboard images use supported local manual/Shortcut paths, not cloud sync. LocalSend can send text snippets, but each snippet is a manual send-and-accept operation. If you copy and paste between devices more than a few times a day, this alone is the reason to pick WinSend. See <a href="/en/guides/copy-iphone-to-windows/">how clipboard sync works with Shortcuts and Back Tap</a>.</p>
 
                     <h3>3. Paired devices receive automatically</h3>
                     <p>Once paired, your PC accepts incoming files without anyone touching it — useful when your PC is across the room or you are transferring a batch of photos. LocalSend requires the receiver to confirm every transfer by default.</p>
@@ -195,7 +195,7 @@
                     </div>
 
                     <h2>Privacy and Security</h2>
-                    <p>Both tools transfer directly between your devices over the local network — no cloud servers, no accounts, no uploads. LocalSend encrypts transfers with HTTPS using locally generated certificates and is fully open source. WinSend is closed source but follows the same local-only principle: your data never leaves your Wi-Fi.</p>
+                    <p>Both tools transfer directly between your devices over the local network — no cloud servers, no accounts, no uploads. LocalSend encrypts transfers with HTTPS using locally generated certificates and is fully open source. WinSend is closed source. Its local file path uses HTTP rather than end-to-end encryption, so use a trusted private network. Optional Cloud Sync encrypts clipboard text on the clients before relaying it; it does not transfer files.</p>
 
                     <h2>Who Should Choose Which?</h2>
                     <ul>
@@ -209,7 +209,7 @@
                     <h2>FAQ</h2>
                     <div class="faq-item">
                         <h3>Is WinSend a good LocalSend alternative?</h3>
-                        <p>Yes, if your setup is specifically an iPhone and a Windows PC. WinSend integrates into the iOS share sheet so you can send photos and files without opening an app first, and it offers automatic two-way clipboard sync — two things LocalSend does not do. If you need Android, macOS or Linux support, LocalSend is the better choice.</p>
+                        <p>Yes, if your setup is specifically an iPhone and a Windows PC. WinSend integrates into the iOS share sheet so you can send photos and files without opening an app first, and it offers Pro automatic text sync while iOS permits the app to run, plus manually triggered Shortcuts — two things LocalSend does not do. If you need Android, macOS or Linux support, LocalSend is the better choice.</p>
                     </div>
                     <div class="faq-item">
                         <h3>Does LocalSend work between iPhone and Windows?</h3>
@@ -217,21 +217,23 @@
                     </div>
                     <div class="faq-item">
                         <h3>Is WinSend free like LocalSend?</h3>
-                        <p>WinSend's core features — photo/file transfer and clipboard sync between iPhone and Windows — are free. Advanced features require a Pro subscription. LocalSend is completely free and open source with no paid tier.</p>
+                        <p>Local manual clipboard and file transfers are free. Automatic clipboard sync requires Pro; Shortcuts and cloud transfers have trial/Pro access. See the app for current offers. LocalSend is completely free and open source with no paid tier.</p>
                     </div>
                     <div class="faq-item">
                         <h3>Which is more private, WinSend or LocalSend?</h3>
-                        <p>Both transfer files directly over your local network without cloud servers or accounts. LocalSend is additionally open source, so its code can be audited by anyone. WinSend is closed source but also works entirely on your local network.</p>
+                        <p>Both transfer files directly over your local network without cloud servers or accounts. LocalSend is additionally open source, so its code can be audited by anyone. WinSend is closed source. Its file transfers are local; optional Cloud Sync relays encrypted clipboard text only.</p>
                     </div>
 
                     <h2>Try WinSend</h2>
                     <p>If your daily setup is an iPhone and a Windows PC, download WinSend and pair it in under a minute with the <a href="/en/guides/setup/">installation guide</a>.</p>
                     <div class="mt-8 mb-12">
-                        <a href="/en/#download" class="btn-primary inline-flex items-center gap-2 px-8 py-4 bg-blue-700 text-white text-lg font-semibold rounded-xl hover:bg-blue-800 transition-all shadow-lg shadow-blue-700/30">Download WinSend for Windows</a>
+                        <a href="/en/download/" class="btn-primary inline-flex items-center gap-2 px-8 py-4 bg-blue-700 text-white text-lg font-semibold rounded-xl hover:bg-blue-800 transition-all shadow-lg shadow-blue-700/30">Download WinSend for Windows</a>
                     </div>
                 </article>
             </div>
         </section>
+
+        <section id="product-scope" class="px-6 py-12"><div class="max-w-4xl mx-auto rounded-2xl border border-gray-200 p-6"><h2 class="text-2xl font-bold mb-3">Transfer modes and feature access</h2><p class="text-gray-600 leading-8">Local manual clipboard and file transfers are free. Automatic clipboard sync requires Pro; Shortcuts and cloud transfers have trial/Pro access. See the app for current offers. Files and photos require a reachable local network. Cloud Sync needs internet and supports clipboard text only. Automatic sync does not bypass iOS background or clipboard restrictions. Shortcuts require iOS 16+ and must be triggered. WinSend is an AirDrop-style alternative, not Apple AirDrop. WinSend does not deliberately compress transferred files; source apps or system export may change their representation, and device/network/storage limits still apply.</p></div></section>
     </main>
 
     <footer class="py-16 px-6 bg-gray-900 text-gray-400">
@@ -242,14 +244,14 @@
                         <img src="/logo.png" alt="WinSend Logo" class="w-9 h-9 rounded-xl" decoding="async" loading="lazy">
                         <span class="text-xl font-bold text-white">WinSend</span>
                     </div>
-                    <p class="text-sm leading-relaxed max-w-md">AirDrop for Windows.<br>Seamlessly transfer files between iPhone and Windows via local Wi-Fi or internet.</p>
+                    <p class="text-sm leading-relaxed max-w-md">AirDrop for Windows.<br>Transfer files over your local network; share clipboard text across networks with optional Cloud Sync.</p>
                 </div>
                 <div>
                     <h4 class="text-white font-semibold mb-4">Product</h4>
                     <ul class="space-y-3 text-sm">
                         <li><a href="/en/#features" class="hover:text-white transition-colors">Features</a></li>
                         <li><a href="/en/guides/" class="hover:text-white transition-colors">Guide Center</a></li>
-                        <li><a href="/en/#download" class="hover:text-white transition-colors">Download</a></li>
+                        <li><a href="/en/download/" class="hover:text-white transition-colors">Download</a></li>
                     </ul>
                 </div>
                 <div>

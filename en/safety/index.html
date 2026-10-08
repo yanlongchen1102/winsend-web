@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Is WinSend Safe? Security &amp; Privacy Explained | WinSend</title>
-    <meta name="description" content="WinSend keeps your data on your devices: local Wi-Fi transfer with no cloud upload, no accounts and no tracking. What the SmartScreen warning means, and how optional Cloud Sync stays end-to-end encrypted.">
+    <meta name="description" content="WinSend security limits: local HTTP file transfer on trusted networks, client-encrypted cloud clipboard, usage analytics and safe installation advice.">
     <meta name="robots" content="index,follow,max-image-preview:large">
     <link rel="canonical" href="https://winsend.app/en/safety/">
     <link rel="alternate" hreflang="en" href="https://winsend.app/en/safety/" />
@@ -20,22 +20,22 @@
             {
                 "@type": "Question",
                 "name": "Is WinSend safe to use?",
-                "acceptedAnswer": { "@type": "Answer", "text": "Yes. LAN transfers go directly between your iPhone and PC over your own Wi-Fi. Files are never uploaded to any server, no account is required, and the app does not track file contents." }
+                "acceptedAnswer": { "@type": "Answer", "text": "Local file transfers do not upload files to a cloud server. The checked local path uses HTTP, not end-to-end encryption, so use a trusted private LAN. Optional cloud clipboard encrypts text on the clients; usage analytics are separate." }
             },
             {
                 "@type": "Question",
                 "name": "Why does Windows show \"Windows protected your PC\" when I install WinSend?",
-                "acceptedAnswer": { "@type": "Answer", "text": "This is Microsoft Defender SmartScreen. It appears for apps that are new or not yet code-signed and have not built download reputation. It is not a virus finding. Click More info, then Run anyway to install." }
+                "acceptedAnswer": { "@type": "Answer", "text": "SmartScreen can warn about an unfamiliar download or publisher. Use the official Microsoft Store link where possible. For an alternative installer, verify its source and publisher; a reputation warning is not proof of safety, and malware warnings must not be ignored." }
             },
             {
                 "@type": "Question",
                 "name": "Does WinSend upload my files to the cloud?",
-                "acceptedAnswer": { "@type": "Answer", "text": "No. Regular transfers never leave your local network. The optional Cloud Sync feature relays clipboard text only, and it is end-to-end encrypted (AES-256-GCM), so the relay server cannot read the content." }
+                "acceptedAnswer": { "@type": "Answer", "text": "Files and photos use the local network. Optional Cloud Sync relays clipboard text encrypted on the clients with AES-256-GCM; it does not relay files or images. Keep the sync code private. Cloud connection metadata is not hidden by content encryption." }
             },
             {
                 "@type": "Question",
                 "name": "Who can see my transfers?",
-                "acceptedAnswer": { "@type": "Answer", "text": "Only the devices on your network that you pair with WinSend. Discovery uses mDNS on your local network, and connections require device pairing. Cloud Sync groups are joined only with your 6-digit sync code." }
+                "acceptedAnswer": { "@type": "Answer", "text": "Local discovery uses mDNS, and the checked local transfer path uses HTTP rather than end-to-end encryption. Use a trusted private LAN; discovery and connection are not a guarantee of strong device authentication. Cloud sync requires the sync code, which must be kept private." }
             }
         ]
     }
@@ -46,7 +46,7 @@
     <nav aria-label="Main navigation" class="fixed top-0 left-0 right-0 bg-white/70 backdrop-blur-xl z-50 border-b border-gray-100">
         <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
             <a href="/en/" class="flex items-center gap-3"><img src="/logo.png" alt="WinSend Logo" class="w-9 h-9 rounded-xl" decoding="async"><span class="text-xl font-bold tracking-tight">WinSend</span></a>
-            <div class="flex items-center gap-6"><a href="/en/#features" class="text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors hidden sm:block">Features</a><a href="/en/guides/" class="text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors hidden sm:block">Guides</a><a href="/en/#download" class="inline-flex items-center gap-2 px-5 py-2.5 bg-blue-600 text-white text-sm font-semibold rounded-lg hover:bg-blue-700">Download</a><a href="/zh/safety/" class="text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors">中文</a></div>
+            <div class="flex items-center gap-6"><a href="/en/#features" class="text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors hidden sm:block">Features</a><a href="/en/guides/" class="text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors hidden sm:block">Guides</a><a href="/en/download/" class="inline-flex items-center gap-2 px-5 py-2.5 bg-blue-600 text-white text-sm font-semibold rounded-lg hover:bg-blue-700">Download</a><a href="/zh/safety/" class="text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors">中文</a></div>
         </div>
     </nav>
     <main>
@@ -54,8 +54,8 @@
             <div class="max-w-3xl mx-auto">
                 <nav aria-label="Breadcrumb" class="mb-8"><ol class="flex flex-wrap items-center gap-2 text-sm text-gray-500"><li><a href="/en/" class="hover:text-gray-900 transition-colors">Home</a></li><li>/</li><li class="text-gray-900 font-medium">Is WinSend safe?</li></ol></nav>
                 <h1 class="text-4xl sm:text-5xl font-extrabold tracking-tight leading-tight mb-6">Is WinSend safe?</h1>
-                <p class="text-xl text-gray-600 leading-9">Yes. WinSend was designed so that your data stays between your own devices. Here is exactly how it handles security and privacy — including an honest explanation of the Windows SmartScreen warning.</p>
-                <p class="mt-4 text-sm text-gray-400">Last updated: August 25, 2026</p>
+                <p class="text-xl text-gray-600 leading-9">WinSend keeps file transfers local and offers optional client-encrypted cloud clipboard. Local HTTP transfer is not end-to-end encrypted, so use a trusted private network. Here are the security limits, analytics and installation precautions.</p>
+                <p class="mt-4 text-sm text-gray-400">Last updated: October 8, 2026</p>
             </div>
         </section>
 
@@ -63,45 +63,47 @@
             <div class="max-w-3xl mx-auto space-y-10">
                 <div>
                     <h2 class="text-2xl font-bold mb-3">Your files never touch a server</h2>
-                    <p class="text-gray-600 leading-8">Regular transfers travel directly from your iPhone to your PC over your local Wi-Fi using a peer-to-peer connection discovered via mDNS. There is no cloud upload step, no intermediate storage, and no account system that could leak your data.</p>
+                    <p class="text-gray-600 leading-8">Files and photos travel directly between your devices over a reachable LAN, without a cloud file upload. The checked local path uses HTTP, not end-to-end encryption. Use a trusted private network, and remember that manual IP entry cannot bypass client isolation or firewall blocks.</p>
                 </div>
                 <div>
                     <h2 class="text-2xl font-bold mb-3">About the SmartScreen warning</h2>
-                    <p class="text-gray-600 leading-8">When you first run the Windows installer, Microsoft Defender SmartScreen may show <em>"Windows protected your PC"</em>. This appears for apps that are new or <strong>not yet code-signed</strong> and haven't built download reputation — it is not a virus or malware detection.</p>
-                    <p class="text-gray-600 leading-8 mt-3">To install: click <strong>More info</strong> → <strong>Run anyway</strong>. Code-signing certificates cost hundreds of dollars per year; as the app grows, signed installers will replace this warning entirely.</p>
+                    <p class="text-gray-600 leading-8">Microsoft Defender SmartScreen may show <em>"Windows protected your PC"</em> for an unfamiliar download or publisher. A reputation warning is different from a malware finding, but neither should be treated as proof that a file is safe.</p>
+                    <p class="text-gray-600 leading-8 mt-3">Prefer the official <a href="/en/download/" class="text-blue-600 underline">Microsoft Store installation link</a>. Before running an alternative installer, verify the source and publisher. Signing does not guarantee that every SmartScreen warning disappears; do not disable protection or bypass a malware warning.</p>
                 </div>
                 <div>
                     <h2 class="text-2xl font-bold mb-3">Optional Cloud Sync is end-to-end encrypted</h2>
-                    <p class="text-gray-600 leading-8">Cloud Sync relays <strong>clipboard text only</strong>, across networks. Messages are encrypted with AES-256-GCM using keys derived from your 6-digit sync code before they ever leave your device. The relay server only forwards ciphertext — it cannot read your content, and nothing is stored. You can also self-host the relay.</p>
+                    <p class="text-gray-600 leading-8">Cloud Sync relays <strong>clipboard text only</strong>. Clients encrypt messages with AES-256-GCM using keys derived from the sync code. Keep that code private: someone with it can derive the same keys. Content encryption does not hide connection metadata such as device names/identifiers, group information or IP addresses. This is not an independently audited security guarantee or a promise that servers retain no metadata.</p>
                 </div>
                 <div>
                     <h2 class="text-2xl font-bold mb-3">What data the app collects</h2>
                     <ul class="list-disc pl-6 text-gray-600 leading-8 space-y-1">
-                        <li>No file names, file contents, or clipboard contents are ever collected.</li>
+                        <li>Transfer content and full file names are not intended analytics payloads. Local diagnostic logs may contain file names or clipboard previews; inspect them before sharing.</li>
                         <li>No account or personal information is required.</li>
-                        <li>Anonymous usage analytics (e.g. "a transfer completed") help improve reliability and contain no user content.</li>
+                        <li>Pseudonymous usage analytics can associate feature/transfer events over time. Apple and RevenueCat handle purchases and entitlement checks. See the <a href="/en/privacy/" class="text-blue-600 underline">privacy policy</a> for identifiers, metadata and local-log precautions.</li>
                     </ul>
                 </div>
                 <div class="rounded-3xl border border-blue-100 bg-blue-50/60 p-8">
                     <h2 class="text-2xl font-bold mb-3">Ready to try it?</h2>
                     <p class="text-gray-600 leading-8 mb-4">Transfer photos, videos, files and clipboard between iPhone and Windows in seconds.</p>
-                    <a href="/en/#download" class="btn-primary inline-flex items-center gap-2 px-8 py-4 bg-blue-600 text-white text-lg font-semibold rounded-xl hover:bg-blue-700 transition-all">Download WinSend</a>
+                    <a href="/en/download/" class="btn-primary inline-flex items-center gap-2 px-8 py-4 bg-blue-600 text-white text-lg font-semibold rounded-xl hover:bg-blue-700 transition-all">Download WinSend</a>
                 </div>
             </div>
         </section>
+
+        <section id="verified-faq" class="px-6 py-12"><div class="max-w-4xl mx-auto space-y-4"><h2 class="text-2xl font-bold">Frequently asked questions</h2><details class="rounded-2xl border border-gray-200 p-6"><summary class="font-bold">Is WinSend safe to use?</summary><p class="mt-4 text-gray-600 leading-8">Local file transfers do not upload files to a cloud server. The checked local path uses HTTP, not end-to-end encryption, so use a trusted private LAN. Optional cloud clipboard encrypts text on the clients; usage analytics are separate.</p></details><details class="rounded-2xl border border-gray-200 p-6"><summary class="font-bold">Why does Windows show &quot;Windows protected your PC&quot; when I install WinSend?</summary><p class="mt-4 text-gray-600 leading-8">SmartScreen can warn about an unfamiliar download or publisher. Use the official Microsoft Store link where possible. For an alternative installer, verify its source and publisher; a reputation warning is not proof of safety, and malware warnings must not be ignored.</p></details><details class="rounded-2xl border border-gray-200 p-6"><summary class="font-bold">Does WinSend upload my files to the cloud?</summary><p class="mt-4 text-gray-600 leading-8">Files and photos use the local network. Optional Cloud Sync relays clipboard text encrypted on the clients with AES-256-GCM; it does not relay files or images. Keep the sync code private. Cloud connection metadata is not hidden by content encryption.</p></details><details class="rounded-2xl border border-gray-200 p-6"><summary class="font-bold">Who can see my transfers?</summary><p class="mt-4 text-gray-600 leading-8">Local discovery uses mDNS, and the checked local transfer path uses HTTP rather than end-to-end encryption. Use a trusted private LAN; discovery and connection are not a guarantee of strong device authentication. Cloud sync requires the sync code, which must be kept private.</p></details></div></section>
     </main>
     <footer class="py-16 px-6 bg-gray-900 text-gray-400">
         <div class="max-w-6xl mx-auto grid md:grid-cols-4 gap-12 mb-12">
             <div class="md:col-span-2">
                 <div class="flex items-center gap-3 mb-4"><img src="/logo.png" alt="WinSend Logo" class="w-9 h-9 rounded-xl" decoding="async" loading="lazy"><span class="text-xl font-bold text-white">WinSend</span></div>
-                <p class="text-sm leading-relaxed max-w-md">AirDrop for Windows.<br>Seamlessly transfer files between iPhone and Windows via local Wi-Fi or internet.</p>
+                <p class="text-sm leading-relaxed max-w-md">AirDrop for Windows.<br>Transfer files over your local network; share clipboard text across networks with optional Cloud Sync.</p>
             </div>
             <div>
                 <div class="text-white font-semibold mb-4">Product</div>
                 <ul class="space-y-3 text-sm">
                     <li><a href="/en/#features" class="hover:text-white transition-colors">Features</a></li>
                     <li><a href="/en/guides/" class="hover:text-white transition-colors">Guide Center</a></li>
-                    <li><a href="/en/#download" class="hover:text-white transition-colors">Download</a></li>
+                    <li><a href="/en/download/" class="hover:text-white transition-colors">Download</a></li>
                 </ul>
             </div>
             <div>

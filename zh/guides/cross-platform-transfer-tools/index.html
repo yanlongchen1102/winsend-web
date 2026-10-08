@@ -74,7 +74,7 @@
     <nav aria-label="主导航" class="fixed top-0 left-0 right-0 bg-white/70 backdrop-blur-xl z-50 border-b border-gray-100">
         <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
             <a href="/zh/" class="flex items-center gap-3"><img src="/logo.png" alt="WinSend Logo" class="w-9 h-9 rounded-xl" decoding="async"><span class="text-xl font-bold tracking-tight">WinSend</span></a>
-            <div class="flex items-center gap-6"><a href="/zh/#features" class="text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors hidden sm:block">功能特性</a><a href="/zh/guides/" class="text-sm font-semibold text-gray-900 transition-colors hidden sm:block">教程</a><a href="/zh/#download" class="btn-primary inline-flex items-center gap-2 px-5 py-2.5 bg-blue-600 text-white text-sm font-semibold rounded-lg hover:bg-blue-700">下载</a><a href="/en/guides/cross-platform-transfer-tools/" class="text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors">English</a></div>
+            <div class="flex items-center gap-6"><a href="/zh/#features" class="text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors hidden sm:block">功能特性</a><a href="/zh/guides/" class="text-sm font-semibold text-gray-900 transition-colors hidden sm:block">教程</a><a href="/zh/download/" class="btn-primary inline-flex items-center gap-2 px-5 py-2.5 bg-blue-600 text-white text-sm font-semibold rounded-lg hover:bg-blue-700">下载</a><a href="/en/guides/cross-platform-transfer-tools/" class="text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors">English</a></div>
         </div>
     </nav>
     <main>
@@ -172,7 +172,7 @@
                                 <p class="subtitle">为 Windows 与 iPhone 打造的专属传输工具</p>
                             </div>
                         </div>
-                        <p>WinSend 是一款专注于 <strong>Windows 电脑与 iPhone 之间无线传输</strong>的工具。它通过局域网直接通信，文件、图片、剪贴板文字都可以在设备间快速同步，无需上传云端，也无需注册账号。</p>
+                        <p>WinSend 是一款专注于 <strong>Windows 电脑与 iPhone 之间无线传输</strong>的工具。文件和照片通过可互通的局域网直传，无需云文件上传或 WinSend 账号。可选云剪贴板只中转加密文字，并提供体验/Pro 权益。</p>
                         <div class="info-grid">
                             <div class="info-item"><strong>支持平台</strong>Windows、iOS</div>
                             <div class="info-item"><strong>传输方式</strong>局域网 HTTP + WebSocket</div>
@@ -408,7 +408,7 @@
                     <div class="step-card">
                         <span class="step-badge">第 3 步</span>
                         <h3>确保同一网络</h3>
-                        <p>将 iPhone 和 Windows 电脑连接到同一个 Wi-Fi 路由器或热点。如果使用的是企业网络、校园网或访客网络，可能会阻断设备发现，此时建议使用“手动连接”。</p>
+                        <p>使用可互通的专用局域网，电脑通过网线接入也可使用。手动 IP 可处理单纯的发现失败，但不能绕过客户端隔离或防火墙。设备不可达时，请切换网络或联系管理员。</p>
                     </div>
                     <div class="step-card">
                         <span class="step-badge">第 4 步</span>
@@ -424,13 +424,13 @@
                         <ul>
                             <li><strong>iPhone → Windows</strong>：点击“发送图片到电脑”或“发送文件到电脑”，选择内容后即可传输。Windows 端会自动保存到下载目录并弹出通知。</li>
                             <li><strong>Windows → iPhone</strong>：在 Windows 端复制一段文字或图片，iPhone 上点击“从电脑获取剪贴板”，即可把内容同步到手机剪贴板或相册。</li>
-                            <li><strong>剪贴板同步</strong>：开启“自动剪贴板同步”后，Windows 复制文字会自动同步到 iPhone，反之亦然。</li>
+                            <li><strong>剪贴板同步</strong>：本地手动传输免费。Pro 自动文字同步受 iOS 运行限制；从其他应用发送时可主动触发已配置的快捷指令。快捷指令和云传输提供体验/Pro 权益。</li>
                         </ul>
                     </div>
                     <div class="step-card">
                         <span class="step-badge">第 6 步</span>
                         <h3>手动连接（备用）</h3>
-                        <p>如果自动发现失败，点击右上角“手动连接”，输入 Windows 电脑的局域网 IP 地址（可在 Windows 端设置或命令行中查看），点击连接即可。</p>
+                        <p>如果只有自动发现失败，可尝试“手动连接”并输入电脑的局域网 IP。两端仍需可互通；手动 IP 不能绕过客户端隔离或防火墙阻断。访客/校园网络无法互通时，请换可信专用网络或联系管理员。</p>
                     </div>
 
                     <h2>如何选择适合自己的 AirDrop 替代工具？</h2>
@@ -445,11 +445,13 @@
                     <h2>开始使用</h2>
                     <p>想让 iPhone 和 Windows 之间获得 AirDrop 般的传输体验？先下载 WinSend，再按照<a href="/zh/guides/setup/">安装与配对教程</a>完成配对，配对不到一分钟。</p>
                     <div class="mt-8 mb-12">
-                        <a href="/zh/#download" class="btn-primary inline-flex items-center gap-2 px-8 py-4 bg-blue-700 text-white text-lg font-semibold rounded-xl hover:bg-blue-800 transition-all shadow-lg shadow-blue-700/30">下载 WinSend for Windows</a>
+                        <a href="/zh/download/" class="btn-primary inline-flex items-center gap-2 px-8 py-4 bg-blue-700 text-white text-lg font-semibold rounded-xl hover:bg-blue-800 transition-all shadow-lg shadow-blue-700/30">下载 WinSend for Windows</a>
                     </div>
                 </article>
             </div>
         </section>
+
+        <section id="product-scope" class="px-6 py-12"><div class="max-w-4xl mx-auto rounded-2xl border border-gray-200 p-6"><h2 class="text-2xl font-bold mb-3">传输方式与功能权益</h2><p class="text-gray-600 leading-8">本地手动剪贴板和文件传输免费。自动剪贴板同步需要 Pro；快捷指令和云传输提供体验/Pro 权益，具体方案以应用内为准。 文件和照片需要可互通的局域网。云同步需要互联网，只支持剪贴板文字。自动同步不能绕过 iOS 后台运行或剪贴板限制。快捷指令要求 iOS 16+，需要主动触发。WinSend 是类似 AirDrop 的替代方案，不是 Apple AirDrop。 WinSend 不主动压缩传输文件；来源应用或系统导出可能改变文件表示，实际传输仍受设备、网络与存储条件限制。</p></div></section>
     </main>
 
     <footer class="py-16 px-6 bg-gray-900 text-gray-400">
@@ -467,7 +469,7 @@
                     <ul class="space-y-3 text-sm">
                         <li><a href="/zh/#features" class="hover:text-white transition-colors">功能特性</a></li>
                         <li><a href="/zh/guides/" class="hover:text-white transition-colors">教程中心</a></li>
-                        <li><a href="/zh/#download" class="hover:text-white transition-colors">下载</a></li>
+                        <li><a href="/zh/download/" class="hover:text-white transition-colors">下载</a></li>
                     </ul>
                 </div>
                 <div>

@@ -209,7 +209,7 @@
             "description": "Copy on iPhone and paste on Windows over the same Wi-Fi with WinSend clipboard sync—without iCloud, a cable, or email.",
             "url": "https://winsend.app/en/guides/copy-iphone-to-windows/",
             "datePublished": "2026-04-11",
-            "dateModified": "2026-08-26",
+            "dateModified": "2026-10-08",
             "inLanguage": "en-US",
             "author": {
                 "@type": "Organization",
@@ -253,7 +253,7 @@
         }
     </script>
     <script type="application/ld+json">
-    {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "How do I copy text from iPhone to Windows without a cable?", "acceptedAnswer": {"@type": "Answer", "text": "Install WinSend on both devices, add its clipboard shortcut in the Shortcuts app, then trigger it (e.g. Back Tap). The copied text appears on the Windows clipboard instantly over local Wi-Fi."}}, {"@type": "Question", "name": "Can the clipboard sync automatically?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. WinSend Pro unlocks automatic two-way clipboard sync so copied text transfers without any manual step."}}, {"@type": "Question", "name": "Does clipboard content go through a server?", "acceptedAnswer": {"@type": "Answer", "text": "No. On the same Wi-Fi the clipboard is sent directly between devices. The optional Cloud Sync relays only encrypted clipboard text end-to-end."}}]}
+    {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "How do I copy text from iPhone to Windows without a cable?", "acceptedAnswer": {"@type": "Answer", "text": "Install WinSend on both devices, add its clipboard shortcut in the Shortcuts app, then trigger it (e.g. Back Tap). The copied text appears on the Windows clipboard instantly over local Wi-Fi."}}, {"@type": "Question", "name": "Can the clipboard sync automatically?", "acceptedAnswer": {"@type": "Answer", "text": "Pro supports automatic text sync while iOS allows WinSend to run. It does not provide unrestricted background clipboard monitoring. To send from another app, run a configured Shortcut; trial/Pro access applies."}}, {"@type": "Question", "name": "Does clipboard content go through a server?", "acceptedAnswer": {"@type": "Answer", "text": "Local clipboard transfers go directly between devices. If optional Cloud Sync is configured, text may use the encrypted relay across networks or as a fallback when the local path fails. Cloud Sync supports text only."}}]}
     </script>
     <script src="/assets/js/posthog.js" defer></script>
 </head>
@@ -267,7 +267,7 @@
             <div class="flex items-center gap-6">
                 <a href="/en/#features" class="text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors hidden sm:block">Features</a>
                 <a href="/en/guides/" class="text-sm font-semibold text-gray-900 transition-colors hidden sm:block">Guides</a>
-                <a href="/en/#download" class="btn-primary inline-flex items-center gap-2 px-5 py-2.5 bg-blue-600 text-white text-sm font-semibold rounded-lg hover:bg-blue-700">Download</a>
+                <a href="/en/download/" class="btn-primary inline-flex items-center gap-2 px-5 py-2.5 bg-blue-600 text-white text-sm font-semibold rounded-lg hover:bg-blue-700">Download</a>
                 <a href="/zh/" class="text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors">中文</a>
             </div>
         </div>
@@ -299,7 +299,7 @@
                         Copy on iPhone, then paste on Windows over the same Wi-Fi. Use a WinSend Shortcut or Back Tap—no iCloud, cable, email, or manually sending messages to yourself.
                     </p>
                     <div class="flex flex-wrap gap-5 text-sm text-gray-500">
-                        <span>Updated: 2026-08-26</span>
+                        <span>Updated: 2026-10-08</span>
                         <span>Reading Time: ~4 minutes</span>
                         <span>For: iPhone + Windows Users</span>
                     </div>
@@ -571,6 +571,10 @@
                 </aside>
             </div>
         </section>
+
+        <section id="product-scope" class="px-6 py-12"><div class="max-w-4xl mx-auto rounded-2xl border border-gray-200 p-6"><h2 class="text-2xl font-bold mb-3">Transfer modes and feature access</h2><p class="text-gray-600 leading-8">Local manual clipboard and file transfers are free. Automatic clipboard sync requires Pro; Shortcuts and cloud transfers have trial/Pro access. See the app for current offers. Files and photos require a reachable local network. Cloud Sync needs internet and supports clipboard text only. Automatic sync does not bypass iOS background or clipboard restrictions. Shortcuts require iOS 16+ and must be triggered. WinSend is an AirDrop-style alternative, not Apple AirDrop. WinSend does not deliberately compress transferred files; source apps or system export may change their representation, and device/network/storage limits still apply.</p></div></section>
+
+        <section id="verified-faq" class="px-6 py-12"><div class="max-w-4xl mx-auto space-y-4"><h2 class="text-2xl font-bold">Frequently asked questions</h2><details class="rounded-2xl border border-gray-200 p-6"><summary class="font-bold">How do I copy text from iPhone to Windows without a cable?</summary><p class="mt-4 text-gray-600 leading-8">Install WinSend on both devices, add its clipboard shortcut in the Shortcuts app, then trigger it (e.g. Back Tap). The copied text appears on the Windows clipboard instantly over local Wi-Fi.</p></details><details class="rounded-2xl border border-gray-200 p-6"><summary class="font-bold">Can the clipboard sync automatically?</summary><p class="mt-4 text-gray-600 leading-8">Pro supports automatic text sync while iOS allows WinSend to run. It does not provide unrestricted background clipboard monitoring. To send from another app, run a configured Shortcut; trial/Pro access applies.</p></details><details class="rounded-2xl border border-gray-200 p-6"><summary class="font-bold">Does clipboard content go through a server?</summary><p class="mt-4 text-gray-600 leading-8">Local clipboard transfers go directly between devices. If optional Cloud Sync is configured, text may use the encrypted relay across networks or as a fallback when the local path fails. Cloud Sync supports text only.</p></details></div></section>
     </main>
 
     <footer class="py-16 px-6 bg-gray-900 text-gray-400">
@@ -581,14 +585,14 @@
                         <img src="/logo.png" alt="WinSend Logo" class="w-9 h-9 rounded-xl" decoding="async" loading="lazy">
                         <span class="text-xl font-bold text-white">WinSend</span>
                     </div>
-                    <p class="text-sm leading-relaxed max-w-md">AirDrop for Windows.<br>Seamlessly transfer files between iPhone and Windows via local Wi-Fi or internet.</p>
+                    <p class="text-sm leading-relaxed max-w-md">AirDrop for Windows.<br>Transfer files over your local network; share clipboard text across networks with optional Cloud Sync.</p>
                 </div>
                 <div>
                     <div class="text-white font-semibold mb-4">Product</div>
                     <ul class="space-y-3 text-sm">
                         <li><a href="/en/#features" class="hover:text-white transition-colors">Features</a></li>
                         <li><a href="/en/guides/" class="hover:text-white transition-colors">Guide Center</a></li>
-                        <li><a href="/en/#download" class="hover:text-white transition-colors">Download</a></li>
+                        <li><a href="/en/download/" class="hover:text-white transition-colors">Download</a></li>
                     </ul>
                 </div>
                 <div>

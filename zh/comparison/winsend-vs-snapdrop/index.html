@@ -58,17 +58,17 @@
                 {
                     "@type": "Question",
                     "name": "为什么 Snapdrop 找不到我的设备？",
-                    "acceptedAnswer": { "@type": "Answer", "text": "Snapdrop 通过公共的 snapdrop.net 服务器发现设备：两端浏览器都必须连上该服务器，而它只会把公网 IP 看起来相同的设备配对在一起。所以当任一端开着 VPN、路由器开启了客户端隔离（访客网络、办公网、校园网常见的 AP 隔离），或两台设备通过不同线路访问互联网时，发现就会失败。如果设备发现一直失败，像 WinSend 这样的原生应用是更可靠的替代——它直接在局域网内发现设备，自动发现被阻断时还可以用“手动连接”输入 IP 地址作为后备方案。" }
+                    "acceptedAnswer": { "@type": "Answer", "text": "Snapdrop 通过公共的 snapdrop.net 服务器发现设备：两端浏览器都必须连上该服务器，而它只会把公网 IP 看起来相同的设备配对在一起。所以当任一端开着 VPN、路由器开启了客户端隔离（访客网络、办公网、校园网常见的 AP 隔离），或两台设备通过不同线路访问互联网时，发现就会失败。WinSend 提供本地发现；设备可互通时，可用手动 IP 后备。手动 IP 不能绕过客户端隔离或防火墙阻断，请切换到可信专用网络或联系管理员。" }
                 },
                 {
                     "@type": "Question",
                     "name": "Snapdrop 安全吗？",
-                    "acceptedAnswer": { "@type": "Answer", "text": "Snapdrop 通过 WebRTC 点对点传输文件，文件数据直接在两个浏览器之间传输，并由 WebRTC 在传输过程中加密。但设备发现和信令依赖公共的 snapdrop.net 服务器，因此使用时必须能连接这个第三方服务。WinSend 完全避免了这一点：发现和传输都在你的本地网络内完成，不涉及任何公共服务器。" }
+                    "acceptedAnswer": { "@type": "Answer", "text": "Snapdrop 通过 WebRTC 点对点传输文件，文件数据直接在两个浏览器之间传输，并由 WebRTC 在传输过程中加密。但设备发现和信令依赖公共的 snapdrop.net 服务器，因此使用时必须能连接这个第三方服务。WinSend 的本地发现和文件传输不需要公共发现服务器；可选云剪贴板则使用加密中转。" }
                 },
                 {
                     "@type": "Question",
                     "name": "WinSend 是 Snapdrop 的好替代品吗？",
-                    "acceptedAnswer": { "@type": "Answer", "text": "如果你的设备是 iPhone 和 Windows 电脑，答案是肯定的。WinSend 是原生应用组合，在局域网内发现设备（带手动 IP 后备方案），集成了 iOS 分享面板，支持自动双向剪贴板同步，且不依赖任何公共服务器。如果你要给 Android、Mac 或 Linux 设备传文件——或者要零安装地给别人的电脑传一次文件——Snapdrop 的浏览器方案更方便。" }
+                    "acceptedAnswer": { "@type": "Answer", "text": "如果你的设备是 iPhone 和 Windows 电脑，答案是肯定的。WinSend 是原生应用组合，在局域网内发现设备（带手动 IP 后备方案），集成了 iOS 分享面板，支持 Pro 自动文字同步（受 iOS 运行限制），以及主动触发的快捷指令，本地文件传输不依赖公共服务器；可选云剪贴板使用中转服务。如果你要给 Android、Mac 或 Linux 设备传文件——或者要零安装地给别人的电脑传一次文件——Snapdrop 的浏览器方案更方便。" }
                 },
                 {
                     "@type": "Question",
@@ -84,7 +84,7 @@
     <nav aria-label="主导航" class="fixed top-0 left-0 right-0 bg-white/70 backdrop-blur-xl z-50 border-b border-gray-100">
         <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
             <a href="/zh/" class="flex items-center gap-3"><img src="/logo.png" alt="WinSend Logo" class="w-9 h-9 rounded-xl" decoding="async"><span class="text-xl font-bold tracking-tight">WinSend</span></a>
-            <div class="flex items-center gap-6"><a href="/zh/#features" class="text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors hidden sm:block">功能特性</a><a href="/zh/guides/" class="text-sm font-semibold text-gray-900 transition-colors hidden sm:block">教程</a><a href="/zh/#download" class="btn-primary inline-flex items-center gap-2 px-5 py-2.5 bg-blue-600 text-white text-sm font-semibold rounded-lg hover:bg-blue-700">下载</a><a href="/en/comparison/winsend-vs-snapdrop/" class="text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors">English</a></div>
+            <div class="flex items-center gap-6"><a href="/zh/#features" class="text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors hidden sm:block">功能特性</a><a href="/zh/guides/" class="text-sm font-semibold text-gray-900 transition-colors hidden sm:block">教程</a><a href="/zh/download/" class="btn-primary inline-flex items-center gap-2 px-5 py-2.5 bg-blue-600 text-white text-sm font-semibold rounded-lg hover:bg-blue-700">下载</a><a href="/en/comparison/winsend-vs-snapdrop/" class="text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors">English</a></div>
         </div>
     </nav>
     <main>
@@ -103,7 +103,7 @@
                 <article class="prose">
                     <h2>快速结论</h2>
                     <ul>
-                        <li><strong>选择 WinSend</strong>：如果你经常在自己的 iPhone 和 Windows 电脑之间传输，希望每次都能成功——局域网发现加手动 IP 后备、分享面板发送、自动剪贴板同步，全程不经过公共服务器。</li>
+                        <li><strong>选择 WinSend</strong>：如果你经常在自己的 iPhone 和 Windows 电脑之间传输，希望使用原生本地传输流程——局域网发现加手动 IP 后备、分享面板发送、Pro 自动文字同步（受 iOS 运行限制）与快捷指令，本地文件无需公共发现服务器；可选云剪贴板经过中转。</li>
                         <li><strong>选择 Snapdrop</strong>：临时给别人的设备传文件，或者涉及 Android、Mac、Linux——什么都不用装，浏览器打开网站就行。</li>
                     </ul>
 
@@ -150,7 +150,7 @@
                                 </tr>
                                 <tr>
                                     <td><strong>剪贴板同步</strong></td>
-                                    <td class="win">自动、双向</td>
+                                    <td class="win">文字同步 / 快捷指令；受 iOS 与 Pro 权益限制</td>
                                     <td>不支持</td>
                                 </tr>
                                 <tr>
@@ -165,7 +165,7 @@
                                 </tr>
                                 <tr>
                                     <td><strong>价格</strong></td>
-                                    <td>核心功能免费；高级功能需 Pro 订阅</td>
+                                    <td>核心功能免费；高级功能需 Pro 权益</td>
                                     <td class="win">免费</td>
                                 </tr>
                             </tbody>
@@ -175,7 +175,7 @@
                     <h2>WinSend 的优势</h2>
 
                     <h3>1. 真正可靠的设备发现——不依赖公共服务器</h3>
-                    <p>Snapdrop 通过公共的 snapdrop.net 服务器发现设备，它只把公网 IP 相同的浏览器配对在一起。仅这一个设计就解释了大多数“Snapdrop 无法使用”的反馈：任一端开着 VPN、访客或办公网络的 AP 隔离、校园网路由，都会让发现失败。WinSend 直接在你的局域网内发现设备；自动发现被阻断时，还可以用“手动连接”输入电脑的 IP 地址——整条链路上根本没有第三方服务器。</p>
+                    <p>Snapdrop 通过公共的 snapdrop.net 服务器发现设备，它只把公网 IP 相同的浏览器配对在一起。仅这一个设计就解释了大多数“Snapdrop 无法使用”的反馈：任一端开着 VPN、访客或办公网络的 AP 隔离、校园网路由，都会让发现失败。WinSend 在本地发现设备；设备可互通但发现失败时可尝试手动 IP。它不能绕过 AP 隔离或防火墙。本地文件无需公共发现服务器；可选云剪贴板会经过中转。</p>
 
                     <h3>2. 从分享面板直接发送——无需切换应用</h3>
                     <p>用 Snapdrop，你得打开浏览器标签页，等设备互相发现，然后挑选文件。用 WinSend，你在 iPhone 相册里选中照片，点分享，选 WinSend，文件就落到电脑上了。你始终不用离开当前应用——这正是 AirDrop 在 Mac 上的工作方式。</p>
@@ -188,8 +188,8 @@
                         <p class="screenshot-caption">选中、分享、完成——文件已经在你的 Windows 电脑上。</p>
                     </div>
 
-                    <h3>3. 自动双向剪贴板同步</h3>
-                    <p>在 Windows 电脑上复制一段文字、一个链接或一张图片，它会自动出现在 iPhone 上——反之亦然。Snapdrop 完全没有剪贴板同步功能。如果你每天在设备间复制粘贴超过几次，仅凭这一点就值得选 WinSend。详见<a href="/zh/guides/copy-iphone-to-windows/">如何用快捷指令和轻点背面实现剪贴板同步</a>。</p>
+                    <h3>3. Pro 自动文字同步（受 iOS 运行限制），以及主动触发的快捷指令</h3>
+                    <p>剪贴板文字可以双向传输。Pro 自动文字同步受 iOS 运行限制；已配置的快捷指令需要主动触发。剪贴板图片使用支持的局域网手动/快捷指令路径，不能经云同步传输。Snapdrop 完全没有剪贴板同步功能。如果你每天在设备间复制粘贴超过几次，仅凭这一点就值得选 WinSend。详见<a href="/zh/guides/copy-iphone-to-windows/">如何用快捷指令和轻点背面实现剪贴板同步</a>。</p>
 
                     <h3>4. 配对设备自动接收</h3>
                     <p>配对完成后，电脑无需任何人操作即可自动接收文件——当电脑在房间另一头，或你要批量传照片时尤其有用。Snapdrop 要求接收方在浏览器中确认每一个文件。</p>
@@ -208,12 +208,12 @@
                     </div>
 
                     <h2>隐私与安全</h2>
-                    <p>Snapdrop 通过 WebRTC 点对点传输文件数据，传输过程加密，文件内容不经过服务器。但设备发现和信令依赖公共的 snapdrop.net 服务，也就是说两端浏览器都必须能连上这个第三方服务器，设备才能互相看到。WinSend 完全在本地网络上工作：发现和传输从不离开你的 Wi-Fi，也没有任何账号或云端组件。</p>
+                    <p>Snapdrop 通过 WebRTC 点对点传输文件数据，传输过程加密，文件内容不经过服务器。但设备发现和信令依赖公共的 snapdrop.net 服务，也就是说两端浏览器都必须能连上这个第三方服务器，设备才能互相看到。WinSend 的本地发现和文件传输不需要公共发现服务器。可选云同步通过中转服务传输加密的剪贴板文字。本地 HTTP 传输应在可信的专用网络使用。</p>
 
                     <h2>谁该选哪一个？</h2>
                     <ul>
                         <li><strong>iPhone + Windows 电脑、日常传输、希望每次都成功</strong> → <strong>WinSend</strong>。</li>
-                        <li><strong>Snapdrop 总是找不到你的设备（VPN、访客网络、AP 隔离）</strong> → <strong>WinSend</strong>，局域网发现加手动 IP 后备。</li>
+                        <li><strong>设备可互通但发现失败</strong> → 可尝试 WinSend 本地发现或手动 IP；遇到 AP 隔离或路由阻断，请先切换到可信专用网络。</li>
                         <li><strong>临时给别人的设备传一次文件</strong> → <strong>Snapdrop</strong>，无需安装。</li>
                         <li><strong>还有 Android、Mac 或 Linux 设备</strong> → <strong>Snapdrop</strong>。</li>
                     </ul>
@@ -222,15 +222,15 @@
                     <h2>常见问题</h2>
                     <div class="faq-item">
                         <h3>为什么 Snapdrop 找不到我的设备？</h3>
-                        <p>Snapdrop 通过公共的 snapdrop.net 服务器发现设备：两端浏览器都必须连上该服务器，而它只会把公网 IP 看起来相同的设备配对在一起。所以当任一端开着 VPN、路由器开启了客户端隔离（访客网络、办公网、校园网常见的 AP 隔离），或两台设备通过不同线路访问互联网时，发现就会失败。如果设备发现一直失败，像 WinSend 这样的原生应用是更可靠的替代——它直接在局域网内发现设备，自动发现被阻断时还可以用“手动连接”输入 IP 地址作为后备方案。</p>
+                        <p>Snapdrop 通过公共的 snapdrop.net 服务器发现设备：两端浏览器都必须连上该服务器，而它只会把公网 IP 看起来相同的设备配对在一起。所以当任一端开着 VPN、路由器开启了客户端隔离（访客网络、办公网、校园网常见的 AP 隔离），或两台设备通过不同线路访问互联网时，发现就会失败。WinSend 提供本地发现；设备可互通时，可用手动 IP 后备。手动 IP 不能绕过客户端隔离或防火墙阻断，请切换到可信专用网络或联系管理员。</p>
                     </div>
                     <div class="faq-item">
                         <h3>Snapdrop 安全吗？</h3>
-                        <p>Snapdrop 通过 WebRTC 点对点传输文件，文件数据直接在两个浏览器之间传输，并由 WebRTC 在传输过程中加密。但设备发现和信令依赖公共的 snapdrop.net 服务器，因此使用时必须能连接这个第三方服务。WinSend 完全避免了这一点：发现和传输都在你的本地网络内完成，不涉及任何公共服务器。</p>
+                        <p>Snapdrop 通过 WebRTC 点对点传输文件，文件数据直接在两个浏览器之间传输，并由 WebRTC 在传输过程中加密。但设备发现和信令依赖公共的 snapdrop.net 服务器，因此使用时必须能连接这个第三方服务。WinSend 的本地发现和文件传输不需要公共发现服务器；可选云剪贴板则使用加密中转。</p>
                     </div>
                     <div class="faq-item">
                         <h3>WinSend 是 Snapdrop 的好替代品吗？</h3>
-                        <p>如果你的设备是 iPhone 和 Windows 电脑，答案是肯定的。WinSend 是原生应用组合，在局域网内发现设备（带手动 IP 后备方案），集成了 iOS 分享面板，支持自动双向剪贴板同步，且不依赖任何公共服务器。如果你要给 Android、Mac 或 Linux 设备传文件——或者要零安装地给别人的电脑传一次文件——Snapdrop 的浏览器方案更方便。</p>
+                        <p>如果你的设备是 iPhone 和 Windows 电脑，答案是肯定的。WinSend 是原生应用组合，在局域网内发现设备（带手动 IP 后备方案），集成了 iOS 分享面板，支持 Pro 自动文字同步（受 iOS 运行限制），以及主动触发的快捷指令，本地文件传输不依赖公共服务器；可选云剪贴板使用中转服务。如果你要给 Android、Mac 或 Linux 设备传文件——或者要零安装地给别人的电脑传一次文件——Snapdrop 的浏览器方案更方便。</p>
                     </div>
                     <div class="faq-item">
                         <h3>Snapdrop 真的不用安装任何东西吗？</h3>
@@ -240,11 +240,13 @@
                     <h2>试试 WinSend</h2>
                     <p>如果你的日常组合是 iPhone 加 Windows 电脑，下载 WinSend，按照<a href="/zh/guides/setup/">安装教程</a>操作，不到一分钟即可完成配对。</p>
                     <div class="mt-8 mb-12">
-                        <a href="/zh/#download" class="btn-primary inline-flex items-center gap-2 px-8 py-4 bg-blue-700 text-white text-lg font-semibold rounded-xl hover:bg-blue-800 transition-all shadow-lg shadow-blue-700/30">下载 WinSend for Windows</a>
+                        <a href="/zh/download/" class="btn-primary inline-flex items-center gap-2 px-8 py-4 bg-blue-700 text-white text-lg font-semibold rounded-xl hover:bg-blue-800 transition-all shadow-lg shadow-blue-700/30">下载 WinSend for Windows</a>
                     </div>
                 </article>
             </div>
         </section>
+
+        <section id="product-scope" class="px-6 py-12"><div class="max-w-4xl mx-auto rounded-2xl border border-gray-200 p-6"><h2 class="text-2xl font-bold mb-3">传输方式与功能权益</h2><p class="text-gray-600 leading-8">本地手动剪贴板和文件传输免费。自动剪贴板同步需要 Pro；快捷指令和云传输提供体验/Pro 权益，具体方案以应用内为准。 文件和照片需要可互通的局域网。云同步需要互联网，只支持剪贴板文字。自动同步不能绕过 iOS 后台运行或剪贴板限制。快捷指令要求 iOS 16+，需要主动触发。WinSend 是类似 AirDrop 的替代方案，不是 Apple AirDrop。 WinSend 不主动压缩传输文件；来源应用或系统导出可能改变文件表示，实际传输仍受设备、网络与存储条件限制。</p></div></section>
     </main>
 
     <footer class="py-16 px-6 bg-gray-900 text-gray-400">
@@ -262,7 +264,7 @@
                     <ul class="space-y-3 text-sm">
                         <li><a href="/zh/#features" class="hover:text-white transition-colors">功能特性</a></li>
                         <li><a href="/zh/guides/" class="hover:text-white transition-colors">教程中心</a></li>
-                        <li><a href="/zh/#download" class="hover:text-white transition-colors">下载</a></li>
+                        <li><a href="/zh/download/" class="hover:text-white transition-colors">下载</a></li>
                     </ul>
                 </div>
                 <div>

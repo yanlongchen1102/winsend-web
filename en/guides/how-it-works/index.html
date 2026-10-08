@@ -22,7 +22,7 @@
     <nav aria-label="Main navigation" class="fixed top-0 left-0 right-0 bg-white/70 backdrop-blur-xl z-50 border-b border-gray-100">
         <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
             <a href="/en/" class="flex items-center gap-3"><img src="/logo.png" alt="WinSend Logo" class="w-9 h-9 rounded-xl" decoding="async"><span class="text-xl font-bold tracking-tight">WinSend</span></a>
-            <div class="flex items-center gap-6"><a href="/en/#features" class="text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors hidden sm:block">Features</a><a href="/en/guides/" class="text-sm font-semibold text-gray-900 transition-colors hidden sm:block">Guides</a><a href="/en/#download" class="inline-flex items-center gap-2 px-5 py-2.5 bg-blue-600 text-white text-sm font-semibold rounded-lg hover:bg-blue-700">Download</a><a href="/zh/" class="text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors">中文</a></div>
+            <div class="flex items-center gap-6"><a href="/en/#features" class="text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors hidden sm:block">Features</a><a href="/en/guides/" class="text-sm font-semibold text-gray-900 transition-colors hidden sm:block">Guides</a><a href="/en/download/" class="inline-flex items-center gap-2 px-5 py-2.5 bg-blue-600 text-white text-sm font-semibold rounded-lg hover:bg-blue-700">Download</a><a href="/zh/" class="text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors">中文</a></div>
         </div>
     </nav>
     <main>
@@ -33,23 +33,23 @@
                     <header>
                         <p class="text-sm font-semibold tracking-[0.24em] text-blue-600 uppercase mb-4">How It Works</p>
                         <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight mb-6">How WinSend Works</h1>
-                        <p class="text-xl text-gray-600 leading-9 max-w-3xl">WinSend entirely uses local network transfer technology and automatically discovers devices through mDNS. Achieves auto-pairing, high-speed transfer, and absolutely secure iPhone and Windows cross-system sync in unified network environment.</p>
+                        <p class="text-xl text-gray-600 leading-9 max-w-3xl">WinSend discovers nearby devices using mDNS and transfers files over your local network. Optional Cloud Sync shares clipboard text across networks; it does not transfer files or photos.</p>
                     </header>
                     <section class="rounded-3xl border border-blue-100 bg-white p-8 shadow-lg shadow-blue-100/50">
                         <h2 class="text-2xl font-bold tracking-tight mb-4">Core Features</h2>
-                        <p class="text-gray-600 leading-8 mb-4">Meanwhile WinSend App works with iPhone Shortcuts to achieve clipboard copy and transfer without opening the app. Under iOS limitations on app background operation, it almost achieves perfect system-level seamless transfer.</p>
+                        <p class="text-gray-600 leading-8 mb-4">After setup, run a WinSend Shortcut to send or fetch clipboard content without first opening the main app. Shortcuts require iOS 16 or later and trial/Pro access. They do not provide continuous background clipboard monitoring.</p>
                         <ul class="space-y-2 text-gray-600">
                             <li class="flex items-start gap-2">
                                 <span class="text-blue-600 mt-1">✓</span>
-                                <span>Local network transfer, data doesn't go through third-party servers</span>
+                                <span>Local file transfer without a cloud upload; optional cloud clipboard for text</span>
                             </li>
                             <li class="flex items-start gap-2">
                                 <span class="text-blue-600 mt-1">✓</span>
-                                <span>mDNS auto-discovery, no manual IP configuration needed</span>
+                                <span>mDNS discovery with a manual IP fallback when devices are reachable</span>
                             </li>
                             <li class="flex items-start gap-2">
                                 <span class="text-blue-600 mt-1">✓</span>
-                                <span>Works with Shortcuts for true seamless transfer</span>
+                                <span>Configured Shortcuts can be triggered with Back Tap</span>
                             </li>
                         </ul>
                     </section>
@@ -61,25 +61,25 @@
                 <article class="rounded-[2rem] border border-gray-200 bg-white p-8 sm:p-10 shadow-sm">
                     <section class="mb-10">
                         <h2 class="text-3xl font-bold tracking-tight mb-4">Technical Principle</h2>
-                        <p class="text-gray-600 leading-8 mb-4">WinSend entirely uses local network transfer technology and automatically discovers devices through mDNS (Multicast DNS). This means on the same network, iPhone and Windows can automatically discover each other and pair without complex configuration process.</p>
+                        <p class="text-gray-600 leading-8 mb-4">On a reachable local network, mDNS (Multicast DNS) discovers your PC. Local transfers use HTTP/WebSocket connections, rather than end-to-end encryption, so use a trusted private network. A wired PC and a Wi-Fi iPhone can work on the same LAN. If discovery fails, manual IP entry can help, but cannot bypass firewall rules or client isolation.</p>
                         <p class="text-gray-600 leading-8">The advantages of this approach are:</p>
                         <ul class="list-disc pl-5 space-y-3 text-gray-600 leading-8 mt-4">
-                            <li><strong>Data Security</strong>: All data is transferred within local network, not through any third-party servers</li>
+                            <li><strong>Data Security</strong>: Local files stay on the LAN; optional cloud clipboard encrypts text on the clients before relaying it</li>
                             <li><strong>Transfer Speed</strong>: Local network transfer is much faster than cloud relay</li>
-                            <li><strong>Zero Configuration</strong>: Auto-discovers devices, no need to enter IP addresses or verification codes</li>
+                            <li><strong>Device Discovery</strong>: Automatic local discovery; manual IP fallback and optional cloud sync require separate setup</li>
                         </ul>
                     </section>
 
                     <section class="mb-10">
                         <h2 class="text-3xl font-bold tracking-tight mb-4">Implementation of Seamless Transfer</h2>
-                        <p class="text-gray-600 leading-8 mb-4">Traditional transfer tools require opening the app, selecting devices, confirming sends every time - the whole process is tedious and easily interrupts workflow. WinSend achieves true seamless transfer by cleverly utilizing iOS Shortcuts functionality.</p>
+                        <p class="text-gray-600 leading-8 mb-4">WinSend offers manually triggered Shortcuts for clipboard transfer. Automatic text sync is a separate Pro feature and remains subject to iOS execution and clipboard-access restrictions.</p>
                         <p class="text-gray-600 leading-8 mb-4">Specific implementation:</p>
                         <ol class="list-decimal pl-5 space-y-3 text-gray-600 leading-8 mt-4">
                             <li>Configure WinSend transfer script in Shortcuts app</li>
                             <li>Bind shortcut to iPhone's "Back Tap" gesture</li>
                             <li>After copying content in any app, tap back of phone to trigger transfer</li>
                         </ol>
-                        <p class="text-gray-600 leading-8 mt-4">This design allows WinSend to achieve near system-level seamless transfer experience even under iOS strict limitations on app background operation.</p>
+                        <p class="text-gray-600 leading-8 mt-4">You still need to trigger the Shortcut. With cloud sync configured, text can use the relay across networks or when the local text path fails. Images and files require the local path.</p>
                     </section>
 
                     <section>
@@ -89,7 +89,7 @@
                             <li><strong>High-Frequency Small Content Transfer</strong>: Quick sync of daily content like text, links, verification codes</li>
                             <li><strong>Cross-Device Workflow</strong>: Seamless work switching between iPhone and Windows</li>
                             <li><strong>Temporary File Transfer</strong>: Photos, documents and other files temporarily needed to share</li>
-                            <li><strong>Privacy-Sensitive Content</strong>: Scenarios where data must not go through third-party servers</li>
+                            <li><strong>Privacy-Sensitive Content</strong>: Local file workflows on a trusted private LAN; leave cloud sync disabled when text must not use a relay</li>
                         </ul>
                     </section>
                 </article>
@@ -98,7 +98,9 @@
                 </aside>
             </div>
         </section>
+
+        <section id="product-scope" class="px-6 py-12"><div class="max-w-4xl mx-auto rounded-2xl border border-gray-200 p-6"><h2 class="text-2xl font-bold mb-3">Transfer modes and feature access</h2><p class="text-gray-600 leading-8">Local manual clipboard and file transfers are free. Automatic clipboard sync requires Pro; Shortcuts and cloud transfers have trial/Pro access. See the app for current offers. Files and photos require a reachable local network. Cloud Sync needs internet and supports clipboard text only. Automatic sync does not bypass iOS background or clipboard restrictions. Shortcuts require iOS 16+ and must be triggered. WinSend is an AirDrop-style alternative, not Apple AirDrop. WinSend does not deliberately compress transferred files; source apps or system export may change their representation, and device/network/storage limits still apply.</p></div></section>
     </main>
-    <footer class="py-16 px-6 bg-gray-900 text-gray-400"><div class="max-w-6xl mx-auto"><div class="grid md:grid-cols-4 gap-12 mb-12"><div class="md:col-span-2"><div class="flex items-center gap-3 mb-4"><img src="/logo.png" alt="WinSend Logo" class="w-9 h-9 rounded-xl" decoding="async" loading="lazy"><span class="text-xl font-bold text-white">WinSend</span></div><p class="text-sm leading-relaxed max-w-md">AirDrop for Windows.<br>Seamlessly transfer files between iPhone and Windows via local Wi-Fi or internet.</p></div><div><div class="text-white font-semibold mb-4">Product</div><ul class="space-y-3 text-sm"><li><a href="/en/#features" class="hover:text-white transition-colors">Features</a></li><li><a href="/en/guides/" class="hover:text-white transition-colors">Guide Center</a></li><li><a href="/en/#download" class="hover:text-white transition-colors">Download</a></li></ul></div><div><div class="text-white font-semibold mb-4">Contact Us</div><ul class="space-y-3 text-sm"><li><a href="#" class="hover:text-white transition-colors">GitHub</a></li><li><a href="#" class="hover:text-white transition-colors">Twitter</a></li><li><a href="#" class="hover:text-white transition-colors">Contact</a></li></ul></div></div><div class="pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center gap-4 text-sm"><p>&copy; 2025 WinSend. All rights reserved.</p><p>Built for iPhone and Windows users</p></div></div></footer>
+    <footer class="py-16 px-6 bg-gray-900 text-gray-400"><div class="max-w-6xl mx-auto"><div class="grid md:grid-cols-4 gap-12 mb-12"><div class="md:col-span-2"><div class="flex items-center gap-3 mb-4"><img src="/logo.png" alt="WinSend Logo" class="w-9 h-9 rounded-xl" decoding="async" loading="lazy"><span class="text-xl font-bold text-white">WinSend</span></div><p class="text-sm leading-relaxed max-w-md">AirDrop for Windows.<br>Transfer files over your local network; share clipboard text across networks with optional Cloud Sync.</p></div><div><div class="text-white font-semibold mb-4">Product</div><ul class="space-y-3 text-sm"><li><a href="/en/#features" class="hover:text-white transition-colors">Features</a></li><li><a href="/en/guides/" class="hover:text-white transition-colors">Guide Center</a></li><li><a href="/en/download/" class="hover:text-white transition-colors">Download</a></li></ul></div><div><div class="text-white font-semibold mb-4">Contact Us</div><ul class="space-y-3 text-sm"><li><a href="#" class="hover:text-white transition-colors">GitHub</a></li><li><a href="#" class="hover:text-white transition-colors">Twitter</a></li><li><a href="#" class="hover:text-white transition-colors">Contact</a></li></ul></div></div><div class="pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center gap-4 text-sm"><p>&copy; 2025 WinSend. All rights reserved.</p><p>Built for iPhone and Windows users</p></div></div></footer>
 </body>
 </html>

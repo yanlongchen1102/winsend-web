@@ -20,11 +20,10 @@
             "@type": "SoftwareApplication",
             "name": "WinSend",
             "applicationCategory": "UtilitiesApplication",
-            "operatingSystem": "Windows 10/11, iOS 15+",
+            "operatingSystem": "Windows 10/11, iOS 15.6+ (Shortcuts: iOS 16+)",
             "description": "AirDrop-style file and clipboard transfer between iPhone and Windows over local Wi-Fi.",
             "url": "https://winsend.app/en/",
             "downloadUrl": "https://winsend.app/en/download/",
-            "softwareVersion": "2.2.4",
             "offers": {
                 "@type": "Offer",
                 "price": "0",
@@ -53,7 +52,7 @@
             "name": "Is WinSend safe?",
             "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Yes. Local transfers go directly between your devices over your local network, without a cloud upload or account."
+                "text": "Local files go directly between devices, but the local HTTP path is not end-to-end encrypted. Use a trusted private network. Optional cloud clipboard encrypts text on the clients; usage analytics are separate."
             }
         },
         {
@@ -61,7 +60,7 @@
             "name": "Does WinSend require internet?",
             "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Local file and clipboard transfers only require both devices to be on the same Wi-Fi network."
+                "text": "Local transfers require a reachable LAN, running apps and the relevant permissions; a wired PC on the same LAN also works. Client isolation or firewall rules can block access. Cloud clipboard additionally needs internet access."
             }
         },
         {
@@ -69,7 +68,7 @@
             "name": "What can I transfer?",
             "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "WinSend transfers photos, videos, files and clipboard text between iPhone and Windows."
+                "text": "WinSend transfers photos, videos and files over LAN, and clipboard text locally or with optional Cloud Sync. Source apps or system export may change the file representation."
             }
         },
         {
@@ -180,7 +179,7 @@
         <section class="bg-gray-50 px-5 py-24 sm:px-6">
             <div class="mx-auto grid max-w-6xl gap-6 md:grid-cols-3">
                 <article class="rounded-3xl border border-gray-200 bg-white p-8"><div class="mb-6 grid h-12 w-12 place-items-center rounded-2xl bg-blue-100 text-xl">⚡</div><h2 class="text-2xl font-bold">Direct and fast</h2><p class="mt-3 leading-7 text-gray-600">Devices discover each other on local Wi-Fi and transfer directly, with no separate cloud upload and download.</p></article>
-                <article class="rounded-3xl border border-gray-200 bg-white p-8"><div class="mb-6 grid h-12 w-12 place-items-center rounded-2xl bg-green-100 text-xl">✓</div><h2 class="text-2xl font-bold">Original quality</h2><p class="mt-3 leading-7 text-gray-600">Photos, videos and files arrive without compression or forced size limits.</p></article>
+                <article class="rounded-3xl border border-gray-200 bg-white p-8"><div class="mb-6 grid h-12 w-12 place-items-center rounded-2xl bg-green-100 text-xl">✓</div><h2 class="text-2xl font-bold">Original quality</h2><p class="mt-3 leading-7 text-gray-600">WinSend does not deliberately compress transferred files. Source-app exports, device resources, network conditions and available storage can still affect the result.</p></article>
                 <article class="rounded-3xl border border-gray-200 bg-white p-8"><div class="mb-6 grid h-12 w-12 place-items-center rounded-2xl bg-violet-100 text-xl">⌘</div><h2 class="text-2xl font-bold">Made for iPhone</h2><p class="mt-3 leading-7 text-gray-600">Use the iOS share sheet and Shortcuts instead of digging through folders or sending files to yourself.</p></article>
             </div>
         </section>
@@ -189,7 +188,7 @@
             <div class="mx-auto grid max-w-6xl gap-12 lg:grid-cols-[0.9fr_1.1fr] lg:items-center">
                 <div><p class="text-sm font-bold uppercase tracking-[0.18em] text-green-600">Private by default</p><h2 class="mt-4 text-4xl font-bold tracking-tight sm:text-5xl">Local sharing.<br>Encrypted cloud clipboard.</h2><p class="mt-6 text-lg leading-8 text-gray-600">Files transfer directly over your local network, without an account. For text sharing across networks, you can separately enable encrypted cloud clipboard sync.</p><a href="/en/safety/" class="mt-7 inline-flex font-semibold text-blue-700 hover:underline">Read about WinSend safety →</a></div>
                 <dl class="grid gap-4 sm:grid-cols-2">
-                    <div class="rounded-3xl bg-gray-950 p-7 text-white"><dt class="font-bold">Platforms</dt><dd class="mt-2 text-gray-300">Windows 10/11<br>iOS 15+</dd></div>
+                    <div class="rounded-3xl bg-gray-950 p-7 text-white"><dt class="font-bold">Platforms</dt><dd class="mt-2 text-gray-300">Windows 10/11<br>iOS 15.6+</dd></div>
                     <div class="rounded-3xl bg-blue-600 p-7 text-white"><dt class="font-bold">Connection</dt><dd class="mt-2 text-blue-100">Direct local Wi-Fi<br>Optional encrypted cloud clipboard</dd></div>
                     <div class="rounded-3xl border border-gray-200 p-7"><dt class="font-bold">Transfers</dt><dd class="mt-2 text-gray-600">Files, photos, videos and clipboard text</dd></div>
                     <div class="rounded-3xl border border-gray-200 p-7"><dt class="font-bold">Setup</dt><dd class="mt-2 text-gray-600">No account<br>No USB cable</dd></div>
@@ -201,9 +200,9 @@
             <div class="mx-auto max-w-3xl">
                 <div class="text-center"><h2 class="text-4xl font-bold tracking-tight sm:text-5xl">Questions, answered.</h2></div>
                 <div class="mt-12 space-y-4">
-                    <details class="group rounded-2xl border border-gray-200 bg-white p-6"><summary class="flex cursor-pointer list-none items-center justify-between text-lg font-bold">Is WinSend safe?<span class="text-blue-600 group-open:rotate-45">＋</span></summary><p class="mt-4 leading-7 text-gray-600">Yes. Local transfers go directly between your devices over your local network, without a cloud upload or account.</p></details>
-                    <details class="group rounded-2xl border border-gray-200 bg-white p-6"><summary class="flex cursor-pointer list-none items-center justify-between text-lg font-bold">Does WinSend require internet?<span class="text-blue-600 group-open:rotate-45">＋</span></summary><p class="mt-4 leading-7 text-gray-600">Local file and clipboard transfers only require both devices to be on the same Wi-Fi network. Optional Cloud Sync supports encrypted clipboard relay across networks.</p></details>
-                    <details class="group rounded-2xl border border-gray-200 bg-white p-6"><summary class="flex cursor-pointer list-none items-center justify-between text-lg font-bold">What can I transfer?<span class="text-blue-600 group-open:rotate-45">＋</span></summary><p class="mt-4 leading-7 text-gray-600">Photos, videos, files, and clipboard text. Photos and videos keep their original quality; files stay unchanged.</p></details>
+                    <details class="group rounded-2xl border border-gray-200 bg-white p-6"><summary class="flex cursor-pointer list-none items-center justify-between text-lg font-bold">Is WinSend safe?<span class="text-blue-600 group-open:rotate-45">＋</span></summary><p class="mt-4 leading-7 text-gray-600">Local files go directly between devices, but the local HTTP path is not end-to-end encrypted. Use a trusted private network. Optional cloud clipboard encrypts text on the clients; usage analytics are separate.</p></details>
+                    <details class="group rounded-2xl border border-gray-200 bg-white p-6"><summary class="flex cursor-pointer list-none items-center justify-between text-lg font-bold">Does WinSend require internet?<span class="text-blue-600 group-open:rotate-45">＋</span></summary><p class="mt-4 leading-7 text-gray-600">Local transfers require a reachable LAN, running apps and the relevant permissions; a wired PC on the same LAN also works. Client isolation or firewall rules can block access. Cloud clipboard additionally needs internet access. Optional Cloud Sync supports encrypted clipboard relay across networks.</p></details>
+                    <details class="group rounded-2xl border border-gray-200 bg-white p-6"><summary class="flex cursor-pointer list-none items-center justify-between text-lg font-bold">What can I transfer?<span class="text-blue-600 group-open:rotate-45">＋</span></summary><p class="mt-4 leading-7 text-gray-600">WinSend transfers photos, videos and files over LAN, and clipboard text locally or with optional Cloud Sync. Source apps or system export may change the file representation.</p></details>
                 <details class="group rounded-2xl border border-gray-200 bg-white p-6"><summary class="flex cursor-pointer list-none items-center justify-between text-lg font-bold">Can I use WinSend on different networks?<span class="text-blue-600 group-open:rotate-45">＋</span></summary><p class="mt-4 leading-7 text-gray-600">Yes. Enable cloud clipboard sync to share copied text when both devices have internet access. Files and photos still require a local network connection.</p></details><details class="group rounded-2xl border border-gray-200 bg-white p-6"><summary class="flex cursor-pointer list-none items-center justify-between text-lg font-bold">Can cloud clipboard transfer files or photos?<span class="text-blue-600 group-open:rotate-45">＋</span></summary><p class="mt-4 leading-7 text-gray-600">Cloud transfer supports clipboard text. Files and photos still transfer over your local network.</p></details><details class="group rounded-2xl border border-gray-200 bg-white p-6"><summary class="flex cursor-pointer list-none items-center justify-between text-lg font-bold">Does cloud clipboard need setup?<span class="text-blue-600 group-open:rotate-45">＋</span></summary><p class="mt-4 leading-7 text-gray-600">Yes. Open Cloud Sync on Windows, then enter the pairing code in WinSend’s Cloud Sync screen on iPhone and follow the in-app instructions.</p></details></div>
             </div>
         </section>
@@ -215,6 +214,8 @@
                 <div class="mt-8 flex flex-col justify-center gap-3 sm:flex-row"><a href="/en/download/" class="btn-primary rounded-xl bg-blue-600 px-7 py-4 font-semibold text-white hover:bg-blue-500">Download WinSend</a><a href="/en/guides/setup/" class="rounded-xl border border-gray-700 px-7 py-4 font-semibold text-white hover:bg-gray-800">View setup guide</a></div>
             </div>
         </section>
+
+        <section id="product-scope" class="px-6 py-12"><div class="max-w-4xl mx-auto rounded-2xl border border-gray-200 p-6"><h2 class="text-2xl font-bold mb-3">Transfer modes and feature access</h2><p class="text-gray-600 leading-8">Local manual clipboard and file transfers are free. Automatic clipboard sync requires Pro; Shortcuts and cloud transfers have trial/Pro access. See the app for current offers. Files and photos require a reachable local network. Cloud Sync needs internet and supports clipboard text only. Automatic sync does not bypass iOS background or clipboard restrictions. Shortcuts require iOS 16+ and must be triggered. WinSend is an AirDrop-style alternative, not Apple AirDrop. WinSend does not deliberately compress transferred files; source apps or system export may change their representation, and device/network/storage limits still apply.</p></div></section>
     </main>
 
     <footer class="bg-gray-950 px-5 py-14 text-gray-400 sm:px-6">

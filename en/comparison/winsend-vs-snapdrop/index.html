@@ -58,17 +58,17 @@
                 {
                     "@type": "Question",
                     "name": "Why does Snapdrop not find my device?",
-                    "acceptedAnswer": { "@type": "Answer", "text": "Snapdrop discovers devices through the public snapdrop.net server: both browsers must connect to it, and it only pairs devices that appear to share the same public IP address. That breaks when one device is on a VPN, when the router isolates clients (AP isolation on guest, office or campus networks), or when the two devices reach the internet through different routes. If discovery keeps failing, a native app like WinSend is the reliable alternative — it discovers devices directly on the local network and offers a manual IP connect fallback when automatic discovery is blocked." }
+                    "acceptedAnswer": { "@type": "Answer", "text": "Snapdrop discovers devices through the public snapdrop.net server: both browsers must connect to it, and it only pairs devices that appear to share the same public IP address. That breaks when one device is on a VPN, when the router isolates clients (AP isolation on guest, office or campus networks), or when the two devices reach the internet through different routes. WinSend offers native local discovery and a manual IP fallback when devices are reachable. Manual IP cannot bypass client isolation or firewall blocks; use a trusted private LAN or ask the network administrator." }
                 },
                 {
                     "@type": "Question",
                     "name": "Is Snapdrop safe?",
-                    "acceptedAnswer": { "@type": "Answer", "text": "Snapdrop transfers files peer-to-peer over WebRTC, so the file data itself goes directly between the two browsers and is encrypted in transit by WebRTC. However, device discovery and signaling depend on the public snapdrop.net server, so using it requires an internet connection to that third-party service. WinSend avoids this entirely: discovery and transfer both happen on your local network, with no public server involved." }
+                    "acceptedAnswer": { "@type": "Answer", "text": "Snapdrop transfers files peer-to-peer over WebRTC, so the file data itself goes directly between the two browsers and is encrypted in transit by WebRTC. However, device discovery and signaling depend on the public snapdrop.net server, so using it requires an internet connection to that third-party service. WinSend local discovery and file transfer do not require a public discovery server. Optional cloud clipboard uses a relay." }
                 },
                 {
                     "@type": "Question",
                     "name": "Is WinSend a good Snapdrop alternative?",
-                    "acceptedAnswer": { "@type": "Answer", "text": "Yes, if your devices are an iPhone and a Windows PC. WinSend is a native app pair that discovers devices on the local network (with a manual IP fallback), integrates into the iOS share sheet, syncs the clipboard automatically in both directions, and does not depend on any public server. If you need to send a file to an Android, Mac or Linux device — or to someone else's computer with zero install — Snapdrop's browser approach is more convenient." }
+                    "acceptedAnswer": { "@type": "Answer", "text": "Yes, if your devices are an iPhone and a Windows PC. WinSend is a native app pair that discovers devices on the local network (with a manual IP fallback), integrates into the iOS share sheet, supports manual clipboard transfer, Pro automatic text sync subject to iOS limits, and configured Shortcuts, and does not need a public server for local file transfer. Optional cloud clipboard uses a relay. If you need to send a file to an Android, Mac or Linux device — or to someone else's computer with zero install — Snapdrop's browser approach is more convenient." }
                 },
                 {
                     "@type": "Question",
@@ -84,7 +84,7 @@
     <nav aria-label="Main navigation" class="fixed top-0 left-0 right-0 bg-white/70 backdrop-blur-xl z-50 border-b border-gray-100">
         <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
             <a href="/en/" class="flex items-center gap-3"><img src="/logo.png" alt="WinSend Logo" class="w-9 h-9 rounded-xl" decoding="async"><span class="text-xl font-bold tracking-tight">WinSend</span></a>
-            <div class="flex items-center gap-6"><a href="/en/#features" class="text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors hidden sm:block">Features</a><a href="/en/guides/" class="text-sm font-semibold text-gray-900 transition-colors hidden sm:block">Guides</a><a href="/en/#download" class="btn-primary inline-flex items-center gap-2 px-5 py-2.5 bg-blue-600 text-white text-sm font-semibold rounded-lg hover:bg-blue-700">Download</a><a href="/zh/comparison/winsend-vs-snapdrop/" class="text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors">中文</a></div>
+            <div class="flex items-center gap-6"><a href="/en/#features" class="text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors hidden sm:block">Features</a><a href="/en/guides/" class="text-sm font-semibold text-gray-900 transition-colors hidden sm:block">Guides</a><a href="/en/download/" class="btn-primary inline-flex items-center gap-2 px-5 py-2.5 bg-blue-600 text-white text-sm font-semibold rounded-lg hover:bg-blue-700">Download</a><a href="/zh/comparison/winsend-vs-snapdrop/" class="text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors">中文</a></div>
         </div>
     </nav>
     <main>
@@ -103,7 +103,7 @@
                 <article class="prose">
                     <h2>Quick Verdict</h2>
                     <ul>
-                        <li><strong>Choose WinSend</strong> if you transfer between your own iPhone and Windows PC regularly and want it to work every time: local-network discovery with a manual IP fallback, share sheet sending, and automatic clipboard sync — no public server involved.</li>
+                        <li><strong>Choose WinSend</strong> if you transfer between your own iPhone and Windows PC regularly and want a native local-transfer workflow: local-network discovery with a manual IP fallback, share sheet sending, and Pro automatic text sync while iOS permits the app to run, plus manually triggered Shortcuts — no public discovery server needed for local files. Optional cloud clipboard uses a relay.</li>
                         <li><strong>Choose Snapdrop</strong> for one-off transfers to someone else's device, or when Android, Mac or Linux are involved — nothing to install, just open the website in a browser.</li>
                     </ul>
 
@@ -140,7 +140,7 @@
                                 </tr>
                                 <tr>
                                     <td><strong>Depends on a public server</strong></td>
-                                    <td class="win">No — local network only</td>
+                                    <td class="win">Not for local files; required for cloud text</td>
                                     <td>Yes — snapdrop.net handles discovery/signaling</td>
                                 </tr>
                                 <tr>
@@ -150,7 +150,7 @@
                                 </tr>
                                 <tr>
                                     <td><strong>Clipboard sync</strong></td>
-                                    <td class="win">Automatic, two-way</td>
+                                    <td class="win">Text sync / Shortcuts; iOS and Pro limits apply</td>
                                     <td>No</td>
                                 </tr>
                                 <tr>
@@ -165,7 +165,7 @@
                                 </tr>
                                 <tr>
                                     <td><strong>Price</strong></td>
-                                    <td>Free core features; Pro subscription for advanced features</td>
+                                    <td>Free core features; Pro access for advanced features</td>
                                     <td class="win">Free</td>
                                 </tr>
                             </tbody>
@@ -175,7 +175,7 @@
                     <h2>Where WinSend Wins</h2>
 
                     <h3>1. Discovery that actually works — no public server dependency</h3>
-                    <p>Snapdrop finds devices through the public snapdrop.net server, which pairs browsers that share the same public IP. That single design choice is behind most "Snapdrop not working" reports: a VPN on either device, a guest or office network with AP isolation, or a campus router all break discovery. WinSend discovers devices directly on your local network, and if automatic discovery is blocked you can fall back to manual connect by typing your PC's IP address — there is no third-party server in the path at all.</p>
+                    <p>Snapdrop finds devices through the public snapdrop.net server, which pairs browsers that share the same public IP. That single design choice is behind most "Snapdrop not working" reports: a VPN on either device, a guest or office network with AP isolation, or a campus router all break discovery. WinSend discovers devices locally and offers manual IP entry when devices are reachable but discovery fails. This does not bypass AP isolation or firewall blocks. Local file transfer needs no public discovery server; optional cloud clipboard uses a relay.</p>
 
                     <h3>2. Send from the share sheet — no app switching</h3>
                     <p>With Snapdrop you open a browser tab, wait for the devices to see each other, then pick the file. With WinSend, you select photos in the iPhone Photos app, tap Share, choose WinSend, and the file lands on your PC. You never leave the app you are in — exactly how AirDrop works on a Mac.</p>
@@ -188,8 +188,8 @@
                         <p class="screenshot-caption">Select, share, done — the file is already on your Windows PC.</p>
                     </div>
 
-                    <h3>3. Automatic two-way clipboard sync</h3>
-                    <p>Copy text, a link, or an image on your Windows PC and it appears on your iPhone — and vice versa. Snapdrop has no clipboard sync at all. If you copy and paste between devices more than a few times a day, this alone is the reason to pick WinSend. See <a href="/en/guides/copy-iphone-to-windows/">how clipboard sync works with Shortcuts and Back Tap</a>.</p>
+                    <h3>3. Clipboard text sync and triggered Shortcuts</h3>
+                    <p>Transfer clipboard text in either direction. Pro automatic text sync depends on iOS allowing the app to run; configured Shortcuts must be triggered. Clipboard images use supported local manual/Shortcut paths, not cloud sync. Snapdrop has no clipboard sync at all. If you copy and paste between devices more than a few times a day, this alone is the reason to pick WinSend. See <a href="/en/guides/copy-iphone-to-windows/">how clipboard sync works with Shortcuts and Back Tap</a>.</p>
 
                     <h3>4. Paired devices receive automatically</h3>
                     <p>Once paired, your PC accepts incoming files without anyone touching it — useful when your PC is across the room or you are transferring a batch of photos. Snapdrop requires the receiver to accept each file in the browser.</p>
@@ -208,12 +208,12 @@
                     </div>
 
                     <h2>Privacy and Security</h2>
-                    <p>Snapdrop transfers file data peer-to-peer over WebRTC, which encrypts traffic in transit, so file contents do not pass through the server. But discovery and signaling rely on the public snapdrop.net service, which means both browsers must be able to reach that third-party server for the tools to see each other. WinSend works entirely on your local network: discovery and transfer never leave your Wi-Fi, and there is no account or cloud component at all.</p>
+                    <p>Snapdrop transfers file data peer-to-peer over WebRTC, which encrypts traffic in transit, so file contents do not pass through the server. But discovery and signaling rely on the public snapdrop.net service, which means both browsers must be able to reach that third-party server for the tools to see each other. WinSend local discovery and file transfer do not require a public discovery server. Optional Cloud Sync uses a relay for encrypted clipboard text only. Local HTTP transfers should be used on a trusted private network.</p>
 
                     <h2>Who Should Choose Which?</h2>
                     <ul>
-                        <li><strong>iPhone + Windows PC, daily transfers, want it to work every time</strong> → <strong>WinSend</strong>.</li>
-                        <li><strong>Snapdrop keeps failing to find your devices (VPN, guest network, AP isolation)</strong> → <strong>WinSend</strong>, with its local discovery and manual IP fallback.</li>
+                        <li><strong>iPhone + Windows PC, daily transfers, want a native local-transfer workflow</strong> → <strong>WinSend</strong>.</li>
+                        <li><strong>Discovery fails but devices can reach each other</strong> → Try WinSend local discovery/manual IP. For AP isolation or blocked routes, change to a trusted private network first.</li>
                         <li><strong>One-time transfer to someone else's device</strong> → <strong>Snapdrop</strong> — nothing to install.</li>
                         <li><strong>Android, Mac or Linux in the mix</strong> → <strong>Snapdrop</strong>.</li>
                     </ul>
@@ -222,15 +222,15 @@
                     <h2>FAQ</h2>
                     <div class="faq-item">
                         <h3>Why does Snapdrop not find my device?</h3>
-                        <p>Snapdrop discovers devices through the public snapdrop.net server: both browsers must connect to it, and it only pairs devices that appear to share the same public IP address. That breaks when one device is on a VPN, when the router isolates clients (AP isolation on guest, office or campus networks), or when the two devices reach the internet through different routes. If discovery keeps failing, a native app like WinSend is the reliable alternative — it discovers devices directly on the local network and offers a manual IP connect fallback when automatic discovery is blocked.</p>
+                        <p>Snapdrop discovers devices through the public snapdrop.net server: both browsers must connect to it, and it only pairs devices that appear to share the same public IP address. That breaks when one device is on a VPN, when the router isolates clients (AP isolation on guest, office or campus networks), or when the two devices reach the internet through different routes. WinSend offers native local discovery and a manual IP fallback when devices are reachable. Manual IP cannot bypass client isolation or firewall blocks; use a trusted private LAN or ask the network administrator.</p>
                     </div>
                     <div class="faq-item">
                         <h3>Is Snapdrop safe?</h3>
-                        <p>Snapdrop transfers files peer-to-peer over WebRTC, so the file data itself goes directly between the two browsers and is encrypted in transit by WebRTC. However, device discovery and signaling depend on the public snapdrop.net server, so using it requires an internet connection to that third-party service. WinSend avoids this entirely: discovery and transfer both happen on your local network, with no public server involved.</p>
+                        <p>Snapdrop transfers files peer-to-peer over WebRTC, so the file data itself goes directly between the two browsers and is encrypted in transit by WebRTC. However, device discovery and signaling depend on the public snapdrop.net server, so using it requires an internet connection to that third-party service. WinSend local discovery and file transfer do not require a public discovery server. Optional cloud clipboard uses a relay.</p>
                     </div>
                     <div class="faq-item">
                         <h3>Is WinSend a good Snapdrop alternative?</h3>
-                        <p>Yes, if your devices are an iPhone and a Windows PC. WinSend is a native app pair that discovers devices on the local network (with a manual IP fallback), integrates into the iOS share sheet, syncs the clipboard automatically in both directions, and does not depend on any public server. If you need to send a file to an Android, Mac or Linux device — or to someone else's computer with zero install — Snapdrop's browser approach is more convenient.</p>
+                        <p>Yes, if your devices are an iPhone and a Windows PC. WinSend is a native app pair that discovers devices on the local network (with a manual IP fallback), integrates into the iOS share sheet, supports manual clipboard transfer, Pro automatic text sync subject to iOS limits, and configured Shortcuts, and does not need a public server for local file transfer. Optional cloud clipboard uses a relay. If you need to send a file to an Android, Mac or Linux device — or to someone else's computer with zero install — Snapdrop's browser approach is more convenient.</p>
                     </div>
                     <div class="faq-item">
                         <h3>Does Snapdrop work without installing anything?</h3>
@@ -240,11 +240,13 @@
                     <h2>Try WinSend</h2>
                     <p>If your daily setup is an iPhone and a Windows PC, download WinSend and pair it in under a minute with the <a href="/en/guides/setup/">installation guide</a>.</p>
                     <div class="mt-8 mb-12">
-                        <a href="/en/#download" class="btn-primary inline-flex items-center gap-2 px-8 py-4 bg-blue-700 text-white text-lg font-semibold rounded-xl hover:bg-blue-800 transition-all shadow-lg shadow-blue-700/30">Download WinSend for Windows</a>
+                        <a href="/en/download/" class="btn-primary inline-flex items-center gap-2 px-8 py-4 bg-blue-700 text-white text-lg font-semibold rounded-xl hover:bg-blue-800 transition-all shadow-lg shadow-blue-700/30">Download WinSend for Windows</a>
                     </div>
                 </article>
             </div>
         </section>
+
+        <section id="product-scope" class="px-6 py-12"><div class="max-w-4xl mx-auto rounded-2xl border border-gray-200 p-6"><h2 class="text-2xl font-bold mb-3">Transfer modes and feature access</h2><p class="text-gray-600 leading-8">Local manual clipboard and file transfers are free. Automatic clipboard sync requires Pro; Shortcuts and cloud transfers have trial/Pro access. See the app for current offers. Files and photos require a reachable local network. Cloud Sync needs internet and supports clipboard text only. Automatic sync does not bypass iOS background or clipboard restrictions. Shortcuts require iOS 16+ and must be triggered. WinSend is an AirDrop-style alternative, not Apple AirDrop. WinSend does not deliberately compress transferred files; source apps or system export may change their representation, and device/network/storage limits still apply.</p></div></section>
     </main>
 
     <footer class="py-16 px-6 bg-gray-900 text-gray-400">
@@ -255,14 +257,14 @@
                         <img src="/logo.png" alt="WinSend Logo" class="w-9 h-9 rounded-xl" decoding="async" loading="lazy">
                         <span class="text-xl font-bold text-white">WinSend</span>
                     </div>
-                    <p class="text-sm leading-relaxed max-w-md">AirDrop for Windows.<br>Seamlessly transfer files between iPhone and Windows via local Wi-Fi or internet.</p>
+                    <p class="text-sm leading-relaxed max-w-md">AirDrop for Windows.<br>Transfer files over your local network; share clipboard text across networks with optional Cloud Sync.</p>
                 </div>
                 <div>
                     <h4 class="text-white font-semibold mb-4">Product</h4>
                     <ul class="space-y-3 text-sm">
                         <li><a href="/en/#features" class="hover:text-white transition-colors">Features</a></li>
                         <li><a href="/en/guides/" class="hover:text-white transition-colors">Guide Center</a></li>
-                        <li><a href="/en/#download" class="hover:text-white transition-colors">Download</a></li>
+                        <li><a href="/en/download/" class="hover:text-white transition-colors">Download</a></li>
                     </ul>
                 </div>
                 <div>

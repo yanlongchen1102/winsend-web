@@ -20,11 +20,10 @@
             "@type": "SoftwareApplication",
             "name": "WinSend",
             "applicationCategory": "UtilitiesApplication",
-            "operatingSystem": "Windows 10/11, iOS 15+",
+            "operatingSystem": "Windows 10/11, iOS 15.6+ (Shortcuts: iOS 16+)",
             "description": "通过本地 Wi-Fi 在 iPhone 和 Windows 之间进行 AirDrop 风格的文件与剪贴板传输。",
             "url": "https://winsend.app/zh/",
             "downloadUrl": "https://winsend.app/zh/download/",
-            "softwareVersion": "2.2.4",
             "offers": {
                 "@type": "Offer",
                 "price": "0",
@@ -53,7 +52,7 @@
             "name": "WinSend 安全吗？",
             "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "安全。本地传输通过局域网在你的设备之间直接完成，无需上传云端或注册账号。"
+                "text": "本地文件在设备间直接传输，但本地 HTTP 路径不等同于端到端加密，请使用可信专用网络。可选云剪贴板在客户端加密文字；使用统计单独处理。"
             }
         },
         {
@@ -61,15 +60,15 @@
             "name": "WinSend 需要联网吗？",
             "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "本地文件和剪贴板传输只需两台设备连接同一个 Wi-Fi。"
+                "text": "本地传输需要可互通的局域网、运行中的应用与必要权限；同一局域网内有线连接的电脑也可使用。客户端隔离或防火墙可阻断连接；云剪贴板还需要互联网。"
             }
         },
         {
             "@type": "Question",
-            "name": "WinSend 可以传输什么？",
+            "name": "可以传输什么？",
             "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "WinSend 可以在 iPhone 和 Windows 之间传输照片、视频、文件和剪贴板文本。"
+                "text": "文件、照片和视频走局域网；剪贴板文字可本地传输或使用可选云同步。来源应用或系统导出可能改变文件表示。"
             }
         },
         {
@@ -175,7 +174,7 @@
         <section class="bg-gray-50 px-5 py-24 sm:px-6">
             <div class="mx-auto grid max-w-6xl gap-6 md:grid-cols-3">
                 <article class="rounded-3xl border border-gray-200 bg-white p-8"><div class="mb-6 grid h-12 w-12 place-items-center rounded-2xl bg-blue-100 text-xl">⚡</div><h2 class="text-2xl font-bold">直连，更快</h2><p class="mt-3 leading-7 text-gray-600">设备通过本地 Wi-Fi 自动发现并直接传输，无需先上传云端再下载。</p></article>
-                <article class="rounded-3xl border border-gray-200 bg-white p-8"><div class="mb-6 grid h-12 w-12 place-items-center rounded-2xl bg-green-100 text-xl">✓</div><h2 class="text-2xl font-bold">保留原始画质</h2><p class="mt-3 leading-7 text-gray-600">照片、视频和文件不压缩传输，也没有强制的文件大小限制。</p></article>
+                <article class="rounded-3xl border border-gray-200 bg-white p-8"><div class="mb-6 grid h-12 w-12 place-items-center rounded-2xl bg-green-100 text-xl">✓</div><h2 class="text-2xl font-bold">保留原始画质</h2><p class="mt-3 leading-7 text-gray-600">WinSend 不主动压缩传输文件。来源应用导出、设备资源、网络条件与可用存储仍可能影响结果。</p></article>
                 <article class="rounded-3xl border border-gray-200 bg-white p-8"><div class="mb-6 grid h-12 w-12 place-items-center rounded-2xl bg-violet-100 text-xl">⌘</div><h2 class="text-2xl font-bold">为 iPhone 而设计</h2><p class="mt-3 leading-7 text-gray-600">支持 iOS 分享面板和快捷指令，不用翻找文件夹，也不用把文件发给自己。</p></article>
             </div>
         </section>
@@ -184,7 +183,7 @@
             <div class="mx-auto grid max-w-6xl gap-12 lg:grid-cols-[0.9fr_1.1fr] lg:items-center">
                 <div><p class="text-sm font-bold uppercase tracking-[0.18em] text-green-600">默认保护隐私</p><h2 class="mt-4 text-4xl font-bold tracking-tight sm:text-5xl">本地直传，<br>或加密跨网。</h2><p class="mt-6 text-lg leading-8 text-gray-600">文件通过同一局域网在设备间直接传输，无需账号。需要跨网络分享文字时，可另行启用加密云剪贴板。</p><a href="/zh/safety/" class="mt-7 inline-flex font-semibold text-blue-700 hover:underline">了解 WinSend 的安全性 →</a></div>
                 <dl class="grid gap-4 sm:grid-cols-2">
-                    <div class="rounded-3xl bg-gray-950 p-7 text-white"><dt class="font-bold">支持平台</dt><dd class="mt-2 text-gray-300">Windows 10/11<br>iOS 15+</dd></div>
+                    <div class="rounded-3xl bg-gray-950 p-7 text-white"><dt class="font-bold">支持平台</dt><dd class="mt-2 text-gray-300">Windows 10/11<br>iOS 15.6+</dd></div>
                     <div class="rounded-3xl bg-blue-600 p-7 text-white"><dt class="font-bold">连接方式</dt><dd class="mt-2 text-blue-100">本地 Wi-Fi 直连<br>可选加密云剪贴板</dd></div>
                     <div class="rounded-3xl border border-gray-200 p-7"><dt class="font-bold">传输内容</dt><dd class="mt-2 text-gray-600">文件、照片、视频与剪贴板文本</dd></div>
                     <div class="rounded-3xl border border-gray-200 p-7"><dt class="font-bold">开始使用</dt><dd class="mt-2 text-gray-600">无需账号<br>无需 USB 数据线</dd></div>
@@ -196,9 +195,9 @@
             <div class="mx-auto max-w-3xl">
                 <div class="text-center"><h2 class="text-4xl font-bold tracking-tight sm:text-5xl">常见问题</h2></div>
                 <div class="mt-12 space-y-4">
-                    <details class="group rounded-2xl border border-gray-200 bg-white p-6"><summary class="flex cursor-pointer list-none items-center justify-between text-lg font-bold">WinSend 安全吗？<span class="text-blue-600 group-open:rotate-45">＋</span></summary><p class="mt-4 leading-7 text-gray-600">安全。本地传输通过局域网在你的设备之间直接完成，无需上传云端或注册账号。</p></details>
-                    <details class="group rounded-2xl border border-gray-200 bg-white p-6"><summary class="flex cursor-pointer list-none items-center justify-between text-lg font-bold">WinSend 需要联网吗？<span class="text-blue-600 group-open:rotate-45">＋</span></summary><p class="mt-4 leading-7 text-gray-600">本地文件与剪贴板传输只需要两台设备连接同一个 Wi-Fi。可选的云同步支持跨网络加密同步剪贴板。</p></details>
-                    <details class="group rounded-2xl border border-gray-200 bg-white p-6"><summary class="flex cursor-pointer list-none items-center justify-between text-lg font-bold">可以传输什么？<span class="text-blue-600 group-open:rotate-45">＋</span></summary><p class="mt-4 leading-7 text-gray-600">照片、视频、文件和剪贴板文本。照片和视频保留原始画质，文件保持原样。</p></details>
+                    <details class="group rounded-2xl border border-gray-200 bg-white p-6"><summary class="flex cursor-pointer list-none items-center justify-between text-lg font-bold">WinSend 安全吗？<span class="text-blue-600 group-open:rotate-45">＋</span></summary><p class="mt-4 leading-7 text-gray-600">本地文件在设备间直接传输，但本地 HTTP 路径不等同于端到端加密，请使用可信专用网络。可选云剪贴板在客户端加密文字；使用统计单独处理。</p></details>
+                    <details class="group rounded-2xl border border-gray-200 bg-white p-6"><summary class="flex cursor-pointer list-none items-center justify-between text-lg font-bold">WinSend 需要联网吗？<span class="text-blue-600 group-open:rotate-45">＋</span></summary><p class="mt-4 leading-7 text-gray-600">本地传输需要可互通的局域网、运行中的应用与必要权限；同一局域网内有线连接的电脑也可使用。客户端隔离或防火墙可阻断连接；云剪贴板还需要互联网。</p></details>
+                    <details class="group rounded-2xl border border-gray-200 bg-white p-6"><summary class="flex cursor-pointer list-none items-center justify-between text-lg font-bold">可以传输什么？<span class="text-blue-600 group-open:rotate-45">＋</span></summary><p class="mt-4 leading-7 text-gray-600">文件、照片和视频走局域网；剪贴板文字可本地传输或使用可选云同步。来源应用或系统导出可能改变文件表示。</p></details>
                 <details class="group rounded-2xl border border-gray-200 bg-white p-6"><summary class="flex cursor-pointer list-none items-center justify-between text-lg font-bold">不在同一个 Wi-Fi 下能用吗？<span class="text-blue-600 group-open:rotate-45">＋</span></summary><p class="mt-4 leading-7 text-gray-600">可以。启用云剪贴板后，两台设备都能联网即可跨网络分享剪贴板文本。文件和照片仍需要局域网连接。</p></details><details class="group rounded-2xl border border-gray-200 bg-white p-6"><summary class="flex cursor-pointer list-none items-center justify-between text-lg font-bold">云剪贴板能传文件或照片吗？<span class="text-blue-600 group-open:rotate-45">＋</span></summary><p class="mt-4 leading-7 text-gray-600">云端目前支持剪贴板文本；文件和照片仍通过局域网传输。</p></details><details class="group rounded-2xl border border-gray-200 bg-white p-6"><summary class="flex cursor-pointer list-none items-center justify-between text-lg font-bold">云剪贴板需要先设置吗？<span class="text-blue-600 group-open:rotate-45">＋</span></summary><p class="mt-4 leading-7 text-gray-600">需要。在 Windows 端打开云同步，再到 iPhone 的 WinSend 云同步页面输入配对码，按应用内提示完成设置。</p></details></div>
             </div>
         </section>
@@ -210,6 +209,8 @@
                 <div class="mt-8 flex flex-col justify-center gap-3 sm:flex-row"><a href="/zh/download/" class="btn-primary rounded-xl bg-blue-600 px-7 py-4 font-semibold text-white hover:bg-blue-500">下载 WinSend</a><a href="/zh/guides/setup/" class="rounded-xl border border-gray-700 px-7 py-4 font-semibold text-white hover:bg-gray-800">查看安装教程</a></div>
             </div>
         </section>
+
+        <section id="product-scope" class="px-6 py-12"><div class="max-w-4xl mx-auto rounded-2xl border border-gray-200 p-6"><h2 class="text-2xl font-bold mb-3">传输方式与功能权益</h2><p class="text-gray-600 leading-8">本地手动剪贴板和文件传输免费。自动剪贴板同步需要 Pro；快捷指令和云传输提供体验/Pro 权益，具体方案以应用内为准。 文件和照片需要可互通的局域网。云同步需要互联网，只支持剪贴板文字。自动同步不能绕过 iOS 后台运行或剪贴板限制。快捷指令要求 iOS 16+，需要主动触发。WinSend 是类似 AirDrop 的替代方案，不是 Apple AirDrop。 WinSend 不主动压缩传输文件；来源应用或系统导出可能改变文件表示，实际传输仍受设备、网络与存储条件限制。</p></div></section>
     </main>
 
     <footer class="bg-gray-950 px-5 py-14 text-gray-400 sm:px-6">
