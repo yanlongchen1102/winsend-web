@@ -1,0 +1,194 @@
+<main>
+        <section class="hero-bg pt-32 pb-14 px-6">
+            <div class="hero-container">
+                <nav aria-label="面包屑" class="mb-8">
+                    <ol class="flex flex-wrap items-center gap-2 text-sm text-gray-500">
+                        <li><a href="{{links.home}}" class="hover:text-gray-900 transition-colors">首页</a></li>
+                        <li>/</li>
+                        <li><a href="{{links.guides}}" class="hover:text-gray-900 transition-colors">教程中心</a></li>
+                        <li>/</li>
+                        <li class="text-gray-900 font-medium">安装与配对设置</li>
+                    </ol>
+                </nav>
+
+                <header>
+                    <div class="flex flex-wrap items-center gap-3 mb-5 text-sm">
+                        <span class="rounded-full bg-blue-600 px-3 py-1 font-semibold text-white">基础教程</span>
+                        <span class="rounded-full border border-blue-100 bg-blue-50 px-3 py-1 font-medium text-blue-700">安装指南</span>
+                        <span class="rounded-full border border-blue-100 bg-blue-50 px-3 py-1 font-medium text-blue-700">配对设置</span>
+                    </div>
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight mb-6">
+                        WinSend <span class="gradient-text">安装教程</span>：iPhone 与 Windows 配对、权限设置与常见问题
+                    </h1>
+                    <p class="text-xl text-gray-600 leading-9 mb-7">
+                        学习如何安装 WinSend，并完成 iPhone 与 Windows 配对。包含权限设置、自动连接、常见连接失败问题排查与完整检查清单。
+                    </p>
+                    <div class="flex flex-wrap gap-5 text-sm text-gray-500">
+                        <span>更新时间：2026-10-08</span>
+                        <span>阅读时间：约 3 分钟</span>
+                        <span>适合：新用户</span>
+                    </div>
+                </header>
+            </div>
+        </section>
+
+        <section class="px-6 pb-20">
+            <div class="article-section-shell">
+                <!-- 左侧目录 -->
+                <aside class="toc-sidebar">
+                    <div class="sidebar-panel">
+                        <nav class="toc-title">目录</nav>
+                        <div id="toc-content">
+                            <a href="#section-overview" class="toc-link">教程概览</a>
+                            <a href="#step-windows" class="toc-link level-3">第一步：安装 Windows 客户端</a>
+                            <a href="#step-iphone" class="toc-link level-3">第二步：安装 iPhone 端</a>
+                            <a href="#step-pair" class="toc-link level-3">第三步：完成自动配对</a>
+                            <a href="#section-checklist" class="toc-link">检查清单</a>
+                        </div>
+                    </div>
+                </aside>
+
+                <article class="article-container article-prose rounded-[2rem] border border-gray-200 bg-white p-6 sm:p-8 xl:p-10 shadow-sm">
+                    <section id="section-overview">
+                        <p>本教程将指导你完成 WinSend 的完整安装和配对流程，包括 Windows 端和 iPhone 端的安装、权限设置以及设备间的自动配对。</p>
+                        <blockquote>完成本教程后，你的 iPhone 和 Windows 设备就可以在同一网络下互相发现并传输文件了。</blockquote>
+                    </section>
+
+                    <hr style="border: none; border-top: 2px solid #e5e7eb; margin: 2rem 0;">
+
+                    <section id="section-tutorial">
+                        <h2>详细设置教程</h2>
+                        <p>按照以下步骤完成安装和配对</p>
+
+                        <section id="step-windows" class="rounded-3xl bg-gray-50 p-6 sm:p-7 mb-6">
+                            <h3>第一步：安装 Windows 客户端</h3>
+                            <p>先在 Windows 电脑上安装 WinSend 客户端。</p>
+                            <ol class="list-decimal pl-5 space-y-3 text-gray-600 leading-8">
+                                <li><a href="{{links.download}}" class="text-blue-700 hover:underline font-semibold inline-flex items-center gap-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+                                        <path fill-rule="evenodd" d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm3.293-7.707a1 1 0 011.414 0L9 10.586V3a1 1 0 112 0v7.586l1.293-1.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z" clip-rule="evenodd" />
+                                    </svg>
+                                    打开 Windows 下载页，优先使用 Microsoft Store
+                                </a></li>
+                                <li>完成安装后双击启动应用</li>
+                                <li>确认本地网络环境可用，并保持应用运行</li>
+                            </ol>
+                        </section>
+
+                        <section id="step-iphone" class="rounded-3xl bg-gray-50 p-6 sm:p-7 mb-6">
+                            <h3>第二步：安装 iPhone 端应用</h3>
+                            <p>在 iPhone 上从 App Store 下载 WinSend。</p>
+                            <ol class="list-decimal pl-5 space-y-3 text-gray-600 leading-8">
+                                <li>从 App Store 下载 WinSend</li>
+                                <li>根据提示允许必要权限（本地网络等）</li>
+                            </ol>
+                        </section>
+
+                        <section id="step-pair" class="rounded-3xl bg-gray-50 p-6 sm:p-7 mb-6">
+                            <h3>第三步：完成自动配对</h3>
+                            <p>确保两端处于可互通的专用局域网，电脑通过网线接入也可使用。允许 iPhone 本地网络权限和 Windows 防火墙访问后，选择发现的电脑。</p>
+                            <p class="text-gray-600 leading-8 mt-4">如果发现失败，检查两端运行状态、权限与防火墙。设备可达时可尝试手动 IP；访客网络或 AP 隔离可能需要切换到可信专用网络，手动 IP 不能绕过隔离。</p>
+                            <div class="mt-5 p-5 rounded-2xl bg-blue-50 border-2 border-blue-100">
+                                <p class="text-blue-900 font-semibold mb-2">💡 提示</p>
+                                <ul class="text-blue-800 space-y-2">
+                                    <li>• 确保两台设备位于可互通的专用局域网</li>
+                                    <li>• Windows 端的 WinSend 需要保持运行状态</li>
+                                    <li>• 首次连接可能需要等待 10-30 秒</li>
+                                </ul>
+                            </div>
+                        </section>
+                    </section>
+
+                    <hr style="border: none; border-top: 2px solid #e5e7eb; margin: 2rem 0;">
+
+                    <section id="section-checklist">
+                        <h2>检查清单</h2>
+                        <p>完成安装后，请确认以下各项：</p>
+
+                        <div class="space-y-3 mt-6">
+                            <div class="flex items-start gap-3 p-4 rounded-xl bg-gray-50">
+                                <span class="flex-shrink-0 w-6 h-6 rounded-full bg-green-600 text-white text-sm font-bold flex items-center justify-center">✓</span>
+                                <span class="text-gray-700 leading-relaxed pt-0.5">Windows 端 WinSend 已安装并在运行</span>
+                            </div>
+                            <div class="flex items-start gap-3 p-4 rounded-xl bg-gray-50">
+                                <span class="flex-shrink-0 w-6 h-6 rounded-full bg-green-600 text-white text-sm font-bold flex items-center justify-center">✓</span>
+                                <span class="text-gray-700 leading-relaxed pt-0.5">iPhone 端 WinSend 已安装</span>
+                            </div>
+                            <div class="flex items-start gap-3 p-4 rounded-xl bg-gray-50">
+                                <span class="flex-shrink-0 w-6 h-6 rounded-full bg-green-600 text-white text-sm font-bold flex items-center justify-center">✓</span>
+                                <span class="text-gray-700 leading-relaxed pt-0.5">两台设备在同一 Wi-Fi</span>
+                            </div>
+                            <div class="flex items-start gap-3 p-4 rounded-xl bg-gray-50">
+                                <span class="flex-shrink-0 w-6 h-6 rounded-full bg-green-600 text-white text-sm font-bold flex items-center justify-center">✓</span>
+                                <span class="text-gray-700 leading-relaxed pt-0.5">必要权限已经允许</span>
+                            </div>
+                            <div class="flex items-start gap-3 p-4 rounded-xl bg-gray-50">
+                                <span class="flex-shrink-0 w-6 h-6 rounded-full bg-green-600 text-white text-sm font-bold flex items-center justify-center">✓</span>
+                                <span class="text-gray-700 leading-relaxed pt-0.5">需要快捷指令时，相关入口已配置完成</span>
+                            </div>
+                        </div>
+                    </section>
+                </article>
+
+                <aside class="related-sidebar space-y-6">
+                    <div class="sidebar-panel space-y-6">
+                        <section class="rounded-3xl border border-gray-200 bg-white p-8 shadow-sm">
+                            <h2 class="text-2xl font-bold tracking-tight mb-4">相关页面</h2>
+                            <div class="flex flex-col gap-3">
+                                <a href="{{links.copy-iphone-to-windows}}" class="inline-flex items-center justify-center rounded-xl border border-gray-200 px-6 py-3 font-semibold text-gray-900 transition hover:border-blue-200 hover:text-blue-700">剪贴板同步教程</a>
+                                <a href="{{links.how-it-works}}" class="inline-flex items-center justify-center rounded-xl border border-gray-200 px-6 py-3 font-semibold text-gray-900 transition hover:border-blue-200 hover:text-blue-700">WinSend 如何工作</a>
+                            </div>
+                        </section>
+                    </div>
+                </aside>
+            </div>
+        </section>
+
+        {{{productScope}}}
+
+        {{{faq}}}
+    </main>
+
+    <script>
+        // 平滑滚动到锚点
+        document.querySelectorAll('.toc-link').forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    const offsetTop = targetElement.offsetTop - 100;
+                    window.scrollTo({
+                        top: offsetTop,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // 滚动时高亮当前章节
+        const sections = document.querySelectorAll('section[id]');
+        const tocLinks = document.querySelectorAll('.toc-link');
+
+        function highlightToc() {
+            const scrollPosition = window.scrollY + 150;
+
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.offsetHeight;
+                const sectionId = section.getAttribute('id');
+
+                if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+                    tocLinks.forEach(link => {
+                        link.classList.remove('active');
+                        if (link.getAttribute('href') === '#' + sectionId) {
+                            link.classList.add('active');
+                        }
+                    });
+                }
+            });
+        }
+
+        window.addEventListener('scroll', highlightToc);
+        window.addEventListener('load', highlightToc);
+    </script>

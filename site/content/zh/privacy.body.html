@@ -1,0 +1,83 @@
+<main>
+        <section class="hero-bg pt-32 pb-14 px-6">
+            <div class="max-w-6xl mx-auto">
+                <p class="text-sm font-semibold tracking-[0.24em] text-blue-600 uppercase mb-4">法律信息</p>
+                <h1 class="text-4xl sm:text-5xl font-extrabold tracking-tight leading-tight mb-6">隐私政策</h1>
+                <p class="text-xl text-gray-600 leading-9 max-w-3xl">更新日期：2026 年 10 月 8 日。本政策适用于 WinSend 应用（iOS 与 Windows）以及 winsend.app 网站。</p>
+            </div>
+        </section>
+        <section class="px-6 pb-20">
+            <div class="max-w-4xl mx-auto">
+                <article class="rounded-[2rem] border border-gray-200 bg-white p-8 sm:p-10 shadow-sm">
+
+                    <section class="mb-10">
+                        <h2 class="text-3xl font-bold tracking-tight mb-4">一句话版本</h2>
+                        <p class="text-gray-600 leading-8 mb-4">WinSend 的文件和本地剪贴板内容<strong>直接在局域网内传输</strong>。可选云同步会中转在设备端加密的剪贴板文字。云连接元数据、使用统计和购买数据与传输内容分开处理。</p>
+                        <ul class="list-disc pl-5 space-y-3 text-gray-600 leading-8 mt-4">
+                            <li><strong>剪贴板文字不作为分析事件内容上报。</strong>启用云同步后，加密文字会经过中转服务。</li>
+                            <li><strong>设计的分析事件不包含完整文件名或文件内容。</strong>本地诊断日志可能包含文件名或剪贴板预览，分享日志前请检查。</li>
+                            <li><strong>传输无需 WinSend 账号。</strong>如主动联系支持或提交问卷，我们会收到你选择提供的信息。</li>
+                            <li>我们只收集<strong>假名化使用统计</strong>（详见下文），用于改进产品和诊断连接问题</li>
+                        </ul>
+                    </section>
+
+                    <section class="mb-10">
+                        <h2 class="text-3xl font-bold tracking-tight mb-4">我们收集什么</h2>
+
+                        <h3 class="text-xl font-bold tracking-tight mb-3 mt-6">应用分析数据（iOS 与 Windows 应用）</h3>
+                        <p class="text-gray-600 leading-8 mb-4">为了解应用使用情况、诊断连接失败，应用会向我们的分析服务商发送假名化使用事件：</p>
+                        <ul class="list-disc pl-5 space-y-3 text-gray-600 leading-8 mt-4">
+                            <li><strong>持久化分析标识</strong>：Windows 使用安装标识，iOS 使用厂商设备标识。事件还可能附带哈希配对关联标识、RevenueCat 用户标识和 Pro 状态，用于关联多次活动，不代表完全匿名。</li>
+                            <li><strong>设备名、操作系统和应用版本号</strong></li>
+                            <li><strong>使用事件</strong>：应用启动、设备发现与连接尝试/结果、功能使用计数（如刷新、检查更新）以及错误事件</li>
+                            <li><strong>传输元数据</strong>：大小、耗时、文件类型、项目数、方向、通道、触发方式和成功/失败信息，而非完整文件名或文件内容</li>
+                            <li><strong>网络诊断信息</strong>：你的 /24 网段（如 192.168.8.0/24，绝不是完整 IP 地址）、网络配置文件类型（公用/专用）、应用防火墙规则是否存在——仅用于诊断"连不上"类问题</li>
+                        </ul>
+
+                        <h3 class="text-xl font-bold tracking-tight mb-3 mt-6">网站分析数据（winsend.app）</h3>
+                        <p class="text-gray-600 leading-8">页面浏览、下载按钮点击和网页性能指标（Web Vitals），使用持久化的假名化访客 ID 收集；页面 URL、来源与推广参数可用于关联多次访问。</p>
+
+                        <h3 class="text-xl font-bold tracking-tight mb-3 mt-6">问卷调查</h3>
+                        <p class="text-gray-600 leading-8">如果你自愿提交应用内问卷，我们会收到你提供的答案。</p>
+                    </section>
+
+                    <section class="mb-10">
+                        <h2 class="text-3xl font-bold tracking-tight mb-4">我们如何使用这些数据</h2>
+                        <ul class="list-disc pl-5 space-y-3 text-gray-600 leading-8 mt-4">
+                            <li>衡量功能使用情况，改进产品</li>
+                            <li>诊断连接与安装失败（如防火墙或路由器问题）</li>
+                            <li>产出聚合统计（如成功连接的设备数量）</li>
+                        </ul>
+                        <p class="text-gray-600 leading-8 mt-4">我们不出售你的数据，也不将其用于广告。</p>
+                    </section>
+
+                    <section class="mb-10">
+                        <h2 class="text-3xl font-bold tracking-tight mb-4">第三方处理方</h2>
+                        <p class="text-gray-600 leading-8 mb-4">分析事件由 <strong>PostHog, Inc.</strong> 处理（云分析服务，服务器位于美国）。PostHog 作为我们的数据处理方，接收上述事件以及任何 HTTPS 请求天然携带的 IP 地址。详见 <a href="https://posthog.com/privacy" class="text-blue-600 hover:text-blue-700 underline" target="_blank" rel="noopener">PostHog 隐私政策</a>。</p>
+                        <p class="text-gray-600 leading-8">本地传输内容直接在设备间流转。可选云剪贴板将客户端加密的文字经中转服务传输；连接请求会向服务披露源 IP，以及设备标识/名称、分组标识和入组凭证等协议元数据。传输内容不作为设计的 PostHog 分析事件内容上报。Apple 与 RevenueCat 处理购买和权益校验；购买统计可能包含商品、价格、交易和权益标识。详见 <a href="https://www.revenuecat.com/privacy/" class="text-blue-600 underline" target="_blank" rel="noopener">RevenueCat 隐私说明</a>与 <a href="https://www.apple.com/legal/privacy/" class="text-blue-600 underline" target="_blank" rel="noopener">Apple 隐私说明</a>。</p>
+                    </section>
+
+                    <section class="mb-10">
+                        <h2 class="text-3xl font-bold tracking-tight mb-4">数据保留与删除</h2>
+                        <p class="text-gray-600 leading-8">重置本地标识或卸载应用不会自动删除已经上传的分析或购买记录。如需删除，请联系我们，并尽可能提供相关安装或购买标识；不要提供同步码或传输内容。服务端保留与删除需由相关服务实际处理，本页不承诺中转元数据或分析数据从不保留。</p>
+                    </section>
+
+                    <section class="mb-10">
+                        <h2 class="text-3xl font-bold tracking-tight mb-4">儿童</h2>
+                        <p class="text-gray-600 leading-8">WinSend 不面向 13 岁以下儿童，我们不会有意收集儿童的个人信息。</p>
+                    </section>
+
+                    <section class="mb-10">
+                        <h2 class="text-3xl font-bold tracking-tight mb-4">政策变更</h2>
+                        <p class="text-gray-600 leading-8">我们可能不时更新本政策，变更将发布在本页面并更新生效日期。</p>
+                    </section>
+
+                    <section>
+                        <h2 class="text-3xl font-bold tracking-tight mb-4">联系我们</h2>
+                        <p class="text-gray-600 leading-8">如有隐私相关问题或删除请求，请联系 <a href="mailto:support@winsend.app" class="text-blue-600 hover:text-blue-700 underline">support@winsend.app</a>。</p>
+                    </section>
+
+                </article>
+            </div>
+        </section>
+    </main>

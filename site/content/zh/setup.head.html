@@ -1,0 +1,224 @@
+<meta property="og:type" content="article">
+    <meta property="og:site_name" content="WinSend">
+    <meta name="twitter:card" content="summary_large_image">
+    <style>
+        * { font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif; }
+        .gradient-text {
+            background: linear-gradient(135deg, #2563eb 0%, #3b82f6 50%, #60a5fa 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .hero-bg {
+            background:
+                radial-gradient(ellipse 80% 50% at 50% -20%, rgba(37, 99, 235, 0.15), transparent),
+                linear-gradient(180deg, #ffffff 0%, #f8fbff 100%);
+        }
+        .btn-primary {
+            transition: all 0.2s ease;
+        }
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px -5px rgba(37, 99, 235, 0.35);
+        }
+        .article-prose p,
+        .article-prose li {
+            color: #4b5563;
+            line-height: 2;
+        }
+        .article-prose p {
+            margin-bottom: 1.25rem;
+        }
+        .article-prose ul,
+        .article-prose ol {
+            padding-left: 1.25rem;
+            margin-bottom: 1.5rem;
+        }
+        .article-prose h2 {
+            font-size: 1.875rem;
+            line-height: 1.2;
+            font-weight: 800;
+            margin-bottom: 1.25rem;
+            color: #111827;
+        }
+        .article-prose h3 {
+            font-size: 1.25rem;
+            line-height: 1.4;
+            font-weight: 700;
+            margin-bottom: 0.875rem;
+            color: #111827;
+        }
+        .article-prose blockquote {
+            border-left: 4px solid #2563eb;
+            background: #eff6ff;
+            color: #1d4ed8;
+            padding: 1.25rem 1.5rem;
+            border-radius: 1rem;
+            margin: 1.75rem 0;
+            font-weight: 600;
+        }
+        .hero-container {
+            width: min(100%, 78vw);
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+        .article-section-shell {
+            width: 100%;
+            margin: 0 auto;
+            position: relative;
+        }
+        .article-container {
+            width: min(100%, 70vw);
+            max-width: 980px;
+            margin: 0 auto;
+            min-width: 0;
+        }
+        .toc-sidebar,
+        .related-sidebar {
+            display: none;
+            width: 220px;
+            min-width: 0;
+        }
+        .sidebar-panel {
+            position: sticky;
+            top: 7rem;
+            max-height: calc(100vh - 9rem);
+            overflow-y: auto;
+        }
+        .toc-link {
+            display: block;
+            padding: 0.5rem 0;
+            color: #6b7280;
+            text-decoration: none;
+            font-size: 0.875rem;
+            line-height: 1.4;
+            transition: color 0.2s ease;
+            border-left: 2px solid transparent;
+            padding-left: 1rem;
+        }
+        .toc-link:hover {
+            color: #2563eb;
+        }
+        .toc-link.active {
+            color: #2563eb;
+            border-left-color: #2563eb;
+            font-weight: 600;
+        }
+        .toc-link.level-3 {
+            padding-left: 2rem;
+            font-size: 0.8125rem;
+        }
+        .toc-title {
+            font-size: 0.875rem;
+            font-weight: 700;
+            color: #111827;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+        .image-strip {
+            display: flex;
+            gap: 1rem;
+            overflow-x: auto;
+            padding-bottom: 0.5rem;
+            scroll-snap-type: x proximity;
+            -webkit-overflow-scrolling: touch;
+        }
+        .image-strip::-webkit-scrollbar {
+            height: 10px;
+        }
+        .image-strip::-webkit-scrollbar-thumb {
+            background: rgba(148, 163, 184, 0.5);
+            border-radius: 999px;
+        }
+        .image-card {
+            min-width: 240px;
+            max-width: 280px;
+            flex: 0 0 auto;
+            scroll-snap-align: start;
+        }
+        .image-card img {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 1rem;
+            border: 1px solid #e5e7eb;
+            box-shadow: 0 12px 30px -20px rgba(15, 23, 42, 0.45);
+            background: white;
+        }
+        @media (min-width: 1400px) {
+            .toc-sidebar,
+            .related-sidebar {
+                display: block;
+                position: absolute;
+                top: 0;
+            }
+            .toc-sidebar {
+                left: calc(50% - 490px - 32px - 220px);
+            }
+            .related-sidebar {
+                left: calc(50% + 490px + 32px);
+            }
+        }
+        @media (min-width: 768px) {
+            .image-card {
+                min-width: 280px;
+                max-width: 320px;
+            }
+        }
+    </style>
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "TechArticle",
+            "headline": "WinSend 安装教程：iPhone 与 Windows 配对、权限设置与常见问题",
+            "description": "学习如何安装 WinSend，并完成 iPhone 与 Windows 配对。包含权限设置、自动连接、常见连接失败问题排查与完整检查清单。",
+            "url": "{{urls.setup}}",
+            "datePublished": "2026-04-11",
+            "dateModified": "{{lastmod}}",
+            "inLanguage": "{{htmlLang}}",
+            "author": {
+                "@type": "Organization",
+                "name": "WinSend"
+            },
+            "publisher": {
+                "@type": "Organization",
+                "name": "WinSend",
+                "logo": {
+                    "@type": "ImageObject",
+                    "url": "https://winsend.app/logo.png"
+                }
+            }
+        }
+    </script>
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+                {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "首页",
+                    "item": "{{urls.home}}"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "教程中心",
+                    "item": "{{urls.guides}}"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 3,
+                    "name": "安装与配对设置",
+                    "item": "{{urls.setup}}"
+                }
+            ]
+        }
+    </script>
+    <script type="application/ld+json">
+    {"@context": "https://schema.org", "@type": "HowTo", "name": "如何配对使用 WinSend（iPhone 与 Windows）", "description": "在 Windows 和 iPhone 上安装 WinSend，并在同一局域网内自动完成配对。", "step": [{"@type": "HowToStep", "position": 1, "name": "安装 Windows 客户端", "text": "打开 WinSend 下载页，优先使用 Microsoft Store 安装。启动后，在可信的专用网络上允许应用通过 Windows 防火墙。使用备用安装包前请核实来源和发布者。"}, {"@type": "HowToStep", "position": 2, "name": "安装 iPhone 应用", "text": "在 iPhone 的 App Store 中安装 WinSend。"}, {"@type": "HowToStep", "position": 3, "name": "完成自动配对", "text": "使用可互通的专用局域网，电脑也可通过网线接入。允许 iPhone 本地网络权限和 Windows 防火墙访问，保持两端应用运行，选择发现的电脑。发现失败时可尝试手动 IP，但不能绕过客户端隔离。"}, {"@type": "HowToStep", "position": 4, "name": "按清单验证", "text": "确认两端显示已连接，然后用分享面板发送一张测试照片。"}]}
+    </script>
+
+    <script src="/assets/js/posthog.js" defer></script>

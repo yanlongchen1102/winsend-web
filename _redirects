@@ -1,0 +1,4 @@
+# Preserve the legacy English homepage URL after moving the default locale to /.
+# Cloudflare retains the query string for static redirects.
+/en/ / 301
+/en / 301

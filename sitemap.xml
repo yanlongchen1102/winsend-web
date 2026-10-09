@@ -1,241 +1,289 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:xhtml="http://www.w3.org/1999/xhtml">
-    <!-- Homepage -->
-    <url>
-        <loc>https://winsend.app/en/</loc>
-        <xhtml:link rel="alternate" hreflang="en" href="https://winsend.app/en/" />
-        <xhtml:link rel="alternate" hreflang="zh" href="https://winsend.app/zh/" />
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://winsend.app/en/" />
-        <lastmod>2026-10-08</lastmod>
-    </url>
-    <url>
-        <loc>https://winsend.app/zh/</loc>
-        <xhtml:link rel="alternate" hreflang="en" href="https://winsend.app/en/" />
-        <xhtml:link rel="alternate" hreflang="zh" href="https://winsend.app/zh/" />
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://winsend.app/en/" />
-        <lastmod>2026-10-08</lastmod>
-    </url>
-
-    <!-- Download -->
-    <url>
-        <loc>https://winsend.app/en/download/</loc>
-        <xhtml:link rel="alternate" hreflang="en" href="https://winsend.app/en/download/" />
-        <xhtml:link rel="alternate" hreflang="zh" href="https://winsend.app/zh/download/" />
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://winsend.app/en/download/" />
-        <lastmod>2026-10-08</lastmod>
-    </url>
-    <url>
-        <loc>https://winsend.app/zh/download/</loc>
-        <xhtml:link rel="alternate" hreflang="en" href="https://winsend.app/en/download/" />
-        <xhtml:link rel="alternate" hreflang="zh" href="https://winsend.app/zh/download/" />
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://winsend.app/en/download/" />
-        <lastmod>2026-10-08</lastmod>
-    </url>
-
-    <!-- English Guide Center -->
-    <url>
-        <loc>https://winsend.app/en/guides/</loc>
-        <xhtml:link rel="alternate" hreflang="en" href="https://winsend.app/en/guides/" />
-        <xhtml:link rel="alternate" hreflang="zh" href="https://winsend.app/zh/guides/" />
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://winsend.app/en/guides/" />
-        <lastmod>2026-10-08</lastmod>
-    </url>
-
-    <!-- Chinese Guide Center -->
-    <url>
-        <loc>https://winsend.app/zh/guides/</loc>
-        <xhtml:link rel="alternate" hreflang="en" href="https://winsend.app/en/guides/" />
-        <xhtml:link rel="alternate" hreflang="zh" href="https://winsend.app/zh/guides/" />
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://winsend.app/en/guides/" />
-        <lastmod>2026-10-08</lastmod>
-    </url>
-
-    <!-- Setup Guide (English) -->
-    <url>
-        <loc>https://winsend.app/en/guides/setup/</loc>
-        <xhtml:link rel="alternate" hreflang="en" href="https://winsend.app/en/guides/setup/" />
-        <xhtml:link rel="alternate" hreflang="zh" href="https://winsend.app/zh/guides/setup/" />
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://winsend.app/en/guides/setup/" />
-        <lastmod>2026-10-08</lastmod>
-    </url>
-
-    <!-- Setup Guide (Chinese) -->
-    <url>
-        <loc>https://winsend.app/zh/guides/setup/</loc>
-        <xhtml:link rel="alternate" hreflang="en" href="https://winsend.app/en/guides/setup/" />
-        <xhtml:link rel="alternate" hreflang="zh" href="https://winsend.app/zh/guides/setup/" />
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://winsend.app/en/guides/setup/" />
-        <lastmod>2026-10-08</lastmod>
-    </url>
-
-    <!-- How It Works (English) -->
-    <url>
-        <loc>https://winsend.app/en/guides/how-it-works/</loc>
-        <xhtml:link rel="alternate" hreflang="en" href="https://winsend.app/en/guides/how-it-works/" />
-        <xhtml:link rel="alternate" hreflang="zh" href="https://winsend.app/zh/guides/how-it-works/" />
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://winsend.app/en/guides/how-it-works/" />
-        <lastmod>2026-10-08</lastmod>
-    </url>
-
-    <!-- How It Works (Chinese) -->
-    <url>
-        <loc>https://winsend.app/zh/guides/how-it-works/</loc>
-        <xhtml:link rel="alternate" hreflang="en" href="https://winsend.app/en/guides/how-it-works/" />
-        <xhtml:link rel="alternate" hreflang="zh" href="https://winsend.app/zh/guides/how-it-works/" />
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://winsend.app/en/guides/how-it-works/" />
-        <lastmod>2026-10-08</lastmod>
-    </url>
-
-    <!-- iPhone Shortcuts Clipboard Sync (English) -->
-    <url>
-        <loc>https://winsend.app/en/guides/copy-iphone-to-windows/</loc>
-        <xhtml:link rel="alternate" hreflang="en" href="https://winsend.app/en/guides/copy-iphone-to-windows/" />
-        <xhtml:link rel="alternate" hreflang="zh" href="https://winsend.app/zh/guides/copy-iphone-to-windows/" />
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://winsend.app/en/guides/copy-iphone-to-windows/" />
-        <lastmod>2026-10-08</lastmod>
-    </url>
-
-    <!-- iPhone Shortcuts Clipboard Sync (Chinese) -->
-    <url>
-        <loc>https://winsend.app/zh/guides/copy-iphone-to-windows/</loc>
-        <xhtml:link rel="alternate" hreflang="en" href="https://winsend.app/en/guides/copy-iphone-to-windows/" />
-        <xhtml:link rel="alternate" hreflang="zh" href="https://winsend.app/zh/guides/copy-iphone-to-windows/" />
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://winsend.app/en/guides/copy-iphone-to-windows/" />
-        <lastmod>2026-10-08</lastmod>
-    </url>
-
-    <!-- AirDrop for Windows (English) -->
-    <url>
-        <loc>https://winsend.app/en/guides/airdrop-for-windows/</loc>
-        <xhtml:link rel="alternate" hreflang="en" href="https://winsend.app/en/guides/airdrop-for-windows/" />
-        <xhtml:link rel="alternate" hreflang="zh" href="https://winsend.app/zh/guides/airdrop-for-windows/" />
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://winsend.app/en/guides/airdrop-for-windows/" />
-        <lastmod>2026-10-08</lastmod>
-    </url>
-
-    <!-- AirDrop for Windows (Chinese) -->
-    <url>
-        <loc>https://winsend.app/zh/guides/airdrop-for-windows/</loc>
-        <xhtml:link rel="alternate" hreflang="en" href="https://winsend.app/en/guides/airdrop-for-windows/" />
-        <xhtml:link rel="alternate" hreflang="zh" href="https://winsend.app/zh/guides/airdrop-for-windows/" />
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://winsend.app/en/guides/airdrop-for-windows/" />
-        <lastmod>2026-10-08</lastmod>
-    </url>
-
-    <!-- Cross-Platform Transfer Tools (English) -->
-    <url>
-        <loc>https://winsend.app/en/guides/cross-platform-transfer-tools/</loc>
-        <xhtml:link rel="alternate" hreflang="en" href="https://winsend.app/en/guides/cross-platform-transfer-tools/" />
-        <xhtml:link rel="alternate" hreflang="zh" href="https://winsend.app/zh/guides/cross-platform-transfer-tools/" />
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://winsend.app/en/guides/cross-platform-transfer-tools/" />
-        <lastmod>2026-10-08</lastmod>
-    </url>
-
-    <!-- Cross-Platform Transfer Tools (Chinese) -->
-    <url>
-        <loc>https://winsend.app/zh/guides/cross-platform-transfer-tools/</loc>
-        <xhtml:link rel="alternate" hreflang="en" href="https://winsend.app/en/guides/cross-platform-transfer-tools/" />
-        <xhtml:link rel="alternate" hreflang="zh" href="https://winsend.app/zh/guides/cross-platform-transfer-tools/" />
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://winsend.app/en/guides/cross-platform-transfer-tools/" />
-        <lastmod>2026-10-08</lastmod>
-    </url>
-
-    <!-- WinSend vs LocalSend (English) -->
-    <url>
-        <loc>https://winsend.app/en/comparison/winsend-vs-localsend/</loc>
-        <xhtml:link rel="alternate" hreflang="en" href="https://winsend.app/en/comparison/winsend-vs-localsend/" />
-        <xhtml:link rel="alternate" hreflang="zh" href="https://winsend.app/zh/comparison/winsend-vs-localsend/" />
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://winsend.app/en/comparison/winsend-vs-localsend/" />
-        <lastmod>2026-10-08</lastmod>
-    </url>
-
-    <!-- WinSend vs LocalSend (Chinese) -->
-    <url>
-        <loc>https://winsend.app/zh/comparison/winsend-vs-localsend/</loc>
-        <xhtml:link rel="alternate" hreflang="en" href="https://winsend.app/en/comparison/winsend-vs-localsend/" />
-        <xhtml:link rel="alternate" hreflang="zh" href="https://winsend.app/zh/comparison/winsend-vs-localsend/" />
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://winsend.app/en/comparison/winsend-vs-localsend/" />
-        <lastmod>2026-10-08</lastmod>
-    </url>
-
-    <!-- WinSend vs Snapdrop (English) -->
-    <url>
-        <loc>https://winsend.app/en/comparison/winsend-vs-snapdrop/</loc>
-        <xhtml:link rel="alternate" hreflang="en" href="https://winsend.app/en/comparison/winsend-vs-snapdrop/" />
-        <xhtml:link rel="alternate" hreflang="zh" href="https://winsend.app/zh/comparison/winsend-vs-snapdrop/" />
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://winsend.app/en/comparison/winsend-vs-snapdrop/" />
-        <lastmod>2026-10-08</lastmod>
-    </url>
-
-    <!-- WinSend vs Snapdrop (Chinese) -->
-    <url>
-        <loc>https://winsend.app/zh/comparison/winsend-vs-snapdrop/</loc>
-        <xhtml:link rel="alternate" hreflang="en" href="https://winsend.app/en/comparison/winsend-vs-snapdrop/" />
-        <xhtml:link rel="alternate" hreflang="zh" href="https://winsend.app/zh/comparison/winsend-vs-snapdrop/" />
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://winsend.app/en/comparison/winsend-vs-snapdrop/" />
-        <lastmod>2026-10-08</lastmod>
-    </url>
-
-    <!-- WinSend vs Send Anywhere (English) -->
-    <url>
-        <loc>https://winsend.app/en/comparison/winsend-vs-sendanywhere/</loc>
-        <xhtml:link rel="alternate" hreflang="en" href="https://winsend.app/en/comparison/winsend-vs-sendanywhere/" />
-        <xhtml:link rel="alternate" hreflang="zh" href="https://winsend.app/zh/comparison/winsend-vs-sendanywhere/" />
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://winsend.app/en/comparison/winsend-vs-sendanywhere/" />
-        <lastmod>2026-10-08</lastmod>
-    </url>
-
-    <!-- WinSend vs Send Anywhere (Chinese) -->
-    <url>
-        <loc>https://winsend.app/zh/comparison/winsend-vs-sendanywhere/</loc>
-        <xhtml:link rel="alternate" hreflang="en" href="https://winsend.app/en/comparison/winsend-vs-sendanywhere/" />
-        <xhtml:link rel="alternate" hreflang="zh" href="https://winsend.app/zh/comparison/winsend-vs-sendanywhere/" />
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://winsend.app/en/comparison/winsend-vs-sendanywhere/" />
-        <lastmod>2026-10-08</lastmod>
-    </url>
-    <url>
-        <loc>https://winsend.app/en/safety/</loc>
-        <xhtml:link rel="alternate" hreflang="en" href="https://winsend.app/en/safety/" />
-        <xhtml:link rel="alternate" hreflang="zh" href="https://winsend.app/zh/safety/" />
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://winsend.app/en/safety/" />
-        <lastmod>2026-10-08</lastmod>
-    </url>
-    <url>
-        <loc>https://winsend.app/zh/safety/</loc>
-        <xhtml:link rel="alternate" hreflang="en" href="https://winsend.app/en/safety/" />
-        <xhtml:link rel="alternate" hreflang="zh" href="https://winsend.app/zh/safety/" />
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://winsend.app/en/safety/" />
-        <lastmod>2026-10-08</lastmod>
-    </url>
-    <url>
-        <loc>https://winsend.app/en/privacy/</loc>
-        <xhtml:link rel="alternate" hreflang="en" href="https://winsend.app/en/privacy/" />
-        <xhtml:link rel="alternate" hreflang="zh" href="https://winsend.app/zh/privacy/" />
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://winsend.app/en/privacy/" />
-        <lastmod>2026-10-08</lastmod>
-    </url>
-    <url>
-        <loc>https://winsend.app/zh/privacy/</loc>
-        <xhtml:link rel="alternate" hreflang="en" href="https://winsend.app/en/privacy/" />
-        <xhtml:link rel="alternate" hreflang="zh" href="https://winsend.app/zh/privacy/" />
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://winsend.app/en/privacy/" />
-        <lastmod>2026-10-08</lastmod>
-    </url>
-    <!-- Product features (English) -->
-    <url>
-        <loc>https://winsend.app/en/features/</loc>
-        <xhtml:link rel="alternate" hreflang="en" href="https://winsend.app/en/features/" />
-        <xhtml:link rel="alternate" hreflang="zh" href="https://winsend.app/zh/features/" />
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://winsend.app/en/features/" />
-        <lastmod>2026-10-08</lastmod>
-    </url>
-    <!-- 产品功能（中文） -->
-    <url>
-        <loc>https://winsend.app/zh/features/</loc>
-        <xhtml:link rel="alternate" hreflang="en" href="https://winsend.app/en/features/" />
-        <xhtml:link rel="alternate" hreflang="zh" href="https://winsend.app/zh/features/" />
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://winsend.app/en/features/" />
-        <lastmod>2026-10-08</lastmod>
-    </url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://winsend.app/</loc>
+    <lastmod>2026-10-08</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://winsend.app/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://winsend.app/zh/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://winsend.app/fr/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://winsend.app/" />
+  </url>
+  <url>
+    <loc>https://winsend.app/en/download/</loc>
+    <lastmod>2026-10-08</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://winsend.app/en/download/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://winsend.app/zh/download/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://winsend.app/fr/telecharger/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://winsend.app/en/download/" />
+  </url>
+  <url>
+    <loc>https://winsend.app/en/features/</loc>
+    <lastmod>2026-10-08</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://winsend.app/en/features/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://winsend.app/zh/features/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://winsend.app/fr/features/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://winsend.app/en/features/" />
+  </url>
+  <url>
+    <loc>https://winsend.app/en/guides/</loc>
+    <lastmod>2026-10-08</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://winsend.app/en/guides/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://winsend.app/zh/guides/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://winsend.app/fr/guides/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://winsend.app/en/guides/" />
+  </url>
+  <url>
+    <loc>https://winsend.app/en/guides/setup/</loc>
+    <lastmod>2026-10-08</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://winsend.app/en/guides/setup/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://winsend.app/zh/guides/setup/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://winsend.app/fr/installation/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://winsend.app/en/guides/setup/" />
+  </url>
+  <url>
+    <loc>https://winsend.app/en/guides/how-it-works/</loc>
+    <lastmod>2026-10-08</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://winsend.app/en/guides/how-it-works/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://winsend.app/zh/guides/how-it-works/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://winsend.app/en/guides/how-it-works/" />
+  </url>
+  <url>
+    <loc>https://winsend.app/en/guides/copy-iphone-to-windows/</loc>
+    <lastmod>2026-10-08</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://winsend.app/en/guides/copy-iphone-to-windows/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://winsend.app/zh/guides/copy-iphone-to-windows/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://winsend.app/fr/guides/presse-papiers-iphone-windows/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://winsend.app/en/guides/copy-iphone-to-windows/" />
+  </url>
+  <url>
+    <loc>https://winsend.app/en/guides/airdrop-for-windows/</loc>
+    <lastmod>2026-10-08</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://winsend.app/en/guides/airdrop-for-windows/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://winsend.app/zh/guides/airdrop-for-windows/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://winsend.app/fr/guides/transfert-iphone-pc/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://winsend.app/en/guides/airdrop-for-windows/" />
+  </url>
+  <url>
+    <loc>https://winsend.app/en/guides/cross-platform-transfer-tools/</loc>
+    <lastmod>2026-10-08</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://winsend.app/en/guides/cross-platform-transfer-tools/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://winsend.app/zh/guides/cross-platform-transfer-tools/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://winsend.app/en/guides/cross-platform-transfer-tools/" />
+  </url>
+  <url>
+    <loc>https://winsend.app/en/comparison/winsend-vs-localsend/</loc>
+    <lastmod>2026-10-08</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://winsend.app/en/comparison/winsend-vs-localsend/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://winsend.app/zh/comparison/winsend-vs-localsend/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://winsend.app/en/comparison/winsend-vs-localsend/" />
+  </url>
+  <url>
+    <loc>https://winsend.app/en/comparison/winsend-vs-snapdrop/</loc>
+    <lastmod>2026-10-08</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://winsend.app/en/comparison/winsend-vs-snapdrop/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://winsend.app/zh/comparison/winsend-vs-snapdrop/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://winsend.app/en/comparison/winsend-vs-snapdrop/" />
+  </url>
+  <url>
+    <loc>https://winsend.app/en/comparison/winsend-vs-sendanywhere/</loc>
+    <lastmod>2026-10-08</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://winsend.app/en/comparison/winsend-vs-sendanywhere/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://winsend.app/zh/comparison/winsend-vs-sendanywhere/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://winsend.app/en/comparison/winsend-vs-sendanywhere/" />
+  </url>
+  <url>
+    <loc>https://winsend.app/en/safety/</loc>
+    <lastmod>2026-10-08</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://winsend.app/en/safety/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://winsend.app/zh/safety/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://winsend.app/fr/securite/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://winsend.app/en/safety/" />
+  </url>
+  <url>
+    <loc>https://winsend.app/en/privacy/</loc>
+    <lastmod>2026-10-08</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://winsend.app/en/privacy/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://winsend.app/zh/privacy/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://winsend.app/fr/confidentialite/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://winsend.app/en/privacy/" />
+  </url>
+  <url>
+    <loc>https://winsend.app/zh/</loc>
+    <lastmod>2026-10-08</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://winsend.app/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://winsend.app/zh/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://winsend.app/fr/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://winsend.app/" />
+  </url>
+  <url>
+    <loc>https://winsend.app/zh/download/</loc>
+    <lastmod>2026-10-08</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://winsend.app/en/download/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://winsend.app/zh/download/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://winsend.app/fr/telecharger/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://winsend.app/en/download/" />
+  </url>
+  <url>
+    <loc>https://winsend.app/zh/features/</loc>
+    <lastmod>2026-10-08</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://winsend.app/en/features/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://winsend.app/zh/features/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://winsend.app/fr/features/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://winsend.app/en/features/" />
+  </url>
+  <url>
+    <loc>https://winsend.app/zh/guides/</loc>
+    <lastmod>2026-10-08</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://winsend.app/en/guides/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://winsend.app/zh/guides/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://winsend.app/fr/guides/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://winsend.app/en/guides/" />
+  </url>
+  <url>
+    <loc>https://winsend.app/zh/guides/setup/</loc>
+    <lastmod>2026-10-08</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://winsend.app/en/guides/setup/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://winsend.app/zh/guides/setup/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://winsend.app/fr/installation/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://winsend.app/en/guides/setup/" />
+  </url>
+  <url>
+    <loc>https://winsend.app/zh/guides/how-it-works/</loc>
+    <lastmod>2026-10-08</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://winsend.app/en/guides/how-it-works/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://winsend.app/zh/guides/how-it-works/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://winsend.app/en/guides/how-it-works/" />
+  </url>
+  <url>
+    <loc>https://winsend.app/zh/guides/copy-iphone-to-windows/</loc>
+    <lastmod>2026-10-08</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://winsend.app/en/guides/copy-iphone-to-windows/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://winsend.app/zh/guides/copy-iphone-to-windows/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://winsend.app/fr/guides/presse-papiers-iphone-windows/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://winsend.app/en/guides/copy-iphone-to-windows/" />
+  </url>
+  <url>
+    <loc>https://winsend.app/zh/guides/airdrop-for-windows/</loc>
+    <lastmod>2026-10-08</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://winsend.app/en/guides/airdrop-for-windows/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://winsend.app/zh/guides/airdrop-for-windows/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://winsend.app/fr/guides/transfert-iphone-pc/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://winsend.app/en/guides/airdrop-for-windows/" />
+  </url>
+  <url>
+    <loc>https://winsend.app/zh/guides/cross-platform-transfer-tools/</loc>
+    <lastmod>2026-10-08</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://winsend.app/en/guides/cross-platform-transfer-tools/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://winsend.app/zh/guides/cross-platform-transfer-tools/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://winsend.app/en/guides/cross-platform-transfer-tools/" />
+  </url>
+  <url>
+    <loc>https://winsend.app/zh/comparison/winsend-vs-localsend/</loc>
+    <lastmod>2026-10-08</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://winsend.app/en/comparison/winsend-vs-localsend/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://winsend.app/zh/comparison/winsend-vs-localsend/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://winsend.app/en/comparison/winsend-vs-localsend/" />
+  </url>
+  <url>
+    <loc>https://winsend.app/zh/comparison/winsend-vs-snapdrop/</loc>
+    <lastmod>2026-10-08</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://winsend.app/en/comparison/winsend-vs-snapdrop/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://winsend.app/zh/comparison/winsend-vs-snapdrop/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://winsend.app/en/comparison/winsend-vs-snapdrop/" />
+  </url>
+  <url>
+    <loc>https://winsend.app/zh/comparison/winsend-vs-sendanywhere/</loc>
+    <lastmod>2026-10-08</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://winsend.app/en/comparison/winsend-vs-sendanywhere/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://winsend.app/zh/comparison/winsend-vs-sendanywhere/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://winsend.app/en/comparison/winsend-vs-sendanywhere/" />
+  </url>
+  <url>
+    <loc>https://winsend.app/zh/safety/</loc>
+    <lastmod>2026-10-08</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://winsend.app/en/safety/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://winsend.app/zh/safety/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://winsend.app/fr/securite/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://winsend.app/en/safety/" />
+  </url>
+  <url>
+    <loc>https://winsend.app/zh/privacy/</loc>
+    <lastmod>2026-10-08</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://winsend.app/en/privacy/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://winsend.app/zh/privacy/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://winsend.app/fr/confidentialite/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://winsend.app/en/privacy/" />
+  </url>
+  <url>
+    <loc>https://winsend.app/fr/</loc>
+    <lastmod>2026-10-08</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://winsend.app/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://winsend.app/zh/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://winsend.app/fr/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://winsend.app/" />
+  </url>
+  <url>
+    <loc>https://winsend.app/fr/telecharger/</loc>
+    <lastmod>2026-10-08</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://winsend.app/en/download/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://winsend.app/zh/download/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://winsend.app/fr/telecharger/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://winsend.app/en/download/" />
+  </url>
+  <url>
+    <loc>https://winsend.app/fr/installation/</loc>
+    <lastmod>2026-10-08</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://winsend.app/en/guides/setup/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://winsend.app/zh/guides/setup/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://winsend.app/fr/installation/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://winsend.app/en/guides/setup/" />
+  </url>
+  <url>
+    <loc>https://winsend.app/fr/securite/</loc>
+    <lastmod>2026-10-08</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://winsend.app/en/safety/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://winsend.app/zh/safety/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://winsend.app/fr/securite/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://winsend.app/en/safety/" />
+  </url>
+  <url>
+    <loc>https://winsend.app/fr/confidentialite/</loc>
+    <lastmod>2026-10-08</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://winsend.app/en/privacy/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://winsend.app/zh/privacy/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://winsend.app/fr/confidentialite/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://winsend.app/en/privacy/" />
+  </url>
+  <url>
+    <loc>https://winsend.app/fr/guides/transfert-iphone-pc/</loc>
+    <lastmod>2026-10-08</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://winsend.app/en/guides/airdrop-for-windows/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://winsend.app/zh/guides/airdrop-for-windows/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://winsend.app/fr/guides/transfert-iphone-pc/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://winsend.app/en/guides/airdrop-for-windows/" />
+  </url>
+  <url>
+    <loc>https://winsend.app/fr/features/</loc>
+    <lastmod>2026-10-08</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://winsend.app/en/features/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://winsend.app/zh/features/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://winsend.app/fr/features/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://winsend.app/en/features/" />
+  </url>
+  <url>
+    <loc>https://winsend.app/fr/guides/</loc>
+    <lastmod>2026-10-08</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://winsend.app/en/guides/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://winsend.app/zh/guides/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://winsend.app/fr/guides/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://winsend.app/en/guides/" />
+  </url>
+  <url>
+    <loc>https://winsend.app/fr/guides/presse-papiers-iphone-windows/</loc>
+    <lastmod>2026-10-08</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://winsend.app/en/guides/copy-iphone-to-windows/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://winsend.app/zh/guides/copy-iphone-to-windows/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://winsend.app/fr/guides/presse-papiers-iphone-windows/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://winsend.app/en/guides/copy-iphone-to-windows/" />
+  </url>
 </urlset>

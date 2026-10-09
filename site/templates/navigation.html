@@ -1,0 +1,16 @@
+    <nav aria-label="{{ui.navigation}}" class="site-nav site-nav--{{navigationMode}}">
+        <div class="site-nav-inner">
+            <a href="{{links.home}}" class="site-brand" aria-label="{{ui.home}}"><img src="/logo.webp" alt="" width="36" height="36"><span>{{product.name}}</span></a>
+            <div class="site-nav-actions">
+                <div class="site-nav-pages">{{{navigationLinks}}}</div>
+                <details class="site-page-menu">
+                    <summary aria-label="{{ui.menu}}">☰</summary>
+                    <div class="site-language-panel">{{{pageMenuLinks}}}</div>
+                </details>
+                <details class="site-language-menu">
+                    <summary aria-label="{{ui.language}}">{{localeName}}</summary>
+                    <div class="site-language-panel">{{{languageLinks}}}</div>
+                </details>
+            </div>
+        </div>
+    </nav>

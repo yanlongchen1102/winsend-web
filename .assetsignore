@@ -11,5 +11,11 @@ package.json
 package-lock.json
 wrangler.jsonc
 tailwind.config.js
+# Build sources, tests and state must never be publicly served.
+site
+scripts
+tests
+*.site-tmp
+index_original_backup.html
 assets/css/tailwind.input.css
 *.md

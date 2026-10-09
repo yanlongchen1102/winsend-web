@@ -1,0 +1,132 @@
+<main>
+        <section class="hero-bg pt-32 pb-14 px-6">
+            <div class="max-w-4xl mx-auto">
+                <nav aria-label="Breadcrumb" class="mb-8"><ol class="flex flex-wrap items-center gap-2 text-sm text-gray-500"><li><a href="{{links.home}}" class="hover:text-gray-900 transition-colors">Home</a></li><li>/</li><li><a href="{{links.guides}}" class="hover:text-gray-900 transition-colors">Guide Center</a></li><li>/</li><li class="text-gray-900 font-medium">WinSend vs LocalSend</li></ol></nav>
+                <header>
+                    <p class="text-sm font-semibold tracking-[0.24em] text-blue-600 uppercase mb-4">Comparison</p>
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight mb-6">WinSend vs LocalSend: Which AirDrop Alternative Fits iPhone &amp; Windows?</h1>
+                    <p class="text-xl text-gray-600 leading-9 max-w-3xl">Both tools transfer files over your local network without cables or cloud. But they are built for different workflows — this honest comparison helps you pick the right one.</p>
+                </header>
+            </div>
+        </section>
+        <section class="px-6 pb-20">
+            <div class="max-w-4xl mx-auto">
+                <article class="prose">
+                    <h2>Quick Verdict</h2>
+                    <ul>
+                        <li><strong>Choose WinSend</strong> if you use an iPhone with a Windows PC and want the closest thing to real AirDrop: send from the iOS share sheet after setup, while WinSend runs on Windows, Pro automatic text sync while iOS permits the app to run, and manually triggered Shortcuts.</li>
+                        <li><strong>Choose LocalSend</strong> if you need Android, macOS or Linux in the mix, or you specifically want a free, open-source tool you can audit.</li>
+                    </ul>
+
+                    <h2>WinSend vs LocalSend at a Glance</h2>
+                    <div class="table-wrap">
+                        <table class="compare-table">
+                            <thead>
+                                <tr>
+                                    <th></th>
+                                    <th>WinSend</th>
+                                    <th>LocalSend</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>Platforms</strong></td>
+                                    <td>Windows + iOS only</td>
+                                    <td class="win">Windows, macOS, Linux, Android, iOS</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Send without opening the app</strong></td>
+                                    <td class="win">Yes — iOS share sheet integration</td>
+                                    <td>No — must open the app first</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Clipboard sync</strong></td>
+                                    <td class="win">Text sync / Shortcuts; iOS and Pro limits apply</td>
+                                    <td>Manual text sending only</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Receiver must accept</strong></td>
+                                    <td class="win">No — paired device receives automatically</td>
+                                    <td>Yes — receiver taps Accept each time</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Price</strong></td>
+                                    <td>Free core features; Pro access for advanced features</td>
+                                    <td class="win">Completely free</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Open source</strong></td>
+                                    <td>No</td>
+                                    <td class="win">Yes (MIT license)</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Account required</strong></td>
+                                    <td class="win">No</td>
+                                    <td class="win">No</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Internet required</strong></td>
+                                    <td class="win">Not for local files; required for cloud text</td>
+                                    <td class="win">Not for local files; required for cloud text</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <h2>Where WinSend Wins</h2>
+
+                    <h3>1. Send from the share sheet — no app switching</h3>
+                    <p>With LocalSend, every transfer follows the same ritual: open the app, tap Send, browse for the file, pick the device, then wait for the receiver to accept. With WinSend, you select photos in the iPhone Photos app, tap Share, choose WinSend, and the file lands on your PC. You never leave the app you are in — exactly how AirDrop works on a Mac.</p>
+                    <div class="shot-card">
+                        <img src="/en/guides/airdrop-for-windows/images/step1-share-sheet-winsend.webp" alt="iPhone share sheet showing WinSend next to AirDrop, Messages and Mail" decoding="async" loading="lazy">
+                        <p class="screenshot-caption">WinSend lives in the iOS share sheet, alongside AirDrop.</p>
+                    </div>
+                    <div class="shot-card">
+                        <img src="/en/guides/airdrop-for-windows/images/step4-send-success.webp" alt="WinSend send successful confirmation dialog" decoding="async" loading="lazy">
+                        <p class="screenshot-caption">Select, share, done — the file is already on your Windows PC.</p>
+                    </div>
+
+                    <h3>2. Clipboard text sync and triggered Shortcuts</h3>
+                    <p>Transfer clipboard text in either direction. Pro automatic text sync depends on iOS allowing the app to run; configured Shortcuts must be triggered. Clipboard images use supported local manual/Shortcut paths, not cloud sync. LocalSend can send text snippets, but each snippet is a manual send-and-accept operation. If you copy and paste between devices more than a few times a day, this alone is the reason to pick WinSend. See <a href="{{links.copy-iphone-to-windows}}">how clipboard sync works with Shortcuts and Back Tap</a>.</p>
+
+                    <h3>3. Paired devices receive automatically</h3>
+                    <p>Once paired, your PC accepts incoming files without anyone touching it — useful when your PC is across the room or you are transferring a batch of photos. LocalSend requires the receiver to confirm every transfer by default.</p>
+
+                    <h2>Where LocalSend Wins</h2>
+                    <p>To keep this comparison honest, LocalSend is the better tool in several situations:</p>
+                    <ul>
+                        <li><strong>More platforms</strong> — Android, macOS and Linux are fully supported. WinSend is Windows ↔ iPhone only.</li>
+                        <li><strong>Open source</strong> — the code is public under the MIT license and can be audited, which matters to privacy-sensitive users and organizations.</li>
+                        <li><strong>Completely free</strong> — no paid tier, no feature gates, no ads.</li>
+                        <li><strong>Folder transfers</strong> — sending entire folders is built in.</li>
+                    </ul>
+                    <div class="shot-card">
+                        <img src="/en/guides/cross-platform-transfer-tools/images/localsend-screenshot.jpg" alt="LocalSend app interface showing nearby devices" decoding="async" loading="lazy">
+                        <p class="screenshot-caption">LocalSend's clean interface — capable, but every transfer starts inside the app.</p>
+                    </div>
+
+                    <h2>Privacy and Security</h2>
+                    <p>Both tools transfer directly between your devices over the local network — no cloud servers, no accounts, no uploads. LocalSend encrypts transfers with HTTPS using locally generated certificates and is fully open source. WinSend is closed source. Its local file path uses HTTP rather than end-to-end encryption, so use a trusted private network. Optional Cloud Sync encrypts clipboard text on the clients before relaying it; it does not transfer files.</p>
+
+                    <h2>Who Should Choose Which?</h2>
+                    <ul>
+                        <li><strong>iPhone + Windows PC, daily transfers, clipboard-heavy workflow</strong> → <strong>WinSend</strong>. It is purpose-built for exactly this pair.</li>
+                        <li><strong>Mixed ecosystem with Android or Mac devices</strong> → <strong>LocalSend</strong>.</li>
+                        <li><strong>Open-source requirement (company policy, audits)</strong> → <strong>LocalSend</strong>.</li>
+                        <li><strong>Want the closest experience to real AirDrop</strong> → <strong>WinSend</strong>, because of the share sheet integration.</li>
+                    </ul>
+                    <p>Looking at other options too? See our <a href="{{links.cross-platform-transfer-tools}}">full roundup of the 5 best AirDrop alternatives</a>.</p>
+
+                    {{{faq}}}
+
+                    <h2>Try WinSend</h2>
+                    <p>If your daily setup is an iPhone and a Windows PC, download WinSend and pair it in under a minute with the <a href="{{links.setup}}">installation guide</a>.</p>
+                    <div class="mt-8 mb-12">
+                        <a href="{{links.download}}" class="btn-primary inline-flex items-center gap-2 px-8 py-4 bg-blue-700 text-white text-lg font-semibold rounded-xl hover:bg-blue-800 transition-all shadow-lg shadow-blue-700/30">Download WinSend for Windows</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        {{{productScope}}}
+    </main>

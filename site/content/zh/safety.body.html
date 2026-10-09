@@ -1,0 +1,43 @@
+<main>
+        <section class="hero-bg pt-32 pb-14 px-6">
+            <div class="max-w-3xl mx-auto">
+                <nav aria-label="Breadcrumb" class="mb-8"><ol class="flex flex-wrap items-center gap-2 text-sm text-gray-500"><li><a href="{{links.home}}" class="hover:text-gray-900 transition-colors">首页</a></li><li>/</li><li class="text-gray-900 font-medium">WinSend 安全吗？</li></ol></nav>
+                <h1 class="text-4xl sm:text-5xl font-extrabold tracking-tight leading-tight mb-6">WinSend 安全吗？</h1>
+                <p class="text-xl text-gray-600 leading-9">WinSend 的文件走局域网，可选云剪贴板在客户端加密文字。本地 HTTP 传输不等同于端到端加密，应在可信专用网络使用。下面说明安全边界、统计信息和安装注意事项。</p>
+                <p class="mt-4 text-sm text-gray-400">最后更新：2026 年 10 月 8 日</p>
+            </div>
+        </section>
+
+        <section class="py-12 px-6">
+            <div class="max-w-3xl mx-auto space-y-10">
+                <div>
+                    <h2 class="text-2xl font-bold mb-3">你的文件不经过任何服务器</h2>
+                    <p class="text-gray-600 leading-8">文件和照片通过可互通的局域网直接在设备间传输，没有云文件上传环节。已核验的本地路径使用 HTTP，不等同于端到端加密。请使用可信专用网络；手动 IP 不能绕过客户端隔离或防火墙阻断。</p>
+                </div>
+                <div>
+                    <h2 class="text-2xl font-bold mb-3">关于 SmartScreen 提示</h2>
+                    <p class="text-gray-600 leading-8">Microsoft Defender SmartScreen 可能对不熟悉的下载或发布者显示<em>“已保护你的电脑”</em>。信誉提示与恶意软件检测不同，但提示本身不能证明文件安全。</p>
+                    <p class="text-gray-600 leading-8 mt-3">优先使用官方<a href="{{links.download}}" class="text-blue-600 underline">Microsoft Store 安装入口</a>。运行备用安装包前请核实来源与发布者。代码签名不保证消除所有 SmartScreen 提示；不要关闭系统保护或绕过恶意软件警告。</p>
+                </div>
+                <div>
+                    <h2 class="text-2xl font-bold mb-3">可选的云同步是端到端加密的</h2>
+                    <p class="text-gray-600 leading-8">云同步只中转<strong>剪贴板文本</strong>。客户端用同步码派生密钥，通过 AES-256-GCM 加密消息。请保密同步码：持有码的人可派生相同密钥。内容加密不隐藏设备名称/标识、分组信息或 IP 等连接元数据；这不是独立安全审计结论，也不代表服务端不保留任何元数据。</p>
+                </div>
+                <div>
+                    <h2 class="text-2xl font-bold mb-3">应用收集哪些数据</h2>
+                    <ul class="list-disc pl-6 text-gray-600 leading-8 space-y-1">
+                        <li>设计的分析事件不包含传输内容或完整文件名。本地诊断日志可能包含文件名或剪贴板预览，分享前请检查。</li>
+                        <li>不需要账号或任何个人信息。</li>
+                        <li>假名化使用统计可关联多次功能与传输事件。Apple 与 RevenueCat 处理购买和权益校验。标识、元数据与本地日志注意事项见<a href="{{links.privacy}}" class="text-blue-600 underline">隐私政策</a>。</li>
+                    </ul>
+                </div>
+                <div class="rounded-3xl border border-blue-100 bg-blue-50/60 p-8">
+                    <h2 class="text-2xl font-bold mb-3">准备好试试了吗？</h2>
+                    <p class="text-gray-600 leading-8 mb-4">几秒钟即可在 iPhone 与 Windows 之间传输照片、视频、文件和剪贴板。</p>
+                    <a href="{{links.download}}" class="btn-primary inline-flex items-center gap-2 px-8 py-4 bg-blue-600 text-white text-lg font-semibold rounded-xl hover:bg-blue-700 transition-all">下载 WinSend</a>
+                </div>
+            </div>
+        </section>
+
+        {{{faq}}}
+    </main>

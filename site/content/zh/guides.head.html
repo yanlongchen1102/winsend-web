@@ -1,0 +1,117 @@
+<meta property="og:type" content="website">
+    <meta property="og:site_name" content="WinSend">
+    <meta property="og:image" content="https://winsend.app/idea.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://winsend.app/idea.png">
+    <style>
+        * { font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif; }
+        .gradient-text {
+            background: linear-gradient(135deg, #2563eb 0%, #3b82f6 50%, #60a5fa 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .hero-bg {
+            background:
+                radial-gradient(ellipse 80% 50% at 50% -20%, rgba(37, 99, 235, 0.15), transparent),
+                linear-gradient(180deg, #ffffff 0%, #f8fbff 100%);
+        }
+        .card-hover {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .card-hover:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 25px 50px -12px rgba(15, 23, 42, 0.12);
+        }
+        .btn-primary {
+            transition: all 0.2s ease;
+        }
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px -5px rgba(37, 99, 235, 0.35);
+        }
+    </style>
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "CollectionPage",
+            "name": "WinSend 教程中心",
+            "description": "WinSend 中文教程列表，涵盖 iPhone 与 Windows 文件传输、安装设置与工作原理。",
+            "url": "{{urls.guides}}",
+            "inLanguage": "{{htmlLang}}",
+            "mainEntity": {
+                "@type": "ItemList",
+                "itemListElement": [
+                    {
+                        "@type": "ListItem",
+                        "position": 1,
+                        "url": "{{urls.airdrop-for-windows}}",
+                        "name": "Windows 版 AirDrop：iPhone 与电脑互传文件"
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 2,
+                        "url": "{{urls.cross-platform-transfer-tools}}",
+                        "name": "2026 年最佳 Windows AirDrop 替代工具"
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 3,
+                        "url": "{{urls.copy-iphone-to-windows}}",
+                        "name": "iPhone 与 Windows 剪贴板同步"
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 4,
+                        "url": "{{urls.setup}}",
+                        "name": "WinSend 安装与配对设置"
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 5,
+                        "url": "{{urls.how-it-works}}",
+                        "name": "WinSend 如何工作"
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 6,
+                        "url": "{{urls.winsend-vs-localsend}}",
+                        "name": "WinSend 对比 LocalSend：哪款 AirDrop 替代工具适合 iPhone 和 Windows？"
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 7,
+                        "url": "{{urls.winsend-vs-snapdrop}}",
+                        "name": "WinSend 对比 Snapdrop：更稳定的 iPhone ↔ Windows 传输方案"
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 8,
+                        "url": "{{urls.winsend-vs-sendanywhere}}",
+                        "name": "WinSend 对比 Send Anywhere：局域网文件直传与云剪贴板"
+                    }
+                ]
+            }
+        }
+    </script>
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+                {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "首页",
+                    "item": "{{urls.home}}"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "教程中心",
+                    "item": "{{urls.guides}}"
+                }
+            ]
+        }
+    </script>
+    <script src="/assets/js/posthog.js" defer></script>

@@ -1,0 +1,73 @@
+<main>
+        <section class="hero-bg pt-32 pb-14 px-6">
+            <div class="max-w-6xl mx-auto">
+                <nav aria-label="Breadcrumb" class="mb-8"><ol class="flex flex-wrap items-center gap-2 text-sm text-gray-500"><li><a href="{{links.home}}" class="hover:text-gray-900 transition-colors">Home</a></li><li>/</li><li><a href="{{links.guides}}" class="hover:text-gray-900 transition-colors">Guide Center</a></li><li>/</li><li class="text-gray-900 font-medium">Installation and Pairing Setup</li></ol></nav>
+                <section class="grid gap-8 lg:grid-cols-[1.1fr_0.9fr] items-start">
+                    <header>
+                        <p class="text-sm font-semibold tracking-[0.24em] text-blue-600 uppercase mb-4">Setup Guide</p>
+                        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight mb-6">WinSend Installation and Pairing Setup</h1>
+                        <p class="text-xl text-gray-600 leading-9 max-w-3xl">Windows installation, iPhone installation, permission instructions and auto-pairing organized in one page for unified reference by other tutorials.</p>
+                    </header>
+                    <section class="rounded-3xl border border-blue-100 bg-white p-8 shadow-lg shadow-blue-100/50">
+                        <h2 class="text-2xl font-bold tracking-tight mb-4">What This Page Covers</h2>
+                        <ul class="space-y-3 text-gray-600 leading-8">
+                            <li>Windows client installation</li>
+                            <li>iPhone installation and permission preparation</li>
+                            <li>Auto-pairing instructions on same Wi-Fi</li>
+                            <li>Checklist when encountering issues</li>
+                        </ul>
+                    </section>
+                </section>
+            </div>
+        </section>
+        <section class="px-6 pb-20">
+            <div class="max-w-6xl mx-auto grid gap-10 lg:grid-cols-[1.2fr_0.8fr]">
+                <article class="rounded-[2rem] border border-gray-200 bg-white p-8 sm:p-10 shadow-sm">
+                    <section class="mb-10">
+                        <h2 class="text-3xl font-bold tracking-tight mb-4">1. Install Windows Client</h2>
+                        <ol class="list-decimal pl-5 space-y-3 text-gray-600 leading-8">
+                            <li><a href="{{links.download}}" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:text-blue-700 font-medium underline">Download WinSend for Windows</a></li>
+                            <li>Prefer Microsoft Store, then launch WinSend. For an alternative installer, verify the source and publisher before running it.</li>
+                            <li>Confirm local network environment is available and keep app running</li>
+                        </ol>
+                    </section>
+                    <section class="mb-10">
+                        <h2 class="text-3xl font-bold tracking-tight mb-4">2. Install iPhone App</h2>
+                        <ol class="list-decimal pl-5 space-y-3 text-gray-600 leading-8">
+                            <li>Download WinSend from App Store</li>
+                            <li>Allow necessary permissions as prompted</li>
+                            <li>Prepare shortcuts or send entry for later use</li>
+                        </ol>
+                    </section>
+                    <section class="mb-10">
+                        <h2 class="text-3xl font-bold tracking-tight mb-4">3. Complete Auto-Pairing</h2>
+                        <p class="text-gray-600 leading-8 mb-4">Put both devices on a reachable private LAN; your PC may use Ethernet on that LAN. Allow Local Network access on iPhone and Windows Firewall access on the private network, then select the discovered PC.</p>
+                        <p class="text-gray-600 leading-8">If discovery fails, check running apps, permissions and firewall rules. Try manual IP entry only when the devices can reach each other; guest-network isolation may require switching to a trusted private network.</p>
+                    </section>
+                    <section>
+                        <h2 class="text-3xl font-bold tracking-tight mb-4">4. Checklist</h2>
+                        <ul class="space-y-3 text-gray-600 leading-8">
+                            <li>WinSend on Windows is installed and running</li>
+                            <li>WinSend on iPhone is installed</li>
+                            <li>Both devices are on the same reachable private LAN</li>
+                            <li>Necessary permissions are granted</li>
+                            <li>Related shortcuts are configured if needed</li>
+                        </ul>
+                    </section>
+                </article>
+                <aside class="space-y-6">
+                    <section class="rounded-3xl border border-gray-200 bg-white p-8 shadow-sm">
+                        <h2 class="text-2xl font-bold tracking-tight mb-4">Continue Reading</h2>
+                        <div class="flex flex-col gap-3">
+                            <a href="{{links.how-it-works}}" class="btn-primary inline-flex items-center justify-center rounded-xl bg-blue-600 px-6 py-3 font-semibold text-white hover:bg-blue-700">Learn How It Works</a>
+                            <a href="{{links.copy-iphone-to-windows}}" class="inline-flex items-center justify-center rounded-xl border border-gray-200 px-6 py-3 font-semibold text-gray-900 transition hover:border-blue-200 hover:text-blue-700">View Clipboard Sync Tutorial</a>
+                        </div>
+                    </section>
+                </aside>
+            </div>
+        </section>
+
+        {{{productScope}}}
+
+        {{{faq}}}
+    </main>

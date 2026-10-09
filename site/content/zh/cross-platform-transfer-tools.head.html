@@ -1,0 +1,54 @@
+<meta name="keywords" content="iPhone 传文件到 Windows, iPhone 传照片到电脑, 隔空投送 Windows, AirDrop 替代品, 跨平台文件传输, 局域网传文件, WinSend 教程, LocalSend Snapdrop Send Anywhere 对比">
+    <meta property="og:image" content="https://winsend.app/zh/guides/cross-platform-transfer-tools/images/winsend-screenshot-1.png">
+    <meta property="og:type" content="article">
+    <meta name="twitter:card" content="summary_large_image">
+    <style>
+        * { font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif; }
+        .hero-bg { background: radial-gradient(ellipse 80% 50% at 50% -20%, rgba(37, 99, 235, 0.15), transparent), linear-gradient(180deg, #ffffff 0%, #f8fbff 100%); }
+        .btn-primary { transition: all 0.2s ease; }
+        .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 10px 25px -5px rgba(37, 99, 235, 0.35); }
+        .prose h2 { font-size: 1.75rem; font-weight: 700; margin-top: 2.5rem; margin-bottom: 1rem; letter-spacing: -0.025em; }
+        .prose h3 { font-size: 1.25rem; font-weight: 600; margin-top: 2rem; margin-bottom: 0.75rem; }
+        .prose h4 { font-size: 1.05rem; font-weight: 600; margin-top: 1.5rem; margin-bottom: 0.5rem; }
+        .prose p { color: #4b5563; line-height: 1.8; margin-bottom: 1rem; }
+        .prose ul { list-style-type: disc; padding-left: 1.5rem; color: #4b5563; line-height: 1.8; margin-bottom: 1rem; }
+        .prose ol { list-style-type: decimal; padding-left: 1.5rem; color: #4b5563; line-height: 1.8; margin-bottom: 1rem; }
+        .prose li { margin-bottom: 0.5rem; }
+        .prose a { color: #2563eb; text-decoration: underline; }
+        .prose a:hover { color: #1d4ed8; }
+        .prose strong { color: #111827; font-weight: 600; }
+        .prose a.btn-primary { color: #ffffff; text-decoration: none; }
+        .tool-card { border: 1px solid #e5e7eb; border-radius: 1.5rem; background: #fff; padding: 1.75rem; margin: 2rem 0; box-shadow: 0 1px 3px rgba(0,0,0,0.05); }
+        .tool-card h3 { margin-top: 0; }
+        .tool-header { display: flex; align-items: center; gap: 1rem; margin-bottom: 1.25rem; }
+        .tool-header img.logo { width: 56px; height: 56px; border-radius: 0.875rem; object-fit: cover; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+        .tool-header .name { font-size: 1.4rem; font-weight: 700; margin: 0; }
+        .tool-header .subtitle { color: #6b7280; font-size: 0.9rem; margin: 0.15rem 0 0; }
+        .screenshot { width: 100%; border-radius: 1rem; border: 1px solid #f3f4f6; margin: 1rem 0; max-height: 420px; object-fit: cover; object-position: top; }
+        .info-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 0.75rem; margin: 1rem 0; }
+        .info-item { background: #f9fafb; padding: 0.75rem 1rem; border-radius: 0.75rem; font-size: 0.9rem; color: #374151; }
+        .info-item strong { display: block; font-size: 0.78rem; color: #6b7280; margin-bottom: 0.2rem; font-weight: 500; }
+        .pros-cons { display: grid; grid-template-columns: 1fr 1fr; gap: 1.25rem; margin-top: 1rem; }
+        @media (max-width: 640px) { .pros-cons { grid-template-columns: 1fr; } }
+        .pros, .cons { padding: 1rem 1.25rem; border-radius: 0.875rem; }
+        .pros { background: #f0fdf4; }
+        .cons { background: #fef2f2; }
+        .pros h4 { color: #166534; margin-top: 0; }
+        .cons h4 { color: #991b1b; margin-top: 0; }
+        .pros ul, .cons ul { margin-bottom: 0; }
+        .step-card { border: 1px solid #e5e7eb; border-radius: 1.5rem; background: #fff; padding: 1.5rem; margin-bottom: 2rem; box-shadow: 0 1px 3px rgba(0,0,0,0.05); }
+        .step-card img { width: 100%; max-width: 360px; border-radius: 1rem; margin: 1rem auto 0; display: block; border: 1px solid #f3f4f6; }
+        .step-badge { display: inline-block; background: #2563eb; color: #fff; font-size: 0.75rem; font-weight: 700; padding: 0.25rem 0.75rem; border-radius: 9999px; margin-bottom: 0.75rem; }
+        .screenshot-caption { text-align: center; font-size: 0.875rem; color: #6b7280; margin-top: 0.75rem; }
+        .compare-table { width: 100%; border-collapse: collapse; font-size: 0.92rem; margin: 1.5rem 0; }
+        .compare-table th, .compare-table td { padding: 0.85rem 1rem; text-align: left; border-bottom: 1px solid #e5e7eb; }
+        .compare-table th { background: #eff6ff; font-weight: 600; color: #1d4ed8; }
+        .compare-table tr:last-child td { border-bottom: none; }
+        .table-wrap { overflow-x: auto; border: 1px solid #e5e7eb; border-radius: 1rem; box-shadow: 0 1px 3px rgba(0,0,0,0.05); }
+        .tag { display: inline-block; font-size: 0.72rem; padding: 0.15rem 0.6rem; border-radius: 9999px; font-weight: 600; margin-right: 0.3rem; white-space: nowrap; }
+        .tag-free { background: #dcfce7; color: #166534; }
+        .tag-paid { background: #ffedd5; color: #9a3412; }
+        .tag-open { background: #e0e7ff; color: #3730a3; }
+        .tag-web { background: #f3e8ff; color: #6b21a8; }
+    </style>
+    <script src="/assets/js/posthog.js" defer></script>

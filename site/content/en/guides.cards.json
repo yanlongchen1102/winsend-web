@@ -1,0 +1,58 @@
+[
+  {
+    "category": "Solution Guide",
+    "title": "AirDrop for Windows: Send Files from iPhone to PC",
+    "description": "Why Windows doesn't have AirDrop and how WinSend gives you the same wireless transfer experience between iPhone and Windows.",
+    "cta": "Read AirDrop for Windows Guide",
+    "page": "airdrop-for-windows"
+  },
+  {
+    "category": "Tool Roundup",
+    "title": "Best AirDrop Alternatives for Windows in 2026",
+    "description": "Compare WinSend, LocalSend, Snapdrop, Feem, and Send Anywhere to find the right iPhone-to-Windows file transfer tool.",
+    "cta": "Compare AirDrop Alternatives for Windows",
+    "page": "cross-platform-transfer-tools"
+  },
+  {
+    "category": "Comparison",
+    "title": "WinSend vs LocalSend",
+    "description": "Share sheet integration vs open-source flexibility — an honest look at which AirDrop alternative fits your iPhone & Windows workflow.",
+    "cta": "View Comparison",
+    "page": "winsend-vs-localsend"
+  },
+  {
+    "category": "Comparison",
+    "title": "WinSend vs Snapdrop",
+    "description": "Why Snapdrop keeps failing to find your devices, and when a native app is the more reliable Snapdrop alternative.",
+    "cta": "View Comparison",
+    "page": "winsend-vs-snapdrop"
+  },
+  {
+    "category": "Comparison",
+    "title": "WinSend vs Send Anywhere",
+    "description": "Compare local file transfer and remote file sharing, including WinSend’s separate text-only cloud clipboard.",
+    "cta": "View Comparison",
+    "page": "winsend-vs-sendanywhere"
+  },
+  {
+    "category": "Shortcuts Tutorial",
+    "title": "Share Clipboard Between iPhone and Windows",
+    "description": "Copy on iPhone and paste on Windows over the same Wi-Fi with Shortcuts or Back Tap—without iCloud or email.",
+    "cta": "Set Up iPhone-to-Windows Clipboard Sync",
+    "page": "copy-iphone-to-windows"
+  },
+  {
+    "category": "Installation Guide",
+    "title": "WinSend Installation and Pairing Setup",
+    "description": "Includes Windows installation, iPhone installation, permission instructions, auto-pairing and checklist.",
+    "cta": "View Installation Guide",
+    "page": "setup"
+  },
+  {
+    "category": "How It Works",
+    "title": "How WinSend Works",
+    "description": "Explains how WinSend works, why it's closer to seamless transfer, and why this experience suits mixed device scenarios of iPhone and Windows.",
+    "cta": "Read How It Works",
+    "page": "how-it-works"
+  }
+]

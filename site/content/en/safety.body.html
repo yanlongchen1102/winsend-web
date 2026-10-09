@@ -1,0 +1,43 @@
+<main>
+        <section class="hero-bg pt-32 pb-14 px-6">
+            <div class="max-w-3xl mx-auto">
+                <nav aria-label="Breadcrumb" class="mb-8"><ol class="flex flex-wrap items-center gap-2 text-sm text-gray-500"><li><a href="{{links.home}}" class="hover:text-gray-900 transition-colors">Home</a></li><li>/</li><li class="text-gray-900 font-medium">Is WinSend safe?</li></ol></nav>
+                <h1 class="text-4xl sm:text-5xl font-extrabold tracking-tight leading-tight mb-6">Is WinSend safe?</h1>
+                <p class="text-xl text-gray-600 leading-9">WinSend keeps file transfers local and offers optional client-encrypted cloud clipboard. Local HTTP transfer is not end-to-end encrypted, so use a trusted private network. Here are the security limits, analytics and installation precautions.</p>
+                <p class="mt-4 text-sm text-gray-400">Last updated: October 8, 2026</p>
+            </div>
+        </section>
+
+        <section class="py-12 px-6">
+            <div class="max-w-3xl mx-auto space-y-10">
+                <div>
+                    <h2 class="text-2xl font-bold mb-3">Your files never touch a server</h2>
+                    <p class="text-gray-600 leading-8">Files and photos travel directly between your devices over a reachable LAN, without a cloud file upload. The checked local path uses HTTP, not end-to-end encryption. Use a trusted private network, and remember that manual IP entry cannot bypass client isolation or firewall blocks.</p>
+                </div>
+                <div>
+                    <h2 class="text-2xl font-bold mb-3">About the SmartScreen warning</h2>
+                    <p class="text-gray-600 leading-8">Microsoft Defender SmartScreen may show <em>"Windows protected your PC"</em> for an unfamiliar download or publisher. A reputation warning is different from a malware finding, but neither should be treated as proof that a file is safe.</p>
+                    <p class="text-gray-600 leading-8 mt-3">Prefer the official <a href="{{links.download}}" class="text-blue-600 underline">Microsoft Store installation link</a>. Before running an alternative installer, verify the source and publisher. Signing does not guarantee that every SmartScreen warning disappears; do not disable protection or bypass a malware warning.</p>
+                </div>
+                <div>
+                    <h2 class="text-2xl font-bold mb-3">Optional Cloud Sync is end-to-end encrypted</h2>
+                    <p class="text-gray-600 leading-8">Cloud Sync relays <strong>clipboard text only</strong>. Clients encrypt messages with AES-256-GCM using keys derived from the sync code. Keep that code private: someone with it can derive the same keys. Content encryption does not hide connection metadata such as device names/identifiers, group information or IP addresses. This is not an independently audited security guarantee or a promise that servers retain no metadata.</p>
+                </div>
+                <div>
+                    <h2 class="text-2xl font-bold mb-3">What data the app collects</h2>
+                    <ul class="list-disc pl-6 text-gray-600 leading-8 space-y-1">
+                        <li>Transfer content and full file names are not intended analytics payloads. Local diagnostic logs may contain file names or clipboard previews; inspect them before sharing.</li>
+                        <li>No account or personal information is required.</li>
+                        <li>Pseudonymous usage analytics can associate feature/transfer events over time. Apple and RevenueCat handle purchases and entitlement checks. See the <a href="{{links.privacy}}" class="text-blue-600 underline">privacy policy</a> for identifiers, metadata and local-log precautions.</li>
+                    </ul>
+                </div>
+                <div class="rounded-3xl border border-blue-100 bg-blue-50/60 p-8">
+                    <h2 class="text-2xl font-bold mb-3">Ready to try it?</h2>
+                    <p class="text-gray-600 leading-8 mb-4">Transfer photos, videos, files and clipboard between iPhone and Windows in seconds.</p>
+                    <a href="{{links.download}}" class="btn-primary inline-flex items-center gap-2 px-8 py-4 bg-blue-600 text-white text-lg font-semibold rounded-xl hover:bg-blue-700 transition-all">Download WinSend</a>
+                </div>
+            </div>
+        </section>
+
+        {{{faq}}}
+    </main>

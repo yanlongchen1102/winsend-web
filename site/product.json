@@ -1,0 +1,13 @@
+{
+  "name": "WinSend",
+  "factsReviewedOn": "2026-10-08",
+  "reference": "PRODUCT_FACTS.md",
+  "iosMinimum": "15.6",
+  "shortcutsMinimum": "16",
+  "windowsPlatforms": "Windows 10/11",
+  "localTransport": "HTTP/WebSocket",
+  "cloudContent": "clipboard text only",
+  "cloudEncryption": "AES-256-GCM",
+  "microsoftStoreUrl": "https://get.microsoft.com/installer/download/9n5x7vqqj79g?referrer=appbadge",
+  "appStoreUrl": "https://apps.apple.com/app/id6760611719"
+}

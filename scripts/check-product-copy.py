@@ -56,7 +56,10 @@ BANNED = (
     '本地文件和剪贴板传输只需两台设备连接同一个 Wi-Fi。',
 )
 errors = []
-pages = sorted(list((ROOT / 'en').rglob('*.html')) + list((ROOT / 'zh').rglob('*.html')))
+config = json.loads((ROOT / 'site/config.json').read_text(encoding='utf-8'))
+published = [locale['code'] for locale in config['locales'] if locale['status'] == 'published']
+shared = {code: json.loads((ROOT / f'site/content/{code}/shared.json').read_text(encoding='utf-8')) for code in published}
+pages = sorted(path for code in published for path in (ROOT / code).rglob('*.html'))
 faq_count = 0
 for path in pages:
     text = path.read_text(encoding='utf-8')
@@ -76,8 +79,8 @@ for path in pages:
         if path.parent.name not in ('privacy', 'safety'):
             if 'product-scope' not in page.ids:
                 errors.append(f'{relative}: missing visible feature-access explanation')
-            price = ('Automatic clipboard sync requires Pro; Shortcuts and cloud transfers have trial/Pro access.' if relative.startswith('en/') else '自动剪贴板同步需要 Pro；快捷指令和云传输提供体验/Pro 权益')
-            if price not in visible:
+            scope = normalized(shared[relative.split('/')[0]]['productScope'])
+            if scope not in visible:
                 errors.append(f'{relative}: missing or incorrect free/Pro distinction')
     for raw in re.findall(r'<script type="application/ld\+json">(.*?)</script>', text, re.S):
         try:

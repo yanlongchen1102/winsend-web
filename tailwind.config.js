@@ -2,7 +2,10 @@
 module.exports = {
   content: [
     './index.html',
-    './{zh,en}/**/*.html',
+    './site/templates/**/*.html',
+    './site/content/**/*.html',
+    './site/content/**/*.json',
+    './{zh,en,fr,ja,de,es}/**/*.html',
   ],
   theme: {
     extend: {},

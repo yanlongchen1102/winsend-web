@@ -1,0 +1,76 @@
+<main>
+        <section class="hero-bg pt-32 pb-14 px-6">
+            <div class="max-w-6xl mx-auto">
+                <nav aria-label="Breadcrumb" class="mb-8"><ol class="flex flex-wrap items-center gap-2 text-sm text-gray-500"><li><a href="{{links.home}}" class="hover:text-gray-900 transition-colors">Home</a></li><li>/</li><li><a href="{{links.guides}}" class="hover:text-gray-900 transition-colors">Guide Center</a></li><li>/</li><li class="text-gray-900 font-medium">How WinSend Works</li></ol></nav>
+                <section class="grid gap-8 lg:grid-cols-[1.1fr_0.9fr] items-start">
+                    <header>
+                        <p class="text-sm font-semibold tracking-[0.24em] text-blue-600 uppercase mb-4">How It Works</p>
+                        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight mb-6">How WinSend Works</h1>
+                        <p class="text-xl text-gray-600 leading-9 max-w-3xl">WinSend discovers nearby devices using mDNS and transfers files over your local network. Optional Cloud Sync shares clipboard text across networks; it does not transfer files or photos.</p>
+                    </header>
+                    <section class="rounded-3xl border border-blue-100 bg-white p-8 shadow-lg shadow-blue-100/50">
+                        <h2 class="text-2xl font-bold tracking-tight mb-4">Core Features</h2>
+                        <p class="text-gray-600 leading-8 mb-4">After setup, run a WinSend Shortcut to send or fetch clipboard content without first opening the main app. Shortcuts require iOS 16 or later and trial/Pro access. They do not provide continuous background clipboard monitoring.</p>
+                        <ul class="space-y-2 text-gray-600">
+                            <li class="flex items-start gap-2">
+                                <span class="text-blue-600 mt-1">✓</span>
+                                <span>Local file transfer without a cloud upload; optional cloud clipboard for text</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-blue-600 mt-1">✓</span>
+                                <span>mDNS discovery with a manual IP fallback when devices are reachable</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-blue-600 mt-1">✓</span>
+                                <span>Configured Shortcuts can be triggered with Back Tap</span>
+                            </li>
+                        </ul>
+                    </section>
+                </section>
+            </div>
+        </section>
+        <section class="px-6 pb-20">
+            <div class="max-w-6xl mx-auto grid gap-8 lg:grid-cols-[1.2fr_0.8fr]">
+                <article class="rounded-[2rem] border border-gray-200 bg-white p-8 sm:p-10 shadow-sm">
+                    <section class="mb-10">
+                        <h2 class="text-3xl font-bold tracking-tight mb-4">Technical Principle</h2>
+                        <p class="text-gray-600 leading-8 mb-4">On a reachable local network, mDNS (Multicast DNS) discovers your PC. Local transfers use HTTP/WebSocket connections, rather than end-to-end encryption, so use a trusted private network. A wired PC and a Wi-Fi iPhone can work on the same LAN. If discovery fails, manual IP entry can help, but cannot bypass firewall rules or client isolation.</p>
+                        <p class="text-gray-600 leading-8">The advantages of this approach are:</p>
+                        <ul class="list-disc pl-5 space-y-3 text-gray-600 leading-8 mt-4">
+                            <li><strong>Data Security</strong>: Local files stay on the LAN; optional cloud clipboard encrypts text on the clients before relaying it</li>
+                            <li><strong>Transfer Speed</strong>: Local network transfer is much faster than cloud relay</li>
+                            <li><strong>Device Discovery</strong>: Automatic local discovery; manual IP fallback and optional cloud sync require separate setup</li>
+                        </ul>
+                    </section>
+
+                    <section class="mb-10">
+                        <h2 class="text-3xl font-bold tracking-tight mb-4">Implementation of Seamless Transfer</h2>
+                        <p class="text-gray-600 leading-8 mb-4">WinSend offers manually triggered Shortcuts for clipboard transfer. Automatic text sync is a separate Pro feature and remains subject to iOS execution and clipboard-access restrictions.</p>
+                        <p class="text-gray-600 leading-8 mb-4">Specific implementation:</p>
+                        <ol class="list-decimal pl-5 space-y-3 text-gray-600 leading-8 mt-4">
+                            <li>Configure WinSend transfer script in Shortcuts app</li>
+                            <li>Bind shortcut to iPhone's "Back Tap" gesture</li>
+                            <li>After copying content in any app, tap back of phone to trigger transfer</li>
+                        </ol>
+                        <p class="text-gray-600 leading-8 mt-4">You still need to trigger the Shortcut. With cloud sync configured, text can use the relay across networks or when the local text path fails. Images and files require the local path.</p>
+                    </section>
+
+                    <section>
+                        <h2 class="text-3xl font-bold tracking-tight mb-4">Use Cases</h2>
+                        <p class="text-gray-600 leading-8 mb-4">WinSend is particularly suitable for following use cases:</p>
+                        <ul class="list-disc pl-5 space-y-3 text-gray-600 leading-8 mt-4">
+                            <li><strong>High-Frequency Small Content Transfer</strong>: Quick sync of daily content like text, links, verification codes</li>
+                            <li><strong>Cross-Device Workflow</strong>: Seamless work switching between iPhone and Windows</li>
+                            <li><strong>Temporary File Transfer</strong>: Photos, documents and other files temporarily needed to share</li>
+                            <li><strong>Privacy-Sensitive Content</strong>: Local file workflows on a trusted private LAN; leave cloud sync disabled when text must not use a relay</li>
+                        </ul>
+                    </section>
+                </article>
+                <aside class="space-y-6">
+                    <section class="rounded-3xl border border-gray-200 bg-white p-8 shadow-sm"><h2 class="text-2xl font-bold tracking-tight mb-4">Related Pages</h2><div class="flex flex-col gap-3"><a href="{{links.setup}}" class="inline-flex items-center justify-center rounded-xl border border-gray-200 px-6 py-3 font-semibold text-gray-900 transition hover:border-blue-200 hover:text-blue-700">Installation and Pairing Setup</a><a href="{{links.cross-platform-transfer-tools}}" class="inline-flex items-center justify-center rounded-xl border border-gray-200 px-6 py-3 font-semibold text-gray-900 transition hover:border-blue-200 hover:text-blue-700">Tool Comparison</a></div></section>
+                </aside>
+            </div>
+        </section>
+
+        {{{productScope}}}
+    </main>

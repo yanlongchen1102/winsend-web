@@ -1,0 +1,132 @@
+<main>
+        <section class="hero-bg pt-32 pb-14 px-6">
+            <div class="max-w-4xl mx-auto">
+                <nav aria-label="面包屑" class="mb-8"><ol class="flex flex-wrap items-center gap-2 text-sm text-gray-500"><li><a href="{{links.home}}" class="hover:text-gray-900 transition-colors">首页</a></li><li aria-hidden="true">/</li><li><a href="{{links.guides}}" class="hover:text-gray-900 transition-colors">教程中心</a></li><li aria-hidden="true">/</li><li class="text-gray-900 font-medium">WinSend 对比 LocalSend</li></ol></nav>
+                <header>
+                    <p class="text-sm font-semibold tracking-[0.24em] text-blue-600 uppercase mb-4">工具对比</p>
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight mb-6">WinSend 对比 LocalSend：哪款 AirDrop 替代工具适合 iPhone 和 Windows？</h1>
+                    <p class="text-xl text-gray-600 leading-9 max-w-3xl">两款工具都通过本地网络传输文件，无需数据线和云端。但它们面向不同的工作流——这篇诚实的对比帮你选出合适的那一个。</p>
+                </header>
+            </div>
+        </section>
+        <section class="px-6 pb-20">
+            <div class="max-w-4xl mx-auto">
+                <article class="prose">
+                    <h2>快速结论</h2>
+                    <ul>
+                        <li><strong>选择 WinSend</strong>：如果你的组合是 iPhone + Windows 电脑，想要最接近真 AirDrop 的体验——完成首次设置后，从 iOS 分享面板直接发送（Windows 端需运行），外加Pro 自动文字同步（受 iOS 运行限制），以及主动触发的快捷指令。</li>
+                        <li><strong>选择 LocalSend</strong>：如果你还需要 Android、macOS 或 Linux 设备，或者你明确要求一款免费、开源、可审计的工具。</li>
+                    </ul>
+
+                    <h2>WinSend 与 LocalSend 速览</h2>
+                    <div class="table-wrap">
+                        <table class="compare-table">
+                            <thead>
+                                <tr>
+                                    <th></th>
+                                    <th>WinSend</th>
+                                    <th>LocalSend</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>支持平台</strong></td>
+                                    <td>仅 Windows + iOS</td>
+                                    <td class="win">Windows、macOS、Linux、Android、iOS</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>不打开应用即可发送</strong></td>
+                                    <td class="win">支持——iOS 分享面板集成</td>
+                                    <td>不支持——必须先打开应用</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>剪贴板同步</strong></td>
+                                    <td class="win">文字同步 / 快捷指令；受 iOS 与 Pro 权益限制</td>
+                                    <td>仅支持手动发送文本</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>接收方需手动确认</strong></td>
+                                    <td class="win">不需要——配对设备自动接收</td>
+                                    <td>需要——每次都要点“接受”</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>价格</strong></td>
+                                    <td>核心功能免费；高级功能需 Pro 权益</td>
+                                    <td class="win">完全免费</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>开源</strong></td>
+                                    <td>否</td>
+                                    <td class="win">是（MIT 许可证）</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>需要账号</strong></td>
+                                    <td class="win">不需要</td>
+                                    <td class="win">不需要</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>需要互联网</strong></td>
+                                    <td class="win">本地文件不需要；云文字需要</td>
+                                    <td class="win">本地文件不需要；云文字需要</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <h2>WinSend 的优势</h2>
+
+                    <h3>1. 从分享面板直接发送——无需切换应用</h3>
+                    <p>用 LocalSend，每次传输都是同一套流程：打开应用、点发送、浏览选择文件、选择设备，然后等待接收方确认。用 WinSend，你在 iPhone 相册里选中照片，点分享，选 WinSend，文件就落到电脑上了。你始终不用离开当前应用——这正是 AirDrop 在 Mac 上的工作方式。</p>
+                    <div class="shot-card">
+                        <img src="/zh/guides/airdrop-for-windows/images/step1-share-sheet-winsend.webp" alt="iPhone 分享面板中 WinSend 与隔空投送、信息、邮件并列显示" decoding="async" loading="lazy">
+                        <p class="screenshot-caption">WinSend 就住在 iOS 分享面板里，与隔空投送并列。</p>
+                    </div>
+                    <div class="shot-card">
+                        <img src="/zh/guides/airdrop-for-windows/images/step4-send-success.webp" alt="WinSend 发送成功确认弹窗" decoding="async" loading="lazy">
+                        <p class="screenshot-caption">选中、分享、完成——文件已经在你的 Windows 电脑上。</p>
+                    </div>
+
+                    <h3>2. Pro 自动文字同步（受 iOS 运行限制），以及主动触发的快捷指令</h3>
+                    <p>剪贴板文字可以双向传输。Pro 自动文字同步受 iOS 运行限制；已配置的快捷指令需要主动触发。剪贴板图片使用支持的局域网手动/快捷指令路径，不能经云同步传输。LocalSend 也能发文本片段，但每个片段都是一次手动“发送—确认”操作。如果你每天在设备间复制粘贴超过几次，仅凭这一点就值得选 WinSend。详见<a href="{{links.copy-iphone-to-windows}}">如何用快捷指令和轻点背面实现剪贴板同步</a>。</p>
+
+                    <h3>3. 配对设备自动接收</h3>
+                    <p>配对完成后，电脑无需任何人操作即可自动接收文件——当电脑在房间另一头，或你要批量传照片时尤其有用。LocalSend 默认要求接收方确认每一次传输。</p>
+
+                    <h2>LocalSend 的优势</h2>
+                    <p>为了保持对比的诚实，LocalSend 在以下几种情况下是更好的工具：</p>
+                    <ul>
+                        <li><strong>平台更多</strong>——完整支持 Android、macOS 和 Linux，而 WinSend 仅支持 Windows ↔ iPhone。</li>
+                        <li><strong>开源</strong>——代码以 MIT 许可证公开，任何人可审计，这对注重隐私的用户和组织很重要。</li>
+                        <li><strong>完全免费</strong>——没有付费层级、没有功能门槛、没有广告。</li>
+                        <li><strong>文件夹传输</strong>——内置支持发送整个文件夹。</li>
+                    </ul>
+                    <div class="shot-card">
+                        <img src="/zh/guides/cross-platform-transfer-tools/images/localsend-screenshot.jpg" alt="LocalSend 应用界面显示附近设备" decoding="async" loading="lazy">
+                        <p class="screenshot-caption">LocalSend 简洁的界面——功能齐全，但每次传输都要从应用内发起。</p>
+                    </div>
+
+                    <h2>隐私与安全</h2>
+                    <p>两款工具都在本地网络上直接在设备间传输——无云服务器、无账号、无上传。LocalSend 使用本地生成的证书通过 HTTPS 加密传输，并且完全开源。WinSend 是闭源的。本地文件路径使用 HTTP，不等同于端到端加密，请在可信的专用网络使用。可选云同步在客户端加密剪贴板文字后中转，不传文件。</p>
+
+                    <h2>谁该选哪一个？</h2>
+                    <ul>
+                        <li><strong>iPhone + Windows 电脑、日常高频传输、重度剪贴板用户</strong> → <strong>WinSend</strong>，它正是为这一对设备组合打造的。</li>
+                        <li><strong>混合生态，还有 Android 或 Mac 设备</strong> → <strong>LocalSend</strong>。</li>
+                        <li><strong>有开源要求（公司政策、安全审计）</strong> → <strong>LocalSend</strong>。</li>
+                        <li><strong>想要最接近真 AirDrop 的体验</strong> → <strong>WinSend</strong>，因为它集成了分享面板。</li>
+                    </ul>
+                    <p>还在看其他选择？查看我们的<a href="{{links.cross-platform-transfer-tools}}">5 款最佳 AirDrop 替代工具完整盘点</a>。</p>
+
+                    {{{faq}}}
+
+                    <h2>试试 WinSend</h2>
+                    <p>如果你的日常组合是 iPhone 加 Windows 电脑，下载 WinSend，按照<a href="{{links.setup}}">安装教程</a>操作，不到一分钟即可完成配对。</p>
+                    <div class="mt-8 mb-12">
+                        <a href="{{links.download}}" class="btn-primary inline-flex items-center gap-2 px-8 py-4 bg-blue-700 text-white text-lg font-semibold rounded-xl hover:bg-blue-800 transition-all shadow-lg shadow-blue-700/30">下载 WinSend for Windows</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        {{{productScope}}}
+    </main>

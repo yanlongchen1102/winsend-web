@@ -1,0 +1,236 @@
+<meta property="og:type" content="article">
+    <meta property="og:site_name" content="WinSend">
+    <meta property="og:image" content="https://winsend.app/en/guides/copy-iphone-to-windows/images/show1.PNG">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://winsend.app/en/guides/copy-iphone-to-windows/images/show1.PNG">
+    <style>
+        * { font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif; }
+        .gradient-text {
+            background: linear-gradient(135deg, #2563eb 0%, #3b82f6 50%, #60a5fa 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .hero-bg {
+            background:
+                radial-gradient(ellipse 80% 50% at 50% -20%, rgba(37, 99, 235, 0.15), transparent),
+                linear-gradient(180deg, #ffffff 0%, #f8fbff 100%);
+        }
+        .btn-primary {
+            transition: all 0.2s ease;
+        }
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px -5px rgba(37, 99, 235, 0.35);
+        }
+        .article-prose p,
+        .article-prose li {
+            color: #4b5563;
+            line-height: 2;
+        }
+        .article-prose p {
+            margin-bottom: 1.25rem;
+        }
+        .article-prose ul,
+        .article-prose ol {
+            padding-left: 1.25rem;
+            margin-bottom: 1.5rem;
+        }
+        .article-prose h2 {
+            font-size: 1.875rem;
+            line-height: 1.2;
+            font-weight: 800;
+            margin-bottom: 1.25rem;
+            color: #111827;
+        }
+        .article-prose h3 {
+            font-size: 1.25rem;
+            line-height: 1.4;
+            font-weight: 700;
+            margin-bottom: 0.875rem;
+            color: #111827;
+        }
+        .article-prose blockquote {
+            border-left: 4px solid #2563eb;
+            background: #eff6ff;
+            color: #1d4ed8;
+            padding: 1.25rem 1.5rem;
+            border-radius: 1rem;
+            margin: 1.75rem 0;
+            font-weight: 600;
+        }
+        .hero-container {
+            width: min(100%, 78vw);
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+        .article-section-shell {
+            width: 100%;
+            margin: 0 auto;
+            position: relative;
+        }
+        .article-container {
+            width: min(100%, 70vw);
+            max-width: 980px;
+            margin: 0 auto;
+            min-width: 0;
+        }
+        .toc-sidebar,
+        .related-sidebar {
+            display: none;
+            width: 220px;
+            min-width: 0;
+        }
+        .sidebar-panel {
+            position: sticky;
+            top: 7rem;
+            max-height: calc(100vh - 9rem);
+            overflow-y: auto;
+        }
+        .toc-link {
+            display: block;
+            padding: 0.5rem 0;
+            color: #6b7280;
+            text-decoration: none;
+            font-size: 0.875rem;
+            line-height: 1.4;
+            transition: color 0.2s ease;
+            border-left: 2px solid transparent;
+            padding-left: 1rem;
+        }
+        .toc-link:hover {
+            color: #2563eb;
+        }
+        .toc-link.active {
+            color: #2563eb;
+            border-left-color: #2563eb;
+            font-weight: 600;
+        }
+        .toc-link.level-3 {
+            padding-left: 2rem;
+            font-size: 0.8125rem;
+        }
+        .toc-title {
+            font-size: 0.875rem;
+            font-weight: 700;
+            color: #111827;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+        .image-strip {
+            display: flex;
+            gap: 1rem;
+            overflow-x: auto;
+            padding-bottom: 0.5rem;
+            scroll-snap-type: x proximity;
+            -webkit-overflow-scrolling: touch;
+        }
+        .image-strip::-webkit-scrollbar {
+            height: 10px;
+        }
+        .image-strip::-webkit-scrollbar-thumb {
+            background: rgba(148, 163, 184, 0.5);
+            border-radius: 999px;
+        }
+        .image-card {
+            min-width: 240px;
+            max-width: 280px;
+            flex: 0 0 auto;
+            scroll-snap-align: start;
+        }
+        .image-card img {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 1rem;
+            border: 1px solid #e5e7eb;
+            box-shadow: 0 12px 30px -20px rgba(15, 23, 42, 0.45);
+            background: white;
+        }
+        @media (min-width: 1400px) {
+            .toc-sidebar,
+            .related-sidebar {
+                display: block;
+                position: absolute;
+                top: 0;
+            }
+            .toc-sidebar {
+                left: calc(50% - 490px - 32px - 220px);
+            }
+            .related-sidebar {
+                left: calc(50% + 490px + 32px);
+            }
+        }
+        @media (min-width: 768px) {
+            .image-card {
+                min-width: 280px;
+                max-width: 320px;
+            }
+        }
+        .video-wrapper {
+            position: relative;
+            width: 100%;
+            max-width: 420px;
+            aspect-ratio: 9 / 16;
+            margin: 1rem auto;
+        }
+        .video-wrapper iframe {
+            width: 100%;
+            height: 100%;
+            border-radius: 12px;
+        }
+    </style>
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "TechArticle",
+            "headline": "Share Clipboard Between iPhone and Windows: Copy and Paste Wirelessly",
+            "description": "Copy on iPhone and paste on Windows over the same Wi-Fi with WinSend clipboard sync—without iCloud, a cable, or email.",
+            "url": "{{urls.copy-iphone-to-windows}}",
+            "datePublished": "2026-04-11",
+            "dateModified": "{{lastmod}}",
+            "inLanguage": "{{htmlLang}}",
+            "author": {
+                "@type": "Organization",
+                "name": "WinSend"
+            },
+            "publisher": {
+                "@type": "Organization",
+                "name": "WinSend",
+                "logo": {
+                    "@type": "ImageObject",
+                    "url": "https://winsend.app/logo.png"
+                }
+            },
+            "image": "https://winsend.app/en/guides/copy-iphone-to-windows/images/show1.PNG"
+        }
+    </script>
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+                {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Home",
+                    "item": "{{urls.home}}"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "Guide Center",
+                    "item": "{{urls.guides}}"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 3,
+                    "name": "How to Share Clipboard Between iPhone and Windows",
+                    "item": "{{urls.copy-iphone-to-windows}}"
+                }
+            ]
+        }
+    </script>
+
+    <script src="/assets/js/posthog.js" defer></script>

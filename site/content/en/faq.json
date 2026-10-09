@@ -1,0 +1,134 @@
+{
+  "airdrop-for-windows": [
+    {
+      "question": "Do I need a USB cable or cloud account?",
+      "answer": "No. WinSend transfers directly between devices over local Wi-Fi; no cable, cloud upload or account is needed."
+    },
+    {
+      "question": "What file types can I send?",
+      "answer": "Photos, videos and any other files that appear in the iOS share sheet."
+    }
+  ],
+  "copy-iphone-to-windows": [
+    {
+      "question": "How do I copy text from iPhone to Windows without a cable?",
+      "answer": "Install WinSend on both devices, add its clipboard shortcut in the Shortcuts app, then trigger it (e.g. Back Tap). The copied text appears on the Windows clipboard instantly over local Wi-Fi."
+    },
+    {
+      "question": "Can the clipboard sync automatically?",
+      "answer": "Pro supports automatic text sync while iOS allows WinSend to run. It does not provide unrestricted background clipboard monitoring. To send from another app, run a configured Shortcut; trial/Pro access applies."
+    },
+    {
+      "question": "Does clipboard content go through a server?",
+      "answer": "Local clipboard transfers go directly between devices. If optional Cloud Sync is configured, text may use the encrypted relay across networks or as a fallback when the local path fails. Cloud Sync supports text only."
+    }
+  ],
+  "home": [
+    {
+      "question": "Is WinSend safe?",
+      "answer": "Local files go directly between devices, but the local HTTP path is not end-to-end encrypted. Use a trusted private network. Optional cloud clipboard encrypts text on the clients; usage analytics are separate."
+    },
+    {
+      "question": "Does WinSend require internet?",
+      "answer": "Local transfers require a reachable LAN, running apps and the relevant permissions; a wired PC on the same LAN also works. Client isolation or firewall rules can block access. Cloud clipboard additionally needs internet access."
+    },
+    {
+      "question": "What can I transfer?",
+      "answer": "WinSend transfers photos, videos and files over LAN, and clipboard text locally or with optional Cloud Sync. Source apps or system export may change the file representation."
+    },
+    {
+      "question": "Can I use WinSend on different networks?",
+      "answer": "Yes. Enable cloud clipboard sync to share copied text when both devices have internet access. Files and photos still require a local network connection."
+    },
+    {
+      "question": "Can cloud clipboard transfer files or photos?",
+      "answer": "Cloud transfer supports clipboard text. Files and photos still transfer over your local network."
+    },
+    {
+      "question": "Does cloud clipboard need setup?",
+      "answer": "Yes. Open Cloud Sync on Windows, then enter the pairing code in WinSend’s Cloud Sync screen on iPhone and follow the in-app instructions."
+    }
+  ],
+  "safety": [
+    {
+      "question": "Is WinSend safe to use?",
+      "answer": "Local file transfers do not upload files to a cloud server. The checked local path uses HTTP, not end-to-end encryption, so use a trusted private LAN. Optional cloud clipboard encrypts text on the clients; usage analytics are separate."
+    },
+    {
+      "question": "Why does Windows show \"Windows protected your PC\" when I install WinSend?",
+      "answer": "SmartScreen can warn about an unfamiliar download or publisher. Use the official Microsoft Store link where possible. For an alternative installer, verify its source and publisher; a reputation warning is not proof of safety, and malware warnings must not be ignored."
+    },
+    {
+      "question": "Does WinSend upload my files to the cloud?",
+      "answer": "Files and photos use the local network. Optional Cloud Sync relays clipboard text encrypted on the clients with AES-256-GCM; it does not relay files or images. Keep the sync code private. Cloud connection metadata is not hidden by content encryption."
+    },
+    {
+      "question": "Who can see my transfers?",
+      "answer": "Local discovery uses mDNS, and the checked local transfer path uses HTTP rather than end-to-end encryption. Use a trusted private LAN; discovery and connection are not a guarantee of strong device authentication. Cloud sync requires the sync code, which must be kept private."
+    }
+  ],
+  "setup": [
+    {
+      "question": "Does WinSend need both devices on the same network?",
+      "answer": "Local files require a reachable LAN; the PC may use Ethernet on that LAN. Optional Cloud Sync relays client-encrypted clipboard text across networks with internet access, but not files or images."
+    },
+    {
+      "question": "Is WinSend free?",
+      "answer": "Local manual clipboard and file transfers are free. Automatic clipboard sync requires Pro; Shortcuts and cloud transfers have trial/Pro access. See the app for current offers."
+    }
+  ],
+  "winsend-vs-localsend": [
+    {
+      "question": "Is WinSend a good LocalSend alternative?",
+      "answer": "Yes, if your setup is specifically an iPhone and a Windows PC. WinSend integrates into the iOS share sheet so you can send photos and files without opening an app first, and it offers Pro automatic text sync while iOS permits the app to run, plus manually triggered Shortcuts — two things LocalSend does not do. If you need Android, macOS or Linux support, LocalSend is the better choice."
+    },
+    {
+      "question": "Does LocalSend work between iPhone and Windows?",
+      "answer": "Yes. LocalSend has free apps for both iOS and Windows, and transfers files over your local Wi-Fi network. However, you must open the LocalSend app, pick the file, choose the device, and have the receiver accept the transfer each time."
+    },
+    {
+      "question": "Is WinSend free like LocalSend?",
+      "answer": "Local manual clipboard and file transfers are free. Automatic clipboard sync requires Pro; Shortcuts and cloud transfers have trial/Pro access. See the app for current offers. LocalSend is completely free and open source with no paid tier."
+    },
+    {
+      "question": "Which is more private, WinSend or LocalSend?",
+      "answer": "Both transfer files directly over your local network without cloud servers or accounts. LocalSend is additionally open source, so its code can be audited by anyone. WinSend is closed source. Its file transfers are local; optional Cloud Sync relays encrypted clipboard text only."
+    }
+  ],
+  "winsend-vs-sendanywhere": [
+    {
+      "question": "Does Send Anywhere have a file size limit?",
+      "answer": "Yes. Send Anywhere's free tier comes with file-size and daily transfer limits, plus ads and upsells; lifting those limits requires a premium plan. WinSend local file transfer has no daily usage quota. Files go directly between devices on a reachable LAN, with practical limits depending on device resources, source apps, network conditions and storage."
+    },
+    {
+      "question": "Is Send Anywhere private?",
+      "answer": "It depends on how the transfer is routed. Send Anywhere uses a 6-digit key or QR code and transfers peer-to-peer where possible, but when devices are on different networks the traffic can pass through Send Anywhere's relay servers — meaning your files may transit a third party's infrastructure. WinSend does not relay files. Optional Cloud Sync relays client-encrypted clipboard text only, not files or images."
+    },
+    {
+      "question": "Is WinSend a good Send Anywhere alternative?",
+      "answer": "Yes, if your transfers happen between your own iPhone and Windows PC on the same network. WinSend local file transfer has no daily usage quota, with practical limits depending on device resources and source apps, no ads, no file relay servers, adds iOS share sheet integration and Pro automatic text sync while iOS permits the app to run, plus manually triggered Shortcuts, and paired devices receive files automatically. If you need to send files to devices on a different network or in another location, Send Anywhere's 6-digit key is the right tool."
+    },
+    {
+      "question": "Can WinSend transfer files between devices on different networks?",
+      "answer": "Files and photos cannot be sent across different networks with WinSend. They require a reachable LAN. Optional Cloud Sync can share clipboard text across networks, but not files or images. If you regularly send files to devices in other locations, keep Send Anywhere for those cases and use WinSend for local file transfers at home or the office."
+    }
+  ],
+  "winsend-vs-snapdrop": [
+    {
+      "question": "Why does Snapdrop not find my device?",
+      "answer": "Snapdrop discovers devices through the public snapdrop.net server: both browsers must connect to it, and it only pairs devices that appear to share the same public IP address. That breaks when one device is on a VPN, when the router isolates clients (AP isolation on guest, office or campus networks), or when the two devices reach the internet through different routes. WinSend offers native local discovery and a manual IP fallback when devices are reachable. Manual IP cannot bypass client isolation or firewall blocks; use a trusted private LAN or ask the network administrator."
+    },
+    {
+      "question": "Is Snapdrop safe?",
+      "answer": "Snapdrop transfers files peer-to-peer over WebRTC, so the file data itself goes directly between the two browsers and is encrypted in transit by WebRTC. However, device discovery and signaling depend on the public snapdrop.net server, so using it requires an internet connection to that third-party service. WinSend local discovery and file transfer do not require a public discovery server. Optional cloud clipboard uses a relay."
+    },
+    {
+      "question": "Is WinSend a good Snapdrop alternative?",
+      "answer": "Yes, if your devices are an iPhone and a Windows PC. WinSend is a native app pair that discovers devices on the local network (with a manual IP fallback), integrates into the iOS share sheet, supports manual clipboard transfer, Pro automatic text sync subject to iOS limits, and configured Shortcuts, and does not need a public server for local file transfer. Optional cloud clipboard uses a relay. If you need to send a file to an Android, Mac or Linux device — or to someone else's computer with zero install — Snapdrop's browser approach is more convenient."
+    },
+    {
+      "question": "Does Snapdrop work without installing anything?",
+      "answer": "Yes. Snapdrop runs entirely in the browser on both devices — just open the website on each. That is its biggest strength for one-off transfers. WinSend requires installing the Windows client and the iOS app once, but after that every transfer is faster to start: no browser tabs to keep open, and you can send straight from the iPhone share sheet."
+    }
+  ]
+}

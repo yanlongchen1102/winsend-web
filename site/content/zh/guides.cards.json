@@ -1,0 +1,58 @@
+[
+  {
+    "category": "解决方案",
+    "title": "Windows 版 AirDrop：iPhone 与电脑互传文件",
+    "description": "Windows 没有 AirDrop，WinSend 如何让你像 AirDrop 一样，在 iPhone 与 Windows 之间无线传照片、视频和文件。",
+    "cta": "查看 Windows 版 AirDrop 教程",
+    "page": "airdrop-for-windows"
+  },
+  {
+    "category": "工具合集",
+    "title": "2026 年最佳 Windows AirDrop 替代工具",
+    "description": "对比 WinSend、LocalSend、Snapdrop、Feem 和 Send Anywhere，找到适合自己的 iPhone 传 Windows 文件方案。",
+    "cta": "对比 Windows AirDrop 替代工具",
+    "page": "cross-platform-transfer-tools"
+  },
+  {
+    "category": "工具对比",
+    "title": "WinSend 对比 LocalSend",
+    "description": "分享面板集成对决开源灵活性——诚实对比哪款 AirDrop 替代工具更适合你的 iPhone + Windows 工作流。",
+    "cta": "查看对比",
+    "page": "winsend-vs-localsend"
+  },
+  {
+    "category": "工具对比",
+    "title": "WinSend 对比 Snapdrop",
+    "description": "为什么 Snapdrop 总是找不到你的设备，以及什么时候原生应用才是更可靠的 Snapdrop 替代方案。",
+    "cta": "查看对比",
+    "page": "winsend-vs-snapdrop"
+  },
+  {
+    "category": "工具对比",
+    "title": "WinSend 对比 Send Anywhere",
+    "description": "比较局域网文件直传与远程文件传输，并说明 WinSend 可选云剪贴板只支持文字。",
+    "cta": "查看对比",
+    "page": "winsend-vs-sendanywhere"
+  },
+  {
+    "category": "快捷方式玩法",
+    "title": "iPhone 与 Windows 剪贴板同步",
+    "description": "在 iPhone 复制、Windows 直接粘贴；通过同一 Wi-Fi 和快捷指令同步，无需 iCloud 或给自己发消息。",
+    "cta": "设置 iPhone 与 Windows 剪贴板同步",
+    "page": "copy-iphone-to-windows"
+  },
+  {
+    "category": "安装教程",
+    "title": "WinSend 安装与配对设置",
+    "description": "包括 Windows 端安装、iPhone 安装、权限说明、自动配对和检查清单。",
+    "cta": "查看安装教程",
+    "page": "setup"
+  },
+  {
+    "category": "原理说明",
+    "title": "WinSend 如何工作",
+    "description": "解释 WinSend 的工作方式、为什么它更接近无感传输，以及为什么这种体验适合 iPhone 与 Windows 的混合设备场景。",
+    "cta": "阅读原理页",
+    "page": "how-it-works"
+  }
+]

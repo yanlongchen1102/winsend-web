@@ -25,6 +25,9 @@
     var entryStorageKey = "winsend_posthog_entry_v1";
 
     function pageLang() {
+        var locale = document.documentElement.getAttribute("data-site-locale");
+        if (locale) return locale;
+        // Keep the existing noindex redirect pages compatible.
         var m = window.location.pathname.match(/^\/(zh|en)(\/|$)/);
         return m ? m[1] : "root";
     }
@@ -53,6 +56,7 @@
         var query = new URLSearchParams(window.location.search);
         var entry = {
             path: window.location.pathname,
+            page_id: document.documentElement.getAttribute("data-site-page") || "",
             lang: pageLang(),
             channel: entryChannel(),
             acquisition_source: query.get("source") || "direct",
@@ -68,12 +72,13 @@
 
     var entry = sessionEntry();
     var clipboardGuidePath = "/en/guides/copy-iphone-to-windows/";
-    var isClipboardGuideDirectLanding = entry.path === clipboardGuidePath;
+    var isClipboardGuideDirectLanding = entry.page_id === "copy-iphone-to-windows" || entry.path === clipboardGuidePath;
 
     function baseProps(href) {
         var query = new URLSearchParams(window.location.search);
         return {
             page: window.location.pathname,
+            page_id: document.documentElement.getAttribute("data-site-page") || "",
             lang: pageLang(),
             href: href || "",
             acquisition_source: query.get("source") || "direct",
@@ -81,6 +86,7 @@
             acquisition_surface: query.get("surface") || "unknown",
             source_app_version: query.get("app_version") || "unknown",
             entry_path: entry.path,
+            entry_page_id: entry.page_id || "",
             entry_lang: entry.lang,
             entry_channel: entry.channel,
             entry_acquisition_source: entry.acquisition_source,
@@ -96,6 +102,7 @@
     var landingProps = baseProps(window.location.href);
     posthog.register_for_session({
         entry_path: landingProps.entry_path,
+        entry_page_id: landingProps.entry_page_id,
         entry_lang: landingProps.entry_lang,
         entry_channel: landingProps.entry_channel,
         entry_acquisition_source: landingProps.entry_acquisition_source,

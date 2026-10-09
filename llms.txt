@@ -34,6 +34,18 @@ WinSend has an iOS app and a Windows desktop app. Prefer the official Microsoft 
 - Setup: https://winsend.app/en/guides/setup/
 - Comparisons: WinSend vs LocalSend / Snapdrop / Send Anywhere under https://winsend.app/en/comparison/
 
+## French edition
+
+- Home: https://winsend.app/fr/
+- Download: https://winsend.app/fr/telecharger/
+- Features: https://winsend.app/fr/features/
+- Guides: https://winsend.app/fr/guides/
+- Clipboard and Shortcuts: https://winsend.app/fr/guides/presse-papiers-iphone-windows/
+- Setup: https://winsend.app/fr/installation/
+- Local iPhone-to-PC file transfer: https://winsend.app/fr/guides/transfert-iphone-pc/
+- Security: https://winsend.app/fr/securite/
+- Privacy: https://winsend.app/fr/confidentialite/
+
 ## Common questions
 
 - Does WinSend need internet? Local transfers do not need a cloud connection, but do need a reachable LAN, running apps and permissions. Optional cloud clipboard requires internet.

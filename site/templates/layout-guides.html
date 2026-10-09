@@ -1,0 +1,48 @@
+<main>
+        <section class="hero-bg pt-32 pb-16 px-6">
+            <div class="max-w-6xl mx-auto">
+                <nav aria-label="{{copy.breadcrumb}}" class="mb-8">
+                    <ol class="flex flex-wrap items-center gap-2 text-sm text-gray-500">
+                        <li><a href="{{links.home}}" class="hover:text-gray-900 transition-colors">{{copy.t0}}</a></li>
+                        <li aria-hidden="true">{{copy.t1}}</li>
+                        <li class="font-medium text-gray-900">{{copy.t2}}</li>
+                    </ol>
+                </nav>
+                <section>
+                    <p class="text-sm font-semibold tracking-[0.24em] text-blue-600 uppercase mb-4">{{copy.t3}}</p>
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight mb-6">
+                        {{copy.t4}} <span class="gradient-text">{{copy.t5}}</span>
+                    </h1>
+                    <a href="{{links.setup}}" class="btn-primary inline-flex items-center gap-2 px-8 py-4 bg-blue-600 text-white text-lg font-semibold rounded-xl hover:bg-blue-700 transition-all shadow-lg shadow-blue-500/30">
+                        {{copy.t6}}
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"/>
+                        </svg>
+                    </a>
+                </section>
+            </div>
+        </section>
+
+        <section class="py-20 px-6">
+            <div class="max-w-6xl mx-auto grid gap-8 md:grid-cols-2">
+{{{guideCards}}}
+                
+
+                
+
+                
+
+                
+
+                
+
+                
+
+                
+
+                
+            </div>
+        </section>
+
+        {{{productScope}}}
+    </main>
