@@ -11,7 +11,7 @@
 ### 账号基建
 
 - [ ] 注册 X (Twitter) 账号：@winsend 或 @winsend_app，头像用 logo_1024.png，
-      bio 写 "AirDrop for Windows. Send text & photos from iPhone to PC over Wi-Fi. Free."
+      bio 写 "AirDrop for Windows. Send text & photos from iPhone to PC over Wi-Fi. Free trial."
       链接挂 https://winsend.app/
 - [ ] 注册 YouTube 频道（与 B站 同名：WinSend）
 - 确认已有账号：知乎、B站、小红书、Reddit（Reddit 账号需有少量正常发言记录，
@@ -68,7 +68,7 @@
 > I've tried most of these — LocalSend is solid if you don't mind opening the app
 > every time, Snapdrop is fine when it works. Full disclosure: I built WinSend
 > (winsend.app) because I wanted the Back Tap / Shortcuts trigger — copy on iPhone,
-> double-tap the back of the phone, paste on Windows. Free, no account, LAN only.
+> double-tap the back of the phone, paste on Windows. Free to try, no account, LAN only.
 > Happy to answer questions.
 
 要点：
@@ -77,8 +77,8 @@
 - 每个子版（r/ios、r/iphone、r/windows、r/windows10/11）话术微调，不要复制粘贴同一段
 
 **发布帖**（账号养熟后，各发 1 次）：
-- r/SideProject："I built an AirDrop-like app for Windows — free, no account, works over LAN"（配 GIF）
-- r/AppHookup：免费工具适合发，标题突出 "Free"
+- r/SideProject："I built an AirDrop-like app for Windows — no account, works over LAN"（配 GIF）
+- r/AppHookup：只在有限时折扣时发（这个版块只收免费或打折的 App），标题写明折扣
 
 ### 2.2 X (Twitter)
 
@@ -87,7 +87,7 @@
 1. **功能演示**（主力）：GIF + 一句话
    > Copy on iPhone. Paste on Windows.
    > No cable. No cloud. No account.
-   > WinSend — free, link in bio. [GIF]
+   > WinSend — free to try, link in bio. [GIF]
 2. **Build in public**：版本更新、用户反馈截图、开发决策（如"为什么坚持不过云端"）
 3. **蹭话题**：回复 AirDrop / Windows 相关的热门吐槽帖（"为什么 Windows 没有隔空投送"类），附上解决方案
 
@@ -114,7 +114,7 @@
 ### 2.4 B站 / YouTube（同一素材，双语分发）
 
 **视频清单**：
-1. 《iPhone 隔空投送到 Windows？这个免费工具做到了》（3 分钟，首发）
+1. 《iPhone 隔空投送到 Windows？这个工具做到了》（3 分钟，首发）
    - 结构：痛点（微信传图压缩/数据线麻烦）→ 演示 → 安装步骤 → 结尾官网
 2. 《iPhone 复制，Windows 粘贴：跨设备剪贴板同步教程》（2 分钟）
 3. 《轻点手机背面两下，照片自动传到电脑》（1 分钟，可切竖版发小红书/抖音）
@@ -194,7 +194,7 @@
 
 ## 5. 红线与注意事项
 
-- **所有平台统一口径**：免费、无需账号、局域网传输不过云端——与官网、AlternativeTo 信息一致
+- **所有平台统一口径**：可免费试用全部功能，之后一次买断 Pro；无需账号；文件走局域网不经过云端。不要再说"免费工具"。与官网一致，AlternativeTo 等站外资料要同步修改（2026-10-18 价格策略调整，见 `SEO_GEO_PLAN.md` 第五节）
 - Reddit 必须自报开发者身份；小红书/知乎避免堆外链，每个回答只放一个官网链接
 - 不要用同一文案跨平台复制粘贴，至少改写开头和结构（重复内容对 GEO 价值低）
 - 评论区提问 24 小时内回复，早期每条评论都是口碑

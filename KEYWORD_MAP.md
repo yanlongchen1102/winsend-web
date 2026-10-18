@@ -1,133 +1,111 @@
-# WinSend 官网关键词地图（Keyword Map）
+# WinSend 官网关键词地图
 
-> 创建时间：2026-07-30
-> 说明：本文档列出官网每篇内容页**目标覆盖**的关键词（基于标题、H1/H2、正文、FAQ 分析）。
-> 这是"瞄准"的词，不等于"实际排名"的词——实际覆盖以 Google Search Console
-> 「查询数」报告为准（文章上线 2-4 周后可查），建议每月对照本表验证一次。
-> 难度评级：★低（长尾，1-3 个月可见排名）★★中（3-6 个月）★★★高（12 个月+）
-
----
-
-## 一、核心教程页（guides）
-
-### 1. AirDrop for Windows（流量主力页）
-- URL：`/en/guides/airdrop-for-windows/` | `/zh/guides/airdrop-for-windows/`
-
-| 关键词 | 难度 | 意图 |
-|---|---|---|
-| AirDrop for Windows | ★★★ | 核心头部词，全站最大搜索量 |
-| Windows 版 AirDrop / 隔空投送 Windows 电脑 | ★★ | 中文头部词 |
-| send files from iPhone to PC / iPhone 传文件到电脑 | ★★ | 泛需求词 |
-| AirDrop alternative for Windows | ★★ | 替代方案词 |
-| iPhone share sheet to Windows（分享页直发） | ★ | 差异化长尾 |
-
-### 2. 剪贴板同步教程（已在 Google 前排，截图验证）
-- URL：`/en/guides/copy-iphone-to-windows/` | `/zh/guides/copy-iphone-to-windows/`
-
-| 关键词 | 难度 | 意图 |
-|---|---|---|
-| share clipboard between iPhone and Windows | ★★ | 核心功能词（已获排名） |
-| 剪贴板同步工具 windows iphone / iPhone Windows 剪贴板同步 | ★★ | 中文功能词（已获排名 ✅） |
-| Universal Clipboard for Windows（通用剪贴板） | ★ | 借苹果功能名的精准词 ⚠️待专门内容 |
-| iPhone 复制 Windows 粘贴 / copy on iPhone paste on Windows | ★ | 口语化长尾 |
-| 轻点背面 同步 / Back Tap shortcut sync | ★ | 玩法词（文章当前主体内容） |
-
-### 3. 5 款工具对比 roundup（引流主力页）
-- URL：`/en/guides/cross-platform-transfer-tools/` | `/zh/guides/cross-platform-transfer-tools/`
-
-| 关键词 | 难度 | 意图 |
-|---|---|---|
-| best AirDrop alternatives / AirDrop 替代品 | ★★ | 榜单类头部词 |
-| iPhone 传文件到 Windows 电脑 / 传照片到电脑 | ★★ | 中文泛需求 |
-| LocalSend vs Snapdrop vs Send Anywhere（竞品联合词） | ★ | 对比决策词 |
-| 跨平台文件传输 / cross platform file transfer | ★★ | 品类词 |
-| 局域网传文件 / LAN file sharing | ★★ | 场景词 |
-| 各竞品名单独词（Feem v4 等） | ★ | 蹭竞品流量 |
-
-### 4. 安装与配对教程（转化承接页）
-- URL：`/en/guides/setup/` | `/zh/guides/setup/`
-
-| 关键词 | 难度 | 意图 |
-|---|---|---|
-| WinSend 安装 / WinSend download / WinSend 下载 | ★ | 品牌词（随声量增长） |
-| WinSend 配对 / pairing setup | ★ | 品牌功能词 |
-| SmartScreen 提示怎么办（Protected your PC） | ★ | 安装故障词 |
-
-### 5. 工作原理页（品牌信任页）
-- URL：`/en/guides/how-it-works/` | `/zh/guides/how-it-works/`
-
-| 关键词 | 难度 | 意图 |
-|---|---|---|
-| How WinSend Works / WinSend 如何工作 | ★ | 品牌词 |
-| mDNS 设备发现 / 局域网传输原理 | ★ | 技术好奇心长尾（量小） |
+> 每个页面只负责**一个主词**，其他相关词作为次要词，避免几个页面抢同一个词。
+> "实际表现"一栏来自 Google Search Console，每月复盘时更新（流程见 `SEO_GEO_PLAN.md` 第四节）。
+> 改页面标题前先看这张表，改完同步更新"当前标题"。
+>
+> 创建：2026-07-30 · 重写：2026-10-18（按 GSC 前 3 个月数据重新分工）
+> 难度：★ 长尾（1–3 个月）★★ 中（3–6 个月）★★★ 高（12 个月以上）
 
 ---
 
-## 二、对比页（comparison，转化型流量）
+## 一、主词分工总表（英文）
 
-### 6. WinSend vs LocalSend
-- URL：`/en/comparison/winsend-vs-localsend/` | `/zh/comparison/winsend-vs-localsend/`
-
-| 关键词 | 难度 | 意图 |
-|---|---|---|
-| WinSend vs LocalSend / LocalSend vs WinSend | ★ | 二选一决策词，转化率最高 |
-| LocalSend alternative / LocalSend 替代 | ★★ | 找替换的用户 |
-| Does LocalSend work between iPhone and Windows | ★ | 疑问词（FAQ 覆盖） |
-| Is WinSend free / WinSend vs LocalSend privacy | ★ | 疑问词（FAQ 覆盖） |
-| ⚠️ LocalSend not working / LocalSend 找不到设备 | ★ | 故障词 **（当前未覆盖，建议补 FAQ）** |
-
-### 7. WinSend vs Snapdrop
-- URL：`/en/comparison/winsend-vs-snapdrop/` | `/zh/comparison/winsend-vs-snapdrop/`
-
-| 关键词 | 难度 | 意图 |
-|---|---|---|
-| Snapdrop not working / Snapdrop not finding devices | ★ | 故障词 ★最优质流量 |
-| Snapdrop 无法使用 / Snapdrop 找不到设备 / snapdrop 连不上 | ★ | 中文故障词 |
-| Snapdrop alternative / Snapdrop 替代 | ★★ | 替代词 |
-| Is Snapdrop safe / Does Snapdrop work without installing | ★ | 疑问词（FAQ 覆盖） |
-| WebRTC file transfer alternative | ★ | 技术向长尾 |
-
-### 8. WinSend vs Send Anywhere
-- URL：`/en/comparison/winsend-vs-sendanywhere/` | `/zh/comparison/winsend-vs-sendanywhere/`
-
-| 关键词 | 难度 | 意图 |
-|---|---|---|
-| Send Anywhere file size limit / 文件大小限制 | ★ | 撞付费墙用户 ★优质流量 |
-| Send Anywhere privacy / 中继服务器 隐私 | ★ | 隐私顾虑词 |
-| Send Anywhere alternative / 替代 | ★★ | 替代词 |
-| unlimited local file transfer / 无限制局域网传输 | ★ | 需求词 |
-
----
-
-## 三、关键词簇全景（按流量入口类型）
-
-| 入口类型 | 关键词簇 | 承接页面 | 状态 |
+| 页面 | 主词 | 当前标题（2026-10-18） | 实际表现（近 3 个月） |
 |---|---|---|---|
-| 品类头部词 | AirDrop for Windows / 隔空投送 Windows | 首页 + airdrop 教程 | 布局中（长期战） |
-| 泛需求词 | iPhone 传文件到 Windows 电脑 | roundup 页 | 布局中 |
-| 功能精准词 | 剪贴板同步 iPhone Windows | 剪贴板教程 | ✅ 已获排名 |
-| 竞品对比词 | WinSend vs X | 3 个对比页 | ✅ 已上线（2026-07） |
-| 竞品故障词 | X not working / 找不到设备 | vs-snapdrop ✅；vs-localsend ⚠️待补 | 部分覆盖 |
-| 竞品限制词 | Send Anywhere 限制/隐私 | vs-sendanywhere | ✅ 已上线 |
-| 榜单词 | best AirDrop alternatives | roundup 页 | 布局中 |
-| 品牌词 | WinSend 下载/安装/教程 | 首页 + setup | 随声量增长 |
-| 借名词 | Universal Clipboard for Windows | 剪贴板教程（弱覆盖） | ⚠️建议专门内容 |
-| 问答词 | Is X safe? Does X work? | 各页 FAQ + FAQPage 结构化数据 | ✅ AI 搜索引用入口 |
+| `/`（首页） | WinSend（品牌词）+ AirDrop for Windows | AirDrop for Windows: iPhone File & Clipboard Transfer \| WinSend | 品牌词点击率约 42%；旧地址 `/en/` 仍承接大部分曝光 |
+| `/en/guides/cross-platform-transfer-tools/` | **AirDrop alternative for Windows** | 5 Best AirDrop Alternatives for Windows (2026) \| WinSend | 曝光 5,821，点击率 0.9%（标题刚改，待验证） |
+| `/en/guides/copy-iphone-to-windows/` | **how to copy from iPhone and paste on Windows** | How to Copy from iPhone and Paste on Windows (No Cable) | 曝光 4,308，点击率 3.0%（标题刚改，待验证） |
+| `/en/guides/airdrop-for-windows/` | **transfer photos from iPhone to PC** | Transfer Photos from iPhone to PC Without a Cable \| WinSend | 未进前 10；2026-10-18 改为照片长尾，不再抢 "AirDrop" |
+| `/en/comparison/winsend-vs-localsend/` | WinSend vs LocalSend / LocalSend alternative | WinSend vs LocalSend for iPhone and Windows (2026) | 曝光 741，点击率 1.1% |
+| `/en/comparison/winsend-vs-snapdrop/` | Snapdrop alternative / Snapdrop not working | WinSend vs Snapdrop: Snapdrop Alternative for iPhone & PC | 未进前 10 |
+| `/en/comparison/winsend-vs-sendanywhere/` | Send Anywhere alternative / file size limit | WinSend vs Send Anywhere: Local Transfer vs Relay (2026) | 未进前 10 |
+| `/en/guides/setup/` | WinSend setup / iPhone can't find PC | How to Set Up WinSend: Connect iPhone to Windows PC | 未进前 10 |
+| `/en/guides/how-it-works/` | how WinSend works（品牌信任页） | How WinSend Works: Local Transfer, mDNS and Shortcuts | 曝光 508，点击率 0.6% |
+| `/en/guides/` | WinSend guides | WinSend Guides: iPhone to Windows Transfer Tutorials | 曝光 567，点击率 1.2% |
+| `/en/download/` | WinSend download | Download WinSend for Windows and iPhone | "winsend download" 点击 16 / 曝光 29 |
 
-## 四、分析与验证方法
+## 二、主词分工总表（中文）
 
-**目标关键词怎么分析出来的**：标题 <title>、H1、H2/H3 结构、meta keywords、
-正文实体密度、FAQ 问题——这些决定搜索引擎如何理解页面主题。
+| 页面 | 主词 | 当前标题（2026-10-18） | 实际表现（近 3 个月） |
+|---|---|---|---|
+| `/zh/` | WinSend + Windows 版 AirDrop | Windows 版 AirDrop：iPhone 文件与剪贴板传输 \| WinSend | 曝光 148，点击率 15.5% |
+| `/zh/guides/cross-platform-transfer-tools/` | **Windows AirDrop 替代工具** | 2026 年 Windows 版 AirDrop 替代工具推荐：5 款对比 \| WinSend | 曝光 1,228，点击率 2.8% |
+| `/zh/guides/copy-iphone-to-windows/` | **iPhone 与 Windows 剪贴板同步** | iPhone 与 Windows 剪贴板同步：复制后在电脑粘贴 \| WinSend 教程 | 曝光 365，点击率 10.4%（表现好，暂不改） |
+| `/zh/guides/airdrop-for-windows/` | **iPhone 照片传到电脑** | iPhone 照片传到 Windows 电脑：不用数据线，相册直接发 \| WinSend 教程 | 2026-10-18 改为照片长尾 |
+| `/zh/comparison/winsend-vs-localsend/` | WinSend 对比 LocalSend | WinSend 对比 LocalSend：iPhone 与 Windows 传输怎么选（2026） | — |
+| `/zh/comparison/winsend-vs-snapdrop/` | Snapdrop 找不到设备 / 替代 | WinSend 对比 Snapdrop：更稳定的 iPhone 传电脑方案（2026） | — |
+| `/zh/comparison/winsend-vs-sendanywhere/` | Send Anywhere 文件大小限制 / 替代 | WinSend 对比 Send Anywhere：局域网文件直传与云剪贴板（2026） | — |
 
-**实际覆盖以谁为准**：搜索引擎。它可能给你排上没瞄准的词，也可能不认你瞄准的词。
-验证路径：
-1. Google Search Console → 效果 → 按"网页"筛选 → 看每个 URL 的"查询数"
-2. 上线后 2-4 周开始有数据，每月对照本表检查一次
-3. 有展示没点击的词 → 优化标题/摘要；没展示的目标词 → 加强正文覆盖或补内链
+> 中文在 Google 上的量很小，中文搜索主要靠必应。必应站长平台接入后，在这里补一栏必应数据。
 
-## 五、待办（按优先级）
+## 三、法语（未部署）
 
-- [ ] vs-localsend 页补 "Why can't LocalSend find my device?" FAQ（en/zh），抢占 LocalSend 故障词
-- [ ] 新建《Universal Clipboard for Windows》内容（en/zh），抢借名词
-- [ ] 新内容候选：PairDrop 对比页、"LocalSend vs Snapdrop" 裁判页
-- [ ] GSC 首次对照验证（2026-08 中下旬，对比页上线 2-4 周后）
+9 个页面的意图见 `FR_PILOT.md`。主词：首页 *alternative AirDrop PC*，照片教程 *transférer photos iPhone vers PC sans câble*，剪贴板教程 *copier coller iPhone PC*。上线 4–8 周后开始在这里记录数据。
+
+---
+
+## 四、各页次要词
+
+### 横评页（cross-platform-transfer-tools）
+| 关键词 | 难度 | 备注 |
+|---|---|---|
+| best AirDrop alternatives / AirDrop 替代品 | ★★ | 榜单词 |
+| airdrop windows alternative | ★★ | GSC 已有曝光（17 次） |
+| iPhone 传文件到 Windows 电脑 | ★★ | 中文泛需求 |
+| LocalSend vs Snapdrop vs Send Anywhere | ★ | 竞品联合词 |
+| 局域网传文件 / LAN file sharing | ★★ | 场景词 |
+
+### 剪贴板教程（copy-iphone-to-windows）
+| 关键词 | 难度 | 备注 |
+|---|---|---|
+| copy paste from iPhone to Windows | ★ | GSC 已有曝光 |
+| copy text from iPhone to Windows | ★ | GSC 已有曝光 |
+| share clipboard between iPhone and Windows | ★★ | 旧标题的主词 |
+| Back Tap shortcut / 轻点背面 同步 | ★ | 玩法词 |
+| Universal Clipboard for Windows | ★ | 目前覆盖很弱，计划单独写一篇 |
+
+### 照片教程（airdrop-for-windows）
+| 关键词 | 难度 | 备注 |
+|---|---|---|
+| send photos from iPhone to PC wirelessly | ★★ | |
+| transfer photos iPhone to Windows 11 without iTunes | ★ | 可在正文加小节 |
+| iPhone share sheet to Windows | ★ | 差异化卖点 |
+| 隔空投送 Windows 电脑 | ★★ | 中文 |
+
+### 对比页
+| 页面 | 次要词 |
+|---|---|
+| vs LocalSend | Does LocalSend work between iPhone and Windows；Is WinSend free like LocalSend（FAQ 已覆盖，答案已按新价格改）；**LocalSend not finding devices（未覆盖，待补 FAQ）** |
+| vs Snapdrop | Snapdrop not finding devices；Is Snapdrop safe；WebRTC file transfer alternative |
+| vs Send Anywhere | Send Anywhere file size limit；Send Anywhere privacy / relay（"unlimited local file transfer" 已于 2026-10-18 删除，价格改为试用后付费） |
+
+### 安装页（setup）
+| 关键词 | 难度 | 备注 |
+|---|---|---|
+| WinSend download / 下载 / 安装 | ★ | 品牌词 |
+| iPhone can't find PC / 找不到电脑 | ★ | 故障词 |
+| SmartScreen "Windows protected your PC" | ★ | 安装故障词 |
+
+---
+
+## 五、待开发的关键词（还没有页面承接）
+
+| 关键词 | 难度 | 建议承接方式 |
+|---|---|---|
+| Intel Unison alternative | ★ | 新文章（Unison 已于 2025 年停止服务） |
+| Phone Link iPhone alternative / file transfer | ★★ | 新文章（先核实微软最新支持情况） |
+| Universal Clipboard for Windows | ★ | 新文章 |
+| LocalSend not finding devices | ★ | vs LocalSend 页加 FAQ |
+| PairDrop alternative | ★ | 新对比页（候选） |
+| transfer large video iPhone to PC without compression | ★ | 新文章或照片教程加小节 |
+
+---
+
+## 六、维护规则
+
+1. **一个词只给一个页面**。新页面上线前先查这张表，确认主词没有被占用。
+2. **改标题看数据**：曝光 > 300 且点击率 < 2% 的页面，优先改标题和描述；点击率已经很好的（如中文剪贴板教程）不要动。
+3. **标题长度**：英文标题 ≤ 60 个字符、描述 ≤ 160 个字符；中文标题尽量在 30 个汉字左右。
+4. **价格说法**：不能用 "free"、"unlimited"、"免费"、"无限制" 作为关键词或卖点，口径见 `SEO_GEO_PLAN.md` 第五节。
+5. 每月复盘后更新"实际表现"一栏，写清楚日期和统计区间。
