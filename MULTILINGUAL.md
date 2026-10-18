@@ -19,7 +19,6 @@ site/
     page.html               共享 HTML 外壳
     navigation.html         共享导航与语言切换
     footer.html             共享页脚
-    product-scope.html      共享功能权益说明
     faq.html / faq-item.html 共享可见 FAQ
   content/
     en/、zh/
@@ -94,7 +93,6 @@ npm run deploy        # 先完整构建，再正式发布（需要明确发布�
 <a href="{{links.features}}#cloud-clipboard">云剪贴板</a>
 <a href="{{product.microsoftStoreUrl}}">Windows 安装入口</a>
 <p>iOS {{product.iosMinimum}}+</p>
-{{{productScope}}}
 {{{faq}}}
 ```
 

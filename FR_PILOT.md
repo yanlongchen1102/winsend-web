@@ -56,7 +56,7 @@
 
 ## 2026-10-18 法语文案重写
 
-- 按法语原生写法重写全部九页文案：先讲用途，限制只保留影响使用的一句，详细限制集中在安全页、FAQ 和 `productScope`。事实口径仍以 `PRODUCT_FACTS.md` 为准。
+- 按法语原生写法重写全部九页文案：先讲用途，限制只保留影响使用的一句，详细限制集中在安全页和 FAQ；价格说明只放在下载页（2026-10-18 起全站不再有底部权益卡片）。事实口径仍以 `PRODUCT_FACTS.md` 为准。
 - 术语对齐 iOS App 法语界面：« Transfert cloud »、« code de jumelage »、« Envoyer au PC »、« Recevoir du PC »、« Configurer les raccourcis »、« WinSend Copy Sync »。Windows 端没有法语界面，按英文菜单名引用（« Cloud Transfer » > « Generate Pairing Code & Connect »）。
 - 功能页 URL 改为 `/fr/fonctionnalites/`（法语版尚未部署，无需重定向）；`og:locale` 为 `fr_FR`。
 - 法语标点前统一使用不换行空格（`:` 前 U+00A0，`; ? !` 前 U+202F），由 `tests/site.test.mjs` 检查。

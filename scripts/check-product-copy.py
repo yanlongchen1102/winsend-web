@@ -82,12 +82,11 @@ for path in pages:
         expected = 'https://winsend.app/' + relative.removesuffix('index.html')
         if page.canonicals != [expected]:
             errors.append(f'{relative}: canonical mismatch: {page.canonicals}')
-        if path.parent.name not in ('privacy', 'safety'):
-            if 'product-scope' not in page.ids:
-                errors.append(f'{relative}: missing visible feature-access explanation')
-            scope = normalized(shared[relative.split('/')[0]]['productScope'])
-            if scope not in visible:
-                errors.append(f'{relative}: missing or incorrect free/Pro distinction')
+        if path.parent.name in ('download', 'telecharger'):
+            if 'pricing' not in page.ids:
+                errors.append(f'{relative}: download page must show the free-trial/Pro pricing note')
+        if 'product-scope' in page.ids:
+            errors.append(f'{relative}: the per-page feature-access card was removed; do not re-add it')
     for raw in re.findall(r'<script type="application/ld\+json">(.*?)</script>', text, re.S):
         try:
             data = json.loads(raw)

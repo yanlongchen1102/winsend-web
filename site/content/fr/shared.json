@@ -13,7 +13,5 @@
   "menu": "Menu",
   "copyright": "Tous droits réservés.",
   "footerDescription": "Une alternative à AirDrop entre iPhone et PC Windows. Les fichiers passent par votre réseau local ; le transfert cloud facultatif ne transmet que du texte. AirDrop est une marque d’Apple Inc. ; WinSend n’est pas affilié à Apple.",
-  "productScopeHeading": "Essai gratuit, puis WinSend Pro",
-  "productScope": "Pour commencer, vous disposez d’un nombre limité de transferts gratuits, utilisables une seule fois, pour essayer toutes les fonctionnalités : photos, vidéos, fichiers, copier-coller, Raccourcis et transfert cloud. Ensuite, WinSend Pro débloque tout, sans aucune limite d’utilisation, en un seul achat ; le prix à jour est affiché dans l’application. Les Raccourcis nécessitent iOS 16 ou version ultérieure, et la synchronisation automatique reste soumise aux limites d’iOS en arrière-plan. Le cloud ne transmet que du texte ; les fichiers passent toujours par le réseau local.",
   "faqHeading": "Questions fréquentes"
 }

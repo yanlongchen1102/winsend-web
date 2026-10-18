@@ -39,7 +39,7 @@ function addFrench(root) {
   for (const [id, route] of Object.entries(paths)) {
     pages[id] = { status: 'published', path: route, title: `Fixture ${id}`, description: 'Fixture description', lastmod: '2026-10-08' };
     fs.writeFileSync(path.join(root, `site/content/fr/${id}.head.html`), '');
-    fs.writeFileSync(path.join(root, `site/content/fr/${id}.body.html`), '<main><h1>{{title}}</h1><a href="{{links.download}}">Download fixture</a>{{{productScope}}}</main>');
+    fs.writeFileSync(path.join(root, `site/content/fr/${id}.body.html`), '<main><h1>{{title}}</h1><a href="{{links.download}}">Download fixture</a></main>');
   }
   putJSON(root, 'site/content/fr/pages.json', pages);
 }
@@ -111,6 +111,8 @@ test('French edition shares core layouts and navigation, localized navigation an
   }
   assert.ok(outputs.get('fr/installation/index.html').includes('hero-bg px-6 pt-32 pb-14'));
   assert.ok(download.includes('data-download-surface="download_page"'));
+  assert.ok(download.includes('id="pricing"'));
+  for (const [file, output] of outputs) assert.ok(!output.includes('id="product-scope"'), file);
 });
 
 test('French source copy uses non-breaking spaces before double punctuation', () => {
