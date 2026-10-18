@@ -124,7 +124,7 @@
 - [x] Bing 站长平台已接入，有 3 个月数据（2026-10-18 确认）
 - [ ] Bing 里对新首页 `/`、横评页、剪贴板教程提交 URL（或接入 IndexNow，让每次部署自动通知 Bing）
 - [x] 查看 Bing 的 "AI Performance"（测试版），基线已记入第六节（2026-10-18）
-- [ ] 查看 AI Performance 的 "Pages" 标签，记录被引用最多的页面
+- [x] 查看 AI Performance 的 "Pages" 标签，记录被引用最多的页面（2026-10-18，见第六节）
 - [ ] 软件目录收录（外链 + AI 引用来源）：
   - [x] AlternativeTo——2026-07-29 已提交（alternativeto.net/software/winsend/）
     - [ ] 确认条目已通过审核，并出现在 LocalSend / AirDrop 的替代品列表中
@@ -248,7 +248,21 @@ AI 搜索主要引用第三方来源，自己网站的内容对 GEO 作用有限
 | air drop to pc free | 9 / 18.75% | |
 | airdrop to pc free download | 6 / 16.67% | |
 
+### Bing AI Performance：被引用最多的页面（近 3 个月）
+
+| 页面 | 2026-10-18 | 下次复盘 |
+|---|---|---|
+| `/en/guides/cross-platform-transfer-tools/` | 997（约占全部引用的 45%） | |
+| `/en/`（旧首页，已 301 到 `/`） | 485 | |
+| `/zh/guides/cross-platform-transfer-tools/` | 304 | |
+| `/zh/guides/copy-iphone-to-windows/` | 174 | |
+| `/zh/` | 64 | |
+| `/zh/guides/airdrop-for-windows/` | 63 | |
+| `/en/guides/copy-iphone-to-windows/` | 35 | |
+| `/en/guides/airdrop-for-windows/` | 22 | |
+
 **结论（2026-10-18）：**
+- **中英文横评页合计约占 60% 的 AI 引用**，是 GEO 最核心的页面。它的内容准确性、更新日期和结构，直接决定 AI 怎么描述 WinSend 和竞品。
 - 中文问题的引用占比很高（26–35%），WinSend 已经是中文"隔空投送 Windows"类问题的主要答案来源之一。
 - 英文头部问题（airdrop for windows / airdrop windows）引用次数最多，但占比只有 2–5%，是 GEO 最大的提升空间。
 - "Windows 10" 出现频繁（airdrop to pc windows 10、airdrop for windows 10），可以在页面里更明确地写出"支持 Windows 10 和 11"。
