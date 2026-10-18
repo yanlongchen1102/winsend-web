@@ -7,7 +7,7 @@
     { "code": "zh", "htmlLang": "zh-CN", "name": "中文", "status": "published" },
     { "code": "fr", "htmlLang": "fr", "ogLocale": "fr_FR", "name": "Français", "status": "published" },
     { "code": "ja", "htmlLang": "ja", "name": "日本語", "status": "draft" },
-    { "code": "de", "htmlLang": "de", "name": "Deutsch", "status": "draft" },
-    { "code": "es", "htmlLang": "es", "name": "Español", "status": "draft" }
+    { "code": "de", "htmlLang": "de", "ogLocale": "de_DE", "name": "Deutsch", "status": "published" },
+    { "code": "es", "htmlLang": "es", "ogLocale": "es_ES", "name": "Español", "status": "published" }
   ]
 }

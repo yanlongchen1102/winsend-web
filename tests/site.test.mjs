@@ -11,9 +11,11 @@ function fixture(t) {
   fs.cpSync(path.join(ROOT, 'site'), path.join(root, 'site'), { recursive: true });
   // Infrastructure tests start with en/zh; French is added explicitly where needed.
   const config = json(root, 'site/config.json');
-  config.locales.find(locale => locale.code === 'fr').status = 'draft';
+  for (const code of ['fr', 'de', 'es']) {
+    config.locales.find(locale => locale.code === code).status = 'draft';
+    fs.rmSync(path.join(root, `site/content/${code}`), { recursive: true, force: true });
+  }
   putJSON(root, 'site/config.json', config);
-  fs.rmSync(path.join(root, 'site/content/fr'), { recursive: true, force: true });
   // No prior generated outputs in an isolated fixture.
   fs.rmSync(path.join(root, 'site/generated.json'), { force: true });
   t.after(() => fs.rmSync(root, { recursive: true, force: true }));
@@ -44,15 +46,15 @@ function addFrench(root) {
   putJSON(root, 'site/content/fr/pages.json', pages);
 }
 
-test('real content renders 37 pages with published locales only, no placeholders or redirects', () => {
+test('real content renders 55 pages with published locales only, no placeholders or redirects', () => {
   const { site, outputs } = generateSite();
-  assert.equal(site.pages.length, 37);
-  assert.equal(outputs.size, 38); // 37 pages (including the root English home) + sitemap
+  assert.equal(site.pages.length, 55);
+  assert.equal(outputs.size, 56); // 55 pages (including the root English home) + sitemap
   const root = outputs.get('index.html');
   assert.ok(root.includes('<html lang="en"'));
   assert.ok(root.includes('rel="canonical" href="https://winsend.app/"'));
-  assert.ok(root.includes('href="/zh/"') && root.includes('href="/fr/"'));
-  for (const code of ['ja', 'de', 'es']) {
+  for (const code of ['zh', 'fr', 'de', 'es']) assert.ok(root.includes(`href="/${code}/"`), code);
+  for (const code of ['ja']) {
     assert.ok(!root.includes(`href="/${code}/"`));
     assert.ok(!outputs.get('sitemap.xml').includes(`https://winsend.app/${code}/`));
     assert.ok(![...outputs.keys()].some(file => file.startsWith(`${code}/`)));
@@ -124,6 +126,28 @@ test('French source copy uses non-breaking spaces before double punctuation', ()
     const text = fs.readFileSync(path.join(dir, name), 'utf8');
     const bad = text.match(/.{0,30} [:;?!»](?![\w/]).{0,10}|«(?![\u00a0\u202f])/u);
     assert.equal(bad, null, `${name}: ${bad && bad[0]}`);
+  }
+});
+
+test('German and Spanish editions publish the same nine pages with localized slugs and reciprocal hreflang', () => {
+  const { site, outputs } = generateSite();
+  const expected = {
+    de: { home: '/de/', download: '/de/herunterladen/', setup: '/de/einrichtung/', 'airdrop-for-windows': '/de/anleitungen/iphone-fotos-auf-pc/' },
+    es: { home: '/es/', download: '/es/descargar/', setup: '/es/instalacion/', 'airdrop-for-windows': '/es/guias/pasar-fotos-iphone-a-pc/' },
+  };
+  for (const [code, paths] of Object.entries(expected)) {
+    const pages = site.pages.filter(page => page.locale.code === code);
+    assert.equal(pages.length, 9, code);
+    assert.equal(site.faqs[code].home.length, 8, code);
+    assert.equal(site.faqs[code]['airdrop-for-windows'].length, 7, code);
+    for (const [id, pathname] of Object.entries(paths)) assert.equal(pages.find(page => page.id === id).path, pathname, `${code}/${id}`);
+    const home = outputs.get(`${code}/index.html`);
+    assert.ok(home.includes(`<html lang="${code}"`), code);
+    assert.ok(home.includes(`<meta property="og:locale" content="${code}_${code.toUpperCase()}">`), code);
+    assert.ok(home.includes('id="popular-guides"'), code);
+    assert.ok(outputs.get(paths.download.slice(1) + 'index.html').includes('id="pricing"'), code);
+    assert.ok(outputs.get('en/guides/setup/index.html').includes(`hreflang="${code}" href="https://winsend.app${paths.setup}"`), code);
+    assert.ok(outputs.get(paths.setup.slice(1) + 'index.html').includes('hreflang="en" href="https://winsend.app/en/guides/setup/"'), code);
   }
 });
 

@@ -1,0 +1,27 @@
+{
+  "heading": "Beliebte Anleitungen",
+  "intro": "Schritt-für-Schritt-Hilfe, um Fotos, Dateien und Text zwischen iPhone und Windows-PC zu übertragen.",
+  "cards": [
+    {
+      "page": "airdrop-for-windows",
+      "category": "Fotos und Dateien",
+      "title": "Fotos vom iPhone auf den PC übertragen",
+      "description": "Aus Fotos oder Dateien, ohne Kabel und ohne iTunes.",
+      "cta": "Anleitung lesen →"
+    },
+    {
+      "page": "copy-iphone-to-windows",
+      "category": "Zwischenablage",
+      "title": "Zwischen iPhone und PC kopieren",
+      "description": "Manuell, per Tippen auf die Rückseite oder zwischen zwei Netzwerken.",
+      "cta": "Anleitung lesen →"
+    },
+    {
+      "page": "setup",
+      "category": "Einrichtung",
+      "title": "iPhone mit dem PC verbinden",
+      "description": "Installation, Berechtigungen und was tun, wenn das iPhone den PC nicht findet.",
+      "cta": "Anleitung lesen →"
+    }
+  ]
+}

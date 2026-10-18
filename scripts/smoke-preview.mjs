@@ -40,7 +40,7 @@ try {
     await new Promise(resolve => setTimeout(resolve, 500));
   }
   assert.ok(ready, `Local preview did not become ready:\n${log}`);
-  for (const pathname of ['/', '/zh/', '/en/guides/setup/', '/zh/download/', '/fr/', '/fr/fonctionnalites/', '/fr/guides/', '/fr/guides/presse-papiers-iphone-windows/', '/fr/telecharger/', '/fr/installation/', '/fr/securite/', '/fr/confidentialite/', '/fr/guides/transfert-iphone-pc/', '/assets/css/site.css', '/assets/css/marketing.css']) {
+  for (const pathname of ['/', '/zh/', '/en/guides/setup/', '/zh/download/', '/fr/', '/fr/fonctionnalites/', '/fr/guides/', '/fr/guides/presse-papiers-iphone-windows/', '/fr/telecharger/', '/fr/installation/', '/fr/securite/', '/fr/confidentialite/', '/fr/guides/transfert-iphone-pc/', '/de/', '/de/herunterladen/', '/de/anleitungen/iphone-fotos-auf-pc/', '/es/', '/es/descargar/', '/es/guias/pasar-fotos-iphone-a-pc/', '/assets/css/site.css', '/assets/css/marketing.css']) {
     const response = await fetch(origin + pathname, { redirect: 'manual', signal: AbortSignal.timeout(5000) });
     assert.equal(response.status, 200, pathname);
     const text = await response.text();
@@ -56,7 +56,7 @@ try {
     assert.equal(response.status, 301, pathname);
     assert.equal(response.headers.get('location'), location, pathname);
   }
-  for (const pathname of ['/ja/', '/de/', '/es/', '/fr/unknown-page/', '/en/missing-page/', '/site/config.json', '/site/content/en/home.body.html', '/scripts/build-site.mjs', '/tests/site.test.mjs', '/PRODUCT_FACTS.md', '/index_original_backup.html']) {
+  for (const pathname of ['/ja/', '/de/unknown-page/', '/fr/unknown-page/', '/en/missing-page/', '/site/config.json', '/site/content/en/home.body.html', '/scripts/build-site.mjs', '/tests/site.test.mjs', '/PRODUCT_FACTS.md', '/index_original_backup.html']) {
     const response = await fetch(origin + pathname, { redirect: 'manual', signal: AbortSignal.timeout(5000) });
     await response.body?.cancel();
     assert.equal(response.status, 404, pathname);

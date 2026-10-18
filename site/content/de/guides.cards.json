@@ -1,0 +1,23 @@
+[
+  {
+    "page": "airdrop-for-windows",
+    "category": "Fotos und Dateien",
+    "title": "Fotos vom iPhone auf den PC übertragen",
+    "description": "Aus Fotos oder Dateien, ohne Kabel und ohne iTunes. Mit Formaten, Qualität und Lösungen, wenn es nicht klappt.",
+    "cta": "Anleitung lesen →"
+  },
+  {
+    "page": "copy-iphone-to-windows",
+    "category": "Zwischenablage",
+    "title": "Zwischen iPhone und PC kopieren und einfügen",
+    "description": "Manuell senden, Kurzbefehl per Tippen auf die Rückseite und Cloud-Übertragung, wenn die Geräte nicht im selben Netzwerk sind.",
+    "cta": "Anleitung lesen →"
+  },
+  {
+    "page": "setup",
+    "category": "Einrichtung",
+    "title": "iPhone mit dem PC verbinden",
+    "description": "Installation, Berechtigungen, Firewall – und was zu tun ist, wenn das iPhone den PC nicht findet.",
+    "cta": "Anleitung lesen →"
+  }
+]

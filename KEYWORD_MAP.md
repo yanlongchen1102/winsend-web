@@ -39,9 +39,19 @@
 
 > 中文在 Google 上的量很小，主要看 Bing：中文首页、中文横评页（967 次曝光，点击率 6%）、中文剪贴板教程（点击率 14.7%）表现都不错。
 
-## 三、法语（未部署）
+## 三、法语、德语、西班牙语
 
-9 个页面的意图见 `FR_PILOT.md`。主词：首页 *alternative AirDrop PC*，照片教程 *transférer photos iPhone vers PC sans câble*，剪贴板教程 *copier coller iPhone PC*。上线 4–8 周后开始在这里记录数据。
+上线 4–8 周后开始在这里记录数据。三种语言都是 9 页，暂无横评页和对比页。
+
+| 页面 | 法语主词 | 德语主词 | 西班牙语主词 |
+|---|---|---|---|
+| 首页 | alternative AirDrop PC | AirDrop für Windows-PC | AirDrop para Windows y PC |
+| 照片教程 | transférer photos iPhone vers PC sans câble | Fotos vom iPhone auf den PC übertragen ohne Kabel | pasar fotos del iPhone al PC sin cable |
+| 剪贴板教程 | copier coller iPhone PC | vom iPhone kopieren, am PC einfügen | copiar en el iPhone y pegar en el PC |
+| 安装页 | connecter iPhone PC | iPhone mit Windows-PC verbinden | conectar iPhone al PC sin cables |
+| 下载页 | télécharger WinSend | WinSend herunterladen | descargar WinSend |
+
+法语细节见 `FR_PILOT.md`。网址：法语 `/fr/…`，德语 `/de/herunterladen/`、`/de/anleitungen/…`，西班牙语 `/es/descargar/`、`/es/guias/…`。
 
 ---
 

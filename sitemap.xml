@@ -6,6 +6,8 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://winsend.app/" />
     <xhtml:link rel="alternate" hreflang="zh" href="https://winsend.app/zh/" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://winsend.app/fr/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://winsend.app/de/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://winsend.app/es/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://winsend.app/" />
   </url>
   <url>
@@ -14,6 +16,8 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://winsend.app/en/download/" />
     <xhtml:link rel="alternate" hreflang="zh" href="https://winsend.app/zh/download/" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://winsend.app/fr/telecharger/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://winsend.app/de/herunterladen/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://winsend.app/es/descargar/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://winsend.app/en/download/" />
   </url>
   <url>
@@ -22,6 +26,8 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://winsend.app/en/features/" />
     <xhtml:link rel="alternate" hreflang="zh" href="https://winsend.app/zh/features/" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://winsend.app/fr/fonctionnalites/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://winsend.app/de/funktionen/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://winsend.app/es/funciones/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://winsend.app/en/features/" />
   </url>
   <url>
@@ -30,6 +36,8 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://winsend.app/en/guides/" />
     <xhtml:link rel="alternate" hreflang="zh" href="https://winsend.app/zh/guides/" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://winsend.app/fr/guides/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://winsend.app/de/anleitungen/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://winsend.app/es/guias/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://winsend.app/en/guides/" />
   </url>
   <url>
@@ -38,6 +46,8 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://winsend.app/en/guides/setup/" />
     <xhtml:link rel="alternate" hreflang="zh" href="https://winsend.app/zh/guides/setup/" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://winsend.app/fr/installation/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://winsend.app/de/einrichtung/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://winsend.app/es/instalacion/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://winsend.app/en/guides/setup/" />
   </url>
   <url>
@@ -53,6 +63,8 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://winsend.app/en/guides/copy-iphone-to-windows/" />
     <xhtml:link rel="alternate" hreflang="zh" href="https://winsend.app/zh/guides/copy-iphone-to-windows/" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://winsend.app/fr/guides/presse-papiers-iphone-windows/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://winsend.app/de/anleitungen/zwischenablage-iphone-windows/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://winsend.app/es/guias/portapapeles-iphone-windows/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://winsend.app/en/guides/copy-iphone-to-windows/" />
   </url>
   <url>
@@ -61,6 +73,8 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://winsend.app/en/guides/airdrop-for-windows/" />
     <xhtml:link rel="alternate" hreflang="zh" href="https://winsend.app/zh/guides/airdrop-for-windows/" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://winsend.app/fr/guides/transfert-iphone-pc/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://winsend.app/de/anleitungen/iphone-fotos-auf-pc/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://winsend.app/es/guias/pasar-fotos-iphone-a-pc/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://winsend.app/en/guides/airdrop-for-windows/" />
   </url>
   <url>
@@ -97,6 +111,8 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://winsend.app/en/safety/" />
     <xhtml:link rel="alternate" hreflang="zh" href="https://winsend.app/zh/safety/" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://winsend.app/fr/securite/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://winsend.app/de/sicherheit/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://winsend.app/es/seguridad/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://winsend.app/en/safety/" />
   </url>
   <url>
@@ -105,6 +121,8 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://winsend.app/en/privacy/" />
     <xhtml:link rel="alternate" hreflang="zh" href="https://winsend.app/zh/privacy/" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://winsend.app/fr/confidentialite/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://winsend.app/de/datenschutz/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://winsend.app/es/privacidad/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://winsend.app/en/privacy/" />
   </url>
   <url>
@@ -113,6 +131,8 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://winsend.app/" />
     <xhtml:link rel="alternate" hreflang="zh" href="https://winsend.app/zh/" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://winsend.app/fr/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://winsend.app/de/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://winsend.app/es/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://winsend.app/" />
   </url>
   <url>
@@ -121,6 +141,8 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://winsend.app/en/download/" />
     <xhtml:link rel="alternate" hreflang="zh" href="https://winsend.app/zh/download/" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://winsend.app/fr/telecharger/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://winsend.app/de/herunterladen/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://winsend.app/es/descargar/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://winsend.app/en/download/" />
   </url>
   <url>
@@ -129,6 +151,8 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://winsend.app/en/features/" />
     <xhtml:link rel="alternate" hreflang="zh" href="https://winsend.app/zh/features/" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://winsend.app/fr/fonctionnalites/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://winsend.app/de/funktionen/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://winsend.app/es/funciones/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://winsend.app/en/features/" />
   </url>
   <url>
@@ -137,6 +161,8 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://winsend.app/en/guides/" />
     <xhtml:link rel="alternate" hreflang="zh" href="https://winsend.app/zh/guides/" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://winsend.app/fr/guides/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://winsend.app/de/anleitungen/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://winsend.app/es/guias/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://winsend.app/en/guides/" />
   </url>
   <url>
@@ -145,6 +171,8 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://winsend.app/en/guides/setup/" />
     <xhtml:link rel="alternate" hreflang="zh" href="https://winsend.app/zh/guides/setup/" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://winsend.app/fr/installation/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://winsend.app/de/einrichtung/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://winsend.app/es/instalacion/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://winsend.app/en/guides/setup/" />
   </url>
   <url>
@@ -160,6 +188,8 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://winsend.app/en/guides/copy-iphone-to-windows/" />
     <xhtml:link rel="alternate" hreflang="zh" href="https://winsend.app/zh/guides/copy-iphone-to-windows/" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://winsend.app/fr/guides/presse-papiers-iphone-windows/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://winsend.app/de/anleitungen/zwischenablage-iphone-windows/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://winsend.app/es/guias/portapapeles-iphone-windows/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://winsend.app/en/guides/copy-iphone-to-windows/" />
   </url>
   <url>
@@ -168,6 +198,8 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://winsend.app/en/guides/airdrop-for-windows/" />
     <xhtml:link rel="alternate" hreflang="zh" href="https://winsend.app/zh/guides/airdrop-for-windows/" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://winsend.app/fr/guides/transfert-iphone-pc/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://winsend.app/de/anleitungen/iphone-fotos-auf-pc/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://winsend.app/es/guias/pasar-fotos-iphone-a-pc/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://winsend.app/en/guides/airdrop-for-windows/" />
   </url>
   <url>
@@ -204,6 +236,8 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://winsend.app/en/safety/" />
     <xhtml:link rel="alternate" hreflang="zh" href="https://winsend.app/zh/safety/" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://winsend.app/fr/securite/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://winsend.app/de/sicherheit/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://winsend.app/es/seguridad/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://winsend.app/en/safety/" />
   </url>
   <url>
@@ -212,6 +246,8 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://winsend.app/en/privacy/" />
     <xhtml:link rel="alternate" hreflang="zh" href="https://winsend.app/zh/privacy/" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://winsend.app/fr/confidentialite/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://winsend.app/de/datenschutz/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://winsend.app/es/privacidad/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://winsend.app/en/privacy/" />
   </url>
   <url>
@@ -220,6 +256,8 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://winsend.app/" />
     <xhtml:link rel="alternate" hreflang="zh" href="https://winsend.app/zh/" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://winsend.app/fr/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://winsend.app/de/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://winsend.app/es/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://winsend.app/" />
   </url>
   <url>
@@ -228,6 +266,8 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://winsend.app/en/download/" />
     <xhtml:link rel="alternate" hreflang="zh" href="https://winsend.app/zh/download/" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://winsend.app/fr/telecharger/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://winsend.app/de/herunterladen/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://winsend.app/es/descargar/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://winsend.app/en/download/" />
   </url>
   <url>
@@ -236,6 +276,8 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://winsend.app/en/guides/setup/" />
     <xhtml:link rel="alternate" hreflang="zh" href="https://winsend.app/zh/guides/setup/" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://winsend.app/fr/installation/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://winsend.app/de/einrichtung/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://winsend.app/es/instalacion/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://winsend.app/en/guides/setup/" />
   </url>
   <url>
@@ -244,6 +286,8 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://winsend.app/en/safety/" />
     <xhtml:link rel="alternate" hreflang="zh" href="https://winsend.app/zh/safety/" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://winsend.app/fr/securite/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://winsend.app/de/sicherheit/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://winsend.app/es/seguridad/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://winsend.app/en/safety/" />
   </url>
   <url>
@@ -252,6 +296,8 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://winsend.app/en/privacy/" />
     <xhtml:link rel="alternate" hreflang="zh" href="https://winsend.app/zh/privacy/" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://winsend.app/fr/confidentialite/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://winsend.app/de/datenschutz/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://winsend.app/es/privacidad/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://winsend.app/en/privacy/" />
   </url>
   <url>
@@ -260,6 +306,8 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://winsend.app/en/guides/airdrop-for-windows/" />
     <xhtml:link rel="alternate" hreflang="zh" href="https://winsend.app/zh/guides/airdrop-for-windows/" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://winsend.app/fr/guides/transfert-iphone-pc/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://winsend.app/de/anleitungen/iphone-fotos-auf-pc/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://winsend.app/es/guias/pasar-fotos-iphone-a-pc/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://winsend.app/en/guides/airdrop-for-windows/" />
   </url>
   <url>
@@ -268,6 +316,8 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://winsend.app/en/features/" />
     <xhtml:link rel="alternate" hreflang="zh" href="https://winsend.app/zh/features/" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://winsend.app/fr/fonctionnalites/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://winsend.app/de/funktionen/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://winsend.app/es/funciones/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://winsend.app/en/features/" />
   </url>
   <url>
@@ -276,6 +326,8 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://winsend.app/en/guides/" />
     <xhtml:link rel="alternate" hreflang="zh" href="https://winsend.app/zh/guides/" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://winsend.app/fr/guides/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://winsend.app/de/anleitungen/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://winsend.app/es/guias/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://winsend.app/en/guides/" />
   </url>
   <url>
@@ -284,6 +336,188 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://winsend.app/en/guides/copy-iphone-to-windows/" />
     <xhtml:link rel="alternate" hreflang="zh" href="https://winsend.app/zh/guides/copy-iphone-to-windows/" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://winsend.app/fr/guides/presse-papiers-iphone-windows/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://winsend.app/de/anleitungen/zwischenablage-iphone-windows/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://winsend.app/es/guias/portapapeles-iphone-windows/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://winsend.app/en/guides/copy-iphone-to-windows/" />
+  </url>
+  <url>
+    <loc>https://winsend.app/de/</loc>
+    <lastmod>2026-10-18</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://winsend.app/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://winsend.app/zh/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://winsend.app/fr/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://winsend.app/de/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://winsend.app/es/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://winsend.app/" />
+  </url>
+  <url>
+    <loc>https://winsend.app/de/herunterladen/</loc>
+    <lastmod>2026-10-18</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://winsend.app/en/download/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://winsend.app/zh/download/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://winsend.app/fr/telecharger/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://winsend.app/de/herunterladen/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://winsend.app/es/descargar/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://winsend.app/en/download/" />
+  </url>
+  <url>
+    <loc>https://winsend.app/de/einrichtung/</loc>
+    <lastmod>2026-10-18</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://winsend.app/en/guides/setup/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://winsend.app/zh/guides/setup/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://winsend.app/fr/installation/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://winsend.app/de/einrichtung/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://winsend.app/es/instalacion/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://winsend.app/en/guides/setup/" />
+  </url>
+  <url>
+    <loc>https://winsend.app/de/sicherheit/</loc>
+    <lastmod>2026-10-18</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://winsend.app/en/safety/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://winsend.app/zh/safety/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://winsend.app/fr/securite/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://winsend.app/de/sicherheit/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://winsend.app/es/seguridad/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://winsend.app/en/safety/" />
+  </url>
+  <url>
+    <loc>https://winsend.app/de/datenschutz/</loc>
+    <lastmod>2026-10-18</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://winsend.app/en/privacy/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://winsend.app/zh/privacy/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://winsend.app/fr/confidentialite/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://winsend.app/de/datenschutz/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://winsend.app/es/privacidad/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://winsend.app/en/privacy/" />
+  </url>
+  <url>
+    <loc>https://winsend.app/de/anleitungen/iphone-fotos-auf-pc/</loc>
+    <lastmod>2026-10-18</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://winsend.app/en/guides/airdrop-for-windows/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://winsend.app/zh/guides/airdrop-for-windows/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://winsend.app/fr/guides/transfert-iphone-pc/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://winsend.app/de/anleitungen/iphone-fotos-auf-pc/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://winsend.app/es/guias/pasar-fotos-iphone-a-pc/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://winsend.app/en/guides/airdrop-for-windows/" />
+  </url>
+  <url>
+    <loc>https://winsend.app/de/funktionen/</loc>
+    <lastmod>2026-10-18</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://winsend.app/en/features/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://winsend.app/zh/features/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://winsend.app/fr/fonctionnalites/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://winsend.app/de/funktionen/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://winsend.app/es/funciones/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://winsend.app/en/features/" />
+  </url>
+  <url>
+    <loc>https://winsend.app/de/anleitungen/</loc>
+    <lastmod>2026-10-18</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://winsend.app/en/guides/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://winsend.app/zh/guides/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://winsend.app/fr/guides/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://winsend.app/de/anleitungen/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://winsend.app/es/guias/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://winsend.app/en/guides/" />
+  </url>
+  <url>
+    <loc>https://winsend.app/de/anleitungen/zwischenablage-iphone-windows/</loc>
+    <lastmod>2026-10-18</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://winsend.app/en/guides/copy-iphone-to-windows/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://winsend.app/zh/guides/copy-iphone-to-windows/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://winsend.app/fr/guides/presse-papiers-iphone-windows/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://winsend.app/de/anleitungen/zwischenablage-iphone-windows/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://winsend.app/es/guias/portapapeles-iphone-windows/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://winsend.app/en/guides/copy-iphone-to-windows/" />
+  </url>
+  <url>
+    <loc>https://winsend.app/es/</loc>
+    <lastmod>2026-10-18</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://winsend.app/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://winsend.app/zh/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://winsend.app/fr/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://winsend.app/de/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://winsend.app/es/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://winsend.app/" />
+  </url>
+  <url>
+    <loc>https://winsend.app/es/descargar/</loc>
+    <lastmod>2026-10-18</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://winsend.app/en/download/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://winsend.app/zh/download/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://winsend.app/fr/telecharger/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://winsend.app/de/herunterladen/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://winsend.app/es/descargar/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://winsend.app/en/download/" />
+  </url>
+  <url>
+    <loc>https://winsend.app/es/instalacion/</loc>
+    <lastmod>2026-10-18</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://winsend.app/en/guides/setup/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://winsend.app/zh/guides/setup/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://winsend.app/fr/installation/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://winsend.app/de/einrichtung/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://winsend.app/es/instalacion/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://winsend.app/en/guides/setup/" />
+  </url>
+  <url>
+    <loc>https://winsend.app/es/seguridad/</loc>
+    <lastmod>2026-10-18</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://winsend.app/en/safety/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://winsend.app/zh/safety/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://winsend.app/fr/securite/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://winsend.app/de/sicherheit/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://winsend.app/es/seguridad/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://winsend.app/en/safety/" />
+  </url>
+  <url>
+    <loc>https://winsend.app/es/privacidad/</loc>
+    <lastmod>2026-10-18</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://winsend.app/en/privacy/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://winsend.app/zh/privacy/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://winsend.app/fr/confidentialite/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://winsend.app/de/datenschutz/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://winsend.app/es/privacidad/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://winsend.app/en/privacy/" />
+  </url>
+  <url>
+    <loc>https://winsend.app/es/guias/pasar-fotos-iphone-a-pc/</loc>
+    <lastmod>2026-10-18</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://winsend.app/en/guides/airdrop-for-windows/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://winsend.app/zh/guides/airdrop-for-windows/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://winsend.app/fr/guides/transfert-iphone-pc/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://winsend.app/de/anleitungen/iphone-fotos-auf-pc/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://winsend.app/es/guias/pasar-fotos-iphone-a-pc/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://winsend.app/en/guides/airdrop-for-windows/" />
+  </url>
+  <url>
+    <loc>https://winsend.app/es/funciones/</loc>
+    <lastmod>2026-10-18</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://winsend.app/en/features/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://winsend.app/zh/features/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://winsend.app/fr/fonctionnalites/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://winsend.app/de/funktionen/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://winsend.app/es/funciones/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://winsend.app/en/features/" />
+  </url>
+  <url>
+    <loc>https://winsend.app/es/guias/</loc>
+    <lastmod>2026-10-18</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://winsend.app/en/guides/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://winsend.app/zh/guides/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://winsend.app/fr/guides/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://winsend.app/de/anleitungen/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://winsend.app/es/guias/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://winsend.app/en/guides/" />
+  </url>
+  <url>
+    <loc>https://winsend.app/es/guias/portapapeles-iphone-windows/</loc>
+    <lastmod>2026-10-18</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://winsend.app/en/guides/copy-iphone-to-windows/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://winsend.app/zh/guides/copy-iphone-to-windows/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://winsend.app/fr/guides/presse-papiers-iphone-windows/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://winsend.app/de/anleitungen/zwischenablage-iphone-windows/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://winsend.app/es/guias/portapapeles-iphone-windows/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://winsend.app/en/guides/copy-iphone-to-windows/" />
   </url>
 </urlset>

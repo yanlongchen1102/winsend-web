@@ -45,6 +45,30 @@ WinSend has an iOS app and a Windows desktop app. Prefer the official Microsoft 
 - Security: https://winsend.app/fr/securite/
 - Privacy: https://winsend.app/fr/confidentialite/
 
+## German edition
+
+- Home: https://winsend.app/de/
+- Download: https://winsend.app/de/herunterladen/
+- Features: https://winsend.app/de/funktionen/
+- Guides: https://winsend.app/de/anleitungen/
+- Photos from iPhone to PC: https://winsend.app/de/anleitungen/iphone-fotos-auf-pc/
+- Clipboard and Shortcuts: https://winsend.app/de/anleitungen/zwischenablage-iphone-windows/
+- Setup: https://winsend.app/de/einrichtung/
+- Security: https://winsend.app/de/sicherheit/
+- Privacy: https://winsend.app/de/datenschutz/
+
+## Spanish edition
+
+- Home: https://winsend.app/es/
+- Download: https://winsend.app/es/descargar/
+- Features: https://winsend.app/es/funciones/
+- Guides: https://winsend.app/es/guias/
+- Photos from iPhone to PC: https://winsend.app/es/guias/pasar-fotos-iphone-a-pc/
+- Clipboard and Shortcuts: https://winsend.app/es/guias/portapapeles-iphone-windows/
+- Setup: https://winsend.app/es/instalacion/
+- Security: https://winsend.app/es/seguridad/
+- Privacy: https://winsend.app/es/privacidad/
+
 ## Common questions
 
 - Does WinSend need internet? Local transfers do not need a cloud connection, but do need a reachable LAN, running apps and permissions. Optional cloud clipboard requires internet.

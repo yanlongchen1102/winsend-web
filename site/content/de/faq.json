@@ -1,0 +1,66 @@
+{
+  "home": [
+    {
+      "question": "Funktioniert WinSend ohne Internet?",
+      "answer": "Ja, bei lokalen Übertragungen. Sind iPhone und PC im selben lokalen Netzwerk, sendet WinSend Dateien und Text ohne Umweg über das Internet. Der PC kann per WLAN oder LAN-Kabel verbunden sein; Sie können ihn auch mit dem persönlichen Hotspot des iPhones verbinden. Internet brauchen Sie nur für die Installation, für Käufe und für die Cloud-Übertragung."
+    },
+    {
+      "question": "Welche Dateien lassen sich zwischen iPhone und PC übertragen?",
+      "answer": "Fotos, Videos, Dokumente, Archive: jede Datei, die Fotos, Dateien oder eine andere App teilen kann. Der PC erhält das Format, das die Ursprungs-App liefert. Für manche Formate wie HEIC oder HEVC-Videos braucht Windows unter Umständen eine Erweiterung aus dem Microsoft Store."
+    },
+    {
+      "question": "Ist WinSend kostenlos?",
+      "answer": "Sie können WinSend kostenlos testen. Neue Nutzer erhalten ein einmaliges Kontingent an kostenlosen Übertragungen, mit dem sich alle Funktionen ausprobieren lassen: Fotos, Videos, Dateien, Zwischenablage, Kurzbefehle und Cloud-Übertragung. Danach schaltet WinSend Pro alles frei – als Einmalkauf, ohne Nutzungslimits. Den aktuellen Preis zeigt die App."
+    },
+    {
+      "question": "Funktioniert WinSend auch zwischen zwei Netzwerken?",
+      "answer": "Für Text ja: Die Cloud-Übertragung verbindet iPhone und PC über das Internet, auch wenn sie nicht im selben Netzwerk sind (kostenlos testen, danach Pro). Für Fotos, Videos und Dateien nein: Beide Geräte müssen im selben lokalen Netzwerk sein. Tipp: Verbinden Sie den PC unterwegs mit dem persönlichen Hotspot des iPhones, dann sind beide im selben Netzwerk."
+    },
+    {
+      "question": "Nutzt WinSend AirDrop?",
+      "answer": "Nein. AirDrop ist ein Apple-Dienst, der nur zwischen Apple-Geräten funktioniert und Windows nicht unterstützt. WinSend ist eine Alternative: eine App auf dem iPhone, eine auf dem PC und die Übertragung über Ihr lokales Netzwerk. Auf dem iPhone bleibt der Ablauf vertraut: Teilen-Menü, dann WinSend."
+    },
+    {
+      "question": "Wie aktiviere ich die Cloud-Übertragung zwischen iPhone und Windows?",
+      "answer": "Klicken Sie am PC im Infobereich der Taskleiste auf das WinSend-Symbol und dann auf „Cloud Transfer“ > „Generate Pairing Code & Connect“ (die Windows-App ist auf Englisch). Öffnen Sie auf dem iPhone „Cloud-Übertragung“ und geben Sie den 6-stelligen Kopplungscode ein. Beide Geräte brauchen eine Internetverbindung. Geben Sie den Code an niemanden weiter: Er schützt Ihren Text."
+    },
+    {
+      "question": "Ist WinSend sicher?",
+      "answer": "In einem vertrauenswürdigen Netzwerk ja. Dateien gehen direkt zwischen Ihren Geräten, ohne Server, aber diese lokale Übertragung (HTTP/WebSocket) ist nicht Ende-zu-Ende-verschlüsselt: Meiden Sie öffentliche WLANs. Text über die Cloud wird auf Ihren Geräten verschlüsselt (AES-256-GCM, mit einem aus dem Kopplungscode abgeleiteten Schlüssel); der Relay-Server sieht jedoch Verbindungsmetadaten wie IP-Adressen. Ein unabhängiges Sicherheitsaudit gibt es bisher nicht."
+    },
+    {
+      "question": "Warum findet mein iPhone meinen PC nicht?",
+      "answer": "Die häufigsten Ursachen: WinSend läuft nicht auf dem PC, der Zugriff auf das lokale Netzwerk ist auf dem iPhone deaktiviert (Einstellungen > Datenschutz & Sicherheit > Lokales Netzwerk) oder die Windows-Firewall blockiert die App. Gäste-, Hotel- und Firmen-WLANs isolieren Geräte oft voneinander, und auch ein VPN kann die Erkennung verhindern. Sind beide Geräte im selben Netzwerk, versuchen Sie „Manuell verbinden“ mit der IP-Adresse; andernfalls verbinden Sie den PC mit dem persönlichen Hotspot des iPhones."
+    }
+  ],
+  "airdrop-for-windows": [
+    {
+      "question": "Kann ich AirDrop mit einem Windows-PC nutzen?",
+      "answer": "Nein, AirDrop funktioniert nur zwischen Apple-Geräten. Um Fotos vom iPhone auf einen PC zu senden, übernimmt WinSend denselben Ablauf: Teilen-Menü, WinSend, dann Ihr PC. Die Übertragung läuft über Ihr lokales Netzwerk und nutzt nicht Apples Protokoll."
+    },
+    {
+      "question": "Brauche ich ein USB-Kabel oder iTunes?",
+      "answer": "Nein. Weder USB-Kabel noch iTunes noch ein Konto: WinSend muss auf beiden Geräten installiert und auf dem PC geöffnet sein, und iPhone und PC müssen im selben lokalen Netzwerk sein. Einzige Ausnahme: Ein Foto, das nur in iCloud liegt, wird zuerst aufs iPhone geladen; dafür ist Internet nötig."
+    },
+    {
+      "question": "Muss mein PC per WLAN verbunden sein?",
+      "answer": "Nein. Ein PC mit LAN-Kabel funktioniert genauso, solange er im selben lokalen Netzwerk wie das iPhone ist. Umgekehrt reicht dasselbe WLAN nicht immer: Gästenetzwerke und manche Router isolieren die Geräte voneinander."
+    },
+    {
+      "question": "Welche Foto- und Videoformate kann ich senden?",
+      "answer": "Alle, die Fotos oder Dateien teilen kann: HEIC, JPEG, PNG, MOV, MP4, PDF usw. WinSend sendet die Datei im Format, das die Ursprungs-App liefert. Um HEIC-Fotos oder HEVC-Videos zu öffnen, braucht Windows unter Umständen eine Erweiterung aus dem Microsoft Store."
+    },
+    {
+      "question": "Verlieren Fotos bei der Übertragung an Qualität?",
+      "answer": "WinSend komprimiert Dateien nicht neu: Es überträgt, was das iPhone bereitstellt. Das Ergebnis hängt daher vom Export aus Fotos oder der Ursprungs-App ab, die das Format umwandeln oder Metadaten entfernen kann. Ein Live Photo kommt unter Umständen nur als Standbild an. Wenn das Original wichtig ist, prüfen Sie Größe und Format der empfangenen Datei."
+    },
+    {
+      "question": "Wie übertrage ich ein großes Video vom iPhone auf den PC?",
+      "answer": "Wie ein Foto: Teilen Sie das Video in Fotos an WinSend und wählen Sie den PC. Lassen Sie beide Geräte bis zum Ende eingeschaltet und verbunden und prüfen Sie den freien Speicherplatz auf dem PC. WinSend Pro setzt kein Limit, aber eine sehr große Datei kann scheitern, wenn Netzwerk, iPhone-Speicher oder Festplatte an ihre Grenzen kommen. Testen Sie dann ein kürzeres Video, um das Problem einzugrenzen."
+    },
+    {
+      "question": "Kann ich ein Foto senden, das in iCloud gespeichert ist?",
+      "answer": "Ja. Liegt das Foto nur in iCloud (Option „iPhone-Speicher optimieren“), lädt Fotos es zuerst aufs iPhone; dafür ist Internet nötig. Danach sendet WinSend es über das lokale Netzwerk an den PC."
+    }
+  ]
+}

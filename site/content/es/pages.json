@@ -1,0 +1,107 @@
+{
+  "home": {
+    "status": "published",
+    "path": "/es/",
+    "title": "AirDrop para Windows y PC: archivos del iPhone | WinSend",
+    "description": "¿Buscas AirDrop para tu PC con Windows? Envía fotos, vídeos y archivos del iPhone al PC por Wi-Fi y copia texto entre ambos. Sin cables ni cuenta.",
+    "lastmod": "2026-10-18",
+    "navigationMode": "fixed",
+    "bodyClass": "bg-white text-gray-900 antialiased",
+    "layout": "home"
+  },
+  "download": {
+    "status": "published",
+    "path": "/es/descargar/",
+    "title": "Descargar WinSend para PC con Windows y iPhone",
+    "description": "WinSend para Windows 10/11 en Microsoft Store y para iPhone en App Store. Pruébalo gratis, sin cuenta; después, WinSend Pro con un único pago.",
+    "lastmod": "2026-10-18",
+    "navigationMode": "flow",
+    "bodyClass": "page-bg bg-white text-gray-900 antialiased",
+    "layout": "download"
+  },
+  "setup": {
+    "status": "published",
+    "path": "/es/instalacion/",
+    "title": "Conectar el iPhone al PC con Windows sin cables | WinSend",
+    "description": "Instala WinSend, permite el acceso a la red local y envía tu primer archivo. Incluye una lista de comprobación por si el iPhone no encuentra el PC.",
+    "lastmod": "2026-10-18",
+    "navigationMode": "fixed",
+    "bodyClass": "bg-white text-gray-900 antialiased",
+    "presentation": {
+      "eyebrow": "Instalación",
+      "heading": "Conecta tu iPhone y tu PC con Windows",
+      "intro": "Instala WinSend en los dos dispositivos, comprueba la red y envía una primera foto. Si el PC no aparece, más abajo tienes las causas más habituales."
+    }
+  },
+  "safety": {
+    "status": "published",
+    "path": "/es/seguridad/",
+    "title": "¿Es seguro WinSend? Red local, nube y buenas prácticas",
+    "description": "Qué protege WinSend y qué no: transferencia por la red local, texto cifrado en la nube y consejos para usar una red de confianza.",
+    "lastmod": "2026-10-18",
+    "navigationMode": "fixed",
+    "bodyClass": "bg-white text-gray-900 antialiased",
+    "presentation": {
+      "eyebrow": "Seguridad",
+      "heading": "¿Es seguro WinSend? Lo que debes saber",
+      "intro": "Tus archivos se quedan en tu red local y el texto enviado por la nube se cifra en tus dispositivos. Aquí te explicamos qué cubre exactamente y qué no."
+    }
+  },
+  "privacy": {
+    "status": "published",
+    "path": "/es/privacidad/",
+    "title": "Política de privacidad | WinSend",
+    "description": "Qué datos trata WinSend (transferencias, transferencia en la nube, estadísticas seudonimizadas, compras) y cómo solicitar su eliminación.",
+    "lastmod": "2026-10-18",
+    "navigationMode": "fixed",
+    "bodyClass": "bg-white text-gray-900 antialiased",
+    "presentation": {
+      "eyebrow": "Privacidad",
+      "heading": "Política de privacidad de WinSend",
+      "intro": "Actualizada el 8 de octubre de 2026. Esta política se aplica a las apps de WinSend para iOS y Windows y al sitio web winsend.app."
+    }
+  },
+  "airdrop-for-windows": {
+    "status": "published",
+    "path": "/es/guias/pasar-fotos-iphone-a-pc/",
+    "title": "Pasar fotos del iPhone al PC sin cable | WinSend",
+    "description": "Envía fotos, vídeos y archivos del iPhone a un PC con Windows directamente desde el menú Compartir de Fotos: sin cable, sin iTunes y sin subir nada a la nube.",
+    "lastmod": "2026-10-18",
+    "navigationMode": "fixed",
+    "bodyClass": "bg-white text-gray-900 antialiased",
+    "presentation": {
+      "eyebrow": "Guía · Fotos, vídeos y documentos",
+      "heading": "Pasar fotos del iPhone al PC sin cable",
+      "intro": "En Fotos o Archivos, comparte con WinSend y elige tu PC: los archivos llegan directamente a Windows. Sin cable, sin iTunes y sin cuenta."
+    }
+  },
+  "features": {
+    "status": "published",
+    "path": "/es/funciones/",
+    "title": "Funciones de WinSend: archivos y portapapeles en vídeo",
+    "description": "WinSend en acción: archivos del PC al iPhone, copiar y pegar en ambos sentidos, atajo con Tocar atrás y texto entre dos redes distintas.",
+    "lastmod": "2026-10-18",
+    "navigationMode": "fixed",
+    "bodyClass": "bg-white text-gray-900 antialiased",
+    "layout": "features"
+  },
+  "guides": {
+    "status": "published",
+    "path": "/es/guias/",
+    "title": "Guías de WinSend: iPhone y PC con Windows",
+    "description": "Guías paso a paso: conectar el iPhone al PC, pasar fotos y archivos sin cable y copiar y pegar texto entre el iPhone y Windows.",
+    "lastmod": "2026-10-18",
+    "navigationMode": "fixed",
+    "bodyClass": "bg-white text-gray-900 antialiased",
+    "layout": "guides"
+  },
+  "copy-iphone-to-windows": {
+    "status": "published",
+    "path": "/es/guias/portapapeles-iphone-windows/",
+    "title": "Copiar en el iPhone y pegar en el PC con Windows | WinSend",
+    "description": "Copia texto en el iPhone y pégalo en el PC con Ctrl+V, y al revés. Envío manual, atajo con Tocar atrás y texto entre redes distintas.",
+    "lastmod": "2026-10-18",
+    "navigationMode": "fixed",
+    "bodyClass": "bg-white text-gray-900 antialiased"
+  }
+}
