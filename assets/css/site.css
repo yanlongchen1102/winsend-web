@@ -15,7 +15,7 @@
 .site-page-menu { display: none; }
 .site-page-menu summary { cursor: pointer; padding: 8px; list-style: none; }
 .site-page-menu summary::-webkit-details-marker { display: none; }
-.site-language-menu summary { padding: 8px 0; color: #475467; cursor: pointer; }
+.site-language-menu summary { padding: 8px 0; color: #475467; cursor: pointer; white-space: nowrap; }
 .site-language-panel { position: absolute; right: 0; top: 100%; width: 180px; padding: 8px; background: white; border: 1px solid #e5e7eb; border-radius: 12px; box-shadow: 0 16px 32px #10182822; }
 .site-language-panel a { display: block; padding: 10px; border-radius: 8px; }
 .site-language-panel a:hover { background: #eff6ff; }
