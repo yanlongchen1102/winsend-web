@@ -16,8 +16,7 @@
 | 本地文件 | 照片、视频、文件走可互通的局域网，Windows 需保持运行；同一 SSID 不保证互通，有线 PC 也可处于同一 LAN | `WinDrop/Managers/WindropManager.swift:transferFilesToPC`；`airclip/main.go` |
 | 云端 | 可选云同步只承载剪贴板文字；双方需要互联网和已配置的同步码，不支持云文件/照片/剪贴板图片 | `WindropManager.swift:sendTextToDevice/transferClipboardToPC`；`airclip/cloudcrypto/cloudcrypto.go:InnerMessage` |
 | 路径回退 | 已配置且在线的云端通道可在本地文字请求失败后作为回退，因此“同一 Wi-Fi 的所有文字永不经过服务器”也不准确 | `WindropManager.swift:sendTextToDevice/cloudPeerId`；`WinDrop/Intents/SendToPCIntent.swift` |
-| 试用与 Pro（2026-10-18 产品策略，由产品负责人确认） | 新用户有一次性的免费传输额度，可试用全部功能；额度用完后所有功能都需要 WinSend Pro。Pro 无任何使用额度限制。App 同时有订阅和买断，官网只宣传一次买断；价格以购买界面为准，官网不写具体价格和试用次数 | 产品负责人口径；`UsageManager.swift`；`PurchaseManager.swift`（源码需与新策略核对） |
-| 当前源码体验额度（旧策略，待核对） | 快捷指令一次性 5 次、云传输一次性 10 次；云快捷指令可能同时消耗两种额度。新策略下的试用额度以 App 为准，不在公共页面固定宣传次数 | `UsageManager.swift:TrialUsageStore`；`SendToPCIntent.swift`；`SyncFromPCIntent.swift` |
+| 试用与 Pro（2026-10-18 产品策略，由产品负责人确认） | 新用户有一次性的免费传输额度，可试用全部功能；额度用完后所有功能都需要 WinSend Pro。Pro 无任何使用额度限制。App 同时有订阅和买断，官网只宣传一次买断；价格以购买界面为准，官网不写具体价格和试用次数 | 产品负责人口径；`UsageManager.swift`；`PurchaseManager.swift` |
 | iOS 自动同步 | 开启自动同步并不绕过 iOS 后台执行/剪贴板访问限制；不能承诺锁屏、后台或任意 App 中复制后无条件同步 | `ClipboardManager.swift`（文字监听）；`WinDropApp.swift`（前台重连）；`WindropManager.swift` |
 | 快捷指令 | 安装/配置后主动运行，可通过轻点背面等触发，不必先打开主 App；这不是后台常驻监听 | `WinDrop/Intents/SendToPCIntent.swift`；`SyncFromPCIntent.swift`；`CloudShortcutSync.swift` |
 | 剪贴板图片 | 有局域网手动/快捷指令图片路径；自动监听主要是文字；云端不支持图片，不把文字与图片同步能力混写 | `ClipboardManager.swift:getCurrentClipboardImage/consumeClipboardIfNeeded`；`WindropManager.swift:transferClipboardToPC`；`SyncFromPCIntent.swift` |
