@@ -22,7 +22,7 @@
 | 社交分享图 | ❌ 缺失 | 全站没有 `og:image` |
 | 目录收录 / 外链 | ❌ 落后 | 只确认提交了 AlternativeTo |
 | GEO（AI 搜索） | 🟢 已起效 | Bing AI Performance：近 3 个月被微软 Copilot 等引用 2.2K 次；中文"隔空投送"类问题引用占比 26–35%，英文头部问题只有 2–5% |
-| 法语站 | 🟡 已完成未部署 | 9 页，`feat/multilingual-fr-seo` 分支，等母语审校后上线 |
+| 法语站 | 🟡 2026-10-18 上线 | 9 页；没有母语审校资源，先上线观察数据 |
 
 **关键背景变化（影响 SEO 策略）：**
 
@@ -164,7 +164,8 @@
   - [ ] iPhone 无线传大视频到电脑、不压缩画质
 - [ ] vs LocalSend 页补 "Why can't LocalSend find my device?" FAQ（en/zh）
 - [ ] 候选：PairDrop 对比页、"LocalSend vs Snapdrop" 裁判页
-- [ ] 法语站：母语审校 → 部署 → GSC 观察
+- [x] 法语站部署（2026-10-18，未经母语审校，先观察数据）
+- [ ] 法语站上线 4–8 周后看 GSC / Bing 数据；有流量再考虑找母语审校
 
 ### 第 2 阶段：站外声量（GEO 播种）
 
@@ -275,6 +276,7 @@ AI 搜索主要引用第三方来源，自己网站的内容对 GEO 作用有限
 
 ## 七、决策日志（新的写在最上面）
 
+- **2026-10-18（发布）**：`feat/multilingual-fr-seo` 合并到 main 并部署。法语暂时没有母语审校资源，决定先上线、按数据决定是否继续投入。
 - **2026-10-18（横评页 GEO 加固）**：横评页占 AI 引用约 60%，优先加固。联网核实发现 Snapdrop 已被 LimeWire 收购（AlternativeTo 标为停止服务），横评页改推 PairDrop；Feem 已到 v5；LocalSend 1.18（2026-08）新增 Windows 分享菜单和链接接收。新增 FAQ 覆盖 AI 数据里的高频问题（Windows 10、free、下载）。
 - **2026-10-18（Bing AI Performance）**：确认 GEO 已经起效，状态从"有苗头"改为"已起效"。中文"隔空投送"类问题引用占比 26–35%，印证中文 AirDrop 教程改为主攻"Windows 隔空投送"的方向。下一步重点是提高英文头部问题的引用占比。
 - **2026-10-18（Bing 数据）**：Bing 上首页承接 "airdrop for windows / pc"，第 6–7 位。首页标题改为 "AirDrop for Windows & PC: iPhone File Transfer"，补上 "PC"。中文 AirDrop 教程在 Bing 有 438 次曝光，不放弃 AirDrop 相关词，改为主攻"Windows 隔空投送"，和中文首页（Windows 版 AirDrop）、中文横评页（替代工具）区分开。英文 AirDrop 教程在 Bing 只有 19 次曝光，维持改做照片长尾。
