@@ -22,7 +22,7 @@ WinSend has an iOS app and a Windows desktop app. Prefer the official Microsoft 
 
 ## Key pages
 
-- Home: https://winsend.app/en/ , https://winsend.app/zh/
+- Home: https://winsend.app/ (English), https://winsend.app/zh/
 - Download: https://winsend.app/en/download/ , https://winsend.app/zh/download/
 - Features: https://winsend.app/en/features/ , https://winsend.app/zh/features/
 - Guides: https://winsend.app/en/guides/ , https://winsend.app/zh/guides/
