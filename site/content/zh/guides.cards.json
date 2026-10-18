@@ -1,14 +1,14 @@
 [
   {
-    "category": "解决方案",
-    "title": "Windows 版 AirDrop：iPhone 与电脑互传文件",
-    "description": "Windows 没有 AirDrop，WinSend 如何让你像 AirDrop 一样，在 iPhone 与 Windows 之间无线传照片、视频和文件。",
-    "cta": "查看 Windows 版 AirDrop 教程",
+    "category": "照片与文件",
+    "title": "iPhone 照片传到 Windows 电脑",
+    "description": "在相册分享页直接把照片、视频和文件发到 Windows 电脑，不用数据线、iTunes 或网盘。",
+    "cta": "查看照片传电脑教程",
     "page": "airdrop-for-windows"
   },
   {
     "category": "工具合集",
-    "title": "2026 年最佳 Windows AirDrop 替代工具",
+    "title": "2026 年 Windows 版 AirDrop 替代工具推荐",
     "description": "对比 WinSend、LocalSend、Snapdrop、Feem 和 Send Anywhere，找到适合自己的 iPhone 传 Windows 文件方案。",
     "cta": "对比 Windows AirDrop 替代工具",
     "page": "cross-platform-transfer-tools"

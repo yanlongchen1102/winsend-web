@@ -1,14 +1,14 @@
 [
   {
-    "category": "Solution Guide",
-    "title": "AirDrop for Windows: Send Files from iPhone to PC",
-    "description": "Why Windows doesn't have AirDrop and how WinSend gives you the same wireless transfer experience between iPhone and Windows.",
-    "cta": "Read AirDrop for Windows Guide",
+    "category": "Photos & Files",
+    "title": "Transfer Photos from iPhone to PC Without a Cable",
+    "description": "Send photos, videos and files from the Photos share sheet straight to your Windows PC: no cable, no iTunes, no cloud upload.",
+    "cta": "Read the photo transfer guide",
     "page": "airdrop-for-windows"
   },
   {
     "category": "Tool Roundup",
-    "title": "Best AirDrop Alternatives for Windows in 2026",
+    "title": "5 Best AirDrop Alternatives for Windows (2026)",
     "description": "Compare WinSend, LocalSend, Snapdrop, Feem, and Send Anywhere to find the right iPhone-to-Windows file transfer tool.",
     "cta": "Compare AirDrop Alternatives for Windows",
     "page": "cross-platform-transfer-tools"
@@ -36,9 +36,9 @@
   },
   {
     "category": "Shortcuts Tutorial",
-    "title": "Share Clipboard Between iPhone and Windows",
+    "title": "How to Copy from iPhone and Paste on Windows",
     "description": "Copy on iPhone and paste on Windows over the same Wi-Fi with Shortcuts or Back Tap—without iCloud or email.",
-    "cta": "Set Up iPhone-to-Windows Clipboard Sync",
+    "cta": "Read the copy and paste guide",
     "page": "copy-iphone-to-windows"
   },
   {

@@ -1,0 +1,48 @@
+{
+  "heading": "Popular guides",
+  "intro": "Step-by-step help for moving photos, files and text between iPhone and Windows, plus honest comparisons with other tools.",
+  "cards": [
+    {
+      "page": "cross-platform-transfer-tools",
+      "category": "Comparison",
+      "title": "5 Best AirDrop Alternatives for Windows",
+      "description": "WinSend, LocalSend, Snapdrop, Feem and Send Anywhere compared for iPhone-to-PC transfer.",
+      "cta": "Read the comparison →"
+    },
+    {
+      "page": "copy-iphone-to-windows",
+      "category": "Clipboard",
+      "title": "How to Copy from iPhone and Paste on Windows",
+      "description": "Send copied text to your PC and paste with Ctrl+V, or set up a Back Tap Shortcut.",
+      "cta": "Read the guide →"
+    },
+    {
+      "page": "airdrop-for-windows",
+      "category": "Photos & files",
+      "title": "Transfer Photos from iPhone to PC Without a Cable",
+      "description": "Send photos and videos from the Photos share sheet straight to your Windows PC.",
+      "cta": "Read the guide →"
+    },
+    {
+      "page": "winsend-vs-localsend",
+      "category": "WinSend vs LocalSend",
+      "title": "Which One Fits iPhone and Windows?",
+      "description": "Share sheet sending, clipboard sync, platforms and pricing, side by side.",
+      "cta": "Compare →"
+    },
+    {
+      "page": "winsend-vs-snapdrop",
+      "category": "WinSend vs Snapdrop",
+      "title": "When Snapdrop Can't Find Your Devices",
+      "description": "A native-app alternative for reliable iPhone-to-PC transfers on your network.",
+      "cta": "Compare →"
+    },
+    {
+      "page": "winsend-vs-sendanywhere",
+      "category": "WinSend vs Send Anywhere",
+      "title": "Local Transfer vs Relay Servers",
+      "description": "File size limits, relay privacy and clipboard features compared.",
+      "cta": "Compare →"
+    }
+  ]
+}

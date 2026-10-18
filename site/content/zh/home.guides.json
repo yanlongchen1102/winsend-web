@@ -1,0 +1,48 @@
+{
+  "heading": "热门教程",
+  "intro": "iPhone 与 Windows 之间传照片、文件和文字的分步教程，以及与其他工具的客观对比。",
+  "cards": [
+    {
+      "page": "cross-platform-transfer-tools",
+      "category": "工具对比",
+      "title": "2026 年 Windows 版 AirDrop 替代工具推荐",
+      "description": "WinSend、LocalSend、Snapdrop、Feem、Send Anywhere 五款工具横向对比。",
+      "cta": "查看对比 →"
+    },
+    {
+      "page": "copy-iphone-to-windows",
+      "category": "剪贴板",
+      "title": "iPhone 复制、Windows 粘贴",
+      "description": "把 iPhone 上复制的文字发到电脑，Ctrl+V 直接粘贴，也能设置轻点背面一键发送。",
+      "cta": "查看教程 →"
+    },
+    {
+      "page": "airdrop-for-windows",
+      "category": "照片与文件",
+      "title": "iPhone 照片传到 Windows 电脑",
+      "description": "在相册分享页直接把照片、视频发到电脑，不用数据线。",
+      "cta": "查看教程 →"
+    },
+    {
+      "page": "winsend-vs-localsend",
+      "category": "WinSend 对比 LocalSend",
+      "title": "iPhone + Windows 用哪个？",
+      "description": "分享面板发送、剪贴板同步、平台支持与价格逐项对比。",
+      "cta": "查看对比 →"
+    },
+    {
+      "page": "winsend-vs-snapdrop",
+      "category": "WinSend 对比 Snapdrop",
+      "title": "Snapdrop 找不到设备怎么办",
+      "description": "用原生 App 在局域网内稳定地从 iPhone 传文件到电脑。",
+      "cta": "查看对比 →"
+    },
+    {
+      "page": "winsend-vs-sendanywhere",
+      "category": "WinSend 对比 Send Anywhere",
+      "title": "局域网直传还是中继服务器",
+      "description": "文件大小限制、中继隐私和剪贴板功能对比。",
+      "cta": "查看对比 →"
+    }
+  ]
+}

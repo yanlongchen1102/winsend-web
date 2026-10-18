@@ -94,6 +94,8 @@ test('French edition shares core layouts and navigation, localized navigation an
   assert.ok(home.includes('video-stage'));
   assert.ok(home.includes('home_hero'));
   const enHome = outputs.get('index.html');
+  for (const href of ['/en/guides/cross-platform-transfer-tools/', '/en/guides/copy-iphone-to-windows/', '/en/guides/airdrop-for-windows/']) assert.ok(enHome.includes(`href="${href}"`), href);
+  assert.ok(home.includes('id="popular-guides"'));
   assert.deepEqual([...home.matchAll(/<section\b[^>]*>/g)].map(match => match[0]), [...enHome.matchAll(/<section\b[^>]*>/g)].map(match => match[0]));
   assert.equal((home.match(/class="feature-preview /g) || []).length, 3);
   assert.ok(home.includes('class="cloud-section"'));

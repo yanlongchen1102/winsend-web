@@ -79,7 +79,8 @@ export function loadSite(root = ROOT) {
       if (data.layout && !['home', 'features', 'guides', 'download'].includes(data.layout)) throw new Error(`Unknown shared layout: ${data.layout}`);
       const copy = data.layout ? readJSON(root, `${dir}/${id}.copy.json`) : {};
       const cards = data.layout === 'guides' ? readJSON(root, `${dir}/${id}.cards.json`) : [];
-      pages.push({ ...data, copy, cards, id, locale, head: read(root, `${dir}/${id}.head.html`), body: read(root, `${dir}/${id}.body.html`) });
+      const homeGuides = data.layout === 'home' && fs.existsSync(path.join(root, `${dir}/home.guides.json`)) ? readJSON(root, `${dir}/home.guides.json`) : null;
+      pages.push({ ...data, copy, cards, homeGuides, id, locale, head: read(root, `${dir}/${id}.head.html`), body: read(root, `${dir}/${id}.body.html`) });
       publishedIDs.add(id);
     }
     for (const id of requiredPages) if (!publishedIDs.has(id)) throw new Error(`Published locale ${locale.code} needs its reviewed ${id} page`);
@@ -127,7 +128,7 @@ function linkList(ids, links, ui, currentID, navigation = false) {
 
 export function generateSite(root = ROOT) {
   const site = loadSite(root);
-  const templates = Object.fromEntries(['page', 'navigation', 'footer', 'faq', 'faq-item', 'page-header', 'layout-home', 'layout-features', 'layout-guides', 'layout-download', 'guide-card'].map(name => [name, read(root, `site/templates/${name}.html`)]));
+  const templates = Object.fromEntries(['page', 'navigation', 'footer', 'faq', 'faq-item', 'page-header', 'layout-home', 'layout-features', 'layout-guides', 'layout-download', 'guide-card', 'home-guides', 'home-guide-card'].map(name => [name, read(root, `site/templates/${name}.html`)]));
   const outputs = new Map();
   for (const page of site.pages) {
     const ui = site.shared[page.locale.code];
@@ -171,6 +172,19 @@ export function generateSite(root = ROOT) {
       for (const field of ['category', 'title', 'description', 'cta']) requireText(card[field], `guide card ${field}`);
       return render(templates['guide-card'], { card: { ...card, href: links[card.page] } });
     }).join('\n');
+    context.homeGuides = '';
+    if (page.homeGuides) {
+      const guides = page.homeGuides;
+      requireText(guides.heading, `${page.locale.code}/home guides heading`);
+      requireText(guides.intro, `${page.locale.code}/home guides intro`);
+      if (!Array.isArray(guides.cards) || !guides.cards.length) throw new Error(`${page.locale.code}/home: guides need cards`);
+      const homeGuideCards = guides.cards.map(card => {
+        if (!links[card.page]) throw new Error(`${page.locale.code}/home: unpublished guide link ${card.page}`);
+        for (const field of ['category', 'title', 'description', 'cta']) requireText(card[field], `home guide ${field}`);
+        return render(templates['home-guide-card'], { card: { ...card, href: links[card.page] } });
+      }).join('\n');
+      context.homeGuides = render(templates['home-guides'], { homeGuidesHeading: guides.heading, homeGuidesIntro: guides.intro, homeGuideCards });
+    }
     context.pageLayout = page.layout ? render(templates[`layout-${page.layout}`], context) : '';
     context.head = render(page.head, context);
     context.body = render(page.body, context);
