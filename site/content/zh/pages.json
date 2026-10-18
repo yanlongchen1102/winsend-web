@@ -76,8 +76,8 @@
   "airdrop-for-windows": {
     "status": "published",
     "path": "/zh/guides/airdrop-for-windows/",
-    "title": "iPhone 照片传到 Windows 电脑：不用数据线，相册直接发 | WinSend 教程",
-    "description": "从 iPhone 相册的分享页直接把照片、视频和文件传到 Windows 电脑，不用数据线、iTunes 或网盘。附分步教程和常见问题。",
+    "title": "Windows 隔空投送：iPhone 照片、文件直接传电脑 | WinSend 教程",
+    "description": "Windows 能用隔空投送（AirDrop）吗？用 WinSend 从 iPhone 相册分享页直接把照片、视频和文件传到 Windows 电脑，不用数据线、iTunes 或网盘。",
     "lastmod": "2026-10-18",
     "bodyClass": "bg-white text-gray-900 antialiased",
     "navigationMode": "fixed",

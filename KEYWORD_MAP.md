@@ -1,7 +1,7 @@
 # WinSend 官网关键词地图
 
 > 每个页面只负责**一个主词**，其他相关词作为次要词，避免几个页面抢同一个词。
-> "实际表现"一栏来自 Google Search Console，每月复盘时更新（流程见 `SEO_GEO_PLAN.md` 第四节）。
+> "实际表现"一栏来自 Google Search Console 和 Bing 站长平台，每月复盘时更新（流程见 `SEO_GEO_PLAN.md` 第四节）。
 > 改页面标题前先看这张表，改完同步更新"当前标题"。
 >
 > 创建：2026-07-30 · 重写：2026-10-18（按 GSC 前 3 个月数据重新分工）
@@ -13,10 +13,10 @@
 
 | 页面 | 主词 | 当前标题（2026-10-18） | 实际表现（近 3 个月） |
 |---|---|---|---|
-| `/`（首页） | WinSend（品牌词）+ AirDrop for Windows | AirDrop for Windows: iPhone File & Clipboard Transfer \| WinSend | 品牌词点击率约 42%；旧地址 `/en/` 仍承接大部分曝光 |
+| `/`（首页） | WinSend（品牌词）+ **AirDrop for Windows / AirDrop for PC** | AirDrop for Windows & PC: iPhone File Transfer \| WinSend | Google：品牌词点击率约 42%。**Bing：旧地址 `/en/` 5.3K 曝光、第 6.6 位，承接 airdrop for pc / windows / windows 11 等头部词** |
 | `/en/guides/cross-platform-transfer-tools/` | **AirDrop alternative for Windows** | 5 Best AirDrop Alternatives for Windows (2026) \| WinSend | 曝光 5,821，点击率 0.9%（标题刚改，待验证） |
 | `/en/guides/copy-iphone-to-windows/` | **how to copy from iPhone and paste on Windows** | How to Copy from iPhone and Paste on Windows (No Cable) | 曝光 4,308，点击率 3.0%（标题刚改，待验证） |
-| `/en/guides/airdrop-for-windows/` | **transfer photos from iPhone to PC** | Transfer Photos from iPhone to PC Without a Cable \| WinSend | 未进前 10；2026-10-18 改为照片长尾，不再抢 "AirDrop" |
+| `/en/guides/airdrop-for-windows/` | **transfer photos from iPhone to PC** | Transfer Photos from iPhone to PC Without a Cable \| WinSend | Google 未进前 10；Bing 只有 19 次曝光。2026-10-18 改为照片长尾，把 "AirDrop" 让给首页和横评页 |
 | `/en/comparison/winsend-vs-localsend/` | WinSend vs LocalSend / LocalSend alternative | WinSend vs LocalSend for iPhone and Windows (2026) | 曝光 741，点击率 1.1% |
 | `/en/comparison/winsend-vs-snapdrop/` | Snapdrop alternative / Snapdrop not working | WinSend vs Snapdrop: Snapdrop Alternative for iPhone & PC | 未进前 10 |
 | `/en/comparison/winsend-vs-sendanywhere/` | Send Anywhere alternative / file size limit | WinSend vs Send Anywhere: Local Transfer vs Relay (2026) | 未进前 10 |
@@ -29,15 +29,15 @@
 
 | 页面 | 主词 | 当前标题（2026-10-18） | 实际表现（近 3 个月） |
 |---|---|---|---|
-| `/zh/` | WinSend + Windows 版 AirDrop | Windows 版 AirDrop：iPhone 文件与剪贴板传输 \| WinSend | 曝光 148，点击率 15.5% |
+| `/zh/` | WinSend + Windows 版 AirDrop | Windows 版 AirDrop：iPhone 文件与剪贴板传输 \| WinSend | Google：曝光 148，点击率 15.5%；Bing：1.2K 曝光，点击率 11.6% |
 | `/zh/guides/cross-platform-transfer-tools/` | **Windows AirDrop 替代工具** | 2026 年 Windows 版 AirDrop 替代工具推荐：5 款对比 \| WinSend | 曝光 1,228，点击率 2.8% |
 | `/zh/guides/copy-iphone-to-windows/` | **iPhone 与 Windows 剪贴板同步** | iPhone 与 Windows 剪贴板同步：复制后在电脑粘贴 \| WinSend 教程 | 曝光 365，点击率 10.4%（表现好，暂不改） |
-| `/zh/guides/airdrop-for-windows/` | **iPhone 照片传到电脑** | iPhone 照片传到 Windows 电脑：不用数据线，相册直接发 \| WinSend 教程 | 2026-10-18 改为照片长尾 |
+| `/zh/guides/airdrop-for-windows/` | **Windows 隔空投送** | Windows 隔空投送：iPhone 照片、文件直接传电脑 \| WinSend 教程 | Bing：438 次曝光、第 8.2 位、点击率 1.83%。主攻"隔空投送"，和首页、横评页区分 |
 | `/zh/comparison/winsend-vs-localsend/` | WinSend 对比 LocalSend | WinSend 对比 LocalSend：iPhone 与 Windows 传输怎么选（2026） | — |
 | `/zh/comparison/winsend-vs-snapdrop/` | Snapdrop 找不到设备 / 替代 | WinSend 对比 Snapdrop：更稳定的 iPhone 传电脑方案（2026） | — |
 | `/zh/comparison/winsend-vs-sendanywhere/` | Send Anywhere 文件大小限制 / 替代 | WinSend 对比 Send Anywhere：局域网文件直传与云剪贴板（2026） | — |
 
-> 中文在 Google 上的量很小，中文搜索主要靠必应。必应站长平台接入后，在这里补一栏必应数据。
+> 中文在 Google 上的量很小，主要看 Bing：中文首页、中文横评页（967 次曝光，点击率 6%）、中文剪贴板教程（点击率 14.7%）表现都不错。
 
 ## 三、法语（未部署）
 
@@ -93,6 +93,8 @@
 
 | 关键词 | 难度 | 建议承接方式 |
 |---|---|---|
+| AirDrop for PC download / airdrop windows 10 download | ★★ | Bing 已有曝光（下载意图）；首页和下载页可加 "Download" 相关表述 |
+| windsend / windsend下载（品牌拼写错误） | ★ | Bing 已有曝光，无需专门处理，可在下载页 FAQ 自然提及 |
 | Intel Unison alternative | ★ | 新文章（Unison 已于 2025 年停止服务） |
 | Phone Link iPhone alternative / file transfer | ★★ | 新文章（先核实微软最新支持情况） |
 | Universal Clipboard for Windows | ★ | 新文章 |

@@ -11,11 +11,14 @@
 
 **所处阶段：第 1 阶段（站内内容）基本完成，正在进入"按数据迭代"的第 3 阶段；第 0 阶段的目录收录和第 2 阶段的站外声量明显落后。**
 
+**最重要的发现（2026-10-18）：Bing 是目前最大的非品牌流量来源。** 在 Bing 上，首页已经排进 "airdrop for windows / airdrop for pc" 等头部词的第一页（平均第 6–7 位），这类词占 Bing 全部曝光的约 40%。Google 上这些词还排不进来。
+
 | 维度 | 状态 | 说明 |
 |---|---|---|
 | 技术 SEO | ✅ 良好 | 静态生成站点；canonical、hreflang（en/zh/fr 互指）、sitemap 多语言链接、robots、旧网址 301、FAQ 结构化数据均已覆盖，并由 `npm test` 和 `check-product-copy.py` 守护 |
 | 站内内容 | 🟡 中等 | 英文 14 页、中文 14 页；英文内容比中文薄（同一页面英文字数约为中文的一半） |
 | 内链 | 🟡 刚改善 | 2026-10-18 首页新增"热门教程"区块，链到横评页、剪贴板教程、照片教程和 3 个对比页 |
+| Bing | ✅ 已接入 | 非品牌流量比 Google 多，AirDrop 头部词排在第一页 |
 | 社交分享图 | ❌ 缺失 | 全站没有 `og:image` |
 | 目录收录 / 外链 | ❌ 落后 | 只确认提交了 AlternativeTo |
 | GEO（AI 搜索） | 🟡 有苗头 | 7 月底 Perplexity 已能推荐 WinSend；之后没有系统复查 |
@@ -31,9 +34,9 @@
 
 ## 二、数据记录（每次复盘追加一行，不要改旧数据）
 
-数据来源：Google Search Console → 效果 → 网页搜索。
+数据来源：Google Search Console → 效果 → 网页搜索；Bing 站长平台 → Search Performance。
 
-### 2.1 全站概况
+### 2.1 全站概况（Google）
 
 | 记录日期 | 统计区间 | 查询数 | 主要发现 |
 |---|---|---|---|
@@ -68,8 +71,44 @@
 | airdrop windows alternative | 1 / 17 | |
 | copy text from iphone to windows | 1 / 13 | |
 
+### 2.4 Bing 全站概况
+
+| 记录日期 | 统计区间 | 点击 | 曝光 | 点击率 | 关键词数 |
+|---|---|---|---|---|---|
+| 2026-10-18 | 近 3 个月 | 378 | 9.4K | 4.03% | 322 |
+
+### 2.5 Bing 重点页面（点击 / 曝光 / 点击率 / 平均排名）
+
+| 页面 | 2026-10-18（近 3 个月） | 下次复盘 |
+|---|---|---|
+| `/en/`（旧首页，已 301 到 `/`） | 116 / 5.3K / 2.19% / 6.6 | |
+| `/zh/` | 143 / 1.2K / 11.57% / 5.9 | |
+| `/zh/guides/cross-platform-transfer-tools/` | 58 / 967 / 6.00% / 7.6 | |
+| `/zh/guides/airdrop-for-windows/` | 8 / 438 / 1.83% / 8.2 | |
+| `/en/guides/cross-platform-transfer-tools/` | 1 / 266 / 0.38% / 5.8 | |
+| `/zh/guides/copy-iphone-to-windows/` | 23 / 157 / 14.65% / 5.1 | |
+| `/en/guides/copy-iphone-to-windows/` | 5 / 107 / 4.67% / 5.1 | |
+| `/en/guides/airdrop-for-windows/` | 0 / 19 / 0% / 6.6 | |
+
+### 2.6 Bing 重点查询（点击 / 曝光 / 平均排名）
+
+| 查询 | 2026-10-18（近 3 个月） | 下次复盘 |
+|---|---|---|
+| airdrop for pc | 9 / 1.1K / 6.9 | |
+| airdrop for windows | 14 / 1.1K / 6.7 | |
+| winsend | 140 / 631 / 3.9 | |
+| airdrop for windows 11 | 10 / 614 / 6.1 | |
+| airdrop windows | 13 / 530 / 7.1 | |
+| windows airdrop | 9 / 237 / 7.0 | |
+| air drop to pc | 1 / 94 / 8.6 | |
+| windsend（拼写错误） | 2 / 67 / 5.8 | |
+| winsend下载 | 9 / 26 / 1.9 | |
+| 隔空投送windows | 2 / 17 / 7.8 | |
+| airdrop windows 10 download / airdrop download for pc | 0 / 20 / 7.6–8.4 | |
+
 **2026-10-18 的结论：**
-- 横评页是 "AirDrop alternative" 这个词实际承接的页面，曝光全站最多，但点击率不到 1%，问题出在标题（原标题 89 个字符，被截断）。
+- **Bing：** 首页承接 AirDrop 类头部词，排第 6–7 位，点击率只有 1–3%；"airdrop for pc" 和 "airdrop for windows" 一样大，但标题里原来没有 "PC"。往前升几位、标题对上 "PC"，是当前收益最大的方向。下载类查询说明有人直接想找可下载的软件。
+- **Google：** 横评页是 "AirDrop alternative" 这个词实际承接的页面，曝光全站最多，但点击率不到 1%，问题出在标题（原标题 89 个字符，被截断）。
 - 剪贴板教程已经被 Google 认可，但标题和用户的搜索说法（"copy from iPhone and paste on Windows"）不一致。
 - AirDrop 教程页没有进前 10，"AirDrop for Windows" 被首页、教程页和横评页三个页面抢，教程页输了。
 - 品牌词点击率约 42%，健康；非品牌词刚起步，这和域名 4 月才上线、外链很少相符。
@@ -82,7 +121,9 @@
 
 - [x] Google Search Console 已验证、有数据（GSC 已能看到 3 个月数据）
 - [ ] 确认 sitemap.xml 已在 GSC 提交并成功读取，没有抓取错误（待确认）
-- [ ] 提交 Bing 站长平台（可从 GSC 一键导入）——中文搜索主要靠必应（待确认是否已做）
+- [x] Bing 站长平台已接入，有 3 个月数据（2026-10-18 确认）
+- [ ] Bing 里对新首页 `/`、横评页、剪贴板教程提交 URL（或接入 IndexNow，让每次部署自动通知 Bing）
+- [ ] 查看 Bing 的 "AI Performance"（测试版），记录 Copilot 引用情况到第六节
 - [ ] 软件目录收录（外链 + AI 引用来源）：
   - [x] AlternativeTo——2026-07-29 已提交（alternativeto.net/software/winsend/）
     - [ ] 确认条目已通过审核，并出现在 LocalSend / AirDrop 的替代品列表中
@@ -187,6 +228,7 @@ AI 搜索主要引用第三方来源，自己网站的内容对 GEO 作用有限
 
 ## 七、决策日志（新的写在最上面）
 
+- **2026-10-18（Bing 数据）**：Bing 上首页承接 "airdrop for windows / pc"，第 6–7 位。首页标题改为 "AirDrop for Windows & PC: iPhone File Transfer"，补上 "PC"。中文 AirDrop 教程在 Bing 有 438 次曝光，不放弃 AirDrop 相关词，改为主攻"Windows 隔空投送"，和中文首页（Windows 版 AirDrop）、中文横评页（替代工具）区分开。英文 AirDrop 教程在 Bing 只有 19 次曝光，维持改做照片长尾。
 - **2026-10-18**：根据 GSC 数据调整页面分工——横评页主攻 "AirDrop alternative for Windows"，剪贴板教程主攻 "copy from iPhone and paste on Windows"，AirDrop 教程改为 "transfer photos from iPhone to PC"，首页主攻品牌词。首页新增内链区块。
 - **2026-10-18**：价格策略改为"试用后付费"，官网、社媒计划和事实文件全部改口径；对比页卖点从"免费"转向体验。
 - **2026-10-18**：去掉每页底部的权益说明卡片，价格说明只放在下载页和 FAQ。
@@ -199,7 +241,8 @@ AI 搜索主要引用第三方来源，自己网站的内容对 GEO 作用有限
 
 | 战场 | 难度 | 现实周期 |
 |---|---|---|
-| 英文头部词（AirDrop for Windows） | 9/10 | 12–24 个月起步，不硬碰 |
+| 英文头部词（AirDrop for Windows / PC）——Google | 9/10 | 12–24 个月起步，不硬碰 |
+| 英文头部词（AirDrop for Windows / PC）——Bing | 6/10 | **已在第一页（第 6–7 位）**，重点是往前升和提升点击率 |
 | 英文替代词（AirDrop alternative for Windows） | 6/10 | 已有曝光，靠点击率和外链推进 |
 | 英文长尾 / 对比词 | 4–5/10 | 3–6 个月 |
 | 中文必应（iPhone 传文件到电脑） | 5/10 | 3–6 个月 |
