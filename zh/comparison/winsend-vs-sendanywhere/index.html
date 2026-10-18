@@ -20,7 +20,7 @@
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
     <link rel="stylesheet" href="/assets/css/tailwind.css">
     <link rel="stylesheet" href="/assets/css/site.css">
-<meta name="keywords" content="Send Anywhere 替代, Send Anywhere 文件大小限制, Send Anywhere 隐私 中继服务器, WinSend 对比 Send Anywhere, Windows 版 AirDrop, iPhone 传文件到 Windows 电脑, 无限制局域网传输">
+<meta name="keywords" content="Send Anywhere 替代, Send Anywhere 文件大小限制, Send Anywhere 隐私 中继服务器, WinSend 对比 Send Anywhere, Windows 版 AirDrop, iPhone 传文件到 Windows 电脑, 局域网传输">
     <meta property="og:image" content="https://winsend.app/zh/guides/airdrop-for-windows/images/step1-share-sheet-winsend.webp">
     <meta property="og:type" content="article">
     <meta name="twitter:card" content="summary_large_image">
@@ -58,7 +58,7 @@
 
     <script src="/assets/js/posthog.js" defer></script>
 
-    <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Send Anywhere 有文件大小限制吗？","acceptedAnswer":{"@type":"Answer","text":"有。Send Anywhere 的免费版有文件大小和每日传输次数限制，并带有广告和付费引导；解除这些限制需要订阅高级版。WinSend 免费本地文件传输没有每日使用额度，实际可传大小受设备资源和来源应用限制——文件通过 Wi-Fi 在你的 iPhone 和 Windows 电脑之间直接传输，大视频和批量照片还受设备资源、来源应用、网络条件和存储空间限制。"}},{"@type":"Question","name":"Send Anywhere 隐私吗？","acceptedAnswer":{"@type":"Answer","text":"取决于传输的路由方式。Send Anywhere 使用 6 位密钥或二维码，在可行时点对点传输，但当设备处于不同网络时，流量可能经过 Send Anywhere 的中继服务器——也就是说你的文件可能途经第三方基础设施。WinSend 不中转文件；可选云同步只中转客户端加密的剪贴板文字，不传文件或图片。"}},{"@type":"Question","name":"WinSend 是 Send Anywhere 的好替代品吗？","acceptedAnswer":{"@type":"Answer","text":"如果你的传输发生在同一网络下自己的 iPhone 和 Windows 电脑之间，答案是肯定的。WinSend 本地文件没有每日使用额度，实际大小受设备资源与来源应用限制，没有广告，文件不经过中继服务器，还提供 iOS 分享面板集成和 Pro 自动文字同步（受 iOS 运行限制），以及主动触发的快捷指令，配对设备会自动接收文件。如果你需要给不同网络或异地的设备传文件，Send Anywhere 的 6 位密钥才是合适的工具。"}},{"@type":"Question","name":"WinSend 能在不同网络的设备之间传文件吗？","acceptedAnswer":{"@type":"Answer","text":"文件和照片不能通过 WinSend 跨网络发送，需要可互通的局域网。可选云同步可以跨网络分享剪贴板文字，但不支持文件或图片。如果你经常需要给异地的设备传文件，可以保留 Send Anywhere 应对这些场景，在家或办公室的局域网传输则交给 WinSend。"}}]}</script>
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Send Anywhere 有文件大小限制吗？","acceptedAnswer":{"@type":"Answer","text":"有。Send Anywhere 的免费版有文件大小和每日传输次数限制，并带有广告和付费引导；解除这些限制需要订阅高级版。WinSend Pro 的本地文件传输没有每日额度，实际可传大小受设备资源和来源应用限制——文件通过 Wi-Fi 在你的 iPhone 和 Windows 电脑之间直接传输，大视频和批量照片还受设备资源、来源应用、网络条件和存储空间限制。"}},{"@type":"Question","name":"Send Anywhere 隐私吗？","acceptedAnswer":{"@type":"Answer","text":"取决于传输的路由方式。Send Anywhere 使用 6 位密钥或二维码，在可行时点对点传输，但当设备处于不同网络时，流量可能经过 Send Anywhere 的中继服务器——也就是说你的文件可能途经第三方基础设施。WinSend 不中转文件；可选云同步只中转客户端加密的剪贴板文字，不传文件或图片。"}},{"@type":"Question","name":"WinSend 是 Send Anywhere 的好替代品吗？","acceptedAnswer":{"@type":"Answer","text":"如果你的传输发生在同一网络下自己的 iPhone 和 Windows 电脑之间，答案是肯定的。WinSend Pro 的本地文件传输没有每日额度，实际大小受设备资源与来源应用限制，没有广告，文件不经过中继服务器，还提供 iOS 分享面板集成和 自动文字同步（受 iOS 运行限制），以及主动触发的快捷指令，配对设备会自动接收文件。如果你需要给不同网络或异地的设备传文件，Send Anywhere 的 6 位密钥才是合适的工具。"}},{"@type":"Question","name":"WinSend 能在不同网络的设备之间传文件吗？","acceptedAnswer":{"@type":"Answer","text":"文件和照片不能通过 WinSend 跨网络发送，需要可互通的局域网。可选云同步可以跨网络分享剪贴板文字，但不支持文件或图片。如果你经常需要给异地的设备传文件，可以保留 Send Anywhere 应对这些场景，在家或办公室的局域网传输则交给 WinSend。"}}]}</script>
 </head>
 <body class="bg-white text-gray-900 antialiased">
     <nav aria-label="主导航" class="site-nav site-nav--fixed">
@@ -94,7 +94,7 @@
                 <article class="prose">
                     <h2>快速结论</h2>
                     <ul>
-                        <li><strong>选择 WinSend</strong>：如果你在同一网络下自己的 iPhone 和 Windows 电脑之间传输——本地没有每日使用额度（仍受设备与来源应用限制），文件不经过中继服务器，没有广告，还有分享面板发送和 Pro 自动文字同步（受 iOS 运行限制）与快捷指令。</li>
+                        <li><strong>选择 WinSend</strong>：如果你在同一网络下自己的 iPhone 和 Windows 电脑之间传输——Pro 版没有每日额度（仍受设备与来源应用限制），文件不经过中继服务器，没有广告，还有分享面板发送和 自动文字同步（受 iOS 运行限制）与快捷指令。</li>
                         <li><strong>选择 Send Anywhere</strong>：如果你需要跨网络或异地传文件、喜欢二维码的便利，或者还有 Android、Mac、Linux 设备。</li>
                     </ul>
 
@@ -121,7 +121,7 @@
                                 </tr>
                                 <tr>
                                     <td><strong>文件大小 / 每日限制</strong></td>
-                                    <td class="win">本地无每日额度；受资源与来源应用限制</td>
+                                    <td class="win">Pro 无每日额度；受资源与来源应用限制</td>
                                     <td>免费版有文件大小和每日传输限制；高级版可解除</td>
                                 </tr>
                                 <tr>
@@ -141,7 +141,7 @@
                                 </tr>
                                 <tr>
                                     <td><strong>剪贴板同步</strong></td>
-                                    <td class="win">文字同步 / 快捷指令；受 iOS 与 Pro 权益限制</td>
+                                    <td class="win">文字同步 / 快捷指令；受 iOS 运行限制</td>
                                     <td>不支持</td>
                                 </tr>
                                 <tr>
@@ -156,7 +156,7 @@
                                 </tr>
                                 <tr>
                                     <td><strong>价格</strong></td>
-                                    <td>核心功能免费；高级功能需 Pro 权益</td>
+                                    <td>免费试用，之后一次买断 Pro</td>
                                     <td>免费但有限制；提供高级版</td>
                                 </tr>
                             </tbody>
@@ -165,8 +165,8 @@
 
                     <h2>WinSend 的优势</h2>
 
-                    <h3>1. 本地文件传输没有每日使用额度</h3>
-                    <p>Send Anywhere 的免费版限制文件大小和每日传输次数，并用广告和付费引导推你升级高级版。WinSend 直接在本地网络上传输，没有任何可计量的东西：10 GB 的视频文件夹、一整下午拍的照片，想传就传——实际可传大小和成功率仍受设备资源、来源应用、网络和存储空间限制。</p>
+                    <h3>1. WinSend Pro 没有每日额度</h3>
+                    <p>Send Anywhere 的免费版限制文件大小和每日传输次数，并用广告和付费引导推你升级高级版。WinSend 直接在本地网络上传输，升级 Pro 后没有任何使用额度：10 GB 的视频文件夹、一整下午拍的照片，想传就传——实际可传大小和成功率仍受设备资源、来源应用、网络和存储空间限制。</p>
 
                     <h3>2. 本地文件不经过中转；云剪贴板是单独功能</h3>
                     <p>Send Anywhere 在可行时点对点传输，但跨网络的传输可能经过它的中继服务器，也就是说你的文件可能途经第三方基础设施。WinSend 文件在局域网直传，不使用文件中转；可选云剪贴板是独立的文字功能，会使用中转服务。</p>
@@ -182,8 +182,8 @@
                         <p class="screenshot-caption">选中、分享、完成——文件已经在你的 Windows 电脑上。</p>
                     </div>
 
-                    <h3>4. Pro 自动文字同步（受 iOS 运行限制），以及主动触发的快捷指令 + 自动接收</h3>
-                    <p>剪贴板文字可以双向传输。Pro 自动文字同步受 iOS 运行限制；已配置的快捷指令需要主动触发。剪贴板图片使用支持的局域网手动/快捷指令路径，不能经云同步传输。Send Anywhere 没有剪贴板同步功能。配对完成后，电脑会自动接收文件，两端都不用输入任何密钥。详见<a href="/zh/guides/copy-iphone-to-windows/">如何用快捷指令和轻点背面实现剪贴板同步</a>。</p>
+                    <h3>4. 自动文字同步（受 iOS 运行限制），以及主动触发的快捷指令 + 自动接收</h3>
+                    <p>剪贴板文字可以双向传输。自动文字同步受 iOS 运行限制；已配置的快捷指令需要主动触发。剪贴板图片使用支持的局域网手动/快捷指令路径，不能经云同步传输。Send Anywhere 没有剪贴板同步功能。配对完成后，电脑会自动接收文件，两端都不用输入任何密钥。详见<a href="/zh/guides/copy-iphone-to-windows/">如何用快捷指令和轻点背面实现剪贴板同步</a>。</p>
 
                     <h2>Send Anywhere 的优势</h2>
                     <p>为了保持对比的诚实，Send Anywhere 在以下几种情况下是更好的工具：</p>
@@ -202,7 +202,7 @@
 
                     <h2>谁该选哪一个？</h2>
                     <ul>
-                        <li><strong>iPhone + Windows 电脑、同一网络、大文件或高频传输</strong> → <strong>WinSend</strong>，本地文件无每日额度且不经过文件中转。</li>
+                        <li><strong>iPhone + Windows 电脑、同一网络、大文件或高频传输</strong> → <strong>WinSend</strong>，Pro 无每日额度，文件不经过中转。</li>
                         <li><strong>受够了 Send Anywhere 的大小或每日限制</strong> → 局域网传输交给 <strong>WinSend</strong>。</li>
                         <li><strong>设备在不同网络或不同地点</strong> → <strong>Send Anywhere</strong>。</li>
                         <li><strong>混合生态，还有 Android 或 Mac 设备</strong> → <strong>Send Anywhere</strong>。</li>
@@ -211,9 +211,9 @@
 
                             <section id="faq" class="site-faq">
             <h2>常见问题</h2>
-            <div class="site-faq-items">                <details class="site-faq-item"><summary>Send Anywhere 有文件大小限制吗？</summary><p>有。Send Anywhere 的免费版有文件大小和每日传输次数限制，并带有广告和付费引导；解除这些限制需要订阅高级版。WinSend 免费本地文件传输没有每日使用额度，实际可传大小受设备资源和来源应用限制——文件通过 Wi-Fi 在你的 iPhone 和 Windows 电脑之间直接传输，大视频和批量照片还受设备资源、来源应用、网络条件和存储空间限制。</p></details>
+            <div class="site-faq-items">                <details class="site-faq-item"><summary>Send Anywhere 有文件大小限制吗？</summary><p>有。Send Anywhere 的免费版有文件大小和每日传输次数限制，并带有广告和付费引导；解除这些限制需要订阅高级版。WinSend Pro 的本地文件传输没有每日额度，实际可传大小受设备资源和来源应用限制——文件通过 Wi-Fi 在你的 iPhone 和 Windows 电脑之间直接传输，大视频和批量照片还受设备资源、来源应用、网络条件和存储空间限制。</p></details>
                 <details class="site-faq-item"><summary>Send Anywhere 隐私吗？</summary><p>取决于传输的路由方式。Send Anywhere 使用 6 位密钥或二维码，在可行时点对点传输，但当设备处于不同网络时，流量可能经过 Send Anywhere 的中继服务器——也就是说你的文件可能途经第三方基础设施。WinSend 不中转文件；可选云同步只中转客户端加密的剪贴板文字，不传文件或图片。</p></details>
-                <details class="site-faq-item"><summary>WinSend 是 Send Anywhere 的好替代品吗？</summary><p>如果你的传输发生在同一网络下自己的 iPhone 和 Windows 电脑之间，答案是肯定的。WinSend 本地文件没有每日使用额度，实际大小受设备资源与来源应用限制，没有广告，文件不经过中继服务器，还提供 iOS 分享面板集成和 Pro 自动文字同步（受 iOS 运行限制），以及主动触发的快捷指令，配对设备会自动接收文件。如果你需要给不同网络或异地的设备传文件，Send Anywhere 的 6 位密钥才是合适的工具。</p></details>
+                <details class="site-faq-item"><summary>WinSend 是 Send Anywhere 的好替代品吗？</summary><p>如果你的传输发生在同一网络下自己的 iPhone 和 Windows 电脑之间，答案是肯定的。WinSend Pro 的本地文件传输没有每日额度，实际大小受设备资源与来源应用限制，没有广告，文件不经过中继服务器，还提供 iOS 分享面板集成和 自动文字同步（受 iOS 运行限制），以及主动触发的快捷指令，配对设备会自动接收文件。如果你需要给不同网络或异地的设备传文件，Send Anywhere 的 6 位密钥才是合适的工具。</p></details>
                 <details class="site-faq-item"><summary>WinSend 能在不同网络的设备之间传文件吗？</summary><p>文件和照片不能通过 WinSend 跨网络发送，需要可互通的局域网。可选云同步可以跨网络分享剪贴板文字，但不支持文件或图片。如果你经常需要给异地的设备传文件，可以保留 Send Anywhere 应对这些场景，在家或办公室的局域网传输则交给 WinSend。</p></details>
 </div>
         </section>
@@ -230,8 +230,8 @@
 
                 <section id="product-scope" class="px-6 py-12">
             <div class="max-w-4xl mx-auto rounded-2xl border border-gray-200 p-6">
-                <h2 class="text-2xl font-bold mb-3">传输方式与功能权益</h2>
-                <p class="text-gray-600 leading-8">本地手动剪贴板和文件传输免费。自动剪贴板同步需要 Pro；快捷指令和云传输提供体验/Pro 权益，具体方案以应用内为准。 文件和照片需要可互通的局域网。云同步需要互联网，只支持剪贴板文字。自动同步不能绕过 iOS 后台运行或剪贴板限制。快捷指令要求 iOS 16+，需要主动触发。WinSend 是类似 AirDrop 的替代方案，不是 Apple AirDrop。 WinSend 不主动压缩传输文件；来源应用或系统导出可能改变文件表示，实际传输仍受设备、网络与存储条件限制。</p>
+                <h2 class="text-2xl font-bold mb-3">免费试用与 WinSend Pro</h2>
+                <p class="text-gray-600 leading-8">新用户可获得一次性的免费传输额度，用来试用全部功能；额度用完后，需要升级 WinSend Pro 才能继续使用。Pro 一次买断、永久使用，没有任何使用额度限制，价格以应用内为准。文件和照片需要可互通的局域网。云同步需要互联网，只支持剪贴板文字。自动同步不能绕过 iOS 后台运行或剪贴板限制。快捷指令要求 iOS 16+，需要主动触发。WinSend 是类似 AirDrop 的替代方案，不是 Apple AirDrop。 WinSend 不主动压缩传输文件；来源应用或系统导出可能改变文件表示，实际传输仍受设备、网络与存储条件限制。</p>
             </div>
         </section>
 

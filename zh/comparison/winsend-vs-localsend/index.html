@@ -58,7 +58,7 @@
 
     <script src="/assets/js/posthog.js" defer></script>
 
-    <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"WinSend 是 LocalSend 的好替代品吗？","acceptedAnswer":{"@type":"Answer","text":"如果你的设备组合恰好是 iPhone 加 Windows 电脑，答案是肯定的。WinSend 集成了 iOS 分享面板，完成首次设置后，无需先打开主 App 就能发送照片和文件，还提供 Pro 自动文字同步（受 iOS 运行限制），以及主动触发的快捷指令——这两点 LocalSend 都做不到。如果你还需要 Android、macOS 或 Linux 支持，LocalSend 是更好的选择。"}},{"@type":"Question","name":"LocalSend 能在 iPhone 和 Windows 之间使用吗？","acceptedAnswer":{"@type":"Answer","text":"可以。LocalSend 提供免费的 iOS 和 Windows 客户端，通过本地 Wi-Fi 传输文件。但每次传输都需要先打开 LocalSend 应用、选择文件、选择设备，然后由接收方手动确认接收。"}},{"@type":"Question","name":"WinSend 像 LocalSend 一样免费吗？","acceptedAnswer":{"@type":"Answer","text":"本地手动剪贴板和文件传输免费。自动剪贴板同步需要 Pro；快捷指令和云传输提供体验/Pro 权益，具体方案以应用内为准。LocalSend 则完全免费开源，没有任何付费层级。"}},{"@type":"Question","name":"WinSend 和 LocalSend 哪个更保护隐私？","acceptedAnswer":{"@type":"Answer","text":"两者都通过本地网络直接在设备之间传输，不经过云服务器、不需要账号、不上传文件。LocalSend 额外是开源的，任何人都可以审计其代码。WinSend 是闭源的，文件传输走局域网；可选云同步只中转加密的剪贴板文字。"}}]}</script>
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"WinSend 是 LocalSend 的好替代品吗？","acceptedAnswer":{"@type":"Answer","text":"如果你的设备组合恰好是 iPhone 加 Windows 电脑，答案是肯定的。WinSend 集成了 iOS 分享面板，完成首次设置后，无需先打开主 App 就能发送照片和文件，还提供 自动文字同步（受 iOS 运行限制），以及主动触发的快捷指令——这两点 LocalSend 都做不到。如果你还需要 Android、macOS 或 Linux 支持，LocalSend 是更好的选择。"}},{"@type":"Question","name":"LocalSend 能在 iPhone 和 Windows 之间使用吗？","acceptedAnswer":{"@type":"Answer","text":"可以。LocalSend 提供免费的 iOS 和 Windows 客户端，通过本地 Wi-Fi 传输文件。但每次传输都需要先打开 LocalSend 应用、选择文件、选择设备，然后由接收方手动确认接收。"}},{"@type":"Question","name":"WinSend 像 LocalSend 一样免费吗？","acceptedAnswer":{"@type":"Answer","text":"不是。WinSend 可以免费试用：新用户有一次性的免费传输额度，全部功能都能试用；之后升级 WinSend Pro，一次买断、没有使用额度限制。LocalSend 则完全免费开源，没有任何付费层级。WinSend 收费换来的是为 iPhone + Windows 打造的使用流程：从 iOS 分享面板直接发送、主动触发的快捷指令，以及跨网络的剪贴板文字传输。"}},{"@type":"Question","name":"WinSend 和 LocalSend 哪个更保护隐私？","acceptedAnswer":{"@type":"Answer","text":"两者都通过本地网络直接在设备之间传输，不经过云服务器、不需要账号、不上传文件。LocalSend 额外是开源的，任何人都可以审计其代码。WinSend 是闭源的，文件传输走局域网；可选云同步只中转加密的剪贴板文字。"}}]}</script>
 </head>
 <body class="bg-white text-gray-900 antialiased">
     <nav aria-label="主导航" class="site-nav site-nav--fixed">
@@ -94,7 +94,7 @@
                 <article class="prose">
                     <h2>快速结论</h2>
                     <ul>
-                        <li><strong>选择 WinSend</strong>：如果你的组合是 iPhone + Windows 电脑，想要最接近真 AirDrop 的体验——完成首次设置后，从 iOS 分享面板直接发送（Windows 端需运行），外加Pro 自动文字同步（受 iOS 运行限制），以及主动触发的快捷指令。</li>
+                        <li><strong>选择 WinSend</strong>：如果你的组合是 iPhone + Windows 电脑，想要最接近真 AirDrop 的体验——完成首次设置后，从 iOS 分享面板直接发送（Windows 端需运行），外加自动文字同步（受 iOS 运行限制），以及主动触发的快捷指令。</li>
                         <li><strong>选择 LocalSend</strong>：如果你还需要 Android、macOS 或 Linux 设备，或者你明确要求一款免费、开源、可审计的工具。</li>
                     </ul>
 
@@ -121,7 +121,7 @@
                                 </tr>
                                 <tr>
                                     <td><strong>剪贴板同步</strong></td>
-                                    <td class="win">文字同步 / 快捷指令；受 iOS 与 Pro 权益限制</td>
+                                    <td class="win">文字同步 / 快捷指令；受 iOS 运行限制</td>
                                     <td>仅支持手动发送文本</td>
                                 </tr>
                                 <tr>
@@ -131,7 +131,7 @@
                                 </tr>
                                 <tr>
                                     <td><strong>价格</strong></td>
-                                    <td>核心功能免费；高级功能需 Pro 权益</td>
+                                    <td>免费试用，之后一次买断 Pro</td>
                                     <td class="win">完全免费</td>
                                 </tr>
                                 <tr>
@@ -166,8 +166,8 @@
                         <p class="screenshot-caption">选中、分享、完成——文件已经在你的 Windows 电脑上。</p>
                     </div>
 
-                    <h3>2. Pro 自动文字同步（受 iOS 运行限制），以及主动触发的快捷指令</h3>
-                    <p>剪贴板文字可以双向传输。Pro 自动文字同步受 iOS 运行限制；已配置的快捷指令需要主动触发。剪贴板图片使用支持的局域网手动/快捷指令路径，不能经云同步传输。LocalSend 也能发文本片段，但每个片段都是一次手动“发送—确认”操作。如果你每天在设备间复制粘贴超过几次，仅凭这一点就值得选 WinSend。详见<a href="/zh/guides/copy-iphone-to-windows/">如何用快捷指令和轻点背面实现剪贴板同步</a>。</p>
+                    <h3>2. 自动文字同步（受 iOS 运行限制），以及主动触发的快捷指令</h3>
+                    <p>剪贴板文字可以双向传输。自动文字同步受 iOS 运行限制；已配置的快捷指令需要主动触发。剪贴板图片使用支持的局域网手动/快捷指令路径，不能经云同步传输。LocalSend 也能发文本片段，但每个片段都是一次手动“发送—确认”操作。如果你每天在设备间复制粘贴超过几次，仅凭这一点就值得选 WinSend。详见<a href="/zh/guides/copy-iphone-to-windows/">如何用快捷指令和轻点背面实现剪贴板同步</a>。</p>
 
                     <h3>3. 配对设备自动接收</h3>
                     <p>配对完成后，电脑无需任何人操作即可自动接收文件——当电脑在房间另一头，或你要批量传照片时尤其有用。LocalSend 默认要求接收方确认每一次传输。</p>
@@ -199,9 +199,9 @@
 
                             <section id="faq" class="site-faq">
             <h2>常见问题</h2>
-            <div class="site-faq-items">                <details class="site-faq-item"><summary>WinSend 是 LocalSend 的好替代品吗？</summary><p>如果你的设备组合恰好是 iPhone 加 Windows 电脑，答案是肯定的。WinSend 集成了 iOS 分享面板，完成首次设置后，无需先打开主 App 就能发送照片和文件，还提供 Pro 自动文字同步（受 iOS 运行限制），以及主动触发的快捷指令——这两点 LocalSend 都做不到。如果你还需要 Android、macOS 或 Linux 支持，LocalSend 是更好的选择。</p></details>
+            <div class="site-faq-items">                <details class="site-faq-item"><summary>WinSend 是 LocalSend 的好替代品吗？</summary><p>如果你的设备组合恰好是 iPhone 加 Windows 电脑，答案是肯定的。WinSend 集成了 iOS 分享面板，完成首次设置后，无需先打开主 App 就能发送照片和文件，还提供 自动文字同步（受 iOS 运行限制），以及主动触发的快捷指令——这两点 LocalSend 都做不到。如果你还需要 Android、macOS 或 Linux 支持，LocalSend 是更好的选择。</p></details>
                 <details class="site-faq-item"><summary>LocalSend 能在 iPhone 和 Windows 之间使用吗？</summary><p>可以。LocalSend 提供免费的 iOS 和 Windows 客户端，通过本地 Wi-Fi 传输文件。但每次传输都需要先打开 LocalSend 应用、选择文件、选择设备，然后由接收方手动确认接收。</p></details>
-                <details class="site-faq-item"><summary>WinSend 像 LocalSend 一样免费吗？</summary><p>本地手动剪贴板和文件传输免费。自动剪贴板同步需要 Pro；快捷指令和云传输提供体验/Pro 权益，具体方案以应用内为准。LocalSend 则完全免费开源，没有任何付费层级。</p></details>
+                <details class="site-faq-item"><summary>WinSend 像 LocalSend 一样免费吗？</summary><p>不是。WinSend 可以免费试用：新用户有一次性的免费传输额度，全部功能都能试用；之后升级 WinSend Pro，一次买断、没有使用额度限制。LocalSend 则完全免费开源，没有任何付费层级。WinSend 收费换来的是为 iPhone + Windows 打造的使用流程：从 iOS 分享面板直接发送、主动触发的快捷指令，以及跨网络的剪贴板文字传输。</p></details>
                 <details class="site-faq-item"><summary>WinSend 和 LocalSend 哪个更保护隐私？</summary><p>两者都通过本地网络直接在设备之间传输，不经过云服务器、不需要账号、不上传文件。LocalSend 额外是开源的，任何人都可以审计其代码。WinSend 是闭源的，文件传输走局域网；可选云同步只中转加密的剪贴板文字。</p></details>
 </div>
         </section>
@@ -218,8 +218,8 @@
 
                 <section id="product-scope" class="px-6 py-12">
             <div class="max-w-4xl mx-auto rounded-2xl border border-gray-200 p-6">
-                <h2 class="text-2xl font-bold mb-3">传输方式与功能权益</h2>
-                <p class="text-gray-600 leading-8">本地手动剪贴板和文件传输免费。自动剪贴板同步需要 Pro；快捷指令和云传输提供体验/Pro 权益，具体方案以应用内为准。 文件和照片需要可互通的局域网。云同步需要互联网，只支持剪贴板文字。自动同步不能绕过 iOS 后台运行或剪贴板限制。快捷指令要求 iOS 16+，需要主动触发。WinSend 是类似 AirDrop 的替代方案，不是 Apple AirDrop。 WinSend 不主动压缩传输文件；来源应用或系统导出可能改变文件表示，实际传输仍受设备、网络与存储条件限制。</p>
+                <h2 class="text-2xl font-bold mb-3">免费试用与 WinSend Pro</h2>
+                <p class="text-gray-600 leading-8">新用户可获得一次性的免费传输额度，用来试用全部功能；额度用完后，需要升级 WinSend Pro 才能继续使用。Pro 一次买断、永久使用，没有任何使用额度限制，价格以应用内为准。文件和照片需要可互通的局域网。云同步需要互联网，只支持剪贴板文字。自动同步不能绕过 iOS 后台运行或剪贴板限制。快捷指令要求 iOS 16+，需要主动触发。WinSend 是类似 AirDrop 的替代方案，不是 Apple AirDrop。 WinSend 不主动压缩传输文件；来源应用或系统导出可能改变文件表示，实际传输仍受设备、网络与存储条件限制。</p>
             </div>
         </section>
 

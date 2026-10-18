@@ -5,7 +5,7 @@
     "bodyClass": "bg-white text-gray-900 antialiased",
     "path": "/fr/",
     "title": "Alternative à AirDrop pour PC Windows et iPhone | WinSend",
-    "description": "Envoyez photos, vidéos et fichiers de l’iPhone vers votre PC Windows sans câble ni compte, et copiez-collez du texte entre les deux. Gratuit en réseau local.",
+    "description": "Envoyez photos, vidéos et fichiers de l’iPhone vers votre PC Windows sans câble ni compte, et copiez-collez du texte entre les deux. Essai gratuit.",
     "navigationMode": "fixed",
     "layout": "home"
   },
@@ -15,7 +15,7 @@
     "bodyClass": "page-bg bg-white text-gray-900 antialiased",
     "path": "/fr/telecharger/",
     "title": "Télécharger WinSend pour PC Windows et iPhone",
-    "description": "Installez WinSend sur Windows 10/11 depuis le Microsoft Store et sur iPhone depuis l’App Store. Transferts en réseau local gratuits, sans compte.",
+    "description": "Installez WinSend sur Windows 10/11 depuis le Microsoft Store et sur iPhone depuis l’App Store. Essai gratuit, sans compte, puis WinSend Pro en achat unique.",
     "navigationMode": "flow",
     "layout": "download"
   },
@@ -101,7 +101,7 @@
     "bodyClass": "bg-white text-gray-900 antialiased",
     "path": "/fr/guides/presse-papiers-iphone-windows/",
     "title": "Copier-coller entre iPhone et PC Windows | WinSend",
-    "description": "Copiez sur l’iPhone, collez sur le PC avec Ctrl+V, et inversement. Envoi manuel gratuit, Raccourci Toucher le dos et texte entre deux réseaux.",
+    "description": "Copiez sur l’iPhone, collez sur le PC avec Ctrl+V, et inversement. Envoi manuel, Raccourci Toucher le dos et texte entre deux réseaux.",
     "navigationMode": "fixed"
   }
 }

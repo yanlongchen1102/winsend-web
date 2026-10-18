@@ -10,7 +10,7 @@
     },
     {
       "question": "WinSend est-il gratuit ?",
-      "answer": "Oui pour l’essentiel. L’envoi de photos, vidéos et fichiers en réseau local et le copier-coller manuel sont gratuits, sans limite quotidienne. Les Raccourcis et le transfert cloud s’essaient gratuitement, puis nécessitent WinSend Pro ; la synchronisation automatique du presse-papiers est réservée à Pro. Les offres et tarifs à jour sont affichés dans l’application."
+      "answer": "Vous pouvez l’essayer gratuitement. Pour commencer, vous disposez d’un nombre limité de transferts gratuits, utilisables une seule fois, pour tester toutes les fonctionnalités : photos, vidéos, fichiers, copier-coller, Raccourcis et transfert cloud. Ensuite, WinSend Pro débloque tout en un seul achat, sans aucune limite d’utilisation. Le prix à jour est affiché dans l’application."
     },
     {
       "question": "Peut-on utiliser WinSend sur deux réseaux différents ?",
@@ -56,7 +56,7 @@
     },
     {
       "question": "Comment transférer une vidéo volumineuse de l’iPhone vers le PC ?",
-      "answer": "Comme une photo : partagez la vidéo depuis Photos vers WinSend et choisissez le PC. Gardez les deux appareils allumés et connectés jusqu’à la fin, et vérifiez l’espace libre sur le PC. Il n’y a pas de limite quotidienne, mais un très gros fichier peut échouer si le réseau, la mémoire de l’iPhone ou le disque arrivent à saturation : essayez alors une vidéo plus courte pour cerner le problème."
+      "answer": "Comme une photo : partagez la vidéo depuis Photos vers WinSend et choisissez le PC. Gardez les deux appareils allumés et connectés jusqu’à la fin, et vérifiez l’espace libre sur le PC. WinSend Pro n’impose aucune limite, mais un très gros fichier peut échouer si le réseau, la mémoire de l’iPhone ou le disque arrivent à saturation : essayez alors une vidéo plus courte pour cerner le problème."
     },
     {
       "question": "Peut-on envoyer une photo stockée dans iCloud ?",

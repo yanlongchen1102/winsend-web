@@ -20,7 +20,7 @@
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
     <link rel="stylesheet" href="/assets/css/tailwind.css">
     <link rel="stylesheet" href="/assets/css/site.css">
-<meta name="keywords" content="Send Anywhere alternative, Send Anywhere file size limit, Send Anywhere privacy relay, WinSend vs Send Anywhere, AirDrop for Windows, transfer files from iPhone to Windows PC, unlimited local file transfer">
+<meta name="keywords" content="Send Anywhere alternative, Send Anywhere file size limit, Send Anywhere privacy relay, WinSend vs Send Anywhere, AirDrop for Windows, transfer files from iPhone to Windows PC, local file transfer iPhone to PC">
     <meta property="og:image" content="https://winsend.app/en/guides/airdrop-for-windows/images/step1-share-sheet-winsend.webp">
     <meta property="og:type" content="article">
     <meta name="twitter:card" content="summary_large_image">
@@ -58,7 +58,7 @@
 
     <script src="/assets/js/posthog.js" defer></script>
 
-    <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Does Send Anywhere have a file size limit?","acceptedAnswer":{"@type":"Answer","text":"Yes. Send Anywhere's free tier comes with file-size and daily transfer limits, plus ads and upsells; lifting those limits requires a premium plan. WinSend local file transfer has no daily usage quota. Files go directly between devices on a reachable LAN, with practical limits depending on device resources, source apps, network conditions and storage."}},{"@type":"Question","name":"Is Send Anywhere private?","acceptedAnswer":{"@type":"Answer","text":"It depends on how the transfer is routed. Send Anywhere uses a 6-digit key or QR code and transfers peer-to-peer where possible, but when devices are on different networks the traffic can pass through Send Anywhere's relay servers — meaning your files may transit a third party's infrastructure. WinSend does not relay files. Optional Cloud Sync relays client-encrypted clipboard text only, not files or images."}},{"@type":"Question","name":"Is WinSend a good Send Anywhere alternative?","acceptedAnswer":{"@type":"Answer","text":"Yes, if your transfers happen between your own iPhone and Windows PC on the same network. WinSend local file transfer has no daily usage quota, with practical limits depending on device resources and source apps, no ads, no file relay servers, adds iOS share sheet integration and Pro automatic text sync while iOS permits the app to run, plus manually triggered Shortcuts, and paired devices receive files automatically. If you need to send files to devices on a different network or in another location, Send Anywhere's 6-digit key is the right tool."}},{"@type":"Question","name":"Can WinSend transfer files between devices on different networks?","acceptedAnswer":{"@type":"Answer","text":"Files and photos cannot be sent across different networks with WinSend. They require a reachable LAN. Optional Cloud Sync can share clipboard text across networks, but not files or images. If you regularly send files to devices in other locations, keep Send Anywhere for those cases and use WinSend for local file transfers at home or the office."}}]}</script>
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Does Send Anywhere have a file size limit?","acceptedAnswer":{"@type":"Answer","text":"Yes. Send Anywhere's free tier comes with file-size and daily transfer limits, plus ads and upsells; lifting those limits requires a premium plan. With WinSend Pro, local file transfer has no daily quota. Files go directly between devices on a reachable LAN, with practical limits depending on device resources, source apps, network conditions and storage."}},{"@type":"Question","name":"Is Send Anywhere private?","acceptedAnswer":{"@type":"Answer","text":"It depends on how the transfer is routed. Send Anywhere uses a 6-digit key or QR code and transfers peer-to-peer where possible, but when devices are on different networks the traffic can pass through Send Anywhere's relay servers — meaning your files may transit a third party's infrastructure. WinSend does not relay files. Optional Cloud Sync relays client-encrypted clipboard text only, not files or images."}},{"@type":"Question","name":"Is WinSend a good Send Anywhere alternative?","acceptedAnswer":{"@type":"Answer","text":"Yes, if your transfers happen between your own iPhone and Windows PC on the same network. With WinSend Pro, local file transfer has no daily quota, with practical limits depending on device resources and source apps, no ads, no file relay servers, adds iOS share sheet integration and automatic text sync while iOS permits the app to run, plus manually triggered Shortcuts, and paired devices receive files automatically. If you need to send files to devices on a different network or in another location, Send Anywhere's 6-digit key is the right tool."}},{"@type":"Question","name":"Can WinSend transfer files between devices on different networks?","acceptedAnswer":{"@type":"Answer","text":"Files and photos cannot be sent across different networks with WinSend. They require a reachable LAN. Optional Cloud Sync can share clipboard text across networks, but not files or images. If you regularly send files to devices in other locations, keep Send Anywhere for those cases and use WinSend for local file transfers at home or the office."}}]}</script>
 </head>
 <body class="bg-white text-gray-900 antialiased">
     <nav aria-label="Main navigation" class="site-nav site-nav--fixed">
@@ -94,7 +94,7 @@
                 <article class="prose">
                     <h2>Quick Verdict</h2>
                     <ul>
-                        <li><strong>Choose WinSend</strong> if you transfer between your own iPhone and Windows PC on the same network: no local daily usage quota, with device and source-app limits still applying, no file relay servers, no ads — plus share sheet sending and Pro automatic text sync while iOS permits the app to run, plus manually triggered Shortcuts.</li>
+                        <li><strong>Choose WinSend</strong> if you transfer between your own iPhone and Windows PC on the same network: no daily quota with WinSend Pro, with device and source-app limits still applying, no file relay servers, no ads — plus share sheet sending and automatic text sync while iOS permits the app to run, plus manually triggered Shortcuts.</li>
                         <li><strong>Choose Send Anywhere</strong> if you need to send files across different networks or to another location, want QR code convenience, or have Android, Mac or Linux devices in the mix.</li>
                     </ul>
 
@@ -121,7 +121,7 @@
                                 </tr>
                                 <tr>
                                     <td><strong>File size / daily limits</strong></td>
-                                    <td class="win">None on LAN</td>
+                                    <td class="win">None with Pro</td>
                                     <td>Free tier has file-size and daily transfer limits; premium lifts them</td>
                                 </tr>
                                 <tr>
@@ -141,7 +141,7 @@
                                 </tr>
                                 <tr>
                                     <td><strong>Clipboard sync</strong></td>
-                                    <td class="win">Text sync / Shortcuts; iOS and Pro limits apply</td>
+                                    <td class="win">Text sync / Shortcuts; iOS limits apply</td>
                                     <td>No</td>
                                 </tr>
                                 <tr>
@@ -156,7 +156,7 @@
                                 </tr>
                                 <tr>
                                     <td><strong>Price</strong></td>
-                                    <td>Free core features; Pro access for advanced features</td>
+                                    <td>Free trial, then a one-time Pro purchase</td>
                                     <td>Free with limits; premium plans available</td>
                                 </tr>
                             </tbody>
@@ -165,8 +165,8 @@
 
                     <h2>Where WinSend Wins</h2>
 
-                    <h3>1. Local file transfer without a daily usage quota</h3>
-                    <p>Send Anywhere's free tier caps file sizes and daily transfers, and nudges you toward premium plans with ads and upsells. WinSend transfers directly over your local network, so there is nothing to meter: send a 10 GB video folder or a whole afternoon's photos — practical limits still depend on device resources, source apps, network conditions and storage.</p>
+                    <h3>1. No daily quota with WinSend Pro</h3>
+                    <p>Send Anywhere's free tier caps file sizes and daily transfers, and nudges you toward premium plans with ads and upsells. WinSend transfers directly over your local network, and WinSend Pro has no usage limits: send a 10 GB video folder or a whole afternoon's photos — practical limits still depend on device resources, source apps, network conditions and storage.</p>
 
                     <h3>2. Local files without a file relay; optional cloud clipboard</h3>
                     <p>Send Anywhere moves files peer-to-peer where possible, but cross-network transfers can be routed through its relay servers, which means your files may transit third-party infrastructure. WinSend file transfer stays on the LAN without a file relay. Optional cloud clipboard is a separate text-only feature that does use a relay.</p>
@@ -183,7 +183,7 @@
                     </div>
 
                     <h3>4. Clipboard text sync and triggered Shortcuts and auto-receive</h3>
-                    <p>Transfer clipboard text in either direction. Pro automatic text sync depends on iOS allowing the app to run; configured Shortcuts must be triggered. Clipboard images use supported local manual/Shortcut paths, not cloud sync. Send Anywhere has no clipboard sync. And once paired, your PC accepts incoming files automatically, with no key to type on either side. See <a href="/en/guides/copy-iphone-to-windows/">how clipboard sync works with Shortcuts and Back Tap</a>.</p>
+                    <p>Transfer clipboard text in either direction. automatic text sync depends on iOS allowing the app to run; configured Shortcuts must be triggered. Clipboard images use supported local manual/Shortcut paths, not cloud sync. Send Anywhere has no clipboard sync. And once paired, your PC accepts incoming files automatically, with no key to type on either side. See <a href="/en/guides/copy-iphone-to-windows/">how clipboard sync works with Shortcuts and Back Tap</a>.</p>
 
                     <h2>Where Send Anywhere Wins</h2>
                     <p>To keep this comparison honest, Send Anywhere is the better tool in several situations:</p>
@@ -202,7 +202,7 @@
 
                     <h2>Who Should Choose Which?</h2>
                     <ul>
-                        <li><strong>iPhone + Windows PC, same network, large or frequent transfers</strong> → <strong>WinSend</strong> — unlimited and relay-free.</li>
+                        <li><strong>iPhone + Windows PC, same network, large or frequent transfers</strong> → <strong>WinSend</strong> — no daily quota with Pro, no relay.</li>
                         <li><strong>Hit Send Anywhere's file size or daily limits</strong> → <strong>WinSend</strong> for local transfers.</li>
                         <li><strong>Devices on different networks or in different locations</strong> → <strong>Send Anywhere</strong>.</li>
                         <li><strong>Mixed ecosystem with Android or Mac devices</strong> → <strong>Send Anywhere</strong>.</li>
@@ -211,9 +211,9 @@
 
                             <section id="faq" class="site-faq">
             <h2>Frequently asked questions</h2>
-            <div class="site-faq-items">                <details class="site-faq-item"><summary>Does Send Anywhere have a file size limit?</summary><p>Yes. Send Anywhere&#39;s free tier comes with file-size and daily transfer limits, plus ads and upsells; lifting those limits requires a premium plan. WinSend local file transfer has no daily usage quota. Files go directly between devices on a reachable LAN, with practical limits depending on device resources, source apps, network conditions and storage.</p></details>
+            <div class="site-faq-items">                <details class="site-faq-item"><summary>Does Send Anywhere have a file size limit?</summary><p>Yes. Send Anywhere&#39;s free tier comes with file-size and daily transfer limits, plus ads and upsells; lifting those limits requires a premium plan. With WinSend Pro, local file transfer has no daily quota. Files go directly between devices on a reachable LAN, with practical limits depending on device resources, source apps, network conditions and storage.</p></details>
                 <details class="site-faq-item"><summary>Is Send Anywhere private?</summary><p>It depends on how the transfer is routed. Send Anywhere uses a 6-digit key or QR code and transfers peer-to-peer where possible, but when devices are on different networks the traffic can pass through Send Anywhere&#39;s relay servers — meaning your files may transit a third party&#39;s infrastructure. WinSend does not relay files. Optional Cloud Sync relays client-encrypted clipboard text only, not files or images.</p></details>
-                <details class="site-faq-item"><summary>Is WinSend a good Send Anywhere alternative?</summary><p>Yes, if your transfers happen between your own iPhone and Windows PC on the same network. WinSend local file transfer has no daily usage quota, with practical limits depending on device resources and source apps, no ads, no file relay servers, adds iOS share sheet integration and Pro automatic text sync while iOS permits the app to run, plus manually triggered Shortcuts, and paired devices receive files automatically. If you need to send files to devices on a different network or in another location, Send Anywhere&#39;s 6-digit key is the right tool.</p></details>
+                <details class="site-faq-item"><summary>Is WinSend a good Send Anywhere alternative?</summary><p>Yes, if your transfers happen between your own iPhone and Windows PC on the same network. With WinSend Pro, local file transfer has no daily quota, with practical limits depending on device resources and source apps, no ads, no file relay servers, adds iOS share sheet integration and automatic text sync while iOS permits the app to run, plus manually triggered Shortcuts, and paired devices receive files automatically. If you need to send files to devices on a different network or in another location, Send Anywhere&#39;s 6-digit key is the right tool.</p></details>
                 <details class="site-faq-item"><summary>Can WinSend transfer files between devices on different networks?</summary><p>Files and photos cannot be sent across different networks with WinSend. They require a reachable LAN. Optional Cloud Sync can share clipboard text across networks, but not files or images. If you regularly send files to devices in other locations, keep Send Anywhere for those cases and use WinSend for local file transfers at home or the office.</p></details>
 </div>
         </section>
@@ -230,8 +230,8 @@
 
                 <section id="product-scope" class="px-6 py-12">
             <div class="max-w-4xl mx-auto rounded-2xl border border-gray-200 p-6">
-                <h2 class="text-2xl font-bold mb-3">Transfer modes and feature access</h2>
-                <p class="text-gray-600 leading-8">Local manual clipboard and file transfers are free. Automatic clipboard sync requires Pro; Shortcuts and cloud transfers have trial/Pro access. See the app for current offers. Files and photos require a reachable local network. Cloud Sync needs internet and supports clipboard text only. Automatic sync does not bypass iOS background or clipboard restrictions. Shortcuts require iOS 16+ and must be triggered. WinSend is an AirDrop-style alternative, not Apple AirDrop. WinSend does not deliberately compress transferred files; source apps or system export may change their representation, and device/network/storage limits still apply.</p>
+                <h2 class="text-2xl font-bold mb-3">Free trial and WinSend Pro</h2>
+                <p class="text-gray-600 leading-8">New users get a one-time free transfer allowance to try every feature. After that, WinSend Pro unlocks all features with a one-time purchase and no usage limits; the current price is shown in the app. Files and photos require a reachable local network. Cloud Sync needs internet and supports clipboard text only. Automatic sync does not bypass iOS background or clipboard restrictions. Shortcuts require iOS 16+ and must be triggered. WinSend is an AirDrop-style alternative, not Apple AirDrop. WinSend does not deliberately compress transferred files; source apps or system export may change their representation, and device/network/storage limits still apply.</p>
             </div>
         </section>
 

@@ -11,7 +11,7 @@
   "menu": "Menu",
   "copyright": "All rights reserved.",
   "footerDescription": "Transfer files over your local network; share clipboard text across networks with optional Cloud Sync.",
-  "productScopeHeading": "Transfer modes and feature access",
-  "productScope": "Local manual clipboard and file transfers are free. Automatic clipboard sync requires Pro; Shortcuts and cloud transfers have trial/Pro access. See the app for current offers. Files and photos require a reachable local network. Cloud Sync needs internet and supports clipboard text only. Automatic sync does not bypass iOS background or clipboard restrictions. Shortcuts require iOS 16+ and must be triggered. WinSend is an AirDrop-style alternative, not Apple AirDrop. WinSend does not deliberately compress transferred files; source apps or system export may change their representation, and device/network/storage limits still apply.",
+  "productScopeHeading": "Free trial and WinSend Pro",
+  "productScope": "New users get a one-time free transfer allowance to try every feature. After that, WinSend Pro unlocks all features with a one-time purchase and no usage limits; the current price is shown in the app. Files and photos require a reachable local network. Cloud Sync needs internet and supports clipboard text only. Automatic sync does not bypass iOS background or clipboard restrictions. Shortcuts require iOS 16+ and must be triggered. WinSend is an AirDrop-style alternative, not Apple AirDrop. WinSend does not deliberately compress transferred files; source apps or system export may change their representation, and device/network/storage limits still apply.",
   "faqHeading": "Frequently asked questions"
 }

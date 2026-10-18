@@ -16,8 +16,8 @@
 | 本地文件 | 照片、视频、文件走可互通的局域网，Windows 需保持运行；同一 SSID 不保证互通，有线 PC 也可处于同一 LAN | `WinDrop/Managers/WindropManager.swift:transferFilesToPC`；`airclip/main.go` |
 | 云端 | 可选云同步只承载剪贴板文字；双方需要互联网和已配置的同步码，不支持云文件/照片/剪贴板图片 | `WindropManager.swift:sendTextToDevice/transferClipboardToPC`；`airclip/cloudcrypto/cloudcrypto.go:InnerMessage` |
 | 路径回退 | 已配置且在线的云端通道可在本地文字请求失败后作为回退，因此“同一 Wi-Fi 的所有文字永不经过服务器”也不准确 | `WindropManager.swift:sendTextToDevice/cloudPeerId`；`WinDrop/Intents/SendToPCIntent.swift` |
-| 免费与 Pro | 本地手动剪贴板、文件/相册传输免费，无每日使用次数限制；自动剪贴板同步属于 Pro；快捷指令和云传输有体验/Pro 权益，价格与套餐看购买界面 | `UsageManager.swift`；`WinDropApp.swift:enforceAutoSyncProRequirement`；`PurchaseManager.swift` |
-| 当前源码体验额度 | 快捷指令一次性 5 次、云传输一次性 10 次；云快捷指令可能同时消耗两种额度；未确认商店发布，不在公共页面固定宣传次数 | `UsageManager.swift:TrialUsageStore`；`SendToPCIntent.swift`；`SyncFromPCIntent.swift` |
+| 试用与 Pro（2026-10-18 产品策略，由产品负责人确认） | 新用户有一次性的免费传输额度，可试用全部功能；额度用完后所有功能都需要 WinSend Pro。Pro 无任何使用额度限制。App 同时有订阅和买断，官网只宣传一次买断；价格以购买界面为准，官网不写具体价格和试用次数 | 产品负责人口径；`UsageManager.swift`；`PurchaseManager.swift`（源码需与新策略核对） |
+| 当前源码体验额度（旧策略，待核对） | 快捷指令一次性 5 次、云传输一次性 10 次；云快捷指令可能同时消耗两种额度。新策略下的试用额度以 App 为准，不在公共页面固定宣传次数 | `UsageManager.swift:TrialUsageStore`；`SendToPCIntent.swift`；`SyncFromPCIntent.swift` |
 | iOS 自动同步 | 开启自动同步并不绕过 iOS 后台执行/剪贴板访问限制；不能承诺锁屏、后台或任意 App 中复制后无条件同步 | `ClipboardManager.swift`（文字监听）；`WinDropApp.swift`（前台重连）；`WindropManager.swift` |
 | 快捷指令 | 安装/配置后主动运行，可通过轻点背面等触发，不必先打开主 App；这不是后台常驻监听 | `WinDrop/Intents/SendToPCIntent.swift`；`SyncFromPCIntent.swift`；`CloudShortcutSync.swift` |
 | 剪贴板图片 | 有局域网手动/快捷指令图片路径；自动监听主要是文字；云端不支持图片，不把文字与图片同步能力混写 | `ClipboardManager.swift:getCurrentClipboardImage/consumeClipboardIfNeeded`；`WindropManager.swift:transferClipboardToPC`；`SyncFromPCIntent.swift` |
@@ -26,7 +26,7 @@
 | 本地安全 | 已检查的本地 API/WebSocket 是 HTTP/WS，不宣称本地端到端加密；使用可信私有局域网，不把发现/连接称为强身份认证 | `HTTPClientManager.swift:buildURL`；`airclip/main.go:ListenAndServe`；`airclip/connection/websocket_server.go` |
 | 云加密 | 客户端实现 AES-256-GCM，密钥由同步码派生；加密对象为业务内容，不是所有连接元数据。同步码需保密；没有独立审计，不做“绝对无法解密”的保证 | `CloudCrypto.swift`；`airclip/cloudcrypto/cloudcrypto.go`；`airclip/connection/cloud_client.go` |
 | 文件质量 | 传输不主动压缩文件；照片选择器使用 current representation 并复制提供的文件，但来源 App、系统导出和图片路径可能转换表示，不保证任何路径字节完全相同或所有照片元数据保留 | `PhotoPickerView.swift`；`ShareViewController.swift`；`ClipboardManager.swift:getCurrentClipboardImage` |
-| 文件上限 | 免费本地文件传输没有每日额度；不能由此推导任意大小必成功，仍受磁盘、内存、来源 App、网络和系统限制 | `UsageManager.swift`；`WindropManager.swift` |
+| 文件上限 | Pro 没有每日额度；不能由此推导任意大小必成功，仍受磁盘、内存、来源 App、网络和系统限制 | `UsageManager.swift`；`WindropManager.swift` |
 
 ## 隐私与第三方
 
@@ -40,9 +40,9 @@
 
 ## 文案禁区
 
-禁止：互联网传文件、所有数据永不离开 Wi-Fi、没有任何云组件、无跟踪、绝对安全、后台无条件双向自动同步、签名可彻底消除 SmartScreen、手动 IP 可绕过客户端隔离、所有高级功能无限免费。
+禁止：互联网传文件、所有数据永不离开 Wi-Fi、没有任何云组件、无跟踪、绝对安全、后台无条件双向自动同步、签名可彻底消除 SmartScreen、手动 IP 可绕过客户端隔离、所有高级功能无限免费、“核心功能免费”“本地传输免费”“免费用户无每日额度”等暗示可长期免费使用的说法。
 
-允许：本地文件直传；可选跨网络文字剪贴板；支持主动触发快捷指令；Pro 自动同步受 iOS 限制；云内容在客户端加密；建议可信局域网；本地免费，高级权益以应用为准。
+允许：本地文件直传；可选跨网络文字剪贴板；支持主动触发快捷指令；自动同步受 iOS 限制；云内容在客户端加密；建议可信局域网；可免费试用全部功能，之后一次买断 Pro、无使用额度限制，价格以应用为准。
 
 ## 本轮修复与检查
 

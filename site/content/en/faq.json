@@ -16,7 +16,7 @@
     },
     {
       "question": "Can the clipboard sync automatically?",
-      "answer": "Pro supports automatic text sync while iOS allows WinSend to run. It does not provide unrestricted background clipboard monitoring. To send from another app, run a configured Shortcut; trial/Pro access applies."
+      "answer": "Automatic text sync works while iOS allows WinSend to run. It does not provide unrestricted background clipboard monitoring. To send from another app, run a configured Shortcut."
     },
     {
       "question": "Does clipboard content go through a server?",
@@ -74,13 +74,13 @@
     },
     {
       "question": "Is WinSend free?",
-      "answer": "Local manual clipboard and file transfers are free. Automatic clipboard sync requires Pro; Shortcuts and cloud transfers have trial/Pro access. See the app for current offers."
+      "answer": "WinSend is free to try. New users get a one-time free transfer allowance that covers every feature: file and photo transfers, clipboard sharing, Shortcuts and cloud transfer. After that, WinSend Pro unlocks everything with a one-time purchase and no usage limits. The current price is shown in the app."
     }
   ],
   "winsend-vs-localsend": [
     {
       "question": "Is WinSend a good LocalSend alternative?",
-      "answer": "Yes, if your setup is specifically an iPhone and a Windows PC. WinSend integrates into the iOS share sheet so you can send photos and files without opening an app first, and it offers Pro automatic text sync while iOS permits the app to run, plus manually triggered Shortcuts — two things LocalSend does not do. If you need Android, macOS or Linux support, LocalSend is the better choice."
+      "answer": "Yes, if your setup is specifically an iPhone and a Windows PC. WinSend integrates into the iOS share sheet so you can send photos and files without opening an app first, and it offers automatic text sync while iOS permits the app to run, plus manually triggered Shortcuts — two things LocalSend does not do. If you need Android, macOS or Linux support, LocalSend is the better choice."
     },
     {
       "question": "Does LocalSend work between iPhone and Windows?",
@@ -88,7 +88,7 @@
     },
     {
       "question": "Is WinSend free like LocalSend?",
-      "answer": "Local manual clipboard and file transfers are free. Automatic clipboard sync requires Pro; Shortcuts and cloud transfers have trial/Pro access. See the app for current offers. LocalSend is completely free and open source with no paid tier."
+      "answer": "No. WinSend is free to try: new users get a one-time free transfer allowance covering every feature, then WinSend Pro is a one-time purchase with no usage limits. LocalSend is completely free and open source with no paid tier. What WinSend charges for is a workflow built for iPhone and Windows: sending from the iOS share sheet, triggered Shortcuts and clipboard text across networks."
     },
     {
       "question": "Which is more private, WinSend or LocalSend?",
@@ -98,7 +98,7 @@
   "winsend-vs-sendanywhere": [
     {
       "question": "Does Send Anywhere have a file size limit?",
-      "answer": "Yes. Send Anywhere's free tier comes with file-size and daily transfer limits, plus ads and upsells; lifting those limits requires a premium plan. WinSend local file transfer has no daily usage quota. Files go directly between devices on a reachable LAN, with practical limits depending on device resources, source apps, network conditions and storage."
+      "answer": "Yes. Send Anywhere's free tier comes with file-size and daily transfer limits, plus ads and upsells; lifting those limits requires a premium plan. With WinSend Pro, local file transfer has no daily quota. Files go directly between devices on a reachable LAN, with practical limits depending on device resources, source apps, network conditions and storage."
     },
     {
       "question": "Is Send Anywhere private?",
@@ -106,7 +106,7 @@
     },
     {
       "question": "Is WinSend a good Send Anywhere alternative?",
-      "answer": "Yes, if your transfers happen between your own iPhone and Windows PC on the same network. WinSend local file transfer has no daily usage quota, with practical limits depending on device resources and source apps, no ads, no file relay servers, adds iOS share sheet integration and Pro automatic text sync while iOS permits the app to run, plus manually triggered Shortcuts, and paired devices receive files automatically. If you need to send files to devices on a different network or in another location, Send Anywhere's 6-digit key is the right tool."
+      "answer": "Yes, if your transfers happen between your own iPhone and Windows PC on the same network. With WinSend Pro, local file transfer has no daily quota, with practical limits depending on device resources and source apps, no ads, no file relay servers, adds iOS share sheet integration and automatic text sync while iOS permits the app to run, plus manually triggered Shortcuts, and paired devices receive files automatically. If you need to send files to devices on a different network or in another location, Send Anywhere's 6-digit key is the right tool."
     },
     {
       "question": "Can WinSend transfer files between devices on different networks?",
@@ -124,7 +124,7 @@
     },
     {
       "question": "Is WinSend a good Snapdrop alternative?",
-      "answer": "Yes, if your devices are an iPhone and a Windows PC. WinSend is a native app pair that discovers devices on the local network (with a manual IP fallback), integrates into the iOS share sheet, supports manual clipboard transfer, Pro automatic text sync subject to iOS limits, and configured Shortcuts, and does not need a public server for local file transfer. Optional cloud clipboard uses a relay. If you need to send a file to an Android, Mac or Linux device — or to someone else's computer with zero install — Snapdrop's browser approach is more convenient."
+      "answer": "Yes, if your devices are an iPhone and a Windows PC. WinSend is a native app pair that discovers devices on the local network (with a manual IP fallback), integrates into the iOS share sheet, supports manual clipboard transfer, automatic text sync subject to iOS limits, and configured Shortcuts, and does not need a public server for local file transfer. Optional cloud clipboard uses a relay. If you need to send a file to an Android, Mac or Linux device — or to someone else's computer with zero install — Snapdrop's browser approach is more convenient."
     },
     {
       "question": "Does Snapdrop work without installing anything?",

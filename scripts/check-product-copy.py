@@ -53,6 +53,12 @@ BANNED = (
     'iOS 15+', 'automatically appears on iPhone, and vice versa',
     '无需任何手动操作', '我们会用签名安装包彻底消除这个提示',
     'Clipboard text sync and triggered Shortcuts requires Pro',
+    # 2026-10-18 pricing: free trial, then WinSend Pro for everything.
+    'Free core features', '核心功能免费', 'Free basics', '基础功能免费',
+    'Local manual clipboard and file transfers are free', '本地手动剪贴板和文件传输免费',
+    'Manual local transfer is free', '本地手动传输免费', 'trial/Pro access', '体验/Pro 权益',
+    'local file transfer has no daily usage quota', '本地文件没有每日使用额度',
+    'Gratuit en réseau local', 'gratuit et sans limite',
     '本地文件和剪贴板传输只需两台设备连接同一个 Wi-Fi。',
 )
 errors = []

@@ -16,7 +16,7 @@
     },
     {
       "question": "剪贴板可以自动同步吗？",
-      "answer": "Pro 支持在 iOS 允许运行时自动同步文字，但不能在后台无限制监听剪贴板。从其他应用发送时可主动运行已配置的快捷指令；快捷指令提供体验/Pro 权益。"
+      "answer": "WinSend 可在 iOS 允许运行时自动同步文字，但不能在后台无限制监听剪贴板。从其他应用发送时可主动运行已配置的快捷指令。"
     },
     {
       "question": "剪贴板内容会经过服务器吗？",
@@ -74,13 +74,13 @@
     },
     {
       "question": "WinSend 收费吗？",
-      "answer": "本地手动剪贴板和文件传输免费。自动剪贴板同步需要 Pro；快捷指令和云传输提供体验/Pro 权益，具体方案以应用内为准。"
+      "answer": "WinSend 可以免费试用。新用户可获得一次性的免费传输额度，文件和照片传输、剪贴板、快捷指令、云传输等全部功能都能试用。额度用完后，升级 WinSend Pro 即可继续使用：一次买断、永久使用，没有任何使用额度限制。价格以应用内为准。"
     }
   ],
   "winsend-vs-localsend": [
     {
       "question": "WinSend 是 LocalSend 的好替代品吗？",
-      "answer": "如果你的设备组合恰好是 iPhone 加 Windows 电脑，答案是肯定的。WinSend 集成了 iOS 分享面板，完成首次设置后，无需先打开主 App 就能发送照片和文件，还提供 Pro 自动文字同步（受 iOS 运行限制），以及主动触发的快捷指令——这两点 LocalSend 都做不到。如果你还需要 Android、macOS 或 Linux 支持，LocalSend 是更好的选择。"
+      "answer": "如果你的设备组合恰好是 iPhone 加 Windows 电脑，答案是肯定的。WinSend 集成了 iOS 分享面板，完成首次设置后，无需先打开主 App 就能发送照片和文件，还提供 自动文字同步（受 iOS 运行限制），以及主动触发的快捷指令——这两点 LocalSend 都做不到。如果你还需要 Android、macOS 或 Linux 支持，LocalSend 是更好的选择。"
     },
     {
       "question": "LocalSend 能在 iPhone 和 Windows 之间使用吗？",
@@ -88,7 +88,7 @@
     },
     {
       "question": "WinSend 像 LocalSend 一样免费吗？",
-      "answer": "本地手动剪贴板和文件传输免费。自动剪贴板同步需要 Pro；快捷指令和云传输提供体验/Pro 权益，具体方案以应用内为准。LocalSend 则完全免费开源，没有任何付费层级。"
+      "answer": "不是。WinSend 可以免费试用：新用户有一次性的免费传输额度，全部功能都能试用；之后升级 WinSend Pro，一次买断、没有使用额度限制。LocalSend 则完全免费开源，没有任何付费层级。WinSend 收费换来的是为 iPhone + Windows 打造的使用流程：从 iOS 分享面板直接发送、主动触发的快捷指令，以及跨网络的剪贴板文字传输。"
     },
     {
       "question": "WinSend 和 LocalSend 哪个更保护隐私？",
@@ -98,7 +98,7 @@
   "winsend-vs-sendanywhere": [
     {
       "question": "Send Anywhere 有文件大小限制吗？",
-      "answer": "有。Send Anywhere 的免费版有文件大小和每日传输次数限制，并带有广告和付费引导；解除这些限制需要订阅高级版。WinSend 免费本地文件传输没有每日使用额度，实际可传大小受设备资源和来源应用限制——文件通过 Wi-Fi 在你的 iPhone 和 Windows 电脑之间直接传输，大视频和批量照片还受设备资源、来源应用、网络条件和存储空间限制。"
+      "answer": "有。Send Anywhere 的免费版有文件大小和每日传输次数限制，并带有广告和付费引导；解除这些限制需要订阅高级版。WinSend Pro 的本地文件传输没有每日额度，实际可传大小受设备资源和来源应用限制——文件通过 Wi-Fi 在你的 iPhone 和 Windows 电脑之间直接传输，大视频和批量照片还受设备资源、来源应用、网络条件和存储空间限制。"
     },
     {
       "question": "Send Anywhere 隐私吗？",
@@ -106,7 +106,7 @@
     },
     {
       "question": "WinSend 是 Send Anywhere 的好替代品吗？",
-      "answer": "如果你的传输发生在同一网络下自己的 iPhone 和 Windows 电脑之间，答案是肯定的。WinSend 本地文件没有每日使用额度，实际大小受设备资源与来源应用限制，没有广告，文件不经过中继服务器，还提供 iOS 分享面板集成和 Pro 自动文字同步（受 iOS 运行限制），以及主动触发的快捷指令，配对设备会自动接收文件。如果你需要给不同网络或异地的设备传文件，Send Anywhere 的 6 位密钥才是合适的工具。"
+      "answer": "如果你的传输发生在同一网络下自己的 iPhone 和 Windows 电脑之间，答案是肯定的。WinSend Pro 的本地文件传输没有每日额度，实际大小受设备资源与来源应用限制，没有广告，文件不经过中继服务器，还提供 iOS 分享面板集成和 自动文字同步（受 iOS 运行限制），以及主动触发的快捷指令，配对设备会自动接收文件。如果你需要给不同网络或异地的设备传文件，Send Anywhere 的 6 位密钥才是合适的工具。"
     },
     {
       "question": "WinSend 能在不同网络的设备之间传文件吗？",
@@ -124,7 +124,7 @@
     },
     {
       "question": "WinSend 是 Snapdrop 的好替代品吗？",
-      "answer": "如果你的设备是 iPhone 和 Windows 电脑，答案是肯定的。WinSend 是原生应用组合，在局域网内发现设备（带手动 IP 后备方案），集成了 iOS 分享面板，支持 Pro 自动文字同步（受 iOS 运行限制），以及主动触发的快捷指令，本地文件传输不依赖公共服务器；可选云剪贴板使用中转服务。如果你要给 Android、Mac 或 Linux 设备传文件——或者要零安装地给别人的电脑传一次文件——Snapdrop 的浏览器方案更方便。"
+      "answer": "如果你的设备是 iPhone 和 Windows 电脑，答案是肯定的。WinSend 是原生应用组合，在局域网内发现设备（带手动 IP 后备方案），集成了 iOS 分享面板，支持 自动文字同步（受 iOS 运行限制），以及主动触发的快捷指令，本地文件传输不依赖公共服务器；可选云剪贴板使用中转服务。如果你要给 Android、Mac 或 Linux 设备传文件——或者要零安装地给别人的电脑传一次文件——Snapdrop 的浏览器方案更方便。"
     },
     {
       "question": "Snapdrop 真的不用安装任何东西吗？",

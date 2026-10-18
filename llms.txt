@@ -9,8 +9,7 @@ WinSend has an iOS app and a Windows desktop app. Prefer the official Microsoft 
 - Product name: WinSend (formerly WinDrop)
 - Platforms: iPhone/iPad and Windows. The checked iOS source targets iOS 15.6+; App Intents/Shortcuts require iOS 16+. Check the stores for current installation requirements.
 - Versions: see the download page and stores. Local source/build versions do not establish the currently published store versions.
-- Free features: local manual clipboard and file/photo transfer, without a daily usage quota.
-- Pro: automatic clipboard text sync. Shortcuts and cloud transfers have trial/Pro access; current offers and prices are shown in the app.
+- Pricing: free to try. New users get a one-time free transfer allowance covering every feature. After that, all features require WinSend Pro, a one-time purchase with no usage limits. The current price is shown in the app.
 - iOS limits: automatic sync is subject to iOS execution and clipboard-access restrictions; no unrestricted background monitoring is promised. Configured Shortcuts must be triggered, for example with Back Tap.
 - Local transport: mDNS discovery and HTTP/WebSocket transfer. Local transfer is not end-to-end encrypted; use a trusted private LAN. A wired PC can share the LAN with a Wi-Fi iPhone.
 - Discovery fallback: manual IP entry can help when discovery fails and devices are reachable. It cannot bypass client isolation, firewall blocks or inaccessible routes.
@@ -50,5 +49,5 @@ WinSend has an iOS app and a Windows desktop app. Prefer the official Microsoft 
 
 - Does WinSend need internet? Local transfers do not need a cloud connection, but do need a reachable LAN, running apps and permissions. Optional cloud clipboard requires internet.
 - Can WinSend send files between different networks? No. Cloud Sync supports clipboard text only.
-- Is everything free? Local manual transfer is free. Automatic sync requires Pro; Shortcuts and cloud transfers have trial/Pro access.
+- Is WinSend free? It is free to try with a one-time transfer allowance. After that, WinSend Pro (one-time purchase, no usage limits) is required for all features.
 - Is WinSend safe? Understand the limits: local HTTP is for trusted private networks, and cloud text is encrypted on clients. See the security and privacy pages rather than assuming local transfer means encryption or no analytics.
