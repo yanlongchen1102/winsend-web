@@ -109,7 +109,7 @@ function seoHTML(site, data, alternateLinks) {
     `    <meta property="og:title" content="${escapeHTML(data.title)}">`,
     `    <meta property="og:description" content="${escapeHTML(data.description)}">`,
     `    <meta property="og:url" content="${escapeHTML(canonical)}">`,
-    `    <meta property="og:locale" content="${escapeHTML((data.htmlLang || data.locale.htmlLang).replaceAll('-', '_'))}">`,
+    `    <meta property="og:locale" content="${escapeHTML(data.locale.ogLocale || (data.htmlLang || data.locale.htmlLang).replaceAll('-', '_'))}">`,
     `    <meta name="twitter:title" content="${escapeHTML(data.title)}">`,
     `    <meta name="twitter:description" content="${escapeHTML(data.description)}">`,
   ].join('\n');

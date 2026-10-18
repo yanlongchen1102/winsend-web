@@ -4,27 +4,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WinSend est-il sûr ? Réseau local, cloud et sécurité</title>
-    <meta name="description" content="Comprenez les limites de sécurité de WinSend : transfert local HTTP/WebSocket, texte cloud chiffré et précautions sur un réseau partagé.">
+    <title>WinSend est-il sûr ? Réseau local, cloud et bonnes pratiques</title>
+    <meta name="description" content="Ce que WinSend protège, et ce qu’il ne protège pas : transfert en réseau local, texte chiffré dans le cloud et conseils pour choisir un réseau de confiance.">
     <meta name="robots" content="index,follow,max-image-preview:large">
     <link rel="canonical" href="https://winsend.app/fr/securite/">
     <link rel="alternate" hreflang="en" href="https://winsend.app/en/safety/">
     <link rel="alternate" hreflang="zh" href="https://winsend.app/zh/safety/">
     <link rel="alternate" hreflang="fr" href="https://winsend.app/fr/securite/">
     <link rel="alternate" hreflang="x-default" href="https://winsend.app/en/safety/">
-    <meta property="og:title" content="WinSend est-il sûr ? Réseau local, cloud et sécurité">
-    <meta property="og:description" content="Comprenez les limites de sécurité de WinSend : transfert local HTTP/WebSocket, texte cloud chiffré et précautions sur un réseau partagé.">
+    <meta property="og:title" content="WinSend est-il sûr ? Réseau local, cloud et bonnes pratiques">
+    <meta property="og:description" content="Ce que WinSend protège, et ce qu’il ne protège pas : transfert en réseau local, texte chiffré dans le cloud et conseils pour choisir un réseau de confiance.">
     <meta property="og:url" content="https://winsend.app/fr/securite/">
-    <meta property="og:locale" content="fr">
-    <meta name="twitter:title" content="WinSend est-il sûr ? Réseau local, cloud et sécurité">
-    <meta name="twitter:description" content="Comprenez les limites de sécurité de WinSend : transfert local HTTP/WebSocket, texte cloud chiffré et précautions sur un réseau partagé.">
+    <meta property="og:locale" content="fr_FR">
+    <meta name="twitter:title" content="WinSend est-il sûr ? Réseau local, cloud et bonnes pratiques">
+    <meta name="twitter:description" content="Ce que WinSend protège, et ce qu’il ne protège pas : transfert en réseau local, texte chiffré dans le cloud et conseils pour choisir un réseau de confiance.">
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
     <link rel="stylesheet" href="/assets/css/tailwind.css">
     <link rel="stylesheet" href="/assets/css/site.css">
     <link rel="stylesheet" href="/assets/css/marketing.css">
     <meta property="og:type" content="website">
     <script defer src="/assets/js/posthog.js"></script>
-    <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"WinSend est-il sûr ? Réseau local, cloud et sécurité","description":"Comprenez les limites de sécurité de WinSend : transfert local HTTP/WebSocket, texte cloud chiffré et précautions sur un réseau partagé.","url":"https://winsend.app/fr/securite/","inLanguage":"fr","dateModified":"2026-10-08"}</script>
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"WinSend est-il sûr ? Réseau local, cloud et bonnes pratiques","description":"Ce que WinSend protège, et ce qu’il ne protège pas : transfert en réseau local, texte chiffré dans le cloud et conseils pour choisir un réseau de confiance.","url":"https://winsend.app/fr/securite/","inLanguage":"fr","dateModified":"2026-10-18"}</script>
 
 
 </head>
@@ -33,13 +33,13 @@
         <div class="site-nav-inner">
             <a href="/fr/" class="site-brand" aria-label="Accueil WinSend"><img src="/logo.webp" alt="" width="36" height="36"><span>WinSend</span></a>
             <div class="site-nav-actions">
-                <div class="site-nav-pages"><a href="/fr/features/" class="site-secondary-link">Fonctionnalités</a><a href="/fr/guides/" class="site-secondary-link">Guides</a><a href="/fr/telecharger/" class="site-download-link">Télécharger</a></div>
+                <div class="site-nav-pages"><a href="/fr/fonctionnalites/" class="site-secondary-link">Fonctionnalités</a><a href="/fr/guides/" class="site-secondary-link">Guides</a><a href="/fr/telecharger/" class="site-download-link">Télécharger</a></div>
                 <details class="site-page-menu">
                     <summary aria-label="Menu">☰</summary>
-                    <div class="site-language-panel"><a href="/fr/features/">Fonctionnalités</a><a href="/fr/guides/">Guides</a><a href="/fr/telecharger/">Télécharger</a></div>
+                    <div class="site-language-panel"><a href="/fr/fonctionnalites/">Fonctionnalités</a><a href="/fr/guides/">Guides</a><a href="/fr/telecharger/">Télécharger</a></div>
                 </details>
                 <details class="site-language-menu">
-                    <summary aria-label="Choisir une langue">Français</summary>
+                    <summary aria-label="Choisir la langue">Français</summary>
                     <div class="site-language-panel"><a href="/en/safety/" lang="en" hreflang="en">English</a><a href="/zh/safety/" lang="zh-CN" hreflang="zh">中文</a><a href="/fr/securite/" lang="fr" hreflang="fr" aria-current="page">Français</a></div>
                 </details>
             </div>
@@ -49,22 +49,22 @@
 <main>
 <section class="hero-bg px-6 pt-32 pb-14">
     <header class="mx-auto max-w-6xl">
-        <p class="mb-4 text-sm font-semibold uppercase tracking-[0.24em] text-blue-600">Sécurité et limites</p>
-        <h1 class="mb-6 text-4xl font-extrabold tracking-tight leading-tight sm:text-5xl lg:text-6xl">WinSend est-il sûr ? Les précautions à connaître</h1>
-        <p class="max-w-3xl text-xl leading-9 text-gray-600">Un transfert local et un texte envoyé par le cloud n’ont pas les mêmes garanties. Choisissez un réseau et un mode de transfert adaptés à la sensibilité de vos données.</p>
+        <p class="mb-4 text-sm font-semibold uppercase tracking-[0.24em] text-blue-600">Sécurité</p>
+        <h1 class="mb-6 text-4xl font-extrabold tracking-tight leading-tight sm:text-5xl lg:text-6xl">WinSend est-il sûr ? Ce qu’il faut savoir</h1>
+        <p class="max-w-3xl text-xl leading-9 text-gray-600">Vos fichiers restent sur votre réseau local et le texte envoyé par le cloud est chiffré sur vos appareils. Voici concrètement ce que cela couvre, et ce que cela ne couvre pas.</p>
     </header>
 </section>
 
 <section class="px-6 pb-20"><div class="mx-auto max-w-4xl"><article class="rounded-[2rem] border border-gray-200 bg-white p-8 sm:p-10 shadow-sm">
-<section class="mb-10"><h2 class="mb-4 text-3xl font-bold tracking-tight">Transfert local : privilégier un réseau privé de confiance</h2><p class="mb-4 text-gray-600 leading-8">Les fichiers et le presse-papiers local passent directement entre les appareils via HTTP/WebSocket. Ce transport ne constitue pas un chiffrement de bout en bout. Le fait de rester sur le réseau local ne garantit pas à lui seul la confidentialité.</p><p class="mb-4 text-gray-600 leading-8">Évitez les Wi-Fi publics, invités ou partagés avec des personnes non fiables. Pour des données sensibles ou professionnelles, respectez les règles de votre organisation et ne contournez pas ses contrôles de réseau.</p></section>
-<section class="mb-10"><h2 class="mb-4 text-3xl font-bold tracking-tight">Cloud : texte chiffré, métadonnées distinctes</h2><p class="mb-4 text-gray-600 leading-8">La synchronisation cloud facultative transmet seulement le texte du presse-papiers, chiffré côté client avec AES-256-GCM et une clé dérivée du code de synchronisation. Protégez ce code : une personne qui le connaît peut compromettre la confidentialité du groupe.</p><p class="mb-4 text-gray-600 leading-8">Le chiffrement du contenu ne masque pas les métadonnées de connexion, telles que les adresses IP, les noms et identifiants d’appareils ou de groupes et les informations nécessaires pour rejoindre un groupe. Ce mécanisme ne constitue pas une garantie issue d’un audit de sécurité indépendant.</p></section>
-<section class="mb-10"><h2 class="mb-4 text-3xl font-bold tracking-tight">Installer et recevoir avec prudence</h2><ul class="my-4 list-disc pl-5 space-y-3 text-gray-600 leading-8"><li>Privilégiez les liens vers les boutiques officielles sur la <a class="text-blue-600 hover:text-blue-700 underline" href="/fr/telecharger/">page de téléchargement</a>.</li><li>Vérifiez la provenance et l’éditeur d’un installateur ; ne désactivez pas globalement les protections de Windows.</li><li>Vérifiez le destinataire avant l’envoi et n’acceptez pas un fichier inattendu comme étant forcément sûr.</li><li>Ne transmettez pas votre code de synchronisation au support ni dans une capture d’écran publique.</li></ul></section>
-<section class="mb-10"><h2 class="mb-4 text-3xl font-bold tracking-tight">Statistiques et journaux</h2><p class="mb-4 text-gray-600 leading-8">WinSend utilise des statistiques pseudonymisées. Des identifiants persistants peuvent associer des événements au fil du temps : pseudonymisation ne signifie pas anonymat complet. Les journaux locaux peuvent contenir des noms de fichiers ou des aperçus de texte ; relisez-les avant de les partager.</p><a class="text-blue-600 hover:text-blue-700 underline" href="/fr/confidentialite/">Détails sur les données et les prestataires →</a></section>
-<section class="mb-10"><h2 class="mb-4 text-3xl font-bold tracking-tight">En cas de doute</h2><p class="mb-4 text-gray-600 leading-8">Arrêtez le transfert et contactez <a class="text-blue-600 hover:text-blue-700 underline" href="mailto:support@winsend.app">support@winsend.app</a>, sans joindre votre contenu sensible ou votre code de synchronisation. Les <a class="text-blue-600 hover:text-blue-700 underline" href="/fr/installation/">conseils de connexion</a> doivent être appliqués sans rendre votre réseau plus permissif que nécessaire.</p></section>
+<section class="mb-10"><h2 class="mb-4 text-3xl font-bold tracking-tight">Transfert local : choisissez un réseau de confiance</h2><p class="mb-4 text-gray-600 leading-8">Sur le réseau local, fichiers et texte passent directement d’un appareil à l’autre, sans serveur intermédiaire. Ce transfert repose sur HTTP/WebSocket et n’est pas chiffré de bout en bout : une personne malveillante connectée au même réseau pourrait, en théorie, l’intercepter.</p><p class="mb-4 text-gray-600 leading-8">En pratique, utilisez WinSend chez vous ou sur un réseau dont vous connaissez les utilisateurs, et évitez les Wi-Fi publics (café, gare, hôtel). En déplacement, le partage de connexion de l’iPhone est une bonne solution. Pour des données professionnelles, suivez les règles de votre entreprise.</p></section>
+<section class="mb-10"><h2 class="mb-4 text-3xl font-bold tracking-tight">Transfert cloud : texte chiffré, métadonnées visibles</h2><p class="mb-4 text-gray-600 leading-8">Le transfert cloud ne transmet que du texte. Celui-ci est chiffré sur vos appareils avec AES-256-GCM, à l’aide d’une clé dérivée de votre code de jumelage : le relais est conçu pour transporter le texte sans pouvoir le lire. En revanche, toute personne qui connaît ce code peut rejoindre votre groupe et lire les messages. Gardez-le pour vous.</p><p class="mb-4 text-gray-600 leading-8">Le chiffrement protège le contenu, pas les métadonnées : le relais voit les adresses IP, les noms et identifiants des appareils et des groupes, ainsi que les informations nécessaires pour rejoindre un groupe. Ce mécanisme n’a pas fait l’objet d’un audit de sécurité indépendant.</p></section>
+<section class="mb-10"><h2 class="mb-4 text-3xl font-bold tracking-tight">Bonnes pratiques</h2><ul class="my-4 list-disc pl-5 space-y-3 text-gray-600 leading-8"><li>Téléchargez WinSend depuis le Microsoft Store ou l’App Store, via la <a class="text-blue-600 hover:text-blue-700 underline" href="/fr/telecharger/">page de téléchargement</a>.</li><li>Si vous utilisez l’installateur .exe, vérifiez qu’il provient bien de winsend.app, et ne désactivez pas les protections de Windows.</li><li>Vérifiez le nom de l’appareil destinataire avant d’envoyer, et n’ouvrez pas un fichier reçu que vous n’attendiez pas.</li><li>Ne communiquez jamais votre code de jumelage, ni au support ni sur une capture d’écran publique.</li></ul></section>
+<section class="mb-10"><h2 class="mb-4 text-3xl font-bold tracking-tight">Statistiques et journaux</h2><p class="mb-4 text-gray-600 leading-8">WinSend collecte des statistiques d’utilisation pseudonymisées. Un identifiant permet de relier des événements dans le temps : il ne s’agit donc pas d’un anonymat complet. Les journaux de diagnostic restent sur l’appareil, mais peuvent contenir des noms de fichiers ou des extraits de texte : relisez-les avant de les envoyer.</p><a class="text-blue-600 hover:text-blue-700 underline" href="/fr/confidentialite/">Tout le détail dans la politique de confidentialité →</a></section>
+<section class="mb-10"><h2 class="mb-4 text-3xl font-bold tracking-tight">Un doute ?</h2><p class="mb-4 text-gray-600 leading-8">Interrompez le transfert et écrivez à <a class="text-blue-600 hover:text-blue-700 underline" href="mailto:support@winsend.app">support@winsend.app</a>, sans joindre de contenu sensible ni votre code de jumelage. Si vous devez dépanner une connexion, suivez les <a class="text-blue-600 hover:text-blue-700 underline" href="/fr/installation/">conseils d’installation</a> sans ouvrir votre réseau ou votre pare-feu plus que nécessaire.</p></section>
         <section id="product-scope" class="px-6 py-12">
             <div class="max-w-4xl mx-auto rounded-2xl border border-gray-200 p-6">
-                <h2 class="text-2xl font-bold mb-3">Modes de transfert et accès aux fonctionnalités</h2>
-                <p class="text-gray-600 leading-8">Les transferts locaux de fichiers et le partage manuel du presse-papiers sont gratuits. La synchronisation automatique du texte nécessite Pro. Les Raccourcis et les transferts cloud proposent un accès d’essai/Pro : consultez l’application pour les offres et droits actuels. Les fichiers, photos et vidéos nécessitent un réseau local où les appareils peuvent communiquer. Le cloud exige Internet et ne transmet que le texte du presse-papiers, pas les fichiers ni les images. La synchronisation automatique reste soumise aux restrictions d’exécution en arrière-plan et d’accès au presse-papiers d’iOS. Les Raccourcis nécessitent iOS 16 ou ultérieur et doivent être déclenchés. WinSend est une alternative de type AirDrop, et non le service AirDrop d’Apple. WinSend ne compresse pas volontairement les fichiers transférés ; l’application source ou l’export du système peut modifier leur représentation. Les limites du réseau, des appareils et du stockage restent applicables.</p>
+                <h2 class="text-2xl font-bold mb-3">Gratuit ou Pro ?</h2>
+                <p class="text-gray-600 leading-8">Gratuit et sans limite quotidienne : l’envoi de photos, vidéos et fichiers en réseau local, et le copier-coller manuel. Essai gratuit, puis WinSend Pro : les Raccourcis (iOS 16 ou version ultérieure) et le transfert cloud. Réservée à Pro : la synchronisation automatique du presse-papiers, qui reste soumise aux limites d’iOS en arrière-plan. Le cloud ne transmet que du texte ; les fichiers passent toujours par le réseau local. Offres et tarifs à jour dans l’application.</p>
             </div>
         </section>
 
@@ -73,8 +73,8 @@
 
     <footer class="site-footer">
         <div class="site-footer-inner">
-            <div><a href="/fr/" class="site-brand"><img src="/logo.webp" alt="" width="36" height="36" loading="lazy"><span>WinSend</span></a><p>Transférez vos fichiers sur votre réseau local. La synchronisation cloud facultative partage uniquement le texte du presse-papiers.</p></div>
-            <nav aria-label="Navigation de bas de page" class="site-footer-links"><a href="/fr/features/">Fonctionnalités</a><a href="/fr/guides/">Guides</a><a href="/fr/telecharger/">Télécharger</a><a href="/fr/securite/" aria-current="page">Sécurité</a><a href="/fr/confidentialite/">Confidentialité</a></nav>
+            <div><a href="/fr/" class="site-brand"><img src="/logo.webp" alt="" width="36" height="36" loading="lazy"><span>WinSend</span></a><p>Une alternative à AirDrop entre iPhone et PC Windows. Les fichiers passent par votre réseau local ; le transfert cloud facultatif ne transmet que du texte. AirDrop est une marque d’Apple Inc. ; WinSend n’est pas affilié à Apple.</p></div>
+            <nav aria-label="Liens de bas de page" class="site-footer-links"><a href="/fr/fonctionnalites/">Fonctionnalités</a><a href="/fr/guides/">Guides</a><a href="/fr/telecharger/">Télécharger</a><a href="/fr/securite/" aria-current="page">Sécurité</a><a href="/fr/confidentialite/">Confidentialité</a></nav>
         </div>
         <p class="site-copyright">© 2026 WinSend. Tous droits réservés.</p>
     </footer>

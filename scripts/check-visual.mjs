@@ -40,7 +40,7 @@ export async function checkVisual(origin) {
     await send('Page.enable');
     await send('Network.enable');
     await send('Network.setBlockedURLs', { urls: ['*://*.posthog.com/*', '*://*.posthog-static.com/*'] });
-    const routes = ['/', '/en/features/', '/en/guides/', '/en/download/', '/zh/', '/zh/features/', '/zh/guides/', '/zh/download/', '/fr/', '/fr/features/', '/fr/guides/', '/fr/telecharger/', '/fr/installation/', '/fr/securite/', '/fr/confidentialite/', '/fr/guides/transfert-iphone-pc/', '/fr/guides/presse-papiers-iphone-windows/'];
+    const routes = ['/', '/en/features/', '/en/guides/', '/en/download/', '/zh/', '/zh/features/', '/zh/guides/', '/zh/download/', '/fr/', '/fr/fonctionnalites/', '/fr/guides/', '/fr/telecharger/', '/fr/installation/', '/fr/securite/', '/fr/confidentialite/', '/fr/guides/transfert-iphone-pc/', '/fr/guides/presse-papiers-iphone-windows/'];
     const report = [];
     for (const [mode, width, height] of [['desktop', 1366, 900], ['mobile', 390, 844]]) {
       await send('Emulation.setDeviceMetricsOverride', { width, height, deviceScaleFactor: 1, mobile: mode === 'mobile' });

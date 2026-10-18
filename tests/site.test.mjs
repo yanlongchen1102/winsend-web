@@ -97,10 +97,11 @@ test('French edition shares core layouts and navigation, localized navigation an
   assert.deepEqual([...home.matchAll(/<section\b[^>]*>/g)].map(match => match[0]), [...enHome.matchAll(/<section\b[^>]*>/g)].map(match => match[0]));
   assert.equal((home.match(/class="feature-preview /g) || []).length, 3);
   assert.ok(home.includes('class="cloud-section"'));
-  const features = outputs.get('fr/features/index.html');
+  const features = outputs.get('fr/fonctionnalites/index.html');
   for (const id of ['file-transfer', 'windows-to-iphone', 'iphone-to-windows', 'cloud-clipboard']) assert.ok(features.includes(`id="${id}"`));
   assert.equal((features.match(/<video /g) || []).length, 4);
-  assert.ok(home.includes('href="/fr/features/"'));
+  assert.ok(home.includes('href="/fr/fonctionnalites/"'));
+  assert.ok(home.includes('<meta property="og:locale" content="fr_FR">'));
   assert.ok(home.includes('href="/fr/guides/"'));
   assert.ok(outputs.get('fr/guides/index.html').includes('href="/fr/guides/transfert-iphone-pc/"'));
   assert.ok(home.includes('site-nav--fixed'));
@@ -110,6 +111,16 @@ test('French edition shares core layouts and navigation, localized navigation an
   }
   assert.ok(outputs.get('fr/installation/index.html').includes('hero-bg px-6 pt-32 pb-14'));
   assert.ok(download.includes('data-download-surface="download_page"'));
+});
+
+test('French source copy uses non-breaking spaces before double punctuation', () => {
+  const dir = path.join(ROOT, 'site/content/fr');
+  for (const name of fs.readdirSync(dir)) {
+    if (name.endsWith('.head.html')) continue;
+    const text = fs.readFileSync(path.join(dir, name), 'utf8');
+    const bad = text.match(/.{0,30} [:;?!»](?![\w/]).{0,10}|«(?![\u00a0\u202f])/u);
+    assert.equal(bad, null, `${name}: ${bad && bad[0]}`);
+  }
 });
 
 test('custom locale navigation rejects links to unpublished pages', t => {

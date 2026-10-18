@@ -1,5 +1,23 @@
 [
-  {"page":"airdrop-for-windows","category":"Photos et fichiers","title":"Transférer des fichiers de l’iPhone vers un PC","description":"Envoyez des photos, vidéos et documents via le partage d’iOS. Découvrez les conditions réseau, les formats et les vérifications en cas d’échec.","cta":"Lire le guide de transfert →"},
-  {"page":"copy-iphone-to-windows","category":"Presse-papiers et Raccourcis","title":"Copier sur l’iPhone, coller sur Windows","description":"Partagez du texte localement et configurez un Raccourci déclenché. Comprenez les droits Pro, le cloud facultatif et les restrictions d’iOS.","cta":"Configurer le partage du texte →"},
-  {"page":"setup","category":"Installation","title":"Installer et connecter WinSend","description":"Installez les applications, accordez les permissions nécessaires et vérifiez la découverte, le pare-feu et l’accessibilité du réseau local.","cta":"Voir le guide d’installation →"}
+  {
+    "page": "airdrop-for-windows",
+    "category": "Photos et fichiers",
+    "title": "Transférer des photos de l’iPhone vers le PC",
+    "description": "Depuis Photos ou Fichiers, sans câble ni iTunes. Avec les questions de format, de qualité et les solutions en cas d’échec.",
+    "cta": "Lire le guide →"
+  },
+  {
+    "page": "copy-iphone-to-windows",
+    "category": "Presse-papiers",
+    "title": "Copier-coller entre iPhone et PC",
+    "description": "Envoi manuel gratuit, Raccourci Toucher le dos, et transfert cloud quand les appareils ne sont pas sur le même réseau.",
+    "cta": "Lire le guide →"
+  },
+  {
+    "page": "setup",
+    "category": "Installation",
+    "title": "Connecter l’iPhone au PC",
+    "description": "Installation, autorisations, pare-feu, et que faire si l’iPhone ne détecte pas le PC.",
+    "cta": "Lire le guide →"
+  }
 ]

@@ -40,7 +40,7 @@ try {
     await new Promise(resolve => setTimeout(resolve, 500));
   }
   assert.ok(ready, `Local preview did not become ready:\n${log}`);
-  for (const pathname of ['/', '/zh/', '/en/guides/setup/', '/zh/download/', '/fr/', '/fr/features/', '/fr/guides/', '/fr/guides/presse-papiers-iphone-windows/', '/fr/telecharger/', '/fr/installation/', '/fr/securite/', '/fr/confidentialite/', '/fr/guides/transfert-iphone-pc/', '/assets/css/site.css', '/assets/css/marketing.css']) {
+  for (const pathname of ['/', '/zh/', '/en/guides/setup/', '/zh/download/', '/fr/', '/fr/fonctionnalites/', '/fr/guides/', '/fr/guides/presse-papiers-iphone-windows/', '/fr/telecharger/', '/fr/installation/', '/fr/securite/', '/fr/confidentialite/', '/fr/guides/transfert-iphone-pc/', '/assets/css/site.css', '/assets/css/marketing.css']) {
     const response = await fetch(origin + pathname, { redirect: 'manual', signal: AbortSignal.timeout(5000) });
     assert.equal(response.status, 200, pathname);
     const text = await response.text();

@@ -5,7 +5,7 @@
   "locales": [
     { "code": "en", "htmlLang": "en", "name": "English", "status": "published" },
     { "code": "zh", "htmlLang": "zh-CN", "name": "中文", "status": "published" },
-    { "code": "fr", "htmlLang": "fr", "name": "Français", "status": "published" },
+    { "code": "fr", "htmlLang": "fr", "ogLocale": "fr_FR", "name": "Français", "status": "published" },
     { "code": "ja", "htmlLang": "ja", "name": "日本語", "status": "draft" },
     { "code": "de", "htmlLang": "de", "name": "Deutsch", "status": "draft" },
     { "code": "es", "htmlLang": "es", "name": "Español", "status": "draft" }

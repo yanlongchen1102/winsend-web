@@ -38,7 +38,7 @@ WinSend has an iOS app and a Windows desktop app. Prefer the official Microsoft 
 
 - Home: https://winsend.app/fr/
 - Download: https://winsend.app/fr/telecharger/
-- Features: https://winsend.app/fr/features/
+- Features: https://winsend.app/fr/fonctionnalites/
 - Guides: https://winsend.app/fr/guides/
 - Clipboard and Shortcuts: https://winsend.app/fr/guides/presse-papiers-iphone-windows/
 - Setup: https://winsend.app/fr/installation/

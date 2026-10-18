@@ -8,8 +8,8 @@
 
 | 页面 ID | URL | 候选查询 / 意图（尚未调研验证） |
 | --- | --- | --- |
-| home | `/fr/` | WinSend、transfert iPhone Windows：认识产品与限制 |
-| features | `/fr/features/` | 功能展示：四个与中英文对应的演示区块 |
+| home | `/fr/` | alternative AirDrop PC Windows、transfert iPhone PC sans câble：认识产品 |
+| features | `/fr/fonctionnalites/` | 功能展示：四个与中英文对应的演示区块 |
 | guides | `/fr/guides/` | 指南中心：真实已发布的教程卡片 |
 | copy-iphone-to-windows | `/fr/guides/presse-papiers-iphone-windows/` | copier iPhone coller Windows：剪贴板与 Raccourcis |
 | download | `/fr/telecharger/` | télécharger WinSend：找到官方安装入口 |
@@ -22,7 +22,7 @@
 
 ## FAQ 的法语搜索意图覆盖
 
-首页 8 问：无互联网、本地传输类型、免费/Pro、不同网络、云端不传照片、云剪贴板设置、安全和设备发现失败。传文件指南 7 问：AirDrop 与 Windows、无 USB/无 WinSend 账号、Ethernet/Wi-Fi、文件格式、照片质量、大视频及 iCloud 来源文件。
+首页 8 问：无互联网、本地传输类型、免费/Pro、不同网络、是否使用 AirDrop、云端传输设置、安全和设备发现失败。传文件指南 7 问：AirDrop 与 Windows、无需 USB/iTunes/账号、Ethernet/Wi-Fi、文件格式、照片质量、大视频及 iCloud 来源文件。
 
 首页回答是否适合使用，指南回答如何完成任务；不要求机械复制英文的条数和措辞。候选表达包括 `transférer photos iPhone PC sans câble`、`transfert iPhone Windows gratuit`、`vidéo iPhone vers PC`、`photos iPhone PC sans perte de qualité`。这些只是内容意图假设，不是经过搜索量或 SERP 核验的关键词结论。
 
@@ -53,3 +53,11 @@
 - [ ] 用 GSC 非品牌展示/点击和下载点击观察效果，再决定新主题或下一语言；不要将下载点击等同于安装或首次成功传输。
 
 若暂不希望部署法语，将 `site/config.json` 中 `fr.status` 改回 `draft` 并重新构建。构建器会移除未被手改的托管法语 HTML 与相关入口，不删除源内容。
+
+## 2026-10-18 法语文案重写
+
+- 按法语原生写法重写全部九页文案：先讲用途，限制只保留影响使用的一句，详细限制集中在安全页、FAQ 和 `productScope`。事实口径仍以 `PRODUCT_FACTS.md` 为准。
+- 术语对齐 iOS App 法语界面：« Transfert cloud »、« code de jumelage »、« Envoyer au PC »、« Recevoir du PC »、« Configurer les raccourcis »、« WinSend Copy Sync »。Windows 端没有法语界面，按英文菜单名引用（« Cloud Transfer » > « Generate Pairing Code & Connect »）。
+- 功能页 URL 改为 `/fr/fonctionnalites/`（法语版尚未部署，无需重定向）；`og:locale` 为 `fr_FR`。
+- 法语标点前统一使用不换行空格（`:` 前 U+00A0，`; ? !` 前 U+202F），由 `tests/site.test.mjs` 检查。
+- 仍需母语审校后再发布。
