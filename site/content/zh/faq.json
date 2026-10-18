@@ -130,5 +130,27 @@
       "question": "Snapdrop 真的不用安装任何东西吗？",
       "answer": "是的。Snapdrop 完全在两端设备的浏览器中运行——各自打开网站即可。这是它在临时传输场景下最大的优势。WinSend 需要在 Windows 电脑和 iPhone 上各安装一次，但之后每次传输都更快发起：不用一直开着浏览器标签页，还能直接从 iPhone 分享面板发送。"
     }
+  ],
+  "cross-platform-transfer-tools": [
+    {
+      "question": "Windows 有 AirDrop（隔空投送）吗？",
+      "answer": "没有。苹果的 AirDrop 只能在苹果设备之间使用。想在 iPhone 和 Windows 电脑之间获得类似体验，可以用第三方工具：WinSend（专为 iPhone + Windows 设计，可从 iOS 分享菜单直接发送）、LocalSend（免费开源，全平台）、PairDrop（浏览器即用，无需安装）或 Send Anywhere（可跨网络）。"
+    },
+    {
+      "question": "这些 AirDrop 替代工具支持 Windows 10 吗？",
+      "answer": "支持。WinSend 支持 Windows 10 和 Windows 11（64 位），iPhone 需要 iOS 15.6 或更高版本。LocalSend、Feem 和 Send Anywhere 也有 Windows 客户端，PairDrop 在任何现代浏览器里都能用。"
+    },
+    {
+      "question": "有免费的 Windows 版 AirDrop 替代工具吗？",
+      "answer": "有。LocalSend 完全免费开源，PairDrop 在浏览器里免费使用。WinSend 可以免费试用：新用户有一次性的免费传输额度，全部功能都能试用；之后一次买断 WinSend Pro，没有使用额度限制。"
+    },
+    {
+      "question": "Snapdrop 怎么了？",
+      "answer": "Snapdrop 已被 LimeWire 收购。AlternativeTo 已将它标为停止服务，并称网站在上传文件后会跳转到 LimeWire。PairDrop 是仍在维护的开源分支，保留了同样的浏览器用法。"
+    },
+    {
+      "question": "iPhone 和电脑不在同一个 Wi-Fi，能传文件吗？",
+      "answer": "Send Anywhere 和配对后的 PairDrop 可以跨网络连接。WinSend、LocalSend 和 Feem 通过局域网传文件；WinSend 的可选云传输只支持剪贴板文字。小技巧：让电脑连上 iPhone 的个人热点，两台设备就在同一个局域网里了。"
+    }
   ]
 }

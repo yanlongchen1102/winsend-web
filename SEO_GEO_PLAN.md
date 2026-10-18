@@ -151,7 +151,10 @@
 
 **待做（按优先级）：**
 - [ ] 全站加 `og:image`（社交分享和 AI 引用的预览图）
-- [ ] 横评页加 Article 结构化数据和 `dateModified`
+- [x] 横评页 GEO 加固（en/zh，2026-10-18）：显示更新日期、开头直接回答、Article + FAQPage 结构化数据、5 条 FAQ（AirDrop for Windows、Windows 10、免费选项、Snapdrop 现状、跨网络）；核实竞品现状：Snapdrop → PairDrop、Feem v4 → v5、LocalSend 1.18 新功能；WinSend 段落改为真实按钮名和试用后买断
+- [ ] **WinSend vs Snapdrop 对比页（en/zh）按 Snapdrop 被 LimeWire 收购的现状改写**：还在引导用户访问 snapdrop.net；可以改成"Snapdrop 不能用了怎么办"，顺势承接故障词，并介绍 PairDrop
+- [ ] **WinSend vs LocalSend 对比页核对 LocalSend 1.18**："接收方每次都要点接受"已不完全准确（收藏设备可自动接收），Windows 已集成分享菜单
+- [ ] 横评页每季度复核一次竞品信息并更新"最后更新"日期（它是 AI 引用最多的页面）
 - [ ] 补厚英文页面：下载页（约 140 词）、功能页（约 240 词）
 - [ ] 新内容——优先做竞争小、需求明确的词：
   - [ ] Intel Unison 替代（Unison 已于 2025 年停止服务）
@@ -272,6 +275,7 @@ AI 搜索主要引用第三方来源，自己网站的内容对 GEO 作用有限
 
 ## 七、决策日志（新的写在最上面）
 
+- **2026-10-18（横评页 GEO 加固）**：横评页占 AI 引用约 60%，优先加固。联网核实发现 Snapdrop 已被 LimeWire 收购（AlternativeTo 标为停止服务），横评页改推 PairDrop；Feem 已到 v5；LocalSend 1.18（2026-08）新增 Windows 分享菜单和链接接收。新增 FAQ 覆盖 AI 数据里的高频问题（Windows 10、free、下载）。
 - **2026-10-18（Bing AI Performance）**：确认 GEO 已经起效，状态从"有苗头"改为"已起效"。中文"隔空投送"类问题引用占比 26–35%，印证中文 AirDrop 教程改为主攻"Windows 隔空投送"的方向。下一步重点是提高英文头部问题的引用占比。
 - **2026-10-18（Bing 数据）**：Bing 上首页承接 "airdrop for windows / pc"，第 6–7 位。首页标题改为 "AirDrop for Windows & PC: iPhone File Transfer"，补上 "PC"。中文 AirDrop 教程在 Bing 有 438 次曝光，不放弃 AirDrop 相关词，改为主攻"Windows 隔空投送"，和中文首页（Windows 版 AirDrop）、中文横评页（替代工具）区分开。英文 AirDrop 教程在 Bing 只有 19 次曝光，维持改做照片长尾。
 - **2026-10-18**：根据 GSC 数据调整页面分工——横评页主攻 "AirDrop alternative for Windows"，剪贴板教程主攻 "copy from iPhone and paste on Windows"，AirDrop 教程改为 "transfer photos from iPhone to PC"，首页主攻品牌词。首页新增内链区块。

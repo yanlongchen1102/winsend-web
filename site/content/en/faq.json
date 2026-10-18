@@ -130,5 +130,27 @@
       "question": "Does Snapdrop work without installing anything?",
       "answer": "Yes. Snapdrop runs entirely in the browser on both devices — just open the website on each. That is its biggest strength for one-off transfers. WinSend requires installing the Windows client and the iOS app once, but after that every transfer is faster to start: no browser tabs to keep open, and you can send straight from the iPhone share sheet."
     }
+  ],
+  "cross-platform-transfer-tools": [
+    {
+      "question": "Is there an AirDrop for Windows?",
+      "answer": "No. Apple's AirDrop only works between Apple devices. To get a similar experience between an iPhone and a Windows PC, use a third-party tool: WinSend (built for iPhone + Windows, sends from the iOS share sheet), LocalSend (free and open source on every major platform), PairDrop (in the browser, no install) or Send Anywhere (across different networks)."
+    },
+    {
+      "question": "Do these AirDrop alternatives work on Windows 10?",
+      "answer": "Yes. WinSend supports Windows 10 and Windows 11 (64-bit) with iOS 15.6 or later. LocalSend, Feem and Send Anywhere also have Windows apps, and PairDrop runs in any modern browser."
+    },
+    {
+      "question": "Is there a free AirDrop alternative for Windows?",
+      "answer": "Yes. LocalSend is completely free and open source, and PairDrop is free in the browser. WinSend is free to try: new users get a one-time transfer allowance covering every feature, then WinSend Pro is a one-time purchase with no usage limits."
+    },
+    {
+      "question": "What happened to Snapdrop?",
+      "answer": "Snapdrop was acquired by LimeWire. AlternativeTo lists it as discontinued and reports that the site redirects to LimeWire after you upload a file. PairDrop is the actively maintained open-source fork with the same browser-based approach."
+    },
+    {
+      "question": "Can I transfer files from iPhone to PC without being on the same Wi-Fi?",
+      "answer": "Send Anywhere and paired PairDrop devices can connect across different networks. WinSend, LocalSend and Feem send files over the local network; WinSend's optional cloud transfer covers clipboard text only. Tip: connect the PC to your iPhone's Personal Hotspot to put both devices on the same local network."
+    }
   ]
 }

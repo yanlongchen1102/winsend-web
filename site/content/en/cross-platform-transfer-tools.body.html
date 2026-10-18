@@ -6,6 +6,7 @@
                     <p class="text-sm font-semibold tracking-[0.24em] text-blue-600 uppercase mb-4">Tool Roundup</p>
                     <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight mb-6">5 Best AirDrop Alternatives for Windows (2026)</h1>
                     <p class="text-xl text-gray-600 leading-9 max-w-3xl">Compare five ways to transfer photos, videos, and files from iPhone to Windows PC. Choose a local-network app, a browser tool, or a cross-network service based on your workflow.</p>
+                    <p class="mt-4 text-sm text-gray-500">Last updated: <time datetime="2026-10-18">October 18, 2026</time></p>
                 </header>
             </div>
         </section>
@@ -13,10 +14,11 @@
             <div class="max-w-4xl mx-auto">
                 <article class="prose">
                     <h2>Quick Answer: Which AirDrop Alternative Should You Choose?</h2>
+                    <p>Windows has no AirDrop: Apple's AirDrop only works between Apple devices. To send files from an iPhone to a Windows 10 or Windows 11 PC wirelessly, use one of these tools instead:</p>
                     <ul>
                         <li><strong>WinSend:</strong> for iPhone and Windows users who want local file transfer plus clipboard sync.</li>
                         <li><strong>LocalSend:</strong> for a free, open-source tool across several operating systems.</li>
-                        <li><strong>Snapdrop:</strong> for occasional browser-based transfers without installing an app.</li>
+                        <li><strong>PairDrop:</strong> for occasional browser-based transfers without installing an app (Snapdrop has been acquired by LimeWire; PairDrop is its open-source fork).</li>
                         <li><strong>Send Anywhere:</strong> for sending files when devices are on different networks.</li>
                     </ul>
                     <p>Looking specifically for text copy and paste? Read our <a href="{{links.copy-iphone-to-windows}}">guide to sharing clipboard between iPhone and Windows</a>.</p>
@@ -48,7 +50,7 @@
                                     <td><strong>WinSend</strong></td>
                                     <td><span class="tag tag-free">Free trial</span> App</td>
                                     <td>Windows + iOS</td>
-                                    <td>Local network only</td>
+                                    <td>Local network (optional cloud for text)</td>
                                     <td>Dedicated Win ↔ iPhone users</td>
                                 </tr>
                                 <tr>
@@ -59,15 +61,15 @@
                                     <td>Privacy-focused users</td>
                                 </tr>
                                 <tr>
-                                    <td><strong>Snapdrop</strong></td>
+                                    <td><strong>PairDrop</strong></td>
                                     <td><span class="tag tag-free">Free</span><span class="tag tag-web">Web</span></td>
                                     <td>Any browser</td>
-                                    <td>Needs snapdrop.net access</td>
+                                    <td>Needs pairdrop.net access</td>
                                     <td>Quick, one-off transfers</td>
                                 </tr>
                                 <tr>
-                                    <td><strong>Feem v4</strong></td>
-                                    <td><span class="tag tag-free">Free with ads</span></td>
+                                    <td><strong>Feem</strong></td>
+                                    <td><span class="tag tag-free">Free</span><span class="tag tag-paid">Pro license</span></td>
                                     <td>All major platforms</td>
                                     <td>Local network only</td>
                                     <td>Chat-style file sharing</td>
@@ -95,7 +97,7 @@
                         </div>
                         <p>WinSend is built specifically for <strong>wireless file and clipboard sharing between Windows and iPhone</strong>. Files and photos transfer directly over a reachable LAN without a cloud file upload or WinSend account. Optional cloud clipboard relays encrypted text only. For the clipboard-only setup, follow the <a href="{{links.copy-iphone-to-windows}}">iPhone-to-Windows clipboard sync guide</a>.</p>
                         <div class="info-grid">
-                            <div class="info-item"><strong>Platforms</strong>Windows, iOS</div>
+                            <div class="info-item"><strong>Platforms</strong>Windows 10/11, iOS 15.6+</div>
                             <div class="info-item"><strong>Transfer Method</strong>LAN HTTP + WebSocket</div>
                             <div class="info-item"><strong>Pricing</strong>Free trial; one-time Pro purchase, no usage limits</div>
                             <div class="info-item"><strong>Highlights</strong>Clipboard sync, photo/file transfer, auto-discovery</div>
@@ -103,10 +105,10 @@
                         <img src="images/winsend-screenshot-1.png" alt="WinSend iOS app interface" class="screenshot" decoding="async" loading="lazy">
                         <h4>How to Use It</h4>
                         <ol>
-                            <li>Download and run the WinSend client on your Windows PC;</li>
+                            <li>Install WinSend on your Windows PC (Microsoft Store recommended);</li>
                             <li>Install the WinSend iOS app and make sure both devices are on the same Wi-Fi;</li>
                             <li>Open the app — your Windows PC should appear automatically;</li>
-                            <li>Tap “Get from PC” to sync clipboard, or “Send Photos/Files” to transfer from iPhone to PC;</li>
+                            <li>Tap “Get from PC” to fetch the PC clipboard, or “Choose Images and Send to PC” / “Choose Files and Send to PC” to transfer from iPhone; you can also send straight from the Photos share sheet;</li>
                             <li>If auto-discovery fails, use “Manual Connect” and enter your PC's local IP address.</li>
                         </ol>
                         <div class="pros-cons">
@@ -114,7 +116,7 @@
                                 <h4>Pros</h4>
                                 <ul>
                                     <li>Optimized for Windows + iPhone workflows;</li>
-                                    <li>True two-way clipboard sync;</li>
+                                    <li>Two-way clipboard transfer, plus Back Tap Shortcuts;</li>
                                     <li>Fast local network transfers, no internet needed;</li>
                                     <li>No account or sign-up required.</li>
                                 </ul>
@@ -123,7 +125,7 @@
                                 <h4>Cons</h4>
                                 <ul>
                                     <li>Only supports Windows ↔ iOS;</li>
-                                    <li>Advanced features require Pro subscription;</li>
+                                    <li>Free trial, then a one-time WinSend Pro purchase;</li>
                                     <li>Windows client needs to stay running in the background.</li>
                                 </ul>
                             </div>
@@ -152,7 +154,7 @@
                             <li>Make sure devices are on the same Wi-Fi or LAN;</li>
                             <li>Open the app, go to the Send tab, and select files or text;</li>
                             <li>Choose the target device from the Nearby Devices list;</li>
-                            <li>The receiver taps Accept, and the transfer completes.</li>
+                            <li>The receiver accepts the transfer (files from favorite devices can be accepted automatically).</li>
                         </ol>
                         <div class="pros-cons">
                             <div class="pros">
@@ -161,13 +163,13 @@
                                     <li>Fully free and open source, no ads;</li>
                                     <li>Supports nearly every major OS;</li>
                                     <li>HTTPS-encrypted transfers for strong privacy;</li>
-                                    <li>Clean interface and easy device discovery.</li>
+                                    <li>Clean interface; on Windows it appears in the File Explorer share menu (v1.18).</li>
                                 </ul>
                             </div>
                             <div class="cons">
                                 <h4>Cons</h4>
                                 <ul>
-                                    <li>Requires installing a client on every device;</li>
+                                    <li>Both devices normally need the app (newer versions can also receive via a browser link);</li>
                                     <li>Multicast discovery may be blocked on corporate or guest networks;</li>
                                     <li>iOS background discovery can be inconsistent.</li>
                                 </ul>
@@ -177,45 +179,45 @@
 
                     <div class="tool-card">
                         <div class="tool-header">
-                            <img src="images/snapdrop-logo.png" alt="Snapdrop Logo" class="logo" decoding="async" loading="lazy">
                             <div>
-                                <p class="name">Snapdrop</p>
-                                <p class="subtitle">Browser-based AirDrop-style sharing</p>
+                                <p class="name">PairDrop</p>
+                                <p class="subtitle">Browser-based AirDrop-style sharing (the open-source Snapdrop fork)</p>
                             </div>
                         </div>
-                        <p>Snapdrop is a WebRTC-powered web app that looks and feels like AirDrop. As long as both devices are on the same network and open snapdrop.net, they can discover each other and exchange files. Its biggest advantage is that <strong>no installation is required</strong>, making it perfect for occasional or one-time transfers.</p>
+                        <p>PairDrop is an open-source fork of Snapdrop that runs in any modern browser. Open <a href="https://pairdrop.net" target="_blank" rel="noopener">pairdrop.net</a> on both devices and they find each other on the same network; you can also pair devices with a 6-digit code so they find each other later, even across networks. The biggest advantage is that <strong>no installation is required</strong>.</p>
+                        <p><strong>What happened to Snapdrop?</strong> Snapdrop was acquired by LimeWire. AlternativeTo now lists it as discontinued and reports that the site redirects to LimeWire after you upload a file. If you liked Snapdrop, PairDrop keeps the same browser-based approach and is still maintained.</p>
                         <div class="info-grid">
                             <div class="info-item"><strong>Platforms</strong>Any modern browser</div>
-                            <div class="info-item"><strong>Transfer Method</strong>WebRTC P2P / WebSocket</div>
-                            <div class="info-item"><strong>Pricing</strong>Free</div>
-                            <div class="info-item"><strong>Highlights</strong>Zero install, instant use, PWA support</div>
+                            <div class="info-item"><strong>Transfer Method</strong>WebRTC P2P (TURN relay across networks)</div>
+                            <div class="info-item"><strong>Pricing</strong>Free and open source (GPL-3.0)</div>
+                            <div class="info-item"><strong>Highlights</strong>Zero install, device pairing, text sharing, PWA</div>
                         </div>
-                        <img src="images/snapdrop-screenshot.webp" alt="Snapdrop web interface" class="screenshot" decoding="async" loading="lazy">
+                        <img src="images/snapdrop-screenshot.webp" alt="Snapdrop's original browser interface, which PairDrop keeps" class="screenshot" decoding="async" loading="lazy">
                         <h4>How to Use It</h4>
                         <ol>
                             <li>Open a browser on both your Windows PC and iPhone;</li>
-                            <li>Visit <a href="https://snapdrop.net" target="_blank">snapdrop.net</a> on both devices;</li>
-                            <li>Wait for each device to appear on the other's screen;</li>
-                            <li>Tap the target device icon and choose the file or text to send;</li>
-                            <li>Confirm on the receiving side to start the transfer.</li>
+                            <li>Visit <a href="https://pairdrop.net" target="_blank" rel="noopener">pairdrop.net</a> on both devices;</li>
+                            <li>Wait for each device to appear, or pair them with a 6-digit code;</li>
+                            <li>Tap the target device and choose a file, or right-click / long-press to send text;</li>
+                            <li>The file downloads on the receiving device.</li>
                         </ol>
                         <div class="pros-cons">
                             <div class="pros">
                                 <h4>Pros</h4>
                                 <ul>
                                     <li>No app installation needed;</li>
-                                    <li>Extremely simple, AirDrop-like interface;</li>
-                                    <li>PWA support lets you add it to your home screen;</li>
-                                    <li>Works on anything with a browser.</li>
+                                    <li>Simple, AirDrop-like interface;</li>
+                                    <li>Free and open source; can be self-hosted;</li>
+                                    <li>Paired devices can connect across networks.</li>
                                 </ul>
                             </div>
                             <div class="cons">
                                 <h4>Cons</h4>
                                 <ul>
-                                    <li>Relies on a public server for initial discovery;</li>
-                                    <li>Large file transfers are less stable than native apps;</li>
-                                    <li>VPNs and complex networks can break discovery;</li>
-                                    <li>Downloaded files may be renamed automatically.</li>
+                                    <li>Relies on the pairdrop.net server for discovery (unless self-hosted);</li>
+                                    <li>Large transfers are less stable than native apps;</li>
+                                    <li>No iOS share sheet integration: you open the browser each time;</li>
+                                    <li>VPNs and restrictive networks can break discovery.</li>
                                 </ul>
                             </div>
                         </div>
@@ -225,21 +227,21 @@
                         <div class="tool-header">
                             <img src="images/feem-logo.png" alt="Feem Logo" class="logo" decoding="async" loading="lazy">
                             <div>
-                                <p class="name">Feem v4</p>
+                                <p class="name">Feem</p>
                                 <p class="subtitle">Chat-style file sharing across devices</p>
                             </div>
                         </div>
-                        <p>Feem v4 is a long-standing cross-platform transfer tool built around a chat-like experience. It has clients for Windows, iOS, Android, macOS, and Linux. Devices on the same Wi-Fi automatically discover each other, and you can send text, images, videos, and even folders through conversation-style sessions.</p>
+                        <p>Feem is a long-standing cross-platform transfer tool built around a chat-like experience; the current version is Feem v5, with one license across platforms. It has clients for Windows, macOS, iOS and Android. Devices on the same Wi-Fi automatically discover each other, and you can send text, images, videos, and even folders through conversation-style sessions.</p>
                         <div class="info-grid">
                             <div class="info-item"><strong>Platforms</strong>Windows, iOS, Android, macOS, Linux</div>
                             <div class="info-item"><strong>Transfer Method</strong>LAN Wi-Fi Direct / HTTP</div>
-                            <div class="info-item"><strong>Pricing</strong>Free with ads; paid to remove ads</div>
+                            <div class="info-item"><strong>Pricing</strong>Free; paid Feem Pro license unlocks more</div>
                             <div class="info-item"><strong>Highlights</strong>Chat sessions, transfer history, Wi-Fi Direct</div>
                         </div>
                         <img src="images/feem-screenshot.webp" alt="Feem app interface" class="screenshot" decoding="async" loading="lazy">
                         <h4>How to Use It</h4>
                         <ol>
-                            <li>Install Feem v4 on both Windows and iPhone;</li>
+                            <li>Install Feem on both Windows and iPhone;</li>
                             <li>Open the app and wait for devices to appear;</li>
                             <li>Select the target device to open a chat session;</li>
                             <li>Tap the attachment button to send files or paste text directly;</li>
@@ -250,7 +252,7 @@
                                 <h4>Pros</h4>
                                 <ul>
                                     <li>Chat-style history makes transfers easy to track;</li>
-                                    <li>Supports folder transfers in some versions;</li>
+                                    <li>Feem v5 keeps folder structure when sending folders;</li>
                                     <li>Established tool with a broad user base;</li>
                                     <li>No internet required; pure local network transfer.</li>
                                 </ul>
@@ -258,10 +260,10 @@
                             <div class="cons">
                                 <h4>Cons</h4>
                                 <ul>
-                                    <li>Free version includes ads and feels dated;</li>
+                                    <li>Some features need a paid Feem Pro license;</li>
                                     <li>iOS integration with the system share sheet is weak;</li>
                                     <li>Some users report connection instability after updates;</li>
-                                    <li>Feem v5 is now available, so v4 support is uncertain.</li>
+                                    <li>Older Feem v4 setups need upgrading to v5 to stay current.</li>
                                 </ul>
                             </div>
                         </div>
@@ -304,7 +306,7 @@
                             <div class="cons">
                                 <h4>Cons</h4>
                                 <ul>
-                                    <li>Free version has file size and daily transfer limits;</li>
+                                    <li>Free version shows ads and has limits; paid plans remove them;</li>
                                     <li>Cross-network transfers may go through relay servers;</li>
                                     <li>Privacy-conscious users should review data handling;</li>
                                     <li>Interface includes ads and upsells.</li>
@@ -319,7 +321,7 @@
                     <div class="step-card">
                         <span class="step-badge">STEP 1</span>
                         <h3>Install the Windows Client</h3>
-                        <p>Visit <a href="https://winsend.app" target="_blank">winsend.app</a> and download the Windows installer. Run it and allow local network access when prompted. Once running, the WinSend icon appears in your system tray.</p>
+                        <p>Install WinSend for Windows from the Microsoft Store (or the installer on <a href="https://winsend.app" target="_blank">winsend.app</a>). It runs on Windows 10 and Windows 11. Allow local network access when prompted. Once running, the WinSend icon appears in your system tray.</p>
                     </div>
                     <div class="step-card">
                         <span class="step-badge">STEP 2</span>
@@ -343,8 +345,8 @@
                         <h3>Start Transferring</h3>
                         <p>Once connected:</p>
                         <ul>
-                            <li><strong>iPhone → Windows:</strong> Tap “Send Photos to PC” or “Send Files to PC,” select your content, and it transfers directly to your Windows download folder.</li>
-                            <li><strong>Windows → iPhone:</strong> Copy text or an image on your PC, then tap “Get Clipboard from PC” in the iOS app to sync it to your phone.</li>
+                            <li><strong>iPhone → Windows:</strong> Tap “Choose Images and Send to PC” or “Choose Files and Send to PC,” select your content, and it transfers directly to your Windows download folder.</li>
+                            <li><strong>Windows → iPhone:</strong> Copy text or an image on your PC, then tap “Get from PC” in the iOS app to sync it to your phone.</li>
                             <li><strong>Clipboard Sync:</strong> Transfer text manually in either direction. Automatic text sync remains subject to iOS execution limits; trigger a configured Shortcut to send from another app.</li>
                         </ul>
                     </div>
@@ -358,10 +360,12 @@
                     <ul>
                         <li><strong>Mostly Windows + iPhone, want seamless clipboard and file sync</strong> → Choose <strong>WinSend</strong>. It's purpose-built for this exact workflow.</li>
                         <li><strong>Need full ecosystem coverage and care about open source/privacy</strong> → Choose <strong>LocalSend</strong>. Free, open source, and encrypted.</li>
-                        <li><strong>Occasional one-off transfers, don't want to install anything</strong> → Choose <strong>Snapdrop</strong>. Just open a browser.</li>
-                        <li><strong>Prefer chat-style sessions and transfer history</strong> → Choose <strong>Feem v4</strong>.</li>
+                        <li><strong>Occasional one-off transfers, don't want to install anything</strong> → Choose <strong>PairDrop</strong>. Just open a browser.</li>
+                        <li><strong>Prefer chat-style sessions and transfer history</strong> → Choose <strong>Feem</strong>.</li>
                         <li><strong>Devices are on different networks or you send large files remotely</strong> → Choose <strong>Send Anywhere</strong>.</li>
                     </ul>
+
+                    {{{faq}}}
 
                     <h2>Get Started</h2>
                     <p>Ready to transfer files between your iPhone and Windows PC? Download WinSend and follow the <a href="{{links.setup}}">installation and pairing guide</a>. If your main task is copying text and links, use the dedicated <a href="{{links.copy-iphone-to-windows}}">iPhone-to-Windows clipboard sync guide</a>.</p>

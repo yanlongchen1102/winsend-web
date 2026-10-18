@@ -74,8 +74,9 @@
         .tag-web { background: #f3e8ff; color: #6b21a8; }
     </style>
     <script src="/assets/js/posthog.js" defer></script>
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"2026 年 Windows 版 AirDrop 替代工具推荐：5 款对比 | WinSend","description":"iPhone 怎么无线传文件到 Windows 电脑？对比 WinSend、LocalSend、Snapdrop、Feem、Send Anywhere 五款 AirDrop 替代工具的优缺点、价格和上手步骤。","url":"https://winsend.app/zh/guides/cross-platform-transfer-tools/","mainEntityOfPage":"https://winsend.app/zh/guides/cross-platform-transfer-tools/","inLanguage":"zh-CN","datePublished":"2026-07-20","dateModified":"2026-10-18","author":{"@type":"Organization","name":"WinSend","url":"https://winsend.app/"},"publisher":{"@type":"Organization","name":"WinSend","logo":{"@type":"ImageObject","url":"https://winsend.app/logo.png"}}}</script>
 
-
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Windows 有 AirDrop（隔空投送）吗？","acceptedAnswer":{"@type":"Answer","text":"没有。苹果的 AirDrop 只能在苹果设备之间使用。想在 iPhone 和 Windows 电脑之间获得类似体验，可以用第三方工具：WinSend（专为 iPhone + Windows 设计，可从 iOS 分享菜单直接发送）、LocalSend（免费开源，全平台）、PairDrop（浏览器即用，无需安装）或 Send Anywhere（可跨网络）。"}},{"@type":"Question","name":"这些 AirDrop 替代工具支持 Windows 10 吗？","acceptedAnswer":{"@type":"Answer","text":"支持。WinSend 支持 Windows 10 和 Windows 11（64 位），iPhone 需要 iOS 15.6 或更高版本。LocalSend、Feem 和 Send Anywhere 也有 Windows 客户端，PairDrop 在任何现代浏览器里都能用。"}},{"@type":"Question","name":"有免费的 Windows 版 AirDrop 替代工具吗？","acceptedAnswer":{"@type":"Answer","text":"有。LocalSend 完全免费开源，PairDrop 在浏览器里免费使用。WinSend 可以免费试用：新用户有一次性的免费传输额度，全部功能都能试用；之后一次买断 WinSend Pro，没有使用额度限制。"}},{"@type":"Question","name":"Snapdrop 怎么了？","acceptedAnswer":{"@type":"Answer","text":"Snapdrop 已被 LimeWire 收购。AlternativeTo 已将它标为停止服务，并称网站在上传文件后会跳转到 LimeWire。PairDrop 是仍在维护的开源分支，保留了同样的浏览器用法。"}},{"@type":"Question","name":"iPhone 和电脑不在同一个 Wi-Fi，能传文件吗？","acceptedAnswer":{"@type":"Answer","text":"Send Anywhere 和配对后的 PairDrop 可以跨网络连接。WinSend、LocalSend 和 Feem 通过局域网传文件；WinSend 的可选云传输只支持剪贴板文字。小技巧：让电脑连上 iPhone 的个人热点，两台设备就在同一个局域网里了。"}}]}</script>
 </head>
 <body class="bg-white text-gray-900 antialiased">
     <nav aria-label="主导航" class="site-nav site-nav--fixed">
@@ -103,6 +104,7 @@
                     <p class="text-sm font-semibold tracking-[0.24em] text-blue-600 uppercase mb-4">工具盘点</p>
                     <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight mb-6">2026 年最佳 Windows AirDrop 替代工具</h1>
                     <p class="text-xl text-gray-600 leading-9 max-w-3xl">对比 5 种 iPhone 传文件到 Windows 电脑的方法，按局域网客户端、浏览器临时传输和跨网络传输等不同场景选择合适工具。</p>
+                    <p class="mt-4 text-sm text-gray-500">最后更新：<time datetime="2026-10-18">2026 年 10 月 18 日</time></p>
                 </header>
             </div>
         </section>
@@ -110,10 +112,11 @@
             <div class="max-w-4xl mx-auto">
                 <article class="prose">
                     <h2>快速选择：哪款 AirDrop 替代工具适合你？</h2>
+                    <p>Windows 没有 AirDrop（隔空投送），它只能在苹果设备之间使用。想把 iPhone 上的文件无线传到 Windows 10 或 Windows 11 电脑，可以用下面这些工具：</p>
                     <ul>
                         <li><strong>WinSend：</strong>适合需要在 iPhone 和 Windows 间传文件，同时希望同步剪贴板的用户。</li>
                         <li><strong>LocalSend：</strong>适合需要免费开源、覆盖多种操作系统的用户。</li>
-                        <li><strong>Snapdrop：</strong>适合偶尔使用、不想安装 App 的浏览器临时传输。</li>
+                        <li><strong>PairDrop：</strong>适合偶尔使用、不想安装 App 的浏览器临时传输（Snapdrop 已被 LimeWire 收购，PairDrop 是它的开源分支）。</li>
                         <li><strong>Send Anywhere：</strong>适合设备不在同一网络时传文件。</li>
                     </ul>
                     <p>如果你只想同步复制粘贴的文字和链接，请看 <a href="/zh/guides/copy-iphone-to-windows/">iPhone 与 Windows 剪贴板同步教程</a>。</p>
@@ -145,7 +148,7 @@
                                     <td><strong>WinSend</strong></td>
                                     <td><span class="tag tag-free">免费试用</span> 客户端</td>
                                     <td>Windows + iOS</td>
-                                    <td>仅需局域网</td>
+                                    <td>局域网（文字可选云端）</td>
                                     <td>专注 Win ↔ iPhone 用户</td>
                                 </tr>
                                 <tr>
@@ -156,15 +159,15 @@
                                     <td>隐私敏感、技术用户</td>
                                 </tr>
                                 <tr>
-                                    <td><strong>Snapdrop</strong></td>
+                                    <td><strong>PairDrop</strong></td>
                                     <td><span class="tag tag-free">免费</span><span class="tag tag-web">网页</span></td>
                                     <td>浏览器即可</td>
-                                    <td>需能访问 snapdrop 站点</td>
+                                    <td>需能访问 pairdrop.net</td>
                                     <td>临时、轻量使用</td>
                                 </tr>
                                 <tr>
-                                    <td><strong>Feem v4</strong></td>
-                                    <td><span class="tag tag-free">免费含广告</span></td>
+                                    <td><strong>Feem</strong></td>
+                                    <td><span class="tag tag-free">免费</span><span class="tag tag-paid">Pro 授权</span></td>
                                     <td>全平台</td>
                                     <td>仅需局域网</td>
                                     <td>喜欢聊天式传输的用户</td>
@@ -192,7 +195,7 @@
                         </div>
                         <p>WinSend 是一款专注于 <strong>Windows 电脑与 iPhone 之间无线传输</strong>的工具。文件和照片通过可互通的局域网直传，无需云文件上传或 WinSend 账号。可选云剪贴板只中转加密文字。</p>
                         <div class="info-grid">
-                            <div class="info-item"><strong>支持平台</strong>Windows、iOS</div>
+                            <div class="info-item"><strong>支持平台</strong>Windows 10/11、iOS 15.6+</div>
                             <div class="info-item"><strong>传输方式</strong>局域网 HTTP + WebSocket</div>
                             <div class="info-item"><strong>费用</strong>免费试用；一次买断 Pro，无使用额度限制</div>
                             <div class="info-item"><strong>特色</strong>剪贴板同步、相册/文件互传、自动发现</div>
@@ -200,10 +203,10 @@
                         <img src="images/winsend-screenshot-1.png" alt="WinSend iOS 界面" class="screenshot" decoding="async" loading="lazy">
                         <h4>基本使用方式</h4>
                         <ol>
-                            <li>在 Windows 电脑上下载并运行 WinSend 客户端；</li>
+                            <li>在 Windows 电脑上安装 WinSend（推荐通过 Microsoft Store）；</li>
                             <li>在 iPhone 上安装 WinSend App，确保两台设备连接同一个 Wi-Fi；</li>
                             <li>打开 App，iPhone 会自动发现局域网中的 Windows 设备；</li>
-                            <li>点击“从电脑获取”可同步剪贴板，点击“发送图片/文件”可将手机内容传到电脑；</li>
+                            <li>点击“从电脑获取”可获取电脑剪贴板，点击“选择图片并传输到PC”或“选择文件并传输到电脑”可把手机内容传到电脑，也可以在相册分享菜单里直接发送；</li>
                             <li>如果自动发现失败，可使用“手动连接”输入 Windows 电脑的 IP 地址。</li>
                         </ol>
                         <div class="pros-cons">
@@ -211,7 +214,7 @@
                                 <h4>优点</h4>
                                 <ul>
                                     <li>专为 Windows + iPhone 场景优化，操作简单；</li>
-                                    <li>支持剪贴板双向同步，复制粘贴无缝衔接；</li>
+                                    <li>剪贴板可双向传输，还支持轻点背面快捷指令；</li>
                                     <li>无需互联网，局域网内传输速度快；</li>
                                     <li>无需注册账号，保护隐私。</li>
                                 </ul>
@@ -220,7 +223,7 @@
                                 <h4>缺点</h4>
                                 <ul>
                                     <li>目前仅支持 Windows ↔ iOS；</li>
-                                    <li>高级功能需要订阅 Pro；</li>
+                                    <li>免费试用后需一次买断 WinSend Pro；</li>
                                     <li>Windows 端每次使用需保持后台运行。</li>
                                 </ul>
                             </div>
@@ -249,7 +252,7 @@
                             <li>确保设备在同一 Wi-Fi 或局域网内；</li>
                             <li>打开 App，进入“发送”标签页，选择要发送的文件或文本；</li>
                             <li>在“附近设备”列表中选择目标设备；</li>
-                            <li>接收方点击“接受”后，文件即可传输完成。</li>
+                            <li>接收方确认后即可完成传输（来自收藏设备的文件可自动接收）。</li>
                         </ol>
                         <div class="pros-cons">
                             <div class="pros">
@@ -258,13 +261,13 @@
                                     <li>完全开源免费，无广告、无内购；</li>
                                     <li>支持几乎所有主流操作系统；</li>
                                     <li>HTTPS 加密传输，安全性高；</li>
-                                    <li>界面简洁，自动发现设备很方便。</li>
+                                    <li>界面简洁；Windows 版已集成到资源管理器的分享菜单（1.18 版）。</li>
                                 </ul>
                             </div>
                             <div class="cons">
                                 <h4>缺点</h4>
                                 <ul>
-                                    <li>必须安装客户端，无法通过浏览器直接使用；</li>
+                                    <li>通常两端都要安装 App（新版本也支持通过浏览器链接接收）；</li>
                                     <li>部分网络环境（如企业网、访客网络）可能阻断多播发现；</li>
                                     <li>iOS 端因系统限制，后台自动发现有时不够稳定。</li>
                                 </ul>
@@ -274,45 +277,45 @@
 
                     <div class="tool-card">
                         <div class="tool-header">
-                            <img src="images/snapdrop-logo.png" alt="Snapdrop Logo" class="logo" decoding="async" loading="lazy">
                             <div>
-                                <p class="name">Snapdrop</p>
-                                <p class="subtitle">打开浏览器就能用的网页版“AirDrop”</p>
+                                <p class="name">PairDrop</p>
+                                <p class="subtitle">打开浏览器就能用的网页版“AirDrop”（Snapdrop 的开源分支）</p>
                             </div>
                         </div>
-                        <p>Snapdrop 是一个基于 WebRTC 的网页应用，界面酷似 AirDrop。只要两台设备在同一网络下并打开 snapdrop.net，就能互相发现、拖拽或点击发送文件。它最大的优势是<strong>无需安装任何 App</strong>，非常适合临时使用或给别人一次性传文件。</p>
+                        <p>PairDrop 是 Snapdrop 的开源分支，在任何现代浏览器里都能用。两台设备打开 <a href="https://pairdrop.net" target="_blank" rel="noopener">pairdrop.net</a>，在同一网络下就能互相发现；也可以用 6 位配对码把设备配对，之后跨网络也能找到对方。它最大的优势是<strong>无需安装任何 App</strong>。</p>
+                        <p><strong>Snapdrop 怎么了？</strong>Snapdrop 已被 LimeWire 收购。AlternativeTo 已将它标为停止服务，并称网站在上传文件后会跳转到 LimeWire。如果你习惯 Snapdrop，PairDrop 保留了同样的浏览器用法，而且仍在维护。</p>
                         <div class="info-grid">
                             <div class="info-item"><strong>支持平台</strong>任何现代浏览器</div>
-                            <div class="info-item"><strong>传输方式</strong>WebRTC P2P / WebSocket</div>
-                            <div class="info-item"><strong>费用</strong>免费</div>
-                            <div class="info-item"><strong>特色</strong>零安装、打开即用、PWA 支持</div>
+                            <div class="info-item"><strong>传输方式</strong>WebRTC P2P（跨网络时经 TURN 中转）</div>
+                            <div class="info-item"><strong>费用</strong>免费开源（GPL-3.0）</div>
+                            <div class="info-item"><strong>特色</strong>零安装、设备配对、可发文字、PWA</div>
                         </div>
-                        <img src="images/snapdrop-screenshot.webp" alt="Snapdrop 网页界面" class="screenshot" decoding="async" loading="lazy">
+                        <img src="images/snapdrop-screenshot.webp" alt="Snapdrop 原版网页界面，PairDrop 沿用了相同布局" class="screenshot" decoding="async" loading="lazy">
                         <h4>基本使用方式</h4>
                         <ol>
                             <li>在 Windows 电脑和 iPhone 上同时打开浏览器；</li>
-                            <li>访问 <a href="https://snapdrop.net" target="_blank">snapdrop.net</a>（或自托管版本）；</li>
-                            <li>等待页面显示出对方的设备名称；</li>
-                            <li>点击对方设备图标，选择要发送的文件或输入文字；</li>
-                            <li>接收方确认后，文件开始传输。</li>
+                            <li>访问 <a href="https://pairdrop.net" target="_blank" rel="noopener">pairdrop.net</a>；</li>
+                            <li>等待页面显示出对方设备，或用 6 位配对码配对；</li>
+                            <li>点击对方设备选择文件，或右键 / 长按发送文字；</li>
+                            <li>文件会在接收设备上直接下载。</li>
                         </ol>
                         <div class="pros-cons">
                             <div class="pros">
                                 <h4>优点</h4>
                                 <ul>
                                     <li>无需安装，打开网页即可使用；</li>
-                                    <li>界面极简，学习成本几乎为零；</li>
-                                    <li>支持 PWA，可像原生 App 一样添加到主屏幕；</li>
-                                    <li>跨平台能力极强，任何能开浏览器的设备都能用。</li>
+                                    <li>界面简洁，接近 AirDrop；</li>
+                                    <li>免费开源，可以自己部署；</li>
+                                    <li>配对后的设备可以跨网络连接。</li>
                                 </ul>
                             </div>
                             <div class="cons">
                                 <h4>缺点</h4>
                                 <ul>
-                                    <li>依赖公网服务器做初始发现，偶尔会出现设备不显示；</li>
+                                    <li>设备发现依赖 pairdrop.net 服务器（自建除外）；</li>
                                     <li>大文件传输不如本地客户端稳定；</li>
-                                    <li>VPN、复杂网络环境容易影响连接；</li>
-                                    <li>下载的文件名可能被自动重命名。</li>
+                                    <li>没有 iOS 分享菜单集成，每次都要打开浏览器；</li>
+                                    <li>VPN 和受限网络容易影响发现。</li>
                                 </ul>
                             </div>
                         </div>
@@ -322,21 +325,21 @@
                         <div class="tool-header">
                             <img src="images/feem-logo.png" alt="Feem Logo" class="logo" decoding="async" loading="lazy">
                             <div>
-                                <p class="name">Feem v4</p>
+                                <p class="name">Feem</p>
                                 <p class="subtitle">像聊天一样发文件的跨平台传输工具</p>
                             </div>
                         </div>
-                        <p>Feem v4 是一款老牌跨平台传输工具，主打“像聊天一样传文件”。它在 Windows、iOS、Android、macOS、Linux 上都有客户端，设备在同一 Wi-Fi 下会自动发现，支持文字、图片、视频、文件夹等多种内容传输。</p>
+                        <p>Feem 是一款老牌跨平台传输工具，主打“像聊天一样传文件”，当前版本是 Feem v5，一个授权通用所有平台。它在 Windows、macOS、iOS、Android 上都有客户端，设备在同一 Wi-Fi 下会自动发现，支持文字、图片、视频、文件夹等多种内容传输。</p>
                         <div class="info-grid">
                             <div class="info-item"><strong>支持平台</strong>Windows、iOS、Android、macOS、Linux</div>
                             <div class="info-item"><strong>传输方式</strong>局域网 Wi-Fi Direct / HTTP</div>
-                            <div class="info-item"><strong>费用</strong>免费含广告，付费去广告</div>
+                            <div class="info-item"><strong>费用</strong>免费；付费 Feem Pro 授权解锁更多功能</div>
                             <div class="info-item"><strong>特色</strong>聊天式会话、历史记录、Wi-Fi Direct</div>
                         </div>
                         <img src="images/feem-screenshot.webp" alt="Feem 界面" class="screenshot" decoding="async" loading="lazy">
                         <h4>基本使用方式</h4>
                         <ol>
-                            <li>在 Windows 和 iPhone 上分别安装 Feem v4；</li>
+                            <li>在 Windows 和 iPhone 上分别安装 Feem；</li>
                             <li>打开应用，等待设备列表中出现对方；</li>
                             <li>选择目标设备，进入“聊天窗口”；</li>
                             <li>点击附件按钮选择文件，或直接粘贴文字发送；</li>
@@ -347,7 +350,7 @@
                                 <h4>优点</h4>
                                 <ul>
                                     <li>聊天式界面，传输历史一目了然；</li>
-                                    <li>支持文件夹结构传输（部分版本）；</li>
+                                    <li>Feem v5 传文件夹时保留目录结构；</li>
                                     <li>老牌工具，用户群体较广；</li>
                                     <li>无需互联网，纯局域网传输。</li>
                                 </ul>
@@ -355,10 +358,10 @@
                             <div class="cons">
                                 <h4>缺点</h4>
                                 <ul>
-                                    <li>免费版有广告，界面不够现代；</li>
+                                    <li>部分功能需要付费 Feem Pro 授权；</li>
                                     <li>iOS 端与系统分享菜单集成不够好；</li>
                                     <li>部分用户反馈更新后连接不稳定；</li>
-                                    <li>已推出 Feem v5，v4 后续维护存疑。</li>
+                                    <li>旧的 Feem v4 需要升级到 v5 才能获得更新。</li>
                                 </ul>
                             </div>
                         </div>
@@ -401,7 +404,7 @@
                             <div class="cons">
                                 <h4>缺点</h4>
                                 <ul>
-                                    <li>免费版有文件大小和每日传输次数限制；</li>
+                                    <li>免费版有广告和使用限制，付费版可解除；</li>
                                     <li>跨网络传输时数据可能经过中继服务器；</li>
                                     <li>对隐私极度敏感的用户需谨慎；</li>
                                     <li>界面相对复杂，广告/推广较多。</li>
@@ -416,7 +419,7 @@
                     <div class="step-card">
                         <span class="step-badge">第 1 步</span>
                         <h3>安装 Windows 端</h3>
-                        <p>访问 <a href="https://winsend.app" target="_blank">winsend.app</a> 下载 Windows 安装包，安装后运行。首次运行可能会请求本地网络权限，请点击允许。运行后，Windows 端会在系统托盘显示图标，表示服务已启动。</p>
+                        <p>通过 Microsoft Store 安装 WinSend Windows 版（也可以在 <a href="https://winsend.app" target="_blank">winsend.app</a> 下载安装包），支持 Windows 10 和 Windows 11。首次运行可能会请求本地网络权限，请点击允许。运行后，Windows 端会在系统托盘显示图标，表示服务已启动。</p>
                     </div>
                     <div class="step-card">
                         <span class="step-badge">第 2 步</span>
@@ -440,8 +443,8 @@
                         <h3>开始传输</h3>
                         <p>连接成功后：</p>
                         <ul>
-                            <li><strong>iPhone → Windows</strong>：点击“发送图片到电脑”或“发送文件到电脑”，选择内容后即可传输。Windows 端会自动保存到下载目录并弹出通知。</li>
-                            <li><strong>Windows → iPhone</strong>：在 Windows 端复制一段文字或图片，iPhone 上点击“从电脑获取剪贴板”，即可把内容同步到手机剪贴板或相册。</li>
+                            <li><strong>iPhone → Windows</strong>：点击“选择图片并传输到PC”或“选择文件并传输到电脑”，选择内容后即可传输。Windows 端会自动保存到下载目录并弹出通知。</li>
+                            <li><strong>Windows → iPhone</strong>：在 Windows 端复制一段文字或图片，iPhone 上点击“从电脑获取”，即可把内容同步到手机剪贴板或相册。</li>
                             <li><strong>剪贴板同步</strong>：可手动双向传输文字。自动文字同步受 iOS 运行限制；从其他应用发送时可主动触发已配置的快捷指令。</li>
                         </ul>
                     </div>
@@ -455,10 +458,21 @@
                     <ul>
                         <li><strong>主要用 Windows + iPhone，追求剪贴板/文件无缝同步</strong> → 选 <strong>WinSend</strong>，专门为这个场景设计。</li>
                         <li><strong>需要覆盖全家桶（Win/Mac/Linux/Android/iOS），重视开源和隐私</strong> → 选 <strong>LocalSend</strong>，免费开源、加密传输。</li>
-                        <li><strong>临时给别人传文件，不想安装任何软件</strong> → 选 <strong>Snapdrop</strong>，浏览器打开即用。</li>
-                        <li><strong>喜欢聊天式会话，需要历史记录</strong> → 选 <strong>Feem v4</strong>，会话体验更直观。</li>
+                        <li><strong>临时给别人传文件，不想安装任何软件</strong> → 选 <strong>PairDrop</strong>，浏览器打开即用。</li>
+                        <li><strong>喜欢聊天式会话，需要历史记录</strong> → 选 <strong>Feem</strong>，会话体验更直观。</li>
                         <li><strong>设备不在同一网络，或需要传给异地朋友大文件</strong> → 选 <strong>Send Anywhere</strong>，6 位密钥跨网络传输。</li>
                     </ul>
+
+                            <section id="faq" class="site-faq">
+            <h2>常见问题</h2>
+            <div class="site-faq-items">                <details class="site-faq-item"><summary>Windows 有 AirDrop（隔空投送）吗？</summary><p>没有。苹果的 AirDrop 只能在苹果设备之间使用。想在 iPhone 和 Windows 电脑之间获得类似体验，可以用第三方工具：WinSend（专为 iPhone + Windows 设计，可从 iOS 分享菜单直接发送）、LocalSend（免费开源，全平台）、PairDrop（浏览器即用，无需安装）或 Send Anywhere（可跨网络）。</p></details>
+                <details class="site-faq-item"><summary>这些 AirDrop 替代工具支持 Windows 10 吗？</summary><p>支持。WinSend 支持 Windows 10 和 Windows 11（64 位），iPhone 需要 iOS 15.6 或更高版本。LocalSend、Feem 和 Send Anywhere 也有 Windows 客户端，PairDrop 在任何现代浏览器里都能用。</p></details>
+                <details class="site-faq-item"><summary>有免费的 Windows 版 AirDrop 替代工具吗？</summary><p>有。LocalSend 完全免费开源，PairDrop 在浏览器里免费使用。WinSend 可以免费试用：新用户有一次性的免费传输额度，全部功能都能试用；之后一次买断 WinSend Pro，没有使用额度限制。</p></details>
+                <details class="site-faq-item"><summary>Snapdrop 怎么了？</summary><p>Snapdrop 已被 LimeWire 收购。AlternativeTo 已将它标为停止服务，并称网站在上传文件后会跳转到 LimeWire。PairDrop 是仍在维护的开源分支，保留了同样的浏览器用法。</p></details>
+                <details class="site-faq-item"><summary>iPhone 和电脑不在同一个 Wi-Fi，能传文件吗？</summary><p>Send Anywhere 和配对后的 PairDrop 可以跨网络连接。WinSend、LocalSend 和 Feem 通过局域网传文件；WinSend 的可选云传输只支持剪贴板文字。小技巧：让电脑连上 iPhone 的个人热点，两台设备就在同一个局域网里了。</p></details>
+</div>
+        </section>
+
 
                     <h2>开始使用</h2>
                     <p>想让 iPhone 和 Windows 之间获得 AirDrop 般的传输体验？先下载 WinSend，再按照<a href="/zh/guides/setup/">安装与配对教程</a>完成配对，配对不到一分钟。</p>
