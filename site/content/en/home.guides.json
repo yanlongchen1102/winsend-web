@@ -24,6 +24,13 @@
       "cta": "Read the guide →"
     },
     {
+      "page": "phone-link-iphone",
+      "category": "Phone Link",
+      "title": "Phone Link for iPhone: What It Can and Can't Do",
+      "description": "Calls, texts and files work; the clipboard doesn't. Setup and alternatives.",
+      "cta": "Read the guide →"
+    },
+    {
       "page": "winsend-vs-localsend",
       "category": "WinSend vs LocalSend",
       "title": "Which One Fits iPhone and Windows?",
@@ -35,13 +42,6 @@
       "category": "WinSend vs Snapdrop",
       "title": "When Snapdrop Can't Find Your Devices",
       "description": "A native-app alternative for reliable iPhone-to-PC transfers on your network.",
-      "cta": "Compare →"
-    },
-    {
-      "page": "winsend-vs-sendanywhere",
-      "category": "WinSend vs Send Anywhere",
-      "title": "Local Transfer vs Relay Servers",
-      "description": "File size limits, relay privacy and clipboard features compared.",
       "cta": "Compare →"
     }
   ]

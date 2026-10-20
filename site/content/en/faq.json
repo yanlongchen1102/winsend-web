@@ -37,6 +37,10 @@
       "answer": "WinSend transfers photos, videos and files over LAN, and clipboard text locally or with optional Cloud Sync. Source apps or system export may change the file representation."
     },
     {
+      "question": "Does WinSend work on Windows 11 and Windows 10?",
+      "answer": "Yes. WinSend runs on Windows 11 and Windows 10 (64-bit), and the iPhone app needs iOS 15.6 or later (iOS 16 for Shortcuts). Install it from the Microsoft Store, open it on the PC, and your iPhone finds it on the same local network."
+    },
+    {
       "question": "Can I use WinSend on different networks?",
       "answer": "Yes. Enable cloud clipboard sync to share copied text when both devices have internet access. Files and photos still require a local network connection."
     },
@@ -137,6 +141,10 @@
       "answer": "No. Apple's AirDrop only works between Apple devices. To get a similar experience between an iPhone and a Windows PC, use a third-party tool: WinSend (built for iPhone + Windows, sends from the iOS share sheet), LocalSend (free and open source on every major platform), PairDrop (in the browser, no install) or Send Anywhere (across different networks)."
     },
     {
+      "question": "Does Windows have a built-in AirDrop for iPhone?",
+      "answer": "The closest built-in option is Microsoft Phone Link with the Link to Windows app on the iPhone. On Windows 10 and 11 it can share files in both directions, plus calls, texts and notifications. It does not sync the iPhone clipboard, which is where tools like WinSend come in."
+    },
+    {
       "question": "Do these AirDrop alternatives work on Windows 10?",
       "answer": "Yes. WinSend supports Windows 10 and Windows 11 (64-bit) with iOS 15.6 or later. LocalSend, Feem and Send Anywhere also have Windows apps, and PairDrop runs in any modern browser."
     },
@@ -151,6 +159,28 @@
     {
       "question": "Can I transfer files from iPhone to PC without being on the same Wi-Fi?",
       "answer": "Send Anywhere and paired PairDrop devices can connect across different networks. WinSend, LocalSend and Feem send files over the local network; WinSend's optional cloud transfer covers clipboard text only. Tip: connect the PC to your iPhone's Personal Hotspot to put both devices on the same local network."
+    }
+  ],
+  "phone-link-iphone": [
+    {
+      "question": "Does Phone Link work with iPhone?",
+      "answer": "Yes. With the Link to Windows app on the iPhone, Phone Link on Windows 10 and 11 handles calls, single-person text messages, notifications and file sharing in both directions."
+    },
+    {
+      "question": "Can Phone Link transfer files from iPhone to PC?",
+      "answer": "Yes, on iOS 16 or later. Select the files on the iPhone, tap Share, choose Link to Windows and pick your PC. To go the other way, right-click a file on the PC, choose Share and then My Phone."
+    },
+    {
+      "question": "Does Phone Link sync the clipboard with iPhone?",
+      "answer": "No. Phone Link does not sync the clipboard with an iPhone, and Windows' cloud clipboard only works with Windows PCs and Android phones. For iPhone copy and paste, use a tool such as WinSend."
+    },
+    {
+      "question": "Why does Phone Link only show some of my iPhone messages?",
+      "answer": "With an iPhone, Phone Link only shows messages sent or received while the phone is connected to the PC over Bluetooth. Group messages and photos or videos inside messages are not supported."
+    },
+    {
+      "question": "Is there an alternative to Phone Link for iPhone?",
+      "answer": "Yes. WinSend focuses on files and the clipboard over your local network, including a Back Tap shortcut to send copied text to the PC. Free tools such as LocalSend and PairDrop also send files between iPhone and Windows."
     }
   ]
 }

@@ -37,6 +37,10 @@
       "answer": "文件、照片和视频走局域网；剪贴板文字可本地传输或使用可选云同步。来源应用或系统导出可能改变文件表示。"
     },
     {
+      "question": "WinSend 支持 Windows 11 和 Windows 10 吗？",
+      "answer": "支持。WinSend 可在 Windows 11 和 Windows 10（64 位）上运行，iPhone 端需要 iOS 15.6 或更高版本（快捷指令需要 iOS 16）。从 Microsoft Store 安装并在电脑上打开，iPhone 在同一局域网内就能自动找到它。"
+    },
+    {
       "question": "不在同一个 Wi-Fi 下能用吗？",
       "answer": "可以。启用云剪贴板后，两台设备都能联网即可跨网络分享剪贴板文本。文件和照片仍需要局域网连接。"
     },
@@ -135,6 +139,10 @@
     {
       "question": "Windows 有 AirDrop（隔空投送）吗？",
       "answer": "没有。苹果的 AirDrop 只能在苹果设备之间使用。想在 iPhone 和 Windows 电脑之间获得类似体验，可以用第三方工具：WinSend（专为 iPhone + Windows 设计，可从 iOS 分享菜单直接发送）、LocalSend（免费开源，全平台）、PairDrop（浏览器即用，无需安装）或 Send Anywhere（可跨网络）。"
+    },
+    {
+      "question": "Windows 有自带的 iPhone 隔空投送吗？",
+      "answer": "最接近的是微软自带的“手机连接”（Phone Link），配合 iPhone 上的 Link to Windows App。在 Windows 10 和 11 上，它可以双向传文件，也能接打电话、收发短信和显示通知，但不支持 iPhone 剪贴板同步。需要在 iPhone 和电脑之间复制粘贴时，可以用 WinSend 这类工具。"
     },
     {
       "question": "这些 AirDrop 替代工具支持 Windows 10 吗？",

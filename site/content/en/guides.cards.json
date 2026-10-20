@@ -14,6 +14,13 @@
     "page": "cross-platform-transfer-tools"
   },
   {
+    "category": "Phone Link",
+    "title": "Phone Link for iPhone: What Works and What Doesn't",
+    "description": "Calls, texts and file sharing with Microsoft Phone Link, what it can't do on iPhone, and how to set it up.",
+    "cta": "Read the Phone Link guide",
+    "page": "phone-link-iphone"
+  },
+  {
     "category": "Comparison",
     "title": "WinSend vs LocalSend",
     "description": "Share sheet integration vs open-source flexibility — an honest look at which AirDrop alternative fits your iPhone & Windows workflow.",

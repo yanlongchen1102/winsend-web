@@ -87,8 +87,8 @@
     "status": "published",
     "path": "/en/guides/cross-platform-transfer-tools/",
     "title": "5 Best AirDrop Alternatives for Windows (2026) | WinSend",
-    "description": "Need AirDrop on a Windows PC? Compare 5 alternatives (WinSend, LocalSend, Snapdrop, Feem and Send Anywhere) for sending files from iPhone to PC.",
-    "lastmod": "2026-10-18",
+    "description": "Need AirDrop on a Windows PC? Compare WinSend, LocalSend, PairDrop, Feem and Send Anywhere, plus what Microsoft Phone Link can do with an iPhone.",
+    "lastmod": "2026-10-20",
     "bodyClass": "bg-white text-gray-900 antialiased",
     "navigationMode": "fixed",
     "robots": "index,follow,max-image-preview:large"
@@ -142,5 +142,14 @@
     "bodyClass": "bg-white text-gray-900 antialiased",
     "navigationMode": "fixed",
     "robots": "index,follow"
+  },
+  "phone-link-iphone": {
+    "status": "published",
+    "path": "/en/guides/phone-link-iphone/",
+    "title": "Phone Link for iPhone: What Works and What Doesn't (2026)",
+    "description": "Phone Link works with iPhone for calls, texts, notifications and files on Windows 10/11. What it can't do, how to set it up and when to use an alternative.",
+    "lastmod": "2026-10-20",
+    "bodyClass": "bg-white text-gray-900 antialiased",
+    "navigationMode": "fixed"
   }
 }

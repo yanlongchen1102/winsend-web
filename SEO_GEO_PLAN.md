@@ -159,7 +159,8 @@
 - [ ] 补厚英文页面：下载页（约 140 词）、功能页（约 240 词）
 - [ ] 新内容——优先做竞争小、需求明确的词：
   - [ ] Intel Unison 替代（Unison 已于 2025 年停止服务）
-  - [ ] Phone Link（手机连接）用 iPhone 的替代方案（写之前核实微软的最新支持情况）
+  - [x] Phone Link for iPhone（2026-10-20，英文）：如实介绍能做什么、怎么设置、做不到什么（剪贴板），以及什么时候用 WinSend
+  - [ ] Phone Link 文章中文版（中文在 Bing 和 AI 搜索上表现好）
   - [ ] Universal Clipboard for Windows（借苹果功能名的精准词）
   - [ ] 不用 iTunes 把 iPhone 照片传到 Windows 11
   - [ ] iPhone 无线传大视频到电脑、不压缩画质
@@ -280,6 +281,7 @@ AI 搜索主要引用第三方来源，自己网站的内容对 GEO 作用有限
 
 ## 七、决策日志（新的写在最上面）
 
+- **2026-10-20（Phone Link 与定位）**：核实到微软 Phone Link 已支持 iPhone 与 Windows 10/11 双向传文件（iPhone 走分享菜单"Link to Windows"，2026 年起不再限于 Insider）。WinSend 的"分享菜单直传""支持 Windows 10"不再是独有卖点；真正的差异是 **iPhone 剪贴板**（Phone Link 不支持）、**轻点背面一键发送**、**跨网络文字**、不依赖蓝牙。对外卖点今后更多放在"iPhone 复制、电脑粘贴"上。新增 Phone Link 文章；横评页加入"微软 Phone Link 怎么样"一节（中英文）。首页首屏标签改为 "AirDrop for Windows 11 & 10"，中英文首页 FAQ 新增 Windows 11/10 问答。Bing 关键词工具里 Intel Unison、Universal Clipboard 等词无数据，暂缓。
 - **2026-10-18（德语、西班牙语）**：按法语版的标准新增德语和西班牙语各 9 页，暂不翻译横评页和对比页，先观察数据。西班牙语写成通用西语，避免只在西班牙使用的 vosotros 变位，拼写跟随 App（如 vídeo、Ajustes）。
 - **2026-10-18（发布）**：`feat/multilingual-fr-seo` 合并到 main 并部署。法语暂时没有母语审校资源，决定先上线、按数据决定是否继续投入。
 - **2026-10-18（横评页 GEO 加固）**：横评页占 AI 引用约 60%，优先加固。联网核实发现 Snapdrop 已被 LimeWire 收购（AlternativeTo 标为停止服务），横评页改推 PairDrop；Feem 已到 v5；LocalSend 1.18（2026-08）新增 Windows 分享菜单和链接接收。新增 FAQ 覆盖 AI 数据里的高频问题（Windows 10、free、下载）。
