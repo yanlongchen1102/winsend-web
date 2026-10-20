@@ -158,7 +158,7 @@
 - [ ] 横评页每季度复核一次竞品信息并更新"最后更新"日期（它是 AI 引用最多的页面）
 - [ ] 补厚英文页面：下载页（约 140 词）、功能页（约 240 词）
 - [ ] 新内容——优先做竞争小、需求明确的词：
-  - [ ] Intel Unison 替代（Unison 已于 2025 年停止服务）
+  - [x] Intel Unison 替代（2026-10-20，英文，实验）：Unison 2025-06-30 停止服务；"intel unison" 在 Bing 3 个月 22.3K 次。验收：4–8 周后该页每月有几百次曝光并带来下载点击，即证明"停服产品替代"思路有效
   - [x] Phone Link for iPhone（2026-10-20，英文）：如实介绍能做什么、怎么设置、做不到什么（剪贴板），以及什么时候用 WinSend
   - [ ] Phone Link 文章中文版（中文在 Bing 和 AI 搜索上表现好）
   - [ ] Universal Clipboard for Windows（借苹果功能名的精准词）
@@ -281,6 +281,7 @@ AI 搜索主要引用第三方来源，自己网站的内容对 GEO 作用有限
 
 ## 七、决策日志（新的写在最上面）
 
+- **2026-10-20（Intel Unison 实验）**：Bing 关键词工具显示 "intel unison" 仍有 22.3K 次/3 个月，搜的人多半是发现它停用后在找替代品，只是不会搜 "alternative"。写一篇如实的停服说明 + 按功能对应的替代方案（通话短信 → Phone Link；文件照片 → Phone Link/WinSend/LocalSend；剪贴板 → WinSend），与 Phone Link 文章互链。只做英文。
 - **2026-10-20（Phone Link 与定位）**：核实到微软 Phone Link 已支持 iPhone 与 Windows 10/11 双向传文件（iPhone 走分享菜单"Link to Windows"，2026 年起不再限于 Insider）。WinSend 的"分享菜单直传""支持 Windows 10"不再是独有卖点；真正的差异是 **iPhone 剪贴板**（Phone Link 不支持）、**轻点背面一键发送**、**跨网络文字**、不依赖蓝牙。对外卖点今后更多放在"iPhone 复制、电脑粘贴"上。新增 Phone Link 文章；横评页加入"微软 Phone Link 怎么样"一节（中英文）。首页首屏标签改为 "AirDrop for Windows 11 & 10"，中英文首页 FAQ 新增 Windows 11/10 问答。Bing 关键词工具里 Intel Unison、Universal Clipboard 等词无数据，暂缓。
 - **2026-10-18（德语、西班牙语）**：按法语版的标准新增德语和西班牙语各 9 页，暂不翻译横评页和对比页，先观察数据。西班牙语写成通用西语，避免只在西班牙使用的 vosotros 变位，拼写跟随 App（如 vídeo、Ajustes）。
 - **2026-10-18（发布）**：`feat/multilingual-fr-seo` 合并到 main 并部署。法语暂时没有母语审校资源，决定先上线、按数据决定是否继续投入。

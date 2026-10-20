@@ -18,6 +18,7 @@
 | `/en/guides/copy-iphone-to-windows/` | **how to copy from iPhone and paste on Windows** | How to Copy from iPhone and Paste on Windows (No Cable) | 曝光 4,308，点击率 3.0%（标题刚改，待验证） |
 | `/en/guides/airdrop-for-windows/` | **transfer photos from iPhone to PC** | Transfer Photos from iPhone to PC Without a Cable \| WinSend | Google 未进前 10；Bing 只有 19 次曝光。2026-10-18 改为照片长尾，把 "AirDrop" 让给首页和横评页 |
 | `/en/guides/phone-link-iphone/`（2026-10-20 新增） | **phone link iphone** / phone link iphone file transfer | Phone Link for iPhone: What Works and What Doesn't (2026) | Bing 关键词工具："phone link iphone" 3 个月 8.7K 次（美国 6.8K）；排名待观察 |
+| `/en/guides/intel-unison-alternative/`（2026-10-20 新增） | **intel unison** / intel unison not working / intel unison alternative | Intel Unison Discontinued: Best iPhone Alternatives (2026) | Bing："intel unison" 3 个月 22.3K 次；实验性页面，4–8 周后看曝光和下载点击 |
 | `/en/comparison/winsend-vs-localsend/` | WinSend vs LocalSend / LocalSend alternative | WinSend vs LocalSend for iPhone and Windows (2026) | 曝光 741，点击率 1.1% |
 | `/en/comparison/winsend-vs-snapdrop/` | Snapdrop alternative / Snapdrop not working | WinSend vs Snapdrop: Snapdrop Alternative for iPhone & PC | 未进前 10 |
 | `/en/comparison/winsend-vs-sendanywhere/` | Send Anywhere alternative / file size limit | WinSend vs Send Anywhere: Local Transfer vs Relay (2026) | 未进前 10 |
@@ -106,7 +107,7 @@
 |---|---|---|
 | AirDrop for PC download / airdrop windows 10 download | ★★ | Bing 已有曝光（下载意图）；首页和下载页可加 "Download" 相关表述 |
 | windsend / windsend下载（品牌拼写错误） | ★ | Bing 已有曝光，无需专门处理，可在下载页 FAQ 自然提及 |
-| Intel Unison alternative | ★ | Bing 关键词工具无数据（2026-10-20），暂缓 |
+| Intel Unison alternative | ★ | ✅ 2026-10-20 已写（/en/guides/intel-unison-alternative/）："intel unison" 本身在 Bing 3 个月 22.3K 次（印度 7.7K、美国 3.4K），在缓慢下降 |
 | universal clipboard windows | ★ | Bing 无数据；改为补厚现有剪贴板教程，不单开页面 |
 | Phone Link iPhone alternative / file transfer | ★★ | ✅ 2026-10-20 已写（/en/guides/phone-link-iphone/） |
 | Universal Clipboard for Windows | ★ | 新文章 |

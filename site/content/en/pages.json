@@ -151,5 +151,14 @@
     "lastmod": "2026-10-20",
     "bodyClass": "bg-white text-gray-900 antialiased",
     "navigationMode": "fixed"
+  },
+  "intel-unison-alternative": {
+    "status": "published",
+    "path": "/en/guides/intel-unison-alternative/",
+    "title": "Intel Unison Discontinued: Best iPhone Alternatives (2026)",
+    "description": "Intel Unison stopped working on June 30, 2025. What happened, and which apps now replace its file transfer, photos, messages and calls between iPhone and PC.",
+    "lastmod": "2026-10-20",
+    "bodyClass": "bg-white text-gray-900 antialiased",
+    "navigationMode": "fixed"
   }
 }

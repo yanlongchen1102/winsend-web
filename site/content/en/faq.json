@@ -182,5 +182,27 @@
       "question": "Is there an alternative to Phone Link for iPhone?",
       "answer": "Yes. WinSend focuses on files and the clipboard over your local network, including a Back Tap shortcut to send copied text to the PC. Free tools such as LocalSend and PairDrop also send files between iPhone and Windows."
     }
+  ],
+  "intel-unison-alternative": [
+    {
+      "question": "Is Intel Unison still working?",
+      "answer": "No. Intel ended Intel Unison on June 30, 2025, and removed it from the Microsoft Store on July 1, 2025. On most PCs it no longer works correctly. Lenovo Aura Edition PCs kept service through the rest of 2025."
+    },
+    {
+      "question": "Why was Intel Unison discontinued?",
+      "answer": "Intel announced the shutdown in spring 2025 without a detailed public reason. Reports linked it to Intel's large layoffs, which led to the Unison team being disbanded."
+    },
+    {
+      "question": "Can I still download Intel Unison?",
+      "answer": "No. It was removed from the Microsoft Store on July 1, 2025. Copies offered on other download sites are unofficial and no longer supported, so they are best avoided."
+    },
+    {
+      "question": "What is the best Intel Unison alternative for iPhone?",
+      "answer": "For calls and text messages, Microsoft Phone Link is the closest replacement and is built into Windows 10 and 11. For photos, files and copy-paste between iPhone and PC, WinSend works over your local network and adds clipboard transfer, which Phone Link doesn't offer."
+    },
+    {
+      "question": "Does Phone Link replace Intel Unison?",
+      "answer": "Mostly. With an iPhone, Phone Link handles calls, single-person texts, notifications and file sharing. It does not sync the clipboard, show group messages or send photos inside messages."
+    }
   ]
 }

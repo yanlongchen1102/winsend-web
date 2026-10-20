@@ -2,7 +2,7 @@
   "index.html": "264c996988460c4ef7da1e01ac37e70b1c39867b2de3bc0dc7bf4b398eed8157",
   "en/download/index.html": "26cf5f6292a13327e0b7b70f1a666f7f0f7a369d70dcdcb74e525b2b23d19df0",
   "en/features/index.html": "29344c247744ee98b21aa18105eb1c5e69a073e1a16e96247b34c975087112ae",
-  "en/guides/index.html": "349a6ce927a5914d3d53e9c27e26aadb5d0207266ee851a3266046ae35f171de",
+  "en/guides/index.html": "6ecebccc9d5cfcbb909a049dee1af1855cf7f5f5cbf040af4a5a292f6041641b",
   "en/guides/setup/index.html": "5fb968cc26c954daf783127060a6d4db59c9e6a3f18fe6876a0eeeb83b176bd9",
   "en/guides/how-it-works/index.html": "066faef6a332758007e1693aaa9f3c6b68006d2f10d4b98bcd8f7fd2a2f1a66c",
   "en/guides/copy-iphone-to-windows/index.html": "3e4a321c5ebe1e9f5bbd055715590aa4d78ef71b54cfa895651d7ce806188444",
@@ -13,7 +13,8 @@
   "en/comparison/winsend-vs-sendanywhere/index.html": "c69a60d0013712daf7f1c9bb5a79c9c9b384073b2100682dbec37a41d58669a1",
   "en/safety/index.html": "c47f873aad6b487ff9ed689a06839a47f0408fb27d8ec1999dab50dc84a35d97",
   "en/privacy/index.html": "428bd4bf77d152af13340a79998c686556c5b5cb046ec6e5443cfcd6fd85d669",
-  "en/guides/phone-link-iphone/index.html": "a6741463ce814655491af8f0ada6ad34c625470c9ade95e3ad8540d374304225",
+  "en/guides/phone-link-iphone/index.html": "e88c08c8e7830630d55aa786458f23ba6c5e44cde795cbf0e85fc7109ce3b1b0",
+  "en/guides/intel-unison-alternative/index.html": "6d9a57b27b0b44f4a9754b6c373682242df94df043719be1e9674bd8e3fbd0e9",
   "zh/index.html": "cecb617459d8f7cbc1c3fd6040ad1375bb67139bb4e3a98e65173980637da26c",
   "zh/download/index.html": "1215d585b7fd68d4cda2f28b77c412c767a8973f53326844210ad6ef11242a98",
   "zh/features/index.html": "313c455ca33a9f3bc92def88e251f5a4acfc73f600f0f1d655fc35dc79bdca89",
@@ -55,5 +56,5 @@
   "es/funciones/index.html": "1ceb40948752bb1d4e83428c1a8a2212024aeaf65ca80e3e92245665e530647d",
   "es/guias/index.html": "a7f109fb6d121707ada5ec5dbe4054e8a3ccd598e27ae9e9232f71ed2c2b5774",
   "es/guias/portapapeles-iphone-windows/index.html": "52a22abe38df6aecb91c3331127c4b5996c473783836cfec240c05c1ad05736c",
-  "sitemap.xml": "1776c8a8ce8d4f5436bb93a2cc4ac7e20fe3cd6c18a94e318a626341f6ec9c45"
+  "sitemap.xml": "06f1ccbdc56c75a243591caa056b55b34cd3155e0e7423327839f113b2697c89"
 }
