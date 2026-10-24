@@ -1,0 +1,9 @@
+/appcast-mac.xml
+  Cache-Control: no-cache
+
+/WinSend-*.dmg
+  Content-Type: application/x-apple-diskimage
+  Cache-Control: public, max-age=31536000, immutable
+
+/WinSend-*.html
+  Cache-Control: public, max-age=31536000, immutable

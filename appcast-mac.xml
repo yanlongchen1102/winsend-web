@@ -1,0 +1,19 @@
+<?xml version="1.0" standalone="yes"?><!-- sparkle-sign-warning:
+IMPORTANT: This file was signed by Sparkle. Any modifications to this file requires re-signing this file with generate_appcast or sign_update! The signed signature will be embedded at the end of this file.
+--><rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" version="2.0">
+    <channel>
+        <title>WinSend</title>
+        <item>
+            <title>1.0.1</title>
+            <pubDate>Sat, 24 Oct 2026 12:56:55 +0800</pubDate>
+            <sparkle:version>2</sparkle:version>
+            <sparkle:shortVersionString>1.0.1</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
+            <sparkle:releaseNotesLink sparkle:edSignature="Fy2wcAhFoZSeP2ZkYRYhkK7y1r6FHPz7419Tlzuh87TqZtXlkmfSDHVFTO+9mu/ru9Z3fb7fUU9GM9CBAWgwBg==" sparkle:length="1046">https://winsend.app/WinSend-1.0.1-2.html</sparkle:releaseNotesLink>
+            <enclosure url="https://winsend.app/WinSend-1.0.1-2.dmg" length="3256417" type="application/octet-stream" sparkle:edSignature="oU0RVxRHACaLJiBqxG7FXfEjU/UE7dMTKqum5ErfHxO2V17jyssLUcIhm7o/+r2nMan4siQI0lNnuDqaUHw5BQ=="></enclosure>
+        </item>
+    </channel>
+</rss><!-- sparkle-signatures:
+edSignature: BhVHC4GIwHObiFgQ5zIJrK6FcQ7SAMh+pfWPGrPDjiCunZ5RO2xqzJQ+4UY7Klch06euIFy25O+URCiKjI0QCg==
+length: 1238
+-->
