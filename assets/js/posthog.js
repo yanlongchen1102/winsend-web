@@ -1,7 +1,7 @@
 /*!
  * PostHog 分析接入（全站共享）
  * - 上报页面浏览（$pageview，SDK 默认）
- * - 上报站内 Windows 安装包点击：web_download_click（含版本与入口）
+ * - 上报站内 Windows / Mac 安装包点击：web_download_click（含版本与入口）
  * - 上报 App Store 按钮点击：web_appstore_click
  * - 上报功能入口点击与功能区有效曝光：web_feature_click / web_feature_viewed
  * 本地开发（localhost/127.0.0.1）不初始化，避免污染数据。
@@ -147,6 +147,12 @@
             props.download_surface = node.dataset.downloadSurface || "unknown";
             props.channel = "direct_exe";
             posthog.capture("web_download_click", props);
+        } else if (node.classList.contains("mac-download-link")) {
+            var macProps = baseProps(href);
+            macProps.installer_version = installerVersion(node, href);
+            macProps.download_surface = node.dataset.downloadSurface || "unknown";
+            macProps.channel = "direct_dmg";
+            posthog.capture("web_download_click", macProps);
         } else if (node.classList.contains("store-installer-link")) {
             var storeProps = baseProps(href);
             storeProps.channel = "store_web_installer";

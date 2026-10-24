@@ -1,7 +1,7 @@
 {
   "t0": "Download",
   "t1": "Get WinSend",
-  "t2": "Install WinSend on your Windows PC, then get the companion app for your iPhone.",
+  "t2": "Install WinSend on your Windows PC or Mac, then get the companion app for your iPhone.",
   "t3": "Windows",
   "t4": "Windows 10/11 · 64-bit",
   "t5": "v",
@@ -19,5 +19,9 @@
   "t17": "App Store",
   "t18": "Install the companion app on iPhone or iPad.",
   "t19": "View on App Store",
-  "pricing": "Free to try: new users get a one-time transfer allowance covering every feature. After that, WinSend Pro is a one-time purchase with no usage limits. The current price is shown in the app."
+  "pricing": "Free to try: new users get a one-time transfer allowance covering every feature. After that, WinSend Pro is a one-time purchase with no usage limits. The current price is shown in the app.",
+  "macRequirements": "macOS 13.0 or later · Intel & Apple Silicon",
+  "macTitle": "WinSend for Mac",
+  "macInstall": "Open the DMG and drag WinSend to Applications to install.",
+  "macDownload": "Download .dmg"
 }

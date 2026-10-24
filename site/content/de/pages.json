@@ -4,7 +4,7 @@
     "path": "/de/",
     "title": "AirDrop für Windows-PC: Dateien vom iPhone senden | WinSend",
     "description": "AirDrop für den Windows-PC gesucht? Senden Sie Fotos, Videos und Dateien per WLAN vom iPhone an den PC und kopieren Sie Text hin und her. Ohne Kabel und Konto.",
-    "lastmod": "2026-10-18",
+    "lastmod": "2026-10-24",
     "navigationMode": "fixed",
     "bodyClass": "bg-white text-gray-900 antialiased",
     "layout": "home"
@@ -12,9 +12,9 @@
   "download": {
     "status": "published",
     "path": "/de/herunterladen/",
-    "title": "WinSend für Windows-PC und iPhone herunterladen",
-    "description": "WinSend für Windows 10/11 aus dem Microsoft Store und fürs iPhone aus dem App Store. Kostenlos testen, ohne Konto, danach WinSend Pro als Einmalkauf.",
-    "lastmod": "2026-10-18",
+    "title": "WinSend für Windows, Mac und iPhone herunterladen",
+    "description": "Laden Sie WinSend für Windows, die DMG-Datei für macOS 13 oder neuer und die iPhone-Begleit-App aus dem App Store herunter.",
+    "lastmod": "2026-10-24",
     "navigationMode": "flow",
     "bodyClass": "page-bg bg-white text-gray-900 antialiased",
     "layout": "download"

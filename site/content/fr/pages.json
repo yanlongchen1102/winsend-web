@@ -1,7 +1,7 @@
 {
   "home": {
     "status": "published",
-    "lastmod": "2026-10-18",
+    "lastmod": "2026-10-24",
     "bodyClass": "bg-white text-gray-900 antialiased",
     "path": "/fr/",
     "title": "Alternative à AirDrop pour PC Windows et iPhone | WinSend",
@@ -11,11 +11,11 @@
   },
   "download": {
     "status": "published",
-    "lastmod": "2026-10-18",
+    "lastmod": "2026-10-24",
     "bodyClass": "page-bg bg-white text-gray-900 antialiased",
     "path": "/fr/telecharger/",
-    "title": "Télécharger WinSend pour PC Windows et iPhone",
-    "description": "Installez WinSend sur Windows 10/11 depuis le Microsoft Store et sur iPhone depuis l’App Store. Essai gratuit, sans compte, puis WinSend Pro en achat unique.",
+    "title": "Télécharger WinSend pour Windows, Mac et iPhone",
+    "description": "Téléchargez WinSend pour Windows, le DMG pour macOS 13 ou version ultérieure et l’application compagnon pour iPhone sur l’App Store.",
     "navigationMode": "flow",
     "layout": "download"
   },

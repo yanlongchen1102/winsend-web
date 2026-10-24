@@ -24,7 +24,7 @@ export function preparePreview(root = ROOT, directoryName = 'preview-assets') {
   const rootFiles = new Set(['index.html', 'sitemap.xml', 'robots.txt', 'llms.txt', 'update.json', '_redirects']);
   for (const entry of fs.readdirSync(root, { withFileTypes: true })) {
     if (!entry.isFile()) continue;
-    if (rootFiles.has(entry.name) || /\.(?:ico|png|webp|jpg|jpeg|gif|svg)$/i.test(entry.name) || /^WinSend_v[\w.-]+\.exe$/.test(entry.name)) {
+    if (rootFiles.has(entry.name) || /\.(?:ico|png|webp|jpg|jpeg|gif|svg)$/i.test(entry.name) || /^WinSend_v[\w.-]+\.exe$/.test(entry.name) || /^WinSend-[\w.-]+\.dmg(?:\.sha256)?$/.test(entry.name)) {
       fs.copyFileSync(path.join(root, entry.name), path.join(destination, entry.name));
     }
   }

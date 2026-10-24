@@ -1,7 +1,7 @@
 {
   "t0": "Descarga",
   "t1": "Descargar WinSend",
-  "t2": "Instala WinSend en tu PC con Windows y en tu iPhone: necesitas la app en los dos. Requisitos: Windows 10 u 11 (64 bits) e iOS 15.6 o posterior (iOS 16 para los atajos).",
+  "t2": "Instala WinSend en tu PC con Windows o Mac y la app complementaria en tu iPhone.",
   "t3": "Windows",
   "t4": "Windows 10/11 · 64 bits",
   "t5": "EXE v",
@@ -19,5 +19,9 @@
   "t17": "App Store",
   "t18": "La app complementaria para iPhone y iPad.",
   "t19": "Ver en App Store",
-  "pricing": "Prueba gratis todas las funciones: los usuarios nuevos reciben un cupo único de transferencias gratuitas. Después, WinSend Pro se compra con un único pago y no tiene límites de uso. Consulta el precio actual en la app."
+  "pricing": "Prueba gratis todas las funciones: los usuarios nuevos reciben un cupo único de transferencias gratuitas. Después, WinSend Pro se compra con un único pago y no tiene límites de uso. Consulta el precio actual en la app.",
+  "macRequirements": "macOS 13.0 o posterior · Intel y Apple Silicon",
+  "macTitle": "WinSend para Mac",
+  "macInstall": "Abre el DMG y arrastra WinSend a la carpeta Aplicaciones para instalarlo.",
+  "macDownload": "Descargar el .dmg"
 }

@@ -1,7 +1,7 @@
 {
   "t0": "Download",
   "t1": "下载 WinSend",
-  "t2": "先在 Windows 电脑上安装 WinSend，再为 iPhone 获取配套 App。",
+  "t2": "在 Windows 电脑或 Mac 上安装 WinSend，再为 iPhone 获取配套 App。",
   "t3": "Windows",
   "t4": "Windows 10/11 · 64 位",
   "t5": "v",
@@ -19,5 +19,9 @@
   "t17": "App Store",
   "t18": "在 iPhone 或 iPad 上安装配套 App。",
   "t19": "前往 App Store",
-  "pricing": "可免费试用全部功能：新用户有一次性的免费传输额度。额度用完后升级 WinSend Pro 即可继续使用，一次买断，没有任何使用额度限制，价格以应用内为准。"
+  "pricing": "可免费试用全部功能：新用户有一次性的免费传输额度。额度用完后升级 WinSend Pro 即可继续使用，一次买断，没有任何使用额度限制，价格以应用内为准。",
+  "macRequirements": "macOS 13.0 或更高版本 · Intel 与 Apple Silicon",
+  "macTitle": "WinSend Mac 版",
+  "macInstall": "打开 DMG，将 WinSend 拖入「应用程序」文件夹即可安装。",
+  "macDownload": "下载 .dmg"
 }

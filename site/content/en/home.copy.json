@@ -80,5 +80,6 @@
   "t78": "Windows file ready to send to iPhone",
   "t79": "Text selected on Windows before clipboard transfer",
   "t80": "Text selected on iPhone for a WinSend Shortcut",
-  "t81": "Cross-network clipboard illustration"
+  "t81": "Cross-network clipboard illustration",
+  "macDownload": "Download for Mac"
 }
