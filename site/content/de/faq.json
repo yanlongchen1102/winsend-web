@@ -21,6 +21,10 @@
       "answer": "Nein. AirDrop ist ein Apple-Dienst, der nur zwischen Apple-Geräten funktioniert und Windows nicht unterstützt. WinSend ist eine Alternative: eine App auf dem iPhone, eine auf dem PC und die Übertragung über Ihr lokales Netzwerk. Auf dem iPhone bleibt der Ablauf vertraut: Teilen-Menü, dann WinSend."
     },
     {
+      "question": "Funktioniert WinSend auch auf dem Mac?",
+      "answer": "Ja. WinSend für Mac ist eine Menüleisten-App für macOS 13 oder neuer und verbindet sich über das lokale Netzwerk mit der WinSend-App auf dem iPhone – für Fotos, Dateien und die Zwischenablage. Sie hängt nicht von der Apple ID ab und hilft daher, wenn iPhone und Mac mit unterschiedlichen Apple Accounts angemeldet sind und die allgemeine Zwischenablage nicht funktioniert. Die DMG-Datei finden Sie auf der Download-Seite."
+    },
+    {
       "question": "Wie aktiviere ich die Cloud-Übertragung zwischen iPhone und Windows?",
       "answer": "Klicken Sie am PC im Infobereich der Taskleiste auf das WinSend-Symbol und dann auf „Cloud Transfer“ > „Generate Pairing Code & Connect“ (die Windows-App ist auf Englisch). Öffnen Sie auf dem iPhone „Cloud-Übertragung“ und geben Sie den 6-stelligen Kopplungscode ein. Beide Geräte brauchen eine Internetverbindung. Geben Sie den Code an niemanden weiter: Er schützt Ihren Text."
     },
@@ -61,6 +65,32 @@
     {
       "question": "Kann ich ein Foto senden, das in iCloud gespeichert ist?",
       "answer": "Ja. Liegt das Foto nur in iCloud (Option „iPhone-Speicher optimieren“), lädt Fotos es zuerst aufs iPhone; dafür ist Internet nötig. Danach sendet WinSend es über das lokale Netzwerk an den PC."
+    }
+  ],
+  "copy-paste-iphone-mac": [
+    {
+      "question": "Warum funktioniert Copy & Paste zwischen iPhone und Mac nicht?",
+      "answer": "Kopieren und Einfügen zwischen Apple-Geräten, die allgemeine Zwischenablage, setzt denselben Apple Account auf beiden Geräten voraus, dazu aktiviertes Bluetooth, WLAN und Handoff sowie Geräte in der Nähe. Prüfen Sie diese Punkte, installieren Sie Updates und starten Sie beide Geräte neu. Bei unterschiedlichen Apple IDs kann die allgemeine Zwischenablage nicht funktionieren."
+    },
+    {
+      "question": "Funktioniert die allgemeine Zwischenablage mit unterschiedlichen Apple IDs?",
+      "answer": "Nein. Die allgemeine Zwischenablage überträgt kopierte Inhalte nur zwischen Geräten, die mit demselben Apple Account angemeldet sind, und keine Einstellung ändert das. Für Copy & Paste zwischen iPhone und Mac mit unterschiedlichen Apple IDs nutzen Sie eine App, die über das lokale Netzwerk arbeitet, etwa WinSend."
+    },
+    {
+      "question": "Wie kopiere ich zwischen iPhone und Mac mit unterschiedlichen Apple IDs?",
+      "answer": "Installieren Sie WinSend für Mac und die WinSend-App auf dem iPhone und verbinden Sie beide mit demselben lokalen Netzwerk. Kopieren Sie auf dem iPhone und tippen Sie auf „An PC senden“, oder kopieren Sie auf dem Mac und tippen Sie auf dem iPhone auf „Vom PC abrufen“. Ein Kurzbefehl mit „Auf Rückseite tippen“ geht ebenfalls."
+    },
+    {
+      "question": "Kann ich ein iPhone mit einem Mac mit anderer Apple ID verbinden?",
+      "answer": "Integrationsfunktionen wie die allgemeine Zwischenablage und Handoff brauchen denselben Apple Account. AirDrop funktioniert zum Senden von Dateien auch zwischen unterschiedlichen Apple IDs. Für Copy & Paste und Dateiübertragung zwischen iPhone und Mac mit unterschiedlichen Apple IDs verbindet WinSend die Geräte über das lokale Netzwerk."
+    },
+    {
+      "question": "Wie lange behält die allgemeine Zwischenablage kopierte Inhalte?",
+      "answer": "Nur kurz. Laut Apple bleibt der Inhalt eine kurze Zeit auf dem anderen Gerät oder bis Sie auf einem der Geräte etwas Neues kopieren. Fügen Sie ihn also zügig ein."
+    },
+    {
+      "question": "Ist WinSend für Mac kostenlos?",
+      "answer": "Die Mac-App ist kostenlos. Übertragungen nutzen das einmalige Kontingent an kostenlosen Übertragungen der iPhone-App, mit dem sich alle Funktionen testen lassen. Danach gibt es WinSend Pro als Einmalkauf auf dem iPhone, ohne Nutzungslimits. Den aktuellen Preis zeigt die App."
     }
   ]
 }

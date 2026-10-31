@@ -103,5 +103,14 @@
     "title": "Copier-coller entre iPhone et PC Windows | WinSend",
     "description": "Copiez sur l’iPhone, collez sur le PC avec Ctrl+V, et inversement. Envoi manuel, Raccourci Toucher le dos et texte entre deux réseaux.",
     "navigationMode": "fixed"
+  },
+  "copy-paste-iphone-mac": {
+    "status": "published",
+    "lastmod": "2026-10-31",
+    "bodyClass": "bg-white text-gray-900 antialiased",
+    "path": "/fr/guides/copier-coller-iphone-mac/",
+    "title": "Copier-coller iPhone Mac ne fonctionne pas ? Solutions",
+    "description": "Le texte copié sur l’iPhone ne se colle pas sur le Mac ? Vérifiez les 4 conditions du presse-papiers universel, ou copiez-collez avec deux identifiants Apple.",
+    "navigationMode": "fixed"
   }
 }

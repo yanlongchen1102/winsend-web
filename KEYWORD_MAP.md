@@ -45,7 +45,7 @@
 
 ## 三、法语、德语、西班牙语
 
-上线 4–8 周后开始在这里记录数据。三种语言都是 9 页，暂无横评页和对比页。
+上线 4–8 周后开始在这里记录数据。三种语言都是 10 页（2026-10-31 加入 iPhone ↔ Mac 复制粘贴文章），暂无横评页和对比页。
 
 | 页面 | 法语主词 | 德语主词 | 西班牙语主词 |
 |---|---|---|---|
@@ -54,6 +54,7 @@
 | 剪贴板教程 | copier coller iPhone PC | vom iPhone kopieren, am PC einfügen | copiar en el iPhone y pegar en el PC |
 | 安装页 | connecter iPhone PC | iPhone mit Windows-PC verbinden | conectar iPhone al PC sin cables |
 | 下载页 | télécharger WinSend | WinSend herunterladen | descargar WinSend |
+| iPhone ↔ Mac 复制粘贴（2026-10-31 新增） | copier coller iphone mac ne fonctionne pas（`/fr/guides/copier-coller-iphone-mac/`） | copy paste iphone mac funktioniert nicht（德语用户直接搜英文 "copy paste"；Apple 德语叫 "allgemeine Zwischenablage"，`/de/anleitungen/copy-paste-iphone-mac/`） | copiar y pegar de iphone a mac no funciona / no puedo copiar y pegar entre iphone y mac（`/es/guias/copiar-pegar-iphone-mac/`） |
 
 法语细节见 `FR_PILOT.md`。网址：法语 `/fr/…`，德语 `/de/herunterladen/`、`/de/anleitungen/…`，西班牙语 `/es/descargar/`、`/es/guias/…`。
 

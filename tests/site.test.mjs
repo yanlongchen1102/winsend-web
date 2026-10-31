@@ -46,10 +46,10 @@ function addFrench(root) {
   putJSON(root, 'site/content/fr/pages.json', pages);
 }
 
-test('real content renders 59 pages with published locales only, no placeholders or redirects', () => {
+test('real content renders 62 pages with published locales only, no placeholders or redirects', () => {
   const { site, outputs } = generateSite();
-  assert.equal(site.pages.length, 59);
-  assert.equal(outputs.size, 60); // 59 pages (including the root English home) + sitemap
+  assert.equal(site.pages.length, 62);
+  assert.equal(outputs.size, 63); // 62 pages (including the root English home) + sitemap
   const root = outputs.get('index.html');
   assert.ok(root.includes('<html lang="en"'));
   assert.ok(root.includes('rel="canonical" href="https://winsend.app/"'));
@@ -72,11 +72,11 @@ test('real content renders 59 pages with published locales only, no placeholders
 
 test('French edition shares core layouts and navigation, localized navigation and equivalent hreflang', () => {
   const { site, outputs } = generateSite();
-  assert.equal(site.pages.filter(page => page.locale.code === 'fr').length, 9);
+  assert.equal(site.pages.filter(page => page.locale.code === 'fr').length, 10);
   for (const locale of ['en', 'zh', 'fr']) for (const id of ['home', 'features', 'guides', 'download']) {
     assert.equal(site.pages.find(page => page.locale.code === locale && page.id === id).layout, id);
   }
-  assert.equal(site.faqs.fr.home.length, 8);
+  assert.equal(site.faqs.fr.home.length, 9);
   assert.equal(site.faqs.fr['airdrop-for-windows'].length, 7);
   for (const topic of ['Internet', 'gratuit', 'réseaux', 'cloud', 'sûr', 'détecte']) assert.ok(site.faqs.fr.home.some(item => item.question.includes(topic)), topic);
   for (const topic of ['USB', 'Wi-Fi', 'formats', 'qualité', 'volumineuse', 'iCloud']) assert.ok(site.faqs.fr['airdrop-for-windows'].some(item => item.question.includes(topic)), topic);
@@ -129,7 +129,7 @@ test('French source copy uses non-breaking spaces before double punctuation', ()
   }
 });
 
-test('German and Spanish editions publish the same nine pages with localized slugs and reciprocal hreflang', () => {
+test('German and Spanish editions publish the same ten pages with localized slugs and reciprocal hreflang', () => {
   const { site, outputs } = generateSite();
   const expected = {
     de: { home: '/de/', download: '/de/herunterladen/', setup: '/de/einrichtung/', 'airdrop-for-windows': '/de/anleitungen/iphone-fotos-auf-pc/' },
@@ -137,8 +137,8 @@ test('German and Spanish editions publish the same nine pages with localized slu
   };
   for (const [code, paths] of Object.entries(expected)) {
     const pages = site.pages.filter(page => page.locale.code === code);
-    assert.equal(pages.length, 9, code);
-    assert.equal(site.faqs[code].home.length, 8, code);
+    assert.equal(pages.length, 10, code);
+    assert.equal(site.faqs[code].home.length, 9, code);
     assert.equal(site.faqs[code]['airdrop-for-windows'].length, 7, code);
     for (const [id, pathname] of Object.entries(paths)) assert.equal(pages.find(page => page.id === id).path, pathname, `${code}/${id}`);
     const home = outputs.get(`${code}/index.html`);

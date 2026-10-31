@@ -42,6 +42,7 @@ WinSend has an iOS app and a Windows desktop app, and is also available for Mac 
 - Features: https://winsend.app/fr/fonctionnalites/
 - Guides: https://winsend.app/fr/guides/
 - Clipboard and Shortcuts: https://winsend.app/fr/guides/presse-papiers-iphone-windows/
+- Copy and paste between iPhone and Mac: https://winsend.app/fr/guides/copier-coller-iphone-mac/
 - Setup: https://winsend.app/fr/installation/
 - Local iPhone-to-PC file transfer: https://winsend.app/fr/guides/transfert-iphone-pc/
 - Security: https://winsend.app/fr/securite/
@@ -55,6 +56,7 @@ WinSend has an iOS app and a Windows desktop app, and is also available for Mac 
 - Guides: https://winsend.app/de/anleitungen/
 - Photos from iPhone to PC: https://winsend.app/de/anleitungen/iphone-fotos-auf-pc/
 - Clipboard and Shortcuts: https://winsend.app/de/anleitungen/zwischenablage-iphone-windows/
+- Copy and paste between iPhone and Mac: https://winsend.app/de/anleitungen/copy-paste-iphone-mac/
 - Setup: https://winsend.app/de/einrichtung/
 - Security: https://winsend.app/de/sicherheit/
 - Privacy: https://winsend.app/de/datenschutz/
@@ -67,6 +69,7 @@ WinSend has an iOS app and a Windows desktop app, and is also available for Mac 
 - Guides: https://winsend.app/es/guias/
 - Photos from iPhone to PC: https://winsend.app/es/guias/pasar-fotos-iphone-a-pc/
 - Clipboard and Shortcuts: https://winsend.app/es/guias/portapapeles-iphone-windows/
+- Copy and paste between iPhone and Mac: https://winsend.app/es/guias/copiar-pegar-iphone-mac/
 - Setup: https://winsend.app/es/instalacion/
 - Security: https://winsend.app/es/seguridad/
 - Privacy: https://winsend.app/es/privacidad/

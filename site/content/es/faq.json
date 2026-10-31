@@ -21,6 +21,10 @@
       "answer": "No. AirDrop es un servicio de Apple que solo funciona entre dispositivos Apple y no es compatible con Windows. WinSend es una alternativa: una app en el iPhone, otra en el PC y una transferencia por tu red local. En el iPhone el gesto es el mismo: menú Compartir y luego WinSend."
     },
     {
+      "question": "¿WinSend funciona en Mac?",
+      "answer": "Sí. WinSend para Mac es una app de la barra de menús para macOS 13 o posterior que se conecta con la app WinSend del iPhone por la red local para pasar fotos, archivos y el portapapeles. No depende del ID de Apple, así que sirve cuando el iPhone y el Mac usan distintas Cuentas de Apple y el portapapeles universal no funciona. El DMG está en la página de descarga."
+    },
+    {
       "question": "¿Cómo activo la transferencia en la nube entre el iPhone y Windows?",
       "answer": "En el PC, haz clic en el icono de WinSend del área de notificación y luego en «Cloud Transfer» > «Generate Pairing Code & Connect» (la app de Windows está en inglés). En el iPhone, abre «Transferencia en la nube» e introduce el código de enlace de 6 dígitos. Los dos dispositivos necesitan conexión a Internet. No compartas el código con nadie: es lo que protege tu texto."
     },
@@ -61,6 +65,32 @@
     {
       "question": "¿Puedo enviar una foto guardada en iCloud?",
       "answer": "Sí. Si la foto solo está en iCloud (opción «Optimizar almacenamiento»), Fotos la descarga primero al iPhone, y para eso hace falta Internet. Después, WinSend la envía al PC por la red local."
+    }
+  ],
+  "copy-paste-iphone-mac": [
+    {
+      "question": "¿Por qué no funciona copiar y pegar entre mi iPhone y mi Mac?",
+      "answer": "Copiar y pegar entre dispositivos Apple, el portapapeles universal, necesita la misma Cuenta de Apple en los dos, el Bluetooth, la Wi-Fi y Handoff activados, y que estén cerca. Revisa esos puntos, actualiza los dos dispositivos y reinícialos. Si usan distinto ID de Apple, el portapapeles universal no puede funcionar."
+    },
+    {
+      "question": "¿El portapapeles universal funciona con distinto ID de Apple?",
+      "answer": "No. El portapapeles universal solo pasa lo que copias entre dispositivos con la sesión iniciada en la misma Cuenta de Apple, y ningún ajuste lo cambia. Para copiar y pegar entre un iPhone y un Mac con distinto ID de Apple, usa una app que funcione por la red local, como WinSend."
+    },
+    {
+      "question": "¿Cómo copio y pego entre iPhone y Mac con distinto ID de Apple?",
+      "answer": "Instala WinSend para Mac y la app WinSend en el iPhone, y conéctalos a la misma red local. Copia en el iPhone y toca «Enviar al PC», o copia en el Mac y toca «Obtener del PC» en el iPhone. También puedes usar un atajo con Tocar atrás."
+    },
+    {
+      "question": "¿Puedo conectar un iPhone a un Mac con otro ID de Apple?",
+      "answer": "Las funciones de Continuidad como el portapapeles universal y Handoff necesitan la misma Cuenta de Apple. AirDrop sí funciona entre distintos ID de Apple para enviar archivos. Para copiar y pegar y pasar archivos entre un iPhone y un Mac con distinto ID de Apple, WinSend los conecta por la red local."
+    },
+    {
+      "question": "¿Cuánto tiempo guarda el portapapeles universal lo que copio?",
+      "answer": "Poco. Según Apple, el contenido se mantiene en el otro dispositivo durante un rato, o hasta que copies otra cosa en cualquiera de los dos, así que pégalo enseguida."
+    },
+    {
+      "question": "¿WinSend para Mac es gratis?",
+      "answer": "La app para Mac es gratis. Las transferencias usan el cupo único de transferencias gratuitas de la app del iPhone, con el que puedes probar todas las funciones. Después, WinSend Pro es un único pago en el iPhone, sin límites de uso. El precio actual aparece en la app."
     }
   ]
 }

@@ -21,6 +21,10 @@
       "answer": "Non. AirDrop est un service d’Apple réservé aux appareils Apple, qui ne fonctionne pas avec Windows. WinSend en est une alternative : une application sur l’iPhone, une autre sur le PC, et un transfert par votre réseau local. Côté iPhone, le geste reste le même : menu Partager, puis WinSend."
     },
     {
+      "question": "WinSend fonctionne-t-il sur Mac ?",
+      "answer": "Oui. WinSend pour Mac est une application de la barre des menus pour macOS 13 ou version ultérieure. Elle se connecte à l’application WinSend de l’iPhone par le réseau local pour échanger photos, fichiers et presse-papiers. Elle ne dépend pas de l’identifiant Apple : pratique quand l’iPhone et le Mac utilisent des comptes Apple différents et que le presse-papiers universel ne fonctionne pas. Le DMG est sur la page de téléchargement."
+    },
+    {
       "question": "Comment activer le transfert cloud entre iPhone et Windows ?",
       "answer": "Sur le PC, cliquez sur l’icône WinSend dans la zone de notification, puis sur « Cloud Transfer » > « Generate Pairing Code & Connect » (l’application Windows est en anglais). Sur l’iPhone, ouvrez « Transfert cloud » et saisissez le code de jumelage à 6 chiffres. Les deux appareils doivent être connectés à Internet. Ne communiquez ce code à personne : c’est lui qui protège votre texte."
     },
@@ -61,6 +65,32 @@
     {
       "question": "Peut-on envoyer une photo stockée dans iCloud ?",
       "answer": "Oui. Si la photo n’est stockée que dans iCloud (option « Optimiser le stockage »), Photos la télécharge d’abord sur l’iPhone, ce qui demande Internet. WinSend l’envoie ensuite au PC par le réseau local."
+    }
+  ],
+  "copy-paste-iphone-mac": [
+    {
+      "question": "Pourquoi le copier-coller entre mon iPhone et mon Mac ne fonctionne-t-il pas ?",
+      "answer": "Le copier-coller entre appareils Apple, appelé presse-papiers universel, exige le même compte Apple sur les deux appareils, le Bluetooth, le Wi-Fi et Handoff activés, et des appareils proches l’un de l’autre. Vérifiez ces points, mettez les appareils à jour et redémarrez-les. Avec des identifiants Apple différents, le presse-papiers universel ne peut pas fonctionner."
+    },
+    {
+      "question": "Le presse-papiers universel fonctionne-t-il avec deux identifiants Apple différents ?",
+      "answer": "Non. Le presse-papiers universel ne transmet le contenu copié qu’entre appareils connectés au même compte Apple, et aucun réglage ne permet de changer cela. Pour copier-coller entre un iPhone et un Mac avec des identifiants Apple différents, utilisez une application qui passe par le réseau local, comme WinSend."
+    },
+    {
+      "question": "Comment copier-coller entre iPhone et Mac avec des identifiants Apple différents ?",
+      "answer": "Installez WinSend pour Mac et l’application WinSend sur l’iPhone, puis connectez-les au même réseau local. Copiez sur l’iPhone et touchez « Envoyer au PC », ou copiez sur le Mac et touchez « Recevoir du PC » sur l’iPhone. Un Raccourci associé à Toucher le dos fonctionne aussi."
+    },
+    {
+      "question": "Peut-on connecter un iPhone à un Mac qui utilise un autre identifiant Apple ?",
+      "answer": "Les fonctions de Continuité comme le presse-papiers universel et Handoff exigent le même compte Apple. AirDrop fonctionne entre identifiants Apple différents pour envoyer des fichiers. Pour le copier-coller et le transfert de fichiers entre un iPhone et un Mac avec des identifiants différents, WinSend les relie par le réseau local."
+    },
+    {
+      "question": "Combien de temps le presse-papiers universel garde-t-il le contenu copié ?",
+      "answer": "Peu de temps. Selon Apple, le contenu reste sur l’autre appareil brièvement, ou jusqu’à ce que vous copiiez autre chose sur l’un des appareils : collez-le rapidement."
+    },
+    {
+      "question": "WinSend pour Mac est-il gratuit ?",
+      "answer": "L’application Mac est gratuite. Les transferts utilisent le nombre limité de transferts gratuits de l’application iPhone, valable une seule fois, pour tester toutes les fonctionnalités. Ensuite, WinSend Pro s’achète une seule fois sur l’iPhone, sans aucune limite d’utilisation. Le prix à jour est affiché dans l’application."
     }
   ]
 }

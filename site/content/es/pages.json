@@ -103,5 +103,14 @@
     "lastmod": "2026-10-18",
     "navigationMode": "fixed",
     "bodyClass": "bg-white text-gray-900 antialiased"
+  },
+  "copy-paste-iphone-mac": {
+    "status": "published",
+    "lastmod": "2026-10-31",
+    "bodyClass": "bg-white text-gray-900 antialiased",
+    "path": "/es/guias/copiar-pegar-iphone-mac/",
+    "title": "¿No funciona copiar y pegar entre iPhone y Mac? Soluciones",
+    "description": "¿Copias en el iPhone y no puedes pegar en el Mac? Revisa las 4 condiciones del portapapeles universal o copia y pega con distinto ID de Apple.",
+    "navigationMode": "fixed"
   }
 }
