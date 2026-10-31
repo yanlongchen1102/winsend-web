@@ -41,6 +41,10 @@
       "answer": "Yes. WinSend runs on Windows 11 and Windows 10 (64-bit), and the iPhone app needs iOS 15.6 or later (iOS 16 for Shortcuts). Install it from the Microsoft Store, open it on the PC, and your iPhone finds it on the same local network."
     },
     {
+      "question": "Does WinSend work on Mac?",
+      "answer": "Yes. WinSend for Mac is a menu bar app for macOS 13 or later that connects to the WinSend iPhone app over your local network, so you can send photos, files and clipboard content between iPhone and Mac. It does not rely on Apple ID, which makes it useful when your iPhone and Mac are signed in to different Apple IDs and Universal Clipboard does not work. Get the Mac DMG from the download page."
+    },
+    {
       "question": "Can I use WinSend on different networks?",
       "answer": "Yes. Enable cloud clipboard sync to share copied text when both devices have internet access. Files and photos still require a local network connection."
     },
@@ -84,7 +88,7 @@
   "winsend-vs-localsend": [
     {
       "question": "Is WinSend a good LocalSend alternative?",
-      "answer": "Yes, if your setup is specifically an iPhone and a Windows PC. WinSend integrates into the iOS share sheet so you can send photos and files without opening an app first, and it offers automatic text sync while iOS permits the app to run, plus manually triggered Shortcuts — two things LocalSend does not do. If you need Android, macOS or Linux support, LocalSend is the better choice."
+      "answer": "Yes, if your setup is specifically an iPhone and a Windows PC. WinSend integrates into the iOS share sheet so you can send photos and files without opening an app first, and it offers automatic text sync while iOS permits the app to run, plus manually triggered Shortcuts — two things LocalSend does not do. WinSend also has a Mac app for iPhone ↔ Mac. If you need Android or Linux support, LocalSend is the better choice."
     },
     {
       "question": "Does LocalSend work between iPhone and Windows?",
@@ -128,7 +132,7 @@
     },
     {
       "question": "Is WinSend a good Snapdrop alternative?",
-      "answer": "Yes, if your devices are an iPhone and a Windows PC. WinSend is a native app pair that discovers devices on the local network (with a manual IP fallback), integrates into the iOS share sheet, supports manual clipboard transfer, automatic text sync subject to iOS limits, and configured Shortcuts, and does not need a public server for local file transfer. Optional cloud clipboard uses a relay. If you need to send a file to an Android, Mac or Linux device — or to someone else's computer with zero install — Snapdrop's browser approach is more convenient."
+      "answer": "Yes, if your devices are an iPhone and a Windows PC. WinSend is a native app pair that discovers devices on the local network (with a manual IP fallback), integrates into the iOS share sheet, supports manual clipboard transfer, automatic text sync subject to iOS limits, and configured Shortcuts, and does not need a public server for local file transfer. Optional cloud clipboard uses a relay. If you need to send a file to an Android or Linux device — or to someone else's computer with zero install — Snapdrop's browser approach is more convenient."
     },
     {
       "question": "Does Snapdrop work without installing anything?",

@@ -3,6 +3,7 @@
  * - 上报页面浏览（$pageview，SDK 默认）
  * - 上报站内 Windows / Mac 安装包点击：web_download_click（含版本与入口）
  * - 上报 App Store 按钮点击：web_appstore_click
+ * - 上报首页"也有 Mac 版"文字链接点击（跳转下载页，不是安装包下载）：web_mac_link_click
  * - 上报功能入口点击与功能区有效曝光：web_feature_click / web_feature_viewed
  * 本地开发（localhost/127.0.0.1）不初始化，避免污染数据。
  */
@@ -153,6 +154,10 @@
             macProps.download_surface = node.dataset.downloadSurface || "unknown";
             macProps.channel = "direct_dmg";
             posthog.capture("web_download_click", macProps);
+        } else if (node.classList.contains("mac-page-link")) {
+            var macLinkProps = baseProps(href);
+            macLinkProps.download_surface = node.dataset.downloadSurface || "unknown";
+            posthog.capture("web_mac_link_click", macLinkProps);
         } else if (node.classList.contains("store-installer-link")) {
             var storeProps = baseProps(href);
             storeProps.channel = "store_web_installer";

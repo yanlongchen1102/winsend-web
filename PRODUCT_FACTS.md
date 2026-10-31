@@ -6,13 +6,14 @@
 
 - iOS 工程 MARKETING_VERSION 为 2.2.6，主 App / 分享扩展最低部署目标为 iOS 15.6；App Intents 要求 iOS 16+。工程配置不能证明 App Store 当前版本。
 - 官网现有备用 Windows EXE 为 2.2.4，推荐安装渠道为官网链接的 Microsoft Store。Windows 本地构建产物、Go 默认 AppVersion 和工程版本均不能单独证明线上发布版本。
+- Mac 版（2026-10-31 补充）：官网 DMG 分发的菜单栏 App，最低 macOS 13，已公证，1.0.1 起支持应用内更新（Sparkle，`appcast-mac.xml`）；Mac 界面只有中文和英文。官网只宣传 iPhone ↔ Mac，不宣传 Mac ↔ Windows。Mac 端价格口径与芯片架构未单独写进官网正文（下载页现有 "Intel & Apple Silicon" 待构建产物确认）。
 - 本轮不把新的二维码配对流程、精确体验次数或本地 2.3.0 构建直接宣称为已发布能力。商店实际系统要求、价格、体验额度以安装版本和购买界面为准。
 
 ## 已核验事实
 
 | 主题 | 统一口径 | 源码依据 |
 |---|---|---|
-| 设备范围 | 官网定位为 iPhone 与 Windows，不声称支持 Android/macOS/Linux | airclip Windows UI；WinDrop 主 App |
+| 设备范围 | 官网主定位为 iPhone 与 Windows；另有 Mac 版（macOS 13+），用于 iPhone ↔ Mac，尤其是两台设备登录不同 Apple ID、通用剪贴板不可用的情况。不声称支持 Android/Linux，不宣传 Mac ↔ Windows。首页标题、H1、hero 保持 Windows 主线 | airclip Windows UI；WinDrop 主 App；`WinDrop/WinSendMac`；`WinDrop/docs/mac-client.md` |
 | 本地文件 | 照片、视频、文件走可互通的局域网，Windows 需保持运行；同一 SSID 不保证互通，有线 PC 也可处于同一 LAN | `WinDrop/Managers/WindropManager.swift:transferFilesToPC`；`airclip/main.go` |
 | 云端 | 可选云同步只承载剪贴板文字；双方需要互联网和已配置的同步码，不支持云文件/照片/剪贴板图片 | `WindropManager.swift:sendTextToDevice/transferClipboardToPC`；`airclip/cloudcrypto/cloudcrypto.go:InnerMessage` |
 | 路径回退 | 已配置且在线的云端通道可在本地文字请求失败后作为回退，因此“同一 Wi-Fi 的所有文字永不经过服务器”也不准确 | `WindropManager.swift:sendTextToDevice/cloudPeerId`；`WinDrop/Intents/SendToPCIntent.swift` |

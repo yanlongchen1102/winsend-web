@@ -60,6 +60,9 @@ BANNED = (
     'local file transfer has no daily usage quota', '本地文件没有每日使用额度',
     'Gratuit en réseau local', 'gratuit et sans limite',
     '本地文件和剪贴板传输只需两台设备连接同一个 Wi-Fi。',
+    # 2026-10-31: WinSend for Mac is available (iPhone <-> Mac).
+    'Windows ↔ iPhone only', 'Windows + iOS only', '仅支持 Windows ↔ iPhone', '仅 Windows + iOS',
+    'not claim macOS support', '不声称支持 Android/macOS/Linux',
 )
 errors = []
 config = json.loads((ROOT / 'site/config.json').read_text(encoding='utf-8'))

@@ -1,10 +1,11 @@
 {
   "name": "WinSend",
-  "factsReviewedOn": "2026-10-08",
+  "factsReviewedOn": "2026-10-31",
   "reference": "PRODUCT_FACTS.md",
   "iosMinimum": "15.6",
   "shortcutsMinimum": "16",
   "windowsPlatforms": "Windows 10/11",
+  "macMinimum": "13",
   "localTransport": "HTTP/WebSocket",
   "cloudContent": "clipboard text only",
   "cloudEncryption": "AES-256-GCM",

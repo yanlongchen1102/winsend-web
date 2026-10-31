@@ -41,6 +41,10 @@
       "answer": "支持。WinSend 可在 Windows 11 和 Windows 10（64 位）上运行，iPhone 端需要 iOS 15.6 或更高版本（快捷指令需要 iOS 16）。从 Microsoft Store 安装并在电脑上打开，iPhone 在同一局域网内就能自动找到它。"
     },
     {
+      "question": "WinSend 支持 Mac 吗？",
+      "answer": "支持。WinSend Mac 版是一款菜单栏应用，需要 macOS 13 或更高版本，通过局域网与 iPhone 上的 WinSend 连接，可以在 iPhone 和 Mac 之间传照片、文件和剪贴板内容。它不依赖 Apple ID，所以当 iPhone 和 Mac 登录的是不同 Apple ID、通用剪贴板用不了时也能使用。Mac 版 DMG 可在下载页获取。"
+    },
+    {
       "question": "不在同一个 Wi-Fi 下能用吗？",
       "answer": "可以。启用云剪贴板后，两台设备都能联网即可跨网络分享剪贴板文本。文件和照片仍需要局域网连接。"
     },
@@ -84,7 +88,7 @@
   "winsend-vs-localsend": [
     {
       "question": "WinSend 是 LocalSend 的好替代品吗？",
-      "answer": "如果你的设备组合恰好是 iPhone 加 Windows 电脑，答案是肯定的。WinSend 集成了 iOS 分享面板，完成首次设置后，无需先打开主 App 就能发送照片和文件，还提供 自动文字同步（受 iOS 运行限制），以及主动触发的快捷指令——这两点 LocalSend 都做不到。如果你还需要 Android、macOS 或 Linux 支持，LocalSend 是更好的选择。"
+      "answer": "如果你的设备组合恰好是 iPhone 加 Windows 电脑，答案是肯定的。WinSend 集成了 iOS 分享面板，完成首次设置后，无需先打开主 App 就能发送照片和文件，还提供 自动文字同步（受 iOS 运行限制），以及主动触发的快捷指令——这两点 LocalSend 都做不到。WinSend 也有 Mac 版，可用于 iPhone ↔ Mac。如果你还需要 Android 或 Linux 支持，LocalSend 是更好的选择。"
     },
     {
       "question": "LocalSend 能在 iPhone 和 Windows 之间使用吗？",
@@ -128,7 +132,7 @@
     },
     {
       "question": "WinSend 是 Snapdrop 的好替代品吗？",
-      "answer": "如果你的设备是 iPhone 和 Windows 电脑，答案是肯定的。WinSend 是原生应用组合，在局域网内发现设备（带手动 IP 后备方案），集成了 iOS 分享面板，支持 自动文字同步（受 iOS 运行限制），以及主动触发的快捷指令，本地文件传输不依赖公共服务器；可选云剪贴板使用中转服务。如果你要给 Android、Mac 或 Linux 设备传文件——或者要零安装地给别人的电脑传一次文件——Snapdrop 的浏览器方案更方便。"
+      "answer": "如果你的设备是 iPhone 和 Windows 电脑，答案是肯定的。WinSend 是原生应用组合，在局域网内发现设备（带手动 IP 后备方案），集成了 iOS 分享面板，支持 自动文字同步（受 iOS 运行限制），以及主动触发的快捷指令，本地文件传输不依赖公共服务器；可选云剪贴板使用中转服务。如果你要给 Android 或 Linux 设备传文件——或者要零安装地给别人的电脑传一次文件——Snapdrop 的浏览器方案更方便。"
     },
     {
       "question": "Snapdrop 真的不用安装任何东西吗？",

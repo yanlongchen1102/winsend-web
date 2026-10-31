@@ -4,7 +4,7 @@
     "path": "/zh/",
     "title": "Windows 版 AirDrop：iPhone 文件与剪贴板传输 | WinSend",
     "description": "在 iPhone 与 Windows 之间快速传文件、照片，通过云剪贴板跨网络分享文字。无需数据线，无需注册。",
-    "lastmod": "2026-10-24",
+    "lastmod": "2026-10-31",
     "bodyClass": "bg-white text-gray-900 antialiased",
     "navigationMode": "fixed",
     "robots": "index,follow,max-image-preview:large",
@@ -98,7 +98,7 @@
     "path": "/zh/comparison/winsend-vs-localsend/",
     "title": "WinSend 对比 LocalSend：iPhone 与 Windows 传输怎么选（2026）",
     "description": "WinSend 与 LocalSend 全面对比：分享面板集成、剪贴板同步、平台支持、价格与隐私。真实截图，帮你选出最适合 iPhone ↔ Windows 工作流的 AirDrop 替代工具。",
-    "lastmod": "2026-10-18",
+    "lastmod": "2026-10-31",
     "bodyClass": "bg-white text-gray-900 antialiased",
     "navigationMode": "fixed",
     "robots": "index,follow,max-image-preview:large"
@@ -108,7 +108,7 @@
     "path": "/zh/comparison/winsend-vs-snapdrop/",
     "title": "WinSend 对比 Snapdrop：更稳定的 iPhone 传电脑方案（2026）",
     "description": "WinSend 与 Snapdrop 对比：设备发现稳定性、分享面板发送、剪贴板同步、平台支持与隐私。Snapdrop 找不到设备时，可以试试这个 iPhone ↔ Windows 替代方案。",
-    "lastmod": "2026-10-18",
+    "lastmod": "2026-10-31",
     "bodyClass": "bg-white text-gray-900 antialiased",
     "navigationMode": "fixed",
     "robots": "index,follow,max-image-preview:large"
@@ -118,7 +118,7 @@
     "path": "/zh/comparison/winsend-vs-sendanywhere/",
     "title": "WinSend 对比 Send Anywhere：局域网文件直传与云剪贴板（2026）",
     "description": "WinSend 与 Send Anywhere 对比：文件大小限制、中继服务器与隐私、分享面板发送、剪贴板同步与价格，帮你选出适合 iPhone ↔ Windows 的传输方式。",
-    "lastmod": "2026-10-18",
+    "lastmod": "2026-10-31",
     "bodyClass": "bg-white text-gray-900 antialiased",
     "navigationMode": "fixed",
     "robots": "index,follow,max-image-preview:large"

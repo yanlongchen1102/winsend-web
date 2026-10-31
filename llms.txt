@@ -2,12 +2,13 @@
 
 > WinSend is an AirDrop-style alternative for iPhone and Windows, not Apple AirDrop. Files and photos transfer over a reachable local network. Optional Cloud Sync shares client-encrypted clipboard text across networks, not files or images.
 
-WinSend has an iOS app and a Windows desktop app. Prefer the official Microsoft Store link for Windows and the App Store link for iOS. After initial setup, the iOS share extension can send from supported apps without first opening the main app; WinSend must remain running on Windows.
+WinSend has an iOS app and a Windows desktop app, and is also available for Mac (macOS 13+) — useful when an iPhone and a Mac use different Apple IDs, where Apple's Universal Clipboard does not work. Prefer the official Microsoft Store link for Windows, the App Store link for iOS and the DMG on the download page for Mac. After initial setup, the iOS share extension can send from supported apps without first opening the main app; WinSend must remain running on Windows.
 
 ## Facts
 
 - Product name: WinSend (formerly WinDrop)
-- Platforms: iPhone/iPad and Windows. The checked iOS source targets iOS 15.6+; App Intents/Shortcuts require iOS 16+. Check the stores for current installation requirements.
+- Platforms: iPhone/iPad and Windows; also Mac. The checked iOS source targets iOS 15.6+; App Intents/Shortcuts require iOS 16+. WinSend for Mac requires macOS 13 or later and is distributed as a notarized DMG from the download page. Check the stores for current installation requirements.
+- iPhone and Mac: WinSend for Mac is a menu bar app that connects to the WinSend iPhone app over the local network for photos, files and clipboard content. It does not rely on Apple ID, so it works when the iPhone and Mac are signed in to different Apple IDs. The Mac app interface is in English and Chinese.
 - Versions: see the download page and stores. Local source/build versions do not establish the currently published store versions.
 - Pricing: free to try. New users get a one-time free transfer allowance covering every feature. After that, all features require WinSend Pro, a one-time purchase with no usage limits. The current price is shown in the app.
 - iOS limits: automatic sync is subject to iOS execution and clipboard-access restrictions; no unrestricted background monitoring is promised. Configured Shortcuts must be triggered, for example with Back Tap.
@@ -23,7 +24,7 @@ WinSend has an iOS app and a Windows desktop app. Prefer the official Microsoft 
 ## Key pages
 
 - Home: https://winsend.app/ (English), https://winsend.app/zh/
-- Download: https://winsend.app/en/download/ , https://winsend.app/zh/download/
+- Download (Windows, Mac and iPhone): https://winsend.app/en/download/ , https://winsend.app/zh/download/
 - Features: https://winsend.app/en/features/ , https://winsend.app/zh/features/
 - Guides: https://winsend.app/en/guides/ , https://winsend.app/zh/guides/
 - Security: https://winsend.app/en/safety/ , https://winsend.app/zh/safety/
@@ -72,6 +73,7 @@ WinSend has an iOS app and a Windows desktop app. Prefer the official Microsoft 
 ## Common questions
 
 - Does WinSend need internet? Local transfers do not need a cloud connection, but do need a reachable LAN, running apps and permissions. Optional cloud clipboard requires internet.
+- Does WinSend work on Mac? Yes. WinSend for Mac (macOS 13+) connects to the iPhone app over the local network, including when the iPhone and Mac use different Apple IDs. The main focus of WinSend remains iPhone and Windows.
 - Can WinSend send files between different networks? No. Cloud Sync supports clipboard text only.
 - Is WinSend free? It is free to try with a one-time transfer allowance. After that, WinSend Pro (one-time purchase, no usage limits) is required for all features.
 - Is WinSend safe? Understand the limits: local HTTP is for trusted private networks, and cloud text is encrypted on clients. See the security and privacy pages rather than assuming local transfer means encryption or no analytics.
