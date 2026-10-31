@@ -56,6 +56,13 @@
     "page": "copy-iphone-to-windows"
   },
   {
+    "category": "iPhone and Mac",
+    "title": "Copy and Paste Between iPhone and Mac Not Working?",
+    "description": "Fix Universal Clipboard step by step, or copy and paste between iPhone and Mac with different Apple IDs.",
+    "cta": "Read the iPhone and Mac guide",
+    "page": "copy-paste-iphone-mac"
+  },
+  {
     "category": "Installation Guide",
     "title": "WinSend Installation and Pairing Setup",
     "description": "Includes Windows installation, iPhone installation, permission instructions, auto-pairing and checklist.",

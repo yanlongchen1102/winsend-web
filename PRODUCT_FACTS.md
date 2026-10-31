@@ -20,6 +20,7 @@
 | 试用与 Pro（2026-10-18 产品策略，由产品负责人确认） | 新用户有一次性的免费传输额度，可试用全部功能；额度用完后所有功能都需要 WinSend Pro。Pro 无任何使用额度限制。App 同时有订阅和买断，官网只宣传一次买断；价格以购买界面为准，官网不写具体价格和试用次数 | 产品负责人口径；`UsageManager.swift`；`PurchaseManager.swift` |
 | iOS 自动同步 | 开启自动同步并不绕过 iOS 后台执行/剪贴板访问限制；不能承诺锁屏、后台或任意 App 中复制后无条件同步 | `ClipboardManager.swift`（文字监听）；`WinDropApp.swift`（前台重连）；`WindropManager.swift` |
 | 快捷指令 | 安装/配置后主动运行，可通过轻点背面等触发，不必先打开主 App；这不是后台常驻监听 | `WinDrop/Intents/SendToPCIntent.swift`；`SyncFromPCIntent.swift`；`CloudShortcutSync.swift` |
+| iPhone ↔ Mac 剪贴板（2026-10-31 核验） | iPhone 端 App 内“传输到电脑 / Send to PC”把剪贴板文字或图片写入 Mac 剪贴板；“从电脑获取 / Get from PC”读取 Mac 剪贴板，文字进 iPhone 剪贴板、图片保存到相册。快捷指令“发送剪贴板到PC / 从PC同步剪贴板”不区分平台，Mac 同样可用。Mac 端跳过密码管理器标记为隐藏的内容。Mac 可配置云同步码跨网络传文字。官网 Mac 文章只写手动和快捷指令，不宣传 iOS 自动同步。Mac App 本身免费；传输计入 iPhone 端额度，之后需 Pro（产品负责人确认） | `WinSendMac/AppModel.swift`；`WinSendMac/Clipboard/MacClipboard.swift`；`WinDrop/Intents/*`；`WinDrop/Localization.swift`；`UsageManager.swift` |
 | 剪贴板图片 | 有局域网手动/快捷指令图片路径；自动监听主要是文字；云端不支持图片，不把文字与图片同步能力混写 | `ClipboardManager.swift:getCurrentClipboardImage/consumeClipboardIfNeeded`；`WindropManager.swift:transferClipboardToPC`；`SyncFromPCIntent.swift` |
 | 分享面板 | iOS 分享扩展可从支持分享的 App 发送，无需先打开主 App；两端首次安装、权限和连接仍需设置；不要写成所有 App 都无需运行 | `WinDropShareExtension/ShareViewController.swift`；`ShareDeviceDiscoveryManager.swift` |
 | 网络发现 | mDNS 自动发现，手动 IP 可作为发现失败的后备；IP 后备不能绕过 AP 隔离、防火墙或不可达路由 | `WindropManager.swift`；`airclip/discovery`；`airclip/connection` |

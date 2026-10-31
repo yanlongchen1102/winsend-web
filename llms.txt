@@ -31,6 +31,7 @@ WinSend has an iOS app and a Windows desktop app, and is also available for Mac 
 - Privacy: https://winsend.app/en/privacy/ , https://winsend.app/zh/privacy/
 - AirDrop-style local file transfer: https://winsend.app/en/guides/airdrop-for-windows/
 - Clipboard and Shortcuts: https://winsend.app/en/guides/copy-iphone-to-windows/
+- Copy and paste between iPhone and Mac (Universal Clipboard fixes; different Apple IDs): https://winsend.app/en/guides/copy-paste-iphone-mac/ , https://winsend.app/zh/guides/copy-paste-iphone-mac/
 - Setup: https://winsend.app/en/guides/setup/
 - Comparisons: WinSend vs LocalSend / Snapdrop / Send Anywhere under https://winsend.app/en/comparison/
 

@@ -208,5 +208,31 @@
       "question": "Does Phone Link replace Intel Unison?",
       "answer": "Mostly. With an iPhone, Phone Link handles calls, single-person texts, notifications and file sharing. It does not sync the clipboard, show group messages or send photos inside messages."
     }
+  ],
+  "copy-paste-iphone-mac": [
+    {
+      "question": "Why is copy and paste between my iPhone and Mac not working?",
+      "answer": "Apple's copy and paste between devices, called Universal Clipboard, needs both devices signed in with the same Apple Account, Bluetooth, Wi-Fi and Handoff turned on, and the devices near each other. Check those, update both devices and restart them. If the devices use different Apple IDs, Universal Clipboard cannot work."
+    },
+    {
+      "question": "Does Universal Clipboard work with different Apple IDs?",
+      "answer": "No. Universal Clipboard only passes copied content between devices signed in to the same Apple Account, and there is no setting to change that. To copy and paste between an iPhone and a Mac with different Apple IDs, use an app that works over the local network, such as WinSend."
+    },
+    {
+      "question": "How do I copy and paste between iPhone and Mac with different Apple IDs?",
+      "answer": "Install WinSend for Mac and the WinSend iPhone app, and connect both to the same local network. Copy on the iPhone and tap Send to PC, or copy on the Mac and tap Get from PC on the iPhone. You can also run it from a Shortcut or Back Tap."
+    },
+    {
+      "question": "How do I connect an iPhone to a Mac with a different Apple ID?",
+      "answer": "Apple's Continuity features such as Universal Clipboard and Handoff need the same Apple Account. AirDrop works across different Apple IDs for sending files. For copy and paste plus file transfer between an iPhone and a Mac with different Apple IDs, WinSend connects them over your local network."
+    },
+    {
+      "question": "How long does Universal Clipboard keep copied content?",
+      "answer": "Only briefly. Apple says the content stays on the other device for a short time, or until you copy something else on either device, so paste soon after you copy."
+    },
+    {
+      "question": "Is WinSend for Mac free?",
+      "answer": "The Mac app is free. Transfers use the iPhone app's one-time free allowance, which covers every feature. After that, WinSend Pro is a one-time purchase on iPhone with no usage limits. The current price is shown in the app."
+    }
   ]
 }

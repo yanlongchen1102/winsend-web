@@ -164,5 +164,31 @@
       "question": "iPhone 和电脑不在同一个 Wi-Fi，能传文件吗？",
       "answer": "Send Anywhere 和配对后的 PairDrop 可以跨网络连接。WinSend、LocalSend 和 Feem 通过局域网传文件；WinSend 的可选云传输只支持剪贴板文字。小技巧：让电脑连上 iPhone 的个人热点，两台设备就在同一个局域网里了。"
     }
+  ],
+  "copy-paste-iphone-mac": [
+    {
+      "question": "iPhone 和 Mac 复制粘贴为什么不能用？",
+      "answer": "苹果的跨设备复制粘贴叫通用剪贴板，需要两台设备登录同一个 Apple 账户、打开蓝牙、无线局域网和接力，并且彼此靠近。逐项检查后，再更新系统并重启设备。如果两台设备登录的是不同的 Apple ID，通用剪贴板无法使用。"
+    },
+    {
+      "question": "通用剪贴板支持不同 Apple ID 吗？",
+      "answer": "不支持。通用剪贴板只会在登录同一 Apple 账户的设备之间传递复制的内容，也没有设置可以改变。如果 iPhone 和 Mac 登录不同 Apple ID，可以使用通过局域网工作的工具，比如 WinSend。"
+    },
+    {
+      "question": "iPhone 和 Mac 登录不同 Apple ID，怎么复制粘贴？",
+      "answer": "在 Mac 上安装 WinSend Mac 版，在 iPhone 上安装 WinSend，并连接同一个局域网。iPhone 上复制后轻点“传输到电脑”，或者在 Mac 上复制后，在 iPhone 上轻点“从电脑获取”。也可以用快捷指令或轻点背面来触发。"
+    },
+    {
+      "question": "iPhone 和 Mac 不同 Apple ID 能互相连接吗？",
+      "answer": "通用剪贴板、接力等苹果连续互通功能需要同一个 Apple 账户。隔空投送可以在不同 Apple ID 之间传文件。如果还需要复制粘贴和双向传文件，WinSend 可以通过局域网连接不同 Apple ID 的 iPhone 和 Mac。"
+    },
+    {
+      "question": "通用剪贴板复制的内容能保留多久？",
+      "answer": "只保留片刻。按照苹果的说明，内容会在另一台设备上保留一小段时间，或者在任一设备复制新内容后被替换，所以复制后要尽快粘贴。"
+    },
+    {
+      "question": "WinSend Mac 版收费吗？",
+      "answer": "Mac 版本身免费。传输使用 iPhone 端一次性的免费额度，可以试用全部功能；额度用完后，在 iPhone 上一次买断 WinSend Pro，没有任何使用额度限制。价格以应用内为准。"
+    }
   ]
 }

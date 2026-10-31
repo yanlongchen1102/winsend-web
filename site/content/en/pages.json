@@ -160,5 +160,14 @@
     "lastmod": "2026-10-20",
     "bodyClass": "bg-white text-gray-900 antialiased",
     "navigationMode": "fixed"
+  },
+  "copy-paste-iphone-mac": {
+    "status": "published",
+    "path": "/en/guides/copy-paste-iphone-mac/",
+    "title": "Copy and Paste Between iPhone and Mac Not Working? Fixes",
+    "description": "Can't paste on your Mac what you copied on iPhone? Check what Universal Clipboard needs, fix it step by step, or copy and paste with different Apple IDs.",
+    "lastmod": "2026-10-31",
+    "bodyClass": "bg-white text-gray-900 antialiased",
+    "navigationMode": "fixed"
   }
 }

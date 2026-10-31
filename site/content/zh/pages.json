@@ -123,6 +123,16 @@
     "navigationMode": "fixed",
     "robots": "index,follow,max-image-preview:large"
   },
+  "copy-paste-iphone-mac": {
+    "status": "published",
+    "path": "/zh/guides/copy-paste-iphone-mac/",
+    "title": "iPhone 和 Mac 复制粘贴不能用？排查方法与不同 Apple ID 解决办法",
+    "description": "iPhone 复制的内容在 Mac 上粘贴不了？先检查通用剪贴板的 4 个条件并逐步排查；如果两台设备登录不同 Apple ID，也可以用 WinSend 在 iPhone 和 Mac 之间复制粘贴。",
+    "lastmod": "2026-10-31",
+    "bodyClass": "bg-white text-gray-900 antialiased",
+    "navigationMode": "fixed",
+    "robots": "index,follow,max-image-preview:large"
+  },
   "safety": {
     "status": "published",
     "path": "/zh/safety/",

@@ -19,6 +19,7 @@
 | `/en/guides/airdrop-for-windows/` | **transfer photos from iPhone to PC** | Transfer Photos from iPhone to PC Without a Cable \| WinSend | Google 未进前 10；Bing 只有 19 次曝光。2026-10-18 改为照片长尾，把 "AirDrop" 让给首页和横评页 |
 | `/en/guides/phone-link-iphone/`（2026-10-20 新增） | **phone link iphone** / phone link iphone file transfer | Phone Link for iPhone: What Works and What Doesn't (2026) | Bing 关键词工具："phone link iphone" 3 个月 8.7K 次（美国 6.8K）；排名待观察 |
 | `/en/guides/intel-unison-alternative/`（2026-10-20 新增） | **intel unison** / intel unison not working / intel unison alternative | Intel Unison Discontinued: Best iPhone Alternatives (2026) | Bing："intel unison" 3 个月 22.3K 次；实验性页面，4–8 周后看曝光和下载点击 |
+| `/en/guides/copy-paste-iphone-mac/`（2026-10-31 新增） | **copy paste between iPhone and Mac not working** / copy paste iphone to mac not working / copy text from iphone to mac | Copy and Paste Between iPhone and Mac Not Working? Fixes | 新页面，4–8 周后看。次要词：universal clipboard not working（正文说明功能名）、different Apple IDs（H2 + FAQ，转化点）、share/sync clipboard between iPhone and Mac。Google 联想显示"不同 Apple ID"量很小，但没有专门文章，竞争低。**只做 Mac 场景**，Windows 剪贴板仍归 copy-iphone-to-windows |
 | `/en/comparison/winsend-vs-localsend/` | WinSend vs LocalSend / LocalSend alternative | WinSend vs LocalSend for iPhone and Windows (2026) | 曝光 741，点击率 1.1% |
 | `/en/comparison/winsend-vs-snapdrop/` | Snapdrop alternative / Snapdrop not working | WinSend vs Snapdrop: Snapdrop Alternative for iPhone & PC | 未进前 10 |
 | `/en/comparison/winsend-vs-sendanywhere/` | Send Anywhere alternative / file size limit | WinSend vs Send Anywhere: Local Transfer vs Relay (2026) | 未进前 10 |
@@ -35,6 +36,7 @@
 | `/zh/guides/cross-platform-transfer-tools/` | **Windows AirDrop 替代工具** | 2026 年 Windows 版 AirDrop 替代工具推荐：5 款对比 \| WinSend | 曝光 1,228，点击率 2.8% |
 | `/zh/guides/copy-iphone-to-windows/` | **iPhone 与 Windows 剪贴板同步** | iPhone 与 Windows 剪贴板同步：复制后在电脑粘贴 \| WinSend 教程 | 曝光 365，点击率 10.4%（表现好，暂不改） |
 | `/zh/guides/airdrop-for-windows/` | **Windows 隔空投送** | Windows 隔空投送：iPhone 照片、文件直接传电脑 \| WinSend 教程 | Bing：438 次曝光、第 8.2 位、点击率 1.83%。主攻"隔空投送"，和首页、横评页区分 |
+| `/zh/guides/copy-paste-iphone-mac/`（2026-10-31 新增） | **iPhone 和 Mac 复制粘贴不能用 / 不同步** | iPhone 和 Mac 复制粘贴不能用？排查方法与不同 Apple ID 解决办法 | 新页面。次要词：iphone复制mac粘贴、通用剪贴板/通用剪切板、不同 Apple ID 复制粘贴。Bing 联想里"通用剪贴板"多为"怎么删除"，所以不作主词 |
 | `/zh/comparison/winsend-vs-localsend/` | WinSend 对比 LocalSend | WinSend 对比 LocalSend：iPhone 与 Windows 传输怎么选（2026） | — |
 | `/zh/comparison/winsend-vs-snapdrop/` | Snapdrop 找不到设备 / 替代 | WinSend 对比 Snapdrop：更稳定的 iPhone 传电脑方案（2026） | — |
 | `/zh/comparison/winsend-vs-sendanywhere/` | Send Anywhere 文件大小限制 / 替代 | WinSend 对比 Send Anywhere：局域网文件直传与云剪贴板（2026） | — |
@@ -110,7 +112,7 @@
 | Intel Unison alternative | ★ | ✅ 2026-10-20 已写（/en/guides/intel-unison-alternative/）："intel unison" 本身在 Bing 3 个月 22.3K 次（印度 7.7K、美国 3.4K），在缓慢下降 |
 | universal clipboard windows | ★ | Bing 无数据；改为补厚现有剪贴板教程，不单开页面 |
 | Phone Link iPhone alternative / file transfer | ★★ | ✅ 2026-10-20 已写（/en/guides/phone-link-iphone/） |
-| Universal Clipboard for Windows | ★ | 新文章 |
+| Universal Clipboard for Windows | ★ | 新文章（Windows 意图；iPhone ↔ Mac 的复制粘贴已由 2026-10-31 的 copy-paste-iphone-mac 承接，两者不要混） |
 | LocalSend not finding devices | ★ | vs LocalSend 页加 FAQ |
 | PairDrop alternative | ★ | 新对比页（候选） |
 | transfer large video iPhone to PC without compression | ★ | 新文章或照片教程加小节 |

@@ -46,10 +46,10 @@ function addFrench(root) {
   putJSON(root, 'site/content/fr/pages.json', pages);
 }
 
-test('real content renders 57 pages with published locales only, no placeholders or redirects', () => {
+test('real content renders 59 pages with published locales only, no placeholders or redirects', () => {
   const { site, outputs } = generateSite();
-  assert.equal(site.pages.length, 57);
-  assert.equal(outputs.size, 58); // 57 pages (including the root English home) + sitemap
+  assert.equal(site.pages.length, 59);
+  assert.equal(outputs.size, 60); // 59 pages (including the root English home) + sitemap
   const root = outputs.get('index.html');
   assert.ok(root.includes('<html lang="en"'));
   assert.ok(root.includes('rel="canonical" href="https://winsend.app/"'));

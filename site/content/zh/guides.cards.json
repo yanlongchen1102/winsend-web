@@ -42,6 +42,13 @@
     "page": "copy-iphone-to-windows"
   },
   {
+    "category": "iPhone 与 Mac",
+    "title": "iPhone 和 Mac 复制粘贴不能用？",
+    "description": "按步骤排查通用剪贴板；iPhone 和 Mac 登录不同 Apple ID 时，也能互相复制粘贴。",
+    "cta": "查看 iPhone 与 Mac 教程",
+    "page": "copy-paste-iphone-mac"
+  },
+  {
     "category": "安装教程",
     "title": "WinSend 安装与配对设置",
     "description": "包括 Windows 端安装、iPhone 安装、权限说明、自动配对和检查清单。",

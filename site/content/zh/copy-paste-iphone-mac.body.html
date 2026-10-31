@@ -1,0 +1,116 @@
+<main>
+        <section class="hero-bg pt-32 pb-14 px-6">
+            <div class="max-w-4xl mx-auto">
+                <nav aria-label="面包屑" class="mb-8"><ol class="flex flex-wrap items-center gap-2 text-sm text-gray-500"><li><a href="{{links.home}}" class="hover:text-gray-900 transition-colors">首页</a></li><li aria-hidden="true">/</li><li><a href="{{links.guides}}" class="hover:text-gray-900 transition-colors">教程中心</a></li><li aria-hidden="true">/</li><li class="text-gray-900 font-medium">iPhone 和 Mac 复制粘贴</li></ol></nav>
+                <header>
+                    <p class="text-sm font-semibold tracking-[0.24em] text-blue-600 uppercase mb-4">教程 · iPhone 与 Mac</p>
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight mb-6">iPhone 和 Mac 复制粘贴不能用？排查方法与不同 Apple ID 解决办法</h1>
+                    <p class="text-xl text-gray-600 leading-9 max-w-3xl">在 iPhone 上复制了内容，到 Mac 上按 ⌘V 却什么都没有？这篇文章讲清楚苹果跨设备复制粘贴需要满足哪些条件、怎么一步步排查，以及 iPhone 和 Mac 登录不同 Apple ID 时该怎么办。</p>
+                    <p class="mt-4 text-sm text-gray-500">最后更新：<time datetime="2026-10-31">2026 年 10 月 31 日</time></p>
+                </header>
+            </div>
+        </section>
+        <section class="px-6 pb-20">
+            <div class="max-w-4xl mx-auto">
+                <article class="prose">
+                    <h2>快速回答</h2>
+                    <p>iPhone 和 Mac 之间的复制粘贴，靠的是苹果的<strong>通用剪贴板</strong>（Universal Clipboard，也常被叫作“通用剪切板”）。它要求两台设备<strong>登录同一个 Apple 账户</strong>（Apple ID）、彼此靠近，并且都打开了<strong>蓝牙、无线局域网和接力</strong>。逐项检查这四点，大多数问题都能解决。</p>
+                    <p>如果 iPhone 和 Mac 登录的是<strong>不同的 Apple ID</strong>，比如公司配的 Mac 加上自己的 iPhone，通用剪贴板从机制上就用不了。这时可以改用通过局域网传输的工具，比如 <a href="{{links.download}}#mac-heading">WinSend Mac 版</a>。</p>
+
+                    <h2>iPhone 和 Mac 复制粘贴需要满足什么条件</h2>
+                    <p>根据<a href="https://support.apple.com/zh-cn/102430" rel="noopener" target="_blank">苹果官方的通用剪贴板说明</a>，设备需要满足以下条件：</p>
+                    <ul>
+                        <li>iPhone 和 Mac <strong>使用同一个 Apple 账户登录</strong>；</li>
+                        <li>两台设备都打开了<strong>蓝牙和无线局域网</strong>；</li>
+                        <li>两台设备都打开了<strong>接力</strong>（默认是打开的）；</li>
+                        <li>两台设备<strong>彼此靠近</strong>。</li>
+                    </ul>
+                    <p>复制的内容只会在另一台设备上保留片刻，或者在你复制新内容后被替换，所以复制后要尽快粘贴。</p>
+
+                    <h2>iPhone 和 Mac 复制粘贴不同步怎么办：逐步排查</h2>
+                    <p>按顺序检查，每做完一步就测试一次：在 iPhone 上复制一小段文字，然后在 Mac 上按 ⌘V。</p>
+                    <ol>
+                        <li><strong>确认 Apple 账户一致。</strong>在 iPhone 上打开“设置”，轻点最上方的你的名字；在 Mac 上打开“系统设置”，点按你的名字。两边显示的 Apple 账户必须相同。如果不同，直接看下面的<a href="#different-apple-id">不同 Apple ID</a>部分。</li>
+                        <li><strong>两台设备都打开蓝牙和无线局域网。</strong>这一步不要求连同一个 Wi-Fi，但两项都必须打开。</li>
+                        <li><strong>打开接力。</strong>iPhone：设置 &gt; 通用 &gt; 隔空播放与连续互通（或“隔空播放与接力”）&gt; 接力。Mac：系统设置 &gt; 通用 &gt; 隔空投送与连续互通（或“隔空投送与接力”）&gt; 打开“允许在这台 Mac 和 iCloud 设备之间使用‘接力’”。</li>
+                        <li><strong>如果接力本来就是开着的，</strong>在两台设备上把它关掉再重新打开。</li>
+                        <li><strong>让两台设备靠近一些</strong>，并在复制后尽快粘贴。</li>
+                        <li><strong>更新系统。</strong>给 iPhone 和 Mac 安装可用的软件更新。</li>
+                        <li><strong>重启两台设备。</strong></li>
+                        <li><strong>还是不行？</strong>最后可以在其中一台设备上退出 Apple 账户再重新登录。操作前先确认记得密码，并备份好数据。</li>
+                    </ol>
+                    <p>用的是公司的 Mac？IT 部门可能限制了部分连续互通功能。如果接力选项不可用或是灰色的，请联系管理员。</p>
+
+                    <h2 id="different-apple-id">为什么 Apple ID 不同就一定用不了</h2>
+                    <p>通用剪贴板和 Apple 账户绑定：苹果只会在登录同一账户的设备之间传递复制的内容，没有任何设置能改变这一点。常见的情况有：</p>
+                    <ul>
+                        <li><strong>公司配的 Mac</strong> 登录的是公司的 Apple 账户，手里是<strong>自己的 iPhone</strong>；</li>
+                        <li>家里的 Mac 登录的是<strong>家人的 Apple ID</strong>；</li>
+                        <li>想把内容复制到<strong>同事或伴侣的 Mac</strong> 上。</li>
+                    </ul>
+                    <p>把 Mac 换成自己的 Apple ID 往往做不到，或者你并不想这么做。这时就需要一个不依赖 Apple ID 的工具。</p>
+
+                    <h2>iPhone 和 Mac 登录不同 Apple ID，怎么复制粘贴</h2>
+                    <p><a href="{{links.home}}">WinSend</a> 通过局域网连接 iPhone 和 Mac，不经过 Apple 账户，所以两台设备登录什么 Apple ID 都不影响。在一台设备上复制文字，到另一台上就能粘贴，图片也可以传。</p>
+                    <h3>首次设置</h3>
+                    <ol>
+                        <li>在<a href="{{links.download}}#mac-heading">下载页</a>下载 <strong>WinSend Mac 版</strong>（需要 macOS 13 或更高版本），打开 DMG，把 WinSend 拖到“应用程序”文件夹。它会常驻在菜单栏。</li>
+                        <li>在 <a href="{{product.appStoreUrl}}" rel="noopener" target="_blank">App Store</a> 安装 iPhone 上的 <strong>WinSend</strong>。</li>
+                        <li>让两台设备连接<strong>同一个局域网</strong>，系统询问时允许<strong>本地网络</strong>权限。之后 iPhone 上的 WinSend 就能看到你的 Mac。</li>
+                    </ol>
+                    <h3>iPhone 复制，Mac 粘贴</h3>
+                    <ol>
+                        <li>在 iPhone 上照常复制文字或图片。</li>
+                        <li>打开 WinSend，轻点<strong>传输到电脑</strong>。按钮写的是“电脑”，Mac 同样适用。</li>
+                        <li>在 Mac 上按 ⌘V 粘贴。</li>
+                    </ol>
+                    <h3>Mac 复制，iPhone 粘贴</h3>
+                    <ol>
+                        <li>在 Mac 上按 ⌘C 复制文字或图片。</li>
+                        <li>在 iPhone 上打开 WinSend，轻点<strong>从电脑获取</strong>。</li>
+                        <li>文字直接在 iPhone 上粘贴即可；复制的图片会直接保存到相册。</li>
+                    </ol>
+                    <h3>更快的方式：快捷指令和轻点背面</h3>
+                    <p>WinSend 会在“快捷指令”App 中提供两个操作：<strong>发送剪贴板到PC</strong>和<strong>从PC同步剪贴板</strong>，同样适用于 Mac。在 WinSend 的快捷指令设置页添加后，再把它绑定到<strong>轻点背面</strong>（设置 &gt; 辅助功能 &gt; 触控 &gt; 轻点背面）。之后在 iPhone 上复制，轻点两下手机背面，就能在 Mac 上粘贴，不用打开 WinSend。详细的快捷指令设置步骤见<a href="{{links.copy-iphone-to-windows}}#step-back-tap">剪贴板同步教程</a>。</p>
+                    <h3>使用须知</h3>
+                    <ul>
+                        <li>剪贴板通过局域网传输，请在可信的专用网络中使用：<a href="{{links.safety}}">本地传输不是端到端加密</a>。</li>
+                        <li>可选的云同步可以在 iPhone 和 Mac 不在同一网络时传输剪贴板<strong>文字</strong>；图片和文件仍需局域网。</li>
+                        <li>Mac 端会跳过密码管理器标记为隐藏的内容，复制的密码不会被发送。</li>
+                        <li>同一个 App 还能在 iPhone 和 Mac 之间双向传<strong>照片和文件</strong>。</li>
+                        <li>Mac 版本身免费。传输使用 iPhone 端一次性的免费额度，可以试用全部功能；额度用完后，在 iPhone 上一次买断 WinSend Pro，没有任何使用额度限制。</li>
+                    </ul>
+
+                    <h2>隔空投送（AirDrop）呢？</h2>
+                    <p>隔空投送不一样，它<strong>可以</strong>在不同 Apple ID 的设备之间使用：把接收设备设为<strong>仅限联系人</strong>（你在对方的通讯录里）或<strong>所有人（10 分钟）</strong>即可。偶尔传张照片或一个文件，用隔空投送就够了。</p>
+                    <p>但隔空投送不是剪贴板。它没法把复制的文字放进 Mac 的剪贴板让你直接按 ⌘V，来回传零碎文字时也很麻烦。WinSend 补的正是这一块。</p>
+
+                    <h2>通用剪贴板、隔空投送和 WinSend 对比</h2>
+                    <div class="table-wrap">
+                        <table class="compare-table">
+                            <thead><tr><th></th><th>通用剪贴板</th><th>隔空投送</th><th>WinSend</th></tr></thead>
+                            <tbody>
+                                <tr><td><strong>需要同一 Apple ID</strong></td><td>是</td><td>否</td><td>否</td></tr>
+                                <tr><td><strong>连接方式</strong></td><td>蓝牙 + 无线局域网，需靠近</td><td>蓝牙 + 无线局域网，需靠近</td><td>同一局域网（文字可选云同步）</td></tr>
+                                <tr><td><strong>复制文字</strong></td><td>支持，自动</td><td>不是剪贴板工具</td><td>支持，App 内或快捷指令</td></tr>
+                                <tr><td><strong>复制图片</strong></td><td>支持</td><td>不是剪贴板工具</td><td>支持，通过局域网</td></tr>
+                                <tr><td><strong>传照片和文件</strong></td><td>只能复制粘贴</td><td>支持</td><td>支持，双向</td></tr>
+                                <tr><td><strong>也能连 Windows 电脑</strong></td><td>否</td><td>否</td><td>是</td></tr>
+                                <tr><td><strong>价格</strong></td><td>免费，系统自带</td><td>免费，系统自带</td><td>Mac 版免费；iPhone 端免费试用后一次买断 Pro</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <p><strong>我们的建议：</strong>如果 iPhone 和 Mac 用的是同一个 Apple ID，按上面的步骤把通用剪贴板修好就行，它免费又自动。如果 Apple ID 不同，或者你还要用 Windows 电脑，WinSend 能让你不依赖 Apple ID 地复制粘贴。要在 Windows 电脑上粘贴？请看 <a href="{{links.copy-iphone-to-windows}}">iPhone 与 Windows 剪贴板同步教程</a>。</p>
+
+                    {{{faq}}}
+
+                    <h2>试试 WinSend Mac 版</h2>
+                    <p>在 Mac 和 iPhone 上安装 WinSend，连上同一个网络，几秒钟就能互相复制粘贴。全部功能都可以免费试用。</p>
+                    <div class="mt-8 mb-12 flex flex-col gap-3 sm:flex-row">
+                        <a href="{{links.download}}#mac-heading" data-download-surface="guide_copy_paste_iphone_mac" class="mac-page-link btn-primary inline-flex items-center justify-center gap-2 px-8 py-4 bg-blue-700 text-white text-lg font-semibold rounded-xl hover:bg-blue-800 transition-all shadow-lg shadow-blue-700/30">获取 Mac 版</a>
+                        <a href="{{product.appStoreUrl}}" target="_blank" rel="noopener" data-download-surface="guide_copy_paste_iphone_mac" class="app-store-link inline-flex items-center justify-center gap-2 px-8 py-4 border border-gray-200 bg-white text-gray-900 text-lg font-semibold rounded-xl hover:bg-gray-50 transition-all" style="text-decoration:none;color:#111827">获取 iPhone 版</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+</main>
