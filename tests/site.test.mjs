@@ -160,12 +160,12 @@ test('custom locale navigation rejects links to unpublished pages', t => {
   assert.throws(() => generateSite(root), /invalid navigationPages/);
 });
 
-test('existing URLs and relative screenshot paths remain unchanged', () => {
+test('existing URLs and guide screenshot references remain valid', () => {
   const { outputs } = generateSite();
   for (const locale of ['en', 'zh']) {
     assert.ok(outputs.has(`${locale}/guides/copy-iphone-to-windows/index.html`));
     assert.ok(outputs.has(`${locale}/comparison/winsend-vs-localsend/index.html`));
-    assert.ok(outputs.get(`${locale}/guides/cross-platform-transfer-tools/index.html`).includes('src="images/winsend-screenshot-1.png"'));
+    assert.ok(outputs.get(`${locale}/guides/cross-platform-transfer-tools/index.html`).includes(`src="/assets/screenshots/winsend/winsend-iphone-to-windows-${locale}.webp"`));
     assert.ok(outputs.get(`${locale}/download/index.html`).includes('site-nav--flow'));
     assert.ok(outputs.get(locale === 'en' ? 'index.html' : `${locale}/index.html`).includes('site-nav--fixed'));
   }

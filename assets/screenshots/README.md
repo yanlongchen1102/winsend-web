@@ -26,6 +26,18 @@
 | `winsend/winsend-transfer-progress-step3.webp` | 传输进度环 | WinSend transfer progress indicator on Windows-PC icon | WinSend 电脑图标显示传输进度环 |
 | `winsend/winsend-send-success-step4.webp` | 发送成功提示 | WinSend send successful confirmation dialog | WinSend 发送成功提示 |
 
+### iPhone → Windows 传输流程横图（2026-11-07）
+
+Eagle WinSend 素材库真实截图排版，包含 iOS 分享页、发送进度局部和 Windows 接收通知；手机画面保持原始比例。五版仅外围文案本地化，界面截图不变。2000 × 1000 WebP，每张约 130 KB。
+
+| 文件 | 语言 | 使用位置 |
+|---|---|---|
+| `winsend/winsend-iphone-to-windows-en.webp` | English | 英文工具横评 |
+| `winsend/winsend-iphone-to-windows-zh.webp` | 中文 | 中文工具横评 |
+| `winsend/winsend-iphone-to-windows-fr.webp` | Français | 法语 iPhone 传照片到 PC 指南 |
+| `winsend/winsend-iphone-to-windows-de.webp` | Deutsch | 德语 iPhone 传照片到 PC 指南 |
+| `winsend/winsend-iphone-to-windows-es.webp` | Español | 西语 iPhone 传照片到 PC 指南 |
+
 ## LocalSend（竞品，仅评测/对比引用）
 
 | 文件 | 内容描述 | 推荐 alt (en) | 推荐 alt (zh) |
