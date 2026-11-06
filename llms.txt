@@ -9,7 +9,7 @@ WinSend has an iOS app and a Windows desktop app, and is also available for Mac 
 - Product name: WinSend (formerly WinDrop)
 - Platforms: iPhone/iPad and Windows; also Mac. The checked iOS source targets iOS 15.6+; App Intents/Shortcuts require iOS 16+. WinSend for Mac requires macOS 13 or later and is distributed as a notarized DMG from the download page. Check the stores for current installation requirements.
 - iPhone and Mac: WinSend for Mac is a menu bar app that connects to the WinSend iPhone app over the local network for photos, files and clipboard content. It does not rely on Apple ID, so it works when the iPhone and Mac are signed in to different Apple IDs. The Mac app interface is in English and Chinese.
-- Versions: see the download page and stores. Local source/build versions do not establish the currently published store versions.
+- Latest versions: iOS 3.0.0; Windows EXE 3.0.0. See the download page and stores for channel availability; the Windows EXE version does not establish the currently published Microsoft Store version.
 - Pricing: free to try. New users get a one-time free transfer allowance covering every feature. After that, all features require WinSend Pro, a one-time purchase with no usage limits. The current price is shown in the app.
 - iOS limits: automatic sync is subject to iOS execution and clipboard-access restrictions; no unrestricted background monitoring is promised. Configured Shortcuts must be triggered, for example with Back Tap.
 - Local transport: mDNS discovery and HTTP/WebSocket transfer. Local transfer is not end-to-end encrypted; use a trusted private LAN. A wired PC can share the LAN with a Wi-Fi iPhone.
