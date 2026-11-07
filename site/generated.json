@@ -5,11 +5,11 @@
   "en/guides/index.html": "3805b2a46f1bdd079b77d16135f16e48d192b9040f56e91377e99bb60502349a",
   "en/guides/setup/index.html": "5fb968cc26c954daf783127060a6d4db59c9e6a3f18fe6876a0eeeb83b176bd9",
   "en/guides/how-it-works/index.html": "066faef6a332758007e1693aaa9f3c6b68006d2f10d4b98bcd8f7fd2a2f1a66c",
-  "en/guides/copy-iphone-to-windows/index.html": "f6c41466fbdcbeb9083f7fc1693f564ff2bfdf4a0478ab48ee970086a442b730",
-  "en/guides/airdrop-for-windows/index.html": "224edbdb9cf3032033c4ef9a02404bd508b101f95f57904d4511f5d592549d2d",
-  "en/guides/cross-platform-transfer-tools/index.html": "4ee70ee04e9263d7f4d9183eae16b21f7cfb15503b3319c3af3c38cf3d169c2b",
+  "en/guides/copy-iphone-to-windows/index.html": "3c7e1bef2fb5012955dff108d1dc40b5e195a3fe1573835ced3fddd2f0dbbe0f",
+  "en/guides/airdrop-for-windows/index.html": "bece3000b630aa818050d13c514427ea5b5fe9ab4489ba1fea67d95400d13af9",
+  "en/guides/cross-platform-transfer-tools/index.html": "c97f1b41e611c3fb48e7c17dee7f50985b847339e07ac44ac9d27e7a89604487",
   "en/comparison/winsend-vs-localsend/index.html": "ce8e49093371d09bb04e3a931df80e79d13c856f2e5c97a0ae857ba1dcd42ec3",
-  "en/comparison/winsend-vs-snapdrop/index.html": "54c113727349a96b53eba480668548dc0c4585366943ca66426818905996e9d2",
+  "en/comparison/winsend-vs-snapdrop/index.html": "750a60f53d072c28179e240358adb4a935e92a1e130bf3c976ed809a56e909ad",
   "en/comparison/winsend-vs-sendanywhere/index.html": "b54f4ccf34678f2515a5d0a2402f3b1e080d7bcecff38e7bd274c560445846d4",
   "en/safety/index.html": "c47f873aad6b487ff9ed689a06839a47f0408fb27d8ec1999dab50dc84a35d97",
   "en/privacy/index.html": "428bd4bf77d152af13340a79998c686556c5b5cb046ec6e5443cfcd6fd85d669",
@@ -61,5 +61,5 @@
   "es/guias/index.html": "20b6648517379a579ed8368f77f9784bf49a65bc52aa37efa545f80ccdb158f7",
   "es/guias/portapapeles-iphone-windows/index.html": "364c7d2a3b07702bc0a3ff243679c8fb82e1f2212f30870c438edc8225611b93",
   "es/guias/copiar-pegar-iphone-mac/index.html": "73b9bf3177e2b8c014e8e0d3dd081b9c18980d8c15bb714d3470aea69440ab2d",
-  "sitemap.xml": "426b3ad5dc78688466553130199101976bfcf7ec6bf225a154a2165f9ca65ff6"
+  "sitemap.xml": "57a3da04a9f8c104a79b73251e128a04817a19c4c4e1d3a74f7573d4fc833e89"
 }

@@ -123,20 +123,24 @@
   ],
   "winsend-vs-snapdrop": [
     {
-      "question": "Why does Snapdrop not find my device?",
-      "answer": "Snapdrop discovers devices through the public snapdrop.net server: both browsers must connect to it, and it only pairs devices that appear to share the same public IP address. That breaks when one device is on a VPN, when the router isolates clients (AP isolation on guest, office or campus networks), or when the two devices reach the internet through different routes. WinSend offers native local discovery and a manual IP fallback when devices are reachable. Manual IP cannot bypass client isolation or firewall blocks; use a trusted private LAN or ask the network administrator."
+      "question": "What happened to Snapdrop?",
+      "answer": "Snapdrop was acquired by LimeWire in February 2025, according to the project's GitHub README. The site at snapdrop.net still works, but transfers now run through LimeWire storage instead of a direct browser-to-browser connection: you upload files in the browser, get a share link, and the link opens on limewire.com. PairDrop is the open-source fork that keeps the original browser-to-browser approach."
     },
     {
-      "question": "Is Snapdrop safe?",
-      "answer": "Snapdrop transfers files peer-to-peer over WebRTC, so the file data itself goes directly between the two browsers and is encrypted in transit by WebRTC. However, device discovery and signaling depend on the public snapdrop.net server, so using it requires an internet connection to that third-party service. WinSend local discovery and file transfer do not require a public discovery server. Optional cloud clipboard uses a relay."
+      "question": "Is Snapdrop still peer-to-peer?",
+      "answer": "No. Snapdrop's own FAQ says transfers now run through LimeWire storage instead of a direct browser-to-browser connection. Files are uploaded in the browser and shared via a link that opens on limewire.com, so the two devices no longer need to be on the same network or online at the same time."
     },
     {
-      "question": "Is WinSend a good Snapdrop alternative?",
-      "answer": "Yes, if your devices are an iPhone and a Windows PC. WinSend is a native app pair that discovers devices on the local network (with a manual IP fallback), integrates into the iOS share sheet, supports manual clipboard transfer, automatic text sync subject to iOS limits, and configured Shortcuts, and does not need a public server for local file transfer. Optional cloud clipboard uses a relay. If you need to send a file to an Android or Linux device — or to someone else's computer with zero install — Snapdrop's browser approach is more convenient."
+      "question": "Is Snapdrop safe to use for private files?",
+      "answer": "Keep in mind that files are uploaded to third-party storage: without an account, share links last 3 days and anyone holding the link can open it. For sensitive files, a local tool like WinSend (device to device over your local network) or PairDrop (browser to browser on the same network) keeps the data off third-party servers."
     },
     {
-      "question": "Does Snapdrop work without installing anything?",
-      "answer": "Yes. Snapdrop runs entirely in the browser on both devices — just open the website on each. That is its biggest strength for one-off transfers. WinSend requires installing the Windows client and the iOS app once, but after that every transfer is faster to start: no browser tabs to keep open, and you can send straight from the iPhone share sheet."
+      "question": "What is the best Snapdrop alternative for iPhone and Windows?",
+      "answer": "For iPhone and Windows on the same network, WinSend is the best fit: a native app pair that discovers devices on the local network (with a manual IP fallback), integrates into the iOS share sheet, supports manual clipboard transfer, automatic text sync subject to iOS limits, and configured Shortcuts, and does not need a public server for local file transfer. Optional cloud clipboard uses a relay. If you want a zero-install browser tool, PairDrop keeps the original Snapdrop approach."
+    },
+    {
+      "question": "Is PairDrop the same as Snapdrop?",
+      "answer": "PairDrop is the open-source fork of the original Snapdrop. It keeps the browser-to-browser approach: open pairdrop.net on both devices and they find each other via the pairdrop.net server (or your own self-hosted server), and paired devices can connect across different networks. Today's snapdrop.net instead uploads files to LimeWire storage and shares them via a link."
     }
   ],
   "cross-platform-transfer-tools": [
@@ -158,7 +162,7 @@
     },
     {
       "question": "What happened to Snapdrop?",
-      "answer": "Snapdrop was acquired by LimeWire. AlternativeTo lists it as discontinued and reports that the site redirects to LimeWire after you upload a file. PairDrop is the actively maintained open-source fork with the same browser-based approach."
+      "answer": "Snapdrop was acquired by LimeWire in 2025. The site at snapdrop.net still works, but files are now uploaded to LimeWire storage and shared via a link instead of going browser to browser. PairDrop is the actively maintained open-source fork that keeps the original browser-based approach."
     },
     {
       "question": "Can I transfer files from iPhone to PC without being on the same Wi-Fi?",

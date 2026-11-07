@@ -68,7 +68,7 @@
     "path": "/en/guides/copy-iphone-to-windows/",
     "title": "How to Copy from iPhone and Paste on Windows (No Cable)",
     "description": "Copy text on your iPhone and paste it on your Windows PC with Ctrl+V. Set up WinSend and a Back Tap Shortcut once, with no iCloud, email or cable.",
-    "lastmod": "2026-10-18",
+    "lastmod": "2026-11-07",
     "bodyClass": "bg-white text-gray-900 antialiased",
     "navigationMode": "fixed",
     "robots": "index,follow,max-image-preview:large"
@@ -78,7 +78,7 @@
     "path": "/en/guides/airdrop-for-windows/",
     "title": "Transfer Photos from iPhone to PC Without a Cable | WinSend",
     "description": "Send photos, videos and files from your iPhone to a Windows PC straight from the Photos share sheet: no cable, no iTunes, no cloud upload. Step by step.",
-    "lastmod": "2026-10-18",
+    "lastmod": "2026-11-07",
     "bodyClass": "bg-white text-gray-900 antialiased",
     "navigationMode": "fixed",
     "robots": "index,follow,max-image-preview:large"
@@ -88,7 +88,7 @@
     "path": "/en/guides/cross-platform-transfer-tools/",
     "title": "5 Best AirDrop Alternatives for Windows (2026) | WinSend",
     "description": "Need AirDrop on a Windows PC? Compare WinSend, LocalSend, PairDrop, Feem and Send Anywhere, plus what Microsoft Phone Link can do with an iPhone.",
-    "lastmod": "2026-10-20",
+    "lastmod": "2026-11-07",
     "bodyClass": "bg-white text-gray-900 antialiased",
     "navigationMode": "fixed",
     "robots": "index,follow,max-image-preview:large"
@@ -106,9 +106,9 @@
   "winsend-vs-snapdrop": {
     "status": "published",
     "path": "/en/comparison/winsend-vs-snapdrop/",
-    "title": "WinSend vs Snapdrop: Snapdrop Alternative for iPhone & PC",
-    "description": "Snapdrop not finding your devices? Compare WinSend and Snapdrop on discovery reliability, share sheet sending, clipboard sync, platforms and privacy.",
-    "lastmod": "2026-10-31",
+    "title": "Snapdrop Alternative: WinSend vs Snapdrop vs PairDrop (2026)",
+    "description": "Snapdrop now uploads files to LimeWire's servers. Compare WinSend, today's Snapdrop and PairDrop for local iPhone-to-PC transfer, privacy, limits and setup.",
+    "lastmod": "2026-11-07",
     "bodyClass": "bg-white text-gray-900 antialiased",
     "navigationMode": "fixed",
     "robots": "index,follow,max-image-preview:large"
