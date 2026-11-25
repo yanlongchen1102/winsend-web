@@ -4,16 +4,15 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
     <channel>
         <title>WinSend</title>
         <item>
-            <title>1.0.2</title>
-            <pubDate>Fri, 06 Nov 2026 21:34:24 +0800</pubDate>
-            <sparkle:version>3</sparkle:version>
-            <sparkle:shortVersionString>1.0.2</sparkle:shortVersionString>
+            <title>3.0.2</title>
+            <pubDate>Thu, 26 Nov 2026 01:38:49 +0800</pubDate>
+            <sparkle:version>4</sparkle:version>
+            <sparkle:shortVersionString>3.0.2</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
-            <sparkle:releaseNotesLink sparkle:edSignature="idk/m+ptYUVc7vBl6TbBOomB/ul3bTR6L/IHmGFk/Dvxk1Gy2SiQ9en7rENa2spP8mgmHHB4C5tftYq5vvZ2Cg==" sparkle:length="1039">https://winsend.app/WinSend-1.0.2-3.html</sparkle:releaseNotesLink>
-            <enclosure url="https://winsend.app/WinSend-1.0.2-3.dmg" length="3410953" type="application/octet-stream" sparkle:edSignature="QqoUAJNc+EwBwqmYLT0hPoB00hLZk4lKLR4iIbV3N4Gnf1peI2GBN9yH4Oq+yHx/qKFa+Xyd9BTrf/jojAMuCA=="></enclosure>
+            <enclosure url="https://winsend.app/WinSend-3.0.2-4.dmg" length="3441667" type="application/octet-stream" sparkle:edSignature="ivNUlklbMKi+xb0zI7TzqehQIhv8SMj/pZmF2psm+Ogq8BZO1N8Sj8Jjs2Dyk72oVFGNZ2w24qULH5u1TR3hAQ=="></enclosure>
         </item>
     </channel>
 </rss><!-- sparkle-signatures:
-edSignature: 0xA0wsCJtLwI+B97ShtgorN1RIuLR7M1AOVZV+F5hEv5XwC0aYXGrqkkIS42Q+GtRwmdOryl/p2fbFdNA0j4Ag==
-length: 1238
+edSignature: pBhSCp6yclAInb6wTBCUcVbkuRF7i2XWF9lK/qw1chG7yeVpG0YIKp5pf/O4zJpiK8j0GhJwTz3rFdmAAgNYBQ==
+length: 999
 -->
